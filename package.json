@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node kjør_alle_lastejobber",
-    "test": "jasmine"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
