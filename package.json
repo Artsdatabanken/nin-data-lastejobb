@@ -1,0 +1,20 @@
+{
+  "name": "kverna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjornreppen/kverna.git"
+  },
+  "author":
+    "Bjorn Reppen <bjornreppen@users.noreply.github.com> (https://github.com/bjornreppen)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bjornreppen/kverna/issues"
+  },
+  "homepage": "https://github.com/bjornreppen/kverna#readme"
+}
