@@ -11,11 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/bjornreppen/kverna.git"
   },
-  "author":
-    "Bjorn Reppen <bjornreppen@users.noreply.github.com> (https://github.com/bjornreppen)",
+  "author": "Bjorn Reppen <bjornreppen@users.noreply.github.com> (https://github.com/bjornreppen)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bjornreppen/kverna/issues"
   },
-  "homepage": "https://github.com/bjornreppen/kverna#readme"
+  "homepage": "https://github.com/bjornreppen/kverna#readme",
+  "dependencies": {
+    "node-fetch": "^2.1.2"
+  }
 }
