@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node kjør_alle_lastejobber",
-    "test": "echo 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/bjornreppen/kverna#readme",
   "dependencies": {
     "node-fetch": "^2.1.2"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3"
   }
 }
