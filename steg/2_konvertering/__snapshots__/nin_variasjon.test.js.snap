@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`har antall rader 1`] = `2909`;
+
+exports[`har nøkler 1`] = `
+Object {
+  "foreldre": 2909,
+  "kode": 2909,
+  "tittel": 2909,
+}
+`;
