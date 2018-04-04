@@ -8,6 +8,9 @@ const config = {
   kodesystem: kodesystem,
   lasteScriptPath: './steg/',
   datakilde: datakilde,
+  infoUrl: {
+    nin: 'https://www.artsdatabanken.no/NiN2.0/'
+  },
   getCachePath: function(relPath) {
     return cachePath + '/' + relPath + '/'
   },
