@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`data/1_kildedata/MI_variasjon.json har antall rader 1`] = `2909`;
+
+exports[`data/1_kildedata/MI_variasjon.json har forventede nøkler 1`] = `
+Object {
+  "Kode": 2909,
+  "Navn": 2909,
+  "OverordnetKode": 2909,
+}
+`;
+
+exports[`data/1_kildedata/NA_allekoder.json har antall rader 1`] = `1796`;
+
+exports[`data/1_kildedata/NA_allekoder.json har forventede nøkler 1`] = `
+Object {
+  "ElementKode": 1696,
+  "Kategori": 1796,
+  "Kode": 1796,
+  "Navn": 1796,
+  "OverordnetKode": 1796,
+}
+`;
+
+exports[`data/2_konvertering/MI_variasjon.json har antall rader 1`] = `2909`;
+
+exports[`data/2_konvertering/MI_variasjon.json har forventede nøkler 1`] = `
+Object {
+  "foreldre": 2909,
+  "kode": 2909,
+  "tittel": 2909,
+}
+`;
+
+exports[`data/2_konvertering/NA_hovedtyper.json har antall rader 1`] = `92`;
+
+exports[`data/2_konvertering/NA_hovedtyper.json har forventede nøkler 1`] = `
+Object {
+  "definisjonsgrunnlag": 92,
+  "kunnskap": 92,
+  "lkm": 92,
+  "nin1": 92,
+  "nivå": 92,
+  "prosedyrekategori": 92,
+}
+`;
+
+exports[`data/2_konvertering/NA_koder.json har antall rader 1`] = `1796`;
+
+exports[`data/2_konvertering/NA_koder.json har forventede nøkler 1`] = `
+Object {
+  "foreldre": 1796,
+  "tittel": 1796,
+}
+`;
