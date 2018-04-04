@@ -4,8 +4,9 @@ const path = require('path')
 const fetch = require('node-fetch')
 const log = require('./lib/log')
 const { findFiles } = require('./lib/io')
+const config = require('./config')
 
-log.logLevel = 4
+log.logLevel = config.logLevel
 
 function exec(jsFile) {
   log.i('Kjører ' + jsFile)
@@ -17,7 +18,10 @@ function exec(jsFile) {
   }
 }
 
-let files = findFiles('steg')
+let files = findFiles(config.lasteScriptPath)
 files = files.sort()
-console.log(files)
+log.v('Fant totalt ' + files.length + ' skriptfiler')
+log.d('Scriptfiler: ' + files)
+files = files.filter(file => file.indexOf('.test') < 0)
+log.i('Kjører ' + files.length + ' lastejobber...')
 files.forEach(file => exec(file))
