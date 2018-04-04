@@ -40,7 +40,6 @@ for (let kode of Object.keys(alle)) {
 
   if (overrides[kode]) node.foreldre = overrides[kode]
   noder[kode] = node
-  console.log(node)
   for (let forelder of node.foreldre) {
     if (!p2c[forelder]) p2c[forelder] = []
     p2c[forelder].push(node)

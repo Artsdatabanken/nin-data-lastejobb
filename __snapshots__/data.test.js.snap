@@ -62,13 +62,25 @@ Object {
 }
 `;
 
-exports[`data/3_sammenstill/NA_liste.json har antall rader 1`] = `3438`;
+exports[`data/3_sammenstill/NA_MI_liste.json har antall rader 1`] = `3438`;
 
-exports[`data/3_sammenstill/NA_liste.json har forventede nøkler 1`] = `
+exports[`data/3_sammenstill/NA_MI_liste.json har forventede nøkler 1`] = `
 Object {
   "foreldre": 3438,
   "infoUrl": 3438,
   "kode": 3438,
   "tittel": 3438,
+}
+`;
+
+exports[`data/3_sammenstill/NA_prosedyrekategori.json har antall rader 1`] = `17`;
+
+exports[`data/3_sammenstill/NA_prosedyrekategori.json har forventede nøkler 1`] = `
+Object {
+  "barn": 17,
+  "foreldre": 17,
+  "kode": 17,
+  "tittel": 17,
+  "undertittel": 17,
 }
 `;
