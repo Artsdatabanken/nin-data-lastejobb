@@ -1,12 +1,12 @@
 const path = require('path')
 const datakilde = require('./datakilde')
-
+const kodesystem = require('./kodesystem')
 const cachePath = './cache'
 const dataPath = './data'
 
 const config = {
   logLevel: 5,
-  rotkode: '~',
+  kodesystem: kodesystem,
   lasteScriptPath: './steg/',
   datakilde: datakilde,
   getCachePath: function(relPath) {
