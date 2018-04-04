@@ -5,4 +5,4 @@ const config = require('../../config')
 // TODO: Last data fra kildedata (Øyvind sitt Excel-ark?)
 
 // NA - Natursystem
-downloadJson2File(config.datakilde.nin_koder, config.getDataPath(__filename))
+downloadJson2File(config.datakilde.NA_koder, config.getDataPath(__filename))
