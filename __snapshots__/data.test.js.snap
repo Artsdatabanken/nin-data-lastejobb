@@ -61,3 +61,14 @@ Object {
   "0": 851,
 }
 `;
+
+exports[`data/3_sammenstill/NA_liste.json har antall rader 1`] = `3438`;
+
+exports[`data/3_sammenstill/NA_liste.json har forventede nøkler 1`] = `
+Object {
+  "foreldre": 3438,
+  "infoUrl": 3438,
+  "kode": 3438,
+  "tittel": 3438,
+}
+`;
