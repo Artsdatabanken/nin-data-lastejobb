@@ -4,6 +4,7 @@ const { erKartleggingsnivå } = require('../../lib/koder')
 const { capitalizeTittel } = require('../../lib/koder')
 
 let alleKoder = io.readJson(config.getDataPath('1_kildedata/NA_allekoder.json'))
+
 function kodefix(kode) {
   if (!kode) return kode
   return kode.toUpperCase().replace(' ', '_')

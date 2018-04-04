@@ -53,3 +53,11 @@ Object {
   "tittel": 1796,
 }
 `;
+
+exports[`data/2_konvertering/NA_overstyr_hierarki.json har antall rader 1`] = `851`;
+
+exports[`data/2_konvertering/NA_overstyr_hierarki.json har forventede nøkler 1`] = `
+Object {
+  "0": 851,
+}
+`;
