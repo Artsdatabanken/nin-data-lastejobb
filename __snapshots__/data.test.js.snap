@@ -73,6 +73,18 @@ Object {
 }
 `;
 
+exports[`data/3_sammenstill/NA_definisjonsgrunnlag.json har antall rader 1`] = `20`;
+
+exports[`data/3_sammenstill/NA_definisjonsgrunnlag.json har forventede nøkler 1`] = `
+Object {
+  "barn": 20,
+  "foreldre": 20,
+  "kode": 20,
+  "tittel": 20,
+  "undertittel": 20,
+}
+`;
+
 exports[`data/3_sammenstill/NA_prosedyrekategori.json har antall rader 1`] = `17`;
 
 exports[`data/3_sammenstill/NA_prosedyrekategori.json har forventede nøkler 1`] = `
