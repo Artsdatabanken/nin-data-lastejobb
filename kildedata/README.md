@@ -1,4 +1,4 @@
-## [bbox.json](./bbox.json)
+## [bbox.json](bbox.json)
 
 Axis-aligned bounding boxes. Ytterpunkter til rektangel som omslutter de kartdataene som finnes for kartlaget.
 
@@ -15,7 +15,7 @@ Axis-aligned bounding boxes. Ytterpunkter til rektangel som omslutter de kartdat
 
 * https://github.com/Artsdatabanken/grunnkart-dataflyt/...(TODO)
 
-## [farger.json](./farger.json)
+## [farger.json](farger.json)
 
 Én fargekode per tema. Brukes som standardfarge for kartlaget i kartet.
 
@@ -28,9 +28,32 @@ Axis-aligned bounding boxes. Ytterpunkter til rektangel som omslutter de kartdat
 
 ### Datakilde
 
-* Denne filen er master - vedlikeholdes manuelt
+* Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
+  * [farger.json](farger.json)
 
-## [NA_grunntyper.json](./NA_grunntyper.json)
+## [kodetre_nivå.json](kodetre_nivå.json)
+
+Inneholder navn på nivåene i de ulike kodetrærne.
+
+```json
+{
+  "NA": [
+    "Hovedtypegruppe",
+    "Hovedtype",
+    "Kartleggingsenhet 1:20000",
+    "Kartleggingsenhet 1:5000",
+    "Grunntype"
+  ],
+  "AO": ["Fylke", "Kommune"]
+}
+```
+
+### Datakilde
+
+* Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
+  * [kodetre_nivå.json](kodetre_nivå.json)
+
+## [NA_grunntyper.json](NA_grunntyper.json)
 
 Kobling mellom grunntyper (eks. _NA_T7-6_) og kartleggingsenheter (eks. _NA_T7-E-4_ (1:20000) eller _NA_T7-C-6_ (1:5000))
 
@@ -73,7 +96,7 @@ Beskrivelse av NiN hovedtyper, hvilke LKMer er de bygget opp av og kunnskap.
 
 ## [OR_datasett.json](OR_datasett.json)
 
-Kobling mellom dataleverandør og kartlag. Flere leverandører kan peke på samme kartlag. Leverandørene er definert i [OR_datasett.json](./OR_datasett.json).
+Kobling mellom dataleverandør og kartlag. Flere leverandører kan peke på samme kartlag. Leverandørene er definert i [OR_datasett.json](OR_datasett.json).
 
 ```json
 {
@@ -85,18 +108,19 @@ Kobling mellom dataleverandør og kartlag. Flere leverandører kan peke på samm
 
 ### Datakilde
 
-* Denne filen er master - Endringer legges inn i git
+* Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
+  * [kodetre_nivå.json](kodetre_nivå.json)
 
-## [OR_organisasjon](./OR_organisasjon.json)
+## [OR_datasett.json](OR_datasett.json)
 
 Beskrivelse av dataleverandører.
 
-| Nøkkel  | Beskrivelse                                  | Datatype                  |
-| ------- | -------------------------------------------- | ------------------------- |
-| kode    | Unik kode                                    | kode med prefiks \_OR\_\_ |
-| farge   | Den dominante fargen i leverandøren sin logo | css fargekode             |
-| tittel  | Navnet på dataleverandør                     | streng                    |
-| infoUrl | Leverandørens nettsted                       | url                       |
+| Nøkkel  | Beskrivelse                                  | Datatype              |
+| ------- | -------------------------------------------- | --------------------- |
+| kode    | Unik kode                                    | kode med prefiks OR\_ |
+| farge   | Den dominante fargen i leverandøren sin logo | css fargekode         |
+| tittel  | Navnet på dataleverandør                     | streng                |
+| infoUrl | Leverandørens nettsted                       | url                   |
 
 ```json
   "OR_MDIR": {
@@ -109,4 +133,5 @@ Beskrivelse av dataleverandører.
 
 ### Datakilde
 
-* Denne filen er master - Endringer legges inn i git
+* Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
+  * [OR_datasett.json](OR_datasett.json)
