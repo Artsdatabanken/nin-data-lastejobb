@@ -22,5 +22,11 @@
     "farge": "hsl(60, 7%, 8%)",
     "tittel": { "nb": "Norges Geologiske Undersøkelse" },
     "infoUrl": "https://www.ngu.no"
+  },
+  "OR_SSB": {
+    "kode": "OR_SSB",
+    "farge": "hsl(0, 0%, 0%)",
+    "tittel": { "nb": "Statistisk sentralbyrå", "en": "Statistics Norway" },
+    "infoUrl": "https://www.ssb.no"
   }
 }
