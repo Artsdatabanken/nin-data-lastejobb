@@ -62,6 +62,14 @@ Object {
 }
 `;
 
+exports[`data/2_konvertering/bbox.json har antall rader 1`] = `1033`;
+
+exports[`data/2_konvertering/bbox.json har forventede nøkler 1`] = `
+Object {
+  "bbox": 1033,
+}
+`;
+
 exports[`data/3_sammenstill/NA_MI_liste.json har antall rader 1`] = `3438`;
 
 exports[`data/3_sammenstill/NA_MI_liste.json har forventede nøkler 1`] = `
