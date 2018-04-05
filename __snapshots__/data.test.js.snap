@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`data/1_kildedata/AR_fylke.json har antall rader 1`] = `18`;
+
+exports[`data/1_kildedata/AR_fylke.json har forventede nøkler 1`] = `
+Object {
+  "kode": 18,
+  "tittel": 18,
+  "utenRamme": 18,
+}
+`;
+
 exports[`data/1_kildedata/AR_kommune.json har antall rader 1`] = `422`;
 
 exports[`data/1_kildedata/AR_kommune.json har forventede nøkler 1`] = `

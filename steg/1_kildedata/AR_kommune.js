@@ -73,4 +73,7 @@ importKommuner()
   .then(r => {
     io.writeJson(config.getDataPath(__filename), r)
   })
-  .catch(err => log.e(err))
+  .catch(err => {
+    log.e(err)
+    process.exit(99)
+  })
