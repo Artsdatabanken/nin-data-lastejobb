@@ -1,0 +1,9 @@
+{
+  "RL": { "kode": "RL", "tittel": { "nb": "Truet art/natur" } },
+  "RL_EN": { "kode": "RL_EN", "tittel": { "nb": "Sterkt truet" } },
+  "RL_VU": { "kode": "RL_VU", "tittel": { "nb": "Sårbar" } },
+  "RL_RE": { "kode": "RL_RE", "tittel": { "nb": "Regionalt utdødd" } },
+  "RL_NT": { "kode": "RL_NT", "tittel": { "nb": "Nær truet" } },
+  "RL_NA": { "kode": "RL_NA", "tittel": { "nb": "Ikke vurdert" } },
+  "RL_DD": { "kode": "RL_DD", "tittel": { "nb": "Datamangel" } }
+}
