@@ -1,0 +1,36 @@
+{
+  "~": { "kode": "~", "tittel": { "nb": "Økologisk grunnkart" } },
+  "AR": { "kode": "AR", "tittel": { "nb": "Art" } },
+  "NA": {
+    "kode": "NA",
+    "tittel": { "nb": "Natursystem" },
+    "infoUrl": "https://www.artsdatabanken.no/Pages/222921"
+  },
+  "MI": {
+    "kode": "MI",
+    "tittel": { "nb": "Miljø" },
+    "infoUrl": "https://artsdatabanken.no/Pages/179717",
+    "ingress":
+      "Lokale komplekse miljøvariabler (LKM) er definert som «variabler som hver består av flere enkeltmiljøvariabler som samvarierer i mer eller mindre sterk grad, og som gir opphav til variasjon i artssammensetning på relativt fin romlig skala og som har en virkning som vedvarer over relativt lang tid [typisk mer enn 100(–200) år]»"
+  },
+  "BS": { "kode": "BS", "tittel": { "nb": "Beskrivelse" } },
+  "AO": {
+    "kode": "AO",
+    "tittel": { "nb": "Fylke & kommune" },
+    "utenRamme": true
+  },
+  "OR": {
+    "kode": "OR",
+    "tittel": { "nb": "Datakilde" },
+    "utenRamme": true,
+    "ingress": "... tekst om dataleverandører..."
+  },
+  "meta": {
+    "tittel": "Andre koder",
+    "produsert": "2018-04-05T19:14:35.024Z",
+    "utgiver": "Artsdatabanken",
+    "url":
+      "https://firebasestorage.googleapis.com/v0/b/grunnkart.appspot.com/o/koder%2Fandre_koder.json?alt=media",
+    "elementer": 44
+  }
+}
