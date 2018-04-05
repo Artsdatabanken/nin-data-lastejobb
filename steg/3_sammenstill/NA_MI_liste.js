@@ -56,6 +56,8 @@ function leggTilBarn(node) {
 
 for (let kode of Object.keys(alle)) leggTilBarn(alle[kode])
 
-log.i('Fjernet ' + fjernet)
+log.d(
+  'Koder som ble fjernet fordi det er definert at de ikke skal med: ' + fjernet
+)
 
 io.writeJson(config.getDataPath(__filename), noder)
