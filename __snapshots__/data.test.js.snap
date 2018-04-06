@@ -60,17 +60,6 @@ Object {
 }
 `;
 
-exports[`data/1_kildedata/andre_koder.json har antall rader 1`] = `7`;
-
-exports[`data/1_kildedata/andre_koder.json har forventede nøkler 1`] = `
-Object {
-  "ingress": 1,
-  "kode": 7,
-  "tittel": 7,
-  "utenRamme": 2,
-}
-`;
-
 exports[`data/2_konvertering/MI_variasjon.json har antall rader 1`] = `2909`;
 
 exports[`data/2_konvertering/MI_variasjon.json har forventede nøkler 1`] = `
