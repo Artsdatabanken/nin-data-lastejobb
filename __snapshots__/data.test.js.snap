@@ -1,5 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`data/1_kildedata/AO_fylke.json har antall rader 1`] = `18`;
+
+exports[`data/1_kildedata/AO_fylke.json har forventede nøkler 1`] = `
+Object {
+  "kode": 18,
+  "tittel": 18,
+  "utenRamme": 18,
+}
+`;
+
+exports[`data/1_kildedata/AO_kommune.json har antall rader 1`] = `422`;
+
+exports[`data/1_kildedata/AO_kommune.json har forventede nøkler 1`] = `
+Object {
+  "kode": 422,
+  "tittel": 422,
+}
+`;
+
 exports[`data/1_kildedata/AR_fylke.json har antall rader 1`] = `18`;
 
 exports[`data/1_kildedata/AR_fylke.json har forventede nøkler 1`] = `
@@ -38,6 +57,17 @@ Object {
   "Kode": 1796,
   "Navn": 1796,
   "OverordnetKode": 1796,
+}
+`;
+
+exports[`data/1_kildedata/andre_koder.json har antall rader 1`] = `7`;
+
+exports[`data/1_kildedata/andre_koder.json har forventede nøkler 1`] = `
+Object {
+  "ingress": 1,
+  "kode": 7,
+  "tittel": 7,
+  "utenRamme": 2,
 }
 `;
 

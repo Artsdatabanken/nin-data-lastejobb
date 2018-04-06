@@ -18,7 +18,7 @@ function exec(jsFile) {
   }
 }
 
-let files = findFiles(config.lasteScriptPath)
+let files = findFiles(config.lasteScriptPath, '*.js')
 files = files.sort()
 log.v('Fant totalt ' + files.length + ' skriptfiler')
 log.d('Scriptfiler: ' + files)
