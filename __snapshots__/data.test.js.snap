@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`data/1_kildedata/AO_fylke.json har antall rader 1`] = `18`;
+exports[`data/1_nedlasting/AO_fylke.json har antall rader 1`] = `18`;
 
-exports[`data/1_kildedata/AO_fylke.json har forventede nøkler 1`] = `
+exports[`data/1_nedlasting/AO_fylke.json har forventede nøkler 1`] = `
 Object {
   "kode": 18,
   "tittel": 18,
@@ -10,37 +10,33 @@ Object {
 }
 `;
 
-exports[`data/1_kildedata/AO_kommune.json har antall rader 1`] = `422`;
+exports[`data/1_nedlasting/AO_kommune.json har antall rader 1`] = `422`;
 
-exports[`data/1_kildedata/AO_kommune.json har forventede nøkler 1`] = `
+exports[`data/1_nedlasting/AO_kommune.json har forventede nøkler 1`] = `
 Object {
   "kode": 422,
   "tittel": 422,
 }
 `;
 
-exports[`data/1_kildedata/AR_fylke.json har antall rader 1`] = `18`;
+exports[`data/1_nedlasting/AR_taxon.json har antall rader 1`] = `2`;
 
-exports[`data/1_kildedata/AR_fylke.json har forventede nøkler 1`] = `
+exports[`data/1_nedlasting/AR_taxon.json har forventede nøkler 1`] = `
 Object {
-  "kode": 18,
-  "tittel": 18,
-  "utenRamme": 18,
+  "AcceptedName": 2,
+  "Id": 2,
+  "PreferredVernacularName": 0,
+  "_": 0,
+  "dynamicProperties": 2,
+  "scientificNames": 2,
+  "taxonID": 2,
+  "vernacularNames": 2,
 }
 `;
 
-exports[`data/1_kildedata/AR_kommune.json har antall rader 1`] = `422`;
+exports[`data/1_nedlasting/MI_variasjon.json har antall rader 1`] = `2909`;
 
-exports[`data/1_kildedata/AR_kommune.json har forventede nøkler 1`] = `
-Object {
-  "kode": 422,
-  "tittel": 422,
-}
-`;
-
-exports[`data/1_kildedata/MI_variasjon.json har antall rader 1`] = `2909`;
-
-exports[`data/1_kildedata/MI_variasjon.json har forventede nøkler 1`] = `
+exports[`data/1_nedlasting/MI_variasjon.json har forventede nøkler 1`] = `
 Object {
   "Kode": 2909,
   "Navn": 2909,
@@ -48,9 +44,9 @@ Object {
 }
 `;
 
-exports[`data/1_kildedata/NA_allekoder.json har antall rader 1`] = `1796`;
+exports[`data/1_nedlasting/NA_allekoder.json har antall rader 1`] = `1796`;
 
-exports[`data/1_kildedata/NA_allekoder.json har forventede nøkler 1`] = `
+exports[`data/1_nedlasting/NA_allekoder.json har forventede nøkler 1`] = `
 Object {
   "ElementKode": 1696,
   "Kategori": 1796,
@@ -59,6 +55,22 @@ Object {
   "OverordnetKode": 1796,
 }
 `;
+
+exports[`data/1_nedlasting/NA_koder.json har antall rader 1`] = `1796`;
+
+exports[`data/1_nedlasting/NA_koder.json har forventede nøkler 1`] = `
+Object {
+  "ElementKode": 1696,
+  "Kategori": 1796,
+  "Kode": 1796,
+  "Navn": 1796,
+  "OverordnetKode": 1796,
+}
+`;
+
+exports[`data/2_konvertering/AR_diagnostiske_arter.json har antall rader 1`] = `0`;
+
+exports[`data/2_konvertering/AR_diagnostiske_arter.json har forventede nøkler 1`] = `Object {}`;
 
 exports[`data/2_konvertering/MI_variasjon.json har antall rader 1`] = `2909`;
 
