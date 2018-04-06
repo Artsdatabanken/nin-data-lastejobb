@@ -2,7 +2,7 @@ const io = require('../../lib/io')
 const config = require('../../config')
 const { erKartleggingsnivå, capitalizeTittel } = require('../../lib/koder')
 
-let koder = io.readJson(config.getDataPath('1_kildedata/MI_variasjon.json'))
+let koder = io.readJson(config.getDataPath('1_nedlasting/MI_variasjon.json'))
 
 function kodefix(kode) {
   if (!kode) return kode

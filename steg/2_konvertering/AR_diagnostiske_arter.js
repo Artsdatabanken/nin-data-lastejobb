@@ -1,0 +1,70 @@
+const io = require('../../lib/io')
+const log = require('../../lib/log')
+const config = require('../../config')
+const { kodkode, splittKode, lookup } = require('../../lib/koder')
+const koder = require('../../lib/koder')
+
+log.logLevel = 6
+
+let diagArt = io.readJson(config.datakilde.NA_diagnostisk_art)
+let arter = io.readJson(config.getDataPath('1_nedlasting/AR_taxon.json'))
+let nin_liste = io.readJson(config.getDataPath('1_nedlasting/NA_koder.json'))
+
+let r = {}
+
+function linkOne(nodeFra, nodeTil, funksjon, tag) {
+  const variabel = funksjon
+    .replace(tag, '')
+    .replace('[', '')
+    .replace(']', '')
+
+  const kodeFra = nodeFra.kode
+  const kodeTil = nodeTil.kode
+  if (!r[kodeFra]) r[kodeFra] = { relasjon: {} }
+  const relasjon = r[kodeFra].relasjon
+  if (!relasjon[tag]) relasjon[tag] = {}
+  relasjon[tag][kodeTil] = {
+    kode: kodeTil,
+    tittel: nodeTil.tittel,
+    variabel: variabel
+  }
+}
+
+function linkBoth(node1, node2, funksjon, tag) {
+  if (!tag) return
+  if (!funksjon) return
+  tag = tag.trim().replace(' ', '_')
+  funksjon = funksjon.trim()
+  linkOne(node1, node2, funksjon, tag)
+  linkOne(node2, node1, funksjon, tag)
+}
+
+let ukjenteKoder = {}
+Object.keys(diagArt).forEach(key => {
+  const art = diagArt[key]
+  const hovedtype =
+    config.kodesystem.prefix.natursystem + art.Kartleggingsenhet.split('-')[0]
+  const na_kode =
+    config.kodesystem.prefix.natursystem + art.Kartleggingsenhet.trim()
+  if (!nin_liste[na_kode])
+    ukjenteKoder[na_kode] = ukjenteKoder[na_kode]
+      ? ukjenteKoder[na_kode] + 1
+      : 1
+  else {
+    const idkode = koder.artskode(art.scientificNameID, art.Scientificname)
+    if (arter[idkode]) {
+      //      const tx_kode = arter[idkode].se
+      const na = nin_liste[na_kode]
+      tx = arter[idkode]
+      if (tx.se) tx = arter[tx.se]
+      let e = {}
+      linkBoth(na, tx, art['Funksjon1'], art['tags1'])
+      linkBoth(na, tx, art['Funksjon2'], art['tags2'])
+      linkBoth(na, tx, art['Funksjon3'], art['tags3'])
+      linkBoth(na, tx, art['Funksjon 4'], art['tags4'])
+    } else log.w('Fant ikke art ' + idkode)
+  }
+})
+
+log.w('Ukjente koder', ukjenteKoder)
+io.writeJson(config.getDataPath(__filename), r)

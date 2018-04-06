@@ -1,6 +1,6 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/Artsdatabanken/kverna.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/Artsdatabanken/kverna.svg?branch=master)](https://travis-ci.org/Artsdatabanken/kverna)
-[![Dependencies](https://david-dm.org/artsdatabanken/kverna.svg)
+[![Dependencies](https://david-dm.org/artsdatabanken/kverna.svg)](https://david-dm.org)
 [![Greenkeeper badge](https://badges.greenkeeper.io/Artsdatabanken/kverna.svg)](https://greenkeeper.io/)
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)

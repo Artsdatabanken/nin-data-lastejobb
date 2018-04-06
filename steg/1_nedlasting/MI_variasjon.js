@@ -5,4 +5,9 @@ const config = require('../../config')
 // TODO: Last data fra kildedata (Øyvind sitt Excel-ark?)
 
 //BS,MI - Beskrivelsessystem og miljøvariabler
-downloadJson2File(config.datakilde.MI_variasjon, config.getDataPath(__filename))
+downloadJson2File(
+  config.datakilde.MI_variasjon,
+  config.getDataPath(__filename)
+).catch(err => {
+  process.exit(99)
+})
