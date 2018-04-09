@@ -1,30 +1,25 @@
 {
   "OR_ADB": {
-    "kode": "OR_ADB",
     "farge": "hsl(24, 100%, 50%)",
     "tittel": { "nb": "Artsdatabanken" },
     "infoUrl": "https://www.artsdatabanken.no"
   },
   "OR_KV": {
-    "kode": "OR_KV",
     "farge": "hsl(209, 98%, 33%)",
     "tittel": { "nb": "Kartverket" },
     "infoUrl": "https://www.kartverket.no"
   },
   "OR_MDIR": {
-    "kode": "OR_MDIR",
     "farge": "hsl(177, 93%, 24%)",
     "tittel": { "nb": "Miljødirektoratet" },
     "infoUrl": "https://www.miljodirektoratet.no"
   },
   "OR_NGU": {
-    "kode": "OR_NGU",
     "farge": "hsl(60, 7%, 8%)",
     "tittel": { "nb": "Norges Geologiske Undersøkelse" },
     "infoUrl": "https://www.ngu.no"
   },
   "OR_SSB": {
-    "kode": "OR_SSB",
     "farge": "hsl(0, 0%, 0%)",
     "tittel": { "nb": "Statistisk sentralbyrå", "en": "Statistics Norway" },
     "infoUrl": "https://www.ssb.no"

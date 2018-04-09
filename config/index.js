@@ -1,25 +1,24 @@
-if (!process.env.DEBUG) process.env.DEBUG = '*'
-const path = require('path')
-const datakilde = require('./datakilde')
-const kodesystem = require('./kodesystem')
-const cachePath = './cache'
+if (!process.env.DEBUG) process.env.DEBUG = "*"
+const path = require("path")
+const datakilde = require("./datakilde")
+const kodesystem = require("./kodesystem")
+const cachePath = "./cache"
 
 const config = {
   kodesystem: kodesystem,
-  lasteScriptPath: './steg/',
+  lasteScriptPath: "./steg/",
   datakilde: datakilde,
   infoUrl: {
-    nin: 'https://www.artsdatabanken.no/NiN2.0/'
+    nin: "https://www.artsdatabanken.no/NiN2.0/"
   },
+  kildedataPath: "./kildedata",
   getCachePath: function(relPath) {
-    return cachePath + '/' + relPath + '/'
+    return cachePath + "/" + relPath + "/"
   },
-  dataRoot: './data',
-  getDataPath: function(relPath, extension = '.json') {
-    let i = relPath.lastIndexOf('/')
-    i = relPath.lastIndexOf('/', i - 1)
-    const stegOgNavn = relPath.substring(i).replace(/.js$/, extension)
-    return this.dataRoot + '/' + stegOgNavn.replace('.test', '')
+  dataRoot: "./data",
+  getDataPath: function(relPath, extension = ".json") {
+    const filename = path.basename(relPath, path.extname(relPath)) + extension
+    return this.dataRoot + "/" + filename.replace(".test", "")
   }
 }
 

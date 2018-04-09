@@ -1,13 +1,13 @@
-const io = require('../../lib/io')
-const config = require('../../config')
-const { erKartleggingsnivå } = require('../../lib/koder')
-const { hovedtype } = require('../../lib/koder')
+const io = require("../../lib/io")
+const config = require("../../config")
+const { erKartleggingsnivå } = require("../../lib/koder")
+const { hovedtype } = require("../../lib/koder")
 
 // Grunntyper (eksempel NA_T1-1) henger i kodelista på hovedtypen (NA_T)
 // Vi ønsker følgende struktur NA_T -> NA_T1 -> NA_T1-E-1 -> NA_T1-C-1 -> NA_T1-1
 // Dette for at grovere nivåer da tar med seg mer spesifikke data og viser også disse dataene.
 
-let grunntyper = io.readJson(config.datakilde.NA_grunntyper)
+let grunntyper = io.lesKildedatafil(config.datakilde.NA_grunntyper)
 
 let foreldre = {}
 
@@ -47,4 +47,4 @@ for (let ckode of Object.keys(grunntyper)) {
   }
 }
 
-io.writeJson(config.getDataPath(__filename), foreldre)
+io.skrivDatafil(__filename, foreldre)

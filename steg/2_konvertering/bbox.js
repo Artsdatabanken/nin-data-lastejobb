@@ -1,13 +1,13 @@
-const io = require('../../lib/io')
-const config = require('../../config')
+const io = require("../../lib/io")
+const config = require("../../config")
 
-let bboxIn = io.readJson(config.datakilde.bbox)
+let bboxIn = io.lesKildedatafil(config.datakilde.bbox)
 
 function prefixedKode(kode) {
   kode = kode.toUpperCase()
-  if (kode[2] === '_') return kode
-  if ('0123456789'.indexOf(kode[0]) >= 0) return 'BS_' + kode
-  return 'MI_' + kode
+  if (kode[2] === "_") return kode
+  if ("0123456789".indexOf(kode[0]) >= 0) return "BS_" + kode
+  return "MI_" + kode
 }
 
 let bbox = {}
@@ -32,4 +32,4 @@ for (let kode of Object.keys(bbox)) {
   }
 }
 
-io.writeJson(config.getDataPath(__filename), r)
+io.skrivDatafil(__filename, r)
