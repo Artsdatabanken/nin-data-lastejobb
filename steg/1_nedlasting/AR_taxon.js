@@ -1,8 +1,8 @@
-const http = require('../../lib/http')
-const config = require('../../config')
-const log = require('../../lib/log')
-
-config.logLevel = 5
+if (!process.env.DEBUG) process.env.DEBUG = "*";
+const path = require("path");
+const http = require("../../lib/http");
+const config = require("../../config");
+const log = require("log-less-fancy")();
 
 // Laster ned arter fra Artsdatabanken sitt API
 http
@@ -11,9 +11,9 @@ http
     config.getDataPath(__filename)
   )
   .catch(err => {
-    log.e(err)
-    process.exit(99)
-  })
+    log.error(err);
+    process.exit(99);
+  });
 
 if (false)
   http
@@ -22,6 +22,6 @@ if (false)
       config.getDataPath(__filename)
     )
     .catch(err => {
-      log.e(err)
-      process.exit(99)
-    })
+      log.error(err);
+      process.exit(99);
+    });

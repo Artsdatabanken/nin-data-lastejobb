@@ -25,7 +25,7 @@ exports[`data/1_nedlasting/AR_taxon.json har forventede nøkler 1`] = `
 Object {
   "AcceptedName": 2,
   "Id": 2,
-  "PreferredVernacularName": 0,
+  "PreferredVernacularName": 2,
   "_": 0,
   "dynamicProperties": 2,
   "scientificNames": 2,

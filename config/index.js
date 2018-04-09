@@ -1,10 +1,10 @@
+if (!process.env.DEBUG) process.env.DEBUG = '*'
 const path = require('path')
 const datakilde = require('./datakilde')
 const kodesystem = require('./kodesystem')
 const cachePath = './cache'
 
 const config = {
-  logLevel: 5,
   kodesystem: kodesystem,
   lasteScriptPath: './steg/',
   datakilde: datakilde,
