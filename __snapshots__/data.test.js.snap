@@ -161,28 +161,3 @@ Object {
   "OverordnetKode": 1796,
 }
 `;
-
-exports[`data/inn_taxon.json har antall rader 1`] = `2`;
-
-exports[`data/inn_taxon.json har forventede nøkler 1`] = `
-Object {
-  "AcceptedName": 2,
-  "Id": 2,
-  "PreferredVernacularName": 2,
-  "_": 0,
-  "dynamicProperties": 2,
-  "scientificNames": 2,
-  "taxonID": 2,
-  "vernacularNames": 2,
-}
-`;
-
-exports[`data/inn_variasjon.json har antall rader 1`] = `2909`;
-
-exports[`data/inn_variasjon.json har forventede nøkler 1`] = `
-Object {
-  "Kode": 2909,
-  "Navn": 2909,
-  "OverordnetKode": 2909,
-}
-`;

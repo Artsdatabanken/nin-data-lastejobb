@@ -9,7 +9,7 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
-let taxons = io.lesDatafil("inn_taxon")
+let taxons = io.lesDatafil("inn_ar_taxon")
 
 let taxon2Data = {}
 taxons.forEach(tx => {
