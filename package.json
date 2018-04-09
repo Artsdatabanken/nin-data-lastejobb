@@ -5,23 +5,41 @@
   "main": "index.js",
   "scripts": {
     "build": "node kjør_alle_lastejobber",
-    "test": "jest"
+    "test": "jest",
+    "flow": "flow",
+    "precommit": "pretty-quick --staged",
+    "flow:check": "flow check ./src/",
+    "run": "node kjør_alle_lastejobber"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bjornreppen/kverna.git"
   },
-  "author": "Bjorn Reppen <bjornreppen@users.noreply.github.com> (https://github.com/bjornreppen)",
+  "author":
+    "Bjorn Reppen <bjornreppen@users.noreply.github.com> (https://github.com/bjornreppen)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bjornreppen/kverna/issues"
   },
   "homepage": "https://github.com/bjornreppen/kverna#readme",
   "dependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint-config-airbnb-base": "^12.1.0",
     "fs-extra": "^5.0.0",
+    "log-less-fancy": "^1.3.3",
     "node-fetch": "^2.1.2"
   },
   "devDependencies": {
-    "jest": "^22.4.3"
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.19.1",
+    "flow-bin": "^0.69.0",
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "lint-staged": "^7.0.4",
+    "prettier": "^1.11.1",
+    "pretty-quick": "^1.4.1"
   }
 }
