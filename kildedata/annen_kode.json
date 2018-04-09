@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "tittel": "Andre koder",
+    "produsert": "2018-04-09T14:03:57.416Z",
+    "utgiver": "Artsdatabanken",
+    "url":
+      "https://firebasestorage.googleapis.com/v0/b/grunnkart.appspot.com/o/koder%2Fandre_koder.json?alt=media",
+    "elementer": 44
+  },
+  "~": { "tittel": { "nb": "Økologisk grunnkart" } },
+  "AR": { "tittel": { "nb": "Art" } },
+  "NA": {
+    "tittel": { "nb": "Natursystem" },
+    "infoUrl": "https://www.artsdatabanken.no/Pages/222921"
+  },
+  "MI": {
+    "tittel": { "nb": "Miljø" },
+    "infoUrl": "https://artsdatabanken.no/Pages/179717",
+    "ingress":
+      "Lokale komplekse miljøvariabler (LKM) er definert som «variabler som hver består av flere enkeltmiljøvariabler som samvarierer i mer eller mindre sterk grad, og som gir opphav til variasjon i artssammensetning på relativt fin romlig skala og som har en virkning som vedvarer over relativt lang tid [typisk mer enn 100(–200) år]»"
+  },
+  "BS": { "tittel": { "nb": "Beskrivelse" } },
+  "AO": { "tittel": { "nb": "Fylke & kommune" }, "utenRamme": true },
+  "OR": {
+    "tittel": { "nb": "Datakilde" },
+    "utenRamme": true,
+    "ingress": "... tekst om dataleverandører..."
+  },
+  "RL": { "tittel": { "nb": "Truet art/natur" } },
+  "LI": { "tittel": { "nb": "Livsmedium" } },
+  "RL_EN": { "tittel": { "nb": "Sterkt truet" } },
+  "RL_VU": { "tittel": { "nb": "Sårbar" } },
+  "RL_RE": { "tittel": { "nb": "Regionalt utdødd" } },
+  "RL_NT": { "tittel": { "nb": "Nær truet" } },
+  "RL_NA": { "tittel": { "nb": "Ikke vurdert" } },
+  "RL_DD": { "tittel": { "nb": "Datamangel" } },
+  "FA": { "tittel": { "nb": "Fremmed art" } },
+  "FA_SE": { "tittel": { "nb": "Svært høy risiko" } },
+  "FA_HI": { "tittel": { "nb": "Høy risiko" } },
+  "FA_PH": { "tittel": { "nb": "Potensielt høy risiko" } },
+  "FA_LO": { "tittel": { "nb": "Lav risiko" } },
+  "FA_NK": { "tittel": { "nb": "Ingen kjent risiko" } },
+  "LI_MS": { "tittel": { "nb": "Substrat i marine systemer" } },
+  "LI_MS-M7": { "tittel": { "nb": "Dødt plantemateriale i marine systemer" } },
+  "LI_TS": { "tittel": { "nb": "Substrat på land" } },
+  "LI_TS-T3": { "tittel": { "nb": "Organisk jord" } },
+  "LI_TS-T4": { "tittel": { "nb": "Levende planter på land" } },
+  "LI_TS-T6": { "tittel": { "nb": "Ved-livsmedier" } },
+  "LI_TS-T10": { "tittel": { "nb": "Dødt plantemateriale" } },
+  "LI_TS-T10_M7": {
+    "tittel": { "nb": "Dødt plantemateriale i marine systemer" }
+  },
+  "NA_HT": { "tittel": { "nb": "Hovedtyper" } },
+  "NA_HT-KG": {
+    "tittel": { "nb": "Kunnskapsgrunnlag om hovedtypen generelt" }
+  },
+  "NA_HT-KG-GI": {
+    "tittel": { "nb": "Kunnskapsgrunnlag om grunntypeinndelingen" }
+  },
+  "NA_HT-KG-GI1": { "tittel": { "nb": "1" } },
+  "NA_HT-KG-GI2": { "tittel": { "nb": "2" } },
+  "NA_HT-KG-GI3": { "tittel": { "nb": "3" } },
+  "NA_HT-KG-GI4": { "tittel": { "nb": "4" } },
+  "NA_HT-KG-GI5": { "tittel": { "nb": "5" } },
+  "NA_HT-KG1": { "tittel": { "nb": "1" } },
+  "NA_HT-KG2": { "tittel": { "nb": "2" } },
+  "NA_HT-KG3": { "tittel": { "nb": "3" } },
+  "NA_HT-KG4": { "tittel": { "nb": "4" } },
+  "NA_HT-KG5": { "tittel": { "nb": "5" } },
+  "NA_HT-PK": { "tittel": { "nb": "Prosedyrekategori" } },
+  "NA_HT-DG": { "tittel": { "nb": "Definisjonsgrunnlag" } }
+}

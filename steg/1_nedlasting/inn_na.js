@@ -1,13 +1,13 @@
-const { downloadJson2File } = require('../../lib/http')
-const config = require('../../config')
+const { downloadJson2File } = require("../../lib/http")
+const config = require("../../config")
 
 // Laster ned NiN koder fra obsolete kodetjeneste og lagrer lokalt
 // TODO: Last data fra kildedata (Øyvind sitt Excel-ark?)
 
-//BS,MI - Beskrivelsessystem og miljøvariabler
+// NA - Natursystem
 downloadJson2File(
-  config.datakilde.MI_variasjon,
+  config.datakilde.NA_koder,
   config.getDataPath(__filename)
 ).catch(err => {
-  process.exit(99)
+  log.fatal(err)
 })

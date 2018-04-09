@@ -1,11 +1,9 @@
-const config = require('../../config')
-const io = require('../../lib/io')
+const config = require("../../config")
+const io = require("../../lib/io")
 
-let hovedtyper = io.readJson(
-  config.getDataPath('2_konvertering/NA_hovedtyper.json')
-)
+let hovedtyper = io.lesDatafil("NA_hovedtype")
 
-r = {}
+const r = {}
 
 Object.keys(hovedtyper).forEach(kode => {
   const hovedtype = hovedtyper[kode]
@@ -14,10 +12,9 @@ Object.keys(hovedtyper).forEach(kode => {
   if (!r[pkkode])
     r[pkkode] = {
       foreldre: [config.kodesystem.prefix.prosedyrekategori],
-      kode: kode,
       tittel: pk.tittel,
       undertittel: {
-        nb: 'Prosedyrekategori'
+        nb: "Prosedyrekategori"
       },
       barn: []
     }
@@ -25,4 +22,4 @@ Object.keys(hovedtyper).forEach(kode => {
   r[pkkode].barn.push(kode)
 })
 
-io.writeJson(config.getDataPath(__filename), r)
+io.skrivDatafil(__filename, r)

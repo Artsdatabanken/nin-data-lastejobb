@@ -1,27 +1,133 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`data/1_nedlasting/AO_fylke.json har antall rader 1`] = `18`;
+exports[`data/AO_fylke.json har antall rader 1`] = `18`;
 
-exports[`data/1_nedlasting/AO_fylke.json har forventede nøkler 1`] = `
+exports[`data/AO_fylke.json har forventede nøkler 1`] = `
 Object {
-  "kode": 18,
   "tittel": 18,
   "utenRamme": 18,
 }
 `;
 
-exports[`data/1_nedlasting/AO_kommune.json har antall rader 1`] = `422`;
+exports[`data/AO_kommune.json har antall rader 1`] = `422`;
 
-exports[`data/1_nedlasting/AO_kommune.json har forventede nøkler 1`] = `
+exports[`data/AO_kommune.json har forventede nøkler 1`] = `
 Object {
-  "kode": 422,
   "tittel": 422,
 }
 `;
 
-exports[`data/1_nedlasting/AR_taxon.json har antall rader 1`] = `2`;
+exports[`data/AR_diagnostisk_art.json har antall rader 1`] = `0`;
 
-exports[`data/1_nedlasting/AR_taxon.json har forventede nøkler 1`] = `
+exports[`data/AR_diagnostisk_art.json har forventede nøkler 1`] = `Object {}`;
+
+exports[`data/AR_taxon.json har antall rader 1`] = `2`;
+
+exports[`data/AR_taxon.json har forventede nøkler 1`] = `
+Object {
+  "foreldre": 2,
+  "infoUrl": 2,
+  "navnSciId": 2,
+  "relasjon": 2,
+  "taxonId": 2,
+  "taxonIdParent": 2,
+  "tittel": 2,
+  "url": 2,
+}
+`;
+
+exports[`data/MI_variasjon.json har antall rader 1`] = `2909`;
+
+exports[`data/MI_variasjon.json har forventede nøkler 1`] = `
+Object {
+  "foreldre": 2909,
+  "tittel": 2909,
+}
+`;
+
+exports[`data/NA_MI_liste.json har antall rader 1`] = `3438`;
+
+exports[`data/NA_MI_liste.json har forventede nøkler 1`] = `
+Object {
+  "foreldre": 2915,
+  "infoUrl": 3438,
+  "tittel": 3438,
+}
+`;
+
+exports[`data/NA_definisjonsgrunnlag.json har antall rader 1`] = `20`;
+
+exports[`data/NA_definisjonsgrunnlag.json har forventede nøkler 1`] = `
+Object {
+  "barn": 20,
+  "foreldre": 20,
+  "tittel": 20,
+  "undertittel": 20,
+}
+`;
+
+exports[`data/NA_hovedtype.json har antall rader 1`] = `92`;
+
+exports[`data/NA_hovedtype.json har forventede nøkler 1`] = `
+Object {
+  "definisjonsgrunnlag": 92,
+  "kunnskap": 92,
+  "lkm": 92,
+  "nin1": 92,
+  "nivå": 92,
+  "prosedyrekategori": 92,
+}
+`;
+
+exports[`data/NA_kode.json har antall rader 1`] = `1796`;
+
+exports[`data/NA_kode.json har forventede nøkler 1`] = `
+Object {
+  "tittel": 1796,
+}
+`;
+
+exports[`data/NA_overstyr_hierarki.json har antall rader 1`] = `851`;
+
+exports[`data/NA_overstyr_hierarki.json har forventede nøkler 1`] = `
+Object {
+  "0": 851,
+}
+`;
+
+exports[`data/NA_prosedyrekategori.json har antall rader 1`] = `17`;
+
+exports[`data/NA_prosedyrekategori.json har forventede nøkler 1`] = `
+Object {
+  "barn": 17,
+  "foreldre": 17,
+  "tittel": 17,
+  "undertittel": 17,
+}
+`;
+
+exports[`data/bbox.json har antall rader 1`] = `1033`;
+
+exports[`data/bbox.json har forventede nøkler 1`] = `
+Object {
+  "bbox": 1033,
+}
+`;
+
+exports[`data/flett_data.json har antall rader 1`] = `3963`;
+
+exports[`data/flett_data.json har forventede nøkler 1`] = `
+Object {
+  "barn": 37,
+  "foreldre": 3031,
+  "tittel": 3963,
+  "undertittel": 37,
+}
+`;
+
+exports[`data/inn_ar_taxon.json har antall rader 1`] = `2`;
+
+exports[`data/inn_ar_taxon.json har forventede nøkler 1`] = `
 Object {
   "AcceptedName": 2,
   "Id": 2,
@@ -34,9 +140,9 @@ Object {
 }
 `;
 
-exports[`data/1_nedlasting/MI_variasjon.json har antall rader 1`] = `2909`;
+exports[`data/inn_mi.json har antall rader 1`] = `2909`;
 
-exports[`data/1_nedlasting/MI_variasjon.json har forventede nøkler 1`] = `
+exports[`data/inn_mi.json har forventede nøkler 1`] = `
 Object {
   "Kode": 2909,
   "Navn": 2909,
@@ -44,101 +150,14 @@ Object {
 }
 `;
 
-exports[`data/1_nedlasting/NA_koder.json har antall rader 1`] = `1796`;
+exports[`data/inn_na.json har antall rader 1`] = `1796`;
 
-exports[`data/1_nedlasting/NA_koder.json har forventede nøkler 1`] = `
+exports[`data/inn_na.json har forventede nøkler 1`] = `
 Object {
   "ElementKode": 1696,
   "Kategori": 1796,
   "Kode": 1796,
   "Navn": 1796,
   "OverordnetKode": 1796,
-}
-`;
-
-exports[`data/2_konvertering/AR_diagnostiske_arter.json har antall rader 1`] = `0`;
-
-exports[`data/2_konvertering/AR_diagnostiske_arter.json har forventede nøkler 1`] = `Object {}`;
-
-exports[`data/2_konvertering/MI_variasjon.json har antall rader 1`] = `2909`;
-
-exports[`data/2_konvertering/MI_variasjon.json har forventede nøkler 1`] = `
-Object {
-  "foreldre": 2909,
-  "kode": 2909,
-  "tittel": 2909,
-}
-`;
-
-exports[`data/2_konvertering/NA_hovedtyper.json har antall rader 1`] = `92`;
-
-exports[`data/2_konvertering/NA_hovedtyper.json har forventede nøkler 1`] = `
-Object {
-  "definisjonsgrunnlag": 92,
-  "kunnskap": 92,
-  "lkm": 92,
-  "nin1": 92,
-  "nivå": 92,
-  "prosedyrekategori": 92,
-}
-`;
-
-exports[`data/2_konvertering/NA_koder.json har antall rader 1`] = `1796`;
-
-exports[`data/2_konvertering/NA_koder.json har forventede nøkler 1`] = `
-Object {
-  "foreldre": 1796,
-  "tittel": 1796,
-}
-`;
-
-exports[`data/2_konvertering/NA_overstyr_hierarki.json har antall rader 1`] = `851`;
-
-exports[`data/2_konvertering/NA_overstyr_hierarki.json har forventede nøkler 1`] = `
-Object {
-  "0": 851,
-}
-`;
-
-exports[`data/2_konvertering/bbox.json har antall rader 1`] = `1033`;
-
-exports[`data/2_konvertering/bbox.json har forventede nøkler 1`] = `
-Object {
-  "bbox": 1033,
-}
-`;
-
-exports[`data/3_sammenstill/NA_MI_liste.json har antall rader 1`] = `3438`;
-
-exports[`data/3_sammenstill/NA_MI_liste.json har forventede nøkler 1`] = `
-Object {
-  "foreldre": 3438,
-  "infoUrl": 3438,
-  "kode": 3438,
-  "tittel": 3438,
-}
-`;
-
-exports[`data/3_sammenstill/NA_definisjonsgrunnlag.json har antall rader 1`] = `20`;
-
-exports[`data/3_sammenstill/NA_definisjonsgrunnlag.json har forventede nøkler 1`] = `
-Object {
-  "barn": 20,
-  "foreldre": 20,
-  "kode": 20,
-  "tittel": 20,
-  "undertittel": 20,
-}
-`;
-
-exports[`data/3_sammenstill/NA_prosedyrekategori.json har antall rader 1`] = `17`;
-
-exports[`data/3_sammenstill/NA_prosedyrekategori.json har forventede nøkler 1`] = `
-Object {
-  "barn": 17,
-  "foreldre": 17,
-  "kode": 17,
-  "tittel": 17,
-  "undertittel": 17,
 }
 `;
