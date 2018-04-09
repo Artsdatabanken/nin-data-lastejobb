@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "node kjør_alle_lastejobber",
     "test": "jest",
     "flow": "flow",
     "precommit": "pretty-quick --staged",
