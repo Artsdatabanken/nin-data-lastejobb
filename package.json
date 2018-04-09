@@ -6,15 +6,16 @@
   "scripts": {
     "test": "jest",
     "flow": "flow",
+    "precommit": "pretty-quick --staged",
     "flow:check": "flow check ./src/",
-    "build": "babel src -d lib",
     "run": "node kjør_alle_lastejobber"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bjornreppen/kverna.git"
   },
-  "author": "Bjorn Reppen <bjornreppen@users.noreply.github.com> (https://github.com/bjornreppen)",
+  "author":
+    "Bjorn Reppen <bjornreppen@users.noreply.github.com> (https://github.com/bjornreppen)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bjornreppen/kverna/issues"
@@ -34,6 +35,10 @@
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.19.1",
     "flow-bin": "^0.69.0",
-    "jest": "^22.4.3"
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "lint-staged": "^7.0.4",
+    "prettier": "^1.11.1",
+    "pretty-quick": "^1.4.1"
   }
 }
