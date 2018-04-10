@@ -1,0 +1,16 @@
+{
+  "AO": {
+    "MI_KA": {
+      "funksjon": "sum",
+      "felt": "areal"
+    },
+    "NA": {
+      "funksjon": "sum",
+      "felt": "areal"
+    },
+    "AR": {
+      "funksjon": "distinct_count",
+      "felt": "kode"
+    }
+  }
+}
