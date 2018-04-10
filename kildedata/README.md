@@ -135,3 +135,32 @@ Beskrivelse av dataleverandører.
 
 * Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
   * [OR_datasett.json](OR_datasett.json)
+
+# [statistikk.json](statistikk.json)
+
+Konfigurasjon av hva slags statistikk som skal publiseres for ulike lag.
+
+| Nøkkel   | Beskrivelse                                                  |
+| -------- | ------------------------------------------------------------ |
+| funksjon | Matematisk funksjon (**sum**, **count**, **distinct_count**) |
+| felt     | Feltet funksjonen skal lese fra, eksempel **areal**          |
+
+Eksempel: Summer antall ulike arter i hvert geografisk område (AO) og areal av de ulike hovedtyper i natursystem. NA\_\*
+
+```json
+  "AO": {
+    "NA": {
+      "funksjon": "sum",
+      "felt": "areal"
+    },
+    "AR": {
+      "funksjon": "distinct_count",
+      "felt": "kode"
+    }
+  }
+```
+
+### Datakilde
+
+* Denne filen er originalen - vedlikeholdes her
+  * [statistikk.json](statistikk.json)
