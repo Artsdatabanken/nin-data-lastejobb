@@ -107,6 +107,17 @@ Object {
 }
 `;
 
+exports[`data/flett_data.json har antall rader 1`] = `3963`;
+
+exports[`data/flett_data.json har forventede nøkler 1`] = `
+Object {
+  "barn": 37,
+  "foreldre": 3031,
+  "tittel": 3963,
+  "undertittel": 37,
+}
+`;
+
 exports[`data/inn_ao_fylke.json har antall rader 1`] = `18`;
 
 exports[`data/inn_ao_fylke.json har forventede nøkler 1`] = `
