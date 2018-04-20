@@ -35,8 +35,8 @@ function settHvisEksisterer(kilde, mål, nøkkel) {
 }
 
 flettKildedata("annen_kode")
-flett("AO_fylke")
-flett("AO_kommune")
+flett("inn_ao_fylke")
+flett("inn_ao_kommune")
 flettKildedata("OR_organisasjon")
 flett("AR_diagnostisk_art")
 flett("NA_hovedtype")
