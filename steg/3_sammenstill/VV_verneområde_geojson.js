@@ -9,8 +9,8 @@ let r = {}
 
 function leggTilOmråde(o) {
   const id = o.properties.IID
-  log.info(id)
-  log.debug(o)
+  //  log.info(id)
+  //  log.debug(o)
   r[id] = o
 }
 

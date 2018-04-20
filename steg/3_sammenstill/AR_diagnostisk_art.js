@@ -64,7 +64,7 @@ Object.keys(diagArt).forEach(key => {
       linkBoth(na, tx, art["Funksjon2"], art["tags2"])
       linkBoth(na, tx, art["Funksjon3"], art["tags3"])
       linkBoth(na, tx, art["Funksjon 4"], art["tags4"])
-    } else log.warn("Fant ikke art " + idkode)
+    } else log.info("Fant ikke art " + idkode)
   }
 })
 
