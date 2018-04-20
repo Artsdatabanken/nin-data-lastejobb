@@ -4,6 +4,7 @@ const path = require("path")
 const config = require("../../config")
 const log = require("log-less-fancy")()
 
+// Pakk ut .shp fra .zip
 var DecompressZip = require("decompress-zip")
 const filename = config.getDataPath("inn_verneområde", ".zip")
 
