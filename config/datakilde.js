@@ -8,6 +8,8 @@ const datakilde = {
   NA_hovedtyper: "NA_hovedtyper",
   NA_grunntyper: "NA_grunntyper",
   OR_organisasjon: "OR_organisasjon",
+  VV_verneområe:
+    "http://trdefme02.miljodirektoratet.no/nedlasting/Naturbase/Shape/naturvern_utm33.zip",
   bbox: "bbox"
 }
 
