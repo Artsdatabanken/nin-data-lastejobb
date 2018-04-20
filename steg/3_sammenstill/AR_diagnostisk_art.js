@@ -42,6 +42,8 @@ function linkBoth(node1, node2, funksjon, tag) {
 }
 
 let ukjenteKoder = {}
+let ukjenteArter = {}
+
 Object.keys(diagArt).forEach(key => {
   const art = diagArt[key]
   const hovedtype =
@@ -64,9 +66,12 @@ Object.keys(diagArt).forEach(key => {
       linkBoth(na, tx, art["Funksjon2"], art["tags2"])
       linkBoth(na, tx, art["Funksjon3"], art["tags3"])
       linkBoth(na, tx, art["Funksjon 4"], art["tags4"])
-    } else log.info("Fant ikke art " + idkode)
+    } else {
+      ukjenteArter[idkode] = ukjenteArter[idkode] ? ukjenteArter[idkode] + 1 : 1
+    }
   }
 })
 
 log.warn("Ukjente koder", ukjenteKoder)
+log.warn("Ukjente arter", Object.keys(ukjenteArter).length)
 io.skrivDatafil(__filename, r)
