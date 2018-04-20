@@ -3,6 +3,8 @@ const config = require("../../config")
 const log = require("log-less-fancy")()
 var shapefile = require("shapefile")
 
+// Konverter .shp til .json
+
 let r = {}
 
 function leggTilOmråde(o) {
@@ -18,6 +20,7 @@ function lagre() {
 
 const shpfilePath =
   config.getDataPath("VV_verneområde_shp", "") + "/naturvernomrader_utm33"
+
 shapefile
   .open(shpfilePath)
   .then(source =>
