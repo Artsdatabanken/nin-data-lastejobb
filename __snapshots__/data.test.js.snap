@@ -106,6 +106,16 @@ Object {
 }
 `;
 
+exports[`data/VV_verneområde_geojson.json har antall rader 1`] = `2865`;
+
+exports[`data/VV_verneområde_geojson.json har forventede nøkler 1`] = `
+Object {
+  "geometry": 2865,
+  "properties": 2865,
+  "type": 2865,
+}
+`;
+
 exports[`data/bbox.json har antall rader 1`] = `1033`;
 
 exports[`data/bbox.json har forventede nøkler 1`] = `
@@ -122,6 +132,23 @@ Object {
   "foreldre": 3031,
   "tittel": 3963,
   "undertittel": 37,
+}
+`;
+
+exports[`data/inn_ao_fylke.json har antall rader 1`] = `18`;
+
+exports[`data/inn_ao_fylke.json har forventede nøkler 1`] = `
+Object {
+  "tittel": 18,
+  "utenRamme": 18,
+}
+`;
+
+exports[`data/inn_ao_kommune.json har antall rader 1`] = `422`;
+
+exports[`data/inn_ao_kommune.json har forventede nøkler 1`] = `
+Object {
+  "tittel": 422,
 }
 `;
 
