@@ -10,6 +10,8 @@ const datakilde = {
   OR_organisasjon: "OR_organisasjon",
   VV_verneområe:
     "http://trdefme02.miljodirektoratet.no/nedlasting/Naturbase/Shape/naturvern_utm33.zip",
+  AO_kommune_geom: "http://norgeskart.no/json/norge/kommuner.json",
+  AO_kommune_geom_: "http://norgeskart.no/json/norge/kommuner-utm33.json",
   bbox: "bbox"
 }
 
