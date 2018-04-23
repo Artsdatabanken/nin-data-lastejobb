@@ -55,11 +55,11 @@ Object.keys(diagArt).forEach(key => {
       ? ukjenteKoder[na_kode] + 1
       : 1
   else {
-    const idkode = koder.artskode(art.scientificNameID, art.Scientificname)
+    const idkode = koder.artskode(art.scientificNameID)
     if (arter[idkode]) {
       //      const tx_kode = arter[idkode].se
       const na = nin_liste[na_kode]
-      tx = arter[idkode]
+      let tx = arter[idkode]
       if (tx.se) tx = arter[tx.se]
       let e = {}
       linkBoth(na, tx, art["Funksjon1"], art["tags1"])

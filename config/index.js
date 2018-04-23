@@ -9,7 +9,8 @@ const config = {
   lasteScriptPath: "./steg/",
   datakilde: datakilde,
   infoUrl: {
-    nin: "https://www.artsdatabanken.no/NiN2.0/"
+    nin: "https://www.artsdatabanken.no/NiN2.0/",
+    verneområde: "http://faktaark.naturbase.no/Vern?id="
   },
   kildedataPath: "./kildedata",
   getCachePath: function(relPath) {

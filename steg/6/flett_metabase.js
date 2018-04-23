@@ -35,6 +35,7 @@ function settHvisEksisterer(kilde, mål, nøkkel) {
 }
 
 flettKildedata("annen_kode")
+flettKildedata("VV_naturvernområde")
 flett("inn_ao_fylke")
 flett("inn_ao_kommune")
 flettKildedata("OR_organisasjon")

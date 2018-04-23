@@ -89,9 +89,20 @@ Object {
 }
 `;
 
-exports[`data/VV_kommune.json har antall rader 1`] = `2865`;
+exports[`data/VV.json har antall rader 1`] = `2865`;
 
-exports[`data/VV_kommune.json har forventede nøkler 1`] = `
+exports[`data/VV.json har forventede nøkler 1`] = `
+Object {
+  "data": 2865,
+  "infoUrl": 2865,
+  "relasjon": 2865,
+  "tittel": 2865,
+}
+`;
+
+exports[`data/VV_med_kommune.json har antall rader 1`] = `2865`;
+
+exports[`data/VV_med_kommune.json har forventede nøkler 1`] = `
 Object {
   "geometry": 2865,
   "properties": 2865,
@@ -117,13 +128,13 @@ Object {
 }
 `;
 
-exports[`data/flett_data.json har antall rader 1`] = `3963`;
+exports[`data/flett_metabase.json har antall rader 1`] = `4025`;
 
-exports[`data/flett_data.json har forventede nøkler 1`] = `
+exports[`data/flett_metabase.json har forventede nøkler 1`] = `
 Object {
   "barn": 37,
   "foreldre": 3031,
-  "tittel": 3963,
+  "tittel": 4025,
   "undertittel": 37,
 }
 `;
