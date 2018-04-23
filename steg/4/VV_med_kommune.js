@@ -11,17 +11,23 @@ let treff = 0
 
 function koblePåKommune(vo) {
   const nater = vo.geometry.coordinates[0]
+  let hits = {}
   for (var i = 0; i < nater.length; i++) {
     const punkt = nater[i]
     var poly = lookup.search(punkt[0], punkt[1])
     if (poly) {
       const kommunenummer = poly.id.toString().padStart(4, "0")
-      vo.properties.kommune = kommunenummer
-      treff++
-      return
+      hits[kommunenummer] = 1
     }
+    vo.properties.kommune = Object.keys(hits)
+    treff++
   }
-  log.warn("Fant ikke kommune for", vo.properties.IID, vo.properties.OMRADENAVN)
+  if (vo.properties.kommune.length <= 0)
+    log.warn(
+      "Fant ikke kommune for",
+      vo.properties.IID,
+      vo.properties.OMRADENAVN
+    )
 }
 
 Object.keys(vo).forEach(iid => {
