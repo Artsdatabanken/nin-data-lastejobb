@@ -14,6 +14,10 @@
 * Internt [JSON format](doc/JSON.md)
 * [Ukurante løsninger (TODOs)](doc/UKURANT.md)
 
+## Deployment
+
+Bygd metabase deployes automatisk til [Firebase Realtime](https://adb-kode.firebaseio.com/.json) og leses derfra av klienten.
+
 ## Relaterte prosjekter
 
 * [Innsynsklient](https://github.com/artsdatabanken/ratatouille)
