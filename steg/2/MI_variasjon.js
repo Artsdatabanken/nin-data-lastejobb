@@ -21,10 +21,8 @@ function importerKoder() {
   for (let key of Object.keys(koder)) {
     const node = koder[key]
     const kode = kodefix(node.Kode.Id)
-    const forelder = kodefix(node.OverordnetKode.Id || null)
     const tittel = capitalizeTittel(node.Navn)
     let o = { tittel: { nb: tittel } }
-    o.foreldre = forelder ? [forelder] : []
     mineKoder[kode] = o
   }
   return mineKoder

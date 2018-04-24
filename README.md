@@ -1,4 +1,3 @@
-[![Greenkeeper badge](https://badges.greenkeeper.io/Artsdatabanken/kverna.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/Artsdatabanken/kverna.svg?branch=master)](https://travis-ci.org/Artsdatabanken/kverna)
 [![Dependencies](https://david-dm.org/artsdatabanken/kverna.svg)](https://david-dm.org)
 [![Greenkeeper badge](https://badges.greenkeeper.io/Artsdatabanken/kverna.svg)](https://greenkeeper.io/)

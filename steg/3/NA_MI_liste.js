@@ -11,7 +11,6 @@ let overrides = io.lesDatafil("NA_overstyr_hierarki")
 
 const alle = Object.assign({}, ninkoder, variasjon)
 let noder = {}
-//let p2c = {}
 
 let fjernet = []
 

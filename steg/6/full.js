@@ -84,10 +84,11 @@ Object.keys(r).forEach(key => {
   const node = r[key]
   if (!node.se) {
     if (!node.tittel) console.log(node)
-    const tittel = node.tittel.nb || node.tittel.la
+    const tittel = node.tittel.nb || node.tittel.en || node.tittel.la
     if (!hash[tittel]) hash[tittel] = []
     else hash[tittel].push(key)
   }
 })
 
+log.error(r["MI"])
 io.skrivDatafil(__filename, r)
