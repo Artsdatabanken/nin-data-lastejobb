@@ -7,7 +7,7 @@ const { hovedtype } = require("../../lib/koder")
 // Vi ønsker følgende struktur NA_T -> NA_T1 -> NA_T1-E-1 -> NA_T1-C-1 -> NA_T1-1
 // Dette for at grovere nivåer da tar med seg mer spesifikke data og viser også disse dataene.
 
-let grunntyper = io.lesKildedatafil(config.datakilde.NA_grunntyper)
+let grunntyper = io.lesKildedatafil(config.datakilde.na_grunntyper)
 
 let foreldre = {}
 

@@ -55,19 +55,19 @@ function kobleForeldre() {
 }
 
 flettKildedata("annen_kode")
-flettKildedata("VV_naturvernområde")
-flett("VV_naturvernområde")
+flettKildedata("vv_naturvernområde")
+flett("vv_naturvernområde")
 flett("inn_ao_fylke")
 flett("inn_ao_kommune")
 flett("ao_naturvernområde")
-flettKildedata("OR_organisasjon")
-flett("AR_diagnostisk_art")
-flett("NA_hovedtype")
-flett("NA_MI_liste")
-flett("MI_variasjon")
-flett("AR_taxon")
-flett("NA_prosedyrekategori")
-flett("NA_definisjonsgrunnlag")
+flettKildedata("or_organisasjon")
+flett("ar_diagnostisk_art")
+flett("na_hovedtype")
+flett("na_mi_liste")
+flett("mi_variasjon")
+flett("ar_taxon")
+flett("na_prosedyrekategori")
+flett("na_definisjonsgrunnlag")
 
 kobleForeldre()
 
@@ -90,5 +90,4 @@ Object.keys(r).forEach(key => {
   }
 })
 
-log.error(r["MI"])
 io.skrivDatafil(__filename, r)

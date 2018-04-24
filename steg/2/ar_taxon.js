@@ -66,6 +66,14 @@ function alleForeldre(c) {
   return r
 }
 
+function toKeys(arr) {
+  const r = {}
+  arr.forEach(e => {
+    r[e] = {}
+  })
+  return r
+}
+
 let koder = {}
 taxons.forEach(c => {
   const sn = c.scientificNames[0]
@@ -83,17 +91,19 @@ taxons.forEach(c => {
   if (c.PopularName) {
     e.tittel.nb = capitalizeFirstLetter(c.PopularName)
   }
-  if (c.NatureAreaTypeCodes)
-    e.relasjon["lever i"] = c.NatureAreaTypeCodes.map(
-      kode => kodesystem.prefix.natursystem + kode
+  if (c.NatureAreaTypeCodes) {
+    e.relasjon["lever i"] = toKeys(
+      c.NatureAreaTypeCodes.map(kode => kodesystem.prefix.natursystem + kode)
     )
+  }
   if (c.BlacklistCategory)
-    e.relasjon["økologisk risiko"] = [
-      kodesystem.prefix.fremmedArt + c.BlacklistCategory
-    ]
+    e.relasjon["økologisk risiko"] = {
+      [kodesystem.prefix.fremmedArt + c.BlacklistCategory]: {}
+    }
+
   if (c.RedlistCategories)
-    e.relasjon["risiko for å dø ut"] = c.RedlistCategories.map(
-      kode => kodesystem.prefix.truet + kode
+    e.relasjon["risiko for å dø ut"] = toKeys(
+      c.RedlistCategories.map(kode => kodesystem.prefix.truet + kode)
     )
 
   e.url = artFullSti(sn)

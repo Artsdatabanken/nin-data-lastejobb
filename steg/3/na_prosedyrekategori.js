@@ -1,20 +1,20 @@
 const config = require("../../config")
 const io = require("../../lib/io")
 
-let hovedtyper = io.lesDatafil(config.getDataPath("NA_hovedtype"))
+let hovedtyper = io.lesDatafil("na_hovedtype")
 
-r = {}
+const r = {}
 
 Object.keys(hovedtyper).forEach(kode => {
   const hovedtype = hovedtyper[kode]
-  const dg = hovedtype.definisjonsgrunnlag
-  const pkkode = dg.kode
+  const pk = hovedtype.prosedyrekategori
+  const pkkode = pk.kode
   if (!r[pkkode])
     r[pkkode] = {
-      foreldre: [config.kodesystem.prefix.definisjonsgrunnlag],
-      tittel: dg.tittel,
+      foreldre: [config.kodesystem.prefix.prosedyrekategori],
+      tittel: pk.tittel,
       undertittel: {
-        nb: "Definisjonsgrunnlag"
+        nb: "Prosedyrekategori"
       },
       barn: []
     }

@@ -53,7 +53,7 @@ Inneholder navn på nivåene i de ulike kodetrærne.
 * Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
   * [kodetre_nivå.json](kodetre_nivå.json)
 
-## [NA_grunntyper.json](NA_grunntyper.json)
+## [na_grunntyper.json](na_grunntyper.json)
 
 Kobling mellom grunntyper (eks. _NA_T7-6_) og kartleggingsenheter (eks. _NA_T7-E-4_ (1:20000) eller _NA_T7-C-6_ (1:5000))
 
@@ -68,7 +68,7 @@ Kobling mellom grunntyper (eks. _NA_T7-6_) og kartleggingsenheter (eks. _NA_T7-E
 
 * Artsdatabanken (TODO: direktelenke)
 
-## [NA_hovedtyper.json](NA_hovedtyper.json)
+## [na_hovedtyper.json](na_hovedtyper.json)
 
 Beskrivelse av NiN hovedtyper, hvilke LKMer er de bygget opp av og kunnskap.
 
@@ -94,7 +94,7 @@ Beskrivelse av NiN hovedtyper, hvilke LKMer er de bygget opp av og kunnskap.
 
 * Artsdatabanken (TODO: direktelenke)
 
-## [OR_datasett.json](OR_datasett.json)
+## [or_datasett.json](or_datasett.json)
 
 Kobling mellom dataleverandør og kartlag. Flere leverandører kan peke på samme kartlag. Leverandørene er definert i [OR_datasett.json](OR_datasett.json).
 
@@ -111,7 +111,7 @@ Kobling mellom dataleverandør og kartlag. Flere leverandører kan peke på samm
 * Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
   * [kodetre_nivå.json](kodetre_nivå.json)
 
-## [OR_datasett.json](OR_datasett.json)
+## [or_datasett.json](or_datasett.json)
 
 Beskrivelse av dataleverandører.
 
@@ -134,7 +134,7 @@ Beskrivelse av dataleverandører.
 ### Datakilde
 
 * Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
-  * [OR_datasett.json](OR_datasett.json)
+  * [or_datasett.json](or_datasett.json)
 
 # [statistikk.json](statistikk.json)
 

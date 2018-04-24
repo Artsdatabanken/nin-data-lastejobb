@@ -19,7 +19,7 @@ function lagre() {
 }
 
 const shpfilePath =
-  config.getDataPath("VV_verneområde_shp", "") + "/naturvernomrader_utm33"
+  config.getDataPath("vv_verneområde_shp", "") + "/naturvernomrader_utm33"
 
 shapefile
   .open(shpfilePath)

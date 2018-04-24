@@ -5,9 +5,9 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const config = require("../../config")
 
-let ninkoder = io.lesDatafil("NA_kode")
-let variasjon = io.lesDatafil("MI_variasjon")
-let overrides = io.lesDatafil("NA_overstyr_hierarki")
+let ninkoder = io.lesDatafil("na_kode")
+let variasjon = io.lesDatafil("mi_variasjon")
+let overrides = io.lesDatafil("na_overstyr_hierarki")
 
 const alle = Object.assign({}, ninkoder, variasjon)
 let noder = {}
