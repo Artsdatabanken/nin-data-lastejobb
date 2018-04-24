@@ -58,9 +58,9 @@ function map(vo) {
   const iid = parseInt(props.IID.substring(2))
   const kode = config.kodesystem.prefix.verneområde + iid
   let e = {
-    //    tittel: { nb: props.OMRADENAVN + " " + props.VERNEFORM.toLowerCase() },
     tittel: { nb: props.OMRADENAVN },
     infoUrl: config.infoUrl.verneområde + props.IID,
+    foreldre: [],
     relasjon: [],
     data: {
       areal: Math.round(multiPolygonArea(vo.geometry.coordinates)),
@@ -87,11 +87,16 @@ function map(vo) {
     props.kommune.forEach(kommune => {
       const fnr = kommune.substring(0, 2)
       const knr = kommune.substring(2)
-      e.relasjon.push(
+      const kommunekode =
         config.kodesystem.prefix.administrativtOmråde + fnr + "-" + knr
-      )
+
+      e.relasjon.push(kommunekode)
+      e.foreldre.push(kommunekode + "-VV")
       const fylkekode = config.kodesystem.prefix.administrativtOmråde + fnr
-      if (!(fylkekode in e.relasjon)) e.relasjon.push(fylkekode)
+      if (!(fylkekode in e.relasjon)) {
+        e.relasjon.push(fylkekode)
+        e.foreldre.push(fylkekode + "-VV")
+      }
     })
   }
   //  if(Object.keys(r).length < 3)

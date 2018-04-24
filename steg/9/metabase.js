@@ -72,6 +72,10 @@ function nøstOppForfedre(forelderkey) {
   while (forelderkey) {
     forelderkey = hentKey(forelderkey)
     let forelder = data[forelderkey]
+    if (!forelder) {
+      log.warn("Mangler kode " + forelderkey)
+      return
+    }
     r.push({ kode: forelder.kode, tittel: forelder.tittel, sti: forelder.sti })
     forelderkey = c2p[forelderkey][0]
   }
@@ -119,8 +123,7 @@ function byggTreFra(tre, key) {
   if (!rot.farge) rot.farge = tilfeldigFarge()
   if (!rot.overordnet) {
     if (!rot.foreldre) {
-      log.warn(rot)
-      throw new Error("mangler forelder:" + key)
+      log.warn("mangler forelder: " + key)
     }
     rot.overordnet =
       rot.foreldre && rot.foreldre.length > 0

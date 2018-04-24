@@ -104,6 +104,7 @@ exports[`data/VV_naturvernområde.json har antall rader 1`] = `2865`;
 exports[`data/VV_naturvernområde.json har forventede nøkler 1`] = `
 Object {
   "data": 2865,
+  "foreldre": 2865,
   "infoUrl": 2865,
   "relasjon": 2865,
   "tittel": 2865,
@@ -120,13 +121,22 @@ Object {
 }
 `;
 
-exports[`data/flett_metabase.json har antall rader 1`] = `6890`;
+exports[`data/ao_naturvernområde.json har antall rader 1`] = `440`;
+
+exports[`data/ao_naturvernområde.json har forventede nøkler 1`] = `
+Object {
+  "foreldre": 440,
+  "tittel": 440,
+}
+`;
+
+exports[`data/flett_metabase.json har antall rader 1`] = `7330`;
 
 exports[`data/flett_metabase.json har forventede nøkler 1`] = `
 Object {
   "barn": 37,
-  "foreldre": 6890,
-  "tittel": 6890,
+  "foreldre": 7330,
+  "tittel": 7330,
   "undertittel": 37,
 }
 `;
@@ -1660,42 +1670,42 @@ Object {
 }
 `;
 
-exports[`data/kodetre.json har antall rader 1`] = `6844`;
+exports[`data/kodetre.json har antall rader 1`] = `11207`;
 
 exports[`data/kodetre.json har forventede nøkler 1`] = `
 Object {
-  "forelder": 6843,
-  "kode": 6844,
-  "tittel": 6844,
+  "forelder": 11206,
+  "kode": 11207,
+  "tittel": 11207,
 }
 `;
 
-exports[`data/kodetre_postgre.json har antall rader 1`] = `3980`;
+exports[`data/kodetre_postgre.json har antall rader 1`] = `7394`;
 
 exports[`data/kodetre_postgre.json har forventede nøkler 1`] = `
 Object {
-  "forfedre": 3980,
-  "kode": 3980,
-  "nivå": 3979,
-  "tittel": 3980,
+  "forfedre": 7394,
+  "kode": 7394,
+  "nivå": 7393,
+  "tittel": 7394,
 }
 `;
 
-exports[`data/metabase.json har antall rader 1`] = `11975`;
+exports[`data/metabase.json har antall rader 1`] = `12849`;
 
 exports[`data/metabase.json har forventede nøkler 1`] = `
 Object {
-  "@": 11960,
+  "@": 12834,
 }
 `;
 
-exports[`data/metabase_med_bbox.json har antall rader 1`] = `6890`;
+exports[`data/metabase_med_bbox.json har antall rader 1`] = `7330`;
 
 exports[`data/metabase_med_bbox.json har forventede nøkler 1`] = `
 Object {
   "barn": 37,
-  "foreldre": 6890,
-  "tittel": 6890,
+  "foreldre": 7330,
+  "tittel": 7330,
   "undertittel": 37,
 }
 `;
