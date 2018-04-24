@@ -23,7 +23,6 @@ exports[`data/MI_variasjon.json har antall rader 1`] = `2909`;
 
 exports[`data/MI_variasjon.json har forventede nøkler 1`] = `
 Object {
-  "foreldre": 2909,
   "tittel": 2909,
 }
 `;
@@ -32,7 +31,6 @@ exports[`data/NA_MI_liste.json har antall rader 1`] = `3438`;
 
 exports[`data/NA_MI_liste.json har forventede nøkler 1`] = `
 Object {
-  "foreldre": 2915,
   "infoUrl": 3438,
   "tittel": 3438,
 }
@@ -1681,28 +1679,28 @@ Object {
 }
 `;
 
-exports[`data/kodetre.json har antall rader 1`] = `7882`;
+exports[`data/kodetre.json har antall rader 1`] = `7929`;
 
 exports[`data/kodetre.json har forventede nøkler 1`] = `
 Object {
-  "forelder": 7881,
-  "kode": 7882,
-  "tittel": 7882,
+  "forelder": 7928,
+  "kode": 7929,
+  "tittel": 7929,
 }
 `;
 
-exports[`data/kodetre_postgre.json har antall rader 1`] = `4495`;
+exports[`data/kodetre_postgre.json har antall rader 1`] = `7404`;
 
 exports[`data/kodetre_postgre.json har forventede nøkler 1`] = `
 Object {
-  "forfedre": 4495,
-  "kode": 4495,
-  "nivå": 4494,
-  "tittel": 4495,
+  "forfedre": 7404,
+  "kode": 7404,
+  "nivå": 7403,
+  "tittel": 7404,
 }
 `;
 
-exports[`data/metabase.json har antall rader 1`] = `12987`;
+exports[`data/metabase.json har antall rader 1`] = `12989`;
 
 exports[`data/metabase.json har forventede nøkler 1`] = `
 Object {

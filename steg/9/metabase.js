@@ -9,15 +9,24 @@ Object.keys(data).forEach(kode => {
   data[kode].kode = kode
 })
 
+function sti(kode) {
+  return koder
+    .splittKode(kode)
+    .join("/")
+    .toLowerCase()
+}
+
 function settPrimærSti() {
   Object.keys(data).forEach(kode => {
     const node = data[kode]
-    if (!node.sti) {
-      node.sti = koder
-        .splittKode(kode)
-        .join("/")
-        .toLowerCase()
-    }
+    node.sti = sti(kode)
+    if (node.graf)
+      Object.keys(node.graf).forEach(key => {
+        Object.keys(node.graf[key]).forEach(kode => {
+          const sub = node.graf[key][kode]
+          sub.sti = sti(kode)
+        })
+      })
   })
 }
 
