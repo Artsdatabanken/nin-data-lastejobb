@@ -2,7 +2,7 @@ const config = require("../../config")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
-let data = io.lesDatafil("flett_metabase")
+let data = io.lesDatafil("full_med_graf")
 
 function settInn(kode, forelder, tittel) {
   r.push({ kode: kode, forelder: forelder, tittel: tittel })

@@ -3,7 +3,7 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
 const dummySuperRoot = "##"
-let data = io.lesDatafil("flett_metabase")
+let data = io.lesDatafil("full_med_graf")
 let r = []
 
 Object.keys(data).forEach(forelder => {

@@ -53,6 +53,11 @@ function ordNummer(s, index) {
   return s.split(" ")[index]
 }
 
+function relasjon(e, kategori, kode) {
+  if (!e.relasjon[kategori]) e.relasjon[kategori] = []
+  e.relasjon[kategori] = [{ kode: kode }]
+}
+
 function map(vo) {
   const props = vo.properties
   const iid = parseInt(props.IID.substring(2))
@@ -61,7 +66,7 @@ function map(vo) {
     tittel: { nb: props.OMRADENAVN },
     infoUrl: config.infoUrl.verneområde + props.IID,
     foreldre: [],
-    relasjon: [],
+    relasjon: {},
     data: {
       areal: Math.round(multiPolygonArea(vo.geometry.coordinates)),
       vernedato: props.VERNEDATO,
@@ -72,15 +77,20 @@ function map(vo) {
       mobLandPrioritet: ordNummer(props.MOBLANDPRI, 0)
     }
   }
-  e.relasjon.push(kodeFraNavn(e.data.verneform))
-  e.relasjon.push(kodeFraNavn(e.data.verneplan))
-  e.relasjon.push(kodeFraNavn(e.data.forvaltningsmyndighet))
+  relasjon(e, "verneform", kodeFraNavn(e.data.verneform))
+  relasjon(e, "verneplan", kodeFraNavn(e.data.verneplan))
+  relasjon(
+    e,
+    "forvaltningsmyndighet",
+    kodeFraNavn(e.data.forvaltningsmyndighet)
+  )
   if (props.TRUETVURD) {
     e.data.truetvurdering = props.TRUETVURD
-    e.relasjon.push(kodeFraNavn(e.data.truetvurdering))
+    relasjon(e, "truet vurdering", kodeFraNavn(e.data.truetvurdering))
   }
-  e.relasjon.push("VV_PA-" + e.data.iucn)
-  e.relasjon.push("VV_ML-" + e.data.mobLandPrioritet)
+  if (e.data.iucn) relasjon(e, "iucn", "VV_PA-" + e.data.iucn)
+  relasjon(e, "mobLand prioritet", "VV_ML-" + e.data.mobLandPrioritet)
+  relasjon(e, "ble vernet i år", "VV_VT-" + e.data.vernedato.substring(0, 4))
   if (new Date(props.DATO_REVID).getFullYear() > 1900)
     e.data.revisjonsdato = props.DATO_REVID
   if (props.kommune) {
@@ -90,16 +100,14 @@ function map(vo) {
       const kommunekode =
         config.kodesystem.prefix.administrativtOmråde + fnr + "-" + knr
 
-      e.relasjon.push(kommunekode)
       e.foreldre.push(kommunekode + "-VV")
+      relasjon(e, "ligger i", kommunekode + "-VV")
       const fylkekode = config.kodesystem.prefix.administrativtOmråde + fnr
       if (!(fylkekode in e.relasjon)) {
-        e.relasjon.push(fylkekode)
-        e.foreldre.push(fylkekode + "-VV")
+        relasjon(e, "ligger i", fylkekode + "-VV")
       }
     })
   }
-  //  if(Object.keys(r).length < 3)
   r[kode] = e
 }
 
@@ -135,6 +143,16 @@ if (manglerNøkler)
   log.warn(
     "Nøklene over mangler i typesystemet.  Legg dem inn i VV_naturvernområde.json manuelt."
   )
+
+const år = {}
+Object.keys(vo).forEach(key => {
+  const o = vo[key]
+  const y = o.properties.VERNEDATO.substring(0, 4)
+  år[y] = år[y] + 1 || 1
+})
+Object.keys(år).forEach(år => {
+  console.log(`"VV_VT-${år}": { "tittel": { "nb": "Vernet i år ${år}" } },`)
+})
 
 Object.keys(vo).forEach(key => map(vo[key]))
 

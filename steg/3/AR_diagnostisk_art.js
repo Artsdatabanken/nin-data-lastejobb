@@ -24,8 +24,8 @@ function linkOne(nodeFra, nodeTil, funksjon, tag) {
   const kodeTil = nodeTil.kode
   if (!r[kodeFra]) r[kodeFra] = { relasjon: {} }
   const relasjon = r[kodeFra].relasjon
-  if (!relasjon[tag]) relasjon[tag] = {}
-  relasjon[tag][kodeTil] = {
+  if (!relasjon[tag]) relasjon[tag] = []
+  relasjon[tag] = {
     kode: kodeTil,
     tittel: nodeTil.tittel,
     variabel: variabel
