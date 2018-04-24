@@ -6,7 +6,8 @@
   "scripts": {
     "build": "node kjør_alle_lastejobber",
     "test": "jest",
-    "deploy": "firebase -P adb-kode database:set -y / data/metabase.json",
+    "deploy":
+      "firebase --token \"$FIREBASE_TOKEN\" -P adb-kode database:set -y / data/metabase.json",
     "flow": "flow",
     "precommit": "pretty-quick --staged",
     "flow:check": "flow check ./src/",
