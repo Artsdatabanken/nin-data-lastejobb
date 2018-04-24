@@ -95,7 +95,7 @@ function map(vo) {
       const fylkekode = config.kodesystem.prefix.administrativtOmråde + fnr
       if (!(fylkekode in e.relasjon)) {
         e.relasjon.push(fylkekode)
-        e.foreldre.push(fylkekode + +"-VV")
+        e.foreldre.push(fylkekode + "-VV")
       }
     })
   }
