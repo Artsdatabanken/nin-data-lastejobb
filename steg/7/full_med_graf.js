@@ -5,9 +5,8 @@ const log = require("log-less-fancy")()
 
 let full = io.lesDatafil("full")
 
-function tilBarn(kode, node) {
+function tilBarn(node) {
   return {
-    kode: kode,
     tittel: node.tittel
   }
 }
@@ -17,15 +16,16 @@ function lagRelasjonBeggeVeier(kode, node) {
   Object.keys(node.relasjon).forEach(kategori => {
     node.graf[kategori] = {}
     const koder = node.relasjon[kategori]
-    koder.forEach(o => {
-      const bkode = o.kode
+    Object.keys(koder).forEach(bkode => {
+      const o = koder[bkode]
+      //      const bkode = o.kode
       if (!bkode) throw new Error("Mangler kode " + o)
       const b = full[bkode]
       if (b) {
         if (!b.graf) b.graf = {}
         if (!b.graf[kategori]) b.graf[kategori] = {}
-        b.graf[kategori][kode] = Object.assign(tilBarn(kode, node), o)
-        node.graf[kategori][bkode] = Object.assign(tilBarn(bkode, b), o)
+        b.graf[kategori][kode] = Object.assign(tilBarn(node), o)
+        node.graf[kategori][bkode] = Object.assign(tilBarn(b), o)
       } else log.warn("Mangler kode " + bkode)
     })
   })

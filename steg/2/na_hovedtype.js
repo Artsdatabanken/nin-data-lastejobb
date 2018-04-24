@@ -1,8 +1,8 @@
 const config = require("../../config")
 const io = require("../../lib/io")
 
-let hovedtyper = io.lesKildedatafil(config.datakilde.NA_hovedtyper)
-let mi = io.lesDatafil("MI_variasjon")
+let hovedtyper = io.lesKildedatafil(config.datakilde.na_hovedtyper)
+let mi = io.lesDatafil("mi_variasjon")
 
 function fromCsv(csv) {
   csv = csv.trim()

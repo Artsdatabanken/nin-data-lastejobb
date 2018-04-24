@@ -16,17 +16,24 @@ function sti(kode) {
     .toLowerCase()
 }
 
-function settPrimærSti() {
+function fyllInnGraf() {
   Object.keys(data).forEach(kode => {
     const node = data[kode]
-    node.sti = sti(kode)
     if (node.graf)
       Object.keys(node.graf).forEach(key => {
         Object.keys(node.graf[key]).forEach(kode => {
           const sub = node.graf[key][kode]
           sub.sti = sti(kode)
+          sub.farge = data[kode].farge
         })
       })
+  })
+}
+
+function settPrimærSti() {
+  Object.keys(data).forEach(kode => {
+    const node = data[kode]
+    node.sti = sti(kode)
   })
 }
 
@@ -260,6 +267,8 @@ let tre = {}
 let node = byggTreFra(tre, config.kodesystem.rotkode)
 injectKodeAliases(tre)
 injectNamedAliases(tre)
+fyllInnGraf()
+
 tre = { katalog: tre }
 io.skrivDatafil(__filename, tre)
 

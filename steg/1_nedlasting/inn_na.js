@@ -6,7 +6,7 @@ const config = require("../../config")
 
 // NA - Natursystem
 downloadJson2File(
-  config.datakilde.NA_koder,
+  config.datakilde.na_koder,
   config.getDataPath(__filename)
 ).catch(err => {
   log.fatal(err)

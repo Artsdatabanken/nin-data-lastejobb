@@ -8,7 +8,7 @@ const log = require("log-less-fancy")()
 //BS,MI - Beskrivelsessystem og miljøvariabler
 http
   .downloadJson2File(
-    config.datakilde.MI_variasjon,
+    config.datakilde.mi_variasjon,
     config.getDataPath(__filename)
   )
   .catch(err => {

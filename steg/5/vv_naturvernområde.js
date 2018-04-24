@@ -3,8 +3,8 @@ const log = require("log-less-fancy")()
 const config = require("../../config")
 const koder = require("../../lib/koder")
 
-let vo = io.lesDatafil("VV_med_kommune")
-let vvKoder = io.lesKildedatafil("VV_naturvernområde")
+let vo = io.lesDatafil("vv_med_kommune")
+let vvKoder = io.lesKildedatafil("vv_naturvernområde")
 
 function invert(o) {
   let r = {}
@@ -54,8 +54,8 @@ function ordNummer(s, index) {
 }
 
 function relasjon(e, kategori, kode) {
-  if (!e.relasjon[kategori]) e.relasjon[kategori] = []
-  e.relasjon[kategori] = [{ kode: kode }]
+  if (!e.relasjon[kategori]) e.relasjon[kategori] = {}
+  e.relasjon[kategori][kode] = {}
 }
 
 function map(vo) {

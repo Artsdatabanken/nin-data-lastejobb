@@ -4,7 +4,7 @@ const { erKartleggingsnivå } = require("../../lib/koder")
 const { capitalizeTittel } = require("../../lib/koder")
 
 let alleKoder = io.lesDatafil("inn_na")
-let ingress = io.lesKildedatafil("NA_ingress")
+let ingress = io.lesKildedatafil("na_ingress")
 
 function kodefix(kode) {
   if (!kode) return kode

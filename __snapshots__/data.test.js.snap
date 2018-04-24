@@ -1,12 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`data/AR_diagnostisk_art.json har antall rader 1`] = `0`;
+exports[`data/ao_naturvernområde.json har antall rader 1`] = `440`;
 
-exports[`data/AR_diagnostisk_art.json har forventede nøkler 1`] = `Object {}`;
+exports[`data/ao_naturvernområde.json har forventede nøkler 1`] = `
+Object {
+  "foreldre": 440,
+  "tittel": 440,
+}
+`;
 
-exports[`data/AR_taxon.json har antall rader 1`] = `2`;
+exports[`data/ar_diagnostisk_art.json har antall rader 1`] = `0`;
 
-exports[`data/AR_taxon.json har forventede nøkler 1`] = `
+exports[`data/ar_diagnostisk_art.json har forventede nøkler 1`] = `Object {}`;
+
+exports[`data/ar_taxon.json har antall rader 1`] = `2`;
+
+exports[`data/ar_taxon.json har forventede nøkler 1`] = `
 Object {
   "foreldre": 2,
   "infoUrl": 2,
@@ -16,115 +25,6 @@ Object {
   "taxonIdParent": 2,
   "tittel": 2,
   "url": 2,
-}
-`;
-
-exports[`data/MI_variasjon.json har antall rader 1`] = `2909`;
-
-exports[`data/MI_variasjon.json har forventede nøkler 1`] = `
-Object {
-  "tittel": 2909,
-}
-`;
-
-exports[`data/NA_MI_liste.json har antall rader 1`] = `3438`;
-
-exports[`data/NA_MI_liste.json har forventede nøkler 1`] = `
-Object {
-  "infoUrl": 3438,
-  "tittel": 3438,
-}
-`;
-
-exports[`data/NA_definisjonsgrunnlag.json har antall rader 1`] = `20`;
-
-exports[`data/NA_definisjonsgrunnlag.json har forventede nøkler 1`] = `
-Object {
-  "barn": 20,
-  "foreldre": 20,
-  "tittel": 20,
-  "undertittel": 20,
-}
-`;
-
-exports[`data/NA_hovedtype.json har antall rader 1`] = `92`;
-
-exports[`data/NA_hovedtype.json har forventede nøkler 1`] = `
-Object {
-  "definisjonsgrunnlag": 92,
-  "kunnskap": 92,
-  "lkm": 92,
-  "nin1": 92,
-  "nivå": 92,
-  "prosedyrekategori": 92,
-}
-`;
-
-exports[`data/NA_kode.json har antall rader 1`] = `1796`;
-
-exports[`data/NA_kode.json har forventede nøkler 1`] = `
-Object {
-  "tittel": 1796,
-}
-`;
-
-exports[`data/NA_overstyr_hierarki.json har antall rader 1`] = `851`;
-
-exports[`data/NA_overstyr_hierarki.json har forventede nøkler 1`] = `
-Object {
-  "0": 851,
-}
-`;
-
-exports[`data/NA_prosedyrekategori.json har antall rader 1`] = `17`;
-
-exports[`data/NA_prosedyrekategori.json har forventede nøkler 1`] = `
-Object {
-  "barn": 17,
-  "foreldre": 17,
-  "tittel": 17,
-  "undertittel": 17,
-}
-`;
-
-exports[`data/VV_med_kommune.json har antall rader 1`] = `2865`;
-
-exports[`data/VV_med_kommune.json har forventede nøkler 1`] = `
-Object {
-  "geometry": 2865,
-  "properties": 2865,
-  "type": 2865,
-}
-`;
-
-exports[`data/VV_naturvernområde.json har antall rader 1`] = `2865`;
-
-exports[`data/VV_naturvernområde.json har forventede nøkler 1`] = `
-Object {
-  "data": 2865,
-  "foreldre": 2865,
-  "infoUrl": 2865,
-  "relasjon": 2865,
-  "tittel": 2865,
-}
-`;
-
-exports[`data/VV_verneområde_geojson.json har antall rader 1`] = `2865`;
-
-exports[`data/VV_verneområde_geojson.json har forventede nøkler 1`] = `
-Object {
-  "geometry": 2865,
-  "properties": 2865,
-  "type": 2865,
-}
-`;
-
-exports[`data/ao_naturvernområde.json har antall rader 1`] = `440`;
-
-exports[`data/ao_naturvernområde.json har forventede nøkler 1`] = `
-Object {
-  "foreldre": 440,
-  "tittel": 440,
 }
 `;
 
@@ -1716,5 +1616,105 @@ Object {
   "foreldre": 7399,
   "tittel": 7399,
   "undertittel": 37,
+}
+`;
+
+exports[`data/mi_variasjon.json har antall rader 1`] = `2909`;
+
+exports[`data/mi_variasjon.json har forventede nøkler 1`] = `
+Object {
+  "tittel": 2909,
+}
+`;
+
+exports[`data/na_definisjonsgrunnlag.json har antall rader 1`] = `20`;
+
+exports[`data/na_definisjonsgrunnlag.json har forventede nøkler 1`] = `
+Object {
+  "barn": 20,
+  "foreldre": 20,
+  "tittel": 20,
+  "undertittel": 20,
+}
+`;
+
+exports[`data/na_hovedtype.json har antall rader 1`] = `92`;
+
+exports[`data/na_hovedtype.json har forventede nøkler 1`] = `
+Object {
+  "definisjonsgrunnlag": 92,
+  "kunnskap": 92,
+  "lkm": 92,
+  "nin1": 92,
+  "nivå": 92,
+  "prosedyrekategori": 92,
+}
+`;
+
+exports[`data/na_kode.json har antall rader 1`] = `1796`;
+
+exports[`data/na_kode.json har forventede nøkler 1`] = `
+Object {
+  "tittel": 1796,
+}
+`;
+
+exports[`data/na_mi_liste.json har antall rader 1`] = `3438`;
+
+exports[`data/na_mi_liste.json har forventede nøkler 1`] = `
+Object {
+  "infoUrl": 3438,
+  "tittel": 3438,
+}
+`;
+
+exports[`data/na_overstyr_hierarki.json har antall rader 1`] = `851`;
+
+exports[`data/na_overstyr_hierarki.json har forventede nøkler 1`] = `
+Object {
+  "0": 851,
+}
+`;
+
+exports[`data/na_prosedyrekategori.json har antall rader 1`] = `17`;
+
+exports[`data/na_prosedyrekategori.json har forventede nøkler 1`] = `
+Object {
+  "barn": 17,
+  "foreldre": 17,
+  "tittel": 17,
+  "undertittel": 17,
+}
+`;
+
+exports[`data/vv_med_kommune.json har antall rader 1`] = `2865`;
+
+exports[`data/vv_med_kommune.json har forventede nøkler 1`] = `
+Object {
+  "geometry": 2865,
+  "properties": 2865,
+  "type": 2865,
+}
+`;
+
+exports[`data/vv_naturvernområde.json har antall rader 1`] = `2865`;
+
+exports[`data/vv_naturvernområde.json har forventede nøkler 1`] = `
+Object {
+  "data": 2865,
+  "foreldre": 2865,
+  "infoUrl": 2865,
+  "relasjon": 2865,
+  "tittel": 2865,
+}
+`;
+
+exports[`data/vv_verneområde_geojson.json har antall rader 1`] = `2865`;
+
+exports[`data/vv_verneområde_geojson.json har forventede nøkler 1`] = `
+Object {
+  "geometry": 2865,
+  "properties": 2865,
+  "type": 2865,
 }
 `;

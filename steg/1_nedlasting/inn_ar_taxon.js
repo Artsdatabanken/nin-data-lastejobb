@@ -7,7 +7,7 @@ const log = require("log-less-fancy")()
 // Laster ned arter fra Artsdatabanken sitt API
 http
   .downloadBinary2File(
-    config.datakilde.AR_taxon,
+    config.datakilde.ar_taxon,
     config.getDataPath(__filename)
   )
   .catch(err => {

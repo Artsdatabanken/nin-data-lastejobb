@@ -6,7 +6,7 @@ const log = require("log-less-fancy")()
 // Zip-fil med Shapeformat på innsiden
 http
   .downloadBinary2File(
-    config.datakilde.VV_verneområe,
+    config.datakilde.vv_verneområe,
     config.getDataPath(__filename, ".zip")
   )
   .catch(err => {

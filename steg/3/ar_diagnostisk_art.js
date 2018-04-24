@@ -8,9 +8,9 @@ const koder = require("../../lib/koder")
 
 log.logLevel = 6
 
-let diagArt = io.lesKildedatafil(config.datakilde.NA_diagnostisk_art)
-let arter = io.lesDatafil("AR_taxon")
-let nin_liste = io.lesDatafil("NA_kode")
+let diagArt = io.lesKildedatafil(config.datakilde.na_diagnostisk_art)
+let arter = io.lesDatafil("ar_taxon")
+let nin_liste = io.lesDatafil("na_kode")
 
 let r = {}
 
@@ -26,9 +26,10 @@ function linkOne(nodeFra, nodeTil, funksjon, tag) {
   const relasjon = r[kodeFra].relasjon
   if (!relasjon[tag]) relasjon[tag] = []
   relasjon[tag] = {
-    kode: kodeTil,
-    tittel: nodeTil.tittel,
-    variabel: variabel
+    kodeTil: {
+      tittel: nodeTil.tittel,
+      variabel: variabel
+    }
   }
 }
 
