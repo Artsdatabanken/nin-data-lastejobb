@@ -4,6 +4,7 @@ const { erKartleggingsnivå } = require("../../lib/koder")
 const { capitalizeTittel } = require("../../lib/koder")
 
 let alleKoder = io.lesDatafil("inn_na")
+let ingress = io.lesKildedatafil("NA_ingress")
 
 function kodefix(kode) {
   if (!kode) return kode
@@ -15,6 +16,7 @@ function importerKoder() {
   for (let node of alleKoder) {
     const kode = kodefix(node.Kode.Id)
     let o = { tittel: { nb: capitalizeTittel(node.Navn) } }
+    if (ingress[kode]) o.ingress = ingress[kode]
     mineKoder[kode] = o
   }
   return mineKoder
