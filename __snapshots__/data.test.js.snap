@@ -130,13 +130,24 @@ Object {
 }
 `;
 
-exports[`data/flett_metabase.json har antall rader 1`] = `7330`;
+exports[`data/full.json har antall rader 1`] = `7399`;
 
-exports[`data/flett_metabase.json har forventede nøkler 1`] = `
+exports[`data/full.json har forventede nøkler 1`] = `
 Object {
   "barn": 37,
-  "foreldre": 7330,
-  "tittel": 7330,
+  "foreldre": 7399,
+  "tittel": 7399,
+  "undertittel": 37,
+}
+`;
+
+exports[`data/full_med_graf.json har antall rader 1`] = `7399`;
+
+exports[`data/full_med_graf.json har forventede nøkler 1`] = `
+Object {
+  "barn": 37,
+  "foreldre": 7399,
+  "tittel": 7399,
   "undertittel": 37,
 }
 `;
@@ -1670,42 +1681,42 @@ Object {
 }
 `;
 
-exports[`data/kodetre.json har antall rader 1`] = `11207`;
+exports[`data/kodetre.json har antall rader 1`] = `7882`;
 
 exports[`data/kodetre.json har forventede nøkler 1`] = `
 Object {
-  "forelder": 11206,
-  "kode": 11207,
-  "tittel": 11207,
+  "forelder": 7881,
+  "kode": 7882,
+  "tittel": 7882,
 }
 `;
 
-exports[`data/kodetre_postgre.json har antall rader 1`] = `7394`;
+exports[`data/kodetre_postgre.json har antall rader 1`] = `4495`;
 
 exports[`data/kodetre_postgre.json har forventede nøkler 1`] = `
 Object {
-  "forfedre": 7394,
-  "kode": 7394,
-  "nivå": 7393,
-  "tittel": 7394,
+  "forfedre": 4495,
+  "kode": 4495,
+  "nivå": 4494,
+  "tittel": 4495,
 }
 `;
 
-exports[`data/metabase.json har antall rader 1`] = `12849`;
+exports[`data/metabase.json har antall rader 1`] = `12987`;
 
 exports[`data/metabase.json har forventede nøkler 1`] = `
 Object {
-  "@": 12834,
+  "@": 12972,
 }
 `;
 
-exports[`data/metabase_med_bbox.json har antall rader 1`] = `7330`;
+exports[`data/metabase_med_bbox.json har antall rader 1`] = `7399`;
 
 exports[`data/metabase_med_bbox.json har forventede nøkler 1`] = `
 Object {
   "barn": 37,
-  "foreldre": 7330,
-  "tittel": 7330,
+  "foreldre": 7399,
+  "tittel": 7399,
   "undertittel": 37,
 }
 `;

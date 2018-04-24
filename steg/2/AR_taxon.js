@@ -75,7 +75,7 @@ taxons.forEach(c => {
     navnSciId: sn.scientificNameID,
     taxonId: c.taxonID,
     taxonIdParent: sn.higherClassification[0].taxonID,
-    relasjon: [],
+    relasjon: {},
     foreldre: [forelder(sn)],
     infoUrl: "https://artsdatabanken.no/Taxon/x/" + sn.scientificNameID
   }
@@ -84,15 +84,18 @@ taxons.forEach(c => {
     e.tittel.nb = capitalizeFirstLetter(c.PopularName)
   }
   if (c.NatureAreaTypeCodes)
-    e.relasjon.push(
-      ...c.NatureAreaTypeCodes.map(kode => kodesystem.prefix.natursystem + kode)
+    e.relasjon["lever i"] = c.NatureAreaTypeCodes.map(
+      kode => kodesystem.prefix.natursystem + kode
     )
   if (c.BlacklistCategory)
-    e.relasjon.push(kodesystem.prefix.fremmedArt + c.BlacklistCategory)
+    e.relasjon["økologisk risiko"] = [
+      kodesystem.prefix.fremmedArt + c.BlacklistCategory
+    ]
   if (c.RedlistCategories)
-    e.relasjon.push(
-      ...c.RedlistCategories.map(kode => kodesystem.prefix.truet + kode)
+    e.relasjon["risiko for å dø ut"] = c.RedlistCategories.map(
+      kode => kodesystem.prefix.truet + kode
     )
+
   e.url = artFullSti(sn)
   log.debug(e)
   koder[kode] = e

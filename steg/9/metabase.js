@@ -140,8 +140,7 @@ function byggTreFra(tre, key) {
       barn[ckey] = {
         sti: cnode.sti,
         kode: ckode,
-        tittel: cnode.tittel,
-        relasjoner: cnode.relasjoner
+        tittel: cnode.tittel
       }
       const child = byggTreFra(tre, ckey)
     })
