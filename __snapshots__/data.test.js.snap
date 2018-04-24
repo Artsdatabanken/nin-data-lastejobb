@@ -89,17 +89,6 @@ Object {
 }
 `;
 
-exports[`data/VV.json har antall rader 1`] = `2865`;
-
-exports[`data/VV.json har forventede nøkler 1`] = `
-Object {
-  "data": 2865,
-  "infoUrl": 2865,
-  "relasjon": 2865,
-  "tittel": 2865,
-}
-`;
-
 exports[`data/VV_med_kommune.json har antall rader 1`] = `2865`;
 
 exports[`data/VV_med_kommune.json har forventede nøkler 1`] = `
@@ -646,5 +635,16 @@ Object {
   "forelder": 6843,
   "kode": 6844,
   "tittel": 6844,
+}
+`;
+
+exports[`data/kodetre_postgre.json har antall rader 1`] = `3980`;
+
+exports[`data/kodetre_postgre.json har forventede nøkler 1`] = `
+Object {
+  "forfedre": 3980,
+  "kode": 3980,
+  "nivå": 3979,
+  "tittel": 3980,
 }
 `;
