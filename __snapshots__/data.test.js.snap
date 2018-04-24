@@ -648,3 +648,11 @@ Object {
   "tittel": 3980,
 }
 `;
+
+exports[`data/metabase.json har antall rader 1`] = `11975`;
+
+exports[`data/metabase.json har forventede nøkler 1`] = `
+Object {
+  "@": 11960,
+}
+`;
