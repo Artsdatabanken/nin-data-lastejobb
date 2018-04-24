@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node kjør_alle_lastejobber",
     "test": "jest",
+    "deploy": "firebase -P adb-kode database:set -y / data/metabase.json",
     "flow": "flow",
     "precommit": "pretty-quick --staged",
     "flow:check": "flow check ./src/",
@@ -39,6 +40,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.19.1",
+    "firebase-tools": "^3.18.4",
     "flow-bin": "^0.70.0",
     "husky": "^0.14.3",
     "jest": "^22.4.3",
