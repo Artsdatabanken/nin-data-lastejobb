@@ -8,9 +8,9 @@ script:
 - yarn build
 - yarn test
 deploy:
+  provider: script
   skip_cleanup: true
-  - provider: script
-    script: yarn deploy
+  script: yarn deploy
 notifications:
   slack:
     on_success: change
