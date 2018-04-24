@@ -89,17 +89,6 @@ Object {
 }
 `;
 
-exports[`data/VV.json har antall rader 1`] = `2865`;
-
-exports[`data/VV.json har forventede nøkler 1`] = `
-Object {
-  "data": 2865,
-  "infoUrl": 2865,
-  "relasjon": 2865,
-  "tittel": 2865,
-}
-`;
-
 exports[`data/VV_med_kommune.json har antall rader 1`] = `2865`;
 
 exports[`data/VV_med_kommune.json har forventede nøkler 1`] = `
@@ -107,6 +96,17 @@ Object {
   "geometry": 2865,
   "properties": 2865,
   "type": 2865,
+}
+`;
+
+exports[`data/VV_naturvernområde.json har antall rader 1`] = `2865`;
+
+exports[`data/VV_naturvernområde.json har forventede nøkler 1`] = `
+Object {
+  "data": 2865,
+  "infoUrl": 2865,
+  "relasjon": 2865,
+  "tittel": 2865,
 }
 `;
 
@@ -128,13 +128,13 @@ Object {
 }
 `;
 
-exports[`data/flett_metabase.json har antall rader 1`] = `4025`;
+exports[`data/flett_metabase.json har antall rader 1`] = `6890`;
 
 exports[`data/flett_metabase.json har forventede nøkler 1`] = `
 Object {
   "barn": 37,
-  "foreldre": 3031,
-  "tittel": 4025,
+  "foreldre": 6890,
+  "tittel": 6890,
   "undertittel": 37,
 }
 `;
@@ -625,5 +625,26 @@ Object {
   "Kode": 1796,
   "Navn": 1796,
   "OverordnetKode": 1796,
+}
+`;
+
+exports[`data/kodetre.json har antall rader 1`] = `6844`;
+
+exports[`data/kodetre.json har forventede nøkler 1`] = `
+Object {
+  "forelder": 6843,
+  "kode": 6844,
+  "tittel": 6844,
+}
+`;
+
+exports[`data/kodetre_postgre.json har antall rader 1`] = `3980`;
+
+exports[`data/kodetre_postgre.json har forventede nøkler 1`] = `
+Object {
+  "forfedre": 3980,
+  "kode": 3980,
+  "nivå": 3979,
+  "tittel": 3980,
 }
 `;
