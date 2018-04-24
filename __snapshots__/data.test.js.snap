@@ -1680,14 +1680,14 @@ Object {
 }
 `;
 
-exports[`data/kodetre_postgre.json har antall rader 1`] = `4426`;
+exports[`data/kodetre_postgre.json har antall rader 1`] = `7394`;
 
 exports[`data/kodetre_postgre.json har forventede nøkler 1`] = `
 Object {
-  "forfedre": 4426,
-  "kode": 4426,
-  "nivå": 4425,
-  "tittel": 4426,
+  "forfedre": 7394,
+  "kode": 7394,
+  "nivå": 7393,
+  "tittel": 7394,
 }
 `;
 
