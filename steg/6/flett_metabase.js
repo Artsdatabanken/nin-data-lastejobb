@@ -67,7 +67,6 @@ flett("MI_variasjon")
 flett("AR_taxon")
 flett("NA_prosedyrekategori")
 flett("NA_definisjonsgrunnlag")
-flettHvisEksisterer("bbox.json")
 
 kobleForeldre()
 

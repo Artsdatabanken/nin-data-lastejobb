@@ -4,7 +4,7 @@ const log = require("log-less-fancy")()
 const koder = require("../../lib/koder")
 const tinyColor = require("tinycolor2")
 
-let data = io.lesDatafil("flett_metabase")
+let data = io.lesDatafil("metabase_med_bbox")
 Object.keys(data).forEach(kode => {
   data[kode].kode = kode
 })
@@ -113,7 +113,6 @@ function tilordneFarger(barn, rotFarge) {
 }
 
 function byggTreFra(tre, key) {
-  log.debug("bygger", key)
   let rot = data[key]
   if (!rot) throw new Error("Finner ikke " + key)
   // rot.kode = key

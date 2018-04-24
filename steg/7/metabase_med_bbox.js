@@ -19,12 +19,24 @@ function mapPolygon2Bbox(coords) {
   return bbox
 }
 
+function avrund1d(num) {
+  return Math.round(num * 1000) / 1000
+}
+
+function avrund2d(arr) {
+  return [avrund1d(arr[0]), avrund1d(arr[1])]
+}
+
+function avrund4d(bbox) {
+  return [avrund2d(bbox[0]), avrund2d(bbox[1])]
+}
+
 function utvidBbox(kode, bbox) {
   const node = tre[kode]
   const c = node.bbox
   if (node.bbox)
     bbox = [op2d(bbox[0], c[0], Math.min), op2d(bbox[1], c[1], Math.max)]
-  node.bbox = bbox
+  node.bbox = avrund4d(bbox)
   node.foreldre.forEach(fkode => utvidBbox(fkode, bbox))
 }
 
