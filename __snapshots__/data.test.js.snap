@@ -1,14 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`data/AO_naturvernområder.json har antall rader 1`] = `440`;
-
-exports[`data/AO_naturvernområder.json har forventede nøkler 1`] = `
-Object {
-  "foreldre": 440,
-  "tittel": 440,
-}
-`;
-
 exports[`data/AR_diagnostisk_art.json har antall rader 1`] = `0`;
 
 exports[`data/AR_diagnostisk_art.json har forventede nøkler 1`] = `Object {}`;
@@ -133,15 +124,6 @@ Object {
 exports[`data/ao_naturvernområde.json har antall rader 1`] = `440`;
 
 exports[`data/ao_naturvernområde.json har forventede nøkler 1`] = `
-Object {
-  "foreldre": 440,
-  "tittel": 440,
-}
-`;
-
-exports[`data/ao_naturvernområder.json har antall rader 1`] = `440`;
-
-exports[`data/ao_naturvernområder.json har forventede nøkler 1`] = `
 Object {
   "foreldre": 440,
   "tittel": 440,
