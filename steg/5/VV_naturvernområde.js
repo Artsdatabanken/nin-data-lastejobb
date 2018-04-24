@@ -94,6 +94,7 @@ function map(vo) {
       if (!(fylkekode in e.relasjon)) e.relasjon.push(fylkekode)
     })
   }
+  //  if(Object.keys(r).length < 3)
   r[kode] = e
 }
 

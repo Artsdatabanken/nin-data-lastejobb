@@ -110,6 +110,17 @@ Object {
 }
 `;
 
+exports[`data/VV_naturvernområde.json har antall rader 1`] = `2865`;
+
+exports[`data/VV_naturvernområde.json har forventede nøkler 1`] = `
+Object {
+  "data": 2865,
+  "infoUrl": 2865,
+  "relasjon": 2865,
+  "tittel": 2865,
+}
+`;
+
 exports[`data/VV_verneområde_geojson.json har antall rader 1`] = `2865`;
 
 exports[`data/VV_verneområde_geojson.json har forventede nøkler 1`] = `
@@ -128,13 +139,13 @@ Object {
 }
 `;
 
-exports[`data/flett_metabase.json har antall rader 1`] = `4025`;
+exports[`data/flett_metabase.json har antall rader 1`] = `6890`;
 
 exports[`data/flett_metabase.json har forventede nøkler 1`] = `
 Object {
   "barn": 37,
-  "foreldre": 3031,
-  "tittel": 4025,
+  "foreldre": 6890,
+  "tittel": 6890,
   "undertittel": 37,
 }
 `;
@@ -625,5 +636,15 @@ Object {
   "Kode": 1796,
   "Navn": 1796,
   "OverordnetKode": 1796,
+}
+`;
+
+exports[`data/kodetre.json har antall rader 1`] = `6844`;
+
+exports[`data/kodetre.json har forventede nøkler 1`] = `
+Object {
+  "forelder": 6843,
+  "kode": 6844,
+  "tittel": 6844,
 }
 `;

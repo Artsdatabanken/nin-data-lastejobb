@@ -1,8 +1,8 @@
 const config = require("../../config")
+const koder = require("../../lib/koder")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
-// TODO: Organisasjon forelder - default forelder = prefix
 const r = {}
 
 function flettAttributter(o) {
@@ -34,8 +34,29 @@ function settHvisEksisterer(kilde, mål, nøkkel) {
   mål[nøkkel] = kilde[nøkkel]
 }
 
+function finnForeldre(kode) {
+  if (kode === config.kodesystem.rotkode) return []
+  const segs = koder.splittKode(kode)
+  if (segs.length <= 1) return [config.kodesystem.rotkode]
+  const len = segs[segs.length - 1].length
+  kode = kode.substring(0, kode.length - len)
+  while (kode.length > 0) {
+    if (kode in r) return [kode]
+    kode = kode.substring(0, kode.length - 1)
+  }
+  return [config.kodesystem.rotkode]
+}
+
+function kobleForeldre() {
+  for (let key of Object.keys(r)) {
+    const node = r[key]
+    if (!node.foreldre) node.foreldre = finnForeldre(key)
+  }
+}
+
 flettKildedata("annen_kode")
 flettKildedata("VV_naturvernområde")
+flett("VV_naturvernområde")
 flett("inn_ao_fylke")
 flett("inn_ao_kommune")
 flettKildedata("OR_organisasjon")
@@ -47,6 +68,8 @@ flett("AR_taxon")
 flett("NA_prosedyrekategori")
 flett("NA_definisjonsgrunnlag")
 flettHvisEksisterer("bbox.json")
+
+kobleForeldre()
 
 for (let key of Object.keys(r)) {
   const node = r[key]
