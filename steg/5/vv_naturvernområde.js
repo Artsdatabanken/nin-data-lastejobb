@@ -101,7 +101,6 @@ function map(vo) {
         config.kodesystem.prefix.administrativtOmråde + fnr + "-" + knr
 
       e.foreldre.push(kommunekode + "-VV")
-      relasjon(e, "ligger i", kommunekode + "-VV")
       const fylkekode = config.kodesystem.prefix.administrativtOmråde + fnr
       if (!(fylkekode in e.relasjon)) {
         relasjon(e, "ligger i", fylkekode + "-VV")
