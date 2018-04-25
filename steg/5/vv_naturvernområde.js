@@ -63,7 +63,9 @@ function map(vo) {
   const iid = parseInt(props.IID.substring(2))
   const kode = config.kodesystem.prefix.verneområde + iid
   let e = {
-    tittel: { nb: props.OMRADENAVN },
+    tittel: {
+      nb: props.OMRADENAVN
+    },
     infoUrl: config.infoUrl.verneområde + props.IID,
     foreldre: [],
     relasjon: {},
@@ -77,6 +79,8 @@ function map(vo) {
       mobLandPrioritet: ordNummer(props.MOBLANDPRI, 0)
     }
   }
+  e.tittel.betegnelse = { nb: e.data.verneform.toLowerCase() }
+
   relasjon(e, "verneform", kodeFraNavn(e.data.verneform))
   relasjon(e, "verneplan", kodeFraNavn(e.data.verneplan))
   relasjon(

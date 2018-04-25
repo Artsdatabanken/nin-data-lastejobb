@@ -52,7 +52,8 @@ function mapKommuner(kommuner) {
       ci.code.substring(2)
     if (ci.code !== "9999") {
       r[kode] = {
-        tittel: { nb: parseSpråk(ci.name) }
+        tittel: { nb: parseSpråk(ci.name) },
+        betegnelse: { nb: "kommune" }
       }
     }
   })

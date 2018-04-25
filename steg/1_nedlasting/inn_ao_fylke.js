@@ -16,7 +16,11 @@ function mapFylker(kilde) {
     ci.name = ci.name.replace("Finnmark Finnmárku", "Finnmark")
     if (origName !== ci.name) log.info("Endret navn", origName, "=>", ci.name)
     if (ci.code !== "99") {
-      r[kode] = { tittel: { nb: ci.name }, utenRamme: true } //Kommunevåpen har en form som gjør at det ikke passer å croppe dem til en sirkel }
+      r[kode] = {
+        tittel: { nb: ci.name },
+        betegnelse: { nb: "fylke" },
+        utenRamme: true
+      } //Kommunevåpen har en form som gjør at det ikke passer å croppe dem til en sirkel }
     }
   })
   return r

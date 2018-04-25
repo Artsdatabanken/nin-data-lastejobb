@@ -15,7 +15,9 @@ function importerKoder() {
   const mineKoder = {}
   for (let node of alleKoder) {
     const kode = kodefix(node.Kode.Id)
-    let o = { tittel: { nb: capitalizeTittel(node.Navn) } }
+    let o = {
+      tittel: { nb: capitalizeTittel(node.Navn) }
+    }
     if (ingress[kode]) o.ingress = ingress[kode]
     mineKoder[kode] = o
   }

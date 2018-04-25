@@ -54,6 +54,7 @@ exports[`data/inn_ao_fylke.json har antall rader 1`] = `18`;
 
 exports[`data/inn_ao_fylke.json har forventede nøkler 1`] = `
 Object {
+  "betegnelse": 18,
   "tittel": 18,
   "utenRamme": 18,
 }
@@ -63,6 +64,7 @@ exports[`data/inn_ao_kommune.json har antall rader 1`] = `422`;
 
 exports[`data/inn_ao_kommune.json har forventede nøkler 1`] = `
 Object {
+  "betegnelse": 422,
   "tittel": 422,
 }
 `;

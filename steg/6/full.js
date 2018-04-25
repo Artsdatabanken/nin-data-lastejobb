@@ -5,19 +5,20 @@ const log = require("log-less-fancy")()
 
 const r = {}
 
-function flettAttributter(o) {
+function flettAttributter(o, props = {}) {
   for (let key of Object.keys(o)) {
-    r[key] = Object.assign({}, r[key], o[key])
+    r[key] = Object.assign({}, r[key], o[key], props)
   }
 }
 
-function flett(filename) {
+function flett(filename, props = {}) {
   var data = io.lesDatafil(filename)
-  flettAttributter(data)
+  flettAttributter(data, props)
 }
-function flettKildedata(filename) {
+
+function flettKildedata(filename, props = {}) {
   var data = io.lesKildedatafil(filename)
-  flettAttributter(data)
+  flettAttributter(data, props)
 }
 
 function flettHvisEksisterer(filename) {
@@ -56,11 +57,11 @@ function kobleForeldre() {
 
 flettKildedata("annen_kode")
 flettKildedata("vv_naturvernområde")
-flett("vv_naturvernområde")
+flett("vv_naturvernområde", { klasse: "Naturvernområde" })
 flett("inn_ao_fylke")
 flett("inn_ao_kommune")
 flett("ao_naturvernområde")
-flettKildedata("or_organisasjon")
+flettKildedata("or_organisasjon", { klasse: "Organisasjon" })
 flett("ar_diagnostisk_art")
 flett("na_hovedtype")
 flett("na_mi_liste")
