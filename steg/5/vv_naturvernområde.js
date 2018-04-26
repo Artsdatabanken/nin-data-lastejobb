@@ -79,7 +79,7 @@ function map(vo) {
       mobLandPrioritet: ordNummer(props.MOBLANDPRI, 0)
     }
   }
-  e.tittel.betegnelse = { nb: e.data.verneform.toLowerCase() }
+  e.betegnelse = { nb: e.data.verneform.toLowerCase() }
 
   relasjon(e, "verneform", kodeFraNavn(e.data.verneform))
   relasjon(e, "verneplan", kodeFraNavn(e.data.verneplan))
