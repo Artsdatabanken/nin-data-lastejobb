@@ -1703,6 +1703,7 @@ exports[`data/vv_naturvernområde.json har antall rader 1`] = `2865`;
 
 exports[`data/vv_naturvernområde.json har forventede nøkler 1`] = `
 Object {
+  "betegnelse": 2865,
   "data": 2865,
   "foreldre": 2865,
   "infoUrl": 2865,
