@@ -34,47 +34,71 @@
       "Settes for områder som ennå ikke er vurdert mht prioritet i MOB-sammenheng"
   },
   "VV_PA": {
-    "tittel": { "en": "Protected Area Categories" },
+    "tittel": {
+      "nb":
+        "Verneområdets status i IUCN. Naturreservat Verdens Naturvernunion IUCN, har på oppdrag fra FN vedtatt et internasjonalt system for kategorisering av verneområder",
+      "en": "Protected Area Categories"
+    },
     "infoUrl":
       "https://www.iucn.org/theme/protected-areas/about/protected-area-categories"
   },
   "VV_PA-IA": {
-    "tittel": { "en": "Strict Nature Reserve" },
+    "tittel": {
+      "nb":
+        "Vern med tanke på vitenskapelige undersøkelser og/eller miljøovervåking",
+      "en": "Strict Nature Reserve"
+    },
     "ingress":
       "Category Ia are strictly protected areas set aside to protect biodiversity and also possibly geological/geomorphical features, where human visitation, use and impacts are strictly controlled and limited to ensure protection of the conservation values. Such protected areas can serve as indispensable reference areas for scientific research and monitoring",
     "infoUrl":
       "https://www.iucn.org/theme/protected-areas/about/protected-area-categories/category-ia-strict-nature-reserve"
   },
   "VV_PA-II": {
-    "tittel": { "en": "National Park" },
+    "tittel": {
+      "nb": "Vern av økosystemer og friluftsliv",
+      "en": "National Park"
+    },
     "ingress":
       "Category II protected areas are large natural or near natural areas set aside to protect large-scale ecological processes, along with the complement of species and ecosystems characteristic of the area, which also provide a foundation for environmentally and culturally compatible, spiritual, scientific, educational, recreational, and visitor opportunities.",
     "infoUrl":
       "https://www.iucn.org/theme/protected-areas/about/protected-area-categories/category-ii-national-park"
   },
   "VV_PA-V": {
-    "tittel": { "en": "Protected Landscape/ Seascape" },
+    "tittel": {
+      "nb": "Landskapsvern og friluftsliv - Landskapsvernområde",
+      "en": "Protected Landscape/ Seascape"
+    },
     "ingress":
       "A protected area where the interaction of people and nature over time has produced an area of distinct character with significant, ecological, biological, cultural and scenic value: and where safeguarding the integrity of this interaction is vital to protecting and sustaining the area and its associated nature conservation and other values.",
     "infoUrl":
       "https://www.iucn.org/theme/protected-areas/about/protected-area-categories/category-v-protected-landscape-seascape"
   },
   "VV_PA-III": {
-    "tittel": { "en": "Natural Monument or Feature" },
+    "tittel": {
+      "nb": "Vern av naturlige attraksjoner",
+      "en": "Natural Monument or Feature"
+    },
     "ingress":
       "Category III protected areas are set aside to protect a specific natural monument, which can be a landform, sea mount, submarine cavern, geological feature such as a cave or even a living feature such as an ancient grove. They are generally quite small protected areas and often have high visitor value.",
     "infoUrl":
       "https://www.iucn.org/theme/protected-areas/about/protected-area-categories/category-iii-natural-monument-or-feature"
   },
   "VV_PA-IV": {
-    "tittel": { "en": "Habitat/Species Management Area" },
+    "tittel": {
+      "nb": "Vern gjennom aktiv forvaltning - Artsfredningsområder etc",
+      "en": "Habitat/Species Management Area"
+    },
     "ingress":
       "Category IV protected areas aim to protect particular species or habitats and management reflects this priority. Many Category IV protected areas will need regular, active interventions to address the requirements of particular species or to maintain habitats, but this is not a requirement of the category.",
     "infoUrl":
       "https://www.iucn.org/theme/protected-areas/about/protected-area-categories/category-iv-habitatspecies-management-area"
   },
   "VV_PA-IB": {
-    "tittel": { "en": "Wilderness Area" },
+    "tittel": {
+      "nb":
+        "Vern for å beskytte den opprinnelige miljløtilstanden og/eller villmarksområder",
+      "en": "Wilderness Area"
+    },
     "ingress":
       "Category Ib protected areas are usually large unmodified or slightly modified areas, retaining their natural character and influence without permanent or significant human habitation, which are protected and managed so as to preserve their natural condition.",
     "infoUrl":
