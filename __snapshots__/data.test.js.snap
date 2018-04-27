@@ -1602,11 +1602,11 @@ Object {
 }
 `;
 
-exports[`data/metabase.json har antall rader 1`] = `12989`;
+exports[`data/metabase.json har antall rader 1`] = `12996`;
 
 exports[`data/metabase.json har forventede nøkler 1`] = `
 Object {
-  "@": 12972,
+  "@": 12979,
 }
 `;
 
