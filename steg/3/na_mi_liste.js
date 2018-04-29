@@ -1,6 +1,6 @@
 if (!process.env.DEBUG) process.env.DEBUG = "*"
 const path = require("path")
-const koder = require("../../lib/koder")
+const typesystem = require("@artsdatabanken/typesystem")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const config = require("../../config")
@@ -16,7 +16,7 @@ let fjernet = []
 
 function skalMedISystemet(kode) {
   // Grunntyper utgår.. for no
-  if (koder.erGrunntype(kode)) return false
+  if (typesystem.Natursystem.erGrunntype(kode)) return false
   // Kartleggingsenheter B og D utgår
   if (kode.match(/NA_.*-B-/g) || kode.match(/NA_.*-D-/g)) return false
   return true

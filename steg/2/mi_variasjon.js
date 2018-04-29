@@ -1,6 +1,6 @@
 const io = require("../../lib/io")
 const config = require("../../config")
-const { erKartleggingsnivå, capitalizeTittel } = require("../../lib/koder")
+const typesystem = require("@artsdatabanken/typesystem")
 
 let koder = io.lesDatafil("inn_mi")
 
@@ -21,7 +21,7 @@ function importerKoder() {
   for (let key of Object.keys(koder)) {
     const node = koder[key]
     const kode = kodefix(node.Kode.Id)
-    const tittel = capitalizeTittel(node.Navn)
+    const tittel = typesystem.capitalizeTittel(node.Navn)
     let o = { tittel: { nb: tittel } }
     mineKoder[kode] = o
   }

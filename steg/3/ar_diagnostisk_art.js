@@ -3,8 +3,7 @@ const path = require("path")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const config = require("../../config")
-const { kodkode, splittKode, lookup } = require("../../lib/koder")
-const koder = require("../../lib/koder")
+const typesystem = require("@artsdatabanken/typesystem")
 
 log.logLevel = 6
 
@@ -56,7 +55,7 @@ Object.keys(diagArt).forEach(key => {
       ? ukjenteKoder[na_kode] + 1
       : 1
   else {
-    const idkode = koder.artskode(art.scientificNameID)
+    const idkode = typesystem.Art.lagKode(art.scientificNameID)
     if (arter[idkode]) {
       //      const tx_kode = arter[idkode].se
       const na = nin_liste[na_kode]

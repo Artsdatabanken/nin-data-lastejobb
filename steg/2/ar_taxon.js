@@ -1,7 +1,7 @@
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const config = require("../../config")
-const { artskode, medGyldigeTegn } = require("../../lib/koder")
+const typesystem = require("@artsdatabanken/typesystem")
 
 const kodesystem = config.kodesystem
 
@@ -23,7 +23,9 @@ taxons.forEach(taxon => {
 
 let taxonId2Kode = {}
 taxons.forEach(c => {
-  taxonId2Kode[c.taxonId] = artskode(c.scientificNames[0].ScientificNameID)
+  taxonId2Kode[c.taxonId] = typesystem.Art.lagKode(
+    c.scientificNames[0].ScientificNameID
+  )
 })
 
 function artFullSti(c) {
@@ -31,7 +33,7 @@ function artFullSti(c) {
   let r = ""
   c.higherClassification.forEach(hc => {
     if (r) r = "/" + r
-    r = medGyldigeTegn(hc.scientificName) + r
+    r = typesystem.medGyldigeTegn(hc.scientificName) + r
   })
   if (r) r = "/" + r
   r = "Biota" + r
@@ -43,14 +45,14 @@ function artFullStiSub(c) {
   return (
     artFullStiSub(taxon2Data[c.ParentTaxonId]) +
     "/" +
-    medGyldigeTegn(c.ScientificName)
+    typesystem.medGyldigeTegn(c.ScientificName)
   )
 }
 
 function forelder(sn) {
   if (sn.higherClassification) {
     const ho = sn.higherClassification[0]
-    return artskode(ho.scientificNameID)
+    return typesystem.Art.lagKode(ho.scientificNameID)
   }
   if (c.ParentTaxonId === 0) return kodesystem.prefix.taxon.replace("_", "")
   return kodesystem.rotkode
@@ -60,7 +62,7 @@ function alleForeldre(c) {
   let r = []
   while (c.ParentTaxonId) {
     c = taxon2Data[c.ParentTaxonId]
-    r.push(artskode(c.ScientificNameId))
+    r.push(typesystem.Art.lagKode(c.ScientificNameId))
   }
   r.push(kodesystem.prefix.taxon.replace("_", ""))
   return r
@@ -77,7 +79,7 @@ function toKeys(arr) {
 let koder = {}
 taxons.forEach(c => {
   const sn = c.scientificNames[0]
-  const kode = artskode(sn.scientificNameID)
+  const kode = typesystem.Art.lagKode(sn.scientificNameID)
   const e = {
     tittel: { la: sn.scientificName },
     navnSciId: sn.scientificNameID,

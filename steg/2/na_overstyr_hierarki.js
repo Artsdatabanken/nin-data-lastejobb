@@ -1,7 +1,6 @@
 const io = require("../../lib/io")
 const config = require("../../config")
-const { erKartleggingsnivå } = require("../../lib/koder")
-const { hovedtype } = require("../../lib/koder")
+const typesystem = require("@artsdatabanken/typesystem")
 
 // Grunntyper (eksempel NA_T1-1) henger i kodelista på hovedtypen (NA_T)
 // Vi ønsker følgende struktur NA_T -> NA_T1 -> NA_T1-E-1 -> NA_T1-C-1 -> NA_T1-1
@@ -28,7 +27,7 @@ function link(ckode) {
   }
 
   if (ekoder.length === 0) {
-    ekoder = [hovedtype(ckode)]
+    ekoder = [typesystem.Natursystem.hovedtype(ckode)]
   }
   foreldre[ckode] = ekoder
 }
@@ -37,13 +36,13 @@ for (let ckode of Object.keys(grunntyper)) {
   if (ckode.match(/-C-/gi)) {
     link(ckode)
     for (let grunntype of grunntyper[ckode]) {
-      if (hovedtype(grunntype) !== grunntype) {
+      if (typesystem.Natursystem.hovedtype(grunntype) !== grunntype) {
         foreldre[grunntype] = [ckode]
       }
     }
   }
   if (ckode.match(/-E-/gi)) {
-    foreldre[ckode] = [hovedtype(ckode)]
+    foreldre[ckode] = [typesystem.Natursystem.hovedtype(ckode)]
   }
 }
 
