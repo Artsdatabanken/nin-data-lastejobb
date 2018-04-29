@@ -1,7 +1,7 @@
 const config = require("../../config")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
-const koder = require("../../lib/koder")
+const typesystem = require("@artsdatabanken/typesystem")
 const tinyColor = require("tinycolor2")
 
 let data = io.lesDatafil("metabase_med_bbox")
@@ -10,7 +10,7 @@ Object.keys(data).forEach(kode => {
 })
 
 function sti(kode) {
-  return koder
+  return typesystem
     .splittKode(kode)
     .join("/")
     .toLowerCase()
@@ -221,7 +221,7 @@ function injectAlias(from, targetNode, tre) {
 function injectKodeAliases(tre) {
   Object.keys(data).forEach(kode => {
     const node = data[kode]
-    const kodePath = koder.splittKode(kode.toLowerCase())
+    const kodePath = typesystem.splittKode(kode.toLowerCase())
     injectAlias(kodePath, node, tre)
     injectAlias([kode], node, tre)
   })
@@ -230,7 +230,7 @@ function injectKodeAliases(tre) {
 let acc = {}
 function injectNamedAlias(tre, node, tittel) {
   if (!tittel) return
-  const kodePath = koder.medGyldigeTegn(tittel.toLowerCase())
+  const kodePath = typesystem.medGyldigeTegn(tittel.toLowerCase())
   kodePath.split("").forEach(c => {
     if (!acc[c]) acc[c] = 1
     else acc[c] = acc[c] + 1

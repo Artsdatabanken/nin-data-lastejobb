@@ -1,7 +1,7 @@
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const config = require("../../config")
-const koder = require("../../lib/koder")
+const koder = require("@artsdatabanken/typesystem")
 
 let vo = io.lesDatafil("vv_med_kommune")
 let vvKoder = io.lesKildedatafil("vv_naturvernområde")
@@ -58,6 +58,10 @@ function relasjon(e, kategori, kode) {
   e.relasjon[kategori][kode] = {}
 }
 
+function førsteBokstavStor(s) {
+  return s[0].toUpperCase() + s.slice(1)
+}
+
 function map(vo) {
   const props = vo.properties
   const iid = parseInt(props.IID.substring(2))
@@ -72,7 +76,7 @@ function map(vo) {
     data: {
       areal: Math.round(multiPolygonArea(vo.geometry.coordinates)),
       vernedato: props.VERNEDATO,
-      verneform: koder.capitalizeTittel(props.VERNEFORM),
+      verneform: førsteBokstavStor(props.VERNEFORM),
       verneplan: props.VERNEPLAN,
       forvaltningsmyndighet: props.FORVALTNI,
       iucn: ordNummer(props.IUCN, 1),

@@ -5,6 +5,8 @@ const kodesystem = require("./kodesystem")
 const cachePath = "./cache"
 
 const config = {
+  // Navnet på attributtet som inneholder data for noden selv
+  DATAKEY: "@",
   kodesystem: kodesystem,
   lasteScriptPath: "./steg/",
   datakilde: datakilde,

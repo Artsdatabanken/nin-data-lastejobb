@@ -1,5 +1,4 @@
 const config = require("../../config")
-const koder = require("../../lib/koder")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
