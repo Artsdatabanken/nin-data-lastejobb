@@ -44,7 +44,7 @@ bboxFeatures.forEach(feature => {
   let kode = feature.properties.kode
   const bbox = mapPolygon2Bbox(feature.geometry.coordinates[0])
   if (tre[kode]) utvidBbox(kode, bbox)
-  else log.warn("Mangler kode " + kode)
+  else log.warn("bbox har kode '" + kode + "', men denne eksisterer ikke")
 })
 
 io.skrivDatafil(__filename, tre)
