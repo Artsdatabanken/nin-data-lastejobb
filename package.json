@@ -27,6 +27,7 @@
   "dependencies": {
     "@artsdatabanken/typesystem": "^3.0.0",
     "babel-eslint": "^8.2.2",
+    "csv": "^3.0.2",
     "decompress-zip": "^0.3.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "fs-extra": "^6.0.0",

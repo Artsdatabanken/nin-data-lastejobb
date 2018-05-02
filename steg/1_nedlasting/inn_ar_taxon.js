@@ -8,7 +8,7 @@ const log = require("log-less-fancy")()
 http
   .downloadBinary2File(
     config.datakilde.ar_taxon,
-    config.getDataPath(__filename)
+    config.getDataPath(__filename, ".csv")
   )
   .catch(err => {
     log.fatal(err)

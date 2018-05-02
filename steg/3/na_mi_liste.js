@@ -16,7 +16,8 @@ let fjernet = []
 
 function skalMedISystemet(kode) {
   // Grunntyper utgår.. for no
-  if (typesystem.Natursystem.erGrunntype(kode)) return false
+  // Skal likevel med
+  // if (typesystem.Natursystem.erGrunntype(kode)) return false
   // Kartleggingsenheter B og D utgår
   if (kode.match(/NA_.*-B-/g) || kode.match(/NA_.*-D-/g)) return false
   return true

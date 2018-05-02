@@ -9,43 +9,54 @@ Object {
 }
 `;
 
-exports[`data/ar_diagnostisk_art.json har antall rader 1`] = `0`;
+exports[`data/ar_diagnostisk_art.json har antall rader 1`] = `1137`;
 
-exports[`data/ar_diagnostisk_art.json har forventede nøkler 1`] = `Object {}`;
-
-exports[`data/ar_taxon.json har antall rader 1`] = `2`;
-
-exports[`data/ar_taxon.json har forventede nøkler 1`] = `
+exports[`data/ar_diagnostisk_art.json har forventede nøkler 1`] = `
 Object {
-  "foreldre": 2,
-  "infoUrl": 2,
-  "navnSciId": 2,
-  "relasjon": 2,
-  "taxonId": 2,
-  "taxonIdParent": 2,
-  "tittel": 2,
-  "url": 2,
+  "relasjon": 1137,
 }
 `;
 
-exports[`data/full.json har antall rader 1`] = `7399`;
+exports[`data/ar_taxon.json har antall rader 1`] = `111209`;
+
+exports[`data/ar_taxon.json har forventede nøkler 1`] = `
+Object {
+  "foreldre": 111209,
+  "infoUrl": 111209,
+  "navnSciId": 111209,
+  "tittel": 111209,
+  "url": 111209,
+}
+`;
+
+exports[`data/ar_taxon_to_json.json har antall rader 1`] = `111209`;
+
+exports[`data/ar_taxon_to_json.json har forventede nøkler 1`] = `
+Object {
+  "id": 111209,
+  "parent": 487,
+  "tittel": 111209,
+}
+`;
+
+exports[`data/full.json har antall rader 1`] = `119333`;
 
 exports[`data/full.json har forventede nøkler 1`] = `
 Object {
   "barn": 37,
-  "foreldre": 7399,
-  "tittel": 7399,
+  "foreldre": 119333,
+  "tittel": 119333,
   "undertittel": 37,
 }
 `;
 
-exports[`data/full_med_graf.json har antall rader 1`] = `7399`;
+exports[`data/full_med_graf.json har antall rader 1`] = `119333`;
 
 exports[`data/full_med_graf.json har forventede nøkler 1`] = `
 Object {
   "barn": 37,
-  "foreldre": 7399,
-  "tittel": 7399,
+  "foreldre": 119333,
+  "tittel": 119333,
   "undertittel": 37,
 }
 `;
@@ -501,21 +512,6 @@ Object {
   "97": 1,
   "98": 1,
   "99": 1,
-}
-`;
-
-exports[`data/inn_ar_taxon.json har antall rader 1`] = `2`;
-
-exports[`data/inn_ar_taxon.json har forventede nøkler 1`] = `
-Object {
-  "AcceptedName": 2,
-  "Id": 2,
-  "PreferredVernacularName": 2,
-  "_": 0,
-  "dynamicProperties": 2,
-  "scientificNames": 2,
-  "taxonID": 2,
-  "vernacularNames": 2,
 }
 `;
 
@@ -1581,42 +1577,42 @@ Object {
 }
 `;
 
-exports[`data/kodetre.json har antall rader 1`] = `7929`;
+exports[`data/kodetre.json har antall rader 1`] = `119863`;
 
 exports[`data/kodetre.json har forventede nøkler 1`] = `
 Object {
-  "forelder": 7928,
-  "kode": 7929,
-  "tittel": 7929,
+  "forelder": 119862,
+  "kode": 119863,
+  "tittel": 119863,
 }
 `;
 
-exports[`data/kodetre_postgre.json har antall rader 1`] = `7404`;
+exports[`data/kodetre_postgre.json har antall rader 1`] = `119341`;
 
 exports[`data/kodetre_postgre.json har forventede nøkler 1`] = `
 Object {
-  "forfedre": 7404,
-  "kode": 7404,
-  "nivå": 7403,
-  "tittel": 7404,
+  "forfedre": 119341,
+  "kode": 119341,
+  "nivå": 119340,
+  "tittel": 119341,
 }
 `;
 
-exports[`data/metabase.json har antall rader 1`] = `12996`;
+exports[`data/metabase.json har antall rader 1`] = `213711`;
 
 exports[`data/metabase.json har forventede nøkler 1`] = `
 Object {
-  "@": 12979,
+  "@": 213694,
 }
 `;
 
-exports[`data/metabase_med_bbox.json har antall rader 1`] = `7399`;
+exports[`data/metabase_med_bbox.json har antall rader 1`] = `119333`;
 
 exports[`data/metabase_med_bbox.json har forventede nøkler 1`] = `
 Object {
   "barn": 37,
-  "foreldre": 7399,
-  "tittel": 7399,
+  "foreldre": 119333,
+  "tittel": 119333,
   "undertittel": 37,
 }
 `;
@@ -1661,12 +1657,12 @@ Object {
 }
 `;
 
-exports[`data/na_mi_liste.json har antall rader 1`] = `3438`;
+exports[`data/na_mi_liste.json har antall rader 1`] = `4165`;
 
 exports[`data/na_mi_liste.json har forventede nøkler 1`] = `
 Object {
-  "infoUrl": 3438,
-  "tittel": 3438,
+  "infoUrl": 4165,
+  "tittel": 4165,
 }
 `;
 
