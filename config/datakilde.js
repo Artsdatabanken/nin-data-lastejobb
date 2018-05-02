@@ -1,6 +1,5 @@
 const datakilde = {
-  ar_taxon_all: "https://www.artsdatabanken.no/api/taxon/all",
-  ar_taxon: "https://www.artsdatabanken.no/api/taxon/?pageindex=1&pagesize=2",
+  ar_taxon: "http://eksport.artsdatabanken.no/artsnavnebase/Artsnavnebase.csv",
   mi_variasjon:
     "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/alleKoder",
   na_diagnostisk_art: "na_diagnostisk_art",

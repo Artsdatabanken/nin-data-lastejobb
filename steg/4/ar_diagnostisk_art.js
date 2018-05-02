@@ -21,6 +21,8 @@ function linkOne(nodeFra, nodeTil, funksjon, tag) {
 
   const kodeFra = nodeFra.kode
   const kodeTil = nodeTil.kode
+  if (!kodeFra) throw new Error("Mangler kode: " + JSON.stringify(nodeFra))
+  if (!kodeTil) throw new Error("Mangler kode: " + JSON.stringify(nodeTil))
   if (!r[kodeFra]) r[kodeFra] = { relasjon: {} }
   const relasjon = r[kodeFra].relasjon
   if (!relasjon[tag]) relasjon[tag] = []
@@ -46,6 +48,7 @@ let ukjenteArter = {}
 
 Object.keys(diagArt).forEach(key => {
   const art = diagArt[key]
+  if (!art) throw new Error("Mangler art " + key)
   const hovedtype =
     config.kodesystem.prefix.natursystem + art.Kartleggingsenhet.split("-")[0]
   const na_kode =
@@ -59,7 +62,9 @@ Object.keys(diagArt).forEach(key => {
     if (arter[idkode]) {
       //      const tx_kode = arter[idkode].se
       const na = nin_liste[na_kode]
+      na.kode = na_kode
       let tx = arter[idkode]
+      tx.kode = idkode
       if (tx.se) tx = arter[tx.se]
       let e = {}
       linkBoth(na, tx, art["Funksjon1"], art["tags1"])

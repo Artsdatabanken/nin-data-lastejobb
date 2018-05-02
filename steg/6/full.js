@@ -75,7 +75,8 @@ kobleForeldre()
 for (let key of Object.keys(r)) {
   const node = r[key]
   if (!node.se) {
-    if (!r[key].tittel) log.warn("Mangler tittel: ", node)
+    if (!r[key].tittel)
+      throw new Error("Mangler tittel: " + JSON.stringify(node))
     if (r[key].kode) log.warn("Har kode: ", key)
   }
 }

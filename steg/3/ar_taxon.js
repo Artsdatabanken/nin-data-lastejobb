@@ -17,24 +17,10 @@ taxons.forEach(taxon => {
   c2p[taxon.id] = taxon.parentId
 })
 
-function artFullSti(sciNameId) {
-  if (sciNameId === null) return "Biota"
-  let r = ""
-  sciNameId.higherClassification.forEach(hc => {
-    if (r) r = "/" + r
-    r = typesystem.medGyldigeTegn(hc.scientificName) + r
-  })
-  if (r) r = "/" + r
-  r = "Biota" + r
-  return r
-}
-
-function artFullStiSub(id) {
+function artFullSti(id) {
   const me = taxon2Data[id]
-  if (!me.parentId) return c.tittel.la
-  return (
-    artFullStiSub(me.parentId) + "/" + typesystem.medGyldigeTegn(me.tittel.la)
-  )
+  if (!me.parentId) return me.tittel.la
+  return artFullSti(me.parentId) + "/" + typesystem.medGyldigeTegn(me.tittel.la)
 }
 
 function forelder(sciNameId) {
@@ -55,7 +41,6 @@ function alleForeldre(c) {
 
 let koder = {}
 taxons.forEach(c => {
-  console.log(c)
   const kode = typesystem.Art.lagKode(c.id)
   const e = {
     tittel: c.tittel,
@@ -65,10 +50,9 @@ taxons.forEach(c => {
     infoUrl: `https://artsdatabanken.no/Taxon/${typesystem.medGyldigeTegn(
       c.tittel.la
     )}/${c.id}`,
-    url: artFullSti(id)
+    url: artFullSti(c.id)
   }
 
-  log.debug(e)
   koder[kode] = e
 })
 

@@ -15,8 +15,8 @@ const ws = fs.createWriteStream(writePath)
 const csvOptions = {
   delimiter: ";",
   relax_column_count: true,
-  escape: "\\",
-  to: 5
+  escape: "\\"
+  //  to: 5
 }
 
 importCsv(kildefil)
