@@ -13,6 +13,12 @@
 * Internt [JSON format](doc/JSON.md)
 * [Ukurante løsninger (TODOs)](doc/UKURANT.md)
 
+## Build output
+
+* [Kodetre som lastes i API](https://adb-typesystem.surge.sh/kodetre.json) (~5MB)
+* [Kodetre som lastes i PostgreSQL](https://adb-typesystem.surge.sh/kodetre_postgre.json) (~5MB)
+* [Metabase for UI, lastes i Firebase](https://adb-typesystem.surge.sh/metabase.json) (~50MB)
+
 ## Deployment
 
 Bygd metabase deployes automatisk til [Firebase Realtime](https://adb-kode.firebaseio.com/.json) og leses derfra av klienten.

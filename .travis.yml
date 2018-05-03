@@ -12,6 +12,7 @@ deploy:
     skip_cleanup: true
     script: yarn deploy
   - provider: surge
+    skip_cleanup: true
     project: ./build/
     domain: adb-typesystem.surge.sh
 notifications:
