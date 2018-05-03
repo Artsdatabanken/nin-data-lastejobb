@@ -35,4 +35,4 @@ function valider(kode) {
 
 valider("NA")
 
-io.skrivDatafil(__filename, r)
+io.skrivBuildfil(__filename, r)

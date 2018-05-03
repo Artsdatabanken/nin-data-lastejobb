@@ -270,7 +270,7 @@ injectNamedAliases(tre)
 fyllInnGraf()
 
 tre = { katalog: tre }
-io.skrivDatafil(__filename, tre)
+io.skrivBuildfil(__filename, tre)
 
 validateKeys(tre, "")
 
