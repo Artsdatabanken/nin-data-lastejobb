@@ -36,7 +36,7 @@ exports[`data/inn_ao_kommune_geom.json har antall rader 1`] = `2`;
 
 exports[`data/inn_ao_kommune_geom.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/inn_bbox.json har antall rader 1`] = `3`;
+exports[`data/inn_bbox.json har antall rader 1`] = `4497`;
 
 exports[`data/inn_bbox.json har forventede nøkler 1`] = `undefined`;
 

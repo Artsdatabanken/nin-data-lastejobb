@@ -3,20 +3,11 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
 let tre = io.lesDatafil("full_med_graf")
-let bboxFeatures = io.lesDatafil("inn_bbox").features
+let bboxFeatures = io.lesDatafil("inn_bbox")
 
 function op2d(a, b, fn) {
   const r = [fn(a[0], b[0]), fn(a[1], b[1])]
   return r
-}
-
-function mapPolygon2Bbox(coords) {
-  let bbox = [[1e9, 1e9], [-1e9, -1e9]]
-  coords.forEach(c => {
-    bbox[0] = op2d(bbox[0], c, Math.min)
-    bbox[1] = op2d(bbox[1], c, Math.max)
-  })
-  return bbox
 }
 
 function avrund1d(num) {
@@ -33,6 +24,10 @@ function avrund4d(bbox) {
 
 function utvidBbox(kode, bbox) {
   const node = tre[kode]
+  if (!node) {
+    log.warn("Mangler kode " + kode + " i metabase.")
+    return
+  }
   const c = node.bbox
   if (node.bbox)
     bbox = [op2d(bbox[0], c[0], Math.min), op2d(bbox[1], c[1], Math.max)]
@@ -40,11 +35,10 @@ function utvidBbox(kode, bbox) {
   node.foreldre.forEach(fkode => utvidBbox(fkode, bbox))
 }
 
-bboxFeatures.forEach(feature => {
-  let kode = feature.properties.kode
-  const bbox = mapPolygon2Bbox(feature.geometry.coordinates[0])
+Object.keys(bboxFeatures).forEach(kode => {
+  const bbox = bboxFeatures[kode]
   if (tre[kode]) utvidBbox(kode, bbox)
-  else log.warn("bbox har kode '" + kode + "', men denne eksisterer ikke")
+  else log.warn("bbox for kode '" + kode + "', men koden eksisterer ikke")
 })
 
 io.skrivDatafil(__filename, tre)
