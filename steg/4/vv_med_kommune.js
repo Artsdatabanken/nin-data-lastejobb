@@ -18,10 +18,10 @@ function koblePåKommune(vo) {
     if (poly) {
       const kommunenummer = poly.id.toString().padStart(4, "0")
       hits[kommunenummer] = 1
+      treff++
     }
-    vo.properties.kommune = Object.keys(hits)
-    treff++
   }
+  vo.properties.kommune = Object.keys(hits)
   if (vo.properties.kommune.length <= 0)
     log.warn(
       "Fant ikke kommune for",

@@ -24,3 +24,60 @@ Bygd metabase deployes automatisk til [Firebase Realtime](https://adb-kode.fireb
 * [GIS dataflyt](https://github.com/artsdatabanken/grunnkart-dataflyt)
 * [Geografisk API](https://github.com/Artsdatabanken/rasterQ) og [Deployment](https://github.com/Artsdatabanken/rasterUploader) av dette
 * Verktøy for [rødlisting av naturtyper](https://github.com/Artsdatabanken/natty)
+
+## Spørre mot JSON
+
+```bash
+jq '.katalog.or."adb"' data/metabase.json
+```
+
+```json
+{
+  "@": {
+    "farge": "hsl(24, 100%, 50%)",
+    "tittel": {
+      "nb": "Artsdatabanken"
+    },
+    "infoUrl": "https://www.artsdatabanken.no",
+    "klasse": "Organisasjon",
+    "kode": "OR_ADB",
+    "sti": "or/adb",
+    "overordnet": [
+      {
+        "kode": "OR",
+        "tittel": {
+          "nb": "Datakilde"
+        },
+        "sti": "or"
+      },
+      {
+        "kode": "~",
+        "tittel": {
+          "nb": "Natur i Norge"
+        },
+        "sti": ""
+      }
+    ],
+    "barn": {}
+  }
+}
+```
+
+```
+jq '.AR_43956' data/ar_taxon.json
+```
+
+```json
+{
+  "tittel": {
+    "la": "Dactylopusia longyearbyenensis"
+  },
+  "navnSciId": "43956",
+  "parentId": "43953",
+  "foreldre": ["AR_43953"],
+  "infoUrl":
+    "https://artsdatabanken.no/Taxon/Dactylopusia_longyearbyenensis/43956",
+  "url":
+    "Animalia/Arthropoda/Crustacea/Maxillopoda/Copepoda/Harpacticoida/Thalestridae/Thalestridae/Dactylopusia_longyearbyenensis"
+}
+```

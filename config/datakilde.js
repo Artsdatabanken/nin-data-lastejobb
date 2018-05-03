@@ -10,7 +10,7 @@ const datakilde = {
   vv_verneområe:
     "http://trdefme02.miljodirektoratet.no/nedlasting/Naturbase/Shape/naturvern_utm33.zip",
   ao_kommune_geom: "http://norgeskart.no/json/norge/kommuner.json",
-  bbox: "http://it-webadbtest01.it.ntnu.no/data/geojson/codeBbox.geojson"
+  bbox: "http://it-webadbtest01.it.ntnu.no/data/json/sqrt42/sqrt42bbox.json"
 }
 
 module.exports = datakilde
