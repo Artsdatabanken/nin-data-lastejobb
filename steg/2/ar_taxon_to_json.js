@@ -45,6 +45,7 @@ function transform(record) {
   if (r["Underart"]) return
   if (r["Varietet"]) return
   if (r["Form"]) return
+  if (r["Art"]) return
 
   const o = {
     id: r.PK_LatinskNavnID,
