@@ -2,3 +2,4 @@ data/
 cache/
 build/
 node_modules/
+.vscode/

@@ -1,5 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`build/kodetre.json har antall rader 1`] = `39565`;
+
+exports[`build/kodetre.json har forventede nøkler 1`] = `undefined`;
+
+exports[`build/kodetre_postgre.json har antall rader 1`] = `39043`;
+
+exports[`build/kodetre_postgre.json har forventede nøkler 1`] = `undefined`;
+
+exports[`build/metabase.json har antall rader 1`] = `54316`;
+
+exports[`build/metabase.json har forventede nøkler 1`] = `undefined`;
+
 exports[`data/ao_naturvernområde.json har antall rader 1`] = `440`;
 
 exports[`data/ao_naturvernområde.json har forventede nøkler 1`] = `undefined`;
@@ -47,18 +59,6 @@ exports[`data/inn_mi.json har forventede nøkler 1`] = `undefined`;
 exports[`data/inn_na.json har antall rader 1`] = `1796`;
 
 exports[`data/inn_na.json har forventede nøkler 1`] = `undefined`;
-
-exports[`data/kodetre.json har antall rader 1`] = `39565`;
-
-exports[`data/kodetre.json har forventede nøkler 1`] = `undefined`;
-
-exports[`data/kodetre_postgre.json har antall rader 1`] = `39043`;
-
-exports[`data/kodetre_postgre.json har forventede nøkler 1`] = `undefined`;
-
-exports[`data/metabase.json har antall rader 1`] = `54316`;
-
-exports[`data/metabase.json har forventede nøkler 1`] = `undefined`;
 
 exports[`data/metabase_med_bbox.json har antall rader 1`] = `39035`;
 
