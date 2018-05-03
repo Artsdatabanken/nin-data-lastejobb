@@ -28,7 +28,6 @@ function linkOne(nodeFra, nodeTil, funksjon, tag) {
   if (!relasjon[tag]) relasjon[tag] = []
   relasjon[tag] = {
     [kodeTil]: {
-      tittel: nodeTil.tittel,
       variabel: variabel
     }
   }

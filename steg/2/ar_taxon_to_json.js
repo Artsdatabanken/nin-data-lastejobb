@@ -16,7 +16,6 @@ const csvOptions = {
   delimiter: ";",
   relax_column_count: true,
   escape: "\\"
-  //  to: 5
 }
 
 importCsv(kildefil)
@@ -40,21 +39,25 @@ function transform(record) {
     const value = record[i]
     if (value && !value.startsWith("Not_assigned")) r[header[i]] = value
   }
-  if (r["Hovedstatus"] !== "Gyldig") return
+  if (!r["Hovedstatus"] in ["Gyldig", "Synonym"]) return
+
+  // TODO: Fjern Underarter, varietet og form inntil videre
+  if (r["Underart"]) return
+  if (r["Varietet"]) return
+  if (r["Form"]) return
 
   const o = {
     id: r.PK_LatinskNavnID,
-    parent: r.FK_OverordnaLatinskNavnID,
+    parentId: r.FK_OverordnaLatinskNavnID,
     tittel: { la: settSammenNavn(r) }
   }
+  //  if (o.tittel.la === "Incertae sedis") return
+  //  if (o.tittel.la === "Incerta sedis") return
+  //  if (o.tittel.la === "(Rekke) Incertae sedis") return
 
-  if (o.tittel.la === "Incertae sedis") return
-  if (o.tittel.la === "Incerta sedis") return
-  if (o.tittel.la === "(Rekke) Incertae sedis") return
-
-  pop(o.tittel, "nb", "Bokmål")
-  pop(o.tittel, "nn", "Nynorsk")
-  pop(o.tittel, "sa", "Samisk")
+  pop(o.tittel, "nb", r, "Bokmål")
+  pop(o.tittel, "nn", r, "Nynorsk")
+  pop(o.tittel, "sa", r, "Samisk")
   return o
 }
 
@@ -62,8 +65,8 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
-function pop(o, key, suffix) {
-  const value = o["Populærnavn" + suffix]
+function pop(o, key, r, suffix) {
+  const value = r["Populærnavn" + suffix]
   if (!value) return
   o[key] = capitalizeFirstLetter(value)
 }

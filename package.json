@@ -2,10 +2,13 @@
   "name": "kverna",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": ">=8.00"
+  },
   "main": "index.js",
   "scripts": {
-    "build": "node kjør_alle_lastejobber",
-    "test": "jest",
+    "build": "node --max_old_space_size=4096 index",
+    "test": "node --max_old_space_size=4096 node_modules/.bin/jest",
     "deploy":
       "firebase --token \"$FIREBASE_TOKEN\" -P adb-kode database:set -y / data/metabase.json",
     "flow": "flow",
@@ -27,6 +30,7 @@
   "dependencies": {
     "@artsdatabanken/typesystem": "^3.0.0",
     "babel-eslint": "^8.2.2",
+    "bfj": "^6.1.0",
     "csv": "^3.0.2",
     "decompress-zip": "^0.3.1",
     "eslint-config-airbnb-base": "^12.1.0",

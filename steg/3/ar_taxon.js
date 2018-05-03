@@ -7,6 +7,7 @@ const kodesystem = config.kodesystem
 
 const taxons = io.lesDatafil("ar_taxon_to_json")
 
+log.debug(taxons.length)
 let taxon2Data = {}
 taxons.forEach(tx => {
   taxon2Data[tx.id] = tx
@@ -19,6 +20,7 @@ taxons.forEach(taxon => {
 
 function artFullSti(id) {
   const me = taxon2Data[id]
+  if (!me) throw new Error("Mangler taxon for sciNameId #" + id)
   if (!me.parentId) return me.tittel.la
   return artFullSti(me.parentId) + "/" + typesystem.medGyldigeTegn(me.tittel.la)
 }
@@ -29,30 +31,17 @@ function forelder(sciNameId) {
   return kodesystem.prefix.taxon.replace("_", "")
 }
 
-function alleForeldre(c) {
-  let r = []
-  while (c.ParentTaxonId) {
-    c = taxon2Data[c.ParentTaxonId]
-    r.push(typesystem.Art.lagKode(c.ScientificNameId))
-  }
-  r.push(kodesystem.prefix.taxon.replace("_", ""))
-  return r
-}
-
 let koder = {}
 taxons.forEach(c => {
   const kode = typesystem.Art.lagKode(c.id)
   const e = {
     tittel: c.tittel,
-    navnSciId: c.id,
-    parentId: c.parentId,
-    foreldre: [forelder()],
-    infoUrl: `https://artsdatabanken.no/Taxon/${typesystem.medGyldigeTegn(
-      c.tittel.la
-    )}/${c.id}`,
+    //    navnSciId: c.id,
+    //    parentId: c.parentId,
+    foreldre: [forelder(c.parentId)],
+    infoUrl: `https://artsdatabanken.no/Taxon/${typesystem.Art.prefix}/${c.id}`,
     url: artFullSti(c.id)
   }
-
   koder[kode] = e
 })
 
