@@ -58,4 +58,4 @@ Object.keys(data).forEach(kode => {
 
 eksporter({ kode: dummySuperRoot, barn: [data[config.kodesystem.rotkode]] }, [])
 
-io.skrivDatafil(__filename, r)
+io.skrivBuildfil(__filename, r)

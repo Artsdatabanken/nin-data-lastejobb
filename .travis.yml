@@ -8,9 +8,12 @@ script:
 - yarn build
 - yarn test
 deploy:
-  provider: script
-  skip_cleanup: true
-  script: yarn deploy
+  - provider: script
+    skip_cleanup: true
+    script: yarn deploy
+  - provider: surge
+    project: ./build/
+    domain: adb-typesystem.surge.sh
 notifications:
   slack:
     on_success: change

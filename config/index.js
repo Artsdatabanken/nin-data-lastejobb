@@ -19,9 +19,14 @@ const config = {
     return cachePath + "/" + relPath + "/"
   },
   dataRoot: "./data",
+  buildRoot: "./build",
   getDataPath: function(relPath, extension = ".json") {
     const filename = path.basename(relPath, path.extname(relPath)) + extension
     return this.dataRoot + "/" + filename.replace(".test", "")
+  },
+  getBuildPath: function(relPath, extension = ".json") {
+    const filename = path.basename(relPath, path.extname(relPath)) + extension
+    return this.buildRoot + "/" + filename.replace(".test", "")
   }
 }
 
