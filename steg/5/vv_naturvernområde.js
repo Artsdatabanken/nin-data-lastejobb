@@ -79,8 +79,7 @@ function map(vo) {
       verneform: førsteBokstavStor(props.VERNEFORM),
       verneplan: props.VERNEPLAN,
       forvaltningsmyndighet: props.FORVALTNI,
-      iucn: ordNummer(props.IUCN, 1),
-      mobLandPrioritet: ordNummer(props.MOBLANDPRI, 0)
+      iucn: ordNummer(props.IUCN, 1)
     }
   }
   e.betegnelse = { nb: e.data.verneform.toLowerCase() }
@@ -97,7 +96,6 @@ function map(vo) {
     relasjon(e, "truet vurdering", kodeFraNavn(e.data.truetvurdering))
   }
   if (e.data.iucn) relasjon(e, "iucn", "VV_PA-" + e.data.iucn)
-  relasjon(e, "mobLand prioritet", "VV_ML-" + e.data.mobLandPrioritet)
   relasjon(e, "ble vernet i år", "VV_VT-" + e.data.vernedato.substring(0, 4))
   if (new Date(props.DATO_REVID).getFullYear() > 1900)
     e.data.revisjonsdato = props.DATO_REVID
