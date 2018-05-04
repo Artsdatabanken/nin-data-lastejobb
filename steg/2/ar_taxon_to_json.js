@@ -29,7 +29,10 @@ async function importCsv(kildefil) {
 }
 
 let header
+let rows = 0
 function transform(record) {
+  rows++
+  //  log.warn(rows)
   if (!header) {
     header = record
     return
@@ -42,6 +45,7 @@ function transform(record) {
   if (!r["Hovedstatus"] in ["Gyldig", "Synonym"]) return
 
   // TODO: Fjern Underarter, varietet og form inntil videre
+  if (record[0] == 48103) log.warn(JSON.stringify(r))
   if (r["Underart"]) return
   if (r["Varietet"]) return
   if (r["Form"]) return
@@ -77,6 +81,7 @@ function settSammenNavn(r) {
   if (r["Varietet"]) return `${r["Art"]} ${r["Varietet"]}`
   if (r["Form"]) return `${r["Art"]} ${r["Form"]}`
   if (r["Art"]) return `${r["Slekt"]} ${r["Art"]}`
+  if (r["Slekt"]) return r["Slekt"]
   if (r["Familie"]) return r["Familie"]
   if (r["Orden"]) return r["Orden"]
   if (r["Underklasse"]) return r["Underklasse"]
