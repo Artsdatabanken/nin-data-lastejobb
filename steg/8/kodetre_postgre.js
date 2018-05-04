@@ -2,7 +2,6 @@ const config = require("../../config")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
-const dummySuperRoot = "##"
 let data = io.lesDatafil("full_med_graf")
 let r = []
 
@@ -39,7 +38,7 @@ function eksporter(node, forfedre, nivå = 0) {
     return
   }
   forfedre = Object.assign([], forfedre)
-  if (node.kode !== dummySuperRoot) forfedre.push(node.kode)
+  if (node.kode !== config.kodesystem.rotkode) forfedre.push(node.kode)
   node.barn.forEach(b => {
     const rel = {
       kode: b.kode,
@@ -56,6 +55,9 @@ Object.keys(data).forEach(kode => {
   dyttInn(kode)
 })
 
-eksporter({ kode: dummySuperRoot, barn: [data[config.kodesystem.rotkode]] }, [])
+eksporter(
+  { kode: config.kodesystem.rotkode, barn: [data[config.kodesystem.rotkode]] },
+  []
+)
 
 io.skrivBuildfil(__filename, r)
