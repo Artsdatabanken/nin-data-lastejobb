@@ -52,14 +52,6 @@ exports[`data/inn_bbox.json har antall rader 1`] = `4497`;
 
 exports[`data/inn_bbox.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/inn_mi.json har antall rader 1`] = `2909`;
-
-exports[`data/inn_mi.json har forventede nøkler 1`] = `undefined`;
-
-exports[`data/inn_na.json har antall rader 1`] = `1796`;
-
-exports[`data/inn_na.json har forventede nøkler 1`] = `undefined`;
-
 exports[`data/metabase_med_bbox.json har antall rader 1`] = `165951`;
 
 exports[`data/metabase_med_bbox.json har forventede nøkler 1`] = `undefined`;
