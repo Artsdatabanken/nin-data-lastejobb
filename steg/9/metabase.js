@@ -6,7 +6,19 @@ const tinyColor = require("tinycolor2")
 
 let data = io.lesDatafil("metabase_med_bbox")
 Object.keys(data).forEach(kode => {
-  data[kode].kode = kode
+  const node = data[kode]
+  if (!node.bbox) delete data[kode]
+})
+Object.keys(data).forEach(parent => {
+  const node = data[parent]
+  if (!node.graf) return
+  Object.keys(node.graf).forEach(kode => {
+    Object.keys(node.graf[kode]).forEach(relatertKode => {
+      if (data[relatertKode]) return
+      log.debug("Fjerner relasjon til node som mangler data: " + relatertKode)
+      delete node.graf[kode]
+    })
+  })
 })
 
 function sti(kode) {
@@ -19,14 +31,14 @@ function sti(kode) {
 function fyllInnGraf() {
   Object.keys(data).forEach(kode => {
     const node = data[kode]
-    if (node.graf)
-      Object.keys(node.graf).forEach(key => {
-        Object.keys(node.graf[key]).forEach(kode => {
-          const sub = node.graf[key][kode]
-          sub.sti = sti(kode)
-          sub.farge = data[kode].farge
-        })
+    if (!node.graf) return
+    Object.keys(node.graf).forEach(key => {
+      Object.keys(node.graf[key]).forEach(kode => {
+        const sub = node.graf[key][kode]
+        sub.sti = sti(kode)
+        sub.farge = data[kode].farge
       })
+    })
   })
 }
 
@@ -68,15 +80,6 @@ function mapForeldreTilBarn() {
   })
 }
 
-function tittel(node) {
-  const tittel = node.tittel
-  if (!tittel) throw new Error("Mangler tittel: " + JSON.stringify(node))
-  if (tittel.nb) return tittel.nb
-  if (tittel.en) return tittel.en
-  if (tittel.la) return tittel.la
-  return node.kode
-}
-
 function hentKey(key) {
   let node = data[key]
   //  if (node.se) return node.se
@@ -92,7 +95,7 @@ function nøstOppForfedre(forelderkey) {
       log.warn("Mangler kode " + forelderkey)
       return
     }
-    r.push({ kode: forelder.kode, tittel: forelder.tittel, sti: forelder.sti })
+    r.push({ kode: forelderkey, tittel: forelder.tittel, sti: forelder.sti })
     forelderkey = c2p[forelderkey][0]
   }
   return r
@@ -156,7 +159,6 @@ function byggTreFra(tre, key) {
   if (p2c[key]) {
     p2c[key].forEach(ckey => {
       const cnode = data[ckey]
-      const ckode = cnode.kode
       barn[ckey] = {
         sti: cnode.sti,
         tittel: cnode.tittel
@@ -198,7 +200,8 @@ function settInn(tre, targetNode, kode, node) {
   tre[leafKey] = Object.assign({}, tre[leafKey], targetNode)
 }
 
-function injectAlias(from, targetNode, tre) {
+function injectAlias(from, kode, tre) {
+  const targetNode = data[kode]
   if (targetNode.sti.toLowerCase() === from.join("/").toLowerCase()) return
   for (let i = 0; i < from.length - 1; i++) {
     const subKey = from[i].toLowerCase()
@@ -225,13 +228,13 @@ function injectKodeAliases(tre) {
   Object.keys(data).forEach(kode => {
     const node = data[kode]
     const kodePath = typesystem.splittKode(kode.toLowerCase())
-    injectAlias(kodePath, node, tre)
-    injectAlias([kode], node, tre)
+    injectAlias(kodePath, kode, tre)
+    injectAlias([kode], kode, tre)
   })
 }
 
 let acc = {}
-function injectNamedAlias(tre, node, tittel) {
+function injectNamedAlias(tre, kode, tittel) {
   if (!tittel) return
   const kodePath = typesystem.medGyldigeTegn(tittel.toLowerCase())
   kodePath.split("").forEach(c => {
@@ -239,15 +242,15 @@ function injectNamedAlias(tre, node, tittel) {
     else acc[c] = acc[c] + 1
   })
   if (kodePath.length === 0) throw new Error(tittel)
-  injectAlias([kodePath], node, tre)
+  injectAlias([kodePath], kode, tre)
 }
 
 function injectNamedAliases(tre) {
   Object.keys(data).forEach(kode => {
     const node = data[kode]
-    injectNamedAlias(tre, node, node.tittel.nb)
-    injectNamedAlias(tre, node, node.tittel.la)
-    injectNamedAlias(tre, node, node.tittel.en)
+    injectNamedAlias(tre, kode, node.tittel.nb)
+    injectNamedAlias(tre, kode, node.tittel.la)
+    injectNamedAlias(tre, kode, node.tittel.en)
   })
 }
 
@@ -263,6 +266,9 @@ function validateKeys(tre, path) {
   }
 }
 
+function filtrerKoderUtenData() {}
+
+filtrerKoderUtenData()
 settPrimærSti()
 mapForeldreTilBarn()
 
@@ -276,5 +282,3 @@ tre = { katalog: tre }
 io.skrivBuildfil(__filename, tre)
 
 validateKeys(tre, "")
-
-//console.log(JSON.stringify(tre.katalog.na.t["@"]))
