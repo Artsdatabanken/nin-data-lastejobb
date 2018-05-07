@@ -2,7 +2,7 @@ const io = require("../../lib/io")
 const config = require("../../config")
 const typesystem = require("@artsdatabanken/typesystem")
 
-let koder = io.lesDatafil("inn_mi")
+let koder = io.lesKildedatafil("mi")
 
 function kodefix(kode) {
   if (!kode) return kode

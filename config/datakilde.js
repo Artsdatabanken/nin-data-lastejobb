@@ -1,9 +1,8 @@
 const datakilde = {
   ar_taxon: "http://eksport.artsdatabanken.no/artsnavnebase/Artsnavnebase.csv",
-  mi_variasjon:
-    "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/alleKoder",
+  mi_variasjon: "mi_variasjon", // "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/alleKoder",
   na_diagnostisk_art: "na_diagnostisk_art",
-  na_koder: "https://webtjenester.artsdatabanken.no/NiN/v2b/koder/alleKoder",
+  na_koder: "na_koder", // "https://webtjenester.artsdatabanken.no/NiN/v2b/koder/alleKoder",
   na_hovedtyper: "na_hovedtyper",
   na_grunntyper: "na_grunntyper",
   or_organisasjon: "or_organisasjon",
