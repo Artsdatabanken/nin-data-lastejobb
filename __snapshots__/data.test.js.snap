@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`build/kodetre.json har antall rader 1`] = `39565`;
+exports[`build/kodetre.json har antall rader 1`] = `166481`;
 
 exports[`build/kodetre.json har forventede nøkler 1`] = `undefined`;
 
-exports[`build/kodetre_postgre.json har antall rader 1`] = `39043`;
+exports[`build/kodetre_postgre.json har antall rader 1`] = `165959`;
 
 exports[`build/kodetre_postgre.json har forventede nøkler 1`] = `undefined`;
 
-exports[`build/metabase.json har antall rader 1`] = `75558`;
+exports[`build/metabase.json har antall rader 1`] = `342835`;
 
 exports[`build/metabase.json har forventede nøkler 1`] = `undefined`;
 
@@ -16,23 +16,23 @@ exports[`data/ao_naturvernområde.json har antall rader 1`] = `440`;
 
 exports[`data/ao_naturvernområde.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/ar_diagnostisk_art.json har antall rader 1`] = `54`;
+exports[`data/ar_diagnostisk_art.json har antall rader 1`] = `1172`;
 
 exports[`data/ar_diagnostisk_art.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/ar_taxon.json har antall rader 1`] = `30911`;
+exports[`data/ar_taxon.json har antall rader 1`] = `157827`;
 
 exports[`data/ar_taxon.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/ar_taxon_to_json.json har antall rader 1`] = `30911`;
+exports[`data/ar_taxon_to_json.json har antall rader 1`] = `157827`;
 
 exports[`data/ar_taxon_to_json.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/full.json har antall rader 1`] = `39035`;
+exports[`data/full.json har antall rader 1`] = `165951`;
 
 exports[`data/full.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/full_med_graf.json har antall rader 1`] = `39035`;
+exports[`data/full_med_graf.json har antall rader 1`] = `165951`;
 
 exports[`data/full_med_graf.json har forventede nøkler 1`] = `undefined`;
 
@@ -60,7 +60,7 @@ exports[`data/inn_na.json har antall rader 1`] = `1796`;
 
 exports[`data/inn_na.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/metabase_med_bbox.json har antall rader 1`] = `39035`;
+exports[`data/metabase_med_bbox.json har antall rader 1`] = `165951`;
 
 exports[`data/metabase_med_bbox.json har forventede nøkler 1`] = `undefined`;
 
