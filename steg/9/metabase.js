@@ -122,21 +122,25 @@ function tilfeldigFarge() {
   return tempColors[i]
 }
 
-function tilordneFarger(barn, rotFarge) {
+function tilordneFarger(barna, rotFarge) {
+  if (!rotFarge) rotFarge = tilfeldigFarge()
   let farge = new tinyColor(rotFarge)
-  Object.keys(barn).forEach(bkode => {
-    const minFarge = data[bkode].farge
-    if (!barn[bkode].farge) {
-      barn[bkode].farge = minFarge ? minFarge : farge.spin(15).toHexString()
+  Object.keys(barna).forEach(bkode => {
+    const barn = barna[bkode]
+    let minFarge = data[bkode].farge
+    if (!minFarge) {
+      const tilordneTilfeldigeFarger =
+        "NA_MI_BS_".indexOf(bkode.substring(0, 2)) >= 0
+      if (tilordneTilfeldigeFarger) minFarge = farge.spin(15).toHexString()
     }
+    if (minFarge) barn.farge = minFarge
   })
 }
 
 function byggTreFra(tre, key) {
   let rot = data[key]
   if (!rot) throw new Error("Finner ikke " + key)
-  // rot.kode = key
-  if (!rot.farge) rot.farge = tilfeldigFarge()
+  //  if (!rot.farge) rot.farge = tilfeldigFarge()
   if (!rot.overordnet) {
     if (!rot.foreldre) {
       log.warn("mangler forelder: " + key)
@@ -155,7 +159,6 @@ function byggTreFra(tre, key) {
       const ckode = cnode.kode
       barn[ckey] = {
         sti: cnode.sti,
-        kode: ckode,
         tittel: cnode.tittel
       }
       const child = byggTreFra(tre, ckey)
@@ -210,7 +213,7 @@ function injectAlias(from, targetNode, tre) {
   if (!leafNode["@"]) leafNode["@"] = {}
   const me = leafNode["@"]
   if (!me.se) me.se = {}
-  if (!targetNode.kode)
+  if (!targetNode)
     throw new Error(JSON.stringify(from) + JSON.stringify(targetNode))
   me.se[targetNode.kode] = {
     tittel: targetNode.tittel,
