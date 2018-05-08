@@ -1,6 +1,7 @@
 const io = require("../../lib/io")
 const config = require("../../config")
 const typesystem = require("@artsdatabanken/typesystem")
+const log = require("log-less-fancy")()
 
 let koder = io.lesKildedatafil("mi")
 
@@ -21,6 +22,7 @@ function importerKoder() {
   for (let key of Object.keys(koder)) {
     const node = koder[key]
     const kode = kodefix(node.Kode.Id)
+    if (kode === "MI") node.Navn = "Miljø"
     const tittel = typesystem.capitalizeTittel(node.Navn)
     let o = { tittel: { nb: tittel } }
     mineKoder[kode] = o
