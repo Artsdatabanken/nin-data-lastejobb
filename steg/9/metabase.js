@@ -7,6 +7,7 @@ const tinyColor = require("tinycolor2")
 let data = io.lesDatafil("metabase_med_bbox")
 Object.keys(data).forEach(kode => {
   const node = data[kode]
+  node.kode = kode
   if (!node.bbox) delete data[kode]
 })
 Object.keys(data).forEach(parent => {
