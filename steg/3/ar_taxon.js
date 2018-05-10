@@ -3,11 +3,8 @@ const log = require("log-less-fancy")()
 const config = require("../../config")
 const typesystem = require("@artsdatabanken/typesystem")
 
-const kodesystem = config.kodesystem
-
 const taxons = io.lesDatafil("ar_taxon_to_json")
 
-log.debug(taxons.length)
 let taxon2Data = {}
 taxons.forEach(tx => {
   taxon2Data[tx.id] = tx
@@ -26,20 +23,22 @@ function artFullSti(id) {
 }
 
 function forelder(sciNameId) {
-  if (sciNameId === null) return kodesystem.rotkode
-  if (sciNameId) return typesystem.Art.lagKode(sciNameId)
-  return kodesystem.prefix.taxon.replace("_", "")
+  if (sciNameId === null) return typesystem.rotkode
+  if (sciNameId) return typesystem.art.lagKode(sciNameId)
+  return typesystem.art.prefiks
 }
 
 let koder = {}
 taxons.forEach(c => {
-  const kode = typesystem.Art.lagKode(c.id)
+  const kode = typesystem.art.lagKode(c.id)
   const e = {
     tittel: c.tittel,
     //    navnSciId: c.id,
     //    parentId: c.parentId,
     foreldre: [forelder(c.parentId)],
-    infoUrl: `https://artsdatabanken.no/Taxon/${typesystem.Art.prefix}/${c.id}`,
+    infoUrl: `https://artsdatabanken.no/Taxon/${typesystem.art.prefiks}/${
+      c.id
+    }`,
     url: artFullSti(c.id)
   }
   koder[kode] = e

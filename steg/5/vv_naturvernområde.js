@@ -1,7 +1,7 @@
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const config = require("../../config")
-const koder = require("@artsdatabanken/typesystem")
+const typesystem = require("@artsdatabanken/typesystem")
 
 let vo = io.lesDatafil("vv_med_kommune")
 let vvKoder = io.lesKildedatafil("vv_naturvernområde")
@@ -10,7 +10,7 @@ function invert(o) {
   let r = {}
   Object.keys(vvKoder).map(key => {
     const o = vvKoder[key]
-    const tittel = o.tittel.nb
+    const tittel = o.tittel.nb.toLowerCase()
     r[tittel] = key
   })
   return r
@@ -43,7 +43,7 @@ function multiPolygonArea(geometries) {
 }
 
 function kodeFraNavn(navn) {
-  const kode = tittel2Kode[navn]
+  const kode = tittel2Kode[navn.toLowerCase()]
   if (!kode) throw new Error(`Finner ikke kode for '${navn}'`)
   return kode
 }
@@ -53,7 +53,7 @@ function ordNummer(s, index) {
   return s.split(" ")[index]
 }
 
-function relasjon(e, kategori, kode) {
+function relasjon(e, kategori, kode, returKategori) {
   if (!e.relasjon[kategori]) e.relasjon[kategori] = {}
   e.relasjon[kategori][kode] = {}
 }
@@ -65,20 +65,20 @@ function førsteBokstavStor(s) {
 function map(vo) {
   const props = vo.properties
   const iid = parseInt(props.IID.substring(2))
-  const kode = config.kodesystem.prefix.verneområde + iid
+  const kode = typesystem.verneområde.leggTilPrefiks(iid)
   let e = {
     tittel: {
       nb: props.OMRADENAVN
     },
+    klasse: typesystem.verneområde.tittel,
     infoUrl: config.infoUrl.verneområde + props.IID,
-    foreldre: [],
     relasjon: {},
     data: {
       areal: Math.round(multiPolygonArea(vo.geometry.coordinates)),
       vernedato: props.VERNEDATO,
-      verneform: førsteBokstavStor(props.VERNEFORM),
-      verneplan: props.VERNEPLAN,
-      forvaltningsmyndighet: props.FORVALTNI,
+      verneform: props.VERNEFORM.toLowerCase(),
+      verneplan: props.VERNEPLAN.toLowerCase(),
+      forvaltningsmyndighet: props.FORVALTNI.toLowerCase(),
       iucn: ordNummer(props.IUCN, 1)
     }
   }
@@ -95,21 +95,26 @@ function map(vo) {
     e.data.truetvurdering = props.TRUETVURD
     relasjon(e, "truet vurdering", kodeFraNavn(e.data.truetvurdering))
   }
+
   if (e.data.iucn) relasjon(e, "iucn", "VV_PA-" + e.data.iucn)
   relasjon(e, "ble vernet i år", "VV_VT-" + e.data.vernedato.substring(0, 4))
   if (new Date(props.DATO_REVID).getFullYear() > 1900)
     e.data.revisjonsdato = props.DATO_REVID
+
+  // e.foreldre.push(typesystem.verneområde.prefiks)
   if (props.kommune) {
     props.kommune.forEach(kommune => {
       const fnr = kommune.substring(0, 2)
       const knr = kommune.substring(2)
-      const kommunekode =
-        config.kodesystem.prefix.administrativtOmråde + fnr + "-" + knr
-
-      e.foreldre.push(kommunekode + "-VV")
-      const fylkekode = config.kodesystem.prefix.administrativtOmråde + fnr
+      const kommunekode = typesystem.administrativtOmråde.leggTilPrefiks(
+        fnr + "-" + knr
+      )
+      //      e.foreldre.push(kommunekode + "-VV")
+      const fylkekode = typesystem.administrativtOmråde.leggTilPrefiks(fnr)
+      log.warn(fylkekode, kommunekode)
+      relasjon(e, "ligger i kommune", kommunekode + "-VV")
       if (!(fylkekode in e.relasjon)) {
-        relasjon(e, "ligger i", fylkekode + "-VV")
+        relasjon(e, "ligger i fylke", fylkekode + "-VV")
       }
     })
   }
@@ -128,13 +133,13 @@ function groupByKeys(filterFn) {
 
 let manglerNøkler = false
 
-function finnManglendeNøkler(fn, prefix) {
+function finnManglendeNøkler(fn, prefiks) {
   const keys = Object.keys(groupByKeys(vo => fn(vo.properties)))
   keys.forEach(key => {
-    const tittel = koder.capitalizeTittel(key)
-    if (!tittel2Kode[tittel]) {
+    const tittel = typesystem.capitalizeTittel(key)
+    if (!tittel2Kode[tittel.toLowerCase()]) {
       manglerNøkler = true
-      console.log(`"${prefix}-???": {"tittel": {"nb": "${tittel}" }},`)
+      console.log(`"${prefiks}-???": {"tittel": {"nb": "${tittel}" }},`)
     }
   })
 }

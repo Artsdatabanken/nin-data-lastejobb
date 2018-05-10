@@ -1,6 +1,7 @@
 const config = require("../../config")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
+const typesystem = require("@artsdatabanken/typesystem")
 
 let data = io.lesDatafil("full_med_graf")
 
@@ -16,7 +17,7 @@ Object.keys(data).forEach(key => {
     const kode = key
     let foreldre = node.foreldre
     if (!foreldre) foreldre = []
-    if (kode === config.kodesystem.rotkode) settInn(kode, null, node.tittel)
+    if (kode === typesystem.rotkode) settInn(kode, null, node.tittel)
     if (foreldre.length > 0) {
       foreldre.forEach(forelder => settInn(kode, forelder, node.tittel))
     }
