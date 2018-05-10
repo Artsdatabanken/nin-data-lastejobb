@@ -1,13 +1,11 @@
 if (!process.env.DEBUG) process.env.DEBUG = "*"
 const path = require("path")
 const datakilde = require("./datakilde")
-const kodesystem = require("./kodesystem")
 const cachePath = "./cache"
 
 const config = {
   // Navnet på attributtet som inneholder data for noden selv
   DATAKEY: "@",
-  kodesystem: kodesystem,
   lasteScriptPath: "./steg/",
   datakilde: datakilde,
   infoUrl: {

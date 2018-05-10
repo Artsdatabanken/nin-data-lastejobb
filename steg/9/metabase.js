@@ -4,19 +4,24 @@ const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 const tinyColor = require("tinycolor2")
 
+let slettet_fordi_mangler_bbox = []
 let data = io.lesDatafil("metabase_med_bbox")
 Object.keys(data).forEach(kode => {
   const node = data[kode]
   node.kode = kode
-  if (!node.bbox) delete data[kode]
+  if (!node.bbox) {
+    delete data[kode]
+    slettet_fordi_mangler_bbox.push(kode)
+  }
 })
+
 Object.keys(data).forEach(parent => {
   const node = data[parent]
   if (!node.graf) return
   Object.keys(node.graf).forEach(kode => {
     Object.keys(node.graf[kode]).forEach(relatertKode => {
       if (data[relatertKode]) return
-      log.debug("Fjerner relasjon til node som mangler data: " + relatertKode)
+      log.warn(`Fjerner relasjon til node som mangler data '${relatertKode}'`)
       delete node.graf[kode]
     })
   })
@@ -274,11 +279,12 @@ settPrimærSti()
 mapForeldreTilBarn()
 
 let tre = {}
-let node = byggTreFra(tre, config.kodesystem.rotkode)
+let node = byggTreFra(tre, typesystem.rotkode)
 injectKodeAliases(tre)
 injectNamedAliases(tre)
 fyllInnGraf()
 
+log.info("Mangler bbox for: " + JSON.stringify(slettet_fordi_mangler_bbox))
 tre = { katalog: tre }
 io.skrivBuildfil(__filename, tre)
 

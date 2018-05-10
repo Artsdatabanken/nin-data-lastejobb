@@ -14,13 +14,14 @@ function lagRelasjonBeggeVeier(kode, node) {
   node.graf = {}
   Object.keys(node.relasjon).forEach(kategori => {
     node.graf[kategori] = {}
-    const koder = node.relasjon[kategori]
-    Object.keys(koder).forEach(bkode => {
-      const o = koder[bkode]
+    const relasjon = node.relasjon[kategori]
+    Object.keys(relasjon).forEach(bkode => {
+      const o = relasjon[bkode]
       if (!bkode) throw new Error("Mangler kode " + o)
       const b = full[bkode]
       if (b) {
         if (!b.graf) b.graf = {}
+        const returKategori = node.klasse
         if (!b.graf[kategori]) b.graf[kategori] = {}
         b.graf[kategori][kode] = Object.assign(tilBarn(node), o)
         node.graf[kategori][bkode] = Object.assign(tilBarn(b), o)

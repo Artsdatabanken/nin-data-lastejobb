@@ -1,5 +1,6 @@
 const config = require("../../config")
 const io = require("../../lib/io")
+const typesystem = require("@artsdatabanken/typesystem")
 
 let hovedtyper = io.lesDatafil(config.getDataPath("na_hovedtype"))
 
@@ -11,7 +12,7 @@ Object.keys(hovedtyper).forEach(kode => {
   const pkkode = dg.kode
   if (!r[pkkode])
     r[pkkode] = {
-      foreldre: [config.kodesystem.prefix.definisjonsgrunnlag],
+      foreldre: [typesystem.natursystem.hovedtype.definisjonsgrunnlag.prefiks],
       tittel: dg.tittel,
       undertittel: {
         nb: "Definisjonsgrunnlag"

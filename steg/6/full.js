@@ -1,5 +1,5 @@
 const config = require("../../config")
-const koder = require("@artsdatabanken/typesystem")
+const typesystem = require("@artsdatabanken/typesystem")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
@@ -36,16 +36,16 @@ function settHvisEksisterer(kilde, mål, nøkkel) {
 }
 
 function finnForeldre(kode) {
-  if (kode === config.kodesystem.rotkode) return []
-  const segs = koder.splittKode(kode)
-  if (segs.length <= 1) return [config.kodesystem.rotkode]
+  if (kode === typesystem.rotkode) return []
+  const segs = typesystem.splittKode(kode)
+  if (segs.length <= 1) return [typesystem.rotkode]
   const len = segs[segs.length - 1].length
   kode = kode.substring(0, kode.length - len)
   while (kode.length > 0) {
     if (kode in r) return [kode]
     kode = kode.substring(0, kode.length - 1)
   }
-  return [config.kodesystem.rotkode]
+  return [typesystem.rotkode]
 }
 
 function kobleForeldre() {
@@ -57,11 +57,11 @@ function kobleForeldre() {
 
 flettKildedata("annen_kode")
 flettKildedata("vv_naturvernområde")
-flett("vv_naturvernområde", { klasse: "Naturvernområde" })
+flett("vv_naturvernområde", { klasse: "naturvernområde" })
 flett("inn_ao_fylke")
 flett("inn_ao_kommune")
 flett("ao_naturvernområde")
-flettKildedata("or_organisasjon", { klasse: "Organisasjon" })
+flettKildedata("or_organisasjon", { klasse: "organisasjon" })
 flett("ar_diagnostisk_art")
 flett("na_hovedtype")
 flett("na_mi_liste")
@@ -75,8 +75,8 @@ kobleForeldre()
 for (let key of Object.keys(r)) {
   const node = r[key]
   if (!node.se) {
-    if (!r[key].tittel)
-      throw new Error("Mangler tittel: " + JSON.stringify(node))
+    if (!node.tittel)
+      throw new Error(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
     if (r[key].kode) log.warn("Har kode: ", key)
   }
 }

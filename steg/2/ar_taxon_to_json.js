@@ -5,8 +5,6 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const config = require("../../config")
 
-const kodesystem = config.kodesystem
-
 const kildefil = config.getDataPath("inn_ar_taxon", ".csv")
 const rs = fs.createReadStream(kildefil, "latin1")
 const writePath = config.getDataPath(__filename)

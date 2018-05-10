@@ -1,6 +1,7 @@
 const path = require("path")
 const io = require("../../lib/io")
 const http = require("../../lib/http")
+const typesystem = require("@artsdatabanken/typesystem")
 const config = require("../../config")
 
 function parseSpråk(s) {
@@ -45,11 +46,9 @@ function mapKommuner(kommuner) {
   r = {}
   kommuner.forEach(ci => {
     // AO_18-50
-    const kode =
-      config.kodesystem.prefix.administrativtOmråde +
-      ci.code.substring(0, 2) +
-      "-" +
-      ci.code.substring(2)
+    const kode = typesystem.administrativtOmråde.leggTilPrefiks(
+      ci.code.substring(0, 2) + "-" + ci.code.substring(2)
+    )
     if (ci.code !== "9999") {
       r[kode] = {
         tittel: { nb: parseSpråk(ci.name) },

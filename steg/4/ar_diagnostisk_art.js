@@ -48,16 +48,18 @@ let ukjenteArter = {}
 Object.keys(diagArt).forEach(key => {
   const art = diagArt[key]
   if (!art) throw new Error("Mangler art " + key)
-  const hovedtype =
-    config.kodesystem.prefix.natursystem + art.Kartleggingsenhet.split("-")[0]
-  const na_kode =
-    config.kodesystem.prefix.natursystem + art.Kartleggingsenhet.trim()
+  const hovedtype = typesystem.natursystem.leggTilPrefiks(
+    art.Kartleggingsenhet.split("-")[0]
+  )
+  const na_kode = typesystem.natursystem.leggTilPrefiks(
+    art.Kartleggingsenhet.trim()
+  )
   if (!nin_liste[na_kode])
     ukjenteKoder[na_kode] = ukjenteKoder[na_kode]
       ? ukjenteKoder[na_kode] + 1
       : 1
   else {
-    const idkode = typesystem.Art.lagKode(art.scientificNameID)
+    const idkode = typesystem.art.lagKode(art.scientificNameID)
     if (arter[idkode]) {
       //      const tx_kode = arter[idkode].se
       const na = nin_liste[na_kode]

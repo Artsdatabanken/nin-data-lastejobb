@@ -27,7 +27,7 @@ function link(ckode) {
   }
 
   if (ekoder.length === 0) {
-    ekoder = [typesystem.Natursystem.hovedtype(ckode)]
+    ekoder = [typesystem.natursystem.slåOppHovedtype(ckode)]
   }
   foreldre[ckode] = ekoder
 }
@@ -36,13 +36,13 @@ for (let ckode of Object.keys(grunntyper)) {
   if (ckode.match(/-C-/gi)) {
     link(ckode)
     for (let grunntype of grunntyper[ckode]) {
-      if (typesystem.Natursystem.hovedtype(grunntype) !== grunntype) {
+      if (typesystem.natursystem.slåOppHovedtype(grunntype) !== grunntype) {
         foreldre[grunntype] = [ckode]
       }
     }
   }
   if (ckode.match(/-E-/gi)) {
-    foreldre[ckode] = [typesystem.Natursystem.hovedtype(ckode)]
+    foreldre[ckode] = [typesystem.natursystem.slåOppHovedtype(ckode)]
   }
 }
 
