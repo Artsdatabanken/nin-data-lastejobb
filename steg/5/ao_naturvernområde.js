@@ -1,6 +1,7 @@
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const config = require("../../config")
+const typesystem = require("@artsdatabanken/typesystem")
 
 let kommuner = io.lesDatafil("inn_ao_kommune")
 let fylker = io.lesDatafil("inn_ao_fylke")
@@ -12,6 +13,7 @@ function lagKoder(kilde, nivå) {
     const o = kilde[key]
     const e = {
       foreldre: [key],
+      relasjon: { verneområder: { [typesystem.verneområde.prefiks]: {} } },
       tittel: { nb: "Naturvernområder i " + o.tittel.nb + " " + nivå }
     }
     r[key + "-VV"] = e
