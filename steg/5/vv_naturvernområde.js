@@ -111,7 +111,6 @@ function map(vo) {
       )
       //      e.foreldre.push(kommunekode + "-VV")
       const fylkekode = typesystem.administrativtOmråde.leggTilPrefiks(fnr)
-      log.warn(fylkekode, kommunekode)
       relasjon(e, "ligger i kommune", kommunekode + "-VV")
       if (!(fylkekode in e.relasjon)) {
         relasjon(e, "ligger i fylke", fylkekode + "-VV")
@@ -159,9 +158,6 @@ Object.keys(vo).forEach(key => {
   const o = vo[key]
   const y = o.properties.VERNEDATO.substring(0, 4)
   år[y] = år[y] + 1 || 1
-})
-Object.keys(år).forEach(år => {
-  console.log(`"VV_VT-${år}": { "tittel": { "nb": "Vernet i år ${år}" } },`)
 })
 
 Object.keys(vo).forEach(key => map(vo[key]))

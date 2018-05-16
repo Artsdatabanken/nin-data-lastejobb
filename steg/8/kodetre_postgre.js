@@ -35,9 +35,8 @@ function dyttInn(kode) {
 }
 
 function eksporter(node, forfedre, nivå = 0) {
-  if (!node.barn) {
-    return
-  }
+  if (!node.barn) return
+
   forfedre = Object.assign([], forfedre)
   if (node.kode !== typesystem.rotkode) forfedre.push(node.kode)
   node.barn.forEach(b => {
