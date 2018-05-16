@@ -84,10 +84,6 @@ exports[`data/na_prosedyrekategori.json har antall rader 1`] = `17`;
 
 exports[`data/na_prosedyrekategori.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/pr_prosjekt.json har antall rader 1`] = `0`;
-
-exports[`data/pr_prosjekt.json har forventede nøkler 1`] = `undefined`;
-
 exports[`data/vv_med_kommune.json har antall rader 1`] = `2865`;
 
 exports[`data/vv_med_kommune.json har forventede nøkler 1`] = `undefined`;
