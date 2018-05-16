@@ -21,7 +21,7 @@ Object.keys(data).forEach(parent => {
   Object.keys(node.graf).forEach(kode => {
     Object.keys(node.graf[kode]).forEach(relatertKode => {
       if (data[relatertKode]) return
-      log.warn(`Fjerner relasjon til node som mangler data '${relatertKode}'`)
+      //      log.warn(`Fjerner relasjon til node som mangler data '${relatertKode}'`)
       delete node.graf[kode]
     })
   })

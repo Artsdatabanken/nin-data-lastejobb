@@ -10,7 +10,6 @@ function mapFylker(kilde) {
   let r = {}
   kilde.classificationItems.forEach(ci => {
     // AO_18
-    console.log(JSON.stringify(typesystem))
     const kode = typesystem.administrativtOmråde.leggTilPrefiks(ci.code)
     const origName = ci.name
     ci.name = ci.name.replace("Troms Romsa", "Troms")
