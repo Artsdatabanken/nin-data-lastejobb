@@ -13,9 +13,11 @@ function lagKoder(kilde, nivå) {
     const o = kilde[key]
     const e = {
       foreldre: [key],
-      relasjon: { verneområder: { [typesystem.verneområde.prefiks]: {} } },
       tittel: { nb: "Naturvernområder i " + o.tittel.nb + " " + nivå }
     }
+    if (nivå === "fylke")
+      e.relasjon = { verneområder: { [typesystem.verneområde.prefiks]: {} } }
+
     r[key + "-VV"] = e
   })
   return r
