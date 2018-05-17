@@ -11,7 +11,8 @@ function tilBarn(node) {
 }
 
 function lagRelasjonBeggeVeier(kode, node) {
-  node.graf = {}
+  if (kode == "VV_544") log.warn(node)
+  if (!node.graf) node.graf = {}
   Object.keys(node.relasjon).forEach(kategori => {
     node.graf[kategori] = {}
     const relasjon = node.relasjon[kategori]
