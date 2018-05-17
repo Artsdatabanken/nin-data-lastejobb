@@ -4,12 +4,22 @@ const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 const tinyColor = require("tinycolor2")
 
+function harKartData(kode) {
+  if (kode.indexOf("VV") >= 0) return true
+  if (!data[kode]) {
+    log.warn("Ukjent kode " + kode)
+    return false
+  }
+  return data[kode].bbox
+}
+
 let slettet_fordi_mangler_bbox = []
 let data = io.lesDatafil("metabase_med_bbox")
+log.warn(data["AO_02-26-VV"])
 Object.keys(data).forEach(kode => {
   const node = data[kode]
   node.kode = kode
-  if (!node.bbox) {
+  if (!harKartData(kode)) {
     delete data[kode]
     slettet_fordi_mangler_bbox.push(kode)
   }
@@ -20,7 +30,7 @@ Object.keys(data).forEach(parent => {
   if (!node.graf) return
   Object.keys(node.graf).forEach(kode => {
     Object.keys(node.graf[kode]).forEach(relatertKode => {
-      if (data[relatertKode]) return
+      if (!harKartData(relatertKode)) return
       //      log.warn(`Fjerner relasjon til node som mangler data '${relatertKode}'`)
       delete node.graf[kode]
     })
@@ -40,7 +50,12 @@ function fyllInnGraf() {
     if (!node.graf) return
     Object.keys(node.graf).forEach(key => {
       Object.keys(node.graf[key]).forEach(kode => {
+        if (!data[kode]) {
+          log.warn("Kobling til ukjent kode " + kode)
+          return
+        }
         const sub = node.graf[key][kode]
+        log.warn(kode, sub)
         sub.sti = sti(kode)
         sub.farge = data[kode].farge
       })
@@ -158,6 +173,7 @@ function byggTreFra(tre, key) {
       rot.foreldre && rot.foreldre.length > 0
         ? nøstOppForfedre(rot.foreldre[0])
         : ""
+    if (key == "AO_02-26-VV") log.warn(rot)
     delete rot.foreldre
   }
   let node = { "@": rot }
