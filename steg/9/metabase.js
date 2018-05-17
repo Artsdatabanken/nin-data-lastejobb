@@ -6,16 +6,14 @@ const tinyColor = require("tinycolor2")
 
 function harKartData(kode) {
   if (kode.indexOf("VV") >= 0) return true
-  if (!data[kode]) {
-    log.warn("Ukjent kode " + kode)
-    return false
-  }
+  if (!data[kode]) return false
+
   return data[kode].bbox
 }
 
 let slettet_fordi_mangler_bbox = []
 let data = io.lesDatafil("metabase_med_bbox")
-log.warn(data["AO_02-26-VV"])
+
 Object.keys(data).forEach(kode => {
   const node = data[kode]
   node.kode = kode
@@ -30,9 +28,9 @@ Object.keys(data).forEach(parent => {
   if (!node.graf) return
   Object.keys(node.graf).forEach(kode => {
     Object.keys(node.graf[kode]).forEach(relatertKode => {
-      if (!harKartData(relatertKode)) return
+      if (harKartData(relatertKode)) return
       //      log.warn(`Fjerner relasjon til node som mangler data '${relatertKode}'`)
-      delete node.graf[kode]
+      delete node.graf[kode][relatertKode]
     })
   })
 })
@@ -44,18 +42,19 @@ function sti(kode) {
     .toLowerCase()
 }
 
+let ukjenteKoder = []
+
 function fyllInnGraf() {
   Object.keys(data).forEach(kode => {
     const node = data[kode]
     if (!node.graf) return
-    Object.keys(node.graf).forEach(key => {
-      Object.keys(node.graf[key]).forEach(kode => {
+    Object.keys(node.graf).forEach(typeRelasjon => {
+      Object.keys(node.graf[typeRelasjon]).forEach(kode => {
         if (!data[kode]) {
-          log.warn("Kobling til ukjent kode " + kode)
+          ukjenteKoder.push(kode)
           return
         }
-        const sub = node.graf[key][kode]
-        log.warn(kode, sub)
+        const sub = node.graf[typeRelasjon][kode]
         sub.sti = sti(kode)
         sub.farge = data[kode].farge
       })
@@ -288,9 +287,6 @@ function validateKeys(tre, path) {
   }
 }
 
-function filtrerKoderUtenData() {}
-
-filtrerKoderUtenData()
 settPrimærSti()
 mapForeldreTilBarn()
 
@@ -300,7 +296,10 @@ injectKodeAliases(tre)
 injectNamedAliases(tre)
 fyllInnGraf()
 
-log.info("Mangler bbox for: " + JSON.stringify(slettet_fordi_mangler_bbox))
+log.info("Mangler bbox for " + slettet_fordi_mangler_bbox.length + " koder")
+//log.debug("Mangler bbox for: " + JSON.stringify(slettet_fordi_mangler_bbox))
+log.warn("Kobling til +" + ukjenteKoder.length + " ukjente koder")
+//log.debug("Kobling til ukjente koder: " + JSON.stringify(ukjenteKoder))
 tre = { katalog: tre }
 io.skrivBuildfil(__filename, tre)
 
