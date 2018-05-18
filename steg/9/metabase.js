@@ -74,31 +74,36 @@ function settPrimærSti() {
 var p2c = {},
   c2p = {}
 
+function mapForelderTilBarn(kode, node) {
+  if (!c2p[kode]) c2p[kode] = []
+  if (!node.foreldre) {
+    if (!node.se) {
+      log.warn(node)
+      throw new Error("Mangler forelder: " + kode)
+    }
+    return
+  } else {
+    let foreldre = node.foreldre
+    foreldre.forEach(forelderkode => {
+      if (!p2c[forelderkode]) p2c[forelderkode] = []
+      p2c[forelderkode].push(kode)
+      if (!c2p[kode].includes(forelderkode)) c2p[kode].push(forelderkode)
+    })
+    if (node.barn)
+      node.barn.forEach(barnkode => {
+        if (!p2c[kode]) p2c[kode] = []
+        if (!c2p[barnkode]) c2p[barnkode] = []
+        if (!c2p[barnkode].includes(kode)) c2p[barnkode].push(kode)
+        if (!p2c[kode].includes(barnkode)) c2p[kode].push(barnkode)
+        p2c[kode].push(barnkode)
+      })
+  }
+}
+
 function mapForeldreTilBarn() {
   Object.keys(data).forEach(kode => {
     const node = data[kode]
-    if (!c2p[kode]) c2p[kode] = []
-    if (!node.foreldre) {
-      if (!node.se) {
-        log.warn(node)
-        throw new Error("Mangler forelder: " + kode)
-      }
-    } else {
-      let foreldre = node.foreldre
-      foreldre.forEach(forelderkode => {
-        if (!p2c[forelderkode]) p2c[forelderkode] = []
-        p2c[forelderkode].push(kode)
-        if (!c2p[kode].includes(forelderkode)) c2p[kode].push(forelderkode)
-      })
-      if (node.barn)
-        node.barn.forEach(barnkode => {
-          if (!p2c[kode]) p2c[kode] = []
-          if (!c2p[barnkode]) c2p[barnkode] = []
-          if (!c2p[barnkode].includes(kode)) c2p[barnkode].push(kode)
-          if (!p2c[kode].includes(barnkode)) c2p[kode].push(barnkode)
-          p2c[kode].push(barnkode)
-        })
-    }
+    mapForelderTilBarn(kode, node)
   })
 }
 
@@ -300,9 +305,6 @@ let node = byggTreFra(tre, typesystem.rotkode)
 settInnAliaser(tre)
 injectNamedAliases(tre)
 fyllInnGraf()
-
-//log.warn(tre.vv)
-log.warn(tre.vv.barn)
 
 log.info("Mangler bbox for " + slettet_fordi_mangler_bbox.length + " koder")
 //log.debug("Mangler bbox for: " + JSON.stringify(slettet_fordi_mangler_bbox))

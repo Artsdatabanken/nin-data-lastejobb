@@ -52,6 +52,7 @@ function kobleForeldre() {
   for (let key of Object.keys(r)) {
     const node = r[key]
     if (!node.foreldre) node.foreldre = finnForeldre(key)
+    if (key === "NA_F1") log.warn(key, finnForeldre(key))
   }
 }
 
