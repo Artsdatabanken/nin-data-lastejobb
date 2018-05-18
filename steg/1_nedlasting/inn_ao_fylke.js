@@ -17,6 +17,7 @@ function mapFylker(kilde) {
     if (origName !== ci.name) log.info("Endret navn", origName, "=>", ci.name)
     if (ci.code !== "99") {
       r[kode] = {
+        klasse: "fylke",
         tittel: { nb: ci.name },
         betegnelse: { nb: "fylke" },
         utenRamme: true
