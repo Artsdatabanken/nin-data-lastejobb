@@ -14,23 +14,20 @@ let nin_liste = io.lesDatafil("na_kode")
 let r = {}
 
 function linkOne(nodeFra, nodeTil, funksjon, tag) {
-  const variabel = funksjon
-    .replace(tag, "")
-    .replace("[", "")
-    .replace("]", "")
+  const variabel = tag
 
   const kodeFra = nodeFra.kode
   const kodeTil = nodeTil.kode
   if (!kodeFra) throw new Error("Mangler kode: " + JSON.stringify(nodeFra))
   if (!kodeTil) throw new Error("Mangler kode: " + JSON.stringify(nodeTil))
-  if (!r[kodeFra]) r[kodeFra] = { relasjon: {} }
+  if (!r[kodeFra]) r[kodeFra] = { relasjon: [] }
   const relasjon = r[kodeFra].relasjon
-  if (!relasjon[tag]) relasjon[tag] = []
-  relasjon[tag] = {
-    [kodeTil]: {
-      variabel: variabel
-    }
-  }
+  if (relasjon[kodeTil]) throw new Error(".")
+  relasjon.push({
+    kode: kodeTil,
+    kant: variabel,
+    kantRetur: "habitat"
+  })
 }
 
 function linkBoth(node1, node2, funksjon, tag) {
