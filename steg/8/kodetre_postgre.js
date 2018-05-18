@@ -3,16 +3,16 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
-let data = io.lesDatafil("full_med_graf")
-let r = []
+let inn = io.lesDatafil("full_med_graf")
+let ut = []
 
-Object.keys(data).forEach(forelder => {
-  const node = data[forelder]
+Object.keys(inn).forEach(forelder => {
+  const node = inn[forelder]
   node.barn = []
 })
 
 function dyttInn(kode) {
-  const node = data[kode]
+  const node = inn[kode]
   node.kode = kode
   node.tittel = node.tittel
     ? node.tittel.nb || node.tittel.en || node.tittel.la
@@ -24,7 +24,7 @@ function dyttInn(kode) {
   }
 
   foreldre.forEach(forelder => {
-    let fn = data[forelder]
+    let fn = inn[forelder]
     if (!fn) {
       console.warn("Finner ikke kode ", forelder)
       return
@@ -34,27 +34,43 @@ function dyttInn(kode) {
   })
 }
 
-function eksporter(node, forfedre, nivå = 0) {
+function lagSuperset(barn, forfedre) {
+  const node = inn[barn.kode]
+  const superset = []
+  if (!node.graf) return forfedre
+  Object.keys(node.graf).forEach(kant => {
+    const nodes = node.graf[kant]
+    Object.keys(nodes).forEach(kode => {
+      const node = nodes[kode]
+      if (node.erSubset) superset.push(kode)
+    })
+  })
+  superset.push(...forfedre)
+  return superset
+}
+
+function eksporter(node, forfedre = [], nivå = 0) {
   if (!node.barn) return
 
   forfedre = Object.assign([], forfedre)
   if (node.kode !== typesystem.rotkode) forfedre.push(node.kode)
-  node.barn.forEach(b => {
+  node.barn.forEach(barn => {
     const rel = {
-      kode: b.kode,
+      kode: barn.kode,
       nivå: nivå,
       forfedre: forfedre,
-      tittel: b.tittel
+      superset: lagSuperset(barn, forfedre),
+      tittel: barn.tittel
     }
-    r.push(rel)
-    eksporter(b, forfedre, nivå + 1)
+    ut.push(rel)
+    eksporter(barn, forfedre, nivå + 1)
   })
 }
 
-Object.keys(data).forEach(kode => {
+Object.keys(inn).forEach(kode => {
   dyttInn(kode)
 })
 
-eksporter({ kode: typesystem.rotkode, barn: [data[typesystem.rotkode]] }, [])
+eksporter({ kode: typesystem.rotkode, barn: [inn[typesystem.rotkode]] })
 
-io.skrivBuildfil(__filename, r)
+io.skrivBuildfil(__filename, ut)

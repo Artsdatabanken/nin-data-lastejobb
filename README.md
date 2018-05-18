@@ -31,6 +31,21 @@ Bygd metabase deployes automatisk til [Firebase Realtime](https://adb-kode.fireb
 * [Geografisk API](https://github.com/Artsdatabanken/rasterQ) og [Deployment](https://github.com/Artsdatabanken/rasterUploader) av dette
 * Verktøy for [rødlisting av naturtyper](https://github.com/Artsdatabanken/natty)
 
+## Relasjoner
+
+Liste av relasjoner mellom typer. _erSubset_ indikerer om typen er et subset av type angitt i _kode_.
+
+```javascript
+relasjon: [
+  {
+    kode: "målkode",
+    kant: "navn på koblingen",
+    kantRetur: "navn på koblingen tilbake fra kode til denne noden",
+    erSubset: true
+  }
+]
+```
+
 ## Spørre mot JSON
 
 ```bash

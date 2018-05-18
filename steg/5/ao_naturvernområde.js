@@ -12,7 +12,8 @@ function lagRelasjonTilVerneområdeRot() {
   return {
     kode: typesystem.verneområde.prefiks,
     kant: "verneområde",
-    kantRetur: "fylke"
+    kantRetur: "fylke",
+    erSubset: true
   }
 }
 
@@ -20,11 +21,12 @@ function lagKoder(kilde, nivå) {
   Object.keys(kilde).forEach(key => {
     const o = kilde[key]
     const e = {
-      foreldre: [key],
       tittel: { nb: "Naturvernområder i " + o.tittel.nb + " " + nivå }
     }
-    if (nivå === "fylke") e.relasjon = [lagRelasjonTilVerneområdeRot()]
-
+    if (nivå === "fylke") {
+      e.relasjon = [lagRelasjonTilVerneområdeRot()]
+      e.foreldre = [typesystem.verneområde.prefiks]
+    }
     r[key + "-VV"] = e
   })
   return r

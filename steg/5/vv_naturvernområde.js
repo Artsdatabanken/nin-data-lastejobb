@@ -51,12 +51,10 @@ function ordNummer(s, index) {
   return s.split(" ")[index]
 }
 
-function relasjon(e, kant, kode, kantRetur) {
-  e.relasjon.push({
-    kode: kode,
-    kant: kant,
-    kantRetur: kantRetur || kant
-  })
+function relasjon(e, kant, kode, kantRetur, erSubset = true) {
+  const rel = { kode: kode, kant: kant, kantRetur: kantRetur || kant }
+  if (erSubset) rel.erSubset = true
+  e.relasjon.push(rel)
 }
 
 function førsteBokstavStor(s) {
