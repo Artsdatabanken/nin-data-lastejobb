@@ -43,7 +43,6 @@ function transform(record) {
   if (!r["Hovedstatus"] in ["Gyldig", "Synonym"]) return
 
   // TODO: Fjern Underarter, varietet og form inntil videre
-  if (record[0] == 48103) log.warn(JSON.stringify(r))
   if (r["Underart"]) return
   if (r["Varietet"]) return
   if (r["Form"]) return
