@@ -20,8 +20,6 @@ const tittel2Kode = invert(vvKoder)
 
 let r = {}
 
-function lagRelasjonerForvaltningsmyndighet(props) {}
-
 function polygonArea(points) {
   const numPoints = points.length
   let area = 0
@@ -53,9 +51,12 @@ function ordNummer(s, index) {
   return s.split(" ")[index]
 }
 
-function relasjon(e, kategori, kode, returKategori) {
-  if (!e.relasjon[kategori]) e.relasjon[kategori] = {}
-  e.relasjon[kategori][kode] = {}
+function relasjon(e, kant, kode, kantRetur) {
+  e.relasjon.push({
+    kode: kode,
+    kant: kant,
+    kantRetur: kantRetur || kant
+  })
 }
 
 function førsteBokstavStor(s) {
@@ -72,7 +73,7 @@ function map(vo) {
     },
     klasse: typesystem.verneområde.tittel,
     infoUrl: config.infoUrl.verneområde + props.IID,
-    relasjon: {},
+    relasjon: [],
     data: {
       areal: Math.round(multiPolygonArea(vo.geometry.coordinates)),
       vernedato: props.VERNEDATO,

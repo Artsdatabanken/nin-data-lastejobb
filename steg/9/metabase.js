@@ -23,17 +23,19 @@ Object.keys(data).forEach(kode => {
   }
 })
 
-Object.keys(data).forEach(parent => {
-  const node = data[parent]
-  if (!node.graf) return
-  Object.keys(node.graf).forEach(kode => {
-    Object.keys(node.graf[kode]).forEach(relatertKode => {
-      if (harKartData(relatertKode)) return
-      //      log.warn(`Fjerner relasjon til node som mangler data '${relatertKode}'`)
-      delete node.graf[kode][relatertKode]
+function fjernRelasjonTilKoderSomIkkeHarData(data) {
+  Object.keys(data).forEach(parent => {
+    const node = data[parent]
+    if (!node.graf) return
+    Object.keys(node.graf).forEach(kode => {
+      Object.keys(node.graf[kode]).forEach(relatertKode => {
+        if (harKartData(relatertKode)) return
+        //      log.warn(`Fjerner relasjon til node som mangler data '${relatertKode}'`)
+        delete node.graf[kode][relatertKode]
+      })
     })
   })
-})
+}
 
 function sti(kode) {
   return typesystem
@@ -172,13 +174,15 @@ function byggTreFra(tre, key) {
       rot.foreldre && rot.foreldre.length > 0
         ? nøstOppForfedre(rot.foreldre[0])
         : ""
-    if (key == "AO_02-26-VV") log.warn(rot)
     delete rot.foreldre
   }
   let node = { "@": rot }
   let barn = {}
+
   if (p2c[key]) {
     p2c[key].forEach(ckey => {
+      // TODO: Temp hack: Fjerner de enkelte verneområder fra toppnivå VV
+      if (key === "VV" && ckey.match(/^VV_\d+$/)) return
       const cnode = data[ckey]
       barn[ckey] = {
         sti: cnode.sti,
@@ -245,7 +249,7 @@ function injectAlias(from, kode, tre) {
   }
 }
 
-function injectKodeAliases(tre) {
+function settInnAliaser(tre) {
   Object.keys(data).forEach(kode => {
     const node = data[kode]
     const kodePath = typesystem.splittKode(kode.toLowerCase())
@@ -255,7 +259,7 @@ function injectKodeAliases(tre) {
 }
 
 let acc = {}
-function injectNamedAlias(tre, kode, tittel) {
+function settInnAlias(tre, kode, tittel) {
   if (!tittel) return
   const kodePath = typesystem.medGyldigeTegn(tittel.toLowerCase())
   kodePath.split("").forEach(c => {
@@ -269,9 +273,9 @@ function injectNamedAlias(tre, kode, tittel) {
 function injectNamedAliases(tre) {
   Object.keys(data).forEach(kode => {
     const node = data[kode]
-    injectNamedAlias(tre, kode, node.tittel.nb)
-    injectNamedAlias(tre, kode, node.tittel.la)
-    injectNamedAlias(tre, kode, node.tittel.en)
+    settInnAlias(tre, kode, node.tittel.nb)
+    settInnAlias(tre, kode, node.tittel.la)
+    settInnAlias(tre, kode, node.tittel.en)
   })
 }
 
@@ -287,14 +291,18 @@ function validateKeys(tre, path) {
   }
 }
 
+fjernRelasjonTilKoderSomIkkeHarData(data)
 settPrimærSti()
 mapForeldreTilBarn()
 
 let tre = {}
 let node = byggTreFra(tre, typesystem.rotkode)
-injectKodeAliases(tre)
+settInnAliaser(tre)
 injectNamedAliases(tre)
 fyllInnGraf()
+
+//log.warn(tre.vv)
+log.warn(tre.vv.barn)
 
 log.info("Mangler bbox for " + slettet_fordi_mangler_bbox.length + " koder")
 //log.debug("Mangler bbox for: " + JSON.stringify(slettet_fordi_mangler_bbox))

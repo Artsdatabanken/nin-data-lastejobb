@@ -8,6 +8,14 @@ let fylker = io.lesDatafil("inn_ao_fylke")
 
 const r = {}
 
+function lagRelasjonTilVerneområdeRot() {
+  return {
+    kode: typesystem.verneområde.prefiks,
+    kant: "verneområde",
+    kantRetur: "fylke"
+  }
+}
+
 function lagKoder(kilde, nivå) {
   Object.keys(kilde).forEach(key => {
     const o = kilde[key]
@@ -15,8 +23,7 @@ function lagKoder(kilde, nivå) {
       foreldre: [key],
       tittel: { nb: "Naturvernområder i " + o.tittel.nb + " " + nivå }
     }
-    if (nivå === "fylke")
-      e.relasjon = { verneområder: { [typesystem.verneområde.prefiks]: {} } }
+    if (nivå === "fylke") e.relasjon = [lagRelasjonTilVerneområdeRot()]
 
     r[key + "-VV"] = e
   })

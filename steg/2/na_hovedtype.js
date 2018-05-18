@@ -8,7 +8,9 @@ let mi = io.lesDatafil("mi_variasjon")
 function fromCsv(csv) {
   csv = csv.trim()
   if (!csv) return []
-  return csv.split(",").map(kode => prefiks.miljøvariabel + kode)
+  return csv
+    .split(",")
+    .map(kode => typesystem.miljøvariabel.prefiks + "_" + kode)
 }
 
 const prefiks = typesystem.natursystem.prefiks

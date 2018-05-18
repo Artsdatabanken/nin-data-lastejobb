@@ -10,31 +10,45 @@ function tilBarn(node) {
   }
 }
 
-function lagRelasjonBeggeVeier(kode, node) {
-  if (kode == "VV_544") log.warn(node)
-  if (!node.graf) node.graf = {}
-  Object.keys(node.relasjon).forEach(kategori => {
-    node.graf[kategori] = {}
-    const relasjon = node.relasjon[kategori]
-    Object.keys(relasjon).forEach(bkode => {
-      const o = relasjon[bkode]
-      if (!bkode) throw new Error("Mangler kode " + o)
-      const b = full[bkode]
-      if (b) {
-        if (!b.graf) b.graf = {}
-        const returKategori = node.klasse
-        if (!b.graf[kategori]) b.graf[kategori] = {}
-        b.graf[kategori][kode] = Object.assign(tilBarn(node), o)
-        node.graf[kategori][bkode] = Object.assign(tilBarn(b), o)
-      } else log.warn("Mangler kode " + bkode)
-    })
+function lagGrafkobling(kodeFra, kodeTil, kant, metadata) {
+  if (!kant)
+    throw new Error(
+      "Mangler navn på kant i relasjon fra " + kodeFra + " til " + kodeTil
+    )
+  const nodeFra = full[kodeFra]
+  const nodeTil = full[kodeTil]
+  if (!nodeFra || !nodeTil) {
+    log.warn("Mangler kode relasjon " + kodeTil + " <-> " + kodeFra)
+    return
+  }
+  if (kodeFra === kodeTil)
+    throw new Error("Relasjon til seg selv fra " + kodeTil)
+
+  if (!nodeFra.graf) nodeFra.graf = {}
+  if (!nodeFra.graf[kant]) nodeFra.graf[kant] = {}
+  let kobling = Object.assign({}, metadata, tilBarn(nodeTil))
+  delete kobling.kant
+  delete kobling.kantRetur
+  nodeFra.graf[kant][kodeTil] = kobling
+  if (kodeFra == "VV_FM") {
+    log.warn(kodeFra, kant, kodeTil, metadata)
+    log.warn(JSON.stringify(nodeFra.graf))
+  }
+}
+
+function lagGrafkoblinger(kode, node) {
+  if (!node.relasjon) return
+  if (kode == "AO_01-VV") log.warn(node)
+  node.relasjon.forEach(e => {
+    if (!e.kode) throw new Error("Mangler kode " + e.kode)
+    lagGrafkobling(kode, e.kode, e.kant, e)
+    lagGrafkobling(e.kode, kode, e.kantRetur, e)
   })
   delete node.relasjon
 }
 
 Object.keys(full).forEach(key => {
-  const node = full[key]
-  if (node.relasjon) lagRelasjonBeggeVeier(key, node)
+  lagGrafkoblinger(key, full[key])
 })
 
 io.skrivDatafil(__filename, full)
