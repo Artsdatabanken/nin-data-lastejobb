@@ -1,3 +1,22 @@
+## [nin_program.json](nin_program.json)
+
+Natur i Norge kartleggingsprogrammer og prosjekter
+
+```json
+  {
+    "beskrivelse": "Skogkartlegging 2016",
+    "navn": "SKOG_2016_NORGE_1",
+    "prosjekter": [
+      {
+        "beskrivelse": "Skogkartlegging, Kvernbekken (SKOG_MFU_MR_KVERNBEKKEN_1, Møre Og Romsdal, Miljøfaglig Utredning)",
+        "navn": "SKOG_MFU_MR_KVERNBEKKEN_1"
+      },
+```
+
+### Datakilde
+
+* Denne filen er inntil videre originalen inntil Miljødirektoratet publiserer
+
 ## [bbox.json](bbox.json)
 
 Axis-aligned bounding boxes. Ytterpunkter til rektangel som omslutter de kartdataene som finnes for kartlaget.
