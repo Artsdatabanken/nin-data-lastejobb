@@ -101,8 +101,9 @@ function map(vo) {
   relasjon(e, "verneplan", kodeFraNavn(e.data.verneplan))
   relasjon(
     e,
-    "forvaltningsmyndighet",
-    kodeFraNavn(e.data.forvaltningsmyndighet)
+    "forvaltes av",
+    kodeFraNavn(e.data.forvaltningsmyndighet),
+    "forvalter"
   )
   if (props.TRUETVURD) {
     e.data.truetvurdering = props.TRUETVURD
