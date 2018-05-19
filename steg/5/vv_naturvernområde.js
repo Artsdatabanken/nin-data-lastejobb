@@ -52,6 +52,8 @@ function ordNummer(s, index) {
 }
 
 function relasjon(e, kant, kode, kantRetur, erSubset = true) {
+  for (const rl of e.relasjon) if (rl.kode === kode) return
+
   const rel = { kode: kode, kant: kant, kantRetur: kantRetur || kant }
   if (erSubset) rel.erSubset = true
   e.relasjon.push(rel)
@@ -59,6 +61,18 @@ function relasjon(e, kant, kode, kantRetur, erSubset = true) {
 
 function førsteBokstavStor(s) {
   return s[0].toUpperCase() + s.slice(1)
+}
+
+function kobleForvaltningsmyndighet(e) {
+  if (e.data.forvaltningsmyndighet !== "fylkesmann") return
+  const regexFylke = /AO_(\d\d)-VV/g
+  let fylke = []
+  e.relasjon.forEach(r => {
+    const match = regexFylke.exec(r.kode)
+    if (match) fylke.push(match[1])
+  })
+  if (fylke.length !== 1) return
+  relasjon(e, "forvaltes av", "VV_FM-FM-" + fylke[0], "forvalter")
 }
 
 function map(vo) {
@@ -87,8 +101,9 @@ function map(vo) {
   relasjon(e, "verneplan", kodeFraNavn(e.data.verneplan))
   relasjon(
     e,
-    "forvaltningsmyndighet",
-    kodeFraNavn(e.data.forvaltningsmyndighet)
+    "forvaltes av",
+    kodeFraNavn(e.data.forvaltningsmyndighet),
+    "forvalter"
   )
   if (props.TRUETVURD) {
     e.data.truetvurdering = props.TRUETVURD
@@ -111,11 +126,10 @@ function map(vo) {
       //      e.foreldre.push(kommunekode + "-VV")
       const fylkekode = typesystem.administrativtOmråde.leggTilPrefiks(fnr)
       relasjon(e, "ligger i kommune", kommunekode + "-VV")
-      if (!(fylkekode in e.relasjon)) {
-        relasjon(e, "ligger i fylke", fylkekode + "-VV")
-      }
+      relasjon(e, "ligger i fylke", fylkekode + "-VV")
     })
   }
+  kobleForvaltningsmyndighet(e)
   r[kode] = e
 }
 
