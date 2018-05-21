@@ -63,7 +63,15 @@ function førsteBokstavStor(s) {
   return s[0].toUpperCase() + s.slice(1)
 }
 
-function kobleForvaltningsmyndighet(e) {
+function fjernRelasjon(e, kode) {
+  for (let i = 0; i < e.relasjon.length; i++)
+    if (e.relasjon[i].kode === kode) {
+      e.relasjon.splice(i, 1)
+      break
+    }
+}
+
+function kobleForvaltningsmyndighet(kode, e) {
   if (e.data.forvaltningsmyndighet !== "fylkesmann") return
   const regexFylke = /AO_(\d\d)-VV/g
   let fylke = []
@@ -71,8 +79,10 @@ function kobleForvaltningsmyndighet(e) {
     const match = regexFylke.exec(r.kode)
     if (match) fylke.push(match[1])
   })
+  //  if (kode === "VV_171") log.warn(fylke)
   if (fylke.length !== 1) return
   relasjon(e, "forvaltes av", "VV_FM-FM-" + fylke[0], "forvalter")
+  fjernRelasjon(e, "VV_FM-FM")
 }
 
 function map(vo) {
@@ -129,7 +139,7 @@ function map(vo) {
       relasjon(e, "ligger i fylke", fylkekode + "-VV")
     })
   }
-  kobleForvaltningsmyndighet(e)
+  kobleForvaltningsmyndighet(kode, e)
   r[kode] = e
 }
 

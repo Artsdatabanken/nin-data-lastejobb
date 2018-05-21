@@ -28,19 +28,16 @@ function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
   if (!nodeFra.graf[kant]) nodeFra.graf[kant] = {}
   let kobling = Object.assign({}, metadata, tilBarn(nodeTil))
   if (erSubset) kobling.erSubset = true
+  delete kobling.kode
   delete kobling.kant
   delete kobling.kantRetur
   nodeFra.graf[kant][kodeTil] = kobling
-  if (kodeFra == "VV_FM") {
-    log.warn(kodeFra, kant, kodeTil, metadata)
-    log.warn(JSON.stringify(nodeFra.graf))
-  }
 }
 
 function lagGrafkoblinger(kode, node) {
   if (!node.relasjon) return
-  if (kode == "AO_01-VV") log.warn(node)
   node.relasjon.forEach(e => {
+    //    if (kode == "VV_386") log.warn(kode, e.kode)
     if (!e.kode) throw new Error("Mangler kode " + e.kode)
     lagGrafkobling(kode, e.kode, e.kant, e, e.erSubset)
     lagGrafkobling(e.kode, kode, e.kantRetur, e, false)
