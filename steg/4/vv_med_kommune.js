@@ -10,7 +10,10 @@ var lookup = new PolygonLookup(kommuner)
 let treff = 0
 
 function koblePåKommune(vo) {
-  const nater = vo.geometry.coordinates[0]
+  let nater = vo.geometry.coordinates
+  while (Array.isArray(nater[0][0])) nater = nater[0]
+  //  if (vo.properties.IID === "VV00000171") log.warn(nater)
+
   let hits = {}
   for (var i = 0; i < nater.length; i++) {
     const punkt = nater[i]
@@ -22,6 +25,7 @@ function koblePåKommune(vo) {
     }
   }
   vo.properties.kommune = Object.keys(hits)
+  //  if (vo.properties.IID === "VV00000171") log.warn(hits)
   if (vo.properties.kommune.length <= 0)
     log.warn(
       "Fant ikke kommune for",

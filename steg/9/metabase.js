@@ -306,7 +306,6 @@ settInnAliaser(tre)
 injectNamedAliases(tre)
 fyllInnGraf()
 
-log.warn(tre.vv)
 log.info("Mangler bbox for " + slettet_fordi_mangler_bbox.length + " koder")
 //log.debug("Mangler bbox for: " + JSON.stringify(slettet_fordi_mangler_bbox))
 log.warn("Kobling til +" + ukjenteKoder.length + " ukjente koder")

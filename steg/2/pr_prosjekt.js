@@ -7,15 +7,15 @@ let koder = io.lesKildedatafil("nin_program")
 
 function importerProsjekter(prosjekter) {
   for (let key of Object.keys(prosjekter)) {
-    log.warn(key)
+    //    log.warn(key)
     const node = prosjekter[key]
 
-    log.warn(node)
+    //    log.warn(node)
     const id = node.navn
-    console.log(node.navn)
+    //    console.log(node.navn)
     const parts = id.replace(/\s/, "_").split("_")
 
-    log.warn(parts)
+    //    log.warn(parts)
   }
 }
 
@@ -26,7 +26,7 @@ function importerProgram() {
     importerProsjekter(program.prosjekter)
     let id = program.navn
     const parts = id.replace(/\s/, "_").split("_")
-    log.warn(parts)
+    //    log.warn(parts)
     //    log.warn(node.beskrivelse)
   }
   return program
