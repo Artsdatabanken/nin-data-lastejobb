@@ -44,10 +44,6 @@ exports[`data/inn_ao_kommune.json har antall rader 1`] = `422`;
 
 exports[`data/inn_ao_kommune.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/inn_ao_kommune_geom.json har antall rader 1`] = `2`;
-
-exports[`data/inn_ao_kommune_geom.json har forventede nøkler 1`] = `undefined`;
-
 exports[`data/inn_bbox.json har antall rader 1`] = `4858`;
 
 exports[`data/inn_bbox.json har forventede nøkler 1`] = `undefined`;

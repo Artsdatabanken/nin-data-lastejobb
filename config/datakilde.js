@@ -8,7 +8,7 @@ const datakilde = {
   or_organisasjon: "or_organisasjon",
   vv_verneområe:
     "http://trdefme02.miljodirektoratet.no/nedlasting/Naturbase/Shape/naturvern_utm33.zip",
-  ao_kommune_geom: "http://norgeskart.no/json/norge/kommuner.json",
+  ao_kommune_geom: "https://www.dropbox.com/s/cyi68l9mixg7bq7/LAU2018.zip?dl=1", // https://kartkatalog.geonorge.no/metadata/kartverket/statistiske-inndelinger-lau/f7be9f83-e5e0-4914-8076-e37424221930
   bbox: "http://it-webadbtest01.it.ntnu.no/data/json/sqrt42/sqrt42bbox.json"
 }
 

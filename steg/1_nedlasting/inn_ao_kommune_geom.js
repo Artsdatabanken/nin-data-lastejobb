@@ -4,9 +4,9 @@ const log = require("log-less-fancy")()
 
 // Laster ned geometri for kommuner i geojson format
 http
-  .downloadJson2File(
+  .downloadBinary2File(
     config.datakilde.ao_kommune_geom,
-    config.getDataPath(__filename)
+    config.getDataPath(__filename, ".zip")
   )
   .catch(err => {
     log.fatal(err)
