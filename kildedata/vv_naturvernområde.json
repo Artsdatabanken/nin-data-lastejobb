@@ -15,27 +15,6 @@
   "VV_FM-VO": { "tittel": { "nb": "Verneområdestyre" } },
   "VV_FM-FK": { "tittel": { "nb": "Fylkesmann og kommune" } },
   "VV_FM-SM": { "tittel": { "nb": "Sysselmannen" } },
-  "VV_ML": {
-    "tittel": { "nb": "MOB-Land prioritet" },
-    "ingress":
-      "Angivelse av hvilken prioritet et område eller en ressurs har med tanke på beredskap og tiltak mot akutt forurensning på land.",
-    "infoUrl":
-      "https://objektkatalog.geonorge.no/Objekttype/Index/EAID_15DA8089_6E76_4c6f_BFEE_B09ED95389B3"
-  },
-  "VV_ML-A": { "tittel": { "nb": "Svært høy prioritet" } },
-  "VV_ML-B": { "tittel": { "nb": "Høy prioritet" } },
-  "VV_ML-C": { "tittel": { "nb": "Middels prioritet" } },
-  "VV_ML-D": { "tittel": { "nb": "Lav prioritet" } },
-  "VV_ML-E": { "tittel": { "nb": "Svært lav prioritet" } },
-  "VV_ML-F": {
-    "tittel": { "nb": "Ingen prioritet" },
-    "ingress": "Settes for områder som ikke skal gis prioritet i MOB-sammenheng"
-  },
-  "VV_ML-G": {
-    "tittel": { "nb": "Ikke vurdert" },
-    "ingress":
-      "Settes for områder som ennå ikke er vurdert mht prioritet i MOB-sammenheng"
-  },
   "VV_PA": {
     "tittel": {
       "nb":
