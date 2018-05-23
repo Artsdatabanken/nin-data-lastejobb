@@ -17,10 +17,11 @@
   "VV_FM-SM": { "tittel": { "nb": "Sysselmannen" } },
   "VV_PA": {
     "tittel": {
-      "nb":
-        "Verneområdets status i IUCN. Naturreservat Verdens Naturvernunion IUCN, har på oppdrag fra FN vedtatt et internasjonalt system for kategorisering av verneområder",
+      "nb": "Verneområdets status i IUCN",
       "en": "Protected Area Categories"
     },
+    "ingress":
+      "Naturreservat Verdens Naturvernunion IUCN, har på oppdrag fra FN vedtatt et internasjonalt system for kategorisering av verneområder.",
     "infoUrl":
       "https://www.iucn.org/theme/protected-areas/about/protected-area-categories"
   },

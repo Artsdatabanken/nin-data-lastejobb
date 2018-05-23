@@ -161,7 +161,10 @@ function tilordneFarger(barna, rotFarge) {
     if (!minFarge) {
       const tilordneTilfeldigeFarger =
         "NA_MI_BS_".indexOf(bkode.substring(0, 2)) >= 0
-      if (tilordneTilfeldigeFarger) minFarge = farge.spin(15).toHexString()
+      if (tilordneTilfeldigeFarger) {
+        minFarge = farge.spin(15).toHexString()
+        data[bkode].farge = minFarge
+      }
     }
     if (minFarge) barn.farge = minFarge
   })
