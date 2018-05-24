@@ -18,6 +18,7 @@
 * [Kodetre som lastes i API](https://adb-typesystem.surge.sh/kodetre.json) (~5MB)
 * [Kodetre som lastes i PostgreSQL](https://adb-typesystem.surge.sh/kodetre_postgre.json) (~5MB)
 * [Metabase for UI, lastes i Firebase](https://adb-typesystem.surge.sh/metabase.json) (~50MB)
+* [Koder som mangler data](https://adb-typesystem.surge.sh/mangler_data.json) (~2MB)
 
 ## Deployment
 
