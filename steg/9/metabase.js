@@ -6,6 +6,8 @@ const tinyColor = require("tinycolor2")
 
 function harKartData(kode) {
   if (kode.indexOf("VV") >= 0) return true
+  if (kode.indexOf("OR") === 0) return true
+  if (kode.indexOf("NA_HT") >= 0) return true
   if (!data[kode]) return false
 
   return data[kode].bbox
@@ -78,7 +80,6 @@ function mapForelderTilBarn(kode, node) {
   if (!c2p[kode]) c2p[kode] = []
   if (!node.foreldre) {
     if (!node.se) {
-      log.warn(node)
       throw new Error("Mangler forelder: " + kode)
     }
     return
@@ -192,6 +193,7 @@ function byggTreFra(tre, key) {
       // TODO: Temp hack: Fjerner de enkelte verneområder fra toppnivå VV
       if (key === "VV" && ckey.match(/^VV_\d+$/)) return
       const cnode = data[ckey]
+      if (!cnode) return
       barn[ckey] = {
         sti: cnode.sti,
         tittel: cnode.tittel
@@ -315,5 +317,6 @@ log.warn("Kobling til +" + ukjenteKoder.length + " ukjente koder")
 //log.debug("Kobling til ukjente koder: " + JSON.stringify(ukjenteKoder))
 tre = { katalog: tre }
 io.skrivBuildfil(__filename, tre)
+io.skrivBuildfil("mangler_data", slettet_fordi_mangler_bbox)
 
 validateKeys(tre, "")
