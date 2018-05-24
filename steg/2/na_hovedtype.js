@@ -37,7 +37,7 @@ hovedtyper.forEach(ht => {
   }
   me.definisjonsgrunnlag = {}
   me.definisjonsgrunnlag.kode =
-    kode_hovedtype.definisjonsgrunnlag.prefiks + ht["GrL"].trim()
+    kode_hovedtype.definisjonsgrunnlag.prefiks + "-" + ht["GrL"].trim()
   me.definisjonsgrunnlag.tittel = { nb: ht["Definisjonsgrunnlag-tekst"] }
   me.definisjonsgrunnlag.undertittel = { nb: ht["Definisjonsgrunnlag"] }
   me.prosedyrekategori = {}
