@@ -14,13 +14,8 @@ Object.keys(hovedtyper).forEach(kode => {
     r[pkkode] = {
       foreldre: [typesystem.natursystem.hovedtype.prosedyrekategori.prefiks],
       tittel: pk.tittel,
-      undertittel: {
-        nb: "Prosedyrekategori"
-      },
-      barn: []
+      nivå: "prosedyrekategori"
     }
-
-  r[pkkode].barn.push(kode)
 })
 
 io.skrivDatafil(__filename, r)
