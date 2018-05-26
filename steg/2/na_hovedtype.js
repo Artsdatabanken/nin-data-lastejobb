@@ -39,12 +39,10 @@ hovedtyper.forEach(ht => {
   me.definisjonsgrunnlag.kode =
     kode_hovedtype.definisjonsgrunnlag.prefiks + "-" + ht["GrL"].trim()
   me.definisjonsgrunnlag.tittel = { nb: ht["Definisjonsgrunnlag-tekst"] }
-  me.definisjonsgrunnlag.undertittel = { nb: ht["Definisjonsgrunnlag"] }
   me.prosedyrekategori = {}
   me.prosedyrekategori.kode =
     kode_hovedtype.prosedyrekategori.prefiks + ht["PrK"]
   me.prosedyrekategori.tittel = { nb: ht["PrK-tekst"].trim() }
-  me.prosedyrekategori.undertittel = { nb: ht["Prosedyrekategori"] }
   me.nin1 = ht["NiN[1] "]
   r[typesystem.natursystem.leggTilPrefiks(ht.HTK)] = me
 })
