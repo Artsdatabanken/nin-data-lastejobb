@@ -8,11 +8,11 @@ exports[`build/kodetre_postgre.json har antall rader 1`] = `166103`;
 
 exports[`build/kodetre_postgre.json har forventede nøkler 1`] = `undefined`;
 
-exports[`build/mangler_data.json har antall rader 1`] = `160963`;
+exports[`build/mangler_data.json har antall rader 1`] = `160917`;
 
 exports[`build/mangler_data.json har forventede nøkler 1`] = `undefined`;
 
-exports[`build/metabase.json har antall rader 1`] = `9674`;
+exports[`build/metabase.json har antall rader 1`] = `9754`;
 
 exports[`build/metabase.json har forventede nøkler 1`] = `undefined`;
 
@@ -48,7 +48,7 @@ exports[`data/inn_ao_kommune.json har antall rader 1`] = `422`;
 
 exports[`data/inn_ao_kommune.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/inn_bbox.json har antall rader 1`] = `5061`;
+exports[`data/inn_bbox.json har antall rader 1`] = `5108`;
 
 exports[`data/inn_bbox.json har forventede nøkler 1`] = `undefined`;
 

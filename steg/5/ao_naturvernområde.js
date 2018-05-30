@@ -39,7 +39,7 @@ function lagFylkesmann(kilde) {
         {
           kode: key,
           kant: "forvalter",
-          kantRetur: "forvaltes av",
+          kantRetur: "verneområder som forvaltes av",
           erSubset: true
         }
       ]
