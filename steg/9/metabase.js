@@ -190,8 +190,6 @@ function byggTreFra(tre, key) {
 
   if (p2c[key]) {
     p2c[key].forEach(ckey => {
-      // TODO: Temp hack: Fjerner de enkelte verneområder fra toppnivå VV
-      if (key === "VV" && ckey.match(/^VV_\d+$/)) return
       const cnode = data[ckey]
       if (!cnode) return
       barn[ckey] = {
@@ -232,6 +230,7 @@ function settInn(tre, targetNode, kode, node) {
   }
 
   const leafKey = segments[segments.length - 1]
+  if (leafKey == "vv") console.log(tre[leafKey], targetNode)
   tre[leafKey] = Object.assign({}, tre[leafKey], targetNode)
 }
 
@@ -301,6 +300,11 @@ function validateKeys(tre, path) {
   }
 }
 
+function hacks(tre) {
+  // Fjern barn fra VV - for mange, bruk alternative ruter
+  tre["vv"].barn = {}
+}
+
 fjernRelasjonTilKoderSomIkkeHarData(data)
 settPrimærSti()
 mapForeldreTilBarn()
@@ -310,6 +314,7 @@ let node = byggTreFra(tre, typesystem.rotkode)
 settInnAliaser(tre)
 injectNamedAliases(tre)
 fyllInnGraf()
+hacks(tre)
 
 log.info("Mangler bbox for " + slettet_fordi_mangler_bbox.length + " koder")
 //log.debug("Mangler bbox for: " + JSON.stringify(slettet_fordi_mangler_bbox))
