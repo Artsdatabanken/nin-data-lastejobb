@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`build/kodetre.json har antall rader 1`] = `166159`;
+exports[`build/kodetre.json har antall rader 1`] = `166161`;
 
 exports[`build/kodetre.json har forventede nøkler 1`] = `undefined`;
 
-exports[`build/kodetre_postgre.json har antall rader 1`] = `166160`;
+exports[`build/kodetre_postgre.json har antall rader 1`] = `166162`;
 
 exports[`build/kodetre_postgre.json har forventede nøkler 1`] = `undefined`;
 
@@ -12,7 +12,7 @@ exports[`build/mangler_data.json har antall rader 1`] = `160974`;
 
 exports[`build/mangler_data.json har forventede nøkler 1`] = `undefined`;
 
-exports[`build/metabase.json har antall rader 1`] = `9754`;
+exports[`build/metabase.json har antall rader 1`] = `9756`;
 
 exports[`build/metabase.json har forventede nøkler 1`] = `undefined`;
 
@@ -32,11 +32,11 @@ exports[`data/ar_taxon_to_json.json har antall rader 1`] = `158024`;
 
 exports[`data/ar_taxon_to_json.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/full.json har antall rader 1`] = `166158`;
+exports[`data/full.json har antall rader 1`] = `166160`;
 
 exports[`data/full.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/full_med_graf.json har antall rader 1`] = `166158`;
+exports[`data/full_med_graf.json har antall rader 1`] = `166160`;
 
 exports[`data/full_med_graf.json har forventede nøkler 1`] = `undefined`;
 
@@ -52,7 +52,7 @@ exports[`data/inn_bbox.json har antall rader 1`] = `5110`;
 
 exports[`data/inn_bbox.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/metabase_med_bbox.json har antall rader 1`] = `166158`;
+exports[`data/metabase_med_bbox.json har antall rader 1`] = `166160`;
 
 exports[`data/metabase_med_bbox.json har forventede nøkler 1`] = `undefined`;
 
