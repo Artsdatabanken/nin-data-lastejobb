@@ -9,8 +9,7 @@
   "scripts": {
     "build": "node --max_old_space_size=4096 index",
     "test": "node --max_old_space_size=4096 node_modules/.bin/jest",
-    "deploy":
-      "firebase --token \"$FIREBASE_TOKEN\" -P adb-kode database:set -y / build/metabase.json",
+    "deploy": "firebase --token \"$FIREBASE_TOKEN\" -P adb-kode database:set -y / build/metabase.json",
     "flow": "flow",
     "precommit": "pretty-quick --staged",
     "flow:check": "flow check ./src/",
@@ -20,8 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/bjornreppen/kverna.git"
   },
-  "author":
-    "Bjorn Reppen <bjornreppen@users.noreply.github.com> (https://github.com/bjornreppen)",
+  "author": "Bjorn Reppen <bjornreppen@users.noreply.github.com> (https://github.com/bjornreppen)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bjornreppen/kverna/issues"
