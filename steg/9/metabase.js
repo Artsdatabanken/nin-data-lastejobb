@@ -5,6 +5,7 @@ const typesystem = require("@artsdatabanken/typesystem")
 const tinyColor = require("tinycolor2")
 
 function harKartData(kode) {
+  if (kode === typesystem.rotkode) return true
   if (kode.indexOf("VV") >= 0) return true
   if (kode.indexOf("OR") === 0) return true
   if (kode.indexOf("NA_HT") >= 0) return true
