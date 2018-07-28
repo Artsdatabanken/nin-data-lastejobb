@@ -3,6 +3,7 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 const tinyColor = require("tinycolor2")
+const farger = require("../../kildedata/farger.json")
 
 function harKartData(kode) {
   if (kode === typesystem.rotkode) return true
@@ -160,6 +161,9 @@ function tilordneFarger(barna, rotFarge) {
   Object.keys(barna).forEach(bkode => {
     const barn = barna[bkode]
     let minFarge = data[bkode].farge
+    // Bruk farger definert i farger.json
+    minFarge = minFarge || farger[bkode]
+
     if (!minFarge) {
       const tilordneTilfeldigeFarger =
         "NA_MI_BS_".indexOf(bkode.substring(0, 2)) >= 0
