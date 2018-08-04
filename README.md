@@ -8,17 +8,17 @@
 
 ## Dokumentasjon
 
-* [Kildedata](kildedata/README.md)
-* [Eksterne datakilder](steg/1_nedlasting/README.md)
-* Internt [JSON format](doc/JSON.md)
-* [Ukurante løsninger (TODOs)](doc/UKURANT.md)
+- [Kildedata](kildedata/README.md)
+- [Eksterne datakilder](steg/1_nedlasting/README.md)
+- Internt [JSON format](doc/JSON.md)
+- [Ukurante løsninger (TODOs)](doc/UKURANT.md)
 
 ## Build output
 
-* [Kodetre som lastes i API](https://adb-typesystem.surge.sh/kodetre.json) (~5MB)
-* [Kodetre som lastes i PostgreSQL](https://adb-typesystem.surge.sh/kodetre_postgre.json) (~5MB)
-* [Metabase for UI, lastes i Firebase](https://adb-typesystem.surge.sh/metabase.json) (~50MB)
-* [Koder som mangler data](https://adb-typesystem.surge.sh/mangler_data.json) (~2MB)
+- [Kodetre som lastes i API](https://adb-typesystem.surge.sh/kodetre.json) (~5MB)
+- [Kodetre som lastes i PostgreSQL](https://adb-typesystem.surge.sh/kodetre_postgre.json) (~5MB)
+- [Metabase for UI, lastes i Firebase](https://adb-typesystem.surge.sh/metabase.json) (~50MB)
+- [Koder som mangler data](https://adb-typesystem.surge.sh/mangler_data.json) (~2MB)
 
 ## Deployment
 
@@ -26,11 +26,11 @@ Bygd metabase deployes automatisk til [Firebase Realtime](https://adb-kode.fireb
 
 ## Relaterte prosjekter
 
-* [Innsynsklient](https://github.com/artsdatabanken/ratatouille)
-* [REST API](https://github.com/Artsdatabanken/ogapi)
-* [GIS dataflyt](https://github.com/artsdatabanken/grunnkart-dataflyt)
-* [Geografisk API](https://github.com/Artsdatabanken/rasterQ) og [Deployment](https://github.com/Artsdatabanken/rasterUploader) av dette
-* Verktøy for [rødlisting av naturtyper](https://github.com/Artsdatabanken/natty)
+- [Innsynsklient](https://github.com/artsdatabanken/ratatouille)
+- [REST API](https://github.com/Artsdatabanken/ogapi)
+- [GIS dataflyt](https://github.com/artsdatabanken/grunnkart-dataflyt)
+- [Geografisk API](https://github.com/Artsdatabanken/rasterQ) og [Deployment](https://github.com/Artsdatabanken/rasterUploader) av dette
+- Verktøy for [rødlisting av naturtyper](https://github.com/Artsdatabanken/natty)
 
 ## Relasjoner
 
@@ -61,7 +61,7 @@ jq '.katalog.or."adb"' data/metabase.json
       "nb": "Artsdatabanken"
     },
     "infoUrl": "https://www.artsdatabanken.no",
-    "klasse": "Organisasjon",
+    "nivå": "Organisasjon",
     "kode": "OR_ADB",
     "sti": "or/adb",
     "overordnet": [

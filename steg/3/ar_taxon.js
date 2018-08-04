@@ -33,7 +33,6 @@ taxons.forEach(c => {
   const kode = typesystem.art.lagKode(c.id)
   const e = {
     tittel: c.tittel,
-    klasse: "art",
     //    navnSciId: c.id,
     //    parentId: c.parentId,
     foreldre: [forelder(c.parentId)],

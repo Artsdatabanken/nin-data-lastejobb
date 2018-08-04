@@ -1,5 +1,7 @@
 {
+  "AO": ["Administrativt område", "Fylke", "Kommune"],
   "AR": [
+    "Art",
     "Rike",
     "Rekke",
     "Underrekke",
@@ -12,12 +14,16 @@
     "Slekt",
     "Art"
   ],
+  "BS": ["Beskrivelsesystem", "Kilde til variasjon", "Variabel", "Verdi"],
+  "MI": ["Lokal kompleks miljøvariabel", "Miljøvariabel", "Basistrinn"],
   "NA": [
+    "Naturmangfold",
     "Hovedtypegruppe",
     "Hovedtype",
     "Kartleggingsenhet 1:20000",
     "Kartleggingsenhet 1:5000",
     "Grunntype"
   ],
-  "AO": ["Fylke", "Kommune"]
+  "OR": ["Organisasjon"],
+  "VV": ["Naturvernområder"]
 }
