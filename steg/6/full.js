@@ -58,11 +58,11 @@ function kobleForeldre() {
 
 flettKildedata("annen_kode")
 flettKildedata("vv_naturvernområde")
-flett("vv_naturvernområde", { klasse: "naturvernområde" })
+flett("vv_naturvernområde")
 flett("inn_ao_fylke")
 flett("inn_ao_kommune")
 flett("ao_naturvernområde")
-flettKildedata("or_organisasjon", { klasse: "organisasjon" })
+flettKildedata("or_organisasjon")
 flett("ar_diagnostisk_art")
 flett("na_hovedtype_relasjon")
 flett("na_mi_liste")

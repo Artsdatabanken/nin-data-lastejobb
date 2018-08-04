@@ -93,7 +93,6 @@ function map(vo) {
     tittel: {
       nb: props.OMRADENAVN
     },
-    klasse: typesystem.verneområde.tittel,
     infoUrl: config.infoUrl.verneområde + props.IID,
     relasjon: [],
     data: {

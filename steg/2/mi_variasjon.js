@@ -25,7 +25,6 @@ function importerKoder() {
     if (kode === "MI") node.Navn = "Miljø"
     const tittel = typesystem.capitalizeTittel(node.Navn)
     let o = {
-      klasse: "miljø",
       tittel: { nb: tittel }
     }
     mineKoder[kode] = o
