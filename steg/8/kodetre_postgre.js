@@ -14,9 +14,6 @@ Object.keys(inn).forEach(forelder => {
 function dyttInn(kode) {
   const node = inn[kode]
   node.kode = kode
-  node.tittel = node.tittel
-    ? node.tittel.nb || node.tittel.en || node.tittel.la
-    : "?"
   let foreldre = node.foreldre
   if (!foreldre) {
     console.warn("Mangler forelder: " + kode)
