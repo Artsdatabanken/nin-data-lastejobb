@@ -8,14 +8,6 @@ exports[`build/kodetre_postgre.json har antall rader 1`] = `166468`;
 
 exports[`build/kodetre_postgre.json har forventede nøkler 1`] = `undefined`;
 
-exports[`build/m1.json har antall rader 1`] = `9766`;
-
-exports[`build/m1.json har forventede nøkler 1`] = `undefined`;
-
-exports[`build/m2.json har antall rader 1`] = `9766`;
-
-exports[`build/m2.json har forventede nøkler 1`] = `undefined`;
-
 exports[`build/mangler_data.json har antall rader 1`] = `161275`;
 
 exports[`build/mangler_data.json har forventede nøkler 1`] = `undefined`;
