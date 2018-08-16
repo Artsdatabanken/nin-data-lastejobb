@@ -208,13 +208,7 @@ function erLovligNøkkel(key) {
 }
 
 function settInn(tre, targetNode, kode, node) {
-  if (kode === "VV") {
-    console.log(targetNode)
-    console.log(kode)
-    //    console.log(node)
-  }
   const segments = typesystem.splittKode(targetNode["@"].kode.toLowerCase())
-  console.log(segments)
   if (segments.length === 0) {
     Object.keys(targetNode).forEach(key => {
       tre[key] = Object.assign({}, tre[key], targetNode[key])
