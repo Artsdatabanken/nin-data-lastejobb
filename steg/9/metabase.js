@@ -61,17 +61,9 @@ function fyllInnGraf() {
           return
         }
         const sub = node.graf[typeRelasjon][kode]
-        sub.sti = sti(kode)
         sub.farge = data[kode].farge
       })
     })
-  })
-}
-
-function settPrimærSti() {
-  Object.keys(data).forEach(kode => {
-    const node = data[kode]
-    node.sti = sti(kode)
   })
 }
 
@@ -125,7 +117,7 @@ function nøstOppForfedre(forelderkey) {
       log.warn("Mangler kode " + forelderkey)
       return
     }
-    r.push({ kode: forelderkey, tittel: forelder.tittel, sti: forelder.sti })
+    r.push({ kode: forelderkey, tittel: forelder.tittel })
     forelderkey = c2p[forelderkey][0]
   }
   return r
@@ -198,7 +190,6 @@ function byggTreFra(tre, key) {
       const cnode = data[ckey]
       if (!cnode) return
       barn[ckey] = {
-        sti: cnode.sti,
         tittel: cnode.tittel
       }
       const child = byggTreFra(tre, ckey)
@@ -217,8 +208,14 @@ function erLovligNøkkel(key) {
 }
 
 function settInn(tre, targetNode, kode, node) {
-  const sti = targetNode["@"].sti.toLowerCase()
-  if (sti.length === 0) {
+  if (kode === "VV") {
+    console.log(targetNode)
+    console.log(kode)
+    //    console.log(node)
+  }
+  const segments = typesystem.splittKode(targetNode["@"].kode.toLowerCase())
+  console.log(segments)
+  if (segments.length === 0) {
     Object.keys(targetNode).forEach(key => {
       tre[key] = Object.assign({}, tre[key], targetNode[key])
       if (!erLovligNøkkel(key))
@@ -226,8 +223,6 @@ function settInn(tre, targetNode, kode, node) {
     })
     return
   }
-  const segments = sti.split("/")
-
   for (let i = 0; i < segments.length - 1; i++) {
     const subKey = segments[i]
     if (!tre[subKey]) tre[subKey] = {}
@@ -240,7 +235,8 @@ function settInn(tre, targetNode, kode, node) {
 
 function injectAlias(from, kode, tre) {
   const targetNode = data[kode]
-  if (targetNode.sti.toLowerCase() === from.join("/").toLowerCase()) return
+  const targetSti = sti(kode)
+  if (targetSti === from.join("/").toLowerCase()) return
   for (let i = 0; i < from.length - 1; i++) {
     const subKey = from[i].toLowerCase()
     if (!tre[subKey]) tre[subKey] = {}
@@ -258,7 +254,7 @@ function injectAlias(from, kode, tre) {
     throw new Error(JSON.stringify(from) + JSON.stringify(targetNode))
   me.se[targetNode.kode] = {
     tittel: targetNode.tittel,
-    sti: targetNode.sti
+    sti: sti(targetNode.kode)
   }
 }
 
@@ -315,7 +311,6 @@ function hacks(tre) {
 }
 
 fjernRelasjonTilKoderSomIkkeHarData(data)
-settPrimærSti()
 mapForeldreTilBarn()
 
 let tre = {}
