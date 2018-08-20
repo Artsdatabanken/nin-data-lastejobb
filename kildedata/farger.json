@@ -7,5 +7,9 @@
   "MI_KA-F": "hsl(20, 70%, 50%)",
   "MI_KA-G": "",
   "MI_KA-H": "hsl(0, 100%, 50%",
-  "MI_KA-I": ""
+  "MI_KA-I": "",
+  "RL_DD": "#808080",
+  "RL_EN": "#FFA500",
+  "RL_NT": "#AEFF2F",
+  "RL_VU": "#FFFF00"
 }
