@@ -147,6 +147,14 @@ function tilfeldigFarge() {
   return tempColors[i]
 }
 
+function slåOppFarge(kode) {
+  // Supersløvt prefiks oppslag
+  for (let fkode of Object.keys(farger)) {
+    if (kode.startsWith(fkode)) return farger[fkode]
+  }
+  return null
+}
+
 function tilordneFarger(barna, rotFarge) {
   if (!rotFarge) rotFarge = tilfeldigFarge()
   let farge = new tinyColor(rotFarge)
@@ -154,11 +162,10 @@ function tilordneFarger(barna, rotFarge) {
     const barn = barna[bkode]
     let minFarge = data[bkode].farge
     // Bruk farger definert i farger.json
-    minFarge = minFarge || farger[bkode]
+    minFarge = minFarge || slåOppFarge(bkode)
 
     if (!minFarge) {
       const tilordneTilfeldigeFarger = true
-      //        "NA_MI_BS_".indexOf(bkode.substring(0, 2)) >= 0
       if (tilordneTilfeldigeFarger) {
         minFarge = farge.spin(15).toHexString()
         data[bkode].farge = minFarge
