@@ -11,5 +11,6 @@
   "RL_DD": "#808080",
   "RL_EN": "#FFA500",
   "RL_NT": "#AEFF2F",
-  "RL_VU": "#FFFF00"
+  "RL_VU": "#FFFF00",
+  "AO": "#bbb"
 }
