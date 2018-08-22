@@ -3,8 +3,7 @@
     "tittel": "Andre koder",
     "produsert": "2018-04-09T14:03:57.416Z",
     "utgiver": "Artsdatabanken",
-    "url":
-      "https://firebasestorage.googleapis.com/v0/b/grunnkart.appspot.com/o/koder%2Fandre_koder.json?alt=media",
+    "url": "https://firebasestorage.googleapis.com/v0/b/grunnkart.appspot.com/o/koder%2Fandre_koder.json?alt=media",
     "elementer": 44
   },
   "~": { "tittel": { "nb": "Katalog" } },
@@ -16,8 +15,7 @@
   "MI": {
     "tittel": { "nb": "Miljø" },
     "infoUrl": "https://artsdatabanken.no/Pages/179717",
-    "ingress":
-      "Lokale komplekse miljøvariabler (LKM) er definert som «variabler som hver består av flere enkeltmiljøvariabler som samvarierer i mer eller mindre sterk grad, og som gir opphav til variasjon i artssammensetning på relativt fin romlig skala og som har en virkning som vedvarer over relativt lang tid [typisk mer enn 100(–200) år]»"
+    "ingress": "Lokale komplekse miljøvariabler (LKM) er definert som «variabler som hver består av flere enkeltmiljøvariabler som samvarierer i mer eller mindre sterk grad, og som gir opphav til variasjon i artssammensetning på relativt fin romlig skala og som har en virkning som vedvarer over relativt lang tid [typisk mer enn 100(–200) år]»"
   },
   "BS": { "tittel": { "nb": "Beskrivelse" } },
   "BS_6SO-RASTER": { "tittel": { "nb": "Bioklimatiske soner" } },
@@ -30,12 +28,12 @@
   },
   "RL": { "tittel": { "nb": "Truet art/natur" } },
   "LI": { "tittel": { "nb": "Livsmedium" } },
-  "RL_EN": { "tittel": { "nb": "Sterkt truet" } },
-  "RL_VU": { "tittel": { "nb": "Sårbar" } },
-  "RL_RE": { "tittel": { "nb": "Regionalt utdødd" } },
-  "RL_NT": { "tittel": { "nb": "Nær truet" } },
-  "RL_NA": { "tittel": { "nb": "Ikke vurdert" } },
-  "RL_DD": { "tittel": { "nb": "Datamangel" } },
+  "RL_EN": { "tittel": { "nb": "Sterkt truet" }, "sortering": 6 },
+  "RL_VU": { "tittel": { "nb": "Sårbar" }, "sortering": 5 },
+  "RL_NT": { "tittel": { "nb": "Nær truet" }, "sortering": 4 },
+  "RL_RE": { "tittel": { "nb": "Regionalt utdødd" }, "sortering": 3 },
+  "RL_DD": { "tittel": { "nb": "Datamangel" }, "sortering": 2 },
+  "RL_NA": { "tittel": { "nb": "Ikke vurdert" }, "sortering": 1 },
   "FA": { "tittel": { "nb": "Fremmed art" } },
   "FA_SE": { "tittel": { "nb": "Svært høy risiko" } },
   "FA_HI": { "tittel": { "nb": "Høy risiko" } },
