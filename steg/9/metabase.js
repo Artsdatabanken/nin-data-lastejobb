@@ -197,14 +197,15 @@ function byggTreFra(tre, key) {
       const cnode = data[ckey]
       if (!cnode) return
       barn[ckey] = {
-        tittel: cnode.tittel
+        tittel: cnode.tittel,
+        sortering: cnode.sortering
       }
       const child = byggTreFra(tre, ckey)
     })
   }
   tilordneFarger(barn, rot.farge)
   node["@"].barn = barn
-  settInn(tre, node, key, rot)
+  settInn(tre, node, key)
   return node
 }
 
@@ -214,11 +215,11 @@ function erLovligNøkkel(key) {
   return true
 }
 
-function settInn(tre, targetNode, kode, node) {
-  const segments = typesystem.splittKode(targetNode["@"].kode.toLowerCase())
+function settInn(tre, node, kode) {
+  const segments = typesystem.splittKode(node["@"].kode.toLowerCase())
   if (segments.length === 0) {
-    Object.keys(targetNode).forEach(key => {
-      tre[key] = Object.assign({}, tre[key], targetNode[key])
+    Object.keys(node).forEach(key => {
+      tre[key] = Object.assign({}, tre[key], node[key])
       if (!erLovligNøkkel(key))
         throw new Error("kode " + kode + " har ulovlig nøkkel " + key)
     })
@@ -231,7 +232,7 @@ function settInn(tre, targetNode, kode, node) {
   }
 
   const leafKey = segments[segments.length - 1]
-  tre[leafKey] = Object.assign({}, tre[leafKey], targetNode)
+  tre[leafKey] = Object.assign({}, tre[leafKey], node)
 }
 
 function injectAlias(from, kode, tre) {
