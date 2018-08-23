@@ -18,13 +18,11 @@
     "ingress": "Lokale komplekse miljøvariabler (LKM) er definert som «variabler som hver består av flere enkeltmiljøvariabler som samvarierer i mer eller mindre sterk grad, og som gir opphav til variasjon i artssammensetning på relativt fin romlig skala og som har en virkning som vedvarer over relativt lang tid [typisk mer enn 100(–200) år]»"
   },
   "BS": { "tittel": { "nb": "Beskrivelse" } },
-  "BS_6SO-RASTER": { "tittel": { "nb": "Bioklimatiske soner" } },
-  "BS_6SE-RASTER": { "tittel": { "nb": "Bioklimatiske seksjoner" } },
   "AO": { "tittel": { "nb": "Fylke & kommune" }, "utenRamme": true },
   "OR": {
     "tittel": { "nb": "Datakilde" },
     "utenRamme": true,
-    "ingress": "... tekst om dataleverandører..."
+    "ingress": "..."
   },
   "RL": { "tittel": { "nb": "Truet art/natur" } },
   "LI": { "tittel": { "nb": "Livsmedium" } },
