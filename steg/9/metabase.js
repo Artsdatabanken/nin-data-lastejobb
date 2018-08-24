@@ -143,8 +143,8 @@ let tempColors = [
 ]
 
 function tilfeldigFarge() {
-  const i = tempCounter++ % tempColors.length
-  return tempColors[i]
+  const n = Math.floor(Math.random() * tempColors.length)
+  return tempColors[n]
 }
 
 function slåOppFarge(kode) {
@@ -164,11 +164,8 @@ function tilordneFarger(barna, rotFarge) {
     minFarge = minFarge || slåOppFarge(bkode)
 
     if (!minFarge) {
-      const tilordneTilfeldigeFarger = true
-      if (tilordneTilfeldigeFarger) {
-        minFarge = farge.spin(15).toHexString()
-        data[bkode].farge = minFarge
-      }
+      minFarge = tilfeldigFarge()
+      data[bkode].farge = minFarge
     }
     if (minFarge) barn.farge = minFarge
   })
