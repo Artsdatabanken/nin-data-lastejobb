@@ -156,7 +156,6 @@ function slåOppFarge(kode) {
 }
 
 function tilordneFarger(barna, rotFarge) {
-  if (!rotFarge) rotFarge = tilfeldigFarge()
   let farge = new tinyColor(rotFarge)
   Object.keys(barna).forEach(bkode => {
     const barn = barna[bkode]
@@ -178,7 +177,7 @@ function tilordneFarger(barna, rotFarge) {
 function byggTreFra(tre, key) {
   let rot = data[key]
   if (!rot) throw new Error("Finner ikke " + key)
-  //  if (!rot.farge) rot.farge = tilfeldigFarge()
+  if (!rot.farge) rot.farge = slåOppFarge(key)
   if (!rot.overordnet) {
     if (!rot.foreldre) {
       log.warn("mangler forelder: " + key)
