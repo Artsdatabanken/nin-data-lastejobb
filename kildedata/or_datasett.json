@@ -1,6 +1,7 @@
 {
-  "OR_MDIR": ["NA", "VV"],
+  "OR_ADB": ["RL"],
   "OR_KV": ["BS_8", "NA_I"],
-  "OR_NGU": ["MI_KA"],
+  "OR_MDIR": ["NA", "VV", "BS"],
+  "OR_NGU": ["MI_KA", "MI_BK"],
   "OR_SSB": ["AO"]
 }
