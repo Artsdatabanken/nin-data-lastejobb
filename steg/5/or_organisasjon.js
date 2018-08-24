@@ -15,7 +15,7 @@ function lagRelasjonTilDatasett(kilde) {
         kode: s,
         kant: "publisererer",
         kantRetur: "publiseres av",
-        erSubset: false
+        erSubset: true
       }
     })
   })
