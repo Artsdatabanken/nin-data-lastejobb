@@ -13,5 +13,10 @@
   "RL_NT": "#AEFF2F",
   "RL_VU": "#FFFF00",
   "AO": "#ddd",
-  "VV": "#9f9"
+  "VV_VF-NR": "hsl(1, 70%, 55%)",
+  "VV_VF-NP": "hsl(114, 70%, 55%)",
+  "VV_VF-LVO": "hsl(114, 70%, 72%)",
+  "VV_VF-PDO": "hsl(40, 70%, 72%)",
+  "VV_VF-MAV": "hsl(29, 70%, 55%)",
+  "VV": "hsl(60, 70%, 72%)"
 }
