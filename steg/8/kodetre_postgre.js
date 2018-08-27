@@ -31,21 +31,6 @@ function dyttInn(kode) {
   })
 }
 
-function lagdelAv(barn, forfedre) {
-  const node = inn[barn.kode]
-  const delAv = []
-  if (!node.graf) return forfedre
-  Object.keys(node.graf).forEach(kant => {
-    const nodes = node.graf[kant]
-    Object.keys(nodes).forEach(kode => {
-      const node = nodes[kode]
-      if (node.erSubset) delAv.push(kode)
-    })
-  })
-  delAv.push(...forfedre)
-  return delAv
-}
-
 function eksporter(node, forfedre = [], nivå = 0) {
   if (!node.barn) return
 
@@ -55,7 +40,7 @@ function eksporter(node, forfedre = [], nivå = 0) {
     const rel = {
       kode: barn.kode,
       nivå: nivå,
-      delAv: lagdelAv(barn, forfedre),
+      delAv: forfedre,
       tittel: barn.tittel
     }
     ut.push(rel)
