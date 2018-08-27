@@ -70,6 +70,7 @@ flett("mi_variasjon")
 flett("ar_taxon")
 flett("na_prosedyrekategori")
 flett("na_definisjonsgrunnlag")
+flett("statistikk")
 
 kobleForeldre()
 
