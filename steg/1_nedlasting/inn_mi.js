@@ -8,8 +8,7 @@ const log = require("log-less-fancy")()
 //BS,MI - Beskrivelsessystem og miljøvariabler
 // Deaktivert på grunn av ustabil tjeneste
 // Datafilen lagt inn som del av repo under kildedata/mi_varasjon.json
-return
-http
+return http
   .downloadJson2File(
     config.datakilde.mi_variasjon,
     config.getDataPath(__filename)

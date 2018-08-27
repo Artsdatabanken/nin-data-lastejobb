@@ -20,4 +20,13 @@ stats.forEach(s => {
   }
 })
 
+// Akkumulerte data
+Object.keys(r).forEach(kode => {
+  const rec = r[kode]
+  const prefix = typesystem.splittKode(kode)[0]
+  rec.arealPrefix = r[prefix].areal
+  rec.arterPrefix = r[prefix].arter
+  rec.geometrierPrefix = r[prefix].geometrier
+})
+
 io.skrivDatafil(__filename, r)
