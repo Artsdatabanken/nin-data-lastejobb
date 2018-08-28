@@ -27,11 +27,10 @@ Object.keys(r).forEach(kode => {
   const stats = r[kode].stats
   const prefix = typesystem.splittKode(kode)[0]
   const toppnode = r[prefix].stats
-  console.log(prefix)
   if (prefix) {
-    stats.arealPrefix = stats.areal
-    stats.arterPrefix = stats.arter
-    stats.geometrierPrefix = stats.geometrier
+    stats.arealPrefix = toppnode.areal
+    stats.arterPrefix = toppnode.arter
+    stats.geometrierPrefix = toppnode.geometrier
   }
 })
 
