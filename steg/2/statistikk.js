@@ -14,19 +14,25 @@ stats.forEach(s => {
   const kode = Object.keys(s)[0]
   const sn = s[kode]
   r[kode] = {
-    areal: sn.area,
-    geometrier: sn.areas,
-    arter: sn.observations
+    stats: {
+      areal: sn.area,
+      geometrier: sn.areas,
+      arter: sn.observations
+    }
   }
 })
 
 // Akkumulerte data
 Object.keys(r).forEach(kode => {
-  const rec = r[kode]
+  const stats = r[kode].stats
   const prefix = typesystem.splittKode(kode)[0]
-  rec.arealPrefix = r[prefix].areal
-  rec.arterPrefix = r[prefix].arter
-  rec.geometrierPrefix = r[prefix].geometrier
+  const toppnode = r[prefix].stats
+  console.log(prefix)
+  if (prefix) {
+    stats.arealPrefix = stats.areal
+    stats.arterPrefix = stats.arter
+    stats.geometrierPrefix = stats.geometrier
+  }
 })
 
 io.skrivDatafil(__filename, r)
