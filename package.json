@@ -27,7 +27,7 @@
   "homepage": "https://github.com/bjornreppen/kverna#readme",
   "dependencies": {
     "@artsdatabanken/typesystem": "^4.0.0",
-    "babel-eslint": "^8.2.2",
+    "babel-eslint": "^9.0.0",
     "csv": "^3.0.2",
     "decompress-zip": "^0.3.1",
     "eslint-config-airbnb-base": "^13.0.0",
