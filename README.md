@@ -62,7 +62,7 @@ jq '.katalog.or."adb"' data/metabase.json
     },
     "infoUrl": "https://www.artsdatabanken.no",
     "nivå": "Organisasjon",
-    "kode": "OR_ADB",
+    "kode": "OR_AD",
     "sti": "or/adb",
     "overordnet": [
       {
@@ -97,9 +97,7 @@ jq '.AR_43956' data/ar_taxon.json
   "navnSciId": "43956",
   "parentId": "43953",
   "foreldre": ["AR_43953"],
-  "infoUrl":
-    "https://artsdatabanken.no/Taxon/Dactylopusia_longyearbyenensis/43956",
-  "url":
-    "Animalia/Arthropoda/Crustacea/Maxillopoda/Copepoda/Harpacticoida/Thalestridae/Thalestridae/Dactylopusia_longyearbyenensis"
+  "infoUrl": "https://artsdatabanken.no/Taxon/Dactylopusia_longyearbyenensis/43956",
+  "url": "Animalia/Arthropoda/Crustacea/Maxillopoda/Copepoda/Harpacticoida/Thalestridae/Thalestridae/Dactylopusia_longyearbyenensis"
 }
 ```
