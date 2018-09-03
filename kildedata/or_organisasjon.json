@@ -1,5 +1,5 @@
 {
-  "OR_ADB": {
+  "OR_AD": {
     "farge": "hsl(24, 100%, 50%)",
     "tittel": { "nb": "Artsdatabanken" },
     "infoUrl": "https://www.artsdatabanken.no"
@@ -9,17 +9,17 @@
     "tittel": { "nb": "Kartverket" },
     "infoUrl": "https://www.kartverket.no"
   },
-  "OR_MDIR": {
+  "OR_MD": {
     "farge": "hsl(177, 93%, 24%)",
     "tittel": { "nb": "Miljødirektoratet" },
     "infoUrl": "https://www.miljodirektoratet.no"
   },
-  "OR_NGU": {
+  "OR_GU": {
     "farge": "hsl(60, 7%, 8%)",
     "tittel": { "nb": "Norges Geologiske Undersøkelse" },
     "infoUrl": "https://www.ngu.no"
   },
-  "OR_SSB": {
+  "OR_SB": {
     "farge": "hsl(0, 0%, 0%)",
     "tittel": { "nb": "Statistisk sentralbyrå", "en": "Statistics Norway" },
     "infoUrl": "https://www.ssb.no"

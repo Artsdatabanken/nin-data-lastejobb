@@ -1,7 +1,7 @@
 {
-  "OR_ADB": ["RL"],
+  "OR_AD": ["RL"],
   "OR_KV": ["BS_8", "NA_I"],
-  "OR_MDIR": ["NA", "VV", "BS"],
-  "OR_NGU": ["MI_KA", "MI_BK"],
-  "OR_SSB": ["AO"]
+  "OR_MD": ["NA", "VV", "BS"],
+  "OR_GU": ["MI_KA", "MI_BK"],
+  "OR_SB": ["AO"]
 }
