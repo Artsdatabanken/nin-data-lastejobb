@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`build/kodetre.json har antall rader 1`] = `166670`;
+exports[`build/kodetre.json har antall rader 1`] = `166819`;
 
 exports[`build/kodetre.json har forventede nøkler 1`] = `undefined`;
 
-exports[`build/kodetre_postgre.json har antall rader 1`] = `166671`;
+exports[`build/kodetre_postgre.json har antall rader 1`] = `166820`;
 
 exports[`build/kodetre_postgre.json har forventede nøkler 1`] = `undefined`;
 
-exports[`build/mangler_data.json har antall rader 1`] = `161480`;
+exports[`build/mangler_data.json har antall rader 1`] = `161629`;
 
 exports[`build/mangler_data.json har forventede nøkler 1`] = `undefined`;
 
@@ -24,19 +24,19 @@ exports[`data/ar_diagnostisk_art.json har antall rader 1`] = `1172`;
 
 exports[`data/ar_diagnostisk_art.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/ar_taxon.json har antall rader 1`] = `158535`;
+exports[`data/ar_taxon.json har antall rader 1`] = `158684`;
 
 exports[`data/ar_taxon.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/ar_taxon_to_json.json har antall rader 1`] = `158535`;
+exports[`data/ar_taxon_to_json.json har antall rader 1`] = `158684`;
 
 exports[`data/ar_taxon_to_json.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/full.json har antall rader 1`] = `166669`;
+exports[`data/full.json har antall rader 1`] = `166818`;
 
 exports[`data/full.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/full_med_graf.json har antall rader 1`] = `166669`;
+exports[`data/full_med_graf.json har antall rader 1`] = `166818`;
 
 exports[`data/full_med_graf.json har forventede nøkler 1`] = `undefined`;
 
@@ -56,7 +56,7 @@ exports[`data/inn_statistikk.json har antall rader 1`] = `991`;
 
 exports[`data/inn_statistikk.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/metabase_med_bbox.json har antall rader 1`] = `166669`;
+exports[`data/metabase_med_bbox.json har antall rader 1`] = `166818`;
 
 exports[`data/metabase_med_bbox.json har forventede nøkler 1`] = `undefined`;
 
