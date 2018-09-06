@@ -1,6 +1,6 @@
 {
   "OR_AD": ["RL"],
-  "OR_KV": ["BS_8", "NA_I"],
+  "OR_KV": ["BS_8", "NA_I", "AO"],
   "OR_MD": ["NA", "VV", "BS"],
   "OR_GU": ["MI_KA", "MI_BK"],
   "OR_SB": ["AO"]
