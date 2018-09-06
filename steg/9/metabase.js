@@ -3,8 +3,6 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 const tinyColor = require("tinycolor2")
-const farger = require("../../kildedata/farger.json")
-const farger_dominant = require("../../kildedata/farger_dominant.json")
 
 function harKartData(kode) {
   if (kode === typesystem.rotkode) return true
@@ -18,6 +16,7 @@ function harKartData(kode) {
 
 let slettet_fordi_mangler_bbox = []
 let data = io.lesDatafil("metabase_med_bbox")
+const farger = io.lesDatafil("farger")
 
 Object.keys(data).forEach(kode => {
   const node = data[kode]
@@ -150,14 +149,9 @@ function tilfeldigFarge() {
 
 function slåOppFarge(kode) {
   // Supersløvt prefiks oppslag
+  if (farger[kode]) return farger[kode]
   for (let fkode of Object.keys(farger)) {
     if (kode.startsWith(fkode)) return farger[fkode]
-  }
-  for (let fkode of Object.keys(farger_dominant)) {
-    if (kode.startsWith(fkode))
-      return tinycolor(farger[fkode])
-        .lighten(20)
-        .toHslString()
   }
   return null
 }
