@@ -32,6 +32,10 @@ exports[`data/ar_taxon_to_json.json har antall rader 1`] = `158737`;
 
 exports[`data/ar_taxon_to_json.json har forventede nøkler 1`] = `undefined`;
 
+exports[`data/farger.json har antall rader 1`] = `137`;
+
+exports[`data/farger.json har forventede nøkler 1`] = `undefined`;
+
 exports[`data/full.json har antall rader 1`] = `166871`;
 
 exports[`data/full.json har forventede nøkler 1`] = `undefined`;
