@@ -4,6 +4,7 @@ const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 const tinyColor = require("tinycolor2")
 const farger = require("../../kildedata/farger.json")
+const farger_dominant = require("../../kildedata/farger_dominant.json")
 
 function harKartData(kode) {
   if (kode === typesystem.rotkode) return true
@@ -151,6 +152,12 @@ function slåOppFarge(kode) {
   // Supersløvt prefiks oppslag
   for (let fkode of Object.keys(farger)) {
     if (kode.startsWith(fkode)) return farger[fkode]
+  }
+  for (let fkode of Object.keys(farger_dominant)) {
+    if (kode.startsWith(fkode))
+      return tinycolor(farger[fkode])
+        .lighten(20)
+        .toHslString()
   }
   return null
 }
