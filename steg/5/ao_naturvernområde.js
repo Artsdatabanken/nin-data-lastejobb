@@ -23,8 +23,8 @@ function lagKoder(kilde, nivå) {
     const e = {
       tittel: { nb: "Naturvernområder i " + o.tittel.nb + " " + nivå }
     }
-    if (nivå === "fylke") e.foreldre = [typesystem.verneområde.prefiks + "_AO"]
-    r[key + "-VV"] = e
+    if (nivå === "fylke") e.foreldre = ["VV_AO"]
+    r["VV_" + key.replace("_", "-")] = e
   })
   return r
 }

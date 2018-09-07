@@ -11,6 +11,25 @@ Object.keys(inn).forEach(forelder => {
   node.barn = []
 })
 
+function lagDelAv(barn, forfedre) {
+  const node = inn[barn.kode]
+  const delAv = []
+  if (!node.graf) return forfedre
+  Object.keys(node.graf).forEach(kant => {
+    const nodes = node.graf[kant]
+    Object.keys(nodes).forEach(kode => {
+      const node = nodes[kode]
+      const prefixA = barn.kode.substring(0, 2)
+      const prefixB = kode.substring(0, 2)
+      // Samme grein i treet
+      if (prefixA === prefixB) delAv.push(kode)
+      //      else console.log(prefixA, prefixB)
+    })
+  })
+  delAv.push(...forfedre)
+  return delAv
+}
+
 function dyttInn(kode) {
   const node = inn[kode]
   node.kode = kode
@@ -40,7 +59,7 @@ function eksporter(node, forfedre = [], nivå = 0) {
     const rel = {
       kode: barn.kode,
       nivå: nivå,
-      delAv: forfedre,
+      delAv: lagDelAv(barn, forfedre),
       tittel: barn.tittel
     }
     ut.push(rel)
