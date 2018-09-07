@@ -73,7 +73,7 @@ function fjernRelasjon(e, kode) {
 
 function kobleForvaltningsmyndighet(kode, e) {
   if (e.data.forvaltningsmyndighet !== "fylkesmann") return
-  const regexFylke = /AO_(\d\d)-VV/g
+  const regexFylke = /VV_AO-(\d\d)/g
   let fylke = []
   e.relasjon.forEach(r => {
     const match = regexFylke.exec(r.kode)
@@ -129,13 +129,8 @@ function map(vo) {
     props.kommune.forEach(kommune => {
       const fnr = kommune.substring(0, 2)
       const knr = kommune.substring(2)
-      const kommunekode = typesystem.administrativtOmråde.leggTilPrefiks(
-        fnr + "-" + knr
-      )
-      //      e.foreldre.push(kommunekode + "-VV")
-      const fylkekode = typesystem.administrativtOmråde.leggTilPrefiks(fnr)
-      relasjon(e, "ligger i kommune", kommunekode + "-VV")
-      relasjon(e, "ligger i fylke", fylkekode + "-VV")
+      relasjon(e, "ligger i kommune", "VV_AO-" + fnr + "-" + knr)
+      relasjon(e, "ligger i fylke", "VV_AO-" + fnr)
     })
   }
   kobleForvaltningsmyndighet(kode, e)
