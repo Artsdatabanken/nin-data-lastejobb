@@ -27,7 +27,7 @@ function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
   if (!nodeFra.graf) nodeFra.graf = {}
   if (!nodeFra.graf[kant]) nodeFra.graf[kant] = {}
   let kobling = Object.assign({}, metadata, tilBarn(nodeTil))
-  if (erSubset) kobling.erSubset = true
+  kobling.erSubset = erSubset
   delete kobling.kode
   delete kobling.kant
   delete kobling.kantRetur

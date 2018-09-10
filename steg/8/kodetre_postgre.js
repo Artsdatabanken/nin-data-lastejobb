@@ -16,14 +16,10 @@ function lagDelAv(barn, forfedre) {
   const delAv = []
   if (!node.graf) return forfedre
   Object.keys(node.graf).forEach(kant => {
-    const nodes = node.graf[kant]
-    Object.keys(nodes).forEach(kode => {
-      const node = nodes[kode]
-      const prefixA = barn.kode.substring(0, 2)
-      const prefixB = kode.substring(0, 2)
-      // Samme grein i treet
-      if (prefixA === prefixB) delAv.push(kode)
-      //      else console.log(prefixA, prefixB)
+    const relaterte = node.graf[kant]
+    Object.keys(relaterte).forEach(kode => {
+      const relatert = relaterte[kode]
+      if (relatert.erSubset) delAv.push(kode)
     })
   })
   delAv.push(...forfedre)
