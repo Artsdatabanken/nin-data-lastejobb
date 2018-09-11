@@ -10,21 +10,28 @@
   "AR": { "tittel": { "nb": "Art" } },
   "NA": {
     "tittel": { "nb": "Natursystem" },
-    "infoUrl": "https://www.artsdatabanken.no/Pages/222921"
+    "infoUrl": "https://www.artsdatabanken.no/Pages/222921",
+    "sortering": 1
   },
   "MI": {
-    "tittel": { "nb": "Miljø" },
+    "tittel": { "nb": "Miljøvariabel" },
     "infoUrl": "https://artsdatabanken.no/Pages/179717",
-    "ingress": "Lokale komplekse miljøvariabler (LKM) er definert som «variabler som hver består av flere enkeltmiljøvariabler som samvarierer i mer eller mindre sterk grad, og som gir opphav til variasjon i artssammensetning på relativt fin romlig skala og som har en virkning som vedvarer over relativt lang tid [typisk mer enn 100(–200) år]»"
+    "ingress": "Lokale komplekse miljøvariabler (LKM) er definert som «variabler som hver består av flere enkeltmiljøvariabler som samvarierer i mer eller mindre sterk grad, og som gir opphav til variasjon i artssammensetning på relativt fin romlig skala og som har en virkning som vedvarer over relativt lang tid [typisk mer enn 100(–200) år]»",
+    "sortering": 2
   },
-  "BS": { "tittel": { "nb": "Beskrivelse" } },
-  "AO": { "tittel": { "nb": "Fylke & kommune" }, "utenRamme": true },
+  "BS": { "tittel": { "nb": "Beskrivelse" }, "sortering": 3 },
+  "AO": {
+    "tittel": { "nb": "Fylke & kommune" },
+    "utenRamme": true,
+    "sortering": 6
+  },
   "OR": {
     "tittel": { "nb": "Datakilde" },
     "utenRamme": true,
-    "ingress": "..."
+    "ingress": "...",
+    "sortering": 7
   },
-  "RL": { "tittel": { "nb": "Truet art/natur" } },
+  "RL": { "tittel": { "nb": "Truet art/natur" }, "sortering": 5 },
   "LI": { "tittel": { "nb": "Livsmedium" } },
   "RL_EN": { "tittel": { "nb": "Sterkt truet" }, "sortering": 6 },
   "RL_VU": { "tittel": { "nb": "Sårbar" }, "sortering": 5 },
