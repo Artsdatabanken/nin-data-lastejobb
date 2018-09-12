@@ -68,7 +68,7 @@ function harKartData(kode) {
   if (visAlltid.includes(kode)) return true
   if (kode === typesystem.rotkode) return true
   // HACK: Fjernes når kartgrunnlag ok
-  if (kode.indexOf("AR_") >= 0) return true
+  if (kode.indexOf("AR") >= 0) return true
   if (kode.indexOf("VV") >= 0) return true
   if (kode.indexOf("OR") === 0) return true
   if (kode.indexOf("NA_HT") >= 0) return true
