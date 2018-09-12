@@ -165,16 +165,9 @@ function mapForeldreTilBarn() {
   })
 }
 
-function hentKey(key) {
-  let node = data[key]
-  //  if (node.se) return node.se
-  return key
-}
-
 function nøstOppForfedre(forelderkey) {
   let r = []
   while (forelderkey) {
-    forelderkey = hentKey(forelderkey)
     let forelder = data[forelderkey]
     if (!forelder) {
       log.warn("Mangler kode " + forelderkey)
@@ -373,8 +366,18 @@ function hacks(tre) {
   })
 }
 
+function zoomlevels(kode, zoom) {
+  if (!p2c[kode]) return
+  p2c[kode].forEach(bkode => {
+    const barn = data[bkode]
+    if (!barn.zoom) barn.zoom = zoom
+    zoomlevels(bkode, barn.zoom)
+  })
+}
+
 fjernRelasjonTilKoderSomIkkeHarData(data)
 mapForeldreTilBarn()
+zoomlevels(typesystem.rotkode)
 
 let tre = {}
 let node = byggTreFra(tre, typesystem.rotkode)
