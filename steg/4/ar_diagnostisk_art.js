@@ -10,16 +10,15 @@ log.logLevel = 6
 let diagArt = io.lesKildedatafil(config.datakilde.na_diagnostisk_art)
 let arter = io.lesDatafil("ar_taxon")
 let nin_liste = io.lesDatafil("na_kode")
+let na_overstyr_hierarki = io.lesDatafil("na_overstyr_hierarki")
 
 let r = {}
 
-function linkOne(nodeFra, nodeTil, funksjon, tag) {
+function linkOne(kodeFra, kodeTil, funksjon, tag) {
   const variabel = tag
 
-  const kodeFra = nodeFra.kode
-  const kodeTil = nodeTil.kode
-  if (!kodeFra) throw new Error("Mangler kode: " + JSON.stringify(nodeFra))
-  if (!kodeTil) throw new Error("Mangler kode: " + JSON.stringify(nodeTil))
+  if (!kodeFra) throw new Error("Mangler kode: " + kodeFra)
+  if (!kodeTil) throw new Error("Mangler kode: " + kodeTil)
   if (!r[kodeFra]) r[kodeFra] = { relasjon: [] }
   const relasjon = r[kodeFra].relasjon
   if (relasjon[kodeTil]) throw new Error(".")
@@ -56,21 +55,15 @@ Object.keys(diagArt).forEach(key => {
       ? ukjenteKoder[na_kode] + 1
       : 1
   else {
-    const idkode = typesystem.art.lagKode(art.scientificNameID)
-    if (arter[idkode]) {
-      //      const tx_kode = arter[idkode].se
-      const na = nin_liste[na_kode]
-      na.kode = na_kode
-      let tx = arter[idkode]
-      tx.kode = idkode
-      if (tx.se) tx = arter[tx.se]
-      let e = {}
-      linkBoth(na, tx, art["Funksjon1"], art["tags1"])
-      linkBoth(na, tx, art["Funksjon2"], art["tags2"])
-      linkBoth(na, tx, art["Funksjon3"], art["tags3"])
-      linkBoth(na, tx, art["Funksjon 4"], art["tags4"])
+    const sciId = typesystem.art.lagKode(art.scientificNameID)
+    let tx = arter[sciId]
+    if (arter[sciId]) {
+      linkBoth(na_kode, sciId, art["Funksjon1"], art["tags1"])
+      linkBoth(na_kode, sciId, art["Funksjon2"], art["tags2"])
+      linkBoth(na_kode, sciId, art["Funksjon3"], art["tags3"])
+      linkBoth(na_kode, sciId, art["Funksjon 4"], art["tags4"])
     } else {
-      ukjenteArter[idkode] = ukjenteArter[idkode] ? ukjenteArter[idkode] + 1 : 1
+      ukjenteArter[sciId] = ukjenteArter[sciId] ? ukjenteArter[sciId] + 1 : 1
     }
   }
 })

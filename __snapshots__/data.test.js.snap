@@ -8,11 +8,11 @@ exports[`build/kodetre_postgre.json har antall rader 1`] = `166957`;
 
 exports[`build/kodetre_postgre.json har forventede nøkler 1`] = `undefined`;
 
-exports[`build/mangler_data.json har antall rader 1`] = `161711`;
+exports[`build/mangler_data.json har antall rader 1`] = `2837`;
 
 exports[`build/mangler_data.json har forventede nøkler 1`] = `undefined`;
 
-exports[`build/metabase.json har antall rader 1`] = `9874`;
+exports[`build/metabase.json har antall rader 1`] = `341197`;
 
 exports[`build/metabase.json har forventede nøkler 1`] = `undefined`;
 
