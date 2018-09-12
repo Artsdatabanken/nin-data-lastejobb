@@ -1,4 +1,4 @@
-if (!process.env.DEBUG) process.env.DEBUG = "*"
+//if (!process.env.DEBUG) process.env.DEBUG = "*"
 const path = require("path")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
