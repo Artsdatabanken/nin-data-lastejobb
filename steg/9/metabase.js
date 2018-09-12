@@ -258,7 +258,8 @@ function byggTreFra(tre, key) {
       if (!cnode) return
       barn[ckey] = {
         tittel: cnode.tittel,
-        sortering: cnode.sortering
+        sortering: cnode.sortering,
+        skjul: cnode.skjul
       }
       const child = byggTreFra(tre, ckey)
     })
