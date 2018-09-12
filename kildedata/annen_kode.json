@@ -7,7 +7,7 @@
     "elementer": 44
   },
   "~": { "tittel": { "nb": "Katalog" } },
-  "AR": { "tittel": { "nb": "Art" } },
+  "AR": { "tittel": { "nb": "Art" }, "sortering": 8, "skjul": true },
   "NA": {
     "tittel": { "nb": "Natursystem" },
     "infoUrl": "https://www.artsdatabanken.no/Pages/222921",
