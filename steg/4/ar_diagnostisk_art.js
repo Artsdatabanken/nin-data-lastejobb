@@ -35,7 +35,6 @@ function linkBoth(node1, node2, funksjon, tag) {
   tag = tag.trim().replace(" ", "_")
   funksjon = funksjon.trim()
   linkOne(node1, node2, funksjon, tag)
-  linkOne(node2, node1, funksjon, tag)
 }
 
 let ukjenteKoder = {}
