@@ -60,7 +60,9 @@ function harKartData(kode) {
     "MI_VM",
     "MI_VR",
     "MI_VS",
-    "MI_VT"
+    "MI_VT",
+    "BS_8ER",
+    "BS_8TH"
   ]
   if (visAlltid.includes(kode)) return true
   if (kode === typesystem.rotkode) return true
