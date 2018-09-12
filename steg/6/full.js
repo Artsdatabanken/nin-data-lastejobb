@@ -21,19 +21,7 @@ function flettKildedata(filename, props = {}) {
   flettAttributter(data, props)
 }
 
-function flettHvisEksisterer(filename) {
-  var data = io.lesDatafil(filename)
-  for (let key of Object.keys(data)) {
-    if (r[key]) Object.assign(r[key], data[key])
-  }
-}
-
 let counts = {}
-
-function settHvisEksisterer(kilde, mål, nøkkel) {
-  if (!kilde[nøkkel]) return
-  mål[nøkkel] = kilde[nøkkel]
-}
 
 function finnForeldre(kode) {
   if (kode === typesystem.rotkode) return []
@@ -52,7 +40,6 @@ function kobleForeldre() {
   for (let key of Object.keys(r)) {
     const node = r[key]
     if (!node.foreldre) node.foreldre = finnForeldre(key)
-    if (key === "NA_F1") log.warn(key, finnForeldre(key))
   }
 }
 
