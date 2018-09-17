@@ -12,10 +12,11 @@ function avrund1d(num) {
 
 function avrund4d(bbox) {
   const bboxjson = bbox.map(f => avrund1d(f))
-  bboxjson.forEach(f => {
-    if (!f) throw new Error("Ugyldig bbox " + JSON.stringify(bboxjson))
-  })
-  return bboxjson
+  const ll = [bboxjson[3], bboxjson[2]]
+  const ur = [bboxjson[1], bboxjson[0]]
+  if (ll[0] > ur[0] || ll[1] > ur[1])
+    throw new Error("Ugyldig bbox " + JSON.stringify(bboxjson))
+  return [ll, ur]
 }
 
 function settBbox(kode, bbox) {
