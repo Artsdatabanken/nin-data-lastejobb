@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/bjornreppen/kverna#readme",
   "dependencies": {
-    "@artsdatabanken/typesystem": "^4.0.2",
+    "@artsdatabanken/typesystem": "^5.0.0",
     "babel-eslint": "^9.0.0",
     "csv": "^3.0.2",
     "decompress-zip": "^0.3.1",
