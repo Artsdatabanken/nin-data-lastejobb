@@ -14,6 +14,11 @@
     "tittel": { "nb": "Miljødirektoratet" },
     "infoUrl": "https://www.miljodirektoratet.no"
   },
+  "OR_NI": {
+    "farge": "#A2B8C0",
+    "tittel": { "nb": "NINA" },
+    "infoUrl": "https://nina.no"
+  },
   "OR_GU": {
     "farge": "hsl(60, 7%, 8%)",
     "tittel": { "nb": "Norges Geologiske Undersøkelse" },

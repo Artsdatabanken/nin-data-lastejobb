@@ -8,21 +8,71 @@
   },
   "MI": {
     "tittel": { "nb": "Miljøvariabel" },
-    "infoUrl": "https://artsdatabanken.no/Pages/179717",
     "ingress": "Lokale komplekse miljøvariabler (LKM) er definert som «variabler som hver består av flere enkeltmiljøvariabler som samvarierer i mer eller mindre sterk grad, og som gir opphav til variasjon i artssammensetning på relativt fin romlig skala og som har en virkning som vedvarer over relativt lang tid [typisk mer enn 100(–200) år]»",
+    "infoUrl": "https://artsdatabanken.no/Pages/179717",
     "sortering": 3
+  },
+  "BS_6SE": {
+    "tittel": { "nb": "Bioklimatisk seksjon" },
+    "ingress": "Denne regionale komplekse miljøvariabelen fanger opp både humiditet og oseanitet. Bioklimatiske seksjoner er en av de aller viktigste regionale komplekse miljøvariablene også på global skala, der spennvidden i vegetasjonsformasjoner fra regnskog via steppe til ørken fanges opp av sju bioklimatiske seksjoner.",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/181900",
+    "type": "gradient"
+  },
+  "BS_6SO": {
+    "tittel": { "nb": "Bioklimatisk sone" },
+    "ingress": "Bioklimatiske soner (BS) beskriver variasjon på land (og i ferskvann) relatert til varme. Alle organismer stiller krav til minstestemperatur for å overleve og for å reprodusere, og temperaturkravet varierer sterkt mellom arter. Alle arter har også en øvre toleransegrense for varme – blir det for varmt, stopper livsfunksjonene opp. Denne varmeøkoklinen er derfor på global basis en av de aller viktigste økoklinene, som forklarer arters utbredelse, breddegradsbestemt fordeling av klimasoner (tropisk, subtropisk, temperert, arktisk) og dominerende livsform (lauvtrær, bartrær, skogløse områder).",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/137992",
+    "type": "gradient"
+  },
+  "BS_1": {
+    "ingress": "Omfatter «de artene som lever sammen innenfor et gitt område» og beskrives ved å angi hvilke arter som forekommer og eventuelt også deres mengde.",
+    "infoUrl": "https://artsdatabanken.no/Pages/179953"
+  },
+  "BS_2": {
+    "ingress": "Dette er parallellen til artssammensetning, og omfatter «bergarter, mineraler, jordarter, jordsmonn og eventuelle fossiler som finnes innenfor et gitt område».",
+    "infoUrl": "https://artsdatabanken.no/Pages/182002"
+  },
+  "BS_3": {
+    "ingress": "Omfatter «mer eller mindre distinkt terrengform (overflateform på land eller utforming av bunnen i saltvanns- eller ferskvannssystemer) som kan gis en felles karakteristikk på grunnlag av egenskaper som ofte er forårsaket av én enkelt eller en kombinasjon av distinkte landformdannende (geomorfologiske) prosesser».",
+    "infoUrl": "https://artsdatabanken.no/Pages/182003"
+  },
+  "BS_4": {
+    "ingress": "Omfatter «fysisk observerbare, romlig avgrensete elementer som helt eller for det meste består av umodifiserte livsmedier og som ikke inngår i et natursystems vanlige bunn- eller marksystem».",
+    "infoUrl": "https://artsdatabanken.no/Pages/182005"
+  },
+  "BS_5": {
+    "ingress": "«Fysisk observerbare gjenstander som helt eller for det meste består av sterkt modifiserte eller syntetiske livsmedier og som er resultatet av menneskers virksomhet».",
+    "infoUrl": "https://artsdatabanken.no/Pages/182004"
+  },
+  "BS_6": {
+    "ingress": "Parallell variasjon i artssammensetning og makroklimafaktorer på grov romlig skala",
+    "infoUrl": "https://artsdatabanken.no/Pages/182001"
+  },
+  "BS_7": {
+    "ingress": "«Variasjon i miljøforhold som gir opphav til mønstre som er observerbare i et relativt kort tidsrom, typisk mindre enn 100(–200) år, og som ikke endrer det aktuelle systemets grunnleggende egenskaper, og den variasjonen i artssammensetning den gir opphav til».",
+    "infoUrl": "https://artsdatabanken.no/Pages/182008"
+  },
+  "BS_8": {
+    "ingress": "Omfatter «variasjon i terrengets overflateformer som kan beskrives ved kontinuerlige variabler som for eksempel relativt relieff og terrengujevnhet».",
+    "infoUrl": "https://artsdatabanken.no/Pages/182007"
   },
   "MI_KA": {
     "ingress": "Innholdet av kalsium (’kalk’) og andre viktige plantenæringsstoffer i jorda, samt surhetsgraden (pH), er blant de aller viktigste miljøfaktorene i fastmark og våtmark. Økoklinen kalkinnhold (KA) beskriver samvariasjonen mellom disse faktorene – kalkrik jord er mindre sur og har høyere innhold av mange andre næringsstoffer enn sur jord. Variasjonen i næringsstoffer og pH påvirker både hvilke plantearter som kan trives på et sted og hvilke dyrearter som finnes i jord og vann. Man finner forskjellige planter på kalkrik jord og på sur jord, og blir vannet i innsjøer og elver for surt, er det mange fiskearter som ikke trives der lengre.",
     "infoUrl": "https://www.artsdatabanken.no/Pages/137908",
-    "render": "underjord"
+    "render": "underjord",
+    "type": "gradient"
   },
   "MI_KA-A": { "sortering": 1 },
   "MI_KA-B": { "sortering": 2 },
   "MI_KA-D": { "sortering": 3 },
   "MI_KA-F": { "sortering": 4 },
   "MI_KA-H": { "sortering": 5 },
-  "BS": { "tittel": { "nb": "Beskrivelse" }, "sortering": 2 },
+  "BS": {
+    "tittel": { "nb": "Beskrivelse" },
+    "ingress": "Variasjon som ikke kan beskrives ved hjelp av uLKM er sortert på ni grupper av Kilder til variasjon. Variasjonen langs disse beskrives ved bruk av variabler som er definert så presist som mulig, men som er delt i  klasser eller trinn uten noen direkte referanse til hvor mye variasjon i artssammensetning de gir opphav til.",
+    "infoUrl": "https://artsdatabanken.no/Pages/179723",
+    "sortering": 2
+  },
   "AO": {
     "tittel": { "nb": "Fylke & kommune" },
     "utenRamme": true,
@@ -60,10 +110,12 @@
   },
   "NA_HT": { "tittel": { "nb": "Hovedtyper" } },
   "NA_HT-KG": {
-    "tittel": { "nb": "Kunnskapsgrunnlag om hovedtypen generelt" }
+    "tittel": { "nb": "Kunnskapsgrunnlag om hovedtypen generelt" },
+    "type": "gradient"
   },
   "NA_HT-KG-GI": {
-    "tittel": { "nb": "Kunnskapsgrunnlag om grunntypeinndelingen" }
+    "tittel": { "nb": "Kunnskapsgrunnlag om grunntypeinndelingen" },
+    "type": "gradient"
   },
   "NA_HT-KG-GI1": { "tittel": { "nb": "1" } },
   "NA_HT-KG-GI2": { "tittel": { "nb": "2" } },
