@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`build/kodetre.json har antall rader 1`] = `166967`;
+exports[`build/kodetre.json har antall rader 1`] = `166968`;
 
 exports[`build/kodetre.json har forventede nøkler 1`] = `undefined`;
 
-exports[`build/kodetre_postgre.json har antall rader 1`] = `166968`;
+exports[`build/kodetre_postgre.json har antall rader 1`] = `166969`;
 
 exports[`build/kodetre_postgre.json har forventede nøkler 1`] = `undefined`;
 
@@ -12,7 +12,7 @@ exports[`build/mangler_data.json har antall rader 1`] = `2240`;
 
 exports[`build/mangler_data.json har forventede nøkler 1`] = `undefined`;
 
-exports[`build/metabase.json har antall rader 1`] = `342012`;
+exports[`build/metabase.json har antall rader 1`] = `342014`;
 
 exports[`build/metabase.json har forventede nøkler 1`] = `undefined`;
 
@@ -36,11 +36,11 @@ exports[`data/farger.json har antall rader 1`] = `151`;
 
 exports[`data/farger.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/full.json har antall rader 1`] = `166966`;
+exports[`data/full.json har antall rader 1`] = `166967`;
 
 exports[`data/full.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/full_med_graf.json har antall rader 1`] = `166966`;
+exports[`data/full_med_graf.json har antall rader 1`] = `166967`;
 
 exports[`data/full_med_graf.json har forventede nøkler 1`] = `undefined`;
 
@@ -60,7 +60,7 @@ exports[`data/inn_statistikk.json har antall rader 1`] = `4267`;
 
 exports[`data/inn_statistikk.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/metabase_med_bbox.json har antall rader 1`] = `166966`;
+exports[`data/metabase_med_bbox.json har antall rader 1`] = `166967`;
 
 exports[`data/metabase_med_bbox.json har forventede nøkler 1`] = `undefined`;
 
@@ -96,7 +96,7 @@ exports[`data/na_prosedyrekategori.json har antall rader 1`] = `17`;
 
 exports[`data/na_prosedyrekategori.json har forventede nøkler 1`] = `undefined`;
 
-exports[`data/or_organisasjon.json har antall rader 1`] = `5`;
+exports[`data/or_organisasjon.json har antall rader 1`] = `6`;
 
 exports[`data/or_organisasjon.json har forventede nøkler 1`] = `undefined`;
 
