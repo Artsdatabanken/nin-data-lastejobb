@@ -11,6 +11,8 @@ function flettAttributter(o, props = {}) {
   }
 }
 
+function capitalize(s) {}
+
 function flett(filename, props = {}) {
   var data = io.lesDatafil(filename)
   flettAttributter(data, props)
@@ -66,6 +68,12 @@ for (let key of Object.keys(r)) {
   if (!node.se) {
     if (!node.tittel)
       throw new Error(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
+    node.tittel = Object.entries(node.tittel).reduce((acc, e) => {
+      if (!e[1])
+        throw new Error(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
+      acc[e[0]] = typesystem.capitalizeTittel(e[1])
+      return acc
+    }, {})
     if (r[key].kode) log.warn("Har kode: ", key)
   }
 }

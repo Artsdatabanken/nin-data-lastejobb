@@ -152,7 +152,7 @@ let manglerNøkler = false
 function finnManglendeNøkler(fn, prefiks) {
   const keys = Object.keys(groupByKeys(vo => fn(vo.properties)))
   keys.forEach(key => {
-    const tittel = typesystem.capitalizeTittel(key)
+    const tittel = key
     if (!tittel2Kode[tittel.toLowerCase()]) {
       manglerNøkler = true
       console.log(`"${prefiks}-???": {"tittel": {"nb": "${tittel}" }},`)

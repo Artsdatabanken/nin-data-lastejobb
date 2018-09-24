@@ -1,7 +1,5 @@
 const io = require("../../lib/io")
 const config = require("../../config")
-const typesystem = require("@artsdatabanken/typesystem")
-
 let alleKoder = io.lesKildedatafil("na")
 let ingress = io.lesKildedatafil("na_ingress")
 
@@ -14,7 +12,7 @@ function importerKoder() {
   const mineKoder = {}
   for (let node of alleKoder) {
     const kode = kodefix(node.Kode.Id)
-    let o = { tittel: { nb: typesystem.capitalizeTittel(node.Navn) } }
+    let o = { tittel: { nb: node.Navn } }
     if (ingress[kode]) o.ingress = ingress[kode]
     mineKoder[kode] = o
   }
