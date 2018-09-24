@@ -3,7 +3,7 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
 let tre = io.lesDatafil("full_med_graf")
-let bboxFeatures = io.lesDatafil("inn_bbox")
+let bboxFeatures = io.lesDatafil("inn_bbox").tilesets
 let mbtiles = io.lesKildedatafil("mbtiles")
 
 function avrund1d(num) {
@@ -12,8 +12,8 @@ function avrund1d(num) {
 
 function avrund4d(bbox) {
   const bboxjson = bbox.map(f => avrund1d(f))
-  const ll = [bboxjson[3], bboxjson[2]]
-  const ur = [bboxjson[1], bboxjson[0]]
+  const ll = [bboxjson[0], bboxjson[1]]
+  const ur = [bboxjson[2], bboxjson[3]]
   if (ll[0] > ur[0] || ll[1] > ur[1])
     throw new Error("Ugyldig bbox " + JSON.stringify(bboxjson))
   return [ll, ur]
@@ -25,7 +25,7 @@ function settBbox(kode, bbox) {
 }
 
 Object.keys(bboxFeatures).forEach(kode => {
-  const bbox = bboxFeatures[kode]
+  const bbox = bboxFeatures[kode].bounds
   if (tre[kode]) settBbox(kode, bbox)
   else log.warn("bbox for kode '" + kode + "', men koden eksisterer ikke")
 })
