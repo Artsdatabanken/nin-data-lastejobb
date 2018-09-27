@@ -12,8 +12,8 @@ function avrund1d(num) {
 
 function avrund4d(bbox) {
   const bboxjson = bbox.map(f => avrund1d(f))
-  const ll = [bboxjson[0], bboxjson[1]]
-  const ur = [bboxjson[2], bboxjson[3]]
+  const ll = [bboxjson[1], bboxjson[0]]
+  const ur = [bboxjson[3], bboxjson[2]]
   if (ll[0] > ur[0] || ll[1] > ur[1])
     throw new Error("Ugyldig bbox " + JSON.stringify(bboxjson))
   return [ll, ur]
