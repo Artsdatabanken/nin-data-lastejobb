@@ -2,6 +2,7 @@ const io = require("../../lib/io")
 const config = require("../../config")
 const log = require("log-less-fancy")()
 var shapefile = require("shapefile")
+const typesystem = require("@artsdatabanken/typesystem")
 
 // Konverter .shp til .json
 
@@ -9,9 +10,9 @@ let r = {}
 
 function leggTilOmråde(o) {
   const id = o.properties.IID
-  //  log.info(id)
-  //  log.debug(o)
-  r[id] = o
+  const iid = parseInt(id.substring(2)) // VV0000033
+  const kode = typesystem.verneområde.leggTilPrefiks(iid)
+  r[kode] = o
 }
 
 function lagre() {
