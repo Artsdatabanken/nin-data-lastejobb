@@ -37,7 +37,6 @@ Object.keys(mbtiles).forEach(path => {
   target.bbox = avrund4d(mbtile.bounds)
   if (!target.formats) target.formats = {}
   target.formats[klasse] = mbtile.format
-  if (kode == "BS_6SO") console.log(target)
 })
 
 io.skrivDatafil(__filename, tre)
