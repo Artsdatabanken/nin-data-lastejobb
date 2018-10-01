@@ -1785,13 +1785,13 @@ cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   dependencies:
     cssom "0.3.x"
 
-csv-generate@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/csv-generate/-/csv-generate-2.0.2.tgz#1c26c52be318f1f0b6435f8df3d1249fb1503f4b"
+csv-generate@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/csv-generate/-/csv-generate-2.2.2.tgz#c37808c5f3ead2deec940794073dd32d492adfd1"
 
-csv-parse@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-2.4.0.tgz#d4c72a1533734b2c2a65f486d13091264cacc115"
+csv-parse@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-3.1.2.tgz#51bfd2d39b13e66f6da8656360b8ec82ca159494"
 
 csv-streamify@^3.0.4:
   version "3.0.4"
@@ -1799,20 +1799,20 @@ csv-streamify@^3.0.4:
   dependencies:
     through2 "2.0.1"
 
-csv-stringify@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/csv-stringify/-/csv-stringify-3.0.0.tgz#ed2b4eaae5a3be382309f7864168458970307d7f"
+csv-stringify@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/csv-stringify/-/csv-stringify-4.3.1.tgz#7bee36f746ef555dd481a735a9e2938965f8478b"
   dependencies:
     lodash.get "~4.4.2"
 
-csv@^3.0.2:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/csv/-/csv-3.1.0.tgz#91ad8625e294bf37a5b366b84d01aa40b2d20f15"
+csv@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/csv/-/csv-4.0.0.tgz#c7de44b9a0fd47f7a10db24064519f642a7ce92d"
   dependencies:
-    csv-generate "^2.0.2"
-    csv-parse "^2.4.0"
-    csv-stringify "^3.0.0"
-    stream-transform "^1.0.2"
+    csv-generate "^2.2.2"
+    csv-parse "^3.1.2"
+    csv-stringify "^4.3.1"
+    stream-transform "^1.0.7"
 
 cycle@1.0.x:
   version "1.0.3"
@@ -6455,9 +6455,9 @@ stream-source@0.3:
   version "0.3.5"
   resolved "https://registry.yarnpkg.com/stream-source/-/stream-source-0.3.5.tgz#b97f52d0f8ea566db071db679b985403a31e0340"
 
-stream-transform@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/stream-transform/-/stream-transform-1.0.2.tgz#47de4d15fbc29b7e2a7e54d25e99538876f114c1"
+stream-transform@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/stream-transform/-/stream-transform-1.0.7.tgz#5135dd6c29941a1179212da6083be2cacdebc15a"
 
 strict-uri-encode@^1.0.0:
   version "1.1.0"
