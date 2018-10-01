@@ -164,7 +164,10 @@ Object {
         "count": 8,
       },
       "formats": Object {
-        "count": 6,
+        "count": 7,
+        "point": Object {
+          "count": 1,
+        },
         "polygon": Object {
           "count": 6,
         },
@@ -3745,7 +3748,7 @@ Object {
 }
 `;
 
-exports[`data/inn_mbtiles.json har antall rader 1`] = `5191`;
+exports[`data/inn_mbtiles.json har antall rader 1`] = `5195`;
 
 exports[`data/inn_mbtiles.json har forventede nøkler 1`] = `
 Object {
@@ -3794,6 +3797,33 @@ Object {
       "count": 1,
     },
     "version": Object {
+      "count": 1,
+    },
+  },
+  "/metadata": Object {
+    "count": 1,
+    "format": Object {
+      "count": 1,
+    },
+    "modified": Object {
+      "count": 1,
+    },
+  },
+  "/point/OR": Object {
+    "count": 1,
+    "format": Object {
+      "count": 1,
+    },
+    "modified": Object {
+      "count": 1,
+    },
+  },
+  "/polygon/9": Object {
+    "count": 1,
+    "format": Object {
+      "count": 1,
+    },
+    "modified": Object {
       "count": 1,
     },
   },
@@ -4043,6 +4073,15 @@ Object {
       "count": 1,
     },
   },
+  "/time": Object {
+    "count": 1,
+    "format": Object {
+      "count": 1,
+    },
+    "modified": Object {
+      "count": 1,
+    },
+  },
   "KO_DE": Object {
     "bounds": Object {
       "count": 5183,
@@ -4159,9 +4198,12 @@ Object {
       "count": 167032,
     },
     "formats": Object {
-      "count": 5187,
+      "count": 5188,
       "gradient": Object {
         "count": 2,
+      },
+      "point": Object {
+        "count": 1,
       },
       "polygon": Object {
         "count": 5187,
