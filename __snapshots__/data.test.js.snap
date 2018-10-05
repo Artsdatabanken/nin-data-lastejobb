@@ -1,66 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`build/kodetre.json har antall rader 1`] = `167887`;
+exports[`build/kodetre.json har antall rader 1`] = `168223`;
 
 exports[`build/kodetre.json har forventede nøkler 1`] = `
 Object {
   "KO_DE": Object {
-    "count": 167887,
+    "count": 168223,
     "forelder": Object {
-      "count": 167887,
+      "count": 168223,
     },
     "kode": Object {
-      "count": 167887,
+      "count": 168223,
     },
     "tittel": Object {
       "KO_DE": Object {
-        "count": 230391,
+        "count": 230729,
       },
-      "count": 167887,
+      "count": 168223,
     },
   },
 }
 `;
 
-exports[`build/kodetre_postgre.json har antall rader 1`] = `167888`;
+exports[`build/kodetre_postgre.json har antall rader 1`] = `168224`;
 
 exports[`build/kodetre_postgre.json har forventede nøkler 1`] = `
 Object {
   "KO_DE": Object {
-    "count": 167888,
+    "count": 168224,
     "delAv": Object {
       "KO_DE": Object {
-        "count": 1326244,
+        "count": 1327157,
       },
-      "count": 167888,
+      "count": 168224,
     },
     "kode": Object {
-      "count": 167888,
+      "count": 168224,
     },
     "nivå": Object {
-      "count": 167888,
+      "count": 168224,
     },
     "tittel": Object {
       "KO_DE": Object {
-        "count": 230392,
+        "count": 230730,
       },
-      "count": 167888,
+      "count": 168224,
     },
   },
 }
 `;
 
-exports[`build/mangler_data.json har antall rader 1`] = `2240`;
+exports[`build/mangler_data.json har antall rader 1`] = `2534`;
 
 exports[`build/mangler_data.json har forventede nøkler 1`] = `
 Object {
   "KO_DE": Object {
-    "count": 2240,
+    "count": 2534,
   },
 }
 `;
 
-exports[`build/metabase.json har antall rader 1`] = `343856`;
+exports[`build/metabase.json har antall rader 1`] = `343941`;
 
 exports[`build/metabase.json har forventede nøkler 1`] = `
 Object {
@@ -107,18 +107,18 @@ Object {
     "@": Object {
       "KO_DE": Object {
         "KO_DE": Object {
-          "count": 365498,
+          "count": 365583,
           "sti": Object {
-            "count": 365498,
+            "count": 365583,
           },
           "tittel": Object {
             "KO_DE": Object {
-              "count": 553005,
+              "count": 553096,
             },
-            "count": 365498,
+            "count": 365583,
           },
         },
-        "count": 343847,
+        "count": 343932,
         "~": Object {
           "count": 2,
           "sti": Object {
@@ -159,7 +159,7 @@ Object {
         },
         "count": 6,
       },
-      "count": 343855,
+      "count": 343940,
       "farge": Object {
         "count": 8,
       },
@@ -258,21 +258,21 @@ Object {
       "@": Object {
         "barn": Object {
           "KO_DE": Object {
-            "count": 160404,
+            "count": 160446,
             "farge": Object {
-              "count": 160404,
+              "count": 160446,
             },
             "sortering": Object {
               "count": 5,
             },
             "tittel": Object {
               "KO_DE": Object {
-                "count": 222887,
+                "count": 222931,
               },
-              "count": 160404,
+              "count": 160446,
             },
           },
-          "count": 162719,
+          "count": 162761,
         },
         "bbox": Object {
           "KO_DE": Object {
@@ -289,7 +289,7 @@ Object {
           },
           "count": 2883,
         },
-        "count": 162719,
+        "count": 162761,
         "data": Object {
           "areal": Object {
             "count": 2865,
@@ -318,7 +318,7 @@ Object {
           },
         },
         "farge": Object {
-          "count": 162719,
+          "count": 162761,
         },
         "formats": Object {
           "count": 2942,
@@ -564,31 +564,31 @@ Object {
           },
         },
         "infoUrl": Object {
-          "count": 162632,
+          "count": 162674,
         },
         "ingress": Object {
           "count": 24,
         },
         "kode": Object {
-          "count": 162719,
+          "count": 162761,
         },
         "metaUrl": Object {
           "count": 6,
         },
         "overordnet": Object {
           "KO_DE": Object {
-            "count": 1447557,
+            "count": 1447935,
             "kode": Object {
-              "count": 1447557,
+              "count": 1447935,
             },
             "tittel": Object {
               "KO_DE": Object {
-                "count": 2962333,
+                "count": 2963167,
               },
-              "count": 1447557,
+              "count": 1447935,
             },
           },
-          "count": 162719,
+          "count": 162761,
         },
         "render": Object {
           "count": 1,
@@ -613,15 +613,15 @@ Object {
         },
         "tittel": Object {
           "KO_DE": Object {
-            "count": 225217,
+            "count": 225261,
           },
-          "count": 162719,
+          "count": 162761,
         },
         "type": Object {
           "count": 1,
         },
         "url": Object {
-          "count": 159751,
+          "count": 159793,
         },
         "utenRamme": Object {
           "count": 18,
@@ -2877,9 +2877,9 @@ Object {
           "count": 1,
         },
       },
-      "count": 162719,
+      "count": 162761,
     },
-    "count": 343855,
+    "count": 343940,
     "s": Object {
       "KO_DE": Object {
         "@": Object {
@@ -3030,51 +3030,51 @@ Object {
 }
 `;
 
-exports[`data/ar_taxon.json har antall rader 1`] = `159751`;
+exports[`data/ar_taxon.json har antall rader 1`] = `159793`;
 
 exports[`data/ar_taxon.json har forventede nøkler 1`] = `
 Object {
   "KO_DE": Object {
-    "count": 159751,
+    "count": 159793,
     "foreldre": Object {
       "KO_DE": Object {
-        "count": 159751,
+        "count": 159793,
       },
-      "count": 159751,
+      "count": 159793,
     },
     "infoUrl": Object {
-      "count": 159751,
+      "count": 159793,
     },
     "tittel": Object {
       "KO_DE": Object {
-        "count": 222247,
+        "count": 222291,
       },
-      "count": 159751,
+      "count": 159793,
     },
     "url": Object {
-      "count": 159751,
+      "count": 159793,
     },
   },
 }
 `;
 
-exports[`data/ar_taxon_to_json.json har antall rader 1`] = `159751`;
+exports[`data/ar_taxon_to_json.json har antall rader 1`] = `159793`;
 
 exports[`data/ar_taxon_to_json.json har forventede nøkler 1`] = `
 Object {
   "KO_DE": Object {
     "KO_DE": Object {
-      "count": 159751,
+      "count": 159793,
     },
-    "count": 159751,
+    "count": 159793,
     "parentId": Object {
-      "count": 159740,
+      "count": 159782,
     },
     "tittel": Object {
       "KO_DE": Object {
-        "count": 222247,
+        "count": 222291,
       },
-      "count": 159751,
+      "count": 159793,
     },
   },
 }
@@ -3090,7 +3090,7 @@ Object {
 }
 `;
 
-exports[`data/full.json har antall rader 1`] = `167886`;
+exports[`data/full.json har antall rader 1`] = `168222`;
 
 exports[`data/full.json har forventede nøkler 1`] = `
 Object {
@@ -3101,7 +3101,7 @@ Object {
       },
       "count": 3305,
     },
-    "count": 167885,
+    "count": 168221,
     "data": Object {
       "areal": Object {
         "count": 2865,
@@ -3134,15 +3134,15 @@ Object {
     },
     "foreldre": Object {
       "KO_DE": Object {
-        "count": 167886,
+        "count": 168222,
       },
-      "count": 167885,
+      "count": 168221,
     },
     "infoUrl": Object {
-      "count": 162645,
+      "count": 162688,
     },
     "ingress": Object {
-      "count": 131,
+      "count": 132,
     },
     "metaUrl": Object {
       "count": 6,
@@ -3194,15 +3194,15 @@ Object {
     },
     "tittel": Object {
       "KO_DE": Object {
-        "count": 230389,
+        "count": 230727,
       },
-      "count": 167885,
+      "count": 168221,
     },
     "type": Object {
       "count": 5,
     },
     "url": Object {
-      "count": 159751,
+      "count": 159793,
     },
     "utenRamme": Object {
       "count": 20,
@@ -3223,7 +3223,7 @@ Object {
 }
 `;
 
-exports[`data/full_med_graf.json har antall rader 1`] = `167886`;
+exports[`data/full_med_graf.json har antall rader 1`] = `168222`;
 
 exports[`data/full_med_graf.json har forventede nøkler 1`] = `
 Object {
@@ -3234,7 +3234,7 @@ Object {
       },
       "count": 3305,
     },
-    "count": 167885,
+    "count": 168221,
     "data": Object {
       "areal": Object {
         "count": 2865,
@@ -3267,9 +3267,9 @@ Object {
     },
     "foreldre": Object {
       "KO_DE": Object {
-        "count": 167886,
+        "count": 168222,
       },
-      "count": 167885,
+      "count": 168221,
     },
     "graf": Object {
       "KO_DE": Object {
@@ -3635,10 +3635,10 @@ Object {
       },
     },
     "infoUrl": Object {
-      "count": 162645,
+      "count": 162688,
     },
     "ingress": Object {
-      "count": 131,
+      "count": 132,
     },
     "metaUrl": Object {
       "count": 6,
@@ -3672,15 +3672,15 @@ Object {
     },
     "tittel": Object {
       "KO_DE": Object {
-        "count": 230389,
+        "count": 230727,
       },
-      "count": 167885,
+      "count": 168221,
     },
     "type": Object {
       "count": 5,
     },
     "url": Object {
-      "count": 159751,
+      "count": 159793,
     },
     "utenRamme": Object {
       "count": 20,
@@ -4176,7 +4176,39 @@ Object {
 }
 `;
 
-exports[`data/metabase_med_bbox.json har antall rader 1`] = `167886`;
+exports[`data/la.json har antall rader 1`] = `293`;
+
+exports[`data/la.json har forventede nøkler 1`] = `
+Object {
+  "KO_DE": Object {
+    "count": 293,
+    "tittel": Object {
+      "KO_DE": Object {
+        "count": 293,
+      },
+      "count": 293,
+    },
+  },
+}
+`;
+
+exports[`data/la_to_json.json har antall rader 1`] = `293`;
+
+exports[`data/la_to_json.json har forventede nøkler 1`] = `
+Object {
+  "KO_DE": Object {
+    "count": 293,
+    "kode": Object {
+      "count": 293,
+    },
+    "tittel": Object {
+      "count": 293,
+    },
+  },
+}
+`;
+
+exports[`data/metabase_med_bbox.json har antall rader 1`] = `168222`;
 
 exports[`data/metabase_med_bbox.json har forventede nøkler 1`] = `
 Object {
@@ -4196,7 +4228,7 @@ Object {
       },
       "count": 3305,
     },
-    "count": 167885,
+    "count": 168221,
     "data": Object {
       "areal": Object {
         "count": 2865,
@@ -4229,9 +4261,9 @@ Object {
     },
     "foreldre": Object {
       "KO_DE": Object {
-        "count": 167886,
+        "count": 168222,
       },
-      "count": 167885,
+      "count": 168221,
     },
     "formats": Object {
       "count": 5188,
@@ -4609,10 +4641,10 @@ Object {
       },
     },
     "infoUrl": Object {
-      "count": 162645,
+      "count": 162688,
     },
     "ingress": Object {
-      "count": 131,
+      "count": 132,
     },
     "metaUrl": Object {
       "count": 6,
@@ -4646,15 +4678,15 @@ Object {
     },
     "tittel": Object {
       "KO_DE": Object {
-        "count": 230389,
+        "count": 230727,
       },
-      "count": 167885,
+      "count": 168221,
     },
     "type": Object {
       "count": 5,
     },
     "url": Object {
-      "count": 159751,
+      "count": 159793,
     },
     "utenRamme": Object {
       "count": 20,
