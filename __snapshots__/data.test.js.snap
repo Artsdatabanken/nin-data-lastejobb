@@ -1,218 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-<<<<<<< HEAD
 exports[`build/kodetre.json har antall rader 1`] = `168223`;
-||||||| merged common ancestors
-exports[`build/kodetre.json har antall rader 1`] = `167887`;
-=======
-<<<<<<< HEAD
-exports[`build/kodetre.json har antall rader 1`] = `167887`;
-||||||| merged common ancestors
-exports[`build/kodetre.json har antall rader 1`] = `167034`;
-=======
-exports[`build/kodetre.json har antall rader 1`] = `168223`;
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
 
 exports[`build/kodetre.json har forventede nøkler 1`] = `
 Object {
   "KO_DE": Object {
-<<<<<<< HEAD
     "count": 168223,
-||||||| merged common ancestors
-    "count": 167887,
-=======
-<<<<<<< HEAD
-    "count": 167887,
-||||||| merged common ancestors
-    "count": 167034,
-=======
-    "count": 168223,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     "forelder": Object {
-<<<<<<< HEAD
       "count": 168223,
-||||||| merged common ancestors
-      "count": 167887,
-=======
-<<<<<<< HEAD
-      "count": 167887,
-||||||| merged common ancestors
-      "count": 167034,
-=======
-      "count": 168223,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "kode": Object {
-<<<<<<< HEAD
       "count": 168223,
-||||||| merged common ancestors
-      "count": 167887,
-=======
-<<<<<<< HEAD
-      "count": 167887,
-||||||| merged common ancestors
-      "count": 167034,
-=======
-      "count": 168223,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "tittel": Object {
       "KO_DE": Object {
-<<<<<<< HEAD
         "count": 230729,
-||||||| merged common ancestors
-        "count": 230391,
-=======
-<<<<<<< HEAD
-        "count": 230391,
-||||||| merged common ancestors
-        "count": 229515,
-=======
-        "count": 230729,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
       },
-<<<<<<< HEAD
       "count": 168223,
-||||||| merged common ancestors
-      "count": 167887,
-=======
-<<<<<<< HEAD
-      "count": 167887,
-||||||| merged common ancestors
-      "count": 167034,
-=======
-      "count": 168223,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
   },
 }
 `;
 
-<<<<<<< HEAD
 exports[`build/kodetre_postgre.json har antall rader 1`] = `168224`;
-||||||| merged common ancestors
-exports[`build/kodetre_postgre.json har antall rader 1`] = `167888`;
-=======
-<<<<<<< HEAD
-exports[`build/kodetre_postgre.json har antall rader 1`] = `167888`;
-||||||| merged common ancestors
-exports[`build/kodetre_postgre.json har antall rader 1`] = `167035`;
-=======
-exports[`build/kodetre_postgre.json har antall rader 1`] = `168224`;
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
 
 exports[`build/kodetre_postgre.json har forventede nøkler 1`] = `
 Object {
   "KO_DE": Object {
-<<<<<<< HEAD
     "count": 168224,
-||||||| merged common ancestors
-    "count": 167888,
-=======
-<<<<<<< HEAD
-    "count": 167888,
-||||||| merged common ancestors
-    "count": 167035,
-=======
-    "count": 168224,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     "delAv": Object {
       "KO_DE": Object {
-<<<<<<< HEAD
         "count": 1327157,
-||||||| merged common ancestors
-        "count": 1326244,
-=======
-<<<<<<< HEAD
-        "count": 1326244,
-||||||| merged common ancestors
-        "count": 1319258,
-=======
-        "count": 1327157,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
       },
-<<<<<<< HEAD
       "count": 168224,
-||||||| merged common ancestors
-      "count": 167888,
-=======
-<<<<<<< HEAD
-      "count": 167888,
-||||||| merged common ancestors
-      "count": 167035,
-=======
-      "count": 168224,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "kode": Object {
-<<<<<<< HEAD
       "count": 168224,
-||||||| merged common ancestors
-      "count": 167888,
-=======
-<<<<<<< HEAD
-      "count": 167888,
-||||||| merged common ancestors
-      "count": 167035,
-=======
-      "count": 168224,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "nivå": Object {
-<<<<<<< HEAD
       "count": 168224,
-||||||| merged common ancestors
-      "count": 167888,
-=======
-<<<<<<< HEAD
-      "count": 167888,
-||||||| merged common ancestors
-      "count": 167035,
-=======
-      "count": 168224,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "tittel": Object {
       "KO_DE": Object {
-<<<<<<< HEAD
         "count": 230730,
-||||||| merged common ancestors
-        "count": 230392,
-=======
-<<<<<<< HEAD
-        "count": 230392,
-||||||| merged common ancestors
-        "count": 229516,
-=======
-        "count": 230730,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
       },
-<<<<<<< HEAD
       "count": 168224,
-||||||| merged common ancestors
-      "count": 167888,
-=======
-<<<<<<< HEAD
-      "count": 167888,
-||||||| merged common ancestors
-      "count": 167035,
-=======
-      "count": 168224,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
   },
 }
@@ -228,19 +60,7 @@ Object {
 }
 `;
 
-<<<<<<< HEAD
 exports[`build/metabase.json har antall rader 1`] = `343941`;
-||||||| merged common ancestors
-exports[`build/metabase.json har antall rader 1`] = `343856`;
-=======
-<<<<<<< HEAD
-exports[`build/metabase.json har antall rader 1`] = `343856`;
-||||||| merged common ancestors
-exports[`build/metabase.json har antall rader 1`] = `342149`;
-=======
-exports[`build/metabase.json har antall rader 1`] = `343941`;
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
 
 exports[`build/metabase.json har forventede nøkler 1`] = `
 Object {
@@ -287,78 +107,18 @@ Object {
     "@": Object {
       "KO_DE": Object {
         "KO_DE": Object {
-<<<<<<< HEAD
           "count": 365583,
-||||||| merged common ancestors
-          "count": 365498,
-=======
-<<<<<<< HEAD
-          "count": 365498,
-||||||| merged common ancestors
-          "count": 363781,
-=======
-          "count": 365583,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
           "sti": Object {
-<<<<<<< HEAD
             "count": 365583,
-||||||| merged common ancestors
-            "count": 365498,
-=======
-<<<<<<< HEAD
-            "count": 365498,
-||||||| merged common ancestors
-            "count": 363781,
-=======
-            "count": 365583,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
           },
           "tittel": Object {
             "KO_DE": Object {
-<<<<<<< HEAD
               "count": 553096,
-||||||| merged common ancestors
-              "count": 553005,
-=======
-<<<<<<< HEAD
-              "count": 553005,
-||||||| merged common ancestors
-              "count": 551219,
-=======
-              "count": 553096,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
             },
-<<<<<<< HEAD
             "count": 365583,
-||||||| merged common ancestors
-            "count": 365498,
-=======
-<<<<<<< HEAD
-            "count": 365498,
-||||||| merged common ancestors
-            "count": 363781,
-=======
-            "count": 365583,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
           },
         },
-<<<<<<< HEAD
         "count": 343932,
-||||||| merged common ancestors
-        "count": 343847,
-=======
-<<<<<<< HEAD
-        "count": 343847,
-||||||| merged common ancestors
-        "count": 342140,
-=======
-        "count": 343932,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
         "~": Object {
           "count": 2,
           "sti": Object {
@@ -399,19 +159,7 @@ Object {
         },
         "count": 6,
       },
-<<<<<<< HEAD
       "count": 343940,
-||||||| merged common ancestors
-      "count": 343855,
-=======
-<<<<<<< HEAD
-      "count": 343855,
-||||||| merged common ancestors
-      "count": 342148,
-=======
-      "count": 343940,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
       "farge": Object {
         "count": 8,
       },
@@ -510,81 +258,21 @@ Object {
       "@": Object {
         "barn": Object {
           "KO_DE": Object {
-<<<<<<< HEAD
             "count": 160446,
-||||||| merged common ancestors
-            "count": 160404,
-=======
-<<<<<<< HEAD
-            "count": 160404,
-||||||| merged common ancestors
-            "count": 159551,
-=======
-            "count": 160446,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
             "farge": Object {
-<<<<<<< HEAD
               "count": 160446,
-||||||| merged common ancestors
-              "count": 160404,
-=======
-<<<<<<< HEAD
-              "count": 160404,
-||||||| merged common ancestors
-              "count": 159551,
-=======
-              "count": 160446,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
             },
             "sortering": Object {
               "count": 5,
             },
             "tittel": Object {
               "KO_DE": Object {
-<<<<<<< HEAD
                 "count": 222931,
-||||||| merged common ancestors
-                "count": 222887,
-=======
-<<<<<<< HEAD
-                "count": 222887,
-||||||| merged common ancestors
-                "count": 222011,
-=======
-                "count": 222931,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
               },
-<<<<<<< HEAD
               "count": 160446,
-||||||| merged common ancestors
-              "count": 160404,
-=======
-<<<<<<< HEAD
-              "count": 160404,
-||||||| merged common ancestors
-              "count": 159551,
-=======
-              "count": 160446,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
             },
           },
-<<<<<<< HEAD
           "count": 162761,
-||||||| merged common ancestors
-          "count": 162719,
-=======
-<<<<<<< HEAD
-          "count": 162719,
-||||||| merged common ancestors
-          "count": 161866,
-=======
-          "count": 162761,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
         },
         "bbox": Object {
           "KO_DE": Object {
@@ -601,19 +289,7 @@ Object {
           },
           "count": 2883,
         },
-<<<<<<< HEAD
         "count": 162761,
-||||||| merged common ancestors
-        "count": 162719,
-=======
-<<<<<<< HEAD
-        "count": 162719,
-||||||| merged common ancestors
-        "count": 161866,
-=======
-        "count": 162761,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
         "data": Object {
           "areal": Object {
             "count": 2865,
@@ -642,19 +318,7 @@ Object {
           },
         },
         "farge": Object {
-<<<<<<< HEAD
           "count": 162761,
-||||||| merged common ancestors
-          "count": 162719,
-=======
-<<<<<<< HEAD
-          "count": 162719,
-||||||| merged common ancestors
-          "count": 161866,
-=======
-          "count": 162761,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
         },
         "formats": Object {
           "count": 2942,
@@ -900,115 +564,31 @@ Object {
           },
         },
         "infoUrl": Object {
-<<<<<<< HEAD
           "count": 162674,
-||||||| merged common ancestors
-          "count": 162632,
-=======
-<<<<<<< HEAD
-          "count": 162632,
-||||||| merged common ancestors
-          "count": 161779,
-=======
-          "count": 162674,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
         },
         "ingress": Object {
           "count": 24,
         },
         "kode": Object {
-<<<<<<< HEAD
           "count": 162761,
-||||||| merged common ancestors
-          "count": 162719,
-=======
-<<<<<<< HEAD
-          "count": 162719,
-||||||| merged common ancestors
-          "count": 161866,
-=======
-          "count": 162761,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
         },
         "metaUrl": Object {
           "count": 6,
         },
         "overordnet": Object {
           "KO_DE": Object {
-<<<<<<< HEAD
             "count": 1447935,
-||||||| merged common ancestors
-            "count": 1447557,
-=======
-<<<<<<< HEAD
-            "count": 1447557,
-||||||| merged common ancestors
-            "count": 1439718,
-=======
-            "count": 1447935,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
             "kode": Object {
-<<<<<<< HEAD
               "count": 1447935,
-||||||| merged common ancestors
-              "count": 1447557,
-=======
-<<<<<<< HEAD
-              "count": 1447557,
-||||||| merged common ancestors
-              "count": 1439718,
-=======
-              "count": 1447935,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
             },
             "tittel": Object {
               "KO_DE": Object {
-<<<<<<< HEAD
                 "count": 2963167,
-||||||| merged common ancestors
-                "count": 2962333,
-=======
-<<<<<<< HEAD
-                "count": 2962333,
-||||||| merged common ancestors
-                "count": 2944838,
-=======
-                "count": 2963167,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
               },
-<<<<<<< HEAD
               "count": 1447935,
-||||||| merged common ancestors
-              "count": 1447557,
-=======
-<<<<<<< HEAD
-              "count": 1447557,
-||||||| merged common ancestors
-              "count": 1439718,
-=======
-              "count": 1447935,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
             },
           },
-<<<<<<< HEAD
           "count": 162761,
-||||||| merged common ancestors
-          "count": 162719,
-=======
-<<<<<<< HEAD
-          "count": 162719,
-||||||| merged common ancestors
-          "count": 161866,
-=======
-          "count": 162761,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
         },
         "render": Object {
           "count": 1,
@@ -1033,51 +613,15 @@ Object {
         },
         "tittel": Object {
           "KO_DE": Object {
-<<<<<<< HEAD
             "count": 225261,
-||||||| merged common ancestors
-            "count": 225217,
-=======
-<<<<<<< HEAD
-            "count": 225217,
-||||||| merged common ancestors
-            "count": 224341,
-=======
-            "count": 225261,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
           },
-<<<<<<< HEAD
           "count": 162761,
-||||||| merged common ancestors
-          "count": 162719,
-=======
-<<<<<<< HEAD
-          "count": 162719,
-||||||| merged common ancestors
-          "count": 161866,
-=======
-          "count": 162761,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
         },
         "type": Object {
           "count": 1,
         },
         "url": Object {
-<<<<<<< HEAD
           "count": 159793,
-||||||| merged common ancestors
-          "count": 159751,
-=======
-<<<<<<< HEAD
-          "count": 159751,
-||||||| merged common ancestors
-          "count": 158898,
-=======
-          "count": 159793,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
         },
         "utenRamme": Object {
           "count": 18,
@@ -3333,33 +2877,9 @@ Object {
           "count": 1,
         },
       },
-<<<<<<< HEAD
       "count": 162761,
-||||||| merged common ancestors
-      "count": 162719,
-=======
-<<<<<<< HEAD
-      "count": 162719,
-||||||| merged common ancestors
-      "count": 161866,
-=======
-      "count": 162761,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
-<<<<<<< HEAD
     "count": 343940,
-||||||| merged common ancestors
-    "count": 343855,
-=======
-<<<<<<< HEAD
-    "count": 343855,
-||||||| merged common ancestors
-    "count": 342148,
-=======
-    "count": 343940,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     "s": Object {
       "KO_DE": Object {
         "@": Object {
@@ -3510,219 +3030,51 @@ Object {
 }
 `;
 
-<<<<<<< HEAD
 exports[`data/ar_taxon.json har antall rader 1`] = `159793`;
-||||||| merged common ancestors
-exports[`data/ar_taxon.json har antall rader 1`] = `159751`;
-=======
-<<<<<<< HEAD
-exports[`data/ar_taxon.json har antall rader 1`] = `159751`;
-||||||| merged common ancestors
-exports[`data/ar_taxon.json har antall rader 1`] = `158898`;
-=======
-exports[`data/ar_taxon.json har antall rader 1`] = `159793`;
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
 
 exports[`data/ar_taxon.json har forventede nøkler 1`] = `
 Object {
   "KO_DE": Object {
-<<<<<<< HEAD
     "count": 159793,
-||||||| merged common ancestors
-    "count": 159751,
-=======
-<<<<<<< HEAD
-    "count": 159751,
-||||||| merged common ancestors
-    "count": 158898,
-=======
-    "count": 159793,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     "foreldre": Object {
       "KO_DE": Object {
-<<<<<<< HEAD
         "count": 159793,
-||||||| merged common ancestors
-        "count": 159751,
-=======
-<<<<<<< HEAD
-        "count": 159751,
-||||||| merged common ancestors
-        "count": 158898,
-=======
-        "count": 159793,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
       },
-<<<<<<< HEAD
       "count": 159793,
-||||||| merged common ancestors
-      "count": 159751,
-=======
-<<<<<<< HEAD
-      "count": 159751,
-||||||| merged common ancestors
-      "count": 158898,
-=======
-      "count": 159793,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "infoUrl": Object {
-<<<<<<< HEAD
       "count": 159793,
-||||||| merged common ancestors
-      "count": 159751,
-=======
-<<<<<<< HEAD
-      "count": 159751,
-||||||| merged common ancestors
-      "count": 158898,
-=======
-      "count": 159793,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "tittel": Object {
       "KO_DE": Object {
-<<<<<<< HEAD
         "count": 222291,
-||||||| merged common ancestors
-        "count": 222247,
-=======
-<<<<<<< HEAD
-        "count": 222247,
-||||||| merged common ancestors
-        "count": 221371,
-=======
-        "count": 222291,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
       },
-<<<<<<< HEAD
       "count": 159793,
-||||||| merged common ancestors
-      "count": 159751,
-=======
-<<<<<<< HEAD
-      "count": 159751,
-||||||| merged common ancestors
-      "count": 158898,
-=======
-      "count": 159793,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "url": Object {
-<<<<<<< HEAD
       "count": 159793,
-||||||| merged common ancestors
-      "count": 159751,
-=======
-<<<<<<< HEAD
-      "count": 159751,
-||||||| merged common ancestors
-      "count": 158898,
-=======
-      "count": 159793,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
   },
 }
 `;
 
-<<<<<<< HEAD
 exports[`data/ar_taxon_to_json.json har antall rader 1`] = `159793`;
-||||||| merged common ancestors
-exports[`data/ar_taxon_to_json.json har antall rader 1`] = `159751`;
-=======
-<<<<<<< HEAD
-exports[`data/ar_taxon_to_json.json har antall rader 1`] = `159751`;
-||||||| merged common ancestors
-exports[`data/ar_taxon_to_json.json har antall rader 1`] = `158898`;
-=======
-exports[`data/ar_taxon_to_json.json har antall rader 1`] = `159793`;
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
 
 exports[`data/ar_taxon_to_json.json har forventede nøkler 1`] = `
 Object {
   "KO_DE": Object {
     "KO_DE": Object {
-<<<<<<< HEAD
       "count": 159793,
-||||||| merged common ancestors
-      "count": 159751,
-=======
-<<<<<<< HEAD
-      "count": 159751,
-||||||| merged common ancestors
-      "count": 158898,
-=======
-      "count": 159793,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
-<<<<<<< HEAD
     "count": 159793,
-||||||| merged common ancestors
-    "count": 159751,
-=======
-<<<<<<< HEAD
-    "count": 159751,
-||||||| merged common ancestors
-    "count": 158898,
-=======
-    "count": 159793,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     "parentId": Object {
-<<<<<<< HEAD
       "count": 159782,
-||||||| merged common ancestors
-      "count": 159740,
-=======
-<<<<<<< HEAD
-      "count": 159740,
-||||||| merged common ancestors
-      "count": 158887,
-=======
-      "count": 159782,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "tittel": Object {
       "KO_DE": Object {
-<<<<<<< HEAD
         "count": 222291,
-||||||| merged common ancestors
-        "count": 222247,
-=======
-<<<<<<< HEAD
-        "count": 222247,
-||||||| merged common ancestors
-        "count": 221371,
-=======
-        "count": 222291,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
       },
-<<<<<<< HEAD
       "count": 159793,
-||||||| merged common ancestors
-      "count": 159751,
-=======
-<<<<<<< HEAD
-      "count": 159751,
-||||||| merged common ancestors
-      "count": 158898,
-=======
-      "count": 159793,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
   },
 }
@@ -3738,19 +3090,7 @@ Object {
 }
 `;
 
-<<<<<<< HEAD
 exports[`data/full.json har antall rader 1`] = `168222`;
-||||||| merged common ancestors
-exports[`data/full.json har antall rader 1`] = `167886`;
-=======
-<<<<<<< HEAD
-exports[`data/full.json har antall rader 1`] = `167886`;
-||||||| merged common ancestors
-exports[`data/full.json har antall rader 1`] = `167033`;
-=======
-exports[`data/full.json har antall rader 1`] = `168222`;
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
 
 exports[`data/full.json har forventede nøkler 1`] = `
 Object {
@@ -3761,19 +3101,7 @@ Object {
       },
       "count": 3305,
     },
-<<<<<<< HEAD
     "count": 168221,
-||||||| merged common ancestors
-    "count": 167885,
-=======
-<<<<<<< HEAD
-    "count": 167885,
-||||||| merged common ancestors
-    "count": 167032,
-=======
-    "count": 168221,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     "data": Object {
       "areal": Object {
         "count": 2865,
@@ -3806,48 +3134,12 @@ Object {
     },
     "foreldre": Object {
       "KO_DE": Object {
-<<<<<<< HEAD
         "count": 168222,
-||||||| merged common ancestors
-        "count": 167886,
-=======
-<<<<<<< HEAD
-        "count": 167886,
-||||||| merged common ancestors
-        "count": 167033,
-=======
-        "count": 168222,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
       },
-<<<<<<< HEAD
       "count": 168221,
-||||||| merged common ancestors
-      "count": 167885,
-=======
-<<<<<<< HEAD
-      "count": 167885,
-||||||| merged common ancestors
-      "count": 167032,
-=======
-      "count": 168221,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "infoUrl": Object {
-<<<<<<< HEAD
       "count": 162688,
-||||||| merged common ancestors
-      "count": 162645,
-=======
-<<<<<<< HEAD
-      "count": 162645,
-||||||| merged common ancestors
-      "count": 161792,
-=======
-      "count": 162688,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "ingress": Object {
       "count": 132,
@@ -3902,51 +3194,15 @@ Object {
     },
     "tittel": Object {
       "KO_DE": Object {
-<<<<<<< HEAD
         "count": 230727,
-||||||| merged common ancestors
-        "count": 230389,
-=======
-<<<<<<< HEAD
-        "count": 230389,
-||||||| merged common ancestors
-        "count": 229513,
-=======
-        "count": 230727,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
       },
-<<<<<<< HEAD
       "count": 168221,
-||||||| merged common ancestors
-      "count": 167885,
-=======
-<<<<<<< HEAD
-      "count": 167885,
-||||||| merged common ancestors
-      "count": 167032,
-=======
-      "count": 168221,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "type": Object {
       "count": 5,
     },
     "url": Object {
-<<<<<<< HEAD
       "count": 159793,
-||||||| merged common ancestors
-      "count": 159751,
-=======
-<<<<<<< HEAD
-      "count": 159751,
-||||||| merged common ancestors
-      "count": 158898,
-=======
-      "count": 159793,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "utenRamme": Object {
       "count": 20,
@@ -3967,19 +3223,7 @@ Object {
 }
 `;
 
-<<<<<<< HEAD
 exports[`data/full_med_graf.json har antall rader 1`] = `168222`;
-||||||| merged common ancestors
-exports[`data/full_med_graf.json har antall rader 1`] = `167886`;
-=======
-<<<<<<< HEAD
-exports[`data/full_med_graf.json har antall rader 1`] = `167886`;
-||||||| merged common ancestors
-exports[`data/full_med_graf.json har antall rader 1`] = `167033`;
-=======
-exports[`data/full_med_graf.json har antall rader 1`] = `168222`;
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
 
 exports[`data/full_med_graf.json har forventede nøkler 1`] = `
 Object {
@@ -3990,19 +3234,7 @@ Object {
       },
       "count": 3305,
     },
-<<<<<<< HEAD
     "count": 168221,
-||||||| merged common ancestors
-    "count": 167885,
-=======
-<<<<<<< HEAD
-    "count": 167885,
-||||||| merged common ancestors
-    "count": 167032,
-=======
-    "count": 168221,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     "data": Object {
       "areal": Object {
         "count": 2865,
@@ -4035,33 +3267,9 @@ Object {
     },
     "foreldre": Object {
       "KO_DE": Object {
-<<<<<<< HEAD
         "count": 168222,
-||||||| merged common ancestors
-        "count": 167886,
-=======
-<<<<<<< HEAD
-        "count": 167886,
-||||||| merged common ancestors
-        "count": 167033,
-=======
-        "count": 168222,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
       },
-<<<<<<< HEAD
       "count": 168221,
-||||||| merged common ancestors
-      "count": 167885,
-=======
-<<<<<<< HEAD
-      "count": 167885,
-||||||| merged common ancestors
-      "count": 167032,
-=======
-      "count": 168221,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "graf": Object {
       "KO_DE": Object {
@@ -4427,19 +3635,7 @@ Object {
       },
     },
     "infoUrl": Object {
-<<<<<<< HEAD
       "count": 162688,
-||||||| merged common ancestors
-      "count": 162645,
-=======
-<<<<<<< HEAD
-      "count": 162645,
-||||||| merged common ancestors
-      "count": 161792,
-=======
-      "count": 162688,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "ingress": Object {
       "count": 132,
@@ -4476,51 +3672,15 @@ Object {
     },
     "tittel": Object {
       "KO_DE": Object {
-<<<<<<< HEAD
         "count": 230727,
-||||||| merged common ancestors
-        "count": 230389,
-=======
-<<<<<<< HEAD
-        "count": 230389,
-||||||| merged common ancestors
-        "count": 229513,
-=======
-        "count": 230727,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
       },
-<<<<<<< HEAD
       "count": 168221,
-||||||| merged common ancestors
-      "count": 167885,
-=======
-<<<<<<< HEAD
-      "count": 167885,
-||||||| merged common ancestors
-      "count": 167032,
-=======
-      "count": 168221,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "type": Object {
       "count": 5,
     },
     "url": Object {
-<<<<<<< HEAD
       "count": 159793,
-||||||| merged common ancestors
-      "count": 159751,
-=======
-<<<<<<< HEAD
-      "count": 159751,
-||||||| merged common ancestors
-      "count": 158898,
-=======
-      "count": 159793,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "utenRamme": Object {
       "count": 20,
@@ -5016,7 +4176,6 @@ Object {
 }
 `;
 
-<<<<<<< HEAD
 exports[`data/la.json har antall rader 1`] = `293`;
 
 exports[`data/la.json har forventede nøkler 1`] = `
@@ -5050,49 +4209,6 @@ Object {
 `;
 
 exports[`data/metabase_med_bbox.json har antall rader 1`] = `168222`;
-||||||| merged common ancestors
-exports[`data/metabase_med_bbox.json har antall rader 1`] = `167886`;
-=======
-<<<<<<< HEAD
-exports[`data/metabase_med_bbox.json har antall rader 1`] = `167886`;
-||||||| merged common ancestors
-exports[`data/metabase_med_bbox.json har antall rader 1`] = `167033`;
-=======
-exports[`data/la.json har antall rader 1`] = `293`;
-
-exports[`data/la.json har forventede nøkler 1`] = `
-Object {
-  "KO_DE": Object {
-    "count": 293,
-    "tittel": Object {
-      "KO_DE": Object {
-        "count": 293,
-      },
-      "count": 293,
-    },
-  },
-}
-`;
-
-exports[`data/la_to_json.json har antall rader 1`] = `293`;
-
-exports[`data/la_to_json.json har forventede nøkler 1`] = `
-Object {
-  "KO_DE": Object {
-    "count": 293,
-    "kode": Object {
-      "count": 293,
-    },
-    "tittel": Object {
-      "count": 293,
-    },
-  },
-}
-`;
-
-exports[`data/metabase_med_bbox.json har antall rader 1`] = `168222`;
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
 
 exports[`data/metabase_med_bbox.json har forventede nøkler 1`] = `
 Object {
@@ -5112,19 +4228,7 @@ Object {
       },
       "count": 3305,
     },
-<<<<<<< HEAD
     "count": 168221,
-||||||| merged common ancestors
-    "count": 167885,
-=======
-<<<<<<< HEAD
-    "count": 167885,
-||||||| merged common ancestors
-    "count": 167032,
-=======
-    "count": 168221,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     "data": Object {
       "areal": Object {
         "count": 2865,
@@ -5157,33 +4261,9 @@ Object {
     },
     "foreldre": Object {
       "KO_DE": Object {
-<<<<<<< HEAD
         "count": 168222,
-||||||| merged common ancestors
-        "count": 167886,
-=======
-<<<<<<< HEAD
-        "count": 167886,
-||||||| merged common ancestors
-        "count": 167033,
-=======
-        "count": 168222,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
       },
-<<<<<<< HEAD
       "count": 168221,
-||||||| merged common ancestors
-      "count": 167885,
-=======
-<<<<<<< HEAD
-      "count": 167885,
-||||||| merged common ancestors
-      "count": 167032,
-=======
-      "count": 168221,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "formats": Object {
       "count": 5188,
@@ -5561,19 +4641,7 @@ Object {
       },
     },
     "infoUrl": Object {
-<<<<<<< HEAD
       "count": 162688,
-||||||| merged common ancestors
-      "count": 162645,
-=======
-<<<<<<< HEAD
-      "count": 162645,
-||||||| merged common ancestors
-      "count": 161792,
-=======
-      "count": 162688,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "ingress": Object {
       "count": 132,
@@ -5610,51 +4678,15 @@ Object {
     },
     "tittel": Object {
       "KO_DE": Object {
-<<<<<<< HEAD
         "count": 230727,
-||||||| merged common ancestors
-        "count": 230389,
-=======
-<<<<<<< HEAD
-        "count": 230389,
-||||||| merged common ancestors
-        "count": 229513,
-=======
-        "count": 230727,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
       },
-<<<<<<< HEAD
       "count": 168221,
-||||||| merged common ancestors
-      "count": 167885,
-=======
-<<<<<<< HEAD
-      "count": 167885,
-||||||| merged common ancestors
-      "count": 167032,
-=======
-      "count": 168221,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "type": Object {
       "count": 5,
     },
     "url": Object {
-<<<<<<< HEAD
       "count": 159793,
-||||||| merged common ancestors
-      "count": 159751,
-=======
-<<<<<<< HEAD
-      "count": 159751,
-||||||| merged common ancestors
-      "count": 158898,
-=======
-      "count": 159793,
->>>>>>> Legg til LA: Landskap
->>>>>>> Legg til LA: Landskap
     },
     "utenRamme": Object {
       "count": 20,
