@@ -29,8 +29,10 @@ async function importCsv(kildefil) {
 }
 
 function lagKode(nøkkel) {
-  nøkkel = `LA_${nøkkel[3]}-${nøkkel.substring(4)}`
-  return nøkkel.replace(/\-/g, "")
+  let kode = "LA_" + nøkkel[3]
+  const subkey = nøkkel.substring(4)
+  if (subkey) kode += "-" + subkey
+  return kode
 }
 
 function transform(record) {
