@@ -10,7 +10,7 @@ const config = require("./config")
 
 function exec(jsFile) {
   log.info("Kjører " + jsFile)
-  const r = spawnSync("node", [jsFile], {
+  const r = spawnSync("node", ["--max_old_space_size=2096", jsFile], {
     encoding: "buffer",
     shell: true,
     stdio: [0, 1, 2]
