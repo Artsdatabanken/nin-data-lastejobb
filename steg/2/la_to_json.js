@@ -28,6 +28,11 @@ async function importCsv(kildefil) {
     .pipe(ws)
 }
 
+function lagKode(nøkkel) {
+  nøkkel = `LA_${nøkkel[3]}-${nøkkel.substring(4)}`
+  return nøkkel
+}
+
 function transform(record) {
   if (!header) {
     header = {}
@@ -36,7 +41,7 @@ function transform(record) {
   }
 
   return {
-    kode: record[header["S_kode"]].replace("LA-", "LA_"),
+    kode: lagKode(record[header["S_kode"]]),
     tittel: record[header["Name"]].trim()
   }
 }
