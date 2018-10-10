@@ -30,7 +30,7 @@ async function importCsv(kildefil) {
 
 function lagKode(nøkkel) {
   nøkkel = `LA_${nøkkel[3]}-${nøkkel.substring(4)}`
-  return nøkkel
+  return nøkkel.replace(/\-/g, "")
 }
 
 function transform(record) {
