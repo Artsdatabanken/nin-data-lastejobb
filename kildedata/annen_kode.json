@@ -14,7 +14,49 @@
   "LA_K-F": { "tittel": { "nb": "Fjordlandskap" } },
   "LA_K-S": { "tittel": { "nb": "Kystslettelandskap" } },
   "LA_K-A": { "tittel": { "nb": "Ås- og fjellkyst" } },
-  "GR_DN": { "tittel": { "nb": "Dalnedskjæring" } },
+  "LG": { "tittel": { "nb": "Landskapsgradient" } },
+  "LG_DN": {
+    "tittel": { "nb": "Dalnedskjæring" },
+    "ingress": "Brukes bare for fjord/dal og beskriver hvor dypt fjorden/dalen skjærer seg ned i omkringliggende landformer."
+  },
+  "LG_RE": {
+    "tittel": { "nb": "Relieff" },
+    "ingress": "Brukes bare for hovedtypene vidde/ås/fjell og beskriver hvor kupert landskapet er."
+  },
+  "LG_TL": {
+    "tittel": { "nb": "Tindelandskapspreg" },
+    "ingress": "Brukes kun i fjellområder og angir om landskapet har tindelandskapspreg (alpint landskap) eller ikke"
+  },
+  "LG_BP": {
+    "tittel": { "nb": "Brepreg" },
+    "ingress": "Brukes i dallandskap og i fjellområder, og angir om landskapet er dominert av isbre eller ikke"
+  },
+  "LG_IP": {
+    "tittel": { "nb": "Innsjøpreg" },
+    "ingress": "Gradienten angir i hvor stor grad landskapet er dominert av innsjøer."
+  },
+  "LG_SG": {
+    "tittel": {
+      "nb": "Skjærgårdspreg",
+      "ingress": "Gradienten brukes bare i kystlandskap, og beskriver om landskapet hører til fastland, store øyer, er en del av en øygruppe med mindre øyer, osv."
+    }
+  },
+  "LG_AL": {
+    "tittel": { "nb": "Borealt/alpint landskap" },
+    "ingress": "Angir om landskapet er over eller under skoggrensen eller i skoggrenseland."
+  },
+  "LG_MP": {
+    "tittel": { "nb": "Myrpreg" },
+    "ingress": "Gradienten angir i hvor stor grad landskapet er dominert av myrer."
+  },
+  "LG_IS": {
+    "tittel": { "nb": "Omfang av infrastruktur (bebyggelsesgrad)" },
+    "ingress": "Angir i hvor stor grad landskapet er dominert av tekniske anlegg, bebyggelse og infrastruktur."
+  },
+  "LG_JP": {
+    "tittel": { "nb": "Jordbrukspreg" },
+    "ingress": "Angir i hvor stor grad landskapet er dominert av jordbruk, gjennom andel dyrket mark."
+  },
   "NA": {
     "tittel": { "nb": "Natursystem" },
     "infoUrl": "https://www.artsdatabanken.no/Pages/222921",
