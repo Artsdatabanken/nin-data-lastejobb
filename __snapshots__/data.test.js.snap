@@ -162,23 +162,23 @@ Object {
       "bbox": Object {
         "KO_DE": Object {
           "KO_DE": Object {
-            "count": 24,
+            "count": 28,
           },
-          "count": 12,
+          "count": 14,
         },
-        "count": 6,
+        "count": 7,
       },
       "count": 376731,
       "farge": Object {
         "count": 10,
       },
       "formats": Object {
-        "count": 7,
+        "count": 8,
         "point": Object {
           "count": 1,
         },
         "polygon": Object {
-          "count": 6,
+          "count": 7,
         },
       },
       "graf": Object {
@@ -258,9 +258,9 @@ Object {
       },
       "zoom": Object {
         "KO_DE": Object {
-          "count": 12,
+          "count": 14,
         },
-        "count": 6,
+        "count": 7,
       },
     },
     "KO_DE": Object {
@@ -289,11 +289,11 @@ Object {
         "bbox": Object {
           "KO_DE": Object {
             "KO_DE": Object {
-              "count": 11768,
+              "count": 11776,
             },
-            "count": 5884,
+            "count": 5888,
           },
-          "count": 2942,
+          "count": 2944,
         },
         "betegnelse": Object {
           "KO_DE": Object {
@@ -333,9 +333,9 @@ Object {
           "count": 173939,
         },
         "formats": Object {
-          "count": 2942,
+          "count": 2944,
           "polygon": Object {
-            "count": 2942,
+            "count": 2944,
           },
         },
         "graf": Object {
@@ -658,9 +658,9 @@ Object {
         },
         "zoom": Object {
           "KO_DE": Object {
-            "count": 5924,
+            "count": 5930,
           },
-          "count": 2962,
+          "count": 2965,
         },
       },
       "KO_DE": Object {
@@ -683,11 +683,11 @@ Object {
           "bbox": Object {
             "KO_DE": Object {
               "KO_DE": Object {
-                "count": 2628,
+                "count": 2652,
               },
-              "count": 1314,
+              "count": 1326,
             },
-            "count": 657,
+            "count": 663,
           },
           "betegnelse": Object {
             "KO_DE": Object {
@@ -700,12 +700,12 @@ Object {
             "count": 680,
           },
           "formats": Object {
-            "count": 657,
+            "count": 663,
             "gradient": Object {
               "count": 2,
             },
             "polygon": Object {
-              "count": 657,
+              "count": 663,
             },
           },
           "graf": Object {
@@ -1037,9 +1037,9 @@ Object {
           },
           "zoom": Object {
             "KO_DE": Object {
-              "count": 1328,
+              "count": 1340,
             },
-            "count": 664,
+            "count": 670,
           },
         },
         "KO_DE": Object {
@@ -1062,20 +1062,20 @@ Object {
             "bbox": Object {
               "KO_DE": Object {
                 "KO_DE": Object {
-                  "count": 3804,
+                  "count": 4940,
                 },
-                "count": 1902,
+                "count": 2470,
               },
-              "count": 951,
+              "count": 1235,
             },
             "count": 1260,
             "farge": Object {
               "count": 1260,
             },
             "formats": Object {
-              "count": 951,
+              "count": 1235,
               "polygon": Object {
-                "count": 951,
+                "count": 1235,
               },
             },
             "graf": Object {
@@ -1257,9 +1257,9 @@ Object {
             },
             "zoom": Object {
               "KO_DE": Object {
-                "count": 1952,
+                "count": 2520,
               },
-              "count": 976,
+              "count": 1260,
             },
           },
           "KO_DE": Object {
@@ -3835,7 +3835,7 @@ Object {
 }
 `;
 
-exports[`data/inn_mbtiles.json har antall rader 1`] = `5197`;
+exports[`data/inn_mbtiles.json har antall rader 1`] = `5490`;
 
 exports[`data/inn_mbtiles.json har forventede nøkler 1`] = `
 Object {
@@ -3884,15 +3884,6 @@ Object {
       "count": 1,
     },
     "version": Object {
-      "count": 1,
-    },
-  },
-  "/metadata": Object {
-    "count": 1,
-    "format": Object {
-      "count": 1,
-    },
-    "modified": Object {
       "count": 1,
     },
   },
@@ -3948,6 +3939,39 @@ Object {
     },
   },
   "/polygon/BS": Object {
+    "bounds": Object {
+      "count": 1,
+    },
+    "center": Object {
+      "count": 1,
+    },
+    "count": 1,
+    "description": Object {
+      "count": 1,
+    },
+    "format": Object {
+      "count": 1,
+    },
+    "maxzoom": Object {
+      "count": 1,
+    },
+    "minzoom": Object {
+      "count": 1,
+    },
+    "modified": Object {
+      "count": 1,
+    },
+    "name": Object {
+      "count": 1,
+    },
+    "type": Object {
+      "count": 1,
+    },
+    "version": Object {
+      "count": 1,
+    },
+  },
+  "/polygon/LA": Object {
     "bounds": Object {
       "count": 1,
     },
@@ -4112,6 +4136,15 @@ Object {
       "count": 1,
     },
   },
+  "/polygon/metadata": Object {
+    "count": 1,
+    "format": Object {
+      "count": 1,
+    },
+    "modified": Object {
+      "count": 1,
+    },
+  },
   "/polygon/openstreetmap": Object {
     "KO_DE": Object {
       "count": 2,
@@ -4160,6 +4193,15 @@ Object {
       "count": 1,
     },
   },
+  "/polygon/time": Object {
+    "count": 1,
+    "format": Object {
+      "count": 1,
+    },
+    "modified": Object {
+      "count": 1,
+    },
+  },
   "/terrain/normals": Object {
     "bounds": Object {
       "count": 1,
@@ -4196,46 +4238,37 @@ Object {
       "count": 1,
     },
   },
-  "/time": Object {
-    "count": 1,
-    "format": Object {
-      "count": 1,
-    },
-    "modified": Object {
-      "count": 1,
-    },
-  },
   "KO_DE": Object {
     "bounds": Object {
-      "count": 5183,
+      "count": 5475,
     },
     "center": Object {
-      "count": 5181,
+      "count": 5473,
     },
-    "count": 5183,
+    "count": 5475,
     "description": Object {
-      "count": 5183,
+      "count": 5475,
     },
     "format": Object {
-      "count": 5183,
+      "count": 5475,
     },
     "maxzoom": Object {
-      "count": 5183,
+      "count": 5475,
     },
     "minzoom": Object {
-      "count": 5183,
+      "count": 5475,
     },
     "modified": Object {
-      "count": 5183,
+      "count": 5475,
     },
     "name": Object {
-      "count": 5183,
+      "count": 5475,
     },
     "type": Object {
-      "count": 5183,
+      "count": 5475,
     },
     "version": Object {
-      "count": 5183,
+      "count": 5475,
     },
   },
 }
@@ -4318,11 +4351,11 @@ Object {
     "bbox": Object {
       "KO_DE": Object {
         "KO_DE": Object {
-          "count": 20748,
+          "count": 21920,
         },
-        "count": 10374,
+        "count": 10960,
       },
-      "count": 5187,
+      "count": 5480,
     },
     "betegnelse": Object {
       "KO_DE": Object {
@@ -4368,7 +4401,7 @@ Object {
       "count": 179407,
     },
     "formats": Object {
-      "count": 5188,
+      "count": 5481,
       "gradient": Object {
         "count": 2,
       },
@@ -4376,7 +4409,7 @@ Object {
         "count": 1,
       },
       "polygon": Object {
-        "count": 5187,
+        "count": 5480,
       },
     },
     "graf": Object {
@@ -4828,9 +4861,9 @@ Object {
     },
     "zoom": Object {
       "KO_DE": Object {
-        "count": 10374,
+        "count": 10960,
       },
-      "count": 5187,
+      "count": 5480,
     },
   },
   "~": Object {

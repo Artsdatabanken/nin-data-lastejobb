@@ -24,7 +24,6 @@ Object.keys(gradienter).forEach(kode => {
     })
   })
   r[kode].relasjon = relasjoner
-  console.log(r[kode])
 })
 
 io.skrivDatafil(__filename, r)
