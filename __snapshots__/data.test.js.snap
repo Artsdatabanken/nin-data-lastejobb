@@ -3131,12 +3131,12 @@ Object {
 }
 `;
 
-exports[`data/farger.json har antall rader 1`] = `152`;
+exports[`data/farger.json har antall rader 1`] = `161`;
 
 exports[`data/farger.json har forventede nøkler 1`] = `
 Object {
   "KO_DE": Object {
-    "count": 152,
+    "count": 161,
   },
 }
 `;
