@@ -27,6 +27,13 @@
     "infoUrl": "https://no.wikipedia.org/wiki/Norsk_institutt_for_naturforskning",
     "metaUrl": "https://nina.no"
   },
+  "OR_NB": {
+    "farge": "hsl(0, 0%, 0%)",
+    "tittel": { "nb": "Norsk institutt for bioøkonomi" },
+    "ingress": "NIBIO leverer kunnskap om mat- og planteproduksjon, miljø, klimasmart landbruk, kart, arealbruk, genressurser, skog, ressursforvaltning og landbruksøkonomi.",
+    "infoUrl": "https://no.wikipedia.org/wiki/Norsk_institutt_for_bio%C3%B8konomi",
+    "metaUrl": "https://www.nibio.no"
+  },
   "OR_GU": {
     "farge": "hsl(60, 7%, 8%)",
     "tittel": { "nb": "Norges Geologiske Undersøkelse" },
