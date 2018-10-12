@@ -1,23 +1,23 @@
 {
   "LA_I": [
-    "LG_GO_DN",
-    "LG_GO_RE",
-    "LG_GO_TL",
-    "LG_GO_BP",
-    "LG_GO_AL",
-    "LG_GO_IP",
-    "LG_GO_MP",
-    "LG_AB_IS",
-    "LG_AB_JP"
+    "LG_GO-DN",
+    "LG_GO-RE",
+    "LG_GO-TL",
+    "LG_GO-BP",
+    "LG_GO-AL",
+    "LG_GO-IP",
+    "LG_GO-MP",
+    "LG_AB-IS",
+    "LG_AB-JP"
   ],
   "LA_K": [
-    "LG_GO_RE",
-    "LG_GO_BP",
-    "LG_GO_SG",
-    "LG_GO_AL",
-    "LG_GO_IP",
-    "LG_GO_MP",
-    "LG_AB_IS",
-    "LG_AB_JP"
+    "LG_GO-RE",
+    "LG_GO-BP",
+    "LG_GO-SG",
+    "LG_GO-AL",
+    "LG_GO-IP",
+    "LG_GO-MP",
+    "LG_AB-IS",
+    "LG_AB-JP"
   ]
 }
