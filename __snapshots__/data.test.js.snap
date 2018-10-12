@@ -33,7 +33,7 @@ Object {
     "count": 179434,
     "delAv": Object {
       "KO_DE": Object {
-        "count": 1415242,
+        "count": 1415243,
       },
       "count": 179434,
     },
@@ -179,24 +179,24 @@ Object {
         },
       },
       "graf": Object {
-        "count": 4,
+        "count": 5,
         "publiseres av": Object {
           "KO_DE": Object {
-            "count": 5,
+            "count": 6,
             "erSubset": Object {
-              "count": 5,
+              "count": 6,
             },
             "farge": Object {
-              "count": 5,
+              "count": 6,
             },
             "tittel": Object {
               "KO_DE": Object {
-                "count": 6,
+                "count": 7,
               },
-              "count": 5,
+              "count": 6,
             },
           },
-          "count": 4,
+          "count": 5,
         },
       },
       "infoUrl": Object {
@@ -483,18 +483,18 @@ Object {
           },
           "publisererer": Object {
             "KO_DE": Object {
-              "count": 12,
+              "count": 13,
               "erSubset": Object {
-                "count": 12,
+                "count": 13,
               },
               "farge": Object {
-                "count": 12,
+                "count": 13,
               },
               "tittel": Object {
                 "KO_DE": Object {
-                  "count": 12,
+                  "count": 13,
                 },
-                "count": 12,
+                "count": 13,
               },
             },
             "count": 7,
@@ -3197,18 +3197,18 @@ Object {
     },
     "relasjon": Object {
       "KO_DE": Object {
-        "count": 30198,
+        "count": 30199,
         "erSubset": Object {
-          "count": 24002,
+          "count": 24003,
         },
         "kant": Object {
-          "count": 30198,
+          "count": 30199,
         },
         "kantRetur": Object {
-          "count": 30198,
+          "count": 30199,
         },
         "kode": Object {
-          "count": 30198,
+          "count": 30199,
         },
       },
       "count": 3149,
@@ -3347,7 +3347,7 @@ Object {
         },
         "count": 2934,
       },
-      "count": 4825,
+      "count": 4826,
       "definerer": Object {
         "KO_DE": Object {
           "count": 17,
@@ -3569,33 +3569,33 @@ Object {
       },
       "publisererer": Object {
         "KO_DE": Object {
-          "count": 13,
+          "count": 14,
           "erSubset": Object {
-            "count": 13,
+            "count": 14,
           },
           "tittel": Object {
             "KO_DE": Object {
-              "count": 13,
+              "count": 14,
             },
-            "count": 13,
+            "count": 14,
           },
         },
         "count": 7,
       },
       "publiseres av": Object {
         "KO_DE": Object {
-          "count": 13,
+          "count": 14,
           "erSubset": Object {
-            "count": 13,
+            "count": 14,
           },
           "tittel": Object {
             "KO_DE": Object {
-              "count": 14,
+              "count": 15,
             },
-            "count": 13,
+            "count": 14,
           },
         },
-        "count": 11,
+        "count": 12,
       },
       "skilleart": Object {
         "KO_DE": Object {
@@ -4359,7 +4359,7 @@ Object {
         },
         "count": 2934,
       },
-      "count": 4825,
+      "count": 4826,
       "definerer": Object {
         "KO_DE": Object {
           "count": 17,
@@ -4581,33 +4581,33 @@ Object {
       },
       "publisererer": Object {
         "KO_DE": Object {
-          "count": 13,
+          "count": 14,
           "erSubset": Object {
-            "count": 13,
+            "count": 14,
           },
           "tittel": Object {
             "KO_DE": Object {
-              "count": 13,
+              "count": 14,
             },
-            "count": 13,
+            "count": 14,
           },
         },
         "count": 7,
       },
       "publiseres av": Object {
         "KO_DE": Object {
-          "count": 13,
+          "count": 14,
           "erSubset": Object {
-            "count": 13,
+            "count": 14,
           },
           "tittel": Object {
             "KO_DE": Object {
-              "count": 14,
+              "count": 15,
             },
-            "count": 13,
+            "count": 14,
           },
         },
-        "count": 11,
+        "count": 12,
       },
       "skilleart": Object {
         "KO_DE": Object {
@@ -5062,18 +5062,18 @@ Object {
     },
     "relasjon": Object {
       "KO_DE": Object {
-        "count": 13,
+        "count": 14,
         "erSubset": Object {
-          "count": 13,
+          "count": 14,
         },
         "kant": Object {
-          "count": 13,
+          "count": 14,
         },
         "kantRetur": Object {
-          "count": 13,
+          "count": 14,
         },
         "kode": Object {
-          "count": 13,
+          "count": 14,
         },
       },
       "count": 7,
