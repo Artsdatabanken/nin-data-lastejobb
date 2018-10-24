@@ -68,10 +68,9 @@ for (let key of Object.keys(r)) {
   const node = r[key]
   if (!node.se) {
     if (!node.tittel)
-      throw new Error(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
+      log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
     node.tittel = Object.entries(node.tittel).reduce((acc, e) => {
-      if (!e[1])
-        throw new Error(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
+      if (!e[1]) log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
       acc[e[0]] = typesystem.capitalizeTittel(e[1])
       return acc
     }, {})
