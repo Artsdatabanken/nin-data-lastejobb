@@ -64,29 +64,28 @@ flett("statistikk")
 
 kobleForeldre()
 
+const notitle = []
 for (let key of Object.keys(r)) {
   const node = r[key]
   if (!node.se) {
-    if (!node.tittel)
+    if (!node.tittel) {
       log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
-    node.tittel = Object.entries(node.tittel).reduce((acc, e) => {
-      if (!e[1]) log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
-      acc[e[0]] = typesystem.capitalizeTittel(e[1])
-      return acc
-    }, {})
-    if (r[key].kode) log.warn("Har kode: ", key)
+      notitle.push(key)
+    } else {
+      node.tittel = Object.entries(node.tittel).reduce((acc, e) => {
+        if (!e[1])
+          log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
+        acc[e[0]] = typesystem.capitalizeTittel(e[1])
+        return acc
+      }, {})
+      if (r[key].kode) log.warn("Har kode: ", key)
+    }
   }
 }
 
-const hash = {}
-Object.keys(r).forEach(key => {
-  const node = r[key]
-  if (!node.se) {
-    if (!node.tittel) console.log(node)
-    const tittel = node.tittel.nb || node.tittel.en || node.tittel.la
-    if (!hash[tittel]) hash[tittel] = []
-    else hash[tittel].push(key)
-  }
-})
+if (notitle.length > 0) {
+  log.warn("Mangler tittel: " + notitle.join(", "))
+  notitle.forEach(key => delete r[key])
+}
 
 io.skrivDatafil(__filename, r)
