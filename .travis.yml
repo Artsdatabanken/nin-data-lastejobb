@@ -3,11 +3,23 @@ node_js:
   - "10"
 cache:
   directories:
-  - node_modules
+    - node_modules
 script:
-- yarn build
-- yarn test
+  - yarn build
+  - yarn test
+before_deploy:
+  - git tag "$(date +'%Y%m%d-%H%M%S')-$(git log --format=%h -1)"
+  - ls -la build
+  - tar -zcf metabase.gz build/metabase.json
+  - tar -zcf kodetre_postgre.gz build/kodetre_postgre.json
 deploy:
+  - provider: releases
+    api_key: $GITHUB_TOKEN
+    file_glob: true
+    file: *.tar.gz
+    on:
+      repo: Artsdatabanken/kverna
+    skip_cleanup: true
   - provider: script
     skip_cleanup: true
     script: yarn deploy
