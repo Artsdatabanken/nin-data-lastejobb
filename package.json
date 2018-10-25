@@ -45,7 +45,7 @@
     "babel-preset-flow": "^6.23.0",
     "eslint": "^5.7.0",
     "firebase-tools": "^5.0.1",
-    "flow-bin": "^0.83.0",
+    "flow-bin": "^0.84.0",
     "husky": "^1.1.0",
     "jest": "^23.6.0",
     "lint-staged": "^7.3.0",
