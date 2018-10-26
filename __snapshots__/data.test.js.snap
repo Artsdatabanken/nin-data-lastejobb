@@ -25,37 +25,6 @@ Object {
 }
 `;
 
-exports[`build/kodetre_postgre.json har antall rader 1`] = `179450`;
-
-exports[`build/kodetre_postgre.json har forventede nøkler 1`] = `
-Object {
-  "KO_DE": Object {
-    "count": 179450,
-    "delAv": Object {
-      "KO_DE": Object {
-        "count": 1415359,
-      },
-      "count": 179450,
-    },
-    "kode": Object {
-      "count": 179450,
-    },
-    "nivå": Object {
-      "count": 179450,
-    },
-    "tittel": Object {
-      "KO_DE": Object {
-        "count": 251983,
-      },
-      "count": 179450,
-      "ingress": Object {
-        "count": 1,
-      },
-    },
-  },
-}
-`;
-
 exports[`build/kodetre_postgres.json har antall rader 1`] = `179450`;
 
 exports[`build/kodetre_postgres.json har forventede nøkler 1`] = `
