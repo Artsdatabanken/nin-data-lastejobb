@@ -25,6 +25,7 @@ Object {
 }
 `;
 
+<<<<<<< HEAD
 exports[`build/kodetre_postgres.json har antall rader 1`] = `179450`;
 
 exports[`build/kodetre_postgres.json har forventede nøkler 1`] = `
@@ -61,6 +62,40 @@ exports[`data/ao_naturvernområde.json har antall rader 1`] = `458`;
 ||||||| merged common ancestors
 exports[`build/mangler_data.json har antall rader 1`] = `2246`;
 =======
+||||||| merged common ancestors
+exports[`build/kodetre_postgre.json har antall rader 1`] = `179450`;
+
+exports[`build/kodetre_postgre.json har forventede nøkler 1`] = `
+Object {
+  "KO_DE": Object {
+    "count": 179450,
+    "delAv": Object {
+      "KO_DE": Object {
+        "count": 1415359,
+      },
+      "count": 179450,
+    },
+    "kode": Object {
+      "count": 179450,
+    },
+    "nivå": Object {
+      "count": 179450,
+    },
+    "tittel": Object {
+      "KO_DE": Object {
+        "count": 251983,
+      },
+      "count": 179450,
+      "ingress": Object {
+        "count": 1,
+      },
+    },
+  },
+}
+`;
+
+=======
+>>>>>>> Remove leftover gunk
 exports[`build/kodetre_postgres.json har antall rader 1`] = `179450`;
 >>>>>>> Build Sqlite database
 
