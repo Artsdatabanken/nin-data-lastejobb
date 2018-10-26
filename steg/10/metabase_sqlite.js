@@ -1,14 +1,14 @@
 const config = require("../../config")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
-const sqlite3 = require("sqlite3") //.verbose();
+const sqlite3 = require("sqlite3")
 const fs = require("fs")
 var zlib = require("zlib")
 
-let data = io.lesDatafil("metabase")
-
 const sqliteFilePath = config.getBuildPath("metabase", ".sqlite")
 if (fs.existsSync(sqliteFilePath)) fs.unlinkSync(sqliteFilePath)
+
+let data = io.lesDatafil("metabase")
 
 const db = new sqlite3.Database(
   sqliteFilePath,
@@ -17,22 +17,22 @@ const db = new sqlite3.Database(
 
 db.serialize(function() {
   db.run("CREATE TABLE meta(kode TEXT PRIMARY KEY, verdi BLOB);")
-  var stmt = db.prepare("INSERT INTO meta (kode, verdi) VALUES (?,?)")
+  // var stmt = db.prepare("INSERT INTO meta (kode, verdi) VALUES (?,?)")
   db.run("BEGIN")
   Object.keys(data).forEach(kode => {
-    const zip = compress(data[kode], (err, zip) => {
-      if (err) throw new Error(err)
-      console.log(zip.length)
-      stmt.run(kode, zip)
-    })
+    // stmt.run(kode, 'compress(JSON.stringify(data[kode]))')
+    db.run(
+      "INSERT INTO meta (kode, verdi) VALUES (?,?)",
+      kode,
+      compress(data[kode])
+    )
   })
+  //  stmt.finalize()
   db.run("END")
-  stmt.finalize()
+  db.close()
+  log.info("Successful write sqlite db")
 })
-db.close()
 
-async function compress(o, cb) {
-  const json = JSON.stringify(o)
-  const zip = zlib.gzipSync(json, cb)
-  return zip
+function compress(json) {
+  return zlib.gzipSync(JSON.stringify(json))
 }

@@ -8504,6 +8504,11 @@ ws@^4.0.0:
     async-limiter "~1.0.0"
     safe-buffer "~5.1.0"
 
+wtfnode@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/wtfnode/-/wtfnode-0.7.3.tgz#3b2efc57605c94bbd29bcf4d1c414219d7c887e5"
+  integrity sha512-o4W7SY4QT/4XYrumfv6Mm9ved2Nmx5i9G6nGCLkZnyBfKV96TIhx7MXqk3Zoo+7YQGydAEXywRS7DJPsLMrVwA==
+
 xdg-basedir@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-2.0.0.tgz#edbc903cc385fc04523d966a335504b5504d1bd2"

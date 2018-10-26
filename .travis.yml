@@ -9,16 +9,16 @@ script:
   - yarn test
 before_deploy:
   - git tag "$(date +'%Y%m%d-%H%M%S')-$(git log --format=%h -1)"
-  - ls -la build
-  - tar -zcf sqlite.tar.gz build/metabase.sqlite
-  - tar -zcf postgres.tar.gz build/kodetre_postgres.json
+  - cd build
+  - tar -zcf sqlite.tar.gz metabase.sqlite
+  - tar -zcf postgres.tar.gz kodetre_postgres.json
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
   file_glob: true
   file:
-    - sqlite.tar.gz
-    - postgres.tar.gz
+    - build/sqlite.tar.gz
+    - build/postgres.tar.gz
   on:
     repo: Artsdatabanken/kverna
   skip_cleanup: true
