@@ -20,7 +20,7 @@ deploy:
     - build/sqlite.tar.gz
     - build/postgres.tar.gz
   on:
-    repo: Artsdatabanken/kverna
+    tags: true
   skip_cleanup: true
 notifications:
   slack:
