@@ -1,6 +1,6 @@
 ## [nin_program.json](nin_program.json)
 
-Natur i Norge kartleggingsprogrammer og prosjekter
+Natur i Norge kartleggingsprogrammer og prosjekter.
 
 ```json
   {
@@ -15,7 +15,7 @@ Natur i Norge kartleggingsprogrammer og prosjekter
 
 ### Datakilde
 
-* Denne filen er inntil videre originalen inntil Miljødirektoratet publiserer
+- Denne filen er inntil videre originalen inntil Miljødirektoratet publiserer
 
 ## [bbox.json](bbox.json)
 
@@ -32,7 +32,7 @@ Axis-aligned bounding boxes. Ytterpunkter til rektangel som omslutter de kartdat
 
 ### Datakilde
 
-* https://github.com/Artsdatabanken/grunnkart-dataflyt/...(TODO)
+- https://github.com/Artsdatabanken/grunnkart-dataflyt/...(TODO)
 
 ## [farger.json](farger.json)
 
@@ -47,8 +47,8 @@ Axis-aligned bounding boxes. Ytterpunkter til rektangel som omslutter de kartdat
 
 ### Datakilde
 
-* Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
-  * [farger.json](farger.json)
+- Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
+  - [farger.json](farger.json)
 
 ## [kodetre_nivå.json](kodetre_nivå.json)
 
@@ -69,8 +69,8 @@ Inneholder navn på nivåene i de ulike kodetrærne.
 
 ### Datakilde
 
-* Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
-  * [kodetre_nivå.json](kodetre_nivå.json)
+- Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
+  - [kodetre_nivå.json](kodetre_nivå.json)
 
 ## [na_grunntyper.json](na_grunntyper.json)
 
@@ -85,7 +85,7 @@ Kobling mellom grunntyper (eks. _NA_T7-6_) og kartleggingsenheter (eks. _NA_T7-E
 
 ### Datakilde
 
-* Artsdatabanken (TODO: direktelenke)
+- Artsdatabanken (TODO: direktelenke)
 
 ## [na_hovedtyper.json](na_hovedtyper.json)
 
@@ -111,7 +111,7 @@ Beskrivelse av NiN hovedtyper, hvilke LKMer er de bygget opp av og kunnskap.
 
 ### Datakilde
 
-* Artsdatabanken (TODO: direktelenke)
+- Artsdatabanken (TODO: direktelenke)
 
 ## [or_datasett.json](or_datasett.json)
 
@@ -127,8 +127,8 @@ Kobling mellom dataleverandør og kartlag. Flere leverandører kan peke på samm
 
 ### Datakilde
 
-* Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
-  * [kodetre_nivå.json](kodetre_nivå.json)
+- Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
+  - [kodetre_nivå.json](kodetre_nivå.json)
 
 ## [or_datasett.json](or_datasett.json)
 
@@ -152,8 +152,8 @@ Beskrivelse av dataleverandører.
 
 ### Datakilde
 
-* Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
-  * [or_datasett.json](or_datasett.json)
+- Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
+  - [or_datasett.json](or_datasett.json)
 
 # [statistikk.json](statistikk.json)
 
@@ -181,5 +181,5 @@ Eksempel: Summer antall ulike arter i hvert geografisk område (AO) og areal av 
 
 ### Datakilde
 
-* Denne filen er originalen - vedlikeholdes her
-  * [statistikk.json](statistikk.json)
+- Denne filen er originalen - vedlikeholdes her
+  - [statistikk.json](statistikk.json)
