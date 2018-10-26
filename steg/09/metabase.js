@@ -393,7 +393,7 @@ log.info("Mangler bbox for " + slettet_fordi_mangler_bbox.length + " koder")
 log.warn("Kobling til +" + ukjenteKoder.length + " ukjente koder")
 //log.debug("Kobling til ukjente koder: " + JSON.stringify(ukjenteKoder))
 tre = { katalog: tre }
-io.skrivBuildfil(__filename, tre)
-io.skrivBuildfil("mangler_data", slettet_fordi_mangler_bbox)
+io.skrivDatafil(__filename, tre)
+io.skrivDatafil("mangler_data", slettet_fordi_mangler_bbox)
 
 validateKeys(tre, "")
