@@ -1,294 +1,298 @@
-natursystemnivå,HTG,HT,Grunntypenummer,Basic type,S_kode,Name,Number of landscape areas,Total area (km²)
-LA,M,,,,LA-M,Marine,,
-LA,K,,,,LA-K,Coast,,
-LA,I,,,,LA-I,Inland,,
-LA,I,IA,,,LA-IA,Hills and mountains,,
-LA,I,ID,,,LA-ID,Valleys,,
-LA,I,IS,,,LA-IS,Inland irregular plains,,
-LA,k,KF,,,LA-KF,Fjords,,
-LA,k,KS,,,LA-KS,Coastal plains,,
-LA,k,KA,,,LA-KA,Coastal hills and mountains,,
-LA,I,IA,1,IA-1,LA-IA-1,Concave-shaped hills ,2338,17368.3
-LA,I,IA,2,IA-2,LA-IA-2,Concave-shaped hills with agriculture,10,63.9
-LA,I,IA,3,IA-3,LA-IA-3,Concave-shaped hills with settlements ,580,4577.5
-LA,I,IA,4,IA-4,LA-IA-4,Concave-shaped hills with settlements and agriculture,220,1499.3
-LA,I,IA,5,IA-5,LA-IA-5,Concave-shaped hills with village ,58,514.8
-LA,I,IA,6,IA-6,LA-IA-6,Concave-shaped hills with village and agriculture,26,211
-LA,I,IA,7,IA-7,LA-IA-7,Concave-shaped hills with city ,2,9
-LA,I,IA,8,IA-8,LA-IA-8,Concave-shaped low mountains ,539,4074.9
-LA,I,IA,9,IA-9,LA-IA-9,Concave-shaped low mountains with agriculture,1,12.2
-LA,I,IA,10,IA-10,LA-IA-10,Concave-shaped low mountains with settlements ,10,61
-LA,I,IA,11,IA-11,LA-IA-11,Concave-shaped mountains ,655,4933.6
-LA,I,IA,12,IA-12,LA-IA-12,Concave-shaped barren mountains ,486,3611.2
-LA,I,IA,13,IA-13,LA-IA-13,Concave-shaped barren mountains with glacier ,9,49.7
-LA,I,IA,14,IA-14,LA-IA-14,Undulating hills ,2577,20356.3
-LA,I,IA,15,IA-15,LA-IA-15,Undulating hills with agriculture,4,28.3
-LA,I,IA,16,IA-16,LA-IA-16,Undulating hills with settlements ,348,3102.6
-LA,I,IA,17,IA-17,LA-IA-17,Undulating hills with settlements and agriculture,118,849.3
-LA,I,IA,18,IA-18,LA-IA-18,Undulating hills with village ,67,583.8
-LA,I,IA,19,IA-19,LA-IA-19,Undulating hills with village and agriculture,17,121.9
-LA,I,IA,20,IA-20,LA-IA-20,Undulating hills with city ,1,8.8
-LA,I,IA,21,IA-21,LA-IA-21,Undulating low mountains ,591,4650.7
-LA,I,IA,22,IA-22,LA-IA-22,Undulating low mountains with settlements ,7,46.7
-LA,I,IA,23,IA-23,LA-IA-23,Undulating mountains ,923,7459.6
-LA,I,IA,24,IA-24,LA-IA-24,Undulating mountains with settlements ,1,6.6
-LA,I,IA,25,IA-25,LA-IA-25,Undulating barren mountains ,692,5897.5
-LA,I,IA,26,IA-26,LA-IA-26,Undulating barren mountains with glacier ,24,329.1
-LA,I,IA,27,IA-27,LA-IA-27,Medium steep hills ,2876,22451
-LA,I,IA,28,IA-28,LA-IA-28,Medium steep hills with agriculture,2,11.7
-LA,I,IA,29,IA-29,LA-IA-29,Medium steep hills with settlements ,232,2004.3
-LA,I,IA,30,IA-30,LA-IA-30,Medium steep hills with settlements and agriculture,31,223.1
-LA,I,IA,31,IA-31,LA-IA-31,Medium steep hills with village ,43,362.7
-LA,I,IA,32,IA-32,LA-IA-32,Medium steep hills with village and agriculture,3,29.8
-LA,I,IA,33,IA-33,LA-IA-33,Medium steep low mountains ,1296,10143.1
-LA,I,IA,34,IA-34,LA-IA-34,Medium steep low mountains and agriculture,1,7.3
-LA,I,IA,35,IA-35,LA-IA-35,Medium steep low mountains with settlements ,9,89.2
-LA,I,IA,36,IA-36,LA-IA-36,Medium steep mountains ,1344,10857.6
-LA,I,IA,37,IA-37,LA-IA-37,Medium steep mountains with settlements ,2,28.3
-LA,I,IA,38,IA-38,LA-IA-38,Medium steep barren mountains ,2109,17365.6
-LA,I,IA,39,IA-39,LA-IA-39,Medium steep barren mountains with glacier ,67,827.8
-LA,I,IA,40,IA-40,LA-IA-40,Steep hills ,301,2064.2
-LA,I,IA,41,IA-41,LA-IA-41,Steep hills with settlements ,7,58.9
-LA,I,IA,42,IA-42,LA-IA-42,Steep hills with settlements and agriculture,1,3.8
-LA,I,IA,43,IA-43,LA-IA-43,Steep hills with village ,1,17.4
-LA,I,IA,44,IA-44,LA-IA-44,Steep low mountains ,245,1793.5
-LA,I,IA,45,IA-45,LA-IA-45,Steep mountains ,173,1289.2
-LA,I,IA,46,IA-46,LA-IA-46,Steep barren mountains ,940,6929.9
-LA,I,IA,47,IA-47,LA-IA-47,Steep barren mountains with glacier ,54,438.1
-LA,I,IA,48,IA-48,LA-IA-48,Steep and rugged hills,149,1188.3
-LA,I,IA,49,IA-49,LA-IA-49,Steep and rugged hills with with settlements ,2,13.6
-LA,I,IA,50,IA-50,LA-IA-50,Steep and rugged hills with with village ,2,20.1
-LA,I,IA,51,IA-51,LA-IA-51,Steep and rugged low mountains,203,1586.9
-LA,I,IA,52,IA-52,LA-IA-52,Steep and rugged mountains,85,619.3
-LA,I,IA,53,IA-53,LA-IA-53,Steep and rugged barren mountains,1026,8347.5
-LA,I,IA,54,IA-54,LA-IA-54,Steep and rugged barren mountains with with glacier ,97,1088.4
-LA,I,ID,1,ID-1,LA-ID-1,Open valley ,904,7298.1
-LA,I,ID,2,ID-2,LA-ID-2,Open valley and agriculture,1,8.6
-LA,I,ID,3,ID-3,LA-ID-3,Open valley with settlements ,419,3841
-LA,I,ID,4,ID-4,LA-ID-4,Open valley with settlements and agriculture,122,955.5
-LA,I,ID,5,ID-5,LA-ID-5,Open valley with village ,40,400.7
-LA,I,ID,6,ID-6,LA-ID-6,Open valley with village and agriculture,12,131.4
-LA,I,ID,7,ID-7,LA-ID-7,Open lower mountain valley ,143,1202.6
-LA,I,ID,8,ID-8,LA-ID-8,Open lower mountain valley with settlements ,3,30.9
-LA,I,ID,9,ID-9,LA-ID-9,Open mountain valley ,82,720
-LA,I,ID,10,ID-10,LA-ID-10,Open barren mountain valley ,85,660
-LA,I,ID,11,ID-11,LA-ID-11,Open barren mountain valley with glacier ,1,4.4
-LA,I,ID,12,ID-12,LA-ID-12,Open valley with lake ,169,1524.7
-LA,I,ID,13,ID-13,LA-ID-13,Open valley with lake and agriculture,1,6.7
-LA,I,ID,14,ID-14,LA-ID-14,Open valley with lake with settlements ,99,961.1
-LA,I,ID,15,ID-15,LA-ID-15,Open valley with lake with settlements and agriculture,13,97.1
-LA,I,ID,16,ID-16,LA-ID-16,Open valley with lake with village ,4,37.7
-LA,I,ID,17,ID-17,LA-ID-17,Open lower mountain valley with lake ,34,292.5
-LA,I,ID,18,ID-18,LA-ID-18,Open lower mountain valley with lake with settlements ,1,18
-LA,I,ID,19,ID-19,LA-ID-19,Open mountain valley with lake ,29,244.2
-LA,I,ID,20,ID-20,LA-ID-20,Open barren mountain valley with lake ,27,232.2
-LA,I,ID,21,ID-21,LA-ID-21,Open valley with larger lake ,144,1484.5
-LA,I,ID,22,ID-22,LA-ID-22,Open valley with larger lake with settlements ,142,1470.2
-LA,I,ID,23,ID-23,LA-ID-23,Open valley with larger lake with settlements and agriculture,9,54.6
-LA,I,ID,24,ID-24,LA-ID-24,Open valley with larger lake with village ,13,182.5
-LA,I,ID,25,ID-25,LA-ID-25,Open valley with larger lake with village and agriculture,1,16.4
-LA,I,ID,26,ID-26,LA-ID-26,Open valley with larger lake with city ,2,32.7
-LA,I,ID,27,ID-27,LA-ID-27,Open lower mountain valley with larger lake ,41,422.4
-LA,I,ID,28,ID-28,LA-ID-28,Open lower mountain valley with larger lake with settlements ,4,61.9
-LA,I,ID,29,ID-29,LA-ID-29,Open lower mountain valley with larger lake with village ,1,5.8
-LA,I,ID,30,ID-30,LA-ID-30,Open mountain valley with larger lake ,21,217.5
-LA,I,ID,31,ID-31,LA-ID-31,Open barren mountain valley with larger lake ,18,299.3
-LA,I,ID,32,ID-32,LA-ID-32,Relatively open valley ,2267,18186.3
-LA,I,ID,33,ID-33,LA-ID-33,Relatively open valley and agriculture,3,22.8
-LA,I,ID,34,ID-34,LA-ID-34,Relatively open valley with settlements ,803,7393.1
-LA,I,ID,35,ID-35,LA-ID-35,Relatively open valley with settlements and agriculture,107,845.7
-LA,I,ID,36,ID-36,LA-ID-36,Relatively open valley with village ,56,563.9
-LA,I,ID,37,ID-37,LA-ID-37,Relatively open valley with village and agriculture,17,192.5
-LA,I,ID,38,ID-38,LA-ID-38,Relatively open lower mountain valley ,515,4211.5
-LA,I,ID,39,ID-39,LA-ID-39,Relatively open lower mountain valley with settlements ,6,66.7
-LA,I,ID,40,ID-40,LA-ID-40,Relatively open lower mountain valley with village ,2,8.5
-LA,I,ID,41,ID-41,LA-ID-41,Relatively open mountain valley ,437,3505.8
-LA,I,ID,42,ID-42,LA-ID-42,Relatively open mountain valley with settlements ,4,28.9
-LA,I,ID,43,ID-43,LA-ID-43,Relatively open barren mountain valley ,633,5311.3
-LA,I,ID,44,ID-44,LA-ID-44,Relatively open barren mountain valley with glacier ,24,201.9
-LA,I,ID,45,ID-45,LA-ID-45,Relatively open valley with lake ,273,2490.8
-LA,I,ID,46,ID-46,LA-ID-46,Relatively open valley with lake with settlements ,109,1151.5
-LA,I,ID,47,ID-47,LA-ID-47,Relatively open valley with lake with settlements and agriculture,16,112
-LA,I,ID,48,ID-48,LA-ID-48,Relatively open valley with lake with village ,8,97.6
-LA,I,ID,49,ID-49,LA-ID-49,Relatively open lower mountain valley with lake ,83,740.4
-LA,I,ID,50,ID-50,LA-ID-50,Relatively open lower mountain valley with lake with settlements ,1,6.7
-LA,I,ID,51,ID-51,LA-ID-51,Relatively open mountain valley with lake ,67,605
-LA,I,ID,52,ID-52,LA-ID-52,Relatively open barren mountain valley with lake ,116,1050.5
-LA,I,ID,53,ID-53,LA-ID-53,Relatively open barren mountain valley with lake with settlements ,1,41
-LA,I,ID,54,ID-54,LA-ID-54,Relatively open barren mountain valley with lake with glacier ,5,39.8
-LA,I,ID,55,ID-55,LA-ID-55,Relatively open valley with larger lake ,194,2009.6
-LA,I,ID,56,ID-56,LA-ID-56,Relatively open valley with larger lake with settlements ,128,1601.5
-LA,I,ID,57,ID-57,LA-ID-57,Relatively open valley with larger lake with settlements and agriculture,15,146
-LA,I,ID,58,ID-58,LA-ID-58,Relatively open valley with larger lake with village ,12,255.5
-LA,I,ID,59,ID-59,LA-ID-59,Relatively open lower mountain valley with larger lake ,39,387.8
-LA,I,ID,60,ID-60,LA-ID-60,Relatively open lower mountain valley with larger lake with settlements ,2,18.1
-LA,I,ID,61,ID-61,LA-ID-61,Relatively open mountain valley with larger lake ,29,329.6
-LA,I,ID,62,ID-62,LA-ID-62,Relatively open mountain valley with larger lake with settlements ,1,12
-LA,I,ID,63,ID-63,LA-ID-63,Relatively open barren mountain valley with larger lake ,34,333.1
-LA,I,ID,64,ID-64,LA-ID-64,Relatively open barren mountain valley with larger lake with glacier ,2,14.6
-LA,I,ID,65,ID-65,LA-ID-65,Steep sided valley ,714,5793.2
-LA,I,ID,66,ID-66,LA-ID-66,Steep sided valley and agriculture,2,11.7
-LA,I,ID,67,ID-67,LA-ID-67,Steep sided valley with settlements ,124,1153.3
-LA,I,ID,68,ID-68,LA-ID-68,Steep sided valley with settlements and agriculture,11,83.2
-LA,I,ID,69,ID-69,LA-ID-69,Steep sided valley with village ,3,26.6
-LA,I,ID,70,ID-70,LA-ID-70,Steep sided lower mountain valley ,267,2118
-LA,I,ID,71,ID-71,LA-ID-71,Steep sided lower mountain valley with settlements ,3,14.7
-LA,I,ID,72,ID-72,LA-ID-72,Steep sided mountain valley ,80,616.3
-LA,I,ID,73,ID-73,LA-ID-73,Steep sided barren mountain valley ,416,3244.1
-LA,I,ID,74,ID-74,LA-ID-74,Steep sided barren mountain valley with settlements ,1,14.8
-LA,I,ID,75,ID-75,LA-ID-75,Steep sided barren mountain valley with glacier ,42,357.9
-LA,I,ID,76,ID-76,LA-ID-76,Steep sided valley with lake ,60,576.3
-LA,I,ID,77,ID-77,LA-ID-77,Steep sided valley with lake with settlements ,13,105.8
-LA,I,ID,78,ID-78,LA-ID-78,Steep sided valley with lake with village ,1,6.5
-LA,I,ID,79,ID-79,LA-ID-79,Steep sided lower mountain valley with lake ,11,87.8
-LA,I,ID,80,ID-80,LA-ID-80,Steep sided lower mountain valley with lake with settlements ,1,14.2
-LA,I,ID,81,ID-81,LA-ID-81,Steep sided mountain valley with lake ,9,71.9
-LA,I,ID,82,ID-82,LA-ID-82,Steep sided barren mountain valley with lake ,29,245.5
-LA,I,ID,83,ID-83,LA-ID-83,Steep sided barren mountain valley with lake with glacier ,2,15.6
-LA,I,ID,84,ID-84,LA-ID-84,Steep sided valley with larger lake ,53,513.5
-LA,I,ID,85,ID-85,LA-ID-85,Steep sided valley with larger lake with settlements ,13,173.5
-LA,I,ID,86,ID-86,LA-ID-86,Steep sided valley with larger lake with settlements and agriculture,1,6.3
-LA,I,ID,87,ID-87,LA-ID-87,Steep sided lower mountain valley with larger lake ,5,47.1
-LA,I,ID,88,ID-88,LA-ID-88,Steep sided mountain valley with larger lake ,1,11.8
-LA,I,ID,89,ID-89,LA-ID-89,Steep sided barren mountain valley with larger lake ,11,98.3
-LA,I,ID,90,ID-90,LA-ID-90,Narrow and steep sided valley ,222,1633.8
-LA,I,ID,91,ID-91,LA-ID-91,Narrow and steep sided valley with settlements ,12,127.8
-LA,I,ID,92,ID-92,LA-ID-92,Narrow and steep sided valley with village ,1,10.2
-LA,I,ID,93,ID-93,LA-ID-93,Narrow and steep sided lower mountain valley ,110,707.7
-LA,I,ID,94,ID-94,LA-ID-94,Narrow and steep sided lower mountain valley with settlements ,1,2.5
-LA,I,ID,95,ID-95,LA-ID-95,Narrow and steep sided mountain valley ,23,138.4
-LA,I,ID,96,ID-96,LA-ID-96,Narrow and steep sided barren mountain valley ,148,1082.8
-LA,I,ID,97,ID-97,LA-ID-97,Narrow and steep sided barren mountain valley with glacier ,13,127
-LA,I,ID,98,ID-98,LA-ID-98,Narrow and steep sided valley with lake ,11,97.2
-LA,I,ID,99,ID-99,LA-ID-99,Narrow and steep sided valley with lake with settlements ,1,7
-LA,I,ID,100,ID-100,LA-ID-100,Narrow and steep sided barren mountain valley with lake ,3,31.8
-LA,I,ID,101,ID-101,LA-ID-101,Narrow and steep sided valley with larger lake ,11,140.7
-LA,I,ID,102,ID-102,LA-ID-102,Narrow and steep sided valley with larger lake with settlements ,1,13
-LA,I,ID,103,ID-103,LA-ID-103,Narrow and steep sided lower mountain valley with larger lake ,4,35.4
-LA,I,ID,104,ID-104,LA-ID-104,Narrow and steep sided barren mountain valley with larger lake ,1,12.6
-LA,I,IS,1,IS-1,LA-IS-1,Innland undulating lowland plain ,667,6010.6
-LA,I,IS,2,IS-2,LA-IS-2,Coast-near inland undulating lowland plain with agriculture,9,63.2
-LA,I,IS,3,IS-3,LA-IS-3,Innland undulating lowland plain with settlements ,132,1421.3
-LA,I,IS,4,IS-4,LA-IS-4,Coast-near inland undulating lowland plain with settlements and agriculture,215,2087.8
-LA,I,IS,5,IS-5,LA-IS-5,Innland undulating lowland plain with village ,24,271.6
-LA,I,IS,6,IS-6,LA-IS-6,Coast-near inland undulating lowland plain with village and agriculture,45,537.4
-LA,I,IS,7,IS-7,LA-IS-7,Innland undulating lowland plain with city ,1,21.6
-LA,I,IS,8,IS-8,LA-IS-8,Innland undulating lower mountain plain ,261,2399.4
-LA,I,IS,9,IS-9,LA-IS-9,Innland undulating lower mountain plain with settlements ,1,5.7
-LA,I,IS,10,IS-10,LA-IS-10,Innland undulating mountain plain ,337,2973.6
-LA,I,IS,11,IS-11,LA-IS-11,Innland undulating barren mountain plain ,155,1245.1
-LA,I,IS,12,IS-12,LA-IS-12,Innland undulating barren mountain plain with glacier ,13,93
-LA,I,IS,13,IS-13,LA-IS-13,Innland undulating lowland plain with wetlands ,1002,9757.7
-LA,I,IS,14,IS-14,LA-IS-14,Innland undulating lowland plain with wetlands with settlements ,33,321.1
-LA,I,IS,15,IS-15,LA-IS-15,"Coast-near inland undulating lowland plain with wetlands, settlements and agriculture",1,11.3
-LA,I,IS,16,IS-16,LA-IS-16,Innland undulating lowland plain with wetlands and village ,1,15.9
-LA,I,IS,17,IS-17,LA-IS-17,Innland undulating lower mountain plain with wetlands ,148,1520.7
-LA,I,IS,18,IS-18,LA-IS-18,Innland undulating mountain plain with wetlands ,79,671.6
-LA,I,IS,19,IS-19,LA-IS-19,Innland undulating barren mountain plain with wetlands ,13,91.2
-LA,I,IS,20,IS-20,LA-IS-20,Innland undulating lowland plain ,23,214.8
-LA,I,IS,21,IS-21,LA-IS-21,Innland undulating lowland plain with settlements ,16,139.3
-LA,I,IS,22,IS-22,LA-IS-22,Coast-near inland undulating lowland plain with settlements and agriculture,74,558.6
-LA,I,IS,23,IS-23,LA-IS-23,Innland undulating lowland plain with village ,13,93.2
-LA,I,IS,24,IS-24,LA-IS-24,Coast-near inland undulating lowland plain with village with agriculture,28,237.9
-LA,I,IS,25,IS-25,LA-IS-25,Innland undulating lowland plain with city ,2,17.6
-LA,I,IS,26,IS-26,LA-IS-26,Innland undulating lower mountain plain ,14,143.4
-LA,I,IS,27,IS-27,LA-IS-27,Innland undulating mountain plain ,13,103
-LA,I,IS,28,IS-28,LA-IS-28,Innland undulating barren mountain plain ,23,176.9
-LA,I,IS,29,IS-29,LA-IS-29,Innland undulating barren mountain plain with glacier ,1,8.3
-LA,I,IS,30,IS-30,LA-IS-30,Innland undulating lowland plain with wetlands ,41,343.8
-LA,I,IS,31,IS-31,LA-IS-31,Coast-near inland undulating lowland plain with wetlands and agriculture,1,6.6
-LA,I,IS,32,IS-32,LA-IS-32,Innland undulating lowland plain with wetlands and settlements ,6,42.1
-LA,I,IS,33,IS-33,LA-IS-33,"Coast-near inland undulating lowland plain with wetlands, settlements and agriculture",2,18.3
-LA,I,IS,34,IS-34,LA-IS-34,Innland undulating lower mountain plain with wetlands ,5,51.3
-LA,I,IS,35,IS-35,LA-IS-35,Innland undulating mountain plain with wetlands ,12,116.2
-LA,I,IS,36,IS-36,LA-IS-36,Innland undulating barren mountain plain with wetlands ,2,14.2
-LA,K,KF,1,KF-1,LA-KF-1,Open fjord      ,175,1649.1
-LA,K,KF,2,KF-2,LA-KF-2,Open fjord with settlements  ,219,2065.5
-LA,K,KF,3,KF-3,LA-KF-3,Open fjord with settlements and agriculture,5,48.6
-LA,K,KF,4,KF-4,LA-KF-4,Open fjord with village  ,48,453
-LA,K,KF,5,KF-5,LA-KF-5,Open fjord with city  ,1,4.3
-LA,K,KF,6,KF-6,LA-KF-6,Open fjord with wetlands    ,1,10.3
-LA,K,KF,7,KF-7,LA-KF-7,Open fjord with wetlands and settlements  ,4,26.2
-LA,K,KF,8,KF-8,LA-KF-8,Relatively open fjord      ,1003,9133.9
-LA,K,KF,9,KF-9,LA-KF-9,Relatively open fjord with settlements  ,1059,9656.4
-LA,K,KF,10,KF-10,LA-KF-10,Relatively open fjord with settlements and agriculture,17,101.8
-LA,K,KF,11,KF-11,LA-KF-11,Relatively open fjord with village  ,117,1182.9
-LA,K,KF,12,KF-12,LA-KF-12,Relatively open fjord with village and agriculture,9,88.3
-LA,K,KF,13,KF-13,LA-KF-13,Relatively open fjord with city  ,4,43.5
-LA,K,KF,14,KF-14,LA-KF-14,Relatively open fjord with wetlands    ,12,133.9
-LA,K,KF,15,KF-15,LA-KF-15,Relatively open fjord with wetlands and settlements  ,8,91.2
-LA,K,KF,16,KF-16,LA-KF-16,Relatively open fjord with wetlands and village  ,1,12.7
-LA,K,KF,17,KF-17,LA-KF-17,Steep sided fjord      ,587,4933.1
-LA,K,KF,18,KF-18,LA-KF-18,Steep sided fjord with settlements  ,267,2353.4
-LA,K,KF,19,KF-19,LA-KF-19,Steep sided fjord with settlements and agriculture,2,16
-LA,K,KF,20,KF-20,LA-KF-20,Steep sided fjord with village  ,27,301.4
-LA,K,KF,21,KF-21,LA-KF-21,Steep sided fjord with village and agriculture,1,8.4
-LA,K,KF,22,KF-22,LA-KF-22,Steep sided fjord with wetlands    ,2,11.4
-LA,K,KF,23,KF-23,LA-KF-23,Steep sided fjord with wetlands and settlements  ,1,12.4
-LA,K,KF,24,KF-24,LA-KF-24,Narrow and steep sided fjord      ,126,985.7
-LA,K,KF,25,KF-25,LA-KF-25,Narrow and steep sided fjord with settlements  ,16,143.1
-LA,K,KF,26,KF-26,LA-KF-26,Narrow and steep sided fjord with village  ,1,5.5
-LA,K,KS,1,KS-1,LA-KS-1,Protected inner coastal plain  ,69,640.3
-LA,K,KS,2,KS-2,LA-KS-2,Protected inner coastal plain with agriculture,22,169
-LA,K,KS,3,KS-3,LA-KS-3,Protected inner coastal plain with village  ,19,144.6
-LA,K,KS,4,KS-4,LA-KS-4,Protected inner coastal plain with village and agriculture,6,47.3
-LA,K,KS,5,KS-5,LA-KS-5,Protected inner coastal plain with city  ,2,9
-LA,K,KS,6,KS-6,LA-KS-6,Protected inner coastal plain with wetland  ,61,545
-LA,K,KS,7,KS-7,LA-KS-7,Protected inner coastal plain with wetland and agriculture,2,15.8
-LA,K,KS,8,KS-8,LA-KS-8,Protected inner coastal plain with wetland with village  ,1,4.2
-LA,K,KS,9,KS-9,LA-KS-9,Protected inner undulating coastal plain  ,674,5139.9
-LA,K,KS,10,KS-10,LA-KS-10,Protected inner undulating coastal plain with agriculture,58,450
-LA,K,KS,11,KS-11,LA-KS-11,Protected inner undulating coastal plain with village  ,176,1418.6
-LA,K,KS,12,KS-12,LA-KS-12,Protected inner undulating coastal plain with village and agriculture,21,164.6
-LA,K,KS,13,KS-13,LA-KS-13,Protected inner undulating coastal plain with city  ,10,96.7
-LA,K,KS,14,KS-14,LA-KS-14,Protected inner undulating coastal plain with city and agriculture,1,6.6
-LA,K,KS,15,KS-15,LA-KS-15,Protected inner undulating coastal plain with wetland  ,58,443.7
-LA,K,KS,16,KS-16,LA-KS-16,Protected inner undulating coastal plain with wetland and agriculture,1,8.9
-LA,K,KS,17,KS-17,LA-KS-17,Protected inner rugged coastal plain  ,48,443.3
-LA,K,KS,18,KS-18,LA-KS-18,Protected inner rugged coastal plain with agriculture,1,4.4
-LA,K,KS,19,KS-19,LA-KS-19,Protected inner rugged coastal plain with village  ,3,32.9
-LA,K,KS,20,KS-20,LA-KS-20,Protected inner rugged coastal plain with wetland  ,2,25.2
-LA,K,KS,21,KS-21,LA-KS-21,Moderately wave-exposed  coastal plain  ,124,1064.3
-LA,K,KS,22,KS-22,LA-KS-22,Moderately wave-exposed  coastal plain with agriculture,16,142.4
-LA,K,KS,23,KS-23,LA-KS-23,Moderately wave-exposed  coastal plain with village  ,15,136.2
-LA,K,KS,24,KS-24,LA-KS-24,Moderately wave-exposed  coastal plain with village and agriculture,8,71.1
-LA,K,KS,25,KS-25,LA-KS-25,Moderately wave-exposed  coastal plain with city  ,1,8.4
-LA,K,KS,26,KS-26,LA-KS-26,Moderately wave-exposed  coastal plain with wetland  ,44,451.9
-LA,K,KS,27,KS-27,LA-KS-27,Moderately wave-exposed  undulating coastal plain  ,634,4869.6
-LA,K,KS,28,KS-28,LA-KS-28,Moderately wave-exposed  undulating coastal plain with agriculture,19,127.5
-LA,K,KS,29,KS-29,LA-KS-29,Moderately wave-exposed  undulating coastal plain with village  ,76,596.4
-LA,K,KS,30,KS-30,LA-KS-30,Moderately wave-exposed  undulating coastal plain with village and agriculture,3,25.2
-LA,K,KS,31,KS-31,LA-KS-31,Moderately wave-exposed  undulating coastal plain with city  ,7,61.6
-LA,K,KS,32,KS-32,LA-KS-32,Moderately wave-exposed  undulating coastal plain with wetland  ,21,172.4
-LA,K,KS,33,KS-33,LA-KS-33,Moderately wave-exposed  undulating coastal plain with wetland with village  ,1,10.1
-LA,K,KS,34,KS-34,LA-KS-34,Moderately wave-exposed  rugged coastal plain  ,52,466.6
-LA,K,KS,35,KS-35,LA-KS-35,Moderately wave-exposed  rugged coastal plain with agriculture,2,28
-LA,K,KS,36,KS-36,LA-KS-36,Moderately wave-exposed  rugged coastal plain with village  ,4,42.9
-LA,K,KS,37,KS-37,LA-KS-37,Moderately wave-exposed  rugged coastal plain with wetland and agriculture,1,6.4
-LA,K,KS,38,KS-38,LA-KS-38,Very wave-exposed outer coastal plain  ,218,1962.5
-LA,K,KS,39,KS-39,LA-KS-39,Very wave-exposed outer coastal plain with agriculture,23,187.7
-LA,K,KS,40,KS-40,LA-KS-40,Very wave-exposed outer coastal plain with village  ,6,48.5
-LA,K,KS,41,KS-41,LA-KS-41,Very wave-exposed outer coastal plain with village and agriculture,3,31.4
-LA,K,KS,42,KS-42,LA-KS-42,Very wave-exposed outer coastal plain with wetland  ,22,212.5
-LA,K,KS,43,KS-43,LA-KS-43,Very wave-exposed outer coastal plain with wetland with village  ,1,22
-LA,K,KS,44,KS-44,LA-KS-44,Very wave-exposed outer undulating coastal plain  ,844,6487.3
-LA,K,KS,45,KS-45,LA-KS-45,Very wave-exposed outer undulating coastal plain with agriculture,6,50
-LA,K,KS,46,KS-46,LA-KS-46,Very wave-exposed outer undulating coastal plain with village  ,44,394.4
-LA,K,KS,47,KS-47,LA-KS-47,Very wave-exposed outer undulating coastal plain with village and agriculture,2,13.8
-LA,K,KS,48,KS-48,LA-KS-48,Very wave-exposed outer undulating coastal plain with city  ,1,11.1
-LA,K,KS,49,KS-49,LA-KS-49,Very wave-exposed outer undulating coastal plain with wetland  ,13,100.1
-LA,K,KS,50,KS-50,LA-KS-50,Very wave-exposed outer rugged coastal plain  ,58,541.7
-LA,K,KS,51,KS-51,LA-KS-51,Very wave-exposed outer rugged coastal plain with village  ,6,68.6
-LA,K,KS,52,KS-52,LA-KS-52,Extremely wave-exposed outer coastal plain  ,198,1775
-LA,K,KS,53,KS-53,LA-KS-53,Extremely wave-exposed outer coastal plain with agriculture,4,33.5
-LA,K,KS,54,KS-54,LA-KS-54,Extremely wave-exposed outer coastal plain with village  ,5,37
-LA,K,KS,55,KS-55,LA-KS-55,Extremely wave-exposed outer coastal plain with wetland  ,5,36.2
-LA,K,KS,56,KS-56,LA-KS-56,Extremely wave-exposed outer coastal plain with wetland with village  ,1,5.7
-LA,K,KS,57,KS-57,LA-KS-57,Extremely wave-exposed outer undulating coastal plain  ,720,5810.3
-LA,K,KS,58,KS-58,LA-KS-58,Extremely wave-exposed outer undulating coastal plain with village  ,1,10.1
-LA,K,KS,59,KS-59,LA-KS-59,Extremely wave-exposed outer undulating coastal plain with village and agriculture,1,5.5
-LA,K,KS,60,KS-60,LA-KS-60,Extremely wave-exposed outer undulating coastal plain with city  ,1,9.8
-LA,K,KS,61,KS-61,LA-KS-61,Extremely wave-exposed outer undulating coastal plain with wetland  ,2,11.5
-LA,K,KS,62,KS-62,LA-KS-62,Extremely wave-exposed outer rugged coastal plain  ,27,282
-LA,K,KS,63,KS-63,LA-KS-63,Extremely wave-exposed outer rugged coastal plain with wetland,1,5.3
-LA,K,KA,1,KA-1,LA-KA-1,Coastal hills- and mountains,74,273.6
+Nivå	HTG	HT	GT_nr	Basic type	S_kode	Name		KLG_RE-IA	KLG_RE-ID-KF	KLG_RE-KS	KLG_KA	KLG_IYK	KLG_IP	KLG_BP	KLG_VP	KLG_VE	KLG_AI	KLG_AI-KS	KLG_JP	Pred_Lnr	Naturlandskap
+LA	I	IA			LA-IA	Innlandsås- og fjellandskap	Hills and mountains	KLG_RE-IA						KLG_BP		KLG_VE	KLG_AI		KLG_JP	0	
+LA	I	IA	1	IA-1	LA-IA-1	Dalformet åslandskap 	Concave-shaped hills 	KLG_RE-IA-1						KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	1	1
+LA	I	IA	10	IA-10	LA-IA-10	Dalformet fjellandskap ved skoggrensen med bebyggelse/infrastruktur	Concave-shaped low mountains with settlements 	KLG_RE-IA-1						KLG_BP-1		KLG_VE-2	KLG_AI-2		KLG_JP-1	10	0
+LA	I	IA	11	IA-11	LA-IA-11	Dalformet fjellandskap med vegetasjonsdekke	Concave-shaped mountains 	KLG_RE-IA-1						KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	11	1
+LA	I	IA	12	IA-12	LA-IA-12	Dalformet fjellandskap med bart fjell/blokkmark 	Concave-shaped barren mountains 	KLG_RE-IA-1						KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	12	1
+LA	I	IA	13	IA-13	LA-IA-13	Dalformet fjellandskap med isbre 	Concave-shaped barren mountains with glacier 	KLG_RE-IA-1						KLG_BP-2		KLG_VE-4	KLG_AI-1		KLG_JP-1	13	1
+LA	I	IA	14	IA-14	LA-IA-14	Småkupert åslandskap 	Undulating hills 	KLG_RE-IA-2						KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	14	1
+LA	I	IA	15	IA-15	LA-IA-15	Småkupert åslandskap med høyt jordbrukspreg	Undulating hills with agriculture	KLG_RE-IA-2						KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-2	15	1
+LA	I	IA	16	IA-16	LA-IA-16	Småkupert åslandskap med bebyggelse/infrastruktur	Undulating hills with settlements 	KLG_RE-IA-2						KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	16	0
+LA	I	IA	17	IA-17	LA-IA-17	Småkupert åslandskap med bebyggelse/infrastruktur og høyt jordbrukspreg	Undulating hills with settlements and agriculture	KLG_RE-IA-2						KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-2	17	0
+LA	I	IA	18	IA-18	LA-IA-18	Småkupert åslandskap med tettsted 	Undulating hills with village 	KLG_RE-IA-2						KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-1	18	0
+LA	I	IA	19	IA-19	LA-IA-19	Småkupert åslandskap med tettsted og høyt jordbrukspreg	Undulating hills with village and agriculture	KLG_RE-IA-2						KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-2	19	0
+LA	I	IA	2	IA-2	LA-IA-2	Dalformet åslandskap med høyt jordbrukspreg	Concave-shaped hills with agriculture	KLG_RE-IA-1						KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-2	2	1
+LA	I	IA	20	IA-20	LA-IA-20	Småkupert åslandskap med større by 	Undulating hills with city 	KLG_RE-IA-2						KLG_BP-1		KLG_VE-1	KLG_AI-4		KLG_JP-1	20	0
+LA	I	IA	21	IA-21	LA-IA-21	Småkupert fjellandskap ved skoggrensen 	Undulating low mountains 	KLG_RE-IA-2						KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	21	1
+LA	I	IA	22	IA-22	LA-IA-22	Småkupert fjellandskap ved skoggrensen med bebyggelse/infrastruktur	Undulating low mountains with settlements 	KLG_RE-IA-2						KLG_BP-1		KLG_VE-2	KLG_AI-2		KLG_JP-1	22	0
+LA	I	IA	23	IA-23	LA-IA-23	Småkupert fjellandskap med vegetasjonsdekke	Undulating mountains 	KLG_RE-IA-2						KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	23	1
+LA	I	IA	24	IA-24	LA-IA-24	Småkupert fjellandskap med vegetasjonsdekke og med bebyggelse/infrastruktur	Undulating mountains with settlements 	KLG_RE-IA-2						KLG_BP-1		KLG_VE-3	KLG_AI-2		KLG_JP-1	24	0
+LA	I	IA	25	IA-25	LA-IA-25	Småkupert fjellandskap med bart fjell/blokkmark 	Undulating barren mountains 	KLG_RE-IA-2						KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	25	1
+LA	I	IA	26	IA-26	LA-IA-26	Småkupert fjellandskap med isbre 	Undulating barren mountains with glacier 	KLG_RE-IA-2						KLG_BP-2		KLG_VE-4	KLG_AI-1		KLG_JP-1	26	1
+LA	I	IA	27	IA-27	LA-IA-27	Middels kupert åslandskap 	Medium steep hills 	KLG_RE-IA-3						KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	27	1
+LA	I	IA	28	IA-28	LA-IA-28	Middels kupert åslandskap med høyt jordbrukspreg	Medium steep hills with agriculture	KLG_RE-IA-3						KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-2	28	1
+LA	I	IA	29	IA-29	LA-IA-29	Middels kupert åslandskap med bebyggelse/infrastruktur	Medium steep hills with settlements 	KLG_RE-IA-3						KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	29	0
+LA	I	IA	3	IA-3	LA-IA-3	Dalformet åslandskap med bebyggelse/infrastruktur	Concave-shaped hills with settlements 	KLG_RE-IA-1						KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	3	0
+LA	I	IA	30	IA-30	LA-IA-30	Middels kupert åslandskap med bebyggelse/infrastrukturog høyt jordbrukspreg	Medium steep hills with settlements and agriculture	KLG_RE-IA-3						KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-2	30	0
+LA	I	IA	31	IA-31	LA-IA-31	Middels kupert åslandskap med tettsted 	Medium steep hills with village 	KLG_RE-IA-3						KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-1	31	0
+LA	I	IA	32	IA-32	LA-IA-32	Middels kupert åslandskap med tettsted og høyt jordbrukspreg	Medium steep hills with village and agriculture	KLG_RE-IA-3						KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-2	32	0
+LA	I	IA	33	IA-33	LA-IA-33	Middels kupert fjellandskap ved skoggrensen 	Medium steep low mountains 	KLG_RE-IA-3						KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	33	1
+LA	I	IA	34	IA-34	LA-IA-34	Middels kupert fjellandskap ved skoggrensen med høyt jordbrukspreg	Medium steep low mountains and agriculture	KLG_RE-IA-3						KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-2	34	1
+LA	I	IA	35	IA-35	LA-IA-35	Middels kupert fjellandskap ved skoggrensen med bebyggelse/infrastruktur	Medium steep low mountains with settlements 	KLG_RE-IA-3						KLG_BP-1		KLG_VE-2	KLG_AI-2		KLG_JP-1	35	0
+LA	I	IA	36	IA-36	LA-IA-36	Middels kupert fjellandskap med vegetasjonsdekke 	Medium steep mountains 	KLG_RE-IA-3						KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	36	1
+LA	I	IA	37	IA-37	LA-IA-37	Middels kupert fjellandskap med vegetasjonsdekke med bebyggelse/infrastruktur	Medium steep mountains with settlements 	KLG_RE-IA-3						KLG_BP-1		KLG_VE-3	KLG_AI-2		KLG_JP-1	37	0
+LA	I	IA	38	IA-38	LA-IA-38	Middels kupert fjellandskap med bart fjell/blokkmark 	Medium steep barren mountains 	KLG_RE-IA-3						KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	38	1
+LA	I	IA	39	IA-39	LA-IA-39	Middels kupert fjellandskap med isbre 	Medium steep barren mountains with glacier 	KLG_RE-IA-3						KLG_BP-2		KLG_VE-4	KLG_AI-1		KLG_JP-1	39	1
+LA	I	IA	4	IA-4	LA-IA-4	Dalformet åslandskap med bebyggelse/infrastruktur og høyt jordbrukspreg	Concave-shaped hills with settlements and agriculture	KLG_RE-IA-1						KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-2	4	0
+LA	I	IA	40	IA-40	LA-IA-40	Kupert åslandskap 	Steep hills 	KLG_RE-IA-4						KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	40	1
+LA	I	IA	41	IA-41	LA-IA-41	Kupert åslandskap med bebyggelse/infrastruktur	Steep hills with settlements 	KLG_RE-IA-4						KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	41	0
+LA	I	IA	42	IA-42	LA-IA-42	Kupert åslandskap med bebyggelse/infrastruktur og høyt jordbrukspreg	Steep hills with settlements and agriculture	KLG_RE-IA-4						KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-2	42	0
+LA	I	IA	43	IA-43	LA-IA-43	Kupert åslandskap med tettsted 	Steep hills with village 	KLG_RE-IA-4						KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-1	43	0
+LA	I	IA	44	IA-44	LA-IA-44	Kupert fjellandskap ved skoggrensen 	Steep low mountains 	KLG_RE-IA-4						KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	44	1
+LA	I	IA	45	IA-45	LA-IA-45	Kupert fjellandskap med vegetasjonsdekke	Steep mountains 	KLG_RE-IA-4						KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	45	1
+LA	I	IA	46	IA-46	LA-IA-46	Kupert fjellandskap med bart fjell/blokkmark 	Steep barren mountains 	KLG_RE-IA-4						KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	46	1
+LA	I	IA	47	IA-47	LA-IA-47	Kupert fjellandskap med isbre 	Steep barren mountains with glacier 	KLG_RE-IA-4						KLG_BP-2		KLG_VE-4	KLG_AI-1		KLG_JP-1	47	1
+LA	I	IA	48	IA-48	LA-IA-48	Åslandskap og lave fjell med tindepreg	Steep and rugged hills	KLG_RE-IA-5						KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	48	1
+LA	I	IA	49	IA-49	LA-IA-49	Åslandskap og lave fjell med tindepreg med bebyggelse/infrastruktur	Steep and rugged hills with settlements 	KLG_RE-IA-5						KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	49	0
+LA	I	IA	5	IA-5	LA-IA-5	Dalformet åslandskap med tettsted 	Concave-shaped hills with village 	KLG_RE-IA-1						KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-1	5	0
+LA	I	IA	50	IA-50	LA-IA-50	Åslandskap og lave fjell med tindepreg med tettsted 	Steep and rugged hills with village 	KLG_RE-IA-5						KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-1	50	0
+LA	I	IA	51	IA-51	LA-IA-51	Lave fjell med tindepreg	Steep and rugged low mountains	KLG_RE-IA-5						KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	51	1
+LA	I	IA	52	IA-52	LA-IA-52	Tindelandskap med vegetasjonsdekke	Steep and rugged mountains	KLG_RE-IA-5						KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	52	1
+LA	I	IA	53	IA-53	LA-IA-53	Tindelandskap med bart fjell	Steep and rugged barren mountains	KLG_RE-IA-5						KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	53	1
+LA	I	IA	54	IA-54	LA-IA-54	Tindelandskap med isbre 	Steep and rugged barren mountains with glacier 	KLG_RE-IA-5						KLG_BP-2		KLG_VE-4	KLG_AI-1		KLG_JP-1	54	1
+LA	I	IA	6	IA-6	LA-IA-6	Dalformet åslandskap med tettsted og høyt jordbrukspreg	Concave-shaped hills with village and agriculture	KLG_RE-IA-1						KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-2	6	0
+LA	I	IA	7	IA-7	LA-IA-7	Dalformet åslandskap med større by 	Concave-shaped hills with city 	KLG_RE-IA-1						KLG_BP-1		KLG_VE-1	KLG_AI-4		KLG_JP-1	7	0
+LA	I	IA	8	IA-8	LA-IA-8	Dalformet fjellandskap ved skoggrensen	Concave-shaped low mountains 	KLG_RE-IA-1						KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	8	1
+LA	I	IA	9	IA-9	LA-IA-9	Dalformet fjellandskap ved skoggrensen med høyt jordbrukspreg	Concave-shaped low mountains with agriculture	KLG_RE-IA-1						KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-2	9	1
+LA	I	ID			LA-ID	Innlands-dallandskap	Valleys		KLG_RE-ID-KF				KLG_IP	KLG_BP		KLG_VE	KLG_AI		KLG_JP	0	
+LA	I	ID	1	ID-1	LA-ID-1	Åpent dallandskap i lavlandet	Open valley 		KLG_RE-ID-KF-1				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	55	1
+LA	I	ID	10	ID-10	LA-ID-10	Åpent dallandskap i fjellet med bart fjell/blokkmark 	Open barren mountain valley 		KLG_RE-ID-KF-1				KLG_IP-1	KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	64	1
+LA	I	ID	100	ID-100	LA-ID-100	Dypt nedskåret dallandskap med bart fjell/blokkmark og større innsjø 	Narrow and steep sided barren mountain valley with lake 		KLG_RE-ID-KF-4				KLG_IP-2	KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	154	1
+LA	I	ID	101	ID-101	LA-ID-101	Dypt nedskåret dallandskap i lavlandet med innlandsfjord 	Narrow and steep sided valley with larger lake 		KLG_RE-ID-KF-4				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	155	1
+LA	I	ID	102	ID-102	LA-ID-102	Dypt nedskåret dallandskap i lavlandet med innlandsfjord og bebyggelse/infrastruktur	Narrow and steep sided valley with larger lake with settlements 		KLG_RE-ID-KF-4				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	156	0
+LA	I	ID	103	ID-103	LA-ID-103	Dypt nedskåret dallandskap ved skoggrensen med innlandsfjord 	Narrow and steep sided lower mountain valley with larger lake 		KLG_RE-ID-KF-4				KLG_IP-3	KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	157	1
+LA	I	ID	104	ID-104	LA-ID-104	Dypt nedskåret dallandskap med bart fjell/blokkmark med innlandsfjord 	Narrow and steep sided barren mountain valley with larger lake 		KLG_RE-ID-KF-4				KLG_IP-3	KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	158	1
+LA	I	ID	11	ID-11	LA-ID-11	Åpent dallandskap med isbre 	Open barren mountain valley with glacier 		KLG_RE-ID-KF-1				KLG_IP-1	KLG_BP-2		KLG_VE-4	KLG_AI-1		KLG_JP-1	65	1
+LA	I	ID	12	ID-12	LA-ID-12	Åpent dallandskap i lavlandet med større innsjø 	Open valley with lake 		KLG_RE-ID-KF-1				KLG_IP-2	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	66	1
+LA	I	ID	13	ID-13	LA-ID-13	Åpent dallandskap i lavlandet med større innsjø og høyt jordbrukspreg	Open valley with lake and agriculture		KLG_RE-ID-KF-1				KLG_IP-2	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-2	67	1
+LA	I	ID	14	ID-14	LA-ID-14	Åpent dallandskap i lavlandet med større innsjø og med bebyggelse/infrastruktur	Open valley with lake with settlements 		KLG_RE-ID-KF-1				KLG_IP-2	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	68	0
+LA	I	ID	15	ID-15	LA-ID-15	Åpent dallandskap i lavlandet med større innsjø med bebyggelse/infrastrukturog høyt jordbrukspreg	Open valley with lake with settlements and agriculture		KLG_RE-ID-KF-1				KLG_IP-2	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-2	69	0
+LA	I	ID	16	ID-16	LA-ID-16	Åpent dallandskap i lavlandet med større innsjø og tettsted 	Open valley with lake with village 		KLG_RE-ID-KF-1				KLG_IP-2	KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-1	70	0
+LA	I	ID	17	ID-17	LA-ID-17	Åpent dallandskap ved skoggrensen med større innsjø 	Open lower mountain valley with lake 		KLG_RE-ID-KF-1				KLG_IP-2	KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	71	1
+LA	I	ID	18	ID-18	LA-ID-18	Åpent dallandskap ved skoggrensen med større innsjø og bebyggelse/infrastruktur	Open lower mountain valley with lake with settlements 		KLG_RE-ID-KF-1				KLG_IP-2	KLG_BP-1		KLG_VE-2	KLG_AI-2		KLG_JP-1	72	0
+LA	I	ID	19	ID-19	LA-ID-19	Åpent dallandskap i  med vegetasjonsdekke i fjellet med større innsjø 	Open mountain valley with lake 		KLG_RE-ID-KF-1				KLG_IP-2	KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	73	1
+LA	I	ID	2	ID-2	LA-ID-2	Åpent dallandskap i lavlandet med høyt jordbrukspreg	Open valley and agriculture		KLG_RE-ID-KF-1				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-2	56	1
+LA	I	ID	20	ID-20	LA-ID-20	Åpent dallandskap med bart fjell/blokkmark og med større innsjø 	Open barren mountain valley with lake 		KLG_RE-ID-KF-1				KLG_IP-2	KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	74	1
+LA	I	ID	21	ID-21	LA-ID-21	Åpent dallandskap i lavlandet med innlandsfjord 	Open valley with larger lake 		KLG_RE-ID-KF-1				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	75	1
+LA	I	ID	22	ID-22	LA-ID-22	Åpent dallandskap i lavlandet med innlandsfjord og bebyggelse/infrastruktur	Open valley with larger lake with settlements 		KLG_RE-ID-KF-1				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	76	0
+LA	I	ID	23	ID-23	LA-ID-23	Åpent dallandskap i lavlandet med innlandsfjord og bebyggelse/infrastrukturog høyt jordbrukspreg	Open valley with larger lake with settlements and agriculture		KLG_RE-ID-KF-1				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-2	77	0
+LA	I	ID	24	ID-24	LA-ID-24	Åpent dallandskap i lavlandet med innlandsfjord og tettsted 	Open valley with larger lake with village 		KLG_RE-ID-KF-1				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-1	78	0
+LA	I	ID	25	ID-25	LA-ID-25	Åpent dallandskap i lavlandet med innlandsfjord, tettsted og høyt jordbrukspreg	Open valley with larger lake with village and agriculture		KLG_RE-ID-KF-1				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-2	79	0
+LA	I	ID	26	ID-26	LA-ID-26	Åpent dallandskap i lavlandet med innlandsfjord og større by 	Open valley with larger lake with city 		KLG_RE-ID-KF-1				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-4		KLG_JP-1	80	0
+LA	I	ID	27	ID-27	LA-ID-27	Åpent dallandskap ved skoggrensen med innlandsfjord 	Open lower mountain valley with larger lake 		KLG_RE-ID-KF-1				KLG_IP-3	KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	81	1
+LA	I	ID	28	ID-28	LA-ID-28	Åpent dallandskap ved skoggrensen med innlandsfjord og bebyggelse/infrastruktur	Open lower mountain valley with larger lake with settlements 		KLG_RE-ID-KF-1				KLG_IP-3	KLG_BP-1		KLG_VE-2	KLG_AI-2		KLG_JP-1	82	0
+LA	I	ID	29	ID-29	LA-ID-29	Åpent dallandskap ved skoggrensen med innlandsfjord og tettsted 	Open lower mountain valley with larger lake with village 		KLG_RE-ID-KF-1				KLG_IP-3	KLG_BP-1		KLG_VE-2	KLG_AI-3		KLG_JP-1	83	0
+LA	I	ID	3	ID-3	LA-ID-3	Åpent dallandskap i lavlandet med bebyggelse/infrastruktur	Open valley with settlements 		KLG_RE-ID-KF-1				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	57	0
+LA	I	ID	30	ID-30	LA-ID-30	Åpent dallandskap i fjellet med vegetasjonsdekke og innlandsfjord 	Open mountain valley with larger lake 		KLG_RE-ID-KF-1				KLG_IP-3	KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	84	1
+LA	I	ID	31	ID-31	LA-ID-31	Åpent dallandskap med bart fjell/blokkmark og innlandsfjord 	Open barren mountain valley with larger lake 		KLG_RE-ID-KF-1				KLG_IP-3	KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	85	1
+LA	I	ID	32	ID-32	LA-ID-32	Relativt åpent dallandskap i lavlandet	Relatively open valley 		KLG_RE-ID-KF-2				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	86	1
+LA	I	ID	33	ID-33	LA-ID-33	Relativt åpent dallandskap i lavlandet med høyt jordbrukspreg	Relatively open valley and agriculture		KLG_RE-ID-KF-2				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-2	87	1
+LA	I	ID	34	ID-34	LA-ID-34	Relativt åpent dallandskap i lavlandet med bebyggelse/infrastruktur	Relatively open valley with settlements 		KLG_RE-ID-KF-2				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	88	0
+LA	I	ID	35	ID-35	LA-ID-35	Relativt åpent dallandskap i lavlandet med bebyggelse/infrastruktur og høyt jordbrukspreg	Relatively open valley with settlements and agriculture		KLG_RE-ID-KF-2				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-2	89	0
+LA	I	ID	36	ID-36	LA-ID-36	Relativt åpent dallandskap i lavlandet med tettsted 	Relatively open valley with village 		KLG_RE-ID-KF-2				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-1	90	0
+LA	I	ID	37	ID-37	LA-ID-37	Relativt åpent dallandskap i lavlandet med tettsted og høyt jordbrukspreg	Relatively open valley with village and agriculture		KLG_RE-ID-KF-2				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-2	91	0
+LA	I	ID	38	ID-38	LA-ID-38	Relativt åpent dallandskap ved skoggrensen 	Relatively open lower mountain valley 		KLG_RE-ID-KF-2				KLG_IP-1	KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	92	1
+LA	I	ID	39	ID-39	LA-ID-39	Relativt åpent dallandskap ved skoggrensen med bebyggelse/infrastruktur	Relatively open lower mountain valley with settlements 		KLG_RE-ID-KF-2				KLG_IP-1	KLG_BP-1		KLG_VE-2	KLG_AI-2		KLG_JP-1	93	0
+LA	I	ID	4	ID-4	LA-ID-4	Åpent dallandskap i lavlandet med bebyggelse/infrastrukturog høyt jordbrukspreg	Open valley with settlements and agriculture		KLG_RE-ID-KF-1				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-2	58	0
+LA	I	ID	40	ID-40	LA-ID-40	Relativt åpent dallandskap ved skoggrensen med tettsted 	Relatively open lower mountain valley with village 		KLG_RE-ID-KF-2				KLG_IP-1	KLG_BP-1		KLG_VE-2	KLG_AI-3		KLG_JP-1	94	0
+LA	I	ID	41	ID-41	LA-ID-41	Relativt åpent dallandskap i fjellet med vegetasjonsdekke	Relatively open mountain valley 		KLG_RE-ID-KF-2				KLG_IP-1	KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	95	1
+LA	I	ID	42	ID-42	LA-ID-42	Relativt åpent dallandskap i fjellet med vegetasjonsdekke og bebyggelse/infrastruktur	Relatively open mountain valley with settlements 		KLG_RE-ID-KF-2				KLG_IP-1	KLG_BP-1		KLG_VE-3	KLG_AI-2		KLG_JP-1	96	0
+LA	I	ID	43	ID-43	LA-ID-43	Relativt åpent dallandskap med bart fjell/blokkmark 	Relatively open barren mountain valley 		KLG_RE-ID-KF-2				KLG_IP-1	KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	97	1
+LA	I	ID	44	ID-44	LA-ID-44	Relativt åpent dallandskap med isbre 	Relatively open barren mountain valley with glacier 		KLG_RE-ID-KF-2				KLG_IP-1	KLG_BP-2		KLG_VE-4	KLG_AI-1		KLG_JP-1	98	1
+LA	I	ID	45	ID-45	LA-ID-45	Relativt åpent dallandskap i lavlandet med større innsjø 	Relatively open valley with lake 		KLG_RE-ID-KF-2				KLG_IP-2	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	99	1
+LA	I	ID	46	ID-46	LA-ID-46	Relativt åpent dallandskap i lavlandet med større innsjø og bebyggelse/infrastruktur	Relatively open valley with lake with settlements 		KLG_RE-ID-KF-2				KLG_IP-2	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	100	0
+LA	I	ID	47	ID-47	LA-ID-47	Relativt åpent dallandskap i lavlandet med større innsjø, bebyggelse/infrastruktur og høyt jordbrukspreg	Relatively open valley with lake with settlements and agriculture		KLG_RE-ID-KF-2				KLG_IP-2	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-2	101	0
+LA	I	ID	48	ID-48	LA-ID-48	Relativt åpent dallandskap i lavlandet med større innsjø og tettsted 	Relatively open valley with lake with village 		KLG_RE-ID-KF-2				KLG_IP-2	KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-1	102	0
+LA	I	ID	49	ID-49	LA-ID-49	Relativt åpent dallandskap ved skoggrensen med større innsjø 	Relatively open lower mountain valley with lake 		KLG_RE-ID-KF-2				KLG_IP-2	KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	103	1
+LA	I	ID	5	ID-5	LA-ID-5	Åpent dallandskap i lavlandet med tettsted 	Open valley with village 		KLG_RE-ID-KF-1				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-1	59	0
+LA	I	ID	50	ID-50	LA-ID-50	Relativt åpent dallandskap ved skoggrensen med større innsjø og bebyggelse/infrastruktur	Relatively open lower mountain valley with lake with settlements 		KLG_RE-ID-KF-2				KLG_IP-2	KLG_BP-1		KLG_VE-2	KLG_AI-2		KLG_JP-1	104	0
+LA	I	ID	51	ID-51	LA-ID-51	Relativt åpent dallandskap i fjellet med vegetasjonsdekke og større innsjø 	Relatively open mountain valley with lake 		KLG_RE-ID-KF-2				KLG_IP-2	KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	105	1
+LA	I	ID	52	ID-52	LA-ID-52	Relativt åpent dallandskap med bart fjell/blokkmark og med større innsjø 	Relatively open barren mountain valley with lake 		KLG_RE-ID-KF-2				KLG_IP-2	KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	106	1
+LA	I	ID	53	ID-53	LA-ID-53	Relativt åpent dallandskap med bart fjell/blokkmark, større innsjø og bebyggelse/infrastruktur	Relatively open barren mountain valley with lake with settlements 		KLG_RE-ID-KF-2				KLG_IP-2	KLG_BP-1		KLG_VE-4	KLG_AI-2		KLG_JP-1	107	0
+LA	I	ID	54	ID-54	LA-ID-54	Relativt åpent dallandskap med større innsjø og isbre 	Relatively open barren mountain valley with lake with glacier 		KLG_RE-ID-KF-2				KLG_IP-2	KLG_BP-2		KLG_VE-4	KLG_AI-1		KLG_JP-1	108	1
+LA	I	ID	55	ID-55	LA-ID-55	Relativt åpent dallandskap i lavlandet med innlandsfjord 	Relatively open valley with larger lake 		KLG_RE-ID-KF-2				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	109	1
+LA	I	ID	56	ID-56	LA-ID-56	Relativt åpent dallandskap i lavlandet med innlandsfjord og bebyggelse/infrastruktur	Relatively open valley with larger lake with settlements 		KLG_RE-ID-KF-2				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	110	0
+LA	I	ID	57	ID-57	LA-ID-57	Relativt åpent dallandskap i lavlandet med innlandsfjord, bebyggelse/infrastrukturog høyt jordbrukspreg	Relatively open valley with larger lake with settlements and agriculture		KLG_RE-ID-KF-2				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-2	111	0
+LA	I	ID	58	ID-58	LA-ID-58	Relativt åpent dallandskap i lavlandet med innlandsfjord og tettsted 	Relatively open valley with larger lake with village 		KLG_RE-ID-KF-2				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-1	112	0
+LA	I	ID	59	ID-59	LA-ID-59	Relativt åpent dallandskap ved skoggrensen med innlandsfjord 	Relatively open lower mountain valley with larger lake 		KLG_RE-ID-KF-2				KLG_IP-3	KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	113	1
+LA	I	ID	6	ID-6	LA-ID-6	Åpent dallandskap i lavlandet med tettsted og høyt jordbrukspreg	Open valley with village and agriculture		KLG_RE-ID-KF-1				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-2	60	0
+LA	I	ID	60	ID-60	LA-ID-60	Relativt åpent dallandskap ved skoggrensen med innlandsfjord med bebyggelse/infrastruktur	Relatively open lower mountain valley with larger lake with settlements 		KLG_RE-ID-KF-2				KLG_IP-3	KLG_BP-1		KLG_VE-2	KLG_AI-2		KLG_JP-1	114	0
+LA	I	ID	61	ID-61	LA-ID-61	Relativt åpent dallandskap i fjellet med vegetasjonsdekke og innlandsfjord 	Relatively open mountain valley with larger lake 		KLG_RE-ID-KF-2				KLG_IP-3	KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	115	1
+LA	I	ID	62	ID-62	LA-ID-62	Relativt åpent dallandskap i fjellet med vegetasjonsdekke med innlandsfjord og bebyggelse/infrastruktur	Relatively open mountain valley with larger lake with settlements 		KLG_RE-ID-KF-2				KLG_IP-3	KLG_BP-1		KLG_VE-3	KLG_AI-2		KLG_JP-1	116	0
+LA	I	ID	63	ID-63	LA-ID-63	Relativt åpent dallandskap med bart fjell/blokkmark og innlandsfjord 	Relatively open barren mountain valley with larger lake 		KLG_RE-ID-KF-2				KLG_IP-3	KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	117	1
+LA	I	ID	64	ID-64	LA-ID-64	Relativt åpent dallandskap med bart fjell/blokkmark, innlandsfjord og isbre 	Relatively open barren mountain valley with larger lake with glacier 		KLG_RE-ID-KF-2				KLG_IP-3	KLG_BP-2		KLG_VE-4	KLG_AI-1		KLG_JP-1	118	1
+LA	I	ID	65	ID-65	LA-ID-65	Nedskåret dallandskap i lavlandet	Steep sided valley 		KLG_RE-ID-KF-3				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	119	1
+LA	I	ID	66	ID-66	LA-ID-66	Nedskåret dallandskap i lavlandet med jordbrukspreg	Steep sided valley and agriculture		KLG_RE-ID-KF-3				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-2	120	1
+LA	I	ID	67	ID-67	LA-ID-67	Nedskåret dallandskap i lavlandet med bebyggelse/infrastruktur	Steep sided valley with settlements 		KLG_RE-ID-KF-3				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	121	0
+LA	I	ID	68	ID-68	LA-ID-68	Nedskåret dallandskap i lavlandet med bebyggelse/infrastrukturog høyt jordbrukspreg	Steep sided valley with settlements and agriculture		KLG_RE-ID-KF-3				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-2	122	0
+LA	I	ID	69	ID-69	LA-ID-69	Nedskåret dallandskap i lavlandet med tettsted 	Steep sided valley with village 		KLG_RE-ID-KF-3				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-1	123	0
+LA	I	ID	7	ID-7	LA-ID-7	Åpent dallandskap ved skoggrensen 	Open lower mountain valley 		KLG_RE-ID-KF-1				KLG_IP-1	KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	61	1
+LA	I	ID	70	ID-70	LA-ID-70	Nedskåret dallandskap ved skoggrensen 	Steep sided lower mountain valley 		KLG_RE-ID-KF-3				KLG_IP-1	KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	124	1
+LA	I	ID	71	ID-71	LA-ID-71	Nedskåret dallandskap ved skoggrensen med bebyggelse/infrastruktur	Steep sided lower mountain valley with settlements 		KLG_RE-ID-KF-3				KLG_IP-1	KLG_BP-1		KLG_VE-2	KLG_AI-2		KLG_JP-1	125	0
+LA	I	ID	72	ID-72	LA-ID-72	Nedskåret dallandskap i fjellet med vegetasjonsdekke	Steep sided mountain valley 		KLG_RE-ID-KF-3				KLG_IP-1	KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	126	1
+LA	I	ID	73	ID-73	LA-ID-73	Nedskåret dallandskap med bart fjell/blokkmark 	Steep sided barren mountain valley 		KLG_RE-ID-KF-3				KLG_IP-1	KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	127	1
+LA	I	ID	74	ID-74	LA-ID-74	Nedskåret dallandskap med bart fjell/blokkmark og bebyggelse/infrastruktur	Steep sided barren mountain valley with settlements 		KLG_RE-ID-KF-3				KLG_IP-1	KLG_BP-1		KLG_VE-4	KLG_AI-2		KLG_JP-1	128	0
+LA	I	ID	75	ID-75	LA-ID-75	Nedskåret dallandskap med isbre 	Steep sided barren mountain valley with glacier 		KLG_RE-ID-KF-3				KLG_IP-1	KLG_BP-2		KLG_VE-4	KLG_AI-1		KLG_JP-1	129	1
+LA	I	ID	76	ID-76	LA-ID-76	Nedskåret dallandskap i lavlandet med større innsjø 	Steep sided valley with lake 		KLG_RE-ID-KF-3				KLG_IP-2	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	130	1
+LA	I	ID	77	ID-77	LA-ID-77	Nedskåret dallandskap i lavlandet med større innsjø og bebyggelse/infrastruktur	Steep sided valley with lake with settlements 		KLG_RE-ID-KF-3				KLG_IP-2	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	131	0
+LA	I	ID	78	ID-78	LA-ID-78	Nedskåret dallandskap i lavlandet med større innsjø og tettsted 	Steep sided valley with lake with village 		KLG_RE-ID-KF-3				KLG_IP-2	KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-1	132	0
+LA	I	ID	79	ID-79	LA-ID-79	Nedskåret dallandskap ved skoggrensen med større innsjø 	Steep sided lower mountain valley with lake 		KLG_RE-ID-KF-3				KLG_IP-2	KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	133	1
+LA	I	ID	8	ID-8	LA-ID-8	Åpent dallandskap ved skoggrensen med bebyggelse/infrastruktur	Open lower mountain valley with settlements 		KLG_RE-ID-KF-1				KLG_IP-1	KLG_BP-1		KLG_VE-2	KLG_AI-2		KLG_JP-1	62	0
+LA	I	ID	80	ID-80	LA-ID-80	Nedskåret dallandskap ved skoggrensen med større innsjø og bebyggelse/infrastruktur	Steep sided lower mountain valley with lake with settlements 		KLG_RE-ID-KF-3				KLG_IP-2	KLG_BP-1		KLG_VE-2	KLG_AI-2		KLG_JP-1	134	0
+LA	I	ID	81	ID-81	LA-ID-81	Nedskåret dallandskap i fjellet med vegetasjonsdekke og større innsjø 	Steep sided mountain valley with lake 		KLG_RE-ID-KF-3				KLG_IP-2	KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	135	1
+LA	I	ID	82	ID-82	LA-ID-82	Nedskåret dallandskap med bart fjell/blokkmark og større innsjø 	Steep sided barren mountain valley with lake 		KLG_RE-ID-KF-3				KLG_IP-2	KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	136	1
+LA	I	ID	83	ID-83	LA-ID-83	Nedskåret dallandskap med større innsjø og isbre 	Steep sided barren mountain valley with lake with glacier 		KLG_RE-ID-KF-3				KLG_IP-2	KLG_BP-2		KLG_VE-4	KLG_AI-1		KLG_JP-1	137	1
+LA	I	ID	84	ID-84	LA-ID-84	Nedskåret dallandskap i lavlandet med innlandsfjord 	Steep sided valley with larger lake 		KLG_RE-ID-KF-3				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	138	1
+LA	I	ID	85	ID-85	LA-ID-85	Nedskåret dallandskap i lavlandet med innlandsfjord og bebyggelse/infrastruktur	Steep sided valley with larger lake with settlements 		KLG_RE-ID-KF-3				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	139	0
+LA	I	ID	86	ID-86	LA-ID-86	Nedskåret dallandskap i lavlandet med innlandsfjord, bebyggelse/infrastruktur og høyt jordbrukspreg	Steep sided valley with larger lake with settlements and agriculture		KLG_RE-ID-KF-3				KLG_IP-3	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-2	140	0
+LA	I	ID	87	ID-87	LA-ID-87	Nedskåret dallandskap ved skoggrensen med innlandsfjord 	Steep sided lower mountain valley with larger lake 		KLG_RE-ID-KF-3				KLG_IP-3	KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	141	1
+LA	I	ID	88	ID-88	LA-ID-88	Nedskåret dallandskap i fjellet med vegetasjonsdekke og innlandsfjord 	Steep sided mountain valley with larger lake 		KLG_RE-ID-KF-3				KLG_IP-3	KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	142	1
+LA	I	ID	89	ID-89	LA-ID-89	Nedskåret dallandskap med bart fjell/blokkmark og innlandsfjord 	Steep sided barren mountain valley with larger lake 		KLG_RE-ID-KF-3				KLG_IP-3	KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	143	1
+LA	I	ID	9	ID-9	LA-ID-9	Åpent dallandskap i fjellet med vegetasjonsdekke	Open mountain valley 		KLG_RE-ID-KF-1				KLG_IP-1	KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	63	1
+LA	I	ID	90	ID-90	LA-ID-90	Dypt nedskåret dallandskap i lavlandet	Narrow and steep sided valley 		KLG_RE-ID-KF-4				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	144	1
+LA	I	ID	91	ID-91	LA-ID-91	Dypt nedskåret dallandskap i lavlandet med bebyggelse/infrastruktur	Narrow and steep sided valley with settlements 		KLG_RE-ID-KF-4				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	145	0
+LA	I	ID	92	ID-92	LA-ID-92	Dypt nedskåret dallandskap i lavlandet med tettsted 	Narrow and steep sided valley with village 		KLG_RE-ID-KF-4				KLG_IP-1	KLG_BP-1		KLG_VE-1	KLG_AI-3		KLG_JP-1	146	0
+LA	I	ID	93	ID-93	LA-ID-93	Dypt nedskåret dallandskap ved skoggrensen 	Narrow and steep sided lower mountain valley 		KLG_RE-ID-KF-4				KLG_IP-1	KLG_BP-1		KLG_VE-2	KLG_AI-1		KLG_JP-1	147	1
+LA	I	ID	94	ID-94	LA-ID-94	Dypt nedskåret dallandskap ved skoggrensen med bebyggelse/infrastruktur	Narrow and steep sided lower mountain valley with settlements 		KLG_RE-ID-KF-4				KLG_IP-1	KLG_BP-1		KLG_VE-2	KLG_AI-2		KLG_JP-1	148	0
+LA	I	ID	95	ID-95	LA-ID-95	Dypt nedskåret dallandskap i fjellet med vegetasjonsdekke	Narrow and steep sided mountain valley 		KLG_RE-ID-KF-4				KLG_IP-1	KLG_BP-1		KLG_VE-3	KLG_AI-1		KLG_JP-1	149	1
+LA	I	ID	96	ID-96	LA-ID-96	Dypt nedskåret dallandskap med bart fjell/blokkmark 	Narrow and steep sided barren mountain valley 		KLG_RE-ID-KF-4				KLG_IP-1	KLG_BP-1		KLG_VE-4	KLG_AI-1		KLG_JP-1	150	1
+LA	I	ID	97	ID-97	LA-ID-97	Dypt nedskåret dallandskap med isbre 	Narrow and steep sided barren mountain valley with glacier 		KLG_RE-ID-KF-4				KLG_IP-1	KLG_BP-2		KLG_VE-4	KLG_AI-1		KLG_JP-1	151	1
+LA	I	ID	98	ID-98	LA-ID-98	Dypt nedskåret dallandskap i lavlandet med større innsjø 	Narrow and steep sided valley with lake 		KLG_RE-ID-KF-4				KLG_IP-2	KLG_BP-1		KLG_VE-1	KLG_AI-1		KLG_JP-1	152	1
+LA	I	ID	99	ID-99	LA-ID-99	Dypt nedskåret dallandskap i lavlandet med større innsjø og bebyggelse/infrastruktur	Narrow and steep sided valley with lake with settlements 		KLG_RE-ID-KF-4				KLG_IP-2	KLG_BP-1		KLG_VE-1	KLG_AI-2		KLG_JP-1	153	0
+LA	I	IS			LA-IS	Innlands-slettelandskap	Inland irregular plains				KLG_KA			KLG_BP	KLG_VP	KLG_VE	KLG_AI		KLG_JP	0	
+LA	I	IS	1	IS-1	LA-IS-1	Skogkledd innlandsslette	Inland undulating lowland plain 				KLG_KA-1			KLG_BP-1	KLG_VP-1	KLG_VE-1	KLG_AI-1		KLG_JP-1	159	1
+LA	I	IS	10	IS-10	LA-IS-10	Fjellvidde med vegetajonsdekke	Inland undulating mountain plain 				KLG_KA-1			KLG_BP-1	KLG_VP-1	KLG_VE-3	KLG_AI-1		KLG_JP-1	168	1
+LA	I	IS	11	IS-11	LA-IS-11	Fjellvidde med bart fjell/blokkmark 	Inland undulating barren mountain plain 				KLG_KA-1			KLG_BP-1	KLG_VP-1	KLG_VE-4	KLG_AI-1		KLG_JP-1	169	1
+LA	I	IS	12	IS-12	LA-IS-12	Innlandsslette med isbre	Inland undulating barren mountain plain with glacier 				KLG_KA-1			KLG_BP-2	KLG_VP-1	KLG_VE-4	KLG_AI-1		KLG_JP-1	170	1
+LA	I	IS	13	IS-13	LA-IS-13	Skogkledd innlandsslette med våtmark 	Inland undulating lowland plain with wetlands 				KLG_KA-1			KLG_BP-1	KLG_VP-2	KLG_VE-1	KLG_AI-1		KLG_JP-1	171	1
+LA	I	IS	14	IS-14	LA-IS-14	Skogkledd innlandsslette med våtmark og bebyggelse/infrastruktur	Inland undulating lowland plain with wetlands and settlements 				KLG_KA-1			KLG_BP-1	KLG_VP-2	KLG_VE-1	KLG_AI-2		KLG_JP-1	172	0
+LA	I	IS	15	IS-15	LA-IS-15	Skogkledd innlandsslette med våtmark, bebyggelse/infrastrukturog høyt jordbrukspreg	Inland undulating lowland plain with wetlands and settlements and agriculture				KLG_KA-1			KLG_BP-1	KLG_VP-2	KLG_VE-1	KLG_AI-2		KLG_JP-2	173	0
+LA	I	IS	16	IS-16	LA-IS-16	Skogkledd innlandsslette med våtmark og tettsted 	Inland undulating lowland plain with wetlands and village 				KLG_KA-1			KLG_BP-1	KLG_VP-2	KLG_VE-1	KLG_AI-3		KLG_JP-1	174	0
+LA	I	IS	17	IS-17	LA-IS-17	Innlandsslette ved skoggrensen med våtmark 	Inland undulating lower mountain plain with wetlands 				KLG_KA-1			KLG_BP-1	KLG_VP-2	KLG_VE-2	KLG_AI-1		KLG_JP-1	175	1
+LA	I	IS	18	IS-18	LA-IS-18	Fjellvidde med vegetasjonsdekke og våtmark 	Inland undulating mountain plain with wetlands 				KLG_KA-1			KLG_BP-1	KLG_VP-2	KLG_VE-3	KLG_AI-1		KLG_JP-1	176	1
+LA	I	IS	19	IS-19	LA-IS-19	Fjellvidde med bart fjell/blokkmark og våtmark 	Inland undulating barren mountain plain with wetlands 				KLG_KA-1			KLG_BP-1	KLG_VP-2	KLG_VE-4	KLG_AI-1		KLG_JP-1	177	1
+LA	I	IS	2	IS-2	LA-IS-2	Innlandsslette i lavlandet med høyt jordbrukspreg	Inland undulating lowland plain with agriculture				KLG_KA-1			KLG_BP-1	KLG_VP-1	KLG_VE-1	KLG_AI-1		KLG_JP-2	160	1
+LA	I	IS	20	IS-20	LA-IS-20	Kystnær skogkledd innlandsslette	Coast-near undulating lowland plain 				KLG_KA-2			KLG_BP-1	KLG_VP-1	KLG_VE-1	KLG_AI-1		KLG_JP-1	178	1
+LA	I	IS	21	IS-21	LA-IS-21	Kystnær skogkledd innlandsslette med bebyggelse/infrastruktur	Coast-near undulating lowland plain with settlements 				KLG_KA-2			KLG_BP-1	KLG_VP-1	KLG_VE-1	KLG_AI-2		KLG_JP-1	179	0
+LA	I	IS	22	IS-22	LA-IS-22	Kystnær innlandsslette i lavlandet med bebyggelse/infrastruktur og høyt jordbrukspreg	Coast-near undulating lowland plain with settlements and agriculture				KLG_KA-2			KLG_BP-1	KLG_VP-1	KLG_VE-1	KLG_AI-2		KLG_JP-2	180	0
+LA	I	IS	23	IS-23	LA-IS-23	Kystnær innlandsslette i lavlandet med tettsted 	Coast-near undulating lowland plain with village 				KLG_KA-2			KLG_BP-1	KLG_VP-1	KLG_VE-1	KLG_AI-3		KLG_JP-1	181	0
+LA	I	IS	24	IS-24	LA-IS-24	Kystnær innlandsslette i lavlandet med tettsted  og høyt jordbrukspreg	Coast-near undulating lowland plain with village and agriculture				KLG_KA-2			KLG_BP-1	KLG_VP-1	KLG_VE-1	KLG_AI-3		KLG_JP-2	182	0
+LA	I	IS	25	IS-25	LA-IS-25	Kystnær innlandsslette i lavlandet med større by 	Coast-near undulating lowland plain with city 				KLG_KA-2			KLG_BP-1	KLG_VP-1	KLG_VE-1	KLG_AI-4		KLG_JP-1	183	0
+LA	I	IS	26	IS-26	LA-IS-26	Kystnær innlandsslette ved skoggrensen	Coast-near undulating lower mountain plain 				KLG_KA-2			KLG_BP-1	KLG_VP-1	KLG_VE-2	KLG_AI-1		KLG_JP-1	184	1
+LA	I	IS	27	IS-27	LA-IS-27	Kystnær fjellvidde med vegetasjonsdekke	Coast-near undulating mountain plain 				KLG_KA-2			KLG_BP-1	KLG_VP-1	KLG_VE-3	KLG_AI-1		KLG_JP-1	185	1
+LA	I	IS	28	IS-28	LA-IS-28	Kystnær fjellvidde med bart fjell/blokkmark 	Coast-near undulating barren mountain plain 				KLG_KA-2			KLG_BP-1	KLG_VP-1	KLG_VE-4	KLG_AI-1		KLG_JP-1	186	1
+LA	I	IS	29	IS-29	LA-IS-29	Kystnær fjellvidde med isbre 	Coast-near undulating barren mountain plain with glacier 				KLG_KA-2			KLG_BP-2	KLG_VP-1	KLG_VE-4	KLG_AI-1		KLG_JP-1	187	1
+LA	I	IS	3	IS-3	LA-IS-3	Innlandsslette i lavlandet med bebyggelse/infrastruktur	Inland undulating lowland plain with settlements 				KLG_KA-1			KLG_BP-1	KLG_VP-1	KLG_VE-1	KLG_AI-2		KLG_JP-1	161	0
+LA	I	IS	30	IS-30	LA-IS-30	Kystnær innlandsslette i lavlandet med våtmark 	Coast-near undulating lowland plain with wetlands 				KLG_KA-2			KLG_BP-1	KLG_VP-2	KLG_VE-1	KLG_AI-1		KLG_JP-1	188	1
+LA	I	IS	31	IS-31	LA-IS-31	Kystnær innlandsslette i lavlandet med våtmark  og høyt jordbrukspreg	Coast-near undulating lowland plain with wetlands and agriculture				KLG_KA-2			KLG_BP-1	KLG_VP-2	KLG_VE-1	KLG_AI-1		KLG_JP-2	189	1
+LA	I	IS	32	IS-32	LA-IS-32	Kystnær innlandsslette i lavlandet med våtmark, bebyggelse/infrastruktur	Coast-near undulating lowland plain with wetlands and settlements 				KLG_KA-2			KLG_BP-1	KLG_VP-2	KLG_VE-1	KLG_AI-2		KLG_JP-1	190	0
+LA	I	IS	33	IS-33	LA-IS-33	Kystnær innlandsslette i lavlandet med våtmark og bebyggelse/infrastrukturog høyt jordbrukspreg	Coast-near undulating lowland plain with wetlands and settlements and agriculture				KLG_KA-2			KLG_BP-1	KLG_VP-2	KLG_VE-1	KLG_AI-2		KLG_JP-2	191	0
+LA	I	IS	34	IS-34	LA-IS-34	Kystnær innlandsslette ved skoggrensenmed våtmark 	Coast-near undulating lower mountain plain with wetlands 				KLG_KA-2			KLG_BP-1	KLG_VP-2	KLG_VE-2	KLG_AI-1		KLG_JP-1	192	1
+LA	I	IS	35	IS-35	LA-IS-35	Kystnær fjellvidde med vegetasjonsdekke og våtmark 	Coast-near undulating mountain plain with wetlands 				KLG_KA-2			KLG_BP-1	KLG_VP-2	KLG_VE-3	KLG_AI-1		KLG_JP-1	193	1
+LA	I	IS	36	IS-36	LA-IS-36	Kystnær fjellvidde med bart fjell/blokkmark og våtmark 	Coast-near undulating barren mountain plain with wetlands 				KLG_KA-2			KLG_BP-1	KLG_VP-2	KLG_VE-4	KLG_AI-1		KLG_JP-1	194	1
+LA	I	IS	4	IS-4	LA-IS-4	Innlandsslette i lavlandet med bebyggelse/infrastrukturog høyt jordbrukspreg	Inland undulating lowland plain with settlements and agriculture				KLG_KA-1			KLG_BP-1	KLG_VP-1	KLG_VE-1	KLG_AI-2		KLG_JP-2	162	0
+LA	I	IS	5	IS-5	LA-IS-5	Innlandsslette i lavlandet med tettsted 	Inland undulating lowland plain with village 				KLG_KA-1			KLG_BP-1	KLG_VP-1	KLG_VE-1	KLG_AI-3		KLG_JP-1	163	0
+LA	I	IS	6	IS-6	LA-IS-6	Innlandsslette i lavlandet med tettsted og høyt jordbrukspreg	Inland undulating lowland plain with village and agriculture				KLG_KA-1			KLG_BP-1	KLG_VP-1	KLG_VE-1	KLG_AI-3		KLG_JP-2	164	0
+LA	I	IS	7	IS-7	LA-IS-7	Innlandsslette i lavlandet med større by 	Inland undulating lowland plain with city 				KLG_KA-1			KLG_BP-1	KLG_VP-1	KLG_VE-1	KLG_AI-4		KLG_JP-1	165	0
+LA	I	IS	8	IS-8	LA-IS-8	Innlandsslette ved skoggrensen	Inland undulating lower mountain plain 				KLG_KA-1			KLG_BP-1	KLG_VP-1	KLG_VE-2	KLG_AI-1		KLG_JP-1	166	1
+LA	I	IS	9	IS-9	LA-IS-9	Innlandsslette ved skoggrensen med bebyggelse/infrastruktur	Inland undulating lower mountain plain with settlements 				KLG_KA-1			KLG_BP-1	KLG_VP-1	KLG_VE-2	KLG_AI-2		KLG_JP-1	167	0
+LA	k	KA			LA-KA	Kyst-ås- og -fjellandskap	Coastal hills- and mountains														
+LA	K	KA	1	KA-1	LA-KA-1	Kyst-ås- og -fjellandskap	Coastal hills- and mountains													284	0
+LA	k	KF			LA-KF	Fjordlandskap	Fjords		KLG_RE-ID-KF						KLG_VP		KLG_AI		KLG_JP	0	
+LA	K	KF	1	KF-1	LA-KF-1	Åpent fjordlandskap      	Open fjord 		KLG_RE-ID-KF-1						KLG_VP-1		KLG_AI-1		KLG_JP-1	195	1
+LA	K	KF	10	KF-10	LA-KF-10	Relativt Åpent fjordlandskap med bebyggelse/infrastrukturog høyt jordbrukspreg	Relatively open fjord with settlements and agriculture		KLG_RE-ID-KF-2						KLG_VP-1		KLG_AI-2		KLG_JP-2	204	0
+LA	K	KF	11	KF-11	LA-KF-11	Relativt Åpent fjordlandskap med tettsted  	Relatively open fjord with village 		KLG_RE-ID-KF-2						KLG_VP-1		KLG_AI-3		KLG_JP-1	205	0
+LA	K	KF	12	KF-12	LA-KF-12	Relativt Åpent fjordlandskap med tettsted og høyt jordbrukspreg	Relatively open fjord with village and agriculture		KLG_RE-ID-KF-2						KLG_VP-1		KLG_AI-3		KLG_JP-2	206	0
+LA	K	KF	13	KF-13	LA-KF-13	Relativt Åpent fjordlandskap med større by  	Relatively open fjord with city 		KLG_RE-ID-KF-2						KLG_VP-1		KLG_AI-4		KLG_JP-1	207	0
+LA	K	KF	14	KF-14	LA-KF-14	Relativt Åpent fjordlandskap med våtmark    	Relatively open fjord with wetlands 		KLG_RE-ID-KF-2						KLG_VP-2		KLG_AI-1		KLG_JP-1	208	1
+LA	K	KF	15	KF-15	LA-KF-15	Relativt Åpent fjordlandskap med våtmark og bebyggelse/infrastruktur 	Relatively open fjord with wetlands and settlements 		KLG_RE-ID-KF-2						KLG_VP-2		KLG_AI-2		KLG_JP-1	209	0
+LA	K	KF	16	KF-16	LA-KF-16	Relativt Åpent fjordlandskap med våtmark og tettsted  	Relatively open fjord with wetlands and village 		KLG_RE-ID-KF-2						KLG_VP-2		KLG_AI-3		KLG_JP-1	210	0
+LA	K	KF	17	KF-17	LA-KF-17	Nedskåret fjordlandskap      	Steep sided fjord 		KLG_RE-ID-KF-3						KLG_VP-1		KLG_AI-1		KLG_JP-1	211	1
+LA	K	KF	18	KF-18	LA-KF-18	Nedskåret fjordlandskap med bebyggelse/infrastruktur 	Steep sided fjord with settlements 		KLG_RE-ID-KF-3						KLG_VP-1		KLG_AI-2		KLG_JP-1	212	0
+LA	K	KF	19	KF-19	LA-KF-19	Nedskåret fjordlandskap med bebyggelse/infrastrukturog høyt jordbrukspreg	Steep sided fjord with settlements and agriculture		KLG_RE-ID-KF-3						KLG_VP-1		KLG_AI-2		KLG_JP-2	213	0
+LA	K	KF	2	KF-2	LA-KF-2	Åpent fjordlandskap med bebyggelse/infrastruktur 	Open fjord with settlements 		KLG_RE-ID-KF-1						KLG_VP-1		KLG_AI-2		KLG_JP-1	196	0
+LA	K	KF	20	KF-20	LA-KF-20	Nedskåret fjordlandskap med tettsted  	Steep sided fjord with village 		KLG_RE-ID-KF-3						KLG_VP-1		KLG_AI-3		KLG_JP-1	214	0
+LA	K	KF	21	KF-21	LA-KF-21	Nedskåret fjordlandskap med tettsted og høyt jordbrukspreg	Steep sided fjord with village and agriculture		KLG_RE-ID-KF-3						KLG_VP-1		KLG_AI-3		KLG_JP-2	215	0
+LA	K	KF	22	KF-22	LA-KF-22	Nedskåret fjordlandskap med våtmark    	Steep sided fjord with wetlands 		KLG_RE-ID-KF-3						KLG_VP-2		KLG_AI-1		KLG_JP-1	216	1
+LA	K	KF	23	KF-23	LA-KF-23	Nedskåret fjordlandskap med våtmark og bebyggelse/infrastruktur 	Steep sided fjord with wetlands and settlements 		KLG_RE-ID-KF-3						KLG_VP-2		KLG_AI-2		KLG_JP-1	217	0
+LA	K	KF	24	KF-24	LA-KF-24	Dypt nedskåret fjordlandskap      	Narrow and steep sided fjord 		KLG_RE-ID-KF-4						KLG_VP-1		KLG_AI-1		KLG_JP-1	218	1
+LA	K	KF	25	KF-25	LA-KF-25	Dypt nedskåret fjordlandskap med bebyggelse/infrastruktur 	Narrow and steep sided fjord with settlements 		KLG_RE-ID-KF-4						KLG_VP-1		KLG_AI-2		KLG_JP-1	219	0
+LA	K	KF	26	KF-26	LA-KF-26	Dypt nedskåret fjordlandskap med tettsted  	Narrow and steep sided fjord with village 		KLG_RE-ID-KF-4						KLG_VP-1		KLG_AI-3		KLG_JP-1	220	0
+LA	K	KF	3	KF-3	LA-KF-3	Åpent fjordlandskap med bebyggelse/infrastrukturog høyt jordbrukspreg	Open fjord with settlements and agriculture		KLG_RE-ID-KF-1						KLG_VP-1		KLG_AI-2		KLG_JP-2	197	0
+LA	K	KF	4	KF-4	LA-KF-4	Åpent fjordlandskap med tettsted  	Open fjord with village 		KLG_RE-ID-KF-1						KLG_VP-1		KLG_AI-3		KLG_JP-1	198	0
+LA	K	KF	5	KF-5	LA-KF-5	Åpent fjordlandskap med større by  	Open fjord with city 		KLG_RE-ID-KF-1						KLG_VP-1		KLG_AI-4		KLG_JP-1	199	0
+LA	K	KF	6	KF-6	LA-KF-6	Åpent fjordlandskap med våtmark    	Open fjord with wetlands 		KLG_RE-ID-KF-1						KLG_VP-2		KLG_AI-1		KLG_JP-1	200	1
+LA	K	KF	7	KF-7	LA-KF-7	Åpent fjordlandskap med våtmark og bebyggelse/infrastruktur 	Open fjord with wetlands and settlements 		KLG_RE-ID-KF-1						KLG_VP-2		KLG_AI-2		KLG_JP-1	201	0
+LA	K	KF	8	KF-8	LA-KF-8	Relativt Åpent fjordlandskap      	Relatively open fjord 		KLG_RE-ID-KF-2						KLG_VP-1		KLG_AI-1		KLG_JP-1	202	1
+LA	K	KF	9	KF-9	LA-KF-9	Relativt Åpent fjordlandskap med bebyggelse/infrastruktur 	Relatively open fjord with settlements 		KLG_RE-ID-KF-2						KLG_VP-1		KLG_AI-2		KLG_JP-1	203	0
+LA	k	KS			LA-KS	Kystslettelandskap	Coastal plains			KLG_RE-KS		KLG_IYK			KLG_VP			KLG_AI-KS	KLG_JP	0	
+LA	K	KS	1	KS-1	LA-KS-1	Beskyttet indre flat kystslette  	Protected inner coastal plain 			KLG_RE-KS-1		KLG_IYK-1			KLG_VP-1			KLG_AI-KS-1	KLG_JP-1	221	1
+LA	K	KS	10	KS-10	LA-KS-10	Beskyttet indre småkupert kystslette med høyt jordbrukspreg	Protected inner undulating coastal plain with agriculture			KLG_RE-KS-2		KLG_IYK-1			KLG_VP-1			KLG_AI-KS-1	KLG_JP-2	230	1
+LA	K	KS	11	KS-11	LA-KS-11	Beskyttet indre småkupert kystslette med tettsted  	Protected inner undulating coastal plain with village 			KLG_RE-KS-2		KLG_IYK-1			KLG_VP-1			KLG_AI-KS-2	KLG_JP-1	231	0
+LA	K	KS	12	KS-12	LA-KS-12	Beskyttet indre småkupert kystslette med tettsted og høyt jordbrukspreg	Protected inner undulating coastal plain with village and agriculture			KLG_RE-KS-2		KLG_IYK-1			KLG_VP-1			KLG_AI-KS-2	KLG_JP-2	232	0
+LA	K	KS	13	KS-13	LA-KS-13	Beskyttet indre småkupert kystslette med større by  	Protected inner undulating coastal plain with city 			KLG_RE-KS-2		KLG_IYK-1			KLG_VP-1			KLG_AI-KS-3	KLG_JP-1	233	0
+LA	K	KS	14	KS-14	LA-KS-14	Beskyttet indre småkupert kystslette med større by og høyt jordbrukspreg	Protected inner undulating coastal plain with city and agriculture			KLG_RE-KS-2		KLG_IYK-1			KLG_VP-1			KLG_AI-KS-3	KLG_JP-2	234	0
+LA	K	KS	15	KS-15	LA-KS-15	Beskyttet indre småkupert kystslette med våtmark  	Protected inner undulating coastal plain with wetland 			KLG_RE-KS-2		KLG_IYK-1			KLG_VP-2			KLG_AI-KS-1	KLG_JP-1	235	1
+LA	K	KS	16	KS-16	LA-KS-16	Beskyttet indre småkupert kystslette med våtmark og høyt jordbrukspreg	Protected inner undulating coastal plain with wetland and agriculture			KLG_RE-KS-2		KLG_IYK-1			KLG_VP-2			KLG_AI-KS-1	KLG_JP-2	236	1
+LA	K	KS	17	KS-17	LA-KS-17	Beskyttet indre kupert kystslette  	Protected inner rugged coastal plain 			KLG_RE-KS-3		KLG_IYK-1			KLG_VP-1			KLG_AI-KS-1	KLG_JP-1	237	1
+LA	K	KS	18	KS-18	LA-KS-18	Beskyttet indre kupert kystslette med høyt jordbrukspreg	Protected inner rugged coastal plain with agriculture			KLG_RE-KS-3		KLG_IYK-1			KLG_VP-1			KLG_AI-KS-1	KLG_JP-2	238	1
+LA	K	KS	19	KS-19	LA-KS-19	Beskyttet indre kupert kystslette med tettsted  	Protected inner rugged coastal plain with village 			KLG_RE-KS-3		KLG_IYK-1			KLG_VP-1			KLG_AI-KS-2	KLG_JP-1	239	0
+LA	K	KS	2	KS-2	LA-KS-2	Beskyttet indre flat kystslette med høyt jordbrukspreg	Protected inner coastal plain with agriculture			KLG_RE-KS-1		KLG_IYK-1			KLG_VP-1			KLG_AI-KS-1	KLG_JP-2	222	1
+LA	K	KS	20	KS-20	LA-KS-20	Beskyttet indre kupert kystslette med våtmark  	Protected inner rugged coastal plain with wetland 			KLG_RE-KS-3		KLG_IYK-1			KLG_VP-2			KLG_AI-KS-1	KLG_JP-1	240	1
+LA	K	KS	21	KS-21	LA-KS-21	Moderat bølgeeksponert kystslette	Moderately wave-exposed coastal plain 			KLG_RE-KS-1		KLG_IYK-2			KLG_VP-1			KLG_AI-KS-1	KLG_JP-1	241	1
+LA	K	KS	22	KS-22	LA-KS-22	Moderat bølgeeksponert kystslette med høyt jordbrukspreg	Moderately wave-exposed coastal plain with agriculture			KLG_RE-KS-1		KLG_IYK-2			KLG_VP-1			KLG_AI-KS-1	KLG_JP-2	242	1
+LA	K	KS	23	KS-23	LA-KS-23	Moderat bølgeeksponert kystslette med tettsted  	Moderately wave-exposed coastal plain with village 			KLG_RE-KS-1		KLG_IYK-2			KLG_VP-1			KLG_AI-KS-2	KLG_JP-1	243	0
+LA	K	KS	24	KS-24	LA-KS-24	Moderat bølgeeksponert kystslette med tettsted og høyt jordbrukspreg	Moderately wave-exposed coastal plain with village and agriculture			KLG_RE-KS-1		KLG_IYK-2			KLG_VP-1			KLG_AI-KS-2	KLG_JP-2	244	0
+LA	K	KS	25	KS-25	LA-KS-25	Moderat bølgeeksponert kystslette med større by  	Moderately wave-exposed coastal plain with city 			KLG_RE-KS-1		KLG_IYK-2			KLG_VP-1			KLG_AI-KS-3	KLG_JP-1	245	0
+LA	K	KS	26	KS-26	LA-KS-26	Moderat bølgeeksponert kystslette med våtmark  	Moderately wave-exposed coastal plain with wetland 			KLG_RE-KS-1		KLG_IYK-2			KLG_VP-2			KLG_AI-KS-1	KLG_JP-1	246	1
+LA	K	KS	27	KS-27	LA-KS-27	Moderat bølgeeksponert  småkupert kystslette  	Moderately wave-exposed undulating coastal plain 			KLG_RE-KS-2		KLG_IYK-2			KLG_VP-1			KLG_AI-KS-1	KLG_JP-1	247	1
+LA	K	KS	28	KS-28	LA-KS-28	Moderat bølgeeksponert  småkupert kystslette med høyt jordbrukspreg	Moderately wave-exposed undulating coastal plain with agriculture			KLG_RE-KS-2		KLG_IYK-2			KLG_VP-1			KLG_AI-KS-1	KLG_JP-2	248	1
+LA	K	KS	29	KS-29	LA-KS-29	Moderat bølgeeksponert  småkupert kystslette med tettsted  	Moderately wave-exposed undulating coastal plain with village 			KLG_RE-KS-2		KLG_IYK-2			KLG_VP-1			KLG_AI-KS-2	KLG_JP-1	249	0
+LA	K	KS	3	KS-3	LA-KS-3	Beskyttet indre flat kystslette med tettsted  	Protected inner coastal plain with village 			KLG_RE-KS-1		KLG_IYK-1			KLG_VP-1			KLG_AI-KS-2	KLG_JP-1	223	0
+LA	K	KS	30	KS-30	LA-KS-30	Moderat bølgeeksponert  småkupert kystslette med tettsted og høyt jordbrukspreg	Moderately wave-exposed undulating coastal plain with village and agriculture			KLG_RE-KS-2		KLG_IYK-2			KLG_VP-1			KLG_AI-KS-2	KLG_JP-2	250	0
+LA	K	KS	31	KS-31	LA-KS-31	Moderat bølgeeksponert  småkupert kystslette med større by  	Moderately wave-exposed undulating coastal plain with city 			KLG_RE-KS-2		KLG_IYK-2			KLG_VP-1			KLG_AI-KS-3	KLG_JP-1	251	0
+LA	K	KS	32	KS-32	LA-KS-32	Moderat bølgeeksponert  småkupert kystslette med våtmark  	Moderately wave-exposed undulating coastal plain with wetland 			KLG_RE-KS-2		KLG_IYK-2			KLG_VP-2			KLG_AI-KS-1	KLG_JP-1	252	1
+LA	K	KS	33	KS-33	LA-KS-33	Moderat bølgeeksponert  småkupert kystslette med våtmark med tettsted  	Moderately wave-exposed undulating coastal plain with wetland with village 			KLG_RE-KS-2		KLG_IYK-2			KLG_VP-2			KLG_AI-KS-2	KLG_JP-1	253	0
+LA	K	KS	34	KS-34	LA-KS-34	Moderat bølgeeksponert  kupert kystslette  	Moderately wave-exposed rugged coastal plain 			KLG_RE-KS-3		KLG_IYK-2			KLG_VP-1			KLG_AI-KS-1	KLG_JP-1	254	1
+LA	K	KS	35	KS-35	LA-KS-35	Moderat bølgeeksponert  kupert kystslette med høyt jordbrukspreg	Moderately wave-exposed rugged coastal plain with agriculture			KLG_RE-KS-3		KLG_IYK-2			KLG_VP-1			KLG_AI-KS-1	KLG_JP-2	255	1
+LA	K	KS	36	KS-36	LA-KS-36	Moderat bølgeeksponert  kupert kystslette med tettsted  	Moderately wave-exposed rugged coastal plain with village 			KLG_RE-KS-3		KLG_IYK-2			KLG_VP-1			KLG_AI-KS-2	KLG_JP-1	256	0
+LA	K	KS	37	KS-37	LA-KS-37	Moderat bølgeeksponert  kupert kystslette med våtmark og høyt jordbrukspreg	Moderately wave-exposed rugged coastal plain with wetland and agriculture			KLG_RE-KS-3		KLG_IYK-2			KLG_VP-2			KLG_AI-KS-1	KLG_JP-2	257	1
+LA	K	KS	38	KS-38	LA-KS-38	Svært bølgeeksponert kystslettelandskap på ytre kyst	Very wave-exposed outer coastal plain 			KLG_RE-KS-1		KLG_IYK-3			KLG_VP-1			KLG_AI-KS-1	KLG_JP-1	258	1
+LA	K	KS	39	KS-39	LA-KS-39	Svært bølgeeksponert kystslettelandskap på ytre kyst med høyt jordbrukspreg	Very wave-exposed outer coastal plain with agriculture			KLG_RE-KS-1		KLG_IYK-3			KLG_VP-1			KLG_AI-KS-1	KLG_JP-2	259	1
+LA	K	KS	4	KS-4	LA-KS-4	Beskyttet indre flat kystslette med tettsted og høyt jordbrukspreg	Protected inner coastal plain with village and agriculture			KLG_RE-KS-1		KLG_IYK-1			KLG_VP-1			KLG_AI-KS-2	KLG_JP-2	224	0
+LA	K	KS	40	KS-40	LA-KS-40	Svært bølgeeksponert kystslettelandskap på ytre kyst med tettsted  	Very wave-exposed outer coastal plain with village 			KLG_RE-KS-1		KLG_IYK-3			KLG_VP-1			KLG_AI-KS-2	KLG_JP-1	260	0
+LA	K	KS	41	KS-41	LA-KS-41	Svært bølgeeksponert kystslettelandskap på ytre kyst med tettsted og høyt jordbrukspreg	Very wave-exposed outer coastal plain with village and agriculture			KLG_RE-KS-1		KLG_IYK-3			KLG_VP-1			KLG_AI-KS-2	KLG_JP-2	261	0
+LA	K	KS	42	KS-42	LA-KS-42	Svært bølgeeksponert kystslettelandskap på ytre kyst med våtmark  	Very wave-exposed outer coastal plain with wetland 			KLG_RE-KS-1		KLG_IYK-3			KLG_VP-2			KLG_AI-KS-1	KLG_JP-1	262	1
+LA	K	KS	43	KS-43	LA-KS-43	Svært bølgeeksponert kystslettelandskap på ytre kyst med våtmark med tettsted  	Very wave-exposed outer coastal plain with wetland with village 			KLG_RE-KS-1		KLG_IYK-3			KLG_VP-2			KLG_AI-KS-2	KLG_JP-1	263	0
+LA	K	KS	44	KS-44	LA-KS-44	Svært bølgeeksponert småkupert kystslettelandskap på ytre kyst  	Very wave-exposed outer undulating coastal plain 			KLG_RE-KS-2		KLG_IYK-3			KLG_VP-1			KLG_AI-KS-1	KLG_JP-1	264	1
+LA	K	KS	45	KS-45	LA-KS-45	Svært bølgeeksponert småkupert kystslettelandskap på ytre kyst med høyt jordbrukspreg	Very wave-exposed outer undulating coastal plain with agriculture			KLG_RE-KS-2		KLG_IYK-3			KLG_VP-1			KLG_AI-KS-1	KLG_JP-2	265	1
+LA	K	KS	46	KS-46	LA-KS-46	Svært bølgeeksponert småkupert kystslettelandskap på ytre kyst med tettsted  	Very wave-exposed outer undulating coastal plain with village 			KLG_RE-KS-2		KLG_IYK-3			KLG_VP-1			KLG_AI-KS-2	KLG_JP-1	266	0
+LA	K	KS	47	KS-47	LA-KS-47	Svært bølgeeksponert småkupert kystslettelandskap på ytre kyst med tettsted og høyt jordbrukspreg	Very wave-exposed outer undulating coastal plain with village and agriculture			KLG_RE-KS-2		KLG_IYK-3			KLG_VP-1			KLG_AI-KS-2	KLG_JP-2	267	0
+LA	K	KS	48	KS-48	LA-KS-48	Svært bølgeeksponert småkupert kystslettelandskap på ytre kyst med større by  	Very wave-exposed outer undulating coastal plain with city 			KLG_RE-KS-2		KLG_IYK-3			KLG_VP-1			KLG_AI-KS-3	KLG_JP-1	268	0
+LA	K	KS	49	KS-49	LA-KS-49	Svært bølgeeksponert småkupert kystslettelandskap på ytre kyst med våtmark  	Very wave-exposed outer undulating coastal plain with wetland 			KLG_RE-KS-2		KLG_IYK-3			KLG_VP-2			KLG_AI-KS-1	KLG_JP-1	269	1
+LA	K	KS	5	KS-5	LA-KS-5	Beskyttet indre flat kystslette med større by  	Protected inner coastal plain with city 			KLG_RE-KS-1		KLG_IYK-1			KLG_VP-1			KLG_AI-KS-3	KLG_JP-1	225	0
+LA	K	KS	50	KS-50	LA-KS-50	Svært bølgeeksponert ytre kupert kystslette	Very wave-exposed outer rugged coastal plain 			KLG_RE-KS-3		KLG_IYK-3			KLG_VP-1			KLG_AI-KS-1	KLG_JP-1	270	1
+LA	K	KS	51	KS-51	LA-KS-51	Svært bølgeeksponert ytre kupert kystslette med tettsted  	Very wave-exposed outer rugged coastal plain with village 			KLG_RE-KS-3		KLG_IYK-3			KLG_VP-1			KLG_AI-KS-2	KLG_JP-1	271	0
+LA	K	KS	52	KS-52	LA-KS-52	Ekstremt bølgeeksponert, flat kystslette på ytterste kyst  	Extremely wave-exposed outer coastal plain 			KLG_RE-KS-1		KLG_IYK-4			KLG_VP-1			KLG_AI-KS-1	KLG_JP-1	272	1
+LA	K	KS	53	KS-53	LA-KS-53	Ekstremt bølgeeksponert, flat kystslette på ytterste kyst med høyt jordbrukspreg	Extremely wave-exposed outer coastal plain with agriculture			KLG_RE-KS-1		KLG_IYK-4			KLG_VP-1			KLG_AI-KS-1	KLG_JP-2	273	1
+LA	K	KS	54	KS-54	LA-KS-54	Ekstremt bølgeeksponert, flat kystslette på ytterste kyst med tettsted  	Extremely wave-exposed outer coastal plain with village 			KLG_RE-KS-1		KLG_IYK-4			KLG_VP-1			KLG_AI-KS-2	KLG_JP-1	274	0
+LA	K	KS	55	KS-55	LA-KS-55	Ekstremt bølgeeksponert, flat kystslette på ytterste kyst med våtmark  	Extremely wave-exposed outer coastal plain with wetland 			KLG_RE-KS-1		KLG_IYK-4			KLG_VP-2			KLG_AI-KS-1	KLG_JP-1	275	1
+LA	K	KS	56	KS-56	LA-KS-56	Ekstremt bølgeeksponert, flat kystslette på ytterste kyst med våtmark med tettsted  	Extremely wave-exposed outer coastal plain with wetland with village 			KLG_RE-KS-1		KLG_IYK-4			KLG_VP-2			KLG_AI-KS-2	KLG_JP-1	276	0
+LA	K	KS	57	KS-57	LA-KS-57	Ekstremt bølgeeksponert, småkupert kystslette på ytterste kyst	Extremely wave-exposed outer undulating coastal plain 			KLG_RE-KS-2		KLG_IYK-4			KLG_VP-1			KLG_AI-KS-1	KLG_JP-1	277	1
+LA	K	KS	58	KS-58	LA-KS-58	Ekstremt bølgeeksponert, småkupert kystslette på ytterste kyst med tettsted  	Extremely wave-exposed outer undulating coastal plain with village 			KLG_RE-KS-2		KLG_IYK-4			KLG_VP-1			KLG_AI-KS-2	KLG_JP-1	278	0
+LA	K	KS	59	KS-59	LA-KS-59	Ekstremt bølgeeksponert, småkupert kystslette på ytterste kyst med tettsted og høyt jordbrukspreg	Extremely wave-exposed outer undulating coastal plain with village and agriculture			KLG_RE-KS-2		KLG_IYK-4			KLG_VP-1			KLG_AI-KS-2	KLG_JP-2	279	0
+LA	K	KS	6	KS-6	LA-KS-6	Beskyttet indre flat kystslette med våtmark  	Protected inner coastal plain with wetland 			KLG_RE-KS-1		KLG_IYK-1			KLG_VP-2			KLG_AI-KS-1	KLG_JP-1	226	1
+LA	K	KS	60	KS-60	LA-KS-60	Ekstremt bølgeeksponert, småkupert kystslette på ytterste kyst med større by  	Extremely wave-exposed outer undulating coastal plain with city 			KLG_RE-KS-2		KLG_IYK-4			KLG_VP-1			KLG_AI-KS-3	KLG_JP-1	280	0
+LA	K	KS	61	KS-61	LA-KS-61	Ekstremt bølgeeksponert, småkupert kystslette på ytterste kyst med våtmark  	Extremely wave-exposed outer undulating coastal plain with wetland 			KLG_RE-KS-2		KLG_IYK-4			KLG_VP-2			KLG_AI-KS-1	KLG_JP-1	281	1
+LA	K	KS	62	KS-62	LA-KS-62	Ekstremt bølgeeksponert, kupert kystslette på ytterste kyst  	Extremely wave-exposed outer rugged coastal plain 			KLG_RE-KS-3		KLG_IYK-4			KLG_VP-1			KLG_AI-KS-1	KLG_JP-1	282	1
+LA	K	KS	63	KS-63	LA-KS-63	Ekstremt bølgeeksponert, kupert kystslette på ytterste kyst med våtmark	Extremely wave-exposed outer rugged coastal plain with wetland			KLG_RE-KS-3		KLG_IYK-4			KLG_VP-2			KLG_AI-KS-1	KLG_JP-1	283	1
+LA	K	KS	7	KS-7	LA-KS-7	Beskyttet indre flat kystslette med våtmark og høyt jordbrukspreg	Protected inner coastal plain with wetland and agriculture			KLG_RE-KS-1		KLG_IYK-1			KLG_VP-2			KLG_AI-KS-1	KLG_JP-2	227	1
+LA	K	KS	8	KS-8	LA-KS-8	Beskyttet indre flat kystslette med våtmark med tettsted  	Protected inner coastal plain with wetland with village 			KLG_RE-KS-1		KLG_IYK-1			KLG_VP-2			KLG_AI-KS-2	KLG_JP-1	228	0
+LA	K	KS	9	KS-9	LA-KS-9	Beskyttet indre småkupert kystslette  	Protected inner undulating coastal plain 			KLG_RE-KS-2		KLG_IYK-1			KLG_VP-1			KLG_AI-KS-1	KLG_JP-1	229	1
+LA	I				LA-I	Innlandslandskap	Inland													0	
+LA	K				LA-K	Kystlandskap	Coast													0	
+LA	M				LA-M	Marine landskap	Marine													0	
+LA	M	MA			LA-MA	Marine ås- og fjellandskap	Submarine hills and mountains														
+LA	M	MD			LA-MD	Marine dallandskap	Submarine fjords														
+LA	M	MS			LA-MS	Marine dyphavssletter	Submarine deepwater plains														
+LA	M	MK			LA-MK	Marine kystsletter	submarine coastal plains														

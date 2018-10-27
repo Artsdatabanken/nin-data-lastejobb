@@ -2,19 +2,36 @@ const config = require("../../config")
 const io = require("../../lib/io")
 const typesystem = require("@artsdatabanken/typesystem")
 
-let hovedtyper = io.lesDatafil("la_to_json")
-let gradienter = io.lesKildedatafil("la_lg")
+let hovedtyper = io.lesDatafil("la.csv.json")
+let klg = io.lesDatafil("la_klg.csv.json")
 
 const r = {}
 
 hovedtyper.forEach(e => {
-  r[e.kode] = {
-    tittel: { nb: e.tittel }
+  const ny = {
+    tittel: { nb: e.name, en: e.field7 }
   }
+  Object.keys(e).forEach(key => {
+    if (key.startsWith("klg_")) {
+      const verdi = e[key]
+      if (verdi) {
+        if (!ny.relasjoner) ny.relasjoner = []
+        ny.relasjoner.push({
+          kode: "LA_" + verdi.replace("_", "-"),
+          kant: "definert av",
+          kantRetur: "definerer"
+        })
+      }
+    }
+  })
+  ny.pred_lnr = e.pred_lnr
+  ny.naturlandskap = e.naturlandskap
+  r[e.s_kode] = ny
 })
 
-Object.keys(gradienter).forEach(kode => {
-  const gradKoder = gradienter[kode]
+/*
+Object.keys(klg).forEach(kode => {
+  const gradKoder = klg[kode]
   const relasjoner = []
   gradKoder.forEach(gradKode => {
     relasjoner.push({
@@ -25,5 +42,5 @@ Object.keys(gradienter).forEach(kode => {
   })
   r[kode].relasjon = relasjoner
 })
-
+*/
 io.skrivDatafil(__filename, r)
