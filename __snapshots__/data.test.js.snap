@@ -1,22 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`build/kodetre.json har antall rader 1`] = `179464`;
+exports[`build/kodetre.json har antall rader 1`] = `179514`;
 
 exports[`build/kodetre.json har forventede nøkler 1`] = `
 Object {
   "KO_DE": Object {
-    "count": 179464,
+    "count": 179514,
     "forelder": Object {
-      "count": 179464,
+      "count": 179514,
     },
     "kode": Object {
-      "count": 179464,
+      "count": 179514,
     },
     "tittel": Object {
       "KO_DE": Object {
-        "count": 252298,
+        "count": 252348,
       },
-      "count": 179464,
+      "count": 179514,
       "ingress": Object {
         "count": 1,
       },
@@ -25,29 +25,29 @@ Object {
 }
 `;
 
-exports[`build/kodetre_postgres.json har antall rader 1`] = `179465`;
+exports[`build/kodetre_postgres.json har antall rader 1`] = `179515`;
 
 exports[`build/kodetre_postgres.json har forventede nøkler 1`] = `
 Object {
   "KO_DE": Object {
-    "count": 179465,
+    "count": 179515,
     "delAv": Object {
       "KO_DE": Object {
-        "count": 1415108,
+        "count": 1415250,
       },
-      "count": 179465,
+      "count": 179515,
     },
     "kode": Object {
-      "count": 179465,
+      "count": 179515,
     },
     "nivå": Object {
-      "count": 179465,
+      "count": 179515,
     },
     "tittel": Object {
       "KO_DE": Object {
-        "count": 252299,
+        "count": 252349,
       },
-      "count": 179465,
+      "count": 179515,
       "ingress": Object {
         "count": 1,
       },
@@ -181,7 +181,7 @@ Object {
 }
 `;
 
-exports[`data/full.json har antall rader 1`] = `179463`;
+exports[`data/full.json har antall rader 1`] = `179513`;
 
 exports[`data/full.json har forventede nøkler 1`] = `
 Object {
@@ -192,7 +192,7 @@ Object {
       },
       "count": 3305,
     },
-    "count": 179165,
+    "count": 179215,
     "data": Object {
       "areal": Object {
         "count": 2865,
@@ -225,9 +225,9 @@ Object {
     },
     "foreldre": Object {
       "KO_DE": Object {
-        "count": 179166,
+        "count": 179216,
       },
-      "count": 179165,
+      "count": 179215,
     },
     "infoUrl": Object {
       "count": 173904,
@@ -235,8 +235,14 @@ Object {
     "ingress": Object {
       "count": 142,
     },
+    "max": Object {
+      "count": 38,
+    },
     "metaUrl": Object {
       "count": 7,
+    },
+    "min": Object {
+      "count": 38,
     },
     "nivå": Object {
       "count": 37,
@@ -285,9 +291,9 @@ Object {
     },
     "tittel": Object {
       "KO_DE": Object {
-        "count": 251702,
+        "count": 251752,
       },
-      "count": 179165,
+      "count": 179215,
       "ingress": Object {
         "count": 1,
       },
@@ -10874,7 +10880,7 @@ Object {
 }
 `;
 
-exports[`data/full_med_graf.json har antall rader 1`] = `179463`;
+exports[`data/full_med_graf.json har antall rader 1`] = `179513`;
 
 exports[`data/full_med_graf.json har forventede nøkler 1`] = `
 Object {
@@ -10885,7 +10891,7 @@ Object {
       },
       "count": 3305,
     },
-    "count": 179165,
+    "count": 179215,
     "data": Object {
       "areal": Object {
         "count": 2865,
@@ -10918,9 +10924,9 @@ Object {
     },
     "foreldre": Object {
       "KO_DE": Object {
-        "count": 179166,
+        "count": 179216,
       },
-      "count": 179165,
+      "count": 179215,
     },
     "graf": Object {
       "KO_DE": Object {
@@ -11291,8 +11297,14 @@ Object {
     "ingress": Object {
       "count": 142,
     },
+    "max": Object {
+      "count": 38,
+    },
     "metaUrl": Object {
       "count": 7,
+    },
+    "min": Object {
+      "count": 38,
     },
     "nivå": Object {
       "count": 37,
@@ -11323,9 +11335,9 @@ Object {
     },
     "tittel": Object {
       "KO_DE": Object {
-        "count": 251702,
+        "count": 251752,
       },
-      "count": 179165,
+      "count": 179215,
       "ingress": Object {
         "count": 1,
       },
@@ -31183,6 +31195,28 @@ Object {
 }
 `;
 
+exports[`data/la_klg.json har antall rader 1`] = `50`;
+
+exports[`data/la_klg.json har forventede nøkler 1`] = `
+Object {
+  "KO_DE": Object {
+    "count": 50,
+    "max": Object {
+      "count": 38,
+    },
+    "min": Object {
+      "count": 38,
+    },
+    "tittel": Object {
+      "KO_DE": Object {
+        "count": 50,
+      },
+      "count": 50,
+    },
+  },
+}
+`;
+
 exports[`data/mangler_data.json har antall rader 1`] = `2246`;
 
 exports[`data/mangler_data.json har forventede nøkler 1`] = `
@@ -31193,7 +31227,7 @@ Object {
 }
 `;
 
-exports[`data/metabase.json har antall rader 1`] = `377134`;
+exports[`data/metabase.json har antall rader 1`] = `377230`;
 
 exports[`data/metabase.json har forventede nøkler 1`] = `
 Object {
@@ -31240,15 +31274,15 @@ Object {
     "@": Object {
       "KO_DE": Object {
         "KO_DE": Object {
-          "count": 398022,
+          "count": 398122,
           "sti": Object {
-            "count": 398022,
+            "count": 398122,
           },
           "tittel": Object {
             "KO_DE": Object {
-              "count": 615628,
+              "count": 615728,
             },
-            "count": 398022,
+            "count": 398122,
             "ingress": Object {
               "count": 2,
             },
@@ -34818,7 +34852,7 @@ Object {
             "count": 3,
           },
         },
-        "count": 377124,
+        "count": 377220,
         "~": Object {
           "count": 2,
           "sti": Object {
@@ -35012,7 +35046,7 @@ Object {
         },
         "count": 7,
       },
-      "count": 377133,
+      "count": 377229,
       "farge": Object {
         "count": 9,
       },
@@ -41185,7 +41219,232 @@ Object {
       },
       "count": 173988,
     },
-    "count": 377133,
+    "count": 377229,
+    "klg": Object {
+      "KO_DE": Object {
+        "@": Object {
+          "barn": Object {
+            "KO_DE": Object {
+              "count": 24,
+              "farge": Object {
+                "count": 24,
+              },
+              "tittel": Object {
+                "KO_DE": Object {
+                  "count": 24,
+                },
+                "count": 24,
+              },
+            },
+            "count": 8,
+          },
+          "count": 8,
+          "farge": Object {
+            "count": 8,
+          },
+          "kode": Object {
+            "count": 8,
+          },
+          "overordnet": Object {
+            "KO_DE": Object {
+              "count": 24,
+              "kode": Object {
+                "count": 24,
+              },
+              "tittel": Object {
+                "KO_DE": Object {
+                  "count": 24,
+                },
+                "count": 24,
+              },
+            },
+            "count": 8,
+          },
+          "tittel": Object {
+            "KO_DE": Object {
+              "count": 8,
+            },
+            "count": 8,
+          },
+          "zoom": Object {
+            "KO_DE": Object {
+              "count": 16,
+            },
+            "count": 8,
+          },
+        },
+        "KO_DE": Object {
+          "@": Object {
+            "barn": Object {
+              "KO_DE": Object {
+                "count": 11,
+                "farge": Object {
+                  "count": 11,
+                },
+                "tittel": Object {
+                  "KO_DE": Object {
+                    "count": 11,
+                  },
+                  "count": 11,
+                },
+              },
+              "count": 26,
+            },
+            "count": 26,
+            "farge": Object {
+              "count": 26,
+            },
+            "kode": Object {
+              "count": 26,
+            },
+            "max": Object {
+              "count": 23,
+            },
+            "min": Object {
+              "count": 23,
+            },
+            "overordnet": Object {
+              "KO_DE": Object {
+                "count": 102,
+                "kode": Object {
+                  "count": 102,
+                },
+                "tittel": Object {
+                  "KO_DE": Object {
+                    "count": 102,
+                  },
+                  "count": 102,
+                },
+              },
+              "count": 26,
+            },
+            "tittel": Object {
+              "KO_DE": Object {
+                "count": 26,
+              },
+              "count": 26,
+            },
+            "zoom": Object {
+              "KO_DE": Object {
+                "count": 52,
+              },
+              "count": 26,
+            },
+          },
+          "KO_DE": Object {
+            "@": Object {
+              "barn": Object {
+                "KO_DE": Object {
+                  "count": 4,
+                  "farge": Object {
+                    "count": 4,
+                  },
+                  "tittel": Object {
+                    "KO_DE": Object {
+                      "count": 4,
+                    },
+                    "count": 4,
+                  },
+                },
+                "count": 12,
+              },
+              "count": 12,
+              "farge": Object {
+                "count": 12,
+              },
+              "kode": Object {
+                "count": 12,
+              },
+              "max": Object {
+                "count": 11,
+              },
+              "min": Object {
+                "count": 11,
+              },
+              "overordnet": Object {
+                "KO_DE": Object {
+                  "count": 50,
+                  "kode": Object {
+                    "count": 50,
+                  },
+                  "tittel": Object {
+                    "KO_DE": Object {
+                      "count": 50,
+                    },
+                    "count": 50,
+                  },
+                },
+                "count": 12,
+              },
+              "tittel": Object {
+                "KO_DE": Object {
+                  "count": 12,
+                },
+                "count": 12,
+              },
+              "zoom": Object {
+                "KO_DE": Object {
+                  "count": 24,
+                },
+                "count": 12,
+              },
+            },
+            "KO_DE": Object {
+              "@": Object {
+                "barn": Object {
+                  "count": 4,
+                },
+                "count": 4,
+                "farge": Object {
+                  "count": 4,
+                },
+                "kode": Object {
+                  "count": 4,
+                },
+                "max": Object {
+                  "count": 4,
+                },
+                "min": Object {
+                  "count": 4,
+                },
+                "overordnet": Object {
+                  "KO_DE": Object {
+                    "count": 16,
+                    "kode": Object {
+                      "count": 16,
+                    },
+                    "tittel": Object {
+                      "KO_DE": Object {
+                        "count": 16,
+                      },
+                      "count": 16,
+                    },
+                  },
+                  "count": 4,
+                },
+                "tittel": Object {
+                  "KO_DE": Object {
+                    "count": 4,
+                  },
+                  "count": 4,
+                },
+                "zoom": Object {
+                  "KO_DE": Object {
+                    "count": 8,
+                  },
+                  "count": 4,
+                },
+              },
+              "count": 4,
+            },
+            "count": 12,
+          },
+          "count": 27,
+        },
+        "count": 9,
+      },
+      "count": 1,
+    },
     "s": Object {
       "KO_DE": Object {
         "@": Object {
@@ -41271,7 +41530,7 @@ Object {
 }
 `;
 
-exports[`data/metabase_med_bbox.json har antall rader 1`] = `179463`;
+exports[`data/metabase_med_bbox.json har antall rader 1`] = `179513`;
 
 exports[`data/metabase_med_bbox.json har forventede nøkler 1`] = `
 Object {
@@ -41291,7 +41550,7 @@ Object {
       },
       "count": 3305,
     },
-    "count": 179165,
+    "count": 179215,
     "data": Object {
       "areal": Object {
         "count": 2865,
@@ -41324,9 +41583,9 @@ Object {
     },
     "foreldre": Object {
       "KO_DE": Object {
-        "count": 179166,
+        "count": 179216,
       },
-      "count": 179165,
+      "count": 179215,
     },
     "formats": Object {
       "count": 5194,
@@ -41709,8 +41968,14 @@ Object {
     "ingress": Object {
       "count": 142,
     },
+    "max": Object {
+      "count": 38,
+    },
     "metaUrl": Object {
       "count": 7,
+    },
+    "min": Object {
+      "count": 38,
     },
     "nivå": Object {
       "count": 37,
@@ -41741,9 +42006,9 @@ Object {
     },
     "tittel": Object {
       "KO_DE": Object {
-        "count": 251702,
+        "count": 251752,
       },
-      "count": 179165,
+      "count": 179215,
       "ingress": Object {
         "count": 1,
       },
