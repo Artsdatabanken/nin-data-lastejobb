@@ -9,7 +9,9 @@ script:
   - yarn test
 before_deploy:
   - git tag "$(date +'%Y%m%d-%H%M%S')-$(git log --format=%h -1)"
+  - ls -la build
   - cd build
+  - ls -la
   - tar -zcf sqlite.tar.gz metabase.sqlite
   - tar -zcf postgres.tar.gz kodetre_postgres.json
 deploy:
@@ -18,7 +20,7 @@ deploy:
   file_glob: true
   file:
     - build/sqlite.tar.gz
-    - build/postgres.tar.gz
+    - postgres.tar.gz
   skip_cleanup: true
 notifications:
   slack:
