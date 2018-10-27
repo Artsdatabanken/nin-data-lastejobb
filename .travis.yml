@@ -19,8 +19,6 @@ deploy:
   file:
     - build/sqlite.tar.gz
     - build/postgres.tar.gz
-  on:
-    tags: true
   skip_cleanup: true
 notifications:
   slack:
