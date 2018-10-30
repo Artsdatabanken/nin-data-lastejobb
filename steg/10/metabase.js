@@ -2,7 +2,6 @@ const config = require("../../config")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
-const tinyColor = require("tinycolor2")
 
 function harKartData(kode) {
   const visAlltid = [
@@ -80,8 +79,7 @@ function harKartData(kode) {
 }
 
 let slettet_fordi_mangler_bbox = []
-let data = io.lesDatafil("metabase_med_bbox")
-const farger = io.lesDatafil("farger")
+let data = io.lesDatafil("metabase_med_farger")
 
 Object.keys(data).forEach(kode => {
   const node = data[kode]
@@ -188,52 +186,9 @@ function fjernPrefiks(kode, rotkode) {
   return kode
 }
 
-let tempCounter = 0
-let tempColors = [
-  "#d53e4f",
-  "#f46d43",
-  "#fdae61",
-  "#fee08b",
-  "#e6f598",
-  "#abdda4",
-  "#66c2a5",
-  "#3288bd"
-]
-
-function tilfeldigFarge() {
-  const n = Math.floor(Math.random() * tempColors.length)
-  return tempColors[n]
-}
-
-function slåOppFarge(kode) {
-  // Supersløvt prefiks oppslag
-  if (farger[kode]) return farger[kode]
-  for (let fkode of Object.keys(farger)) {
-    if (kode.startsWith(fkode)) return farger[fkode]
-  }
-  return null
-}
-
-function tilordneFarger(barna, rotFarge) {
-  let farge = new tinyColor(rotFarge)
-  Object.keys(barna).forEach(bkode => {
-    const barn = barna[bkode]
-    let minFarge = data[bkode].farge
-    // Bruk farger definert i farger.json
-    minFarge = minFarge || slåOppFarge(bkode)
-
-    if (!minFarge) {
-      minFarge = tilfeldigFarge()
-      data[bkode].farge = minFarge
-    }
-    if (minFarge) barn.farge = minFarge
-  })
-}
-
 function byggTreFra(tre, key) {
   let rot = data[key]
   if (!rot) throw new Error("Finner ikke " + key)
-  if (!rot.farge) rot.farge = slåOppFarge(key)
   if (!rot.overordnet) {
     if (!rot.foreldre) {
       log.warn("mangler forelder: " + key)
@@ -259,7 +214,6 @@ function byggTreFra(tre, key) {
       const child = byggTreFra(tre, ckey)
     })
   }
-  tilordneFarger(barn, rot.farge)
   node["@"].barn = barn
   settInn(tre, node, key)
   return node
