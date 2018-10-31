@@ -2,15 +2,13 @@
   "RL": {
     "kode": "RL",
     "tittel": { "nb": "Truet art/natur" },
-    "ingress":
-      "Truede arter er arter som står i fare for å dø ut. Den offisielle oversikten over hvilke arter dette gjelder gis i den nasjonale rødlista. Fjellrev, ulv og lomvi er blant artene som er kritisk truet.",
-    "infoUrl":
-      "https://no.wikipedia.org/wiki/IUCNs_r%C3%B8dliste#R%C3%B8dlistestatus"
+    "ingress": "Truede arter er arter som står i fare for å dø ut. Den offisielle oversikten over hvilke arter dette gjelder gis i den nasjonale rødlista. Fjellrev, ulv og lomvi er blant artene som er kritisk truet.",
+    "infoUrl": "https://no.wikipedia.org/wiki/IUCNs_r%C3%B8dliste#R%C3%B8dlistestatus"
   },
-  "RL_EN": { "kode": "RL_EN", "tittel": { "nb": "Sterkt truet" } },
-  "RL_VU": { "kode": "RL_VU", "tittel": { "nb": "Sårbar" } },
-  "RL_RE": { "kode": "RL_RE", "tittel": { "nb": "Regionalt utdødd" } },
-  "RL_NT": { "kode": "RL_NT", "tittel": { "nb": "Nær truet" } },
-  "RL_NA": { "kode": "RL_NA", "tittel": { "nb": "Ikke vurdert" } },
-  "RL_DD": { "kode": "RL_DD", "tittel": { "nb": "Datamangel" } }
+  "RL-EN": { "kode": "RL-EN", "tittel": { "nb": "Sterkt truet" } },
+  "RL-VU": { "kode": "RL-VU", "tittel": { "nb": "Sårbar" } },
+  "RL-RE": { "kode": "RL-RE", "tittel": { "nb": "Regionalt utdødd" } },
+  "RL-NT": { "kode": "RL-NT", "tittel": { "nb": "Nær truet" } },
+  "RL-NA": { "kode": "RL-NA", "tittel": { "nb": "Ikke vurdert" } },
+  "RL-DD": { "kode": "RL-DD", "tittel": { "nb": "Datamangel" } }
 }

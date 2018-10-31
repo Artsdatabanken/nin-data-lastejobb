@@ -5,17 +5,17 @@
     "infoUrl": "https://kartkatalog.miljodirektoratet.no/Dataset/Details/0",
     "sortering": 4
   },
-  "VV_FM": {
+  "VV-FM": {
     "tittel": { "nb": "Forvaltningsmyndighet" },
     "ingress": "Ansvarlig forvaltningsmyndighet for området"
   },
-  "VV_FM-FM": { "tittel": { "nb": "Fylkesmann" } },
-  "VV_FM-KO": { "tittel": { "nb": "Kommune" } },
-  "VV_FM-NP": { "tittel": { "nb": "Nasjonalparkstyre" } },
-  "VV_FM-VO": { "tittel": { "nb": "Verneområdestyre" } },
-  "VV_FM-FK": { "tittel": { "nb": "Fylkesmann og kommune" } },
-  "VV_FM-SM": { "tittel": { "nb": "Sysselmannen" } },
-  "VV_PA": {
+  "VV-FM-FM": { "tittel": { "nb": "Fylkesmann" } },
+  "VV-FM-KO": { "tittel": { "nb": "Kommune" } },
+  "VV-FM-NP": { "tittel": { "nb": "Nasjonalparkstyre" } },
+  "VV-FM-VO": { "tittel": { "nb": "Verneområdestyre" } },
+  "VV-FM-FK": { "tittel": { "nb": "Fylkesmann og kommune" } },
+  "VV-FM-SM": { "tittel": { "nb": "Sysselmannen" } },
+  "VV-PA": {
     "tittel": {
       "nb": "Verneområdets status i IUCN",
       "en": "Protected Area Categories"
@@ -23,7 +23,7 @@
     "ingress": "Naturreservat Verdens Naturvernunion IUCN, har på oppdrag fra FN vedtatt et internasjonalt system for kategorisering av verneområder.",
     "infoUrl": "https://www.iucn.org/theme/protected-areas/about/protected-area-categories"
   },
-  "VV_PA-IA": {
+  "VV-PA-IA": {
     "tittel": {
       "nb": "Vern med tanke på vitenskapelige undersøkelser og/eller miljøovervåking",
       "en": "Strict Nature Reserve"
@@ -31,7 +31,7 @@
     "ingress": "Category Ia are strictly protected areas set aside to protect biodiversity and also possibly geological/geomorphical features, where human visitation, use and impacts are strictly controlled and limited to ensure protection of the conservation values. Such protected areas can serve as indispensable reference areas for scientific research and monitoring",
     "infoUrl": "https://www.iucn.org/theme/protected-areas/about/protected-area-categories/category-ia-strict-nature-reserve"
   },
-  "VV_PA-II": {
+  "VV-PA-II": {
     "tittel": {
       "nb": "Vern av økosystemer og friluftsliv",
       "en": "National Park"
@@ -39,7 +39,7 @@
     "ingress": "Category II protected areas are large natural or near natural areas set aside to protect large-scale ecological processes, along with the complement of species and ecosystems characteristic of the area, which also provide a foundation for environmentally and culturally compatible, spiritual, scientific, educational, recreational, and visitor opportunities.",
     "infoUrl": "https://www.iucn.org/theme/protected-areas/about/protected-area-categories/category-ii-national-park"
   },
-  "VV_PA-V": {
+  "VV-PA-V": {
     "tittel": {
       "nb": "Landskapsvern og friluftsliv - Landskapsvernområde",
       "en": "Protected Landscape/ Seascape"
@@ -47,7 +47,7 @@
     "ingress": "A protected area where the interaction of people and nature over time has produced an area of distinct character with significant, ecological, biological, cultural and scenic value: and where safeguarding the integrity of this interaction is vital to protecting and sustaining the area and its associated nature conservation and other values.",
     "infoUrl": "https://www.iucn.org/theme/protected-areas/about/protected-area-categories/category-v-protected-landscape-seascape"
   },
-  "VV_PA-III": {
+  "VV-PA-III": {
     "tittel": {
       "nb": "Vern av naturlige attraksjoner",
       "en": "Natural Monument or Feature"
@@ -55,7 +55,7 @@
     "ingress": "Category III protected areas are set aside to protect a specific natural monument, which can be a landform, sea mount, submarine cavern, geological feature such as a cave or even a living feature such as an ancient grove. They are generally quite small protected areas and often have high visitor value.",
     "infoUrl": "https://www.iucn.org/theme/protected-areas/about/protected-area-categories/category-iii-natural-monument-or-feature"
   },
-  "VV_PA-IV": {
+  "VV-PA-IV": {
     "tittel": {
       "nb": "Vern gjennom aktiv forvaltning - Artsfredningsområder etc",
       "en": "Habitat/Species Management Area"
@@ -63,7 +63,7 @@
     "ingress": "Category IV protected areas aim to protect particular species or habitats and management reflects this priority. Many Category IV protected areas will need regular, active interventions to address the requirements of particular species or to maintain habitats, but this is not a requirement of the category.",
     "infoUrl": "https://www.iucn.org/theme/protected-areas/about/protected-area-categories/category-iv-habitatspecies-management-area"
   },
-  "VV_PA-IB": {
+  "VV-PA-IB": {
     "tittel": {
       "nb": "Vern for å beskytte den opprinnelige miljløtilstanden og/eller villmarksområder",
       "en": "Wilderness Area"
@@ -71,132 +71,132 @@
     "ingress": "Category Ib protected areas are usually large unmodified or slightly modified areas, retaining their natural character and influence without permanent or significant human habitation, which are protected and managed so as to preserve their natural condition.",
     "infoUrl": "https://www.iucn.org/theme/protected-areas/about/protected-area-categories/category-ib-wilderness-area"
   },
-  "VV_VP": {
+  "VV-VP": {
     "tittel": { "nb": "Verneplan" },
     "ingress": "Angir hva slags verneplan området tilhører."
   },
-  "VV_VP-SV": { "tittel": { "nb": "Skogvern" } },
-  "VV_VP-NP": {
+  "VV-VP-SV": { "tittel": { "nb": "Skogvern" } },
+  "VV-VP-NP": {
     "tittel": {
       "nb": "Verneplan for nasjonalparker og andre større verneområder"
     }
   },
-  "VV_VP-SF": { "tittel": { "nb": "Verneplan for sjøfugl" } },
-  "VV_VP-IV": { "tittel": { "nb": "Ikke vurdert" } },
-  "VV_VP-RL": {
+  "VV-VP-SF": { "tittel": { "nb": "Verneplan for sjøfugl" } },
+  "VV-VP-IV": { "tittel": { "nb": "Ikke vurdert" } },
+  "VV-VP-RL": {
     "tittel": { "nb": "Verneplan for edelløvskog/rike løvskoger" }
   },
-  "VV_VP-AV": { "tittel": { "nb": "Annet vern eller verneplan" } },
-  "VV_VP-VV": { "tittel": { "nb": "Verneplan for våtmark" } },
-  "VV_VP-VM": { "tittel": { "nb": "Verneplan for myr" } },
-  "VV_VP-KG": { "tittel": { "nb": "Kvartærgeologi" } },
-  "VV_VP-MV": { "tittel": { "nb": "Marin verneplan" } },
-  "VV_VT": { "tittel": { "nb": "Vernet tidspunkt" } },
-  "VV_VT-1915": { "tittel": { "nb": "Vernet i år 1915" } },
-  "VV_VT-1917": { "tittel": { "nb": "Vernet i år 1917" } },
-  "VV_VT-1918": { "tittel": { "nb": "Vernet i år 1918" } },
-  "VV_VT-1922": { "tittel": { "nb": "Vernet i år 1922" } },
-  "VV_VT-1923": { "tittel": { "nb": "Vernet i år 1923" } },
-  "VV_VT-1929": { "tittel": { "nb": "Vernet i år 1929" } },
-  "VV_VT-1930": { "tittel": { "nb": "Vernet i år 1930" } },
-  "VV_VT-1934": { "tittel": { "nb": "Vernet i år 1934" } },
-  "VV_VT-1935": { "tittel": { "nb": "Vernet i år 1935" } },
-  "VV_VT-1936": { "tittel": { "nb": "Vernet i år 1936" } },
-  "VV_VT-1937": { "tittel": { "nb": "Vernet i år 1937" } },
-  "VV_VT-1946": { "tittel": { "nb": "Vernet i år 1946" } },
-  "VV_VT-1954": { "tittel": { "nb": "Vernet i år 1954" } },
-  "VV_VT-1957": { "tittel": { "nb": "Vernet i år 1957" } },
-  "VV_VT-1959": { "tittel": { "nb": "Vernet i år 1959" } },
-  "VV_VT-1960": { "tittel": { "nb": "Vernet i år 1960" } },
-  "VV_VT-1961": { "tittel": { "nb": "Vernet i år 1961" } },
-  "VV_VT-1962": { "tittel": { "nb": "Vernet i år 1962" } },
-  "VV_VT-1964": { "tittel": { "nb": "Vernet i år 1964" } },
-  "VV_VT-1967": { "tittel": { "nb": "Vernet i år 1967" } },
-  "VV_VT-1968": { "tittel": { "nb": "Vernet i år 1968" } },
-  "VV_VT-1969": { "tittel": { "nb": "Vernet i år 1969" } },
-  "VV_VT-1970": { "tittel": { "nb": "Vernet i år 1970" } },
-  "VV_VT-1971": { "tittel": { "nb": "Vernet i år 1971" } },
-  "VV_VT-1972": { "tittel": { "nb": "Vernet i år 1972" } },
-  "VV_VT-1973": { "tittel": { "nb": "Vernet i år 1973" } },
-  "VV_VT-1974": { "tittel": { "nb": "Vernet i år 1974" } },
-  "VV_VT-1975": { "tittel": { "nb": "Vernet i år 1975" } },
-  "VV_VT-1976": { "tittel": { "nb": "Vernet i år 1976" } },
-  "VV_VT-1977": { "tittel": { "nb": "Vernet i år 1977" } },
-  "VV_VT-1978": { "tittel": { "nb": "Vernet i år 1978" } },
-  "VV_VT-1979": { "tittel": { "nb": "Vernet i år 1979" } },
-  "VV_VT-1980": { "tittel": { "nb": "Vernet i år 1980" } },
-  "VV_VT-1981": { "tittel": { "nb": "Vernet i år 1981" } },
-  "VV_VT-1982": { "tittel": { "nb": "Vernet i år 1982" } },
-  "VV_VT-1983": { "tittel": { "nb": "Vernet i år 1983" } },
-  "VV_VT-1984": { "tittel": { "nb": "Vernet i år 1984" } },
-  "VV_VT-1985": { "tittel": { "nb": "Vernet i år 1985" } },
-  "VV_VT-1986": { "tittel": { "nb": "Vernet i år 1986" } },
-  "VV_VT-1987": { "tittel": { "nb": "Vernet i år 1987" } },
-  "VV_VT-1988": { "tittel": { "nb": "Vernet i år 1988" } },
-  "VV_VT-1989": { "tittel": { "nb": "Vernet i år 1989" } },
-  "VV_VT-1990": { "tittel": { "nb": "Vernet i år 1990" } },
-  "VV_VT-1991": { "tittel": { "nb": "Vernet i år 1991" } },
-  "VV_VT-1992": { "tittel": { "nb": "Vernet i år 1992" } },
-  "VV_VT-1993": { "tittel": { "nb": "Vernet i år 1993" } },
-  "VV_VT-1995": { "tittel": { "nb": "Vernet i år 1995" } },
-  "VV_VT-1996": { "tittel": { "nb": "Vernet i år 1996" } },
-  "VV_VT-1997": { "tittel": { "nb": "Vernet i år 1997" } },
-  "VV_VT-1998": { "tittel": { "nb": "Vernet i år 1998" } },
-  "VV_VT-1999": { "tittel": { "nb": "Vernet i år 1999" } },
-  "VV_VT-2000": { "tittel": { "nb": "Vernet i år 2000" } },
-  "VV_VT-2001": { "tittel": { "nb": "Vernet i år 2001" } },
-  "VV_VT-2002": { "tittel": { "nb": "Vernet i år 2002" } },
-  "VV_VT-2003": { "tittel": { "nb": "Vernet i år 2003" } },
-  "VV_VT-2004": { "tittel": { "nb": "Vernet i år 2004" } },
-  "VV_VT-2005": { "tittel": { "nb": "Vernet i år 2005" } },
-  "VV_VT-2006": { "tittel": { "nb": "Vernet i år 2006" } },
-  "VV_VT-2007": { "tittel": { "nb": "Vernet i år 2007" } },
-  "VV_VT-2008": { "tittel": { "nb": "Vernet i år 2008" } },
-  "VV_VT-2009": { "tittel": { "nb": "Vernet i år 2009" } },
-  "VV_VT-2010": { "tittel": { "nb": "Vernet i år 2010" } },
-  "VV_VT-2011": { "tittel": { "nb": "Vernet i år 2011" } },
-  "VV_VT-2012": { "tittel": { "nb": "Vernet i år 2012" } },
-  "VV_VT-2013": { "tittel": { "nb": "Vernet i år 2013" } },
-  "VV_VT-2014": { "tittel": { "nb": "Vernet i år 2014" } },
-  "VV_VT-2015": { "tittel": { "nb": "Vernet i år 2015" } },
-  "VV_VT-2016": { "tittel": { "nb": "Vernet i år 2016" } },
-  "VV_VT-2017": { "tittel": { "nb": "Vernet i år 2017" } },
-  "VV_VF": {
+  "VV-VP-AV": { "tittel": { "nb": "Annet vern eller verneplan" } },
+  "VV-VP-VV": { "tittel": { "nb": "Verneplan for våtmark" } },
+  "VV-VP-VM": { "tittel": { "nb": "Verneplan for myr" } },
+  "VV-VP-KG": { "tittel": { "nb": "Kvartærgeologi" } },
+  "VV-VP-MV": { "tittel": { "nb": "Marin verneplan" } },
+  "VV-VT": { "tittel": { "nb": "Vernet tidspunkt" } },
+  "VV-VT-1915": { "tittel": { "nb": "Vernet i år 1915" } },
+  "VV-VT-1917": { "tittel": { "nb": "Vernet i år 1917" } },
+  "VV-VT-1918": { "tittel": { "nb": "Vernet i år 1918" } },
+  "VV-VT-1922": { "tittel": { "nb": "Vernet i år 1922" } },
+  "VV-VT-1923": { "tittel": { "nb": "Vernet i år 1923" } },
+  "VV-VT-1929": { "tittel": { "nb": "Vernet i år 1929" } },
+  "VV-VT-1930": { "tittel": { "nb": "Vernet i år 1930" } },
+  "VV-VT-1934": { "tittel": { "nb": "Vernet i år 1934" } },
+  "VV-VT-1935": { "tittel": { "nb": "Vernet i år 1935" } },
+  "VV-VT-1936": { "tittel": { "nb": "Vernet i år 1936" } },
+  "VV-VT-1937": { "tittel": { "nb": "Vernet i år 1937" } },
+  "VV-VT-1946": { "tittel": { "nb": "Vernet i år 1946" } },
+  "VV-VT-1954": { "tittel": { "nb": "Vernet i år 1954" } },
+  "VV-VT-1957": { "tittel": { "nb": "Vernet i år 1957" } },
+  "VV-VT-1959": { "tittel": { "nb": "Vernet i år 1959" } },
+  "VV-VT-1960": { "tittel": { "nb": "Vernet i år 1960" } },
+  "VV-VT-1961": { "tittel": { "nb": "Vernet i år 1961" } },
+  "VV-VT-1962": { "tittel": { "nb": "Vernet i år 1962" } },
+  "VV-VT-1964": { "tittel": { "nb": "Vernet i år 1964" } },
+  "VV-VT-1967": { "tittel": { "nb": "Vernet i år 1967" } },
+  "VV-VT-1968": { "tittel": { "nb": "Vernet i år 1968" } },
+  "VV-VT-1969": { "tittel": { "nb": "Vernet i år 1969" } },
+  "VV-VT-1970": { "tittel": { "nb": "Vernet i år 1970" } },
+  "VV-VT-1971": { "tittel": { "nb": "Vernet i år 1971" } },
+  "VV-VT-1972": { "tittel": { "nb": "Vernet i år 1972" } },
+  "VV-VT-1973": { "tittel": { "nb": "Vernet i år 1973" } },
+  "VV-VT-1974": { "tittel": { "nb": "Vernet i år 1974" } },
+  "VV-VT-1975": { "tittel": { "nb": "Vernet i år 1975" } },
+  "VV-VT-1976": { "tittel": { "nb": "Vernet i år 1976" } },
+  "VV-VT-1977": { "tittel": { "nb": "Vernet i år 1977" } },
+  "VV-VT-1978": { "tittel": { "nb": "Vernet i år 1978" } },
+  "VV-VT-1979": { "tittel": { "nb": "Vernet i år 1979" } },
+  "VV-VT-1980": { "tittel": { "nb": "Vernet i år 1980" } },
+  "VV-VT-1981": { "tittel": { "nb": "Vernet i år 1981" } },
+  "VV-VT-1982": { "tittel": { "nb": "Vernet i år 1982" } },
+  "VV-VT-1983": { "tittel": { "nb": "Vernet i år 1983" } },
+  "VV-VT-1984": { "tittel": { "nb": "Vernet i år 1984" } },
+  "VV-VT-1985": { "tittel": { "nb": "Vernet i år 1985" } },
+  "VV-VT-1986": { "tittel": { "nb": "Vernet i år 1986" } },
+  "VV-VT-1987": { "tittel": { "nb": "Vernet i år 1987" } },
+  "VV-VT-1988": { "tittel": { "nb": "Vernet i år 1988" } },
+  "VV-VT-1989": { "tittel": { "nb": "Vernet i år 1989" } },
+  "VV-VT-1990": { "tittel": { "nb": "Vernet i år 1990" } },
+  "VV-VT-1991": { "tittel": { "nb": "Vernet i år 1991" } },
+  "VV-VT-1992": { "tittel": { "nb": "Vernet i år 1992" } },
+  "VV-VT-1993": { "tittel": { "nb": "Vernet i år 1993" } },
+  "VV-VT-1995": { "tittel": { "nb": "Vernet i år 1995" } },
+  "VV-VT-1996": { "tittel": { "nb": "Vernet i år 1996" } },
+  "VV-VT-1997": { "tittel": { "nb": "Vernet i år 1997" } },
+  "VV-VT-1998": { "tittel": { "nb": "Vernet i år 1998" } },
+  "VV-VT-1999": { "tittel": { "nb": "Vernet i år 1999" } },
+  "VV-VT-2000": { "tittel": { "nb": "Vernet i år 2000" } },
+  "VV-VT-2001": { "tittel": { "nb": "Vernet i år 2001" } },
+  "VV-VT-2002": { "tittel": { "nb": "Vernet i år 2002" } },
+  "VV-VT-2003": { "tittel": { "nb": "Vernet i år 2003" } },
+  "VV-VT-2004": { "tittel": { "nb": "Vernet i år 2004" } },
+  "VV-VT-2005": { "tittel": { "nb": "Vernet i år 2005" } },
+  "VV-VT-2006": { "tittel": { "nb": "Vernet i år 2006" } },
+  "VV-VT-2007": { "tittel": { "nb": "Vernet i år 2007" } },
+  "VV-VT-2008": { "tittel": { "nb": "Vernet i år 2008" } },
+  "VV-VT-2009": { "tittel": { "nb": "Vernet i år 2009" } },
+  "VV-VT-2010": { "tittel": { "nb": "Vernet i år 2010" } },
+  "VV-VT-2011": { "tittel": { "nb": "Vernet i år 2011" } },
+  "VV-VT-2012": { "tittel": { "nb": "Vernet i år 2012" } },
+  "VV-VT-2013": { "tittel": { "nb": "Vernet i år 2013" } },
+  "VV-VT-2014": { "tittel": { "nb": "Vernet i år 2014" } },
+  "VV-VT-2015": { "tittel": { "nb": "Vernet i år 2015" } },
+  "VV-VT-2016": { "tittel": { "nb": "Vernet i år 2016" } },
+  "VV-VT-2017": { "tittel": { "nb": "Vernet i år 2017" } },
+  "VV-VF": {
     "tittel": { "nb": "Verneform" },
     "ingress": "Ulike typer vern sortert under forskjellig lovverk og/med tilhørende restriksjoner"
   },
-  "VV_VF-NR": { "tittel": { "nb": "Naturreservat" } },
-  "VV_VF-NP": { "tittel": { "nb": "Nasjonalpark" } },
-  "VV_VF-LVO": { "tittel": { "nb": "Landskapsvernområde" } },
-  "VV_VF-D": { "tittel": { "nb": "Dyrelivsfredning" } },
-  "VV_VF-PD": { "tittel": { "nb": "Plante- og dyrelivsfredning" } },
-  "VV_VF-NM": { "tittel": { "nb": "Naturminne" } },
-  "VV_VF-LVOP": {
+  "VV-VF-NR": { "tittel": { "nb": "Naturreservat" } },
+  "VV-VF-NP": { "tittel": { "nb": "Nasjonalpark" } },
+  "VV-VF-LVO": { "tittel": { "nb": "Landskapsvernområde" } },
+  "VV-VF-D": { "tittel": { "nb": "Dyrelivsfredning" } },
+  "VV-VF-PD": { "tittel": { "nb": "Plante- og dyrelivsfredning" } },
+  "VV-VF-NM": { "tittel": { "nb": "Naturminne" } },
+  "VV-VF-LVOP": {
     "tittel": { "nb": "Landskapsvernområde med plantelivsfredning" }
   },
-  "VV_VF-DO": { "tittel": { "nb": "Dyrefredningsområde" } },
-  "VV_VF-LVOD": {
+  "VV-VF-DO": { "tittel": { "nb": "Dyrefredningsområde" } },
+  "VV-VF-LVOD": {
     "tittel": { "nb": "Landskapsvernområde med dyrelivsfredning" }
   },
-  "VV_VF-PO": { "tittel": { "nb": "Plantefredningsområde" } },
-  "VV_VF-LVOPD": {
+  "VV-VF-PO": { "tittel": { "nb": "Plantefredningsområde" } },
+  "VV-VF-LVOPD": {
     "tittel": { "nb": "Landskapsvernområde med plante- og dyrelivsfredning" }
   },
-  "VV_VF-PDO": { "tittel": { "nb": "Plante- og dyrefredningsområde" } },
-  "VV_VF-MIV": { "tittel": { "nb": "Midlertidig verna område/objekt" } },
-  "VV_VF-P": { "tittel": { "nb": "Plantelivsfredning" } },
-  "VV_VF-BVV": { "tittel": { "nb": "Biotopvern etter viltloven" } },
-  "VV_VF-NRS": { "tittel": { "nb": "Naturreservat (Svalbardmiljøloven)" } },
-  "VV_VF-NPS": { "tittel": { "nb": "Nasjonalpark (Svalbardmiljøloven)" } },
-  "VV_VF-GVS": { "tittel": { "nb": "Geotopvern (Svalbardmiljøloven)" } },
-  "VV_VF-MAV": {
+  "VV-VF-PDO": { "tittel": { "nb": "Plante- og dyrefredningsområde" } },
+  "VV-VF-MIV": { "tittel": { "nb": "Midlertidig verna område/objekt" } },
+  "VV-VF-P": { "tittel": { "nb": "Plantelivsfredning" } },
+  "VV-VF-BVV": { "tittel": { "nb": "Biotopvern etter viltloven" } },
+  "VV-VF-NRS": { "tittel": { "nb": "Naturreservat (Svalbardmiljøloven)" } },
+  "VV-VF-NPS": { "tittel": { "nb": "Nasjonalpark (Svalbardmiljøloven)" } },
+  "VV-VF-GVS": { "tittel": { "nb": "Geotopvern (Svalbardmiljøloven)" } },
+  "VV-VF-MAV": {
     "tittel": { "nb": "Marint verneområde (naturmangfoldloven)" }
   },
-  "VV_VF-BV": { "tittel": { "nb": "Biotopvern" } },
-  "VV_TV": { "tittel": { "nb": "Truet vurdering" } },
-  "VV_TV-IT": { "tittel": { "nb": "Ikke truet" } },
-  "VV_TV-U": { "tittel": { "nb": "Ukjent" } },
-  "VV_TV-T": { "tittel": { "nb": "Truet" } },
-  "VV_TV-N": { "tittel": { "nb": "Null" } },
-  "VV_AO": { "tittel": { "nb": "Fylke & kommune" } }
+  "VV-VF-BV": { "tittel": { "nb": "Biotopvern" } },
+  "VV-TV": { "tittel": { "nb": "Truet vurdering" } },
+  "VV-TV-IT": { "tittel": { "nb": "Ikke truet" } },
+  "VV-TV-U": { "tittel": { "nb": "Ukjent" } },
+  "VV-TV-T": { "tittel": { "nb": "Truet" } },
+  "VV-TV-N": { "tittel": { "nb": "Null" } },
+  "VV-AO": { "tittel": { "nb": "Fylke & kommune" } }
 }
