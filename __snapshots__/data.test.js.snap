@@ -4429,6 +4429,505 @@ Object {
 }
 `;
 
+exports[`data/metabase_bbox.json har antall rader 1`] = `177301`;
+
+exports[`data/metabase_bbox.json har forventede nøkler 1`] = `
+Object {
+  "_": Object {
+    "_": Object {
+      "count": 297,
+    },
+    "bbox": Object {
+      "_": Object {
+        "_": Object {
+          "count": 20776,
+        },
+        "count": 10388,
+      },
+      "count": 5194,
+    },
+    "betegnelse": Object {
+      "_": Object {
+        "count": 3304,
+      },
+      "count": 3304,
+    },
+    "count": 177300,
+    "data": Object {
+      "areal": Object {
+        "count": 2865,
+      },
+      "count": 2865,
+      "forvaltningsmyndighet": Object {
+        "count": 2865,
+      },
+      "iucn": Object {
+        "count": 2819,
+      },
+      "revisjonsdato": Object {
+        "count": 320,
+      },
+      "truetvurdering": Object {
+        "count": 2794,
+      },
+      "vernedato": Object {
+        "count": 2865,
+      },
+      "verneform": Object {
+        "count": 2865,
+      },
+      "verneplan": Object {
+        "count": 2865,
+      },
+    },
+    "farge": Object {
+      "count": 6244,
+    },
+    "foreldre": Object {
+      "_": Object {
+        "count": 177301,
+      },
+      "count": 177300,
+    },
+    "formats": Object {
+      "count": 5194,
+      "gradient": Object {
+        "count": 2,
+      },
+      "polygon": Object {
+        "count": 5194,
+      },
+    },
+    "graf": Object {
+      "_": Object {
+        "_": Object {
+          "count": 5334,
+          "erSubset": Object {
+            "count": 151,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 15155,
+            },
+            "count": 5334,
+          },
+        },
+        "count": 656,
+      },
+      "ble vernet i år": Object {
+        "_": Object {
+          "count": 5730,
+          "erSubset": Object {
+            "count": 5730,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5730,
+            },
+            "count": 5730,
+          },
+        },
+        "count": 2934,
+      },
+      "count": 4780,
+      "definerer hovedtype": Object {
+        "_": Object {
+          "count": 455,
+          "erSubset": Object {
+            "count": 455,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 455,
+            },
+            "count": 455,
+          },
+        },
+        "count": 92,
+      },
+      "definisjonsgrunnlag": Object {
+        "_": Object {
+          "count": 66,
+          "erSubset": Object {
+            "count": 66,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 66,
+            },
+            "count": 66,
+          },
+        },
+        "count": 66,
+      },
+      "differensierende miljøvariabel": Object {
+        "_": Object {
+          "count": 67,
+          "erSubset": Object {
+            "count": 67,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 67,
+            },
+            "count": 67,
+          },
+        },
+        "count": 50,
+      },
+      "forvalter": Object {
+        "_": Object {
+          "count": 2883,
+          "erSubset": Object {
+            "count": 2883,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 2883,
+            },
+            "count": 2883,
+          },
+        },
+        "count": 24,
+      },
+      "forvaltes av": Object {
+        "_": Object {
+          "count": 2865,
+          "erSubset": Object {
+            "count": 2865,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 2865,
+            },
+            "count": 2865,
+          },
+        },
+        "count": 2865,
+      },
+      "habitat": Object {
+        "_": Object {
+          "count": 4837,
+          "erSubset": Object {
+            "count": 4837,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 4837,
+            },
+            "count": 4837,
+          },
+        },
+        "count": 1001,
+      },
+      "iucn": Object {
+        "_": Object {
+          "count": 5638,
+          "erSubset": Object {
+            "count": 5638,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 8457,
+            },
+            "count": 5638,
+          },
+        },
+        "count": 2825,
+      },
+      "ligger i fylke": Object {
+        "_": Object {
+          "count": 5884,
+          "erSubset": Object {
+            "count": 5884,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5884,
+            },
+            "count": 5884,
+          },
+        },
+        "count": 2853,
+      },
+      "ligger i kommune": Object {
+        "_": Object {
+          "count": 6704,
+          "erSubset": Object {
+            "count": 6704,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 6704,
+            },
+            "count": 6704,
+          },
+        },
+        "count": 3225,
+      },
+      "mengdeart": Object {
+        "_": Object {
+          "count": 280,
+          "tittel": Object {
+            "_": Object {
+              "count": 817,
+            },
+            "count": 280,
+          },
+        },
+        "count": 90,
+      },
+      "prosedyrekategori": Object {
+        "_": Object {
+          "count": 66,
+          "erSubset": Object {
+            "count": 66,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 66,
+            },
+            "count": 66,
+          },
+        },
+        "count": 66,
+      },
+      "publisererer": Object {
+        "_": Object {
+          "count": 13,
+          "erSubset": Object {
+            "count": 13,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 13,
+            },
+            "count": 13,
+          },
+        },
+        "count": 7,
+      },
+      "publiseres av": Object {
+        "_": Object {
+          "count": 13,
+          "erSubset": Object {
+            "count": 13,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 14,
+            },
+            "count": 13,
+          },
+        },
+        "count": 11,
+      },
+      "skilleart": Object {
+        "_": Object {
+          "count": 47,
+          "tittel": Object {
+            "_": Object {
+              "count": 141,
+            },
+            "count": 47,
+          },
+        },
+        "count": 13,
+      },
+      "truet vurdering": Object {
+        "_": Object {
+          "count": 5496,
+          "erSubset": Object {
+            "count": 5496,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5496,
+            },
+            "count": 5496,
+          },
+        },
+        "count": 2752,
+      },
+      "tyngdepunktart": Object {
+        "_": Object {
+          "count": 580,
+          "tittel": Object {
+            "_": Object {
+              "count": 1645,
+            },
+            "count": 580,
+          },
+        },
+        "count": 111,
+      },
+      "underordnet miljøvariabel": Object {
+        "_": Object {
+          "count": 127,
+          "erSubset": Object {
+            "count": 127,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 127,
+            },
+            "count": 127,
+          },
+        },
+        "count": 50,
+      },
+      "verneform": Object {
+        "_": Object {
+          "count": 5730,
+          "erSubset": Object {
+            "count": 5730,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5730,
+            },
+            "count": 5730,
+          },
+        },
+        "count": 2885,
+      },
+      "verneområder som forvaltes av": Object {
+        "_": Object {
+          "count": 18,
+          "erSubset": Object {
+            "count": 18,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 18,
+            },
+            "count": 18,
+          },
+        },
+        "count": 18,
+      },
+      "verneplan": Object {
+        "_": Object {
+          "count": 5730,
+          "erSubset": Object {
+            "count": 5730,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5730,
+            },
+            "count": 5730,
+          },
+        },
+        "count": 2875,
+      },
+    },
+    "infoUrl": Object {
+      "count": 173937,
+    },
+    "ingress": Object {
+      "count": 114,
+    },
+    "kode": Object {
+      "count": 177300,
+    },
+    "max": Object {
+      "count": 38,
+    },
+    "metaUrl": Object {
+      "count": 7,
+    },
+    "min": Object {
+      "count": 38,
+    },
+    "naturlandskap": Object {
+      "count": 297,
+    },
+    "nivå": Object {
+      "count": 37,
+    },
+    "relasjoner": Object {
+      "_": Object {
+        "count": 1555,
+        "kant": Object {
+          "count": 1555,
+        },
+        "kantRetur": Object {
+          "count": 1555,
+        },
+        "kode": Object {
+          "count": 1555,
+        },
+      },
+      "count": 288,
+    },
+    "render": Object {
+      "count": 1,
+    },
+    "skjul": Object {
+      "count": 1,
+    },
+    "sortering": Object {
+      "count": 12,
+    },
+    "stats": Object {
+      "areal": Object {
+        "count": 4266,
+      },
+      "arealPrefix": Object {
+        "count": 4266,
+      },
+      "count": 4266,
+      "geometrier": Object {
+        "count": 4266,
+      },
+      "geometrierPrefix": Object {
+        "count": 4266,
+      },
+    },
+    "tittel": Object {
+      "_": Object {
+        "count": 250143,
+      },
+      "count": 177300,
+      "ingress": Object {
+        "count": 1,
+      },
+    },
+    "type": Object {
+      "count": 5,
+    },
+    "url": Object {
+      "count": 171042,
+    },
+    "utenRamme": Object {
+      "count": 20,
+    },
+    "zoom": Object {
+      "_": Object {
+        "count": 10388,
+      },
+      "count": 5194,
+    },
+  },
+  "~": Object {
+    "count": 1,
+    "foreldre": Object {
+      "count": 1,
+    },
+    "kode": Object {
+      "count": 1,
+    },
+    "tittel": Object {
+      "_": Object {
+        "count": 1,
+      },
+      "count": 1,
+    },
+  },
+}
+`;
+
 exports[`data/metabase_med_bbox.json har antall rader 1`] = `179547`;
 
 exports[`data/metabase_med_bbox.json har forventede nøkler 1`] = `
