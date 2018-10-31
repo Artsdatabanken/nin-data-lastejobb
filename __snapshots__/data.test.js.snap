@@ -56,10 +56,6 @@ Object {
 }
 `;
 
-exports[`build/raster_index.json har antall rader 1`] = `0`;
-
-exports[`build/raster_index.json har forventede nøkler 1`] = `Object {}`;
-
 exports[`data/ao_naturvernområde.json har antall rader 1`] = `458`;
 
 exports[`data/ao_naturvernområde.json har forventede nøkler 1`] = `
