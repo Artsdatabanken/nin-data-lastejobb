@@ -4,6 +4,7 @@ const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
 let data = io.lesDatafil("metabase_bbox")
+let hierarki = io.lesDatafil("kodehierarki")
 
 function sti(kode) {
   return typesystem
@@ -33,6 +34,9 @@ function fyllInnGraf() {
 
 var p2c = {},
   c2p = {}
+
+p2c = hierarki.barn
+c2p = hierarki.foreldre
 
 function mapForelderTilBarn(kode, node) {
   if (!c2p[kode]) c2p[kode] = []
@@ -120,19 +124,11 @@ function byggTreFra(tre, key) {
   return node
 }
 
-function erLovligNøkkel(key) {
-  const invalid = "$#[]/.".split("")
-  for (let c of invalid) if (key.indexOf(c) >= 0) return false
-  return true
-}
-
 function settInn(tre, node, kode) {
   const segments = typesystem.splittKode(node["@"].kode.toLowerCase())
   if (segments.length === 0) {
     Object.keys(node).forEach(key => {
       tre[key] = Object.assign({}, tre[key], node[key])
-      if (!erLovligNøkkel(key))
-        throw new Error("kode " + kode + " har ulovlig nøkkel " + key)
     })
     return
   }
@@ -201,18 +197,6 @@ function injectNamedAliases(tre) {
   })
 }
 
-function validateKeys(tre, path) {
-  if (tre instanceof Object && tre.constructor === Object)
-    Object.keys(tre).forEach(key => {
-      const newPath = path + "." + key
-      if (!erLovligNøkkel(key)) log.error("invalid key:", newPath)
-      validateKeys(tre[key], newPath)
-    })
-  if (Array.isArray(tre)) {
-    tre.forEach(item => validateKeys(item, path + "[]"))
-  }
-}
-
 function hacks(tre) {
   // Fjern barn fra VV - for mange, bruk alternative ruter
   const vv = tre.vv["@"].barn
@@ -232,7 +216,7 @@ function zoomlevels(kode, zoom) {
   })
 }
 
-mapForeldreTilBarn()
+//mapForeldreTilBarn()
 zoomlevels(typesystem.rotkode)
 
 let tre = {}
@@ -242,10 +226,7 @@ injectNamedAliases(tre)
 hacks(tre)
 fyllInnGraf()
 
-//log.debug("Mangler bbox for: " + JSON.stringify(slettet_fordi_mangler_bbox))
 if (ukjenteKoder.length > 0)
   log.warn("Kobling til +" + ukjenteKoder.length + " ukjente koder")
 tre = { katalog: tre }
 io.skrivDatafil(__filename, tre)
-
-validateKeys(tre, "")
