@@ -59,6 +59,8 @@ function eksporter(node, forfedre = [], nivå = 0) {
       tittel: barn.tittel,
       index: barn.index
     }
+    if (barn.min) rel.min = barn.min
+    if (barn.max) rel.max = barn.max
     ut.push(rel)
     eksporter(barn, forfedre, nivå + 1)
   })
