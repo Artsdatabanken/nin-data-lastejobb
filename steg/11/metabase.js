@@ -5,6 +5,8 @@ const typesystem = require("@artsdatabanken/typesystem")
 
 let data = io.lesDatafil("metabase_bbox")
 let hierarki = io.lesDatafil("kodehierarki")
+const barnAv = hierarki.barn
+const foreldreTil = hierarki.foreldre
 
 function sti(kode) {
   return typesystem
@@ -15,7 +17,7 @@ function sti(kode) {
 
 let ukjenteKoder = []
 
-function fyllInnGraf() {
+function settFargePåRelasjoner() {
   Object.keys(data).forEach(kode => {
     const node = data[kode]
     if (!node.graf) return
@@ -32,44 +34,6 @@ function fyllInnGraf() {
   })
 }
 
-var p2c = {},
-  c2p = {}
-
-p2c = hierarki.barn
-c2p = hierarki.foreldre
-
-function mapForelderTilBarn(kode, node) {
-  if (!c2p[kode]) c2p[kode] = []
-  if (!node.foreldre) {
-    if (!node.se) {
-      throw new Error("Mangler forelder: " + kode)
-    }
-    return
-  } else {
-    let foreldre = node.foreldre
-    foreldre.forEach(forelderkode => {
-      if (!p2c[forelderkode]) p2c[forelderkode] = []
-      p2c[forelderkode].push(kode)
-      if (!c2p[kode].includes(forelderkode)) c2p[kode].push(forelderkode)
-    })
-    if (node.barn)
-      node.barn.forEach(barnkode => {
-        if (!p2c[kode]) p2c[kode] = []
-        if (!c2p[barnkode]) c2p[barnkode] = []
-        if (!c2p[barnkode].includes(kode)) c2p[barnkode].push(kode)
-        if (!p2c[kode].includes(barnkode)) c2p[kode].push(barnkode)
-        p2c[kode].push(barnkode)
-      })
-  }
-}
-
-function mapForeldreTilBarn() {
-  Object.keys(data).forEach(kode => {
-    const node = data[kode]
-    mapForelderTilBarn(kode, node)
-  })
-}
-
 function nøstOppForfedre(forelderkey) {
   let r = []
   while (forelderkey) {
@@ -79,7 +43,7 @@ function nøstOppForfedre(forelderkey) {
       return
     }
     r.push({ kode: forelderkey, tittel: forelder.tittel })
-    forelderkey = c2p[forelderkey][0]
+    forelderkey = foreldreTil[forelderkey][0]
   }
   return r
 }
@@ -107,8 +71,8 @@ function byggTreFra(tre, key) {
   let node = { "@": rot }
   let barn = {}
 
-  if (p2c[key]) {
-    p2c[key].forEach(ckey => {
+  if (barnAv[key]) {
+    barnAv[key].forEach(ckey => {
       const cnode = data[ckey]
       if (!cnode) return
       barn[ckey] = {
@@ -188,7 +152,7 @@ function settInnAlias(tre, kode, tittel) {
   injectAlias([kodePath], kode, tre)
 }
 
-function injectNamedAliases(tre) {
+function lagRedirectFraTittel(tre) {
   Object.keys(data).forEach(kode => {
     const node = data[kode]
     settInnAlias(tre, kode, node.tittel.nb)
@@ -197,7 +161,7 @@ function injectNamedAliases(tre) {
   })
 }
 
-function hacks(tre) {
+function fjernEnkeltVerneområder(tre) {
   // Fjern barn fra VV - for mange, bruk alternative ruter
   const vv = tre.vv["@"].barn
   const keys = Object.keys(vv)
@@ -207,24 +171,25 @@ function hacks(tre) {
   })
 }
 
-function zoomlevels(kode, zoom) {
-  if (!p2c[kode]) return
-  p2c[kode].forEach(bkode => {
+function zoomlevels(kode, bbox, zoom) {
+  if (!barnAv[kode]) return
+  barnAv[kode].forEach(bkode => {
     const barn = data[bkode]
-    if (!barn.zoom) barn.zoom = zoom
-    zoomlevels(bkode, barn.zoom)
+    barn.bbox = barn.bbox || bbox
+    barn.zoom = barn.zoom || zoom
+
+    zoomlevels(bkode, barn.bbox, barn.zoom)
   })
 }
 
-//mapForeldreTilBarn()
 zoomlevels(typesystem.rotkode)
 
 let tre = {}
 let node = byggTreFra(tre, typesystem.rotkode)
 settInnAliaser(tre)
-injectNamedAliases(tre)
-hacks(tre)
-fyllInnGraf()
+lagRedirectFraTittel(tre)
+fjernEnkeltVerneområder(tre)
+settFargePåRelasjoner()
 
 if (ukjenteKoder.length > 0)
   log.warn("Kobling til +" + ukjenteKoder.length + " ukjente koder")
