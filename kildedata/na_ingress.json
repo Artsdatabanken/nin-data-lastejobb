@@ -1,202 +1,102 @@
 {
-  "NA_M8":
-    "Helofytt-saltvannssump omfatter tette bestander av makrohelofytter, det vil si storvokste sumpplanter med røttene i sublitoral bunn (som ikke tørrlegges ved lavvann), i vannstrandbeltet eller noe opp i landstrandbeltet.",
-  "NA_M1":
-    "Eufotisk fast saltvannsbunn omfatter fast fjell og stabile blokker med permanente samfunn av flerårige alge- og dyrearter, i beltet mellom normalt fjæremål, det vil si nivået som vanligvis konstant fuktes av havvann (upper infralitoral zone), gjennom tareskogsbeltet (lower infralitoral zone) og rødalgebeltet (upper circalitoral zone) ned til kompensasjonsdypet, der lysinnstrålingen er så lav [< 0.3–1(–10) % av lysinnstrålingen på ei åpen havoverflate] at planteproduksjonen er mindre nedbrytningen og alger ikke lenger forekommer regelmessig (netto primærproduksjon går fra å være positiv til å bli negativ).",
-  "NA_M2":
-    "Afotisk fast saltvannsbunn omfatter fast fjell og grove sedimenter som er stabile nok til å ha permanente samfunn, på større dyp enn kompensasjonsdypet, der planteproduksjonen er mindre enn nedbrytningen og alger ikke lenger forekommer regelmessig.",
-  "NA_M3":
-    "Fast fjærebeltebunn omfatter fast fjell og stabile blokker med permanente samfunn av flerårige alge- og dyrearter, i hele fjærebeltet.",
-  "NA_M4":
-    "Eufotisk marin sedimentbunn omfatter natursystemer på ikke-stabiliserte sedimenter fra og med vannstranddelen av fjærebeltet (hydrolitoralbeltet; det vil si den delen av fjærebeltet der bunnen er dekket av vann mer enn halve tida) ned til kompensasjonsdypet, det vil si så langt ned som det er mulig for fotosyntetiserende fastsittende organismer å klare seg.",
-  "NA_M5":
-    "Afotisk marin sedimentbunn omfatter natursystemer på ikke-stabiliserte sedimenter nedenfor kompensasjonsdypet, som ikke har naturlig permanent oksygenfrihet. Med ikke-stabilisert menes at sedimentene ikke er stabile nok til å ha stabile påvekstsamfunn.",
-  "NA_M6":
-    "Korallrev er særpregete natursystemer som er bygd opp av samfunnsdannende steinkorallers kalkskjelett.",
-  "NA_M7":
-    "Marin undervannseng omfatter sammenhengende områder på grunt vann og i vannstrand-delen av fjærebeltet som er dominert av langskuddplanter (plante med lange stengler og med blader i de frie vannmassene, oftest festet på bunnen), først og fremst ålegras (Zostera marina), men en rekke andre karplantearter kan også dominere eller inngå.",
-  "NA_M9":
-    "Litoralbasseng er vannforekomster på fast fjell i fjærebeltet som er fysisk avgrenset fra havet, som regelmessig, men ikke permanent, tilføres havvann, og som ikke har permanent utløp til (og innløp fra) havet.",
-  "NA_M10":
-    "Ei grotte (hule) er et naturlig hulrom i fjell. Liksom på land utmerker marine grotter (inkludert brenningsgrotter, det vil si grotter i tidevannsbeltet) seg med spesielle leveforhold for organismer.",
-  "NA_M11":
-    "Kald havkildebunn (cold seep) omfatter sedimentbunn nær et oppkomme av gasser og/eller væsker på havbunnen, hvor materialet som strømmer ut ikke har en temperatur så mye høyere enn havvannets temperatur på stedet at artssammensetningen påvirkes i betydelig grad.",
-  "NA_M12":
-    "Varm havkildebunn omfatter områder på fast havbunn (eventuelt med flekker av sedimentbunn) som påvirkes av utstrømming av vann, gasser, andre væsker eller magma, med vesentlig høyere temperatur enn havvannet på stedet.",
-  "NA_M13":
-    "Marin sedimentbunn preget av oksygenmangel omfatter bunnsystemer i fjorder og poller der mangelfull vannsirkulasjon fører til permanent oksygenfrie (anoksiske) bunnforhold.",
-  "NA_M14":
-    "Sterkt endret eller ny fast saltvannsbunn omfatter saltvannsbunn som er vesentlig endret ved irreversibelt inngrep, f.eks. havneutbygging, installasjoner (oljerigger, offshore vindmølleanlegg).",
-  "NA_M15":
-    "Sterkt endret eller ny marin sedimentbunn omfatter havbunn som er vesentlig endret ved deponering eller fjerning av masser, f.eks. nyanlagte badestrender, deponier for kjemisk avfall og overskuddsmasser fra gruvedrift.",
-  "NA_L1":
-    "Eufotisk fast ferskvannsbunn omfatter elvebunn og innsjøbunn med stabilt bunnsubstrat og tilstrekkelig lysinnstråling til at nettofotosyntesen er positiv.",
-  "NA_L2":
-    "Eufotisk limnisk sedimentbunn omfatter elvebunn og innsjøbunn med tilstrekkelig lysinnstråling til at nettofotosyntesen er positiv, på overveiende organisk sediment, myrtorv eller på ustabilt, overveiende uorganisk bunnsediment.",
-  "NA_L3":
-    "Afotisk (mørk) limnisk sedimentbunn omfatter bunntilknyttete natursystemer på større dyp enn kompensasjonsdypet, i innsjøer der bunnvannet ikke regelmessig gjennomgår stagnasjonsperioder med så sterk oksygenmangel at det gir seg utslag i artssammensetningen (hypoksi eller anoksi).",
-  "NA_L4":
-    "Helofytt-ferskvannssump omfatter tette bestander av makrohelofytter, det vil si storvokste sumpplanter, omkring eller under grensa mellom ferskvannssystem og fastmarks- eller våtmarkssystem.",
-  "NA_L5":
-    "Ferskvannskildebunn omfatter bunn i grunnkilder, torvmarkskilder, bekker, elver og innsjøer som tydelig influeres av konsentrerte grunnvannsframspring (kildevann).",
-  "NA_L6":
-    "Afotisk limnisk sedimentbunn preget av oksygenmangel omfatter bunnsystemer i meromiktiske innsjøer (innsjøer uten utskifting av bunnvannet, det vil si med permanent stagnerende bunnvann) samt bunnsystemer i innsjøer der forholdene nær bunnen er anoksiske i perioder som er lange nok til at artssammensetningen er vesentlig endret (ved bl.a. fiskedød) i forhold til normal innsjøbunn.",
-  "NA_L7":
-    "Sterkt endret fast ferskvannsbunn omfatter hovedsakelig ferskvannsbunn som er vesentlig endret ved vassdragsregulering eller irreversibelt inngrep på sted der det tidligere var fastmark, f.eks. ved permanent oppdemming eller sterk regulering av vassdrag.",
-  "NA_L8":
-    "Sterkt endret limnisk sedimentbunn omfatter bunn i innsjøer, elver og kilder som er vesentlig endret ved deponering eller fjerning av masser eller ved vassdragsregulering, og ny limnisk sedimentbunn oppstått gjennom irreversibelt inngrep på sted der det tidligere var fastmark eller våtmark.",
-  "NA_T1":
-    "Nakent berg er normal hovedtype på fast fjell i dagen, det vil si uten jorddekke. Nakent berg kan være vegetasjonsfritt (i svært langsom eller retardert suksesjon på grunn av disruptivt miljøstress eller forstyrrelse) eller, oftere, er nakent berg mer eller mindre dekket av vegetasjon dominert av moser og lav.",
-  "NA_T2":
-    "Åpen grunnlendt mark omfatter jorddekt åpen naturmark under skoggrensa, det vil si fastmark som ikke tilfredsstiller skogsmarksdefinisjonen og som heller ikke hører inn under noen av de andre natursystem-hovedtypene på åpen naturlig mark i lavlandet (åpen flomfastmark, breforland og snøavsmeltingsområde, fuglefjell-eng, grus- og steindominert strand og strandlinje, sanddynemark, rasmark, rasmarkhei og -eng, aktiv skredmark, nakent berg, isinnfrysingsmark) og som heller ikke er semi-naturlig mark (boreal hei, kystlynghei eller semi-naturlig eng).",
-  "NA_T3":
-    "Fjellhei, leside og tundra omfatter jorddekt fastmark på fastlandet over eller nær skoggrensa og i Arktis, som ikke er sterkt påvirket av frostprosesser (oppfrysing) eller jordflyt. Podsolprofiler forekommer ofte i kalkfattig og intermediær lavalpin fjellhei og leside.",
-  "NA_T4":
-    "Skogsmark omfatter alle fastmarksarealer som tilfredsstiller skogsmarksdefinisjonen og som ikke påvirkes av flom.",
-  "NA_T5":
-    "Ei grotte er et naturlig hulrom i fjell under jordoverflata, som er stor nok til at et menneske kan komme seg inn og lang nok til at deler av den aldri opplyses av dagslys.",
-  "NA_T6":
-    "Strandberg omfatter fast bunn (bunn som er stabil også ved sterkt bølgeslag og sterk strøm, det vil si blokkdominert bunn og fast fjell) ovenfor grensa mellom saltvannssystemer og fastmarkssystemer, som på fast mark/bunn trekkes ved øvre grense for dominans av fjærerur Semibalanus balanoides og vanlig strandsnegl Littorina littorea på den siden og nedre grense for den svarte laven marebek Verrucaria maura på den andre siden.",
-  "NA_T7":
-    "Snøleie omfatter jorddekt fastmark med etablert vegetasjon, på fastlandet over eller nær skoggrensa og i Arktis.",
-  "NA_T8":
-    "Naturtypebegrepet fuglefjell-eng inkluderer åpne engpregete områder, det vil si områder med jordsmonn, som har en artssammensetning preget av regelmessig fuglegjødsling.",
-  "NA_T9":
-    "Mosetundra omfatter særpreget arktisk natur som er betinget av kombinasjonen av permafrost og naturlig gjødsling.",
-  "NA_T10":
-    "Arktisk steppe omfatter jorddekt fastmark i klart kontinentale områder på Svalbard (kjent fra Wijdefjorden med sidefjorder), med jordsmonn preget av oppadgående vanntransport, saltanriking nær jordoverflata og pH vanligvis i intervallet 8,5–10,5. Arktisk steppe kjennetegnes av særpregete samfunn dominert av grasaktige arter. Arktisk steppe mangler bunnsjiktet av moser og lav som er karakteristisk for T3 Fjellhei, leside og tundra, dominerende natursystem-hovedtype i omkringliggende, mindre kontinentale områder.",
-  "NA_T11":
-    "Saltanrikingsmark omfatter arealenheter i fjærebeltet der det tidvis finner sted saltanriking i eller nær markoverflata på grunn av fordampning av stagnerende vann.",
-  "NA_T12":
-    "Strandeng omfatter mark med sluttet, eng-preget vegetasjon (dominert av gras og urter) i fjærebeltet, som ikke er preget av saltanriking.",
-  "NA_T13":
-    "Hovedtypen rasmark omfatter ikke jorddekte deler av talusskråninger, oppstått som resultat av massebevegelse i skråninger.",
-  "NA_T14":
-    "Rabbe omfatter mark i fjellet og i Arktis som bærer klart preg av vindpåvirkning (VI∙a+), forårsaket først og fremst av mangelen på stabilt snødekke om vinteren.",
-  "NA_T15":
-    "Fosse-eng omfatter naturlig åpne, grunnlendte, men jorddekte, engpregete fastmarksarealer i fossesprutsonen langs elveløp med fosser og fossestryk. Fosse-eng finnes først og fremst i ytterkanten av fossesprutsonen, særlig rundt «foten» av en foss.",
-  "NA_T16":
-    "Rasmarkhei og rasmarkeng omfatter deler av talusskråninger med stabilisert, jorddekt mark og sluttet vegetasjon med hei- eller engpreg, som oftest har betydelige likhetstrekk med T2 Åpen grunnlendt mark og T3 Fjellhei, leside og tundra",
-  "NA_T17":
-    "Åpen skredmark omfatter mark på ustabilt substrat, dominert av jord eller oftere fint mineralmateriale (grus, sand, silt eller leire).",
-  "NA_T18":
-    "Åpen flomfastmark omfatter åpne fastmarksarealer i flomsonen, først og fremst langs større elver, men også på innsjø-landstrand, på sorterte sedimenter med dominerende kornstørrelse fra stein til leire.",
-  "NA_T19":
-    "Oppfrysingsmark er en veldefinert naturtype som omfatter mark, ofte med fuktmarkskarakter, i mellomarktisk og nordarktisk, mellomalpin og høgalpin bioklimatisk sone. Oppfrysingsmark er knyttet til områder med permafrost og sterk frostvirkning (oppfrysing, kryoturbasjon) som gir opphav til karakteristiske mikro-landformer (regelmessige ring-, polygon- eller stripestrukturer av grovt mineralmateriale som alternerer med fint, overveiende silt-dominert materiale («finjord») i et mer eller mindre regelmessig mønster.",
-  "NA_T20":
-    "Isinnfrysingsmark er åpen fastmark med hei- eller engpreg i eller nær bunnen av forsenkninger i terrenget (fortrinnsvis dødisgroper), som i perioder kan dekkes av stagnerende vann og i blant fryse inn i is om vinteren.",
-  "NA_T21":
-    "Sanddynemark omfatter åpne områder, fortrinnsvis men ikke nødvendigvis nær kysten, med mer eller mindre ustabilt og sanddominert substrat. Sanddynemarka er et helt særpreget, dynamisk økosystem hvis funksjon er betinget av stadig tilførsel av ny sand (oftest fra havet) med sterke vinder.",
-  "NA_T22":
-    "Fjellgrashei og fjellgrastundra omfatter mark i fjellet og i Arktis dominert eller med spredt forekomst av «tørrgras» som f.eks. rabbesiv Juncus trifidus, sauesvingel Festuca ovina og stivstarr Carex bigelowii, typisk med et dekkende lavsjikt dominert av islandslav Cetraria islandica og saltlav Stereocaulon spp.",
-  "NA_T23":
-    "Ferskvannsdriftvoll forekommer spredt i supralitoral- og øvre geolitoralbeltet langs store innsjøer som tilføres betydelige mengder mer eller mindre grovt organisk materiale, f.eks. kvister, lauv, rakler, pollen mv.",
-  "NA_T24":
-    "Driftvoller (tangvoller) er natursystemer som finnes i øvre del av fjærebeltet (øvre geolitoral- og supralitoralbeltet). Driftvoller opprettholdes permanent eller tilstrekkelig lenge til at de tilfredsstiller kravet til et natursystem (varighet i minst 6 år) på steder der tilførselen av organisk materiale (først og fremst tang og tare) fra havet er stor og relativt forutsigbar. Mengden tilført materiale må være stor nok til at materiale samler seg opp, det vil si at det må tilføres mer enn det som brytes ned, eller vaskes vekk igjen (av brenningene) eller blåser bort.",
-  "NA_T25":
-    "Historisk skredmark omfatter mark dominert av jord eller fint mineralmateriale (grus, sand, silt eller leire), som er blottlagt i relativt ny tid (for < ca. 100 år siden) gjennom én disruptiv skredbegivenhet med tilstrekkelig stor romlig utstrekning til å utgjøre en egen arealenhet på natursystem-nivået (se NiN[1]AR1, kapittel B3c for begrepsapparat for forstyrrelser).",
-  "NA_T26":
-    "Breforland og snøavsmeltingsområde omfatter løsmassedekkete fastmarksarealer som har smeltet fram etter lille istids maksimum, det vil for det norske fastlandet si etter ca. 1750, for norske områder i Arktis enda seinere. Fordi dannelsen av et jordsmonn tar mye lengre tid enn 200–300 år, skiller breforland og snøavsmeltingsområde seg fra historisk eldre natursystem-hovedtyper på jorddekt fastmark ved å mangle jordsmonn helt eller skiller seg ut ved at jordsmonnet er tynt og uten tydelige sjikt.",
-  "NA_T27":
-    "Blokkmark er sammenhengende områder dominert av blokker eller steiner og som sporadisk kan ha innslag av finere mineralmateriale, men som stort sett mangler jordsmonn mellom blokkene.",
-  "NA_T28":
-    "Polarørken omfatter stein- og grusdominerte områder nord for eller høydemessig over sonen med arktisk tundra, der vegetasjonsdekket på grunn av svært lav temperatursum er fragmentarisk og der vedaktige planter samt arter fra starrfamilien mangler.",
-  "NA_T29":
-    "Grus- og steindominert strand og strandlinje omfatter åpne områder, fortrinnsvis nær kysten, med mark dominert av grus, stein eller skjellsand.",
-  "NA_T30":
-    "Flomskogsmark omfatter skogsmarksarealer i flomsonen, først og fremst langs større elver, der bredden er utsatt for forstyrrelse (erosjon og/eller sedimentasjon) forårsaket av vann i bevegelse (limnogent vann, eventuelt med kildevannstilførsel fra fastmarkssiden i tillegg).",
-  "NA_T31":
-    "Boreal hei omfatter åpne hei- og på kalkrik grunn svakt engpregete, først og fremst dvergbuskdominerte natursystemer uten et dominerende tresjikt. Boreal hei er formet gjennom avskoging av fastmarksskogsmark og opprettholdelse av åpen mark gjennom rydding av kratt og trær og sommerbeite med moderat beitetrykk. Boreal hei forekommer over hele landet, med arealmessig tyngdepunkt i mellomboreal og nordboreal bioklimatisk sone i indre deler av Sør-Norge.",
-  "NA_T32":
-    "Semi-naturlig eng omfatter engpregete, åpne eller tresatte økosystemer som er formet gjennom ekstensiv («tradisjonell») hevd (beite og slått, eller oftest en kombinasjon av beite og slått) og bruk til jordbruksproduksjon gjennom lang tid, ofte hundrer av år. Marka i semi-naturlig eng kan, men behøver ikke, være ryddet for stein. Semi-naturlig eng omfatter arealenheter som ikke har synlige fysiske spor etter pløying eller tilsåing med for- og matvekster og som mangler eller bare har svake spor etter gjødsling og/eller sprøyting. Semi-naturlig eng kan huse et stort mangfold av arter fra mange organismegrupper, særlig karplanter, sopp og insekter.",
-  "NA_T33":
-    "Semi-naturlig strandeng omfatter åpne, engpregete økosystemer i øvre del av fjærebeltet (midtre-øvre geolitoral og supralitoral), som er formet gjennom ekstensiv («tradisjonell») hevd (oftest beite, men også enkelte steder slått) og bruk til jordbruksproduksjon gjennom lang tid, ofte hundrer av år.",
-  "NA_T34":
-    "Kystlynghei omfatter åpne heipregete økosystemer som er betinget av lyngbrenning, gjerne i kombinasjon med beiting store deler av året og/eller slått. Dominans av dvergbusker, først og fremst nøkkelarten røsslyng (Calluna vulgaris), er typisk.",
-  "NA_T35":
-    "Sterkt endret fastmark med løsmassedekke omfatter all fastmark som gjennom omfattende inngrep har fått et nytt løsmassedekke som legger til rette for rask suksesjon.",
-  "NA_T36":
-    "Hovedtypen omfatter irreversibelt drenerte og gjennomgripende endrete våtmarkssystemer på (tidligere) torvmark (åpne myrer, myrskogsmarker etc.), der torvnedbrytningen og endringene i det hydrologiske systemet er så omfattende at definisjonen av våtmarkssystem ikke lenger er tilfredsstilt slik at arealenheten har blitt et sterkt endret fastmarkssystem, samt tørrlagt elveleie og innsjøbunn på sedimenter slik at det ligger til rette for rask suksesjon.",
-  "NA_T37":
-    "Ny fastmark på sterkt modifiserte og syntetiske substrater, i rask suksesjon, omfatter all fastmark som gjennom omfattende inngrep har fått et nytt dekke av sterkt modifiserte eller syntetiske substrater (livsmedier), og som ligger til rette for rask suksesjon.",
-  "NA_T38":
-    "Treplantasje omfatter tresatte arealer med «plantasjeskogkarakter», det vil si mark som er tilplantet (eller tilsådd) med trær av ett og samme treslag, systematisk på rekke og rad, gjerne etter markberedning.",
-  "NA_T39":
-    "Sterkt endret og ny fastmark i langsom suksesjon omfatter blottlagt nakent berg, f.eks. gjennom omfattende inngrep (f.eks. dagbrudd), blokkdeponier (steintipper, vegfyllinger dominert av blokker etc.) og ny mark med sterkt modifiserte eller syntetiske substrater (livsmedier) som er så fast og bestandig at den koloniseres omtrent like raskt som (eller seinere enn) nakent berg. Ettersuksesjons­tilstanden forventes ikke nådd i løpet av 150 år. Eksempler på materialer som resulterer i overflater som faller i denne kategorien er aluminium, jern og stål, glass, en del kunststoffer og armert betong.",
-  "NA_T40":
-    "Sterkt endret fastmark med preg av semi-naturlig eng omfatter mark som kombinerer egenskapene «sterkt endret mark», det vil si som er resultatet av planering, utfylling el.l., og et ekstensivt hevdregime, det vil si at marka gjennom forholdsvis lang tid (i hvert fall noen tiår) er slått eller beitet som om det var en semi-naturlig eng og derfor har trekk i artssammensetning og utseende som overfladisk minner om semi-naturlig eng.",
-  "NA_T41":
-    "Oppdyrket mark med preg av semi-naturlig eng omfatter sterkt endret jordbruksmark, det vil si arealer som har vært gjenstand for intensiv hevd, men som i forholdsvis lang tid (i hvert fall noen tiår) er slått eller beitet som om det var en semi-naturlig eng og derfor har trekk i artssammensetning og utseende som overfladisk minner om semi-naturlig eng.",
-  "NA_T42":
-    "Sterkt endret, hyppig bearbeidet fastmark med intensivt hevdpreg omfatter mark som kombinerer egenskapene «sterkt endret mark», det vil si som er resultatet av «anlegging» (planering, utfylling etc.), og et intensivt hevdregime med hyppig markbearbeiding, det vil si spavending av jorda, sprøyting, såing etc., men som ikke er jordbruksmark. Definisjonen beskriver «åker-liknende arealer» som ikke brukes til jordbruksproduksjon, det vil si blomsterrabatter, blomsterbed og liknende.",
-  "NA_T43":
-    "Sterkt endret, varig fastmark med intensivt hevdpreg omfatter mark som kombinerer egenskapene «sterkt endret mark», det vil si som er resultatet av «anlegging» (planering, utfylling etc.), og et intensivt hevdregime uten hyppig markbearbeiding, det vil si at marka gjødsles, sprøytes, tilsås etc., men ikke jevnlig pløyes opp, spavendes , el.l. Hovedtypen omfatter ikke jordbruksmark; definisjonen beskriver «arealer som likner på varig oppdyrket eng» men som ikke brukes til jordbruksproduksjon. Typiske eksempler er plener og parker.",
-  "NA_T44":
-    "Åker er fulldyrket mark som er pløyd og tilsådd, oftest også gjødslet og/eller sprøytet, der det dyrkes mat- eller fôrvekster, gjerne i monokultur. Åker omfatter jordbruksmark med intensiv hevd og hyppig markbearbeiding, og har en artssammensetning av «ville» arter som hovedsakelig består av ettårige eller kortlevete ugras.",
-  "NA_T45":
-    "Oppdyrket varig eng omfatter jordbruksmark preget av intensiv hevd uten hyppig markbearbeiding, det vil si at mark som gjødsles, sprøytes, tilsås etc., men ikke jevnlig pløyes opp.",
-  "NA_V1":
-    "Åpen jordvannsmyr er den eneste åpne, normale hovedtypen innenfor våtmarkssystemer, og omfatter all åpen våtmark med jordvannstilførsel [vanntilførsel (VT) normalklasse VT∙0] der ingen sLKM har vesentlig effekt på artssammensetningen.",
-  "NA_V2":
-    "Myr- og sumpskogsmark med jordvanntilførsel er den eneste normale skogsmarkshovedtypen innenfor våtmarkssystemer.",
-  "NA_V3":
-    "Nedbørsmyr skiller seg fra jordvannsmyr ved at overflatetorva ikke har kontakt med jordvann, slik at artene bare får tilført vann og mineralnæring via nedbøren.",
-  "NA_V4":
-    "Sterk kaldkilde omfatter våtmarkssystemer med klar kildevannspåvirkning (svake, ustabile og stabile kilder), med arter som har tyngdepunkt i kilder [«(egentlige) kildearter»] som et framtredende innslag.",
-  "NA_V5":
-    "Varm kilde omfatter åpen mark med sterk kildevannspåvirkning og som tilføres kildevann med en gjennomsnittstemperatur som er tilstrekkelig mye høyere enn årsmiddeltemperaturen i øvre jordlag i området til at det gir seg vesentlige utslag i artssammensetningen (JV∙a eller høyere).",
-  "NA_V6":
-    "Våtsnøleier betegner mer eller mindre langvarig snødekt mark som tilføres smeltevann fra ovenforliggende snøskavler eller breer gjennom store deler av vekstsesongen.",
-  "NA_V7":
-    "Arktisk permafrost-våtmark omfatter karakteristiske våtmarkssystemer i den mellomarktiske tundrasonen på Svalbard som er betinget av permafrost.",
-  "NA_V8":
-    "Sumpskogsmark betinget av limno-topogen vanntilførsel (dvs. som oversvømmes av vann fra innsjøer og/eller havvann; VT∙a) har en artssammensetning som er betydelig forskjellig fra sammenliknbare systemer betinget av tilførsler av jordvann (NiN[2]AR2, kapittel B12). Slike skogsmarker er kjent som «strandskoger» (Kielland-Lund 1981, Fremstad 1997), og finnes langs bredden av større innsjøer og ned i supralitoralbeltet på sterkt beskyttete steder langs kysten (innerst i lange, grunne kiler, etc.).",
-  "NA_V9":
-    "Semi-naturlig myr omfatter torvdannende, åpen myr (karakterisert ved myrtorv, IO∙b¤) med klart preg av ekstensiv hevd (HI∙b–e), enten beiting eller slått («beitemyr» og «slåttemyr»).",
-  "NA_V10":
-    "Semi-naturlig våteng omfatter semi-naturlig mark (HI∙bcde) med grunnvannsspeil som det meste av året står høyt nok til at definisjonen av våtmark er tilfredsstilt, og som mangler torvproduksjon (IO∙0a).",
-  "NA_V11":
-    "Torvtak er V1 Åpen jordvannsmyr eller V3 nedbørsmyr der de øvre torvlagene er høstet, f.eks. til torvstrøproduksjon eller til bruk som brenntorv, slik at naken torv blir eksponert.",
-  "NA_V12":
-    "Grøftet torvmark (SX∙n) omfatter irreversibelt drenerte våtmarkssystemer på torvmark (først og fremst åpne myrer, men også kilder), der dreneringen har ført til vesentlig endring i artssammensetning og større likhet med en annen våtmarks-hovedtype enn den som fantes på stedet før inngrepet ble gjort.",
-  "NA_V13":
-    "Ny våtmark omfatter våtmarkssystemer som har oppstått gjennom irreversibelt inngrep på mark som ikke tidligere var våtmark.",
-  "NA_H1":
-    "Havvannmasser omfatter alle marine vannmasser som står i direkte sammenheng med verdenshavene, uten å være fysisk skilt fra disse gjennom en markert terskel slik fjorder og poller er.",
-  "NA_H2":
-    "Sirkulerende vannmasser i fysisk avgrensede saltvannsforekomster omfatter økosystemer som hele tida eller periodisk tilføres havvann og som derfor tilfredsstiller definisjonen av brakkvann eller saltvann (SA∙a+).",
-  "NA_H3":
-    "For at marine vannmasser skal unngå sirkulasjon, må de enten ha så sterkt redusert saltholdighet at vannets tetthetsmaksimum > 0 °C, slik at de får et sirkulasjonssystem lik det vi finner i innsjøer, eller de må befinne seg på bunnen i dype fjorder med så høy terskel at ikke atlantisk vann strømmer inn over terskelen når sterk fralandsvind frakter overflatevannet utover havet.",
-  "NA_H4":
-    "Sterkt endrete marine vannmasser omfatter vannmassene i fysisk avgrensete saltvannsforekomster (fjorder, poller og litoralbasseng) som har fått sin artssammensetning og økologiske funksjon sterkt og irreversibelt endret gjennom fysiske (regulering av terskelhøyde for poller etc.), kjemiske inngrep (irreversibel forurensning, eutrofiering etc.) eller biologiske inngrep (utsetting av fiskearter, rømming fra fiskeoppdrettsanlegg el.l. som gjennomgripende har endret den trofiske strukturen og dermed artssammensetningen, etc.), samt vannmassene i kunstige vannforekomster (saltvannsbasseng, saltverk, friluftsakvarier etc.). Sterkt endret bunn medfører ikke nødvendigvis at vannmassene skal karakteriseres som sterkt endret.",
-  "NA_F1":
-    "Elvevannmasser omfatter økosystemer i rennende vann (lotiske systemer), det vil si ferskvannsforekomster med høy vanngjennomstrømningshastighet og kort oppholdstid, biologisk karakterisert ved mangel på en fullstendig næringskjede som inneholder krepsdyrplankton.",
-  "NA_F2":
-    "Sirkulerende innsjøvannmasser omfatter økosystemer i stillestående vann (lentiske systemer), det vil si ferskvannsforekomster med lav vanngjennomstrømningshastighet og lang oppholdstid eller mer eller mindre uten vanngjennomstrømning, biologisk karakterisert ved forekomst av en fullstendig næringskjede som inneholder krepsdyrplankton.",
-  "NA_F3":
-    "Ikke-sirkulerende innsjøvannmasser omfatter det permanent stagnerende bunnvannet (monimolimnion) i meromiktiske innsjøer, det vil si innsjøer som har et tungt, kaldt vannlag på bunnen, under sprangsjiktet, oftest på dyp > 10 m, som aldri blander seg med resten av vannet i innsjøen og som derfor er fritt for oksygen.",
-  "NA_F4":
-    "Sterkt endrete elvevannmasser omfatter vannmassene i elver som har fått sin artssammensetning og økologiske funksjon sterkt og irreversibelt endret gjennom fysiske inngrep (vassdragsreguleringer), kjemiske inngrep (irreversibel forurensning, eutrofiering, kjemisk behandling mot parasitter etc.) eller biologiske inngrep (utsetting av fiskearter som gjennomgripende har endret den trofiske strukturen og dermed artssammensetningen, etc.).",
-  "NA_F5":
-    "Sterkt endrete innsjøvannmasser omfatter vannmassene i innsjøer og dammer som har fått sin artssammensetning og økologiske funksjon sterkt og irreversibelt endret gjennom fysiske inngrep (vassdragsreguleringer), kjemiske inngrep (irreversibel forurensning, eutrofiering, kjemisk behandling mot parasitter etc.) eller biologiske inngrep (utsetting av fiskearter som gjennomgripende har endret den trofiske strukturen og dermed artssammensetningen, etc.), samt vannmassene i kunstige vannforekomster (vannmagasiner, gårdsdammer etc.).",
-  "NA_I1":
-    "Snø- og isdekt fastmark omfatter fastmarksarealer som er dekt av snø og/eller is, det vil si breer og snøansamlinger.",
-  "NA_I2":
-    "Polar havis omfatter iskappen som dekker sentrale deler av Polhavet og det livet som er direkte knyttet til denne; som lever på, i og på eller i direkte tilknytning til undersiden av denne.",
-  "NA":
-    "Natursystem defineres av «alle organismer innen et mer eller mindre enhetlig, avgrensbart område, det totale miljøet de lever i og er tilpasset til, og de prosesser som regulerer relasjoner organismene imellom og mellom organismer og miljø (herunder menneskelig aktivitet)»",
-  "NA_F":
-    "Limniske vannmasser (vannmassesystemer i ferskvann) omfatter økosystemer av flytende, svevende og svømmende organismer i de frie vannmassene i elver og innsjøer",
-  "NA_H":
-    "Marine vannmasser omfatter økosystemer av flytende, svevende og svømmende organismer i de frie vannmassene i saltvann (saltholdighet > 0,5 ‰)",
-  "NA_I":
-    "Snø- og issystemer omfatter økosystemer i og på varig snø og is, inkludert polarisen",
-  "NA_L":
-    "Ferskvannsbunnsystemer, også kalt limniske bunnsystemer, omfatter økosystemer i ferskvann; det vil si som finnes i, på og nært knyttet til bunnen i elver og innsjøer.",
-  "NA_M":
-    "Saltvannsbunnsystemer, også kalt marine bunnsystemer, omfatter økosystemer i saltvann (saltholdighet > 0,5 ‰); det vil si som finnes i, på og nært knyttet til bunnen i havet, fjorder, poller og litoralbasseng",
-  "NA_T":
-    "Fastmarkssystemer omfatter økosystemer på land med mark som ikke er mer eller mindre permanent vannmettet. Størstedelen av landøkosystemene tilhører fastmarkssystemene.",
-  "NA_V":
-    "Våtmarkssystemer omfatter myrer og kilder og andre økosystemer på mer eller mindre permanent vannmettet mark"
+  "NA-M8": "Helofytt-saltvannssump omfatter tette bestander av makrohelofytter, det vil si storvokste sumpplanter med røttene i sublitoral bunn (som ikke tørrlegges ved lavvann), i vannstrandbeltet eller noe opp i landstrandbeltet.",
+  "NA-M1": "Eufotisk fast saltvannsbunn omfatter fast fjell og stabile blokker med permanente samfunn av flerårige alge- og dyrearter, i beltet mellom normalt fjæremål, det vil si nivået som vanligvis konstant fuktes av havvann (upper infralitoral zone), gjennom tareskogsbeltet (lower infralitoral zone) og rødalgebeltet (upper circalitoral zone) ned til kompensasjonsdypet, der lysinnstrålingen er så lav [< 0.3–1(–10) % av lysinnstrålingen på ei åpen havoverflate] at planteproduksjonen er mindre nedbrytningen og alger ikke lenger forekommer regelmessig (netto primærproduksjon går fra å være positiv til å bli negativ).",
+  "NA-M2": "Afotisk fast saltvannsbunn omfatter fast fjell og grove sedimenter som er stabile nok til å ha permanente samfunn, på større dyp enn kompensasjonsdypet, der planteproduksjonen er mindre enn nedbrytningen og alger ikke lenger forekommer regelmessig.",
+  "NA-M3": "Fast fjærebeltebunn omfatter fast fjell og stabile blokker med permanente samfunn av flerårige alge- og dyrearter, i hele fjærebeltet.",
+  "NA-M4": "Eufotisk marin sedimentbunn omfatter natursystemer på ikke-stabiliserte sedimenter fra og med vannstranddelen av fjærebeltet (hydrolitoralbeltet; det vil si den delen av fjærebeltet der bunnen er dekket av vann mer enn halve tida) ned til kompensasjonsdypet, det vil si så langt ned som det er mulig for fotosyntetiserende fastsittende organismer å klare seg.",
+  "NA-M5": "Afotisk marin sedimentbunn omfatter natursystemer på ikke-stabiliserte sedimenter nedenfor kompensasjonsdypet, som ikke har naturlig permanent oksygenfrihet. Med ikke-stabilisert menes at sedimentene ikke er stabile nok til å ha stabile påvekstsamfunn.",
+  "NA-M6": "Korallrev er særpregete natursystemer som er bygd opp av samfunnsdannende steinkorallers kalkskjelett.",
+  "NA-M7": "Marin undervannseng omfatter sammenhengende områder på grunt vann og i vannstrand-delen av fjærebeltet som er dominert av langskuddplanter (plante med lange stengler og med blader i de frie vannmassene, oftest festet på bunnen), først og fremst ålegras (Zostera marina), men en rekke andre karplantearter kan også dominere eller inngå.",
+  "NA-M9": "Litoralbasseng er vannforekomster på fast fjell i fjærebeltet som er fysisk avgrenset fra havet, som regelmessig, men ikke permanent, tilføres havvann, og som ikke har permanent utløp til (og innløp fra) havet.",
+  "NA-M10": "Ei grotte (hule) er et naturlig hulrom i fjell. Liksom på land utmerker marine grotter (inkludert brenningsgrotter, det vil si grotter i tidevannsbeltet) seg med spesielle leveforhold for organismer.",
+  "NA-M11": "Kald havkildebunn (cold seep) omfatter sedimentbunn nær et oppkomme av gasser og/eller væsker på havbunnen, hvor materialet som strømmer ut ikke har en temperatur så mye høyere enn havvannets temperatur på stedet at artssammensetningen påvirkes i betydelig grad.",
+  "NA-M12": "Varm havkildebunn omfatter områder på fast havbunn (eventuelt med flekker av sedimentbunn) som påvirkes av utstrømming av vann, gasser, andre væsker eller magma, med vesentlig høyere temperatur enn havvannet på stedet.",
+  "NA-M13": "Marin sedimentbunn preget av oksygenmangel omfatter bunnsystemer i fjorder og poller der mangelfull vannsirkulasjon fører til permanent oksygenfrie (anoksiske) bunnforhold.",
+  "NA-M14": "Sterkt endret eller ny fast saltvannsbunn omfatter saltvannsbunn som er vesentlig endret ved irreversibelt inngrep, f.eks. havneutbygging, installasjoner (oljerigger, offshore vindmølleanlegg).",
+  "NA-M15": "Sterkt endret eller ny marin sedimentbunn omfatter havbunn som er vesentlig endret ved deponering eller fjerning av masser, f.eks. nyanlagte badestrender, deponier for kjemisk avfall og overskuddsmasser fra gruvedrift.",
+  "NA-L1": "Eufotisk fast ferskvannsbunn omfatter elvebunn og innsjøbunn med stabilt bunnsubstrat og tilstrekkelig lysinnstråling til at nettofotosyntesen er positiv.",
+  "NA-L2": "Eufotisk limnisk sedimentbunn omfatter elvebunn og innsjøbunn med tilstrekkelig lysinnstråling til at nettofotosyntesen er positiv, på overveiende organisk sediment, myrtorv eller på ustabilt, overveiende uorganisk bunnsediment.",
+  "NA-L3": "Afotisk (mørk) limnisk sedimentbunn omfatter bunntilknyttete natursystemer på større dyp enn kompensasjonsdypet, i innsjøer der bunnvannet ikke regelmessig gjennomgår stagnasjonsperioder med så sterk oksygenmangel at det gir seg utslag i artssammensetningen (hypoksi eller anoksi).",
+  "NA-L4": "Helofytt-ferskvannssump omfatter tette bestander av makrohelofytter, det vil si storvokste sumpplanter, omkring eller under grensa mellom ferskvannssystem og fastmarks- eller våtmarkssystem.",
+  "NA-L5": "Ferskvannskildebunn omfatter bunn i grunnkilder, torvmarkskilder, bekker, elver og innsjøer som tydelig influeres av konsentrerte grunnvannsframspring (kildevann).",
+  "NA-L6": "Afotisk limnisk sedimentbunn preget av oksygenmangel omfatter bunnsystemer i meromiktiske innsjøer (innsjøer uten utskifting av bunnvannet, det vil si med permanent stagnerende bunnvann) samt bunnsystemer i innsjøer der forholdene nær bunnen er anoksiske i perioder som er lange nok til at artssammensetningen er vesentlig endret (ved bl.a. fiskedød) i forhold til normal innsjøbunn.",
+  "NA-L7": "Sterkt endret fast ferskvannsbunn omfatter hovedsakelig ferskvannsbunn som er vesentlig endret ved vassdragsregulering eller irreversibelt inngrep på sted der det tidligere var fastmark, f.eks. ved permanent oppdemming eller sterk regulering av vassdrag.",
+  "NA-L8": "Sterkt endret limnisk sedimentbunn omfatter bunn i innsjøer, elver og kilder som er vesentlig endret ved deponering eller fjerning av masser eller ved vassdragsregulering, og ny limnisk sedimentbunn oppstått gjennom irreversibelt inngrep på sted der det tidligere var fastmark eller våtmark.",
+  "NA-T1": "Nakent berg er normal hovedtype på fast fjell i dagen, det vil si uten jorddekke. Nakent berg kan være vegetasjonsfritt (i svært langsom eller retardert suksesjon på grunn av disruptivt miljøstress eller forstyrrelse) eller, oftere, er nakent berg mer eller mindre dekket av vegetasjon dominert av moser og lav.",
+  "NA-T2": "Åpen grunnlendt mark omfatter jorddekt åpen naturmark under skoggrensa, det vil si fastmark som ikke tilfredsstiller skogsmarksdefinisjonen og som heller ikke hører inn under noen av de andre natursystem-hovedtypene på åpen naturlig mark i lavlandet (åpen flomfastmark, breforland og snøavsmeltingsområde, fuglefjell-eng, grus- og steindominert strand og strandlinje, sanddynemark, rasmark, rasmarkhei og -eng, aktiv skredmark, nakent berg, isinnfrysingsmark) og som heller ikke er semi-naturlig mark (boreal hei, kystlynghei eller semi-naturlig eng).",
+  "NA-T3": "Fjellhei, leside og tundra omfatter jorddekt fastmark på fastlandet over eller nær skoggrensa og i Arktis, som ikke er sterkt påvirket av frostprosesser (oppfrysing) eller jordflyt. Podsolprofiler forekommer ofte i kalkfattig og intermediær lavalpin fjellhei og leside.",
+  "NA-T4": "Skogsmark omfatter alle fastmarksarealer som tilfredsstiller skogsmarksdefinisjonen og som ikke påvirkes av flom.",
+  "NA-T5": "Ei grotte er et naturlig hulrom i fjell under jordoverflata, som er stor nok til at et menneske kan komme seg inn og lang nok til at deler av den aldri opplyses av dagslys.",
+  "NA-T6": "Strandberg omfatter fast bunn (bunn som er stabil også ved sterkt bølgeslag og sterk strøm, det vil si blokkdominert bunn og fast fjell) ovenfor grensa mellom saltvannssystemer og fastmarkssystemer, som på fast mark/bunn trekkes ved øvre grense for dominans av fjærerur Semibalanus balanoides og vanlig strandsnegl Littorina littorea på den siden og nedre grense for den svarte laven marebek Verrucaria maura på den andre siden.",
+  "NA-T7": "Snøleie omfatter jorddekt fastmark med etablert vegetasjon, på fastlandet over eller nær skoggrensa og i Arktis.",
+  "NA-T8": "Naturtypebegrepet fuglefjell-eng inkluderer åpne engpregete områder, det vil si områder med jordsmonn, som har en artssammensetning preget av regelmessig fuglegjødsling.",
+  "NA-T9": "Mosetundra omfatter særpreget arktisk natur som er betinget av kombinasjonen av permafrost og naturlig gjødsling.",
+  "NA-T10": "Arktisk steppe omfatter jorddekt fastmark i klart kontinentale områder på Svalbard (kjent fra Wijdefjorden med sidefjorder), med jordsmonn preget av oppadgående vanntransport, saltanriking nær jordoverflata og pH vanligvis i intervallet 8,5–10,5. Arktisk steppe kjennetegnes av særpregete samfunn dominert av grasaktige arter. Arktisk steppe mangler bunnsjiktet av moser og lav som er karakteristisk for T3 Fjellhei, leside og tundra, dominerende natursystem-hovedtype i omkringliggende, mindre kontinentale områder.",
+  "NA-T11": "Saltanrikingsmark omfatter arealenheter i fjærebeltet der det tidvis finner sted saltanriking i eller nær markoverflata på grunn av fordampning av stagnerende vann.",
+  "NA-T12": "Strandeng omfatter mark med sluttet, eng-preget vegetasjon (dominert av gras og urter) i fjærebeltet, som ikke er preget av saltanriking.",
+  "NA-T13": "Hovedtypen rasmark omfatter ikke jorddekte deler av talusskråninger, oppstått som resultat av massebevegelse i skråninger.",
+  "NA-T14": "Rabbe omfatter mark i fjellet og i Arktis som bærer klart preg av vindpåvirkning (VI∙a+), forårsaket først og fremst av mangelen på stabilt snødekke om vinteren.",
+  "NA-T15": "Fosse-eng omfatter naturlig åpne, grunnlendte, men jorddekte, engpregete fastmarksarealer i fossesprutsonen langs elveløp med fosser og fossestryk. Fosse-eng finnes først og fremst i ytterkanten av fossesprutsonen, særlig rundt «foten» av en foss.",
+  "NA-T16": "Rasmarkhei og rasmarkeng omfatter deler av talusskråninger med stabilisert, jorddekt mark og sluttet vegetasjon med hei- eller engpreg, som oftest har betydelige likhetstrekk med T2 Åpen grunnlendt mark og T3 Fjellhei, leside og tundra",
+  "NA-T17": "Åpen skredmark omfatter mark på ustabilt substrat, dominert av jord eller oftere fint mineralmateriale (grus, sand, silt eller leire).",
+  "NA-T18": "Åpen flomfastmark omfatter åpne fastmarksarealer i flomsonen, først og fremst langs større elver, men også på innsjø-landstrand, på sorterte sedimenter med dominerende kornstørrelse fra stein til leire.",
+  "NA-T19": "Oppfrysingsmark er en veldefinert naturtype som omfatter mark, ofte med fuktmarkskarakter, i mellomarktisk og nordarktisk, mellomalpin og høgalpin bioklimatisk sone. Oppfrysingsmark er knyttet til områder med permafrost og sterk frostvirkning (oppfrysing, kryoturbasjon) som gir opphav til karakteristiske mikro-landformer (regelmessige ring-, polygon- eller stripestrukturer av grovt mineralmateriale som alternerer med fint, overveiende silt-dominert materiale («finjord») i et mer eller mindre regelmessig mønster.",
+  "NA-T20": "Isinnfrysingsmark er åpen fastmark med hei- eller engpreg i eller nær bunnen av forsenkninger i terrenget (fortrinnsvis dødisgroper), som i perioder kan dekkes av stagnerende vann og i blant fryse inn i is om vinteren.",
+  "NA-T21": "Sanddynemark omfatter åpne områder, fortrinnsvis men ikke nødvendigvis nær kysten, med mer eller mindre ustabilt og sanddominert substrat. Sanddynemarka er et helt særpreget, dynamisk økosystem hvis funksjon er betinget av stadig tilførsel av ny sand (oftest fra havet) med sterke vinder.",
+  "NA-T22": "Fjellgrashei og fjellgrastundra omfatter mark i fjellet og i Arktis dominert eller med spredt forekomst av «tørrgras» som f.eks. rabbesiv Juncus trifidus, sauesvingel Festuca ovina og stivstarr Carex bigelowii, typisk med et dekkende lavsjikt dominert av islandslav Cetraria islandica og saltlav Stereocaulon spp.",
+  "NA-T23": "Ferskvannsdriftvoll forekommer spredt i supralitoral- og øvre geolitoralbeltet langs store innsjøer som tilføres betydelige mengder mer eller mindre grovt organisk materiale, f.eks. kvister, lauv, rakler, pollen mv.",
+  "NA-T24": "Driftvoller (tangvoller) er natursystemer som finnes i øvre del av fjærebeltet (øvre geolitoral- og supralitoralbeltet). Driftvoller opprettholdes permanent eller tilstrekkelig lenge til at de tilfredsstiller kravet til et natursystem (varighet i minst 6 år) på steder der tilførselen av organisk materiale (først og fremst tang og tare) fra havet er stor og relativt forutsigbar. Mengden tilført materiale må være stor nok til at materiale samler seg opp, det vil si at det må tilføres mer enn det som brytes ned, eller vaskes vekk igjen (av brenningene) eller blåser bort.",
+  "NA-T25": "Historisk skredmark omfatter mark dominert av jord eller fint mineralmateriale (grus, sand, silt eller leire), som er blottlagt i relativt ny tid (for < ca. 100 år siden) gjennom én disruptiv skredbegivenhet med tilstrekkelig stor romlig utstrekning til å utgjøre en egen arealenhet på natursystem-nivået (se NiN[1]AR1, kapittel B3c for begrepsapparat for forstyrrelser).",
+  "NA-T26": "Breforland og snøavsmeltingsområde omfatter løsmassedekkete fastmarksarealer som har smeltet fram etter lille istids maksimum, det vil for det norske fastlandet si etter ca. 1750, for norske områder i Arktis enda seinere. Fordi dannelsen av et jordsmonn tar mye lengre tid enn 200–300 år, skiller breforland og snøavsmeltingsområde seg fra historisk eldre natursystem-hovedtyper på jorddekt fastmark ved å mangle jordsmonn helt eller skiller seg ut ved at jordsmonnet er tynt og uten tydelige sjikt.",
+  "NA-T27": "Blokkmark er sammenhengende områder dominert av blokker eller steiner og som sporadisk kan ha innslag av finere mineralmateriale, men som stort sett mangler jordsmonn mellom blokkene.",
+  "NA-T28": "Polarørken omfatter stein- og grusdominerte områder nord for eller høydemessig over sonen med arktisk tundra, der vegetasjonsdekket på grunn av svært lav temperatursum er fragmentarisk og der vedaktige planter samt arter fra starrfamilien mangler.",
+  "NA-T29": "Grus- og steindominert strand og strandlinje omfatter åpne områder, fortrinnsvis nær kysten, med mark dominert av grus, stein eller skjellsand.",
+  "NA-T30": "Flomskogsmark omfatter skogsmarksarealer i flomsonen, først og fremst langs større elver, der bredden er utsatt for forstyrrelse (erosjon og/eller sedimentasjon) forårsaket av vann i bevegelse (limnogent vann, eventuelt med kildevannstilførsel fra fastmarkssiden i tillegg).",
+  "NA-T31": "Boreal hei omfatter åpne hei- og på kalkrik grunn svakt engpregete, først og fremst dvergbuskdominerte natursystemer uten et dominerende tresjikt. Boreal hei er formet gjennom avskoging av fastmarksskogsmark og opprettholdelse av åpen mark gjennom rydding av kratt og trær og sommerbeite med moderat beitetrykk. Boreal hei forekommer over hele landet, med arealmessig tyngdepunkt i mellomboreal og nordboreal bioklimatisk sone i indre deler av Sør-Norge.",
+  "NA-T32": "Semi-naturlig eng omfatter engpregete, åpne eller tresatte økosystemer som er formet gjennom ekstensiv («tradisjonell») hevd (beite og slått, eller oftest en kombinasjon av beite og slått) og bruk til jordbruksproduksjon gjennom lang tid, ofte hundrer av år. Marka i semi-naturlig eng kan, men behøver ikke, være ryddet for stein. Semi-naturlig eng omfatter arealenheter som ikke har synlige fysiske spor etter pløying eller tilsåing med for- og matvekster og som mangler eller bare har svake spor etter gjødsling og/eller sprøyting. Semi-naturlig eng kan huse et stort mangfold av arter fra mange organismegrupper, særlig karplanter, sopp og insekter.",
+  "NA-T33": "Semi-naturlig strandeng omfatter åpne, engpregete økosystemer i øvre del av fjærebeltet (midtre-øvre geolitoral og supralitoral), som er formet gjennom ekstensiv («tradisjonell») hevd (oftest beite, men også enkelte steder slått) og bruk til jordbruksproduksjon gjennom lang tid, ofte hundrer av år.",
+  "NA-T34": "Kystlynghei omfatter åpne heipregete økosystemer som er betinget av lyngbrenning, gjerne i kombinasjon med beiting store deler av året og/eller slått. Dominans av dvergbusker, først og fremst nøkkelarten røsslyng (Calluna vulgaris), er typisk.",
+  "NA-T35": "Sterkt endret fastmark med løsmassedekke omfatter all fastmark som gjennom omfattende inngrep har fått et nytt løsmassedekke som legger til rette for rask suksesjon.",
+  "NA-T36": "Hovedtypen omfatter irreversibelt drenerte og gjennomgripende endrete våtmarkssystemer på (tidligere) torvmark (åpne myrer, myrskogsmarker etc.), der torvnedbrytningen og endringene i det hydrologiske systemet er så omfattende at definisjonen av våtmarkssystem ikke lenger er tilfredsstilt slik at arealenheten har blitt et sterkt endret fastmarkssystem, samt tørrlagt elveleie og innsjøbunn på sedimenter slik at det ligger til rette for rask suksesjon.",
+  "NA-T37": "Ny fastmark på sterkt modifiserte og syntetiske substrater, i rask suksesjon, omfatter all fastmark som gjennom omfattende inngrep har fått et nytt dekke av sterkt modifiserte eller syntetiske substrater (livsmedier), og som ligger til rette for rask suksesjon.",
+  "NA-T38": "Treplantasje omfatter tresatte arealer med «plantasjeskogkarakter», det vil si mark som er tilplantet (eller tilsådd) med trær av ett og samme treslag, systematisk på rekke og rad, gjerne etter markberedning.",
+  "NA-T39": "Sterkt endret og ny fastmark i langsom suksesjon omfatter blottlagt nakent berg, f.eks. gjennom omfattende inngrep (f.eks. dagbrudd), blokkdeponier (steintipper, vegfyllinger dominert av blokker etc.) og ny mark med sterkt modifiserte eller syntetiske substrater (livsmedier) som er så fast og bestandig at den koloniseres omtrent like raskt som (eller seinere enn) nakent berg. Ettersuksesjons­tilstanden forventes ikke nådd i løpet av 150 år. Eksempler på materialer som resulterer i overflater som faller i denne kategorien er aluminium, jern og stål, glass, en del kunststoffer og armert betong.",
+  "NA-T40": "Sterkt endret fastmark med preg av semi-naturlig eng omfatter mark som kombinerer egenskapene «sterkt endret mark», det vil si som er resultatet av planering, utfylling el.l., og et ekstensivt hevdregime, det vil si at marka gjennom forholdsvis lang tid (i hvert fall noen tiår) er slått eller beitet som om det var en semi-naturlig eng og derfor har trekk i artssammensetning og utseende som overfladisk minner om semi-naturlig eng.",
+  "NA-T41": "Oppdyrket mark med preg av semi-naturlig eng omfatter sterkt endret jordbruksmark, det vil si arealer som har vært gjenstand for intensiv hevd, men som i forholdsvis lang tid (i hvert fall noen tiår) er slått eller beitet som om det var en semi-naturlig eng og derfor har trekk i artssammensetning og utseende som overfladisk minner om semi-naturlig eng.",
+  "NA-T42": "Sterkt endret, hyppig bearbeidet fastmark med intensivt hevdpreg omfatter mark som kombinerer egenskapene «sterkt endret mark», det vil si som er resultatet av «anlegging» (planering, utfylling etc.), og et intensivt hevdregime med hyppig markbearbeiding, det vil si spavending av jorda, sprøyting, såing etc., men som ikke er jordbruksmark. Definisjonen beskriver «åker-liknende arealer» som ikke brukes til jordbruksproduksjon, det vil si blomsterrabatter, blomsterbed og liknende.",
+  "NA-T43": "Sterkt endret, varig fastmark med intensivt hevdpreg omfatter mark som kombinerer egenskapene «sterkt endret mark», det vil si som er resultatet av «anlegging» (planering, utfylling etc.), og et intensivt hevdregime uten hyppig markbearbeiding, det vil si at marka gjødsles, sprøytes, tilsås etc., men ikke jevnlig pløyes opp, spavendes , el.l. Hovedtypen omfatter ikke jordbruksmark; definisjonen beskriver «arealer som likner på varig oppdyrket eng» men som ikke brukes til jordbruksproduksjon. Typiske eksempler er plener og parker.",
+  "NA-T44": "Åker er fulldyrket mark som er pløyd og tilsådd, oftest også gjødslet og/eller sprøytet, der det dyrkes mat- eller fôrvekster, gjerne i monokultur. Åker omfatter jordbruksmark med intensiv hevd og hyppig markbearbeiding, og har en artssammensetning av «ville» arter som hovedsakelig består av ettårige eller kortlevete ugras.",
+  "NA-T45": "Oppdyrket varig eng omfatter jordbruksmark preget av intensiv hevd uten hyppig markbearbeiding, det vil si at mark som gjødsles, sprøytes, tilsås etc., men ikke jevnlig pløyes opp.",
+  "NA-V1": "Åpen jordvannsmyr er den eneste åpne, normale hovedtypen innenfor våtmarkssystemer, og omfatter all åpen våtmark med jordvannstilførsel [vanntilførsel (VT) normalklasse VT∙0] der ingen sLKM har vesentlig effekt på artssammensetningen.",
+  "NA-V2": "Myr- og sumpskogsmark med jordvanntilførsel er den eneste normale skogsmarkshovedtypen innenfor våtmarkssystemer.",
+  "NA-V3": "Nedbørsmyr skiller seg fra jordvannsmyr ved at overflatetorva ikke har kontakt med jordvann, slik at artene bare får tilført vann og mineralnæring via nedbøren.",
+  "NA-V4": "Sterk kaldkilde omfatter våtmarkssystemer med klar kildevannspåvirkning (svake, ustabile og stabile kilder), med arter som har tyngdepunkt i kilder [«(egentlige) kildearter»] som et framtredende innslag.",
+  "NA-V5": "Varm kilde omfatter åpen mark med sterk kildevannspåvirkning og som tilføres kildevann med en gjennomsnittstemperatur som er tilstrekkelig mye høyere enn årsmiddeltemperaturen i øvre jordlag i området til at det gir seg vesentlige utslag i artssammensetningen (JV∙a eller høyere).",
+  "NA-V6": "Våtsnøleier betegner mer eller mindre langvarig snødekt mark som tilføres smeltevann fra ovenforliggende snøskavler eller breer gjennom store deler av vekstsesongen.",
+  "NA-V7": "Arktisk permafrost-våtmark omfatter karakteristiske våtmarkssystemer i den mellomarktiske tundrasonen på Svalbard som er betinget av permafrost.",
+  "NA-V8": "Sumpskogsmark betinget av limno-topogen vanntilførsel (dvs. som oversvømmes av vann fra innsjøer og/eller havvann; VT∙a) har en artssammensetning som er betydelig forskjellig fra sammenliknbare systemer betinget av tilførsler av jordvann (NiN[2]AR2, kapittel B12). Slike skogsmarker er kjent som «strandskoger» (Kielland-Lund 1981, Fremstad 1997), og finnes langs bredden av større innsjøer og ned i supralitoralbeltet på sterkt beskyttete steder langs kysten (innerst i lange, grunne kiler, etc.).",
+  "NA-V9": "Semi-naturlig myr omfatter torvdannende, åpen myr (karakterisert ved myrtorv, IO∙b¤) med klart preg av ekstensiv hevd (HI∙b–e), enten beiting eller slått («beitemyr» og «slåttemyr»).",
+  "NA-V10": "Semi-naturlig våteng omfatter semi-naturlig mark (HI∙bcde) med grunnvannsspeil som det meste av året står høyt nok til at definisjonen av våtmark er tilfredsstilt, og som mangler torvproduksjon (IO∙0a).",
+  "NA-V11": "Torvtak er V1 Åpen jordvannsmyr eller V3 nedbørsmyr der de øvre torvlagene er høstet, f.eks. til torvstrøproduksjon eller til bruk som brenntorv, slik at naken torv blir eksponert.",
+  "NA-V12": "Grøftet torvmark (SX∙n) omfatter irreversibelt drenerte våtmarkssystemer på torvmark (først og fremst åpne myrer, men også kilder), der dreneringen har ført til vesentlig endring i artssammensetning og større likhet med en annen våtmarks-hovedtype enn den som fantes på stedet før inngrepet ble gjort.",
+  "NA-V13": "Ny våtmark omfatter våtmarkssystemer som har oppstått gjennom irreversibelt inngrep på mark som ikke tidligere var våtmark.",
+  "NA-H1": "Havvannmasser omfatter alle marine vannmasser som står i direkte sammenheng med verdenshavene, uten å være fysisk skilt fra disse gjennom en markert terskel slik fjorder og poller er.",
+  "NA-H2": "Sirkulerende vannmasser i fysisk avgrensede saltvannsforekomster omfatter økosystemer som hele tida eller periodisk tilføres havvann og som derfor tilfredsstiller definisjonen av brakkvann eller saltvann (SA∙a+).",
+  "NA-H3": "For at marine vannmasser skal unngå sirkulasjon, må de enten ha så sterkt redusert saltholdighet at vannets tetthetsmaksimum > 0 °C, slik at de får et sirkulasjonssystem lik det vi finner i innsjøer, eller de må befinne seg på bunnen i dype fjorder med så høy terskel at ikke atlantisk vann strømmer inn over terskelen når sterk fralandsvind frakter overflatevannet utover havet.",
+  "NA-H4": "Sterkt endrete marine vannmasser omfatter vannmassene i fysisk avgrensete saltvannsforekomster (fjorder, poller og litoralbasseng) som har fått sin artssammensetning og økologiske funksjon sterkt og irreversibelt endret gjennom fysiske (regulering av terskelhøyde for poller etc.), kjemiske inngrep (irreversibel forurensning, eutrofiering etc.) eller biologiske inngrep (utsetting av fiskearter, rømming fra fiskeoppdrettsanlegg el.l. som gjennomgripende har endret den trofiske strukturen og dermed artssammensetningen, etc.), samt vannmassene i kunstige vannforekomster (saltvannsbasseng, saltverk, friluftsakvarier etc.). Sterkt endret bunn medfører ikke nødvendigvis at vannmassene skal karakteriseres som sterkt endret.",
+  "NA-F1": "Elvevannmasser omfatter økosystemer i rennende vann (lotiske systemer), det vil si ferskvannsforekomster med høy vanngjennomstrømningshastighet og kort oppholdstid, biologisk karakterisert ved mangel på en fullstendig næringskjede som inneholder krepsdyrplankton.",
+  "NA-F2": "Sirkulerende innsjøvannmasser omfatter økosystemer i stillestående vann (lentiske systemer), det vil si ferskvannsforekomster med lav vanngjennomstrømningshastighet og lang oppholdstid eller mer eller mindre uten vanngjennomstrømning, biologisk karakterisert ved forekomst av en fullstendig næringskjede som inneholder krepsdyrplankton.",
+  "NA-F3": "Ikke-sirkulerende innsjøvannmasser omfatter det permanent stagnerende bunnvannet (monimolimnion) i meromiktiske innsjøer, det vil si innsjøer som har et tungt, kaldt vannlag på bunnen, under sprangsjiktet, oftest på dyp > 10 m, som aldri blander seg med resten av vannet i innsjøen og som derfor er fritt for oksygen.",
+  "NA-F4": "Sterkt endrete elvevannmasser omfatter vannmassene i elver som har fått sin artssammensetning og økologiske funksjon sterkt og irreversibelt endret gjennom fysiske inngrep (vassdragsreguleringer), kjemiske inngrep (irreversibel forurensning, eutrofiering, kjemisk behandling mot parasitter etc.) eller biologiske inngrep (utsetting av fiskearter som gjennomgripende har endret den trofiske strukturen og dermed artssammensetningen, etc.).",
+  "NA-F5": "Sterkt endrete innsjøvannmasser omfatter vannmassene i innsjøer og dammer som har fått sin artssammensetning og økologiske funksjon sterkt og irreversibelt endret gjennom fysiske inngrep (vassdragsreguleringer), kjemiske inngrep (irreversibel forurensning, eutrofiering, kjemisk behandling mot parasitter etc.) eller biologiske inngrep (utsetting av fiskearter som gjennomgripende har endret den trofiske strukturen og dermed artssammensetningen, etc.), samt vannmassene i kunstige vannforekomster (vannmagasiner, gårdsdammer etc.).",
+  "NA-I1": "Snø- og isdekt fastmark omfatter fastmarksarealer som er dekt av snø og/eller is, det vil si breer og snøansamlinger.",
+  "NA-I2": "Polar havis omfatter iskappen som dekker sentrale deler av Polhavet og det livet som er direkte knyttet til denne; som lever på, i og på eller i direkte tilknytning til undersiden av denne.",
+  "NA": "Natursystem defineres av «alle organismer innen et mer eller mindre enhetlig, avgrensbart område, det totale miljøet de lever i og er tilpasset til, og de prosesser som regulerer relasjoner organismene imellom og mellom organismer og miljø (herunder menneskelig aktivitet)»",
+  "NA-F": "Limniske vannmasser (vannmassesystemer i ferskvann) omfatter økosystemer av flytende, svevende og svømmende organismer i de frie vannmassene i elver og innsjøer",
+  "NA-H": "Marine vannmasser omfatter økosystemer av flytende, svevende og svømmende organismer i de frie vannmassene i saltvann (saltholdighet > 0,5 ‰)",
+  "NA-I": "Snø- og issystemer omfatter økosystemer i og på varig snø og is, inkludert polarisen",
+  "NA-L": "Ferskvannsbunnsystemer, også kalt limniske bunnsystemer, omfatter økosystemer i ferskvann; det vil si som finnes i, på og nært knyttet til bunnen i elver og innsjøer.",
+  "NA-M": "Saltvannsbunnsystemer, også kalt marine bunnsystemer, omfatter økosystemer i saltvann (saltholdighet > 0,5 ‰); det vil si som finnes i, på og nært knyttet til bunnen i havet, fjorder, poller og litoralbasseng",
+  "NA-T": "Fastmarkssystemer omfatter økosystemer på land med mark som ikke er mer eller mindre permanent vannmettet. Størstedelen av landøkosystemene tilhører fastmarkssystemene.",
+  "NA-V": "Våtmarkssystemer omfatter myrer og kilder og andre økosystemer på mer eller mindre permanent vannmettet mark"
 }

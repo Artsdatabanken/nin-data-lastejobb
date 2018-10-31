@@ -32,7 +32,7 @@ Object.keys(mbtiles).forEach(path => {
     log.warn("bbox for kode '" + kode + "', men koden eksisterer ikke")
     return
   }
-  const target = tre[kode]
+  const target = tre[kode.replace("_", "-")]
   if (mbtile.bounds) {
     // For now, no bounds for GeoJSON
     target.zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]

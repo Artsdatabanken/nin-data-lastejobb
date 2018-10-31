@@ -6,61 +6,6 @@
     "ingress": "Landskapstypeinndelingen skiller mellom ulike typer av øko-landskap; enheter som kjennetegnes ved likheter i store landformer og terrengvariasjon, som bestemmer hvilke landskapsdel- og natursystem-typer som forekommer der.",
     "infoUrl": "https://www.artsdatabanken.no/Pages/10"
   },
-  "LA_I": { "tittel": { "nb": "Innlandslandskap" } },
-  "LA_K": { "tittel": { "nb": "Kystlandskap" } },
-  "LA_I-A": { "tittel": { "nb": "Ås- og fjell-landskap" } },
-  "LA_I-D": { "tittel": { "nb": "Dallandskap" } },
-  "LA_I-S": { "tittel": { "nb": "Innlandsslettelandskap" } },
-  "LA_K-F": { "tittel": { "nb": "Fjordlandskap" } },
-  "LA_K-S": { "tittel": { "nb": "Kystslettelandskap" } },
-  "LA_K-A": { "tittel": { "nb": "Ås- og fjellkyst" } },
-  "LG": { "tittel": { "nb": "Landskapsgradient" } },
-  "LG_GO": { "tittel": { "nb": "Geo-økologi" } },
-  "LG_GO-DN": {
-    "tittel": { "nb": "Dalnedskjæring" },
-    "ingress": "Brukes bare for fjord/dal og beskriver hvor dypt fjorden/dalen skjærer seg ned i omkringliggende landformer."
-  },
-  "LG_GO-RE": {
-    "tittel": { "nb": "Relieff" },
-    "ingress": "Brukes bare for hovedtypene vidde/ås/fjell og beskriver hvor kupert landskapet er."
-  },
-  "LG_GO-TL": {
-    "tittel": { "nb": "Tindelandskapspreg" },
-    "ingress": "Brukes kun i fjellområder og angir om landskapet har tindelandskapspreg (alpint landskap) eller ikke"
-  },
-  "LG_GO-BP": {
-    "tittel": { "nb": "Brepreg" },
-    "ingress": "Brukes i dallandskap og i fjellområder, og angir om landskapet er dominert av isbre eller ikke"
-  },
-  "LG_GO-IP": {
-    "tittel": { "nb": "Innsjøpreg" },
-    "ingress": "Gradienten angir i hvor stor grad landskapet er dominert av innsjøer."
-  },
-  "LG_GO-SG": {
-    "tittel": {
-      "nb": "Skjærgårdspreg",
-      "ingress": "Gradienten brukes bare i kystlandskap, og beskriver om landskapet hører til fastland, store øyer, er en del av en øygruppe med mindre øyer, osv."
-    }
-  },
-  "LG_GO-AL": {
-    "tittel": { "nb": "Borealt/alpint landskap" },
-    "ingress": "Angir om landskapet er over eller under skoggrensen eller i skoggrenseland."
-  },
-  "LG_GO-MP": {
-    "tittel": { "nb": "Myrpreg" },
-    "ingress": "Gradienten angir i hvor stor grad landskapet er dominert av myrer."
-  },
-  "LG_AB": {
-    "tittel": { "nb": "Arealbruk" }
-  },
-  "LG_AB-IS": {
-    "tittel": { "nb": "Omfang av infrastruktur (bebyggelsesgrad)" },
-    "ingress": "Angir i hvor stor grad landskapet er dominert av tekniske anlegg, bebyggelse og infrastruktur."
-  },
-  "LG_AB-JP": {
-    "tittel": { "nb": "Jordbrukspreg" },
-    "ingress": "Angir i hvor stor grad landskapet er dominert av jordbruk, gjennom andel dyrket mark."
-  },
   "NA": {
     "tittel": { "nb": "Natursystem" },
     "infoUrl": "https://www.artsdatabanken.no/Pages/222921",
@@ -72,61 +17,61 @@
     "infoUrl": "https://artsdatabanken.no/Pages/179717",
     "sortering": 3
   },
-  "BS_6SE": {
+  "BS-6SE": {
     "tittel": { "nb": "Bioklimatisk seksjon" },
     "ingress": "Denne regionale komplekse miljøvariabelen fanger opp både humiditet og oseanitet. Bioklimatiske seksjoner er en av de aller viktigste regionale komplekse miljøvariablene også på global skala, der spennvidden i vegetasjonsformasjoner fra regnskog via steppe til ørken fanges opp av sju bioklimatiske seksjoner.",
     "infoUrl": "https://www.artsdatabanken.no/Pages/181900",
     "type": "gradient"
   },
-  "BS_6SO": {
+  "BS-6SO": {
     "tittel": { "nb": "Bioklimatisk sone" },
     "ingress": "Bioklimatiske soner (BS) beskriver variasjon på land (og i ferskvann) relatert til varme. Alle organismer stiller krav til minstestemperatur for å overleve og for å reprodusere, og temperaturkravet varierer sterkt mellom arter. Alle arter har også en øvre toleransegrense for varme – blir det for varmt, stopper livsfunksjonene opp. Denne varmeøkoklinen er derfor på global basis en av de aller viktigste økoklinene, som forklarer arters utbredelse, breddegradsbestemt fordeling av klimasoner (tropisk, subtropisk, temperert, arktisk) og dominerende livsform (lauvtrær, bartrær, skogløse områder).",
     "infoUrl": "https://www.artsdatabanken.no/Pages/137992",
     "type": "gradient"
   },
-  "BS_1": {
+  "BS-1": {
     "ingress": "Omfatter «de artene som lever sammen innenfor et gitt område» og beskrives ved å angi hvilke arter som forekommer og eventuelt også deres mengde.",
     "infoUrl": "https://artsdatabanken.no/Pages/179953"
   },
-  "BS_2": {
+  "BS-2": {
     "ingress": "Dette er parallellen til artssammensetning, og omfatter «bergarter, mineraler, jordarter, jordsmonn og eventuelle fossiler som finnes innenfor et gitt område».",
     "infoUrl": "https://artsdatabanken.no/Pages/182002"
   },
-  "BS_3": {
+  "BS-3": {
     "ingress": "Omfatter «mer eller mindre distinkt terrengform (overflateform på land eller utforming av bunnen i saltvanns- eller ferskvannssystemer) som kan gis en felles karakteristikk på grunnlag av egenskaper som ofte er forårsaket av én enkelt eller en kombinasjon av distinkte landformdannende (geomorfologiske) prosesser».",
     "infoUrl": "https://artsdatabanken.no/Pages/182003"
   },
-  "BS_4": {
+  "BS-4": {
     "ingress": "Omfatter «fysisk observerbare, romlig avgrensete elementer som helt eller for det meste består av umodifiserte livsmedier og som ikke inngår i et natursystems vanlige bunn- eller marksystem».",
     "infoUrl": "https://artsdatabanken.no/Pages/182005"
   },
-  "BS_5": {
+  "BS-5": {
     "ingress": "«Fysisk observerbare gjenstander som helt eller for det meste består av sterkt modifiserte eller syntetiske livsmedier og som er resultatet av menneskers virksomhet».",
     "infoUrl": "https://artsdatabanken.no/Pages/182004"
   },
-  "BS_6": {
+  "BS-6": {
     "ingress": "Parallell variasjon i artssammensetning og makroklimafaktorer på grov romlig skala",
     "infoUrl": "https://artsdatabanken.no/Pages/182001"
   },
-  "BS_7": {
+  "BS-7": {
     "ingress": "«Variasjon i miljøforhold som gir opphav til mønstre som er observerbare i et relativt kort tidsrom, typisk mindre enn 100(–200) år, og som ikke endrer det aktuelle systemets grunnleggende egenskaper, og den variasjonen i artssammensetning den gir opphav til».",
     "infoUrl": "https://artsdatabanken.no/Pages/182008"
   },
-  "BS_8": {
+  "BS-8": {
     "ingress": "Omfatter «variasjon i terrengets overflateformer som kan beskrives ved kontinuerlige variabler som for eksempel relativt relieff og terrengujevnhet».",
     "infoUrl": "https://artsdatabanken.no/Pages/182007"
   },
-  "MI_KA": {
+  "MI-KA": {
     "ingress": "Innholdet av kalsium (’kalk’) og andre viktige plantenæringsstoffer i jorda, samt surhetsgraden (pH), er blant de aller viktigste miljøfaktorene i fastmark og våtmark. Økoklinen kalkinnhold (KA) beskriver samvariasjonen mellom disse faktorene – kalkrik jord er mindre sur og har høyere innhold av mange andre næringsstoffer enn sur jord. Variasjonen i næringsstoffer og pH påvirker både hvilke plantearter som kan trives på et sted og hvilke dyrearter som finnes i jord og vann. Man finner forskjellige planter på kalkrik jord og på sur jord, og blir vannet i innsjøer og elver for surt, er det mange fiskearter som ikke trives der lengre.",
     "infoUrl": "https://www.artsdatabanken.no/Pages/137908",
     "render": "underjord",
     "type": "gradient"
   },
-  "MI_KA-A": { "sortering": 1 },
-  "MI_KA-B": { "sortering": 2 },
-  "MI_KA-D": { "sortering": 3 },
-  "MI_KA-F": { "sortering": 4 },
-  "MI_KA-H": { "sortering": 5 },
+  "MI-KA-A": { "sortering": 1 },
+  "MI-KA-B": { "sortering": 2 },
+  "MI-KA-D": { "sortering": 3 },
+  "MI-KA-F": { "sortering": 4 },
+  "MI-KA-H": { "sortering": 5 },
   "BS": {
     "tittel": { "nb": "Beskrivelse" },
     "ingress": "Variasjon som ikke kan beskrives ved hjelp av uLKM er sortert på ni grupper av Kilder til variasjon. Variasjonen langs disse beskrives ved bruk av variabler som er definert så presist som mulig, men som er delt i  klasser eller trinn uten noen direkte referanse til hvor mye variasjon i artssammensetning de gir opphav til.",
@@ -146,47 +91,47 @@
   },
   "RL": { "tittel": { "nb": "Truet art/natur" }, "sortering": 5 },
   "LI": { "tittel": { "nb": "Livsmedium" } },
-  "RL_EN": { "tittel": { "nb": "Sterkt truet" }, "sortering": 6 },
-  "RL_VU": { "tittel": { "nb": "Sårbar" }, "sortering": 5 },
-  "RL_NT": { "tittel": { "nb": "Nær truet" }, "sortering": 4 },
-  "RL_RE": { "tittel": { "nb": "Regionalt utdødd" }, "sortering": 3 },
-  "RL_DD": { "tittel": { "nb": "Datamangel" }, "sortering": 2 },
-  "RL_NA": { "tittel": { "nb": "Ikke vurdert" }, "sortering": 1 },
+  "RL-EN": { "tittel": { "nb": "Sterkt truet" }, "sortering": 6 },
+  "RL-VU": { "tittel": { "nb": "Sårbar" }, "sortering": 5 },
+  "RL-NT": { "tittel": { "nb": "Nær truet" }, "sortering": 4 },
+  "RL-RE": { "tittel": { "nb": "Regionalt utdødd" }, "sortering": 3 },
+  "RL-DD": { "tittel": { "nb": "Datamangel" }, "sortering": 2 },
+  "RL-NA": { "tittel": { "nb": "Ikke vurdert" }, "sortering": 1 },
   "FA": { "tittel": { "nb": "Fremmed art" } },
-  "FA_SE": { "tittel": { "nb": "Svært høy risiko" } },
-  "FA_HI": { "tittel": { "nb": "Høy risiko" } },
-  "FA_PH": { "tittel": { "nb": "Potensielt høy risiko" } },
-  "FA_LO": { "tittel": { "nb": "Lav risiko" } },
-  "FA_NK": { "tittel": { "nb": "Ingen kjent risiko" } },
-  "LI_MS": { "tittel": { "nb": "Substrat i marine systemer" } },
-  "LI_MS-M7": { "tittel": { "nb": "Dødt plantemateriale i marine systemer" } },
-  "LI_TS": { "tittel": { "nb": "Substrat på land" } },
-  "LI_TS-T3": { "tittel": { "nb": "Organisk jord" } },
-  "LI_TS-T4": { "tittel": { "nb": "Levende planter på land" } },
-  "LI_TS-T6": { "tittel": { "nb": "Ved-livsmedier" } },
-  "LI_TS-T10": { "tittel": { "nb": "Dødt plantemateriale" } },
-  "LI_TS-T10_M7": {
+  "FA-SE": { "tittel": { "nb": "Svært høy risiko" } },
+  "FA-HI": { "tittel": { "nb": "Høy risiko" } },
+  "FA-PH": { "tittel": { "nb": "Potensielt høy risiko" } },
+  "FA-LO": { "tittel": { "nb": "Lav risiko" } },
+  "FA-NK": { "tittel": { "nb": "Ingen kjent risiko" } },
+  "LI-MS": { "tittel": { "nb": "Substrat i marine systemer" } },
+  "LI-MS-M7": { "tittel": { "nb": "Dødt plantemateriale i marine systemer" } },
+  "LI-TS": { "tittel": { "nb": "Substrat på land" } },
+  "LI-TS-T3": { "tittel": { "nb": "Organisk jord" } },
+  "LI-TS-T4": { "tittel": { "nb": "Levende planter på land" } },
+  "LI-TS-T6": { "tittel": { "nb": "Ved-livsmedier" } },
+  "LI-TS-T10": { "tittel": { "nb": "Dødt plantemateriale" } },
+  "LI-TS-T10_M7": {
     "tittel": { "nb": "Dødt plantemateriale i marine systemer" }
   },
-  "NA_HT": { "tittel": { "nb": "Hovedtyper" } },
-  "NA_HT-KG": {
+  "NA-HT": { "tittel": { "nb": "Hovedtyper" } },
+  "NA-HT-KG": {
     "tittel": { "nb": "Kunnskapsgrunnlag om hovedtypen generelt" },
     "type": "gradient"
   },
-  "NA_HT-KG-GI": {
+  "NA-HT-KG-GI": {
     "tittel": { "nb": "Kunnskapsgrunnlag om grunntypeinndelingen" },
     "type": "gradient"
   },
-  "NA_HT-KG-GI1": { "tittel": { "nb": "1" } },
-  "NA_HT-KG-GI2": { "tittel": { "nb": "2" } },
-  "NA_HT-KG-GI3": { "tittel": { "nb": "3" } },
-  "NA_HT-KG-GI4": { "tittel": { "nb": "4" } },
-  "NA_HT-KG-GI5": { "tittel": { "nb": "5" } },
-  "NA_HT-KG1": { "tittel": { "nb": "1" } },
-  "NA_HT-KG2": { "tittel": { "nb": "2" } },
-  "NA_HT-KG3": { "tittel": { "nb": "3" } },
-  "NA_HT-KG4": { "tittel": { "nb": "4" } },
-  "NA_HT-KG5": { "tittel": { "nb": "5" } },
-  "NA_HT-PK": { "tittel": { "nb": "Prosedyrekategori" } },
-  "NA_HT-DG": { "tittel": { "nb": "Definisjonsgrunnlag" } }
+  "NA-HT-KG-GI1": { "tittel": { "nb": "1" } },
+  "NA-HT-KG-GI2": { "tittel": { "nb": "2" } },
+  "NA-HT-KG-GI3": { "tittel": { "nb": "3" } },
+  "NA-HT-KG-GI4": { "tittel": { "nb": "4" } },
+  "NA-HT-KG-GI5": { "tittel": { "nb": "5" } },
+  "NA-HT-KG1": { "tittel": { "nb": "1" } },
+  "NA-HT-KG2": { "tittel": { "nb": "2" } },
+  "NA-HT-KG3": { "tittel": { "nb": "3" } },
+  "NA-HT-KG4": { "tittel": { "nb": "4" } },
+  "NA-HT-KG5": { "tittel": { "nb": "5" } },
+  "NA-HT-PK": { "tittel": { "nb": "Prosedyrekategori" } },
+  "NA-HT-DG": { "tittel": { "nb": "Definisjonsgrunnlag" } }
 }

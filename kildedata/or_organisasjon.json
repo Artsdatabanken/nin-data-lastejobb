@@ -1,47 +1,47 @@
 {
-  "OR_AD": {
+  "OR-AD": {
     "farge": "hsl(24, 100%, 50%)",
     "tittel": { "nb": "Artsdatabanken" },
     "ingress": "Artsdatabanken er en nasjonal kunnskapsbank for naturmangfold. Artsdatabankens viktigste oppgave er å forsyne offentligheten, forskningsmiljøer og forvaltning med informasjon om arter og naturtyper i Norge. Kunnskap som finnes hos museer, forskningsinstitutter, forvaltningsorganer og frivillige organisasjoner, blir samlet under en felles plattform og gjort allment tilgjengelig gjennom Artsdatabanken.",
     "infoUrl": "https://no.wikipedia.org/wiki/Artsdatabanken",
     "metaUrl": "https://www.artsdatabanken.no"
   },
-  "OR_KV": {
+  "OR-KV": {
     "farge": "hsl(209, 98%, 33%)",
     "tittel": { "nb": "Kartverket" },
     "ingress": "Statens kartverk (kortnavn Kartverket) er en norsk statlig forvaltningsbedrift under Kommunal- og moderniseringsdepartementet (fra 2014).  Kartverket skal sørge for at tidsriktig, stedfestet informasjon fra det offentlige finnes og er lett tilgjengelig for det norske samfunn til enhver tid. Kartverket er statens fagmyndighet innen kart, geodata og offentlig eiendomsinformasjon, og er også landets tinglysingsmyndighet.",
     "infoUrl": "https://no.wikipedia.org/wiki/Statens_kartverk",
     "metaUrl": "https://www.kartverket.no"
   },
-  "OR_MD": {
+  "OR-MD": {
     "farge": "hsl(177, 93%, 24%)",
     "tittel": { "nb": "Miljødirektoratet" },
     "ingress": "Miljødirektoratet er et norsk direktorat som ble opprettet 1. juli 2013 gjennom en sammenslåing av Direktoratet for naturforvaltning og Klima- og forurensningsdirektoratet.  De overordnede oppgavene er å redusere klimagassutslipp, forvalte norsk natur og hindre forurensning.",
     "infoUrl": "https://no.wikipedia.org/wiki/Milj%C3%B8direktoratet",
     "metaUrl": "http://www.miljodirektoratet.no/"
   },
-  "OR_NI": {
+  "OR-NI": {
     "farge": "#A2B8C0",
     "tittel": { "nb": "Norsk institutt for naturforskning" },
     "ingress": "Stiftelsen Norsk institutt for naturforskning (NINA) er en norsk stiftelse, opprettet i 1988, som forsker på natur og samspillet mellom natur og samfunn.  NINAs primære aktivitet er å drive anvendt forskning. Stiftelsen har både biologer og samfunnsforskere. Viktige arbeidsområder for NINA er biologisk mangfold, fornybar energi, rovvilt, havbruk, miljødatabaser, bruk og forvaltning av naturressurser, konsekvensanalyser, økologiske effekter av klimaendringer og økonomiske effekter av naturbruk.",
-    "infoUrl": "https://no.wikipedia.org/wiki/Norsk_institutt_for_naturforskning",
+    "infoUrl": "https://no.wikipedia.org/wiki/Norsk_institutt_fOR-naturforskning",
     "metaUrl": "https://nina.no"
   },
-  "OR_NB": {
+  "OR-NB": {
     "farge": "hsl(0, 0%, 0%)",
     "tittel": { "nb": "Norsk institutt for bioøkonomi" },
     "ingress": "NIBIO leverer kunnskap om mat- og planteproduksjon, miljø, klimasmart landbruk, kart, arealbruk, genressurser, skog, ressursforvaltning og landbruksøkonomi.",
-    "infoUrl": "https://no.wikipedia.org/wiki/Norsk_institutt_for_bio%C3%B8konomi",
+    "infoUrl": "https://no.wikipedia.org/wiki/Norsk_institutt_fOR-bio%C3%B8konomi",
     "metaUrl": "https://www.nibio.no"
   },
-  "OR_GU": {
+  "OR-GU": {
     "farge": "hsl(60, 7%, 8%)",
     "tittel": { "nb": "Norges Geologiske Undersøkelse" },
     "ingress": "Norges geologiske undersøkelse (NGU) er en norsk statlig etat med ansvar for geologisk kartlegging og forskning.   NGU har som hovedoppgaver å samle, bearbeide og formidle kunnskap om de fysiske, kjemiske og mineralogiske egenskapene til landets berggrunn, løsmasser, mineralressurser og grunnvann.",
     "infoUrl": "https://no.wikipedia.org/wiki/Norges_geologiske_unders%C3%B8kelse",
     "metaUrl": "http://www.ngu.no/"
   },
-  "OR_SB": {
+  "OR-SB": {
     "farge": "hsl(0, 0%, 0%)",
     "tittel": { "nb": "Statistisk sentralbyrå", "en": "Statistics Norway" },
     "ingress": "Statistisk sentralbyrå (SSB) er den sentrale institusjonen for innsamling, bearbeiding og formidling av offisiell statistikk i Norge. SSB har, i henhold til statistikkloven av 1989,[4] rett til å bestemme hva som skal være offisiell statistikk, samt ansvaret for å samordne all offisiell statistikk i Norge.",

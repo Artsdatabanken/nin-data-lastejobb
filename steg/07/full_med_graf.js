@@ -21,8 +21,11 @@ function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
     log.warn("Mangler kode relasjon " + kodeTil + " <-> " + kodeFra)
     return
   }
-  if (kodeFra === kodeTil)
+  if (kodeFra === kodeTil) {
+    console.log(nodeFra)
+    console.log(nodeTil)
     throw new Error("Relasjon til seg selv fra " + kodeTil)
+  }
 
   if (!nodeFra.graf) nodeFra.graf = {}
   if (!nodeFra.graf[kant]) nodeFra.graf[kant] = {}

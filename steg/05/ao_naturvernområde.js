@@ -10,7 +10,7 @@ const r = {}
 
 function lagRelasjonTilVerneområdeRot() {
   return {
-    kode: typesystem.verneområde.prefiks + "_AO",
+    kode: typesystem.verneområde.prefiks + "-AO",
     kant: "verneområde",
     kantRetur: "fylke",
     erSubset: true
@@ -23,8 +23,8 @@ function lagKoder(kilde, nivå) {
     const e = {
       tittel: { nb: "Naturvernområder i " + o.tittel.nb + " " + nivå }
     }
-    if (nivå === "fylke") e.foreldre = ["VV_AO"]
-    r["VV_" + key.replace("_", "-")] = e
+    if (nivå === "fylke") e.foreldre = ["VV-AO"]
+    r["VV-" + key.replace("_", "-")] = e
   })
   return r
 }
@@ -34,7 +34,7 @@ function lagFylkesmann(kilde) {
     const o = kilde[key]
     const e = {
       tittel: { nb: "Fylkesmannen i " + o.tittel.nb },
-      foreldre: ["VV_FM-FM"],
+      foreldre: ["VV-FM-FM"],
       relasjon: [
         {
           kode: key,
@@ -44,7 +44,7 @@ function lagFylkesmann(kilde) {
         }
       ]
     }
-    r[key.replace("AO_", "VV_FM-FM-")] = e
+    r[key.replace("AO-", "VV-FM-FM-")] = e
   })
   return r
 }

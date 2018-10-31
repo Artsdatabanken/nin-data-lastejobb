@@ -1,26 +1,26 @@
 {
   "LI": { "kode": "LI", "tittel": { "nb": "Livsmedium" } },
-  "LI_MS": {
-    "kode": "LI_MS",
+  "LI-MS": {
+    "kode": "LI-MS",
     "tittel": { "nb": "Substrat i marine systemer" }
   },
-  "LI_MS-M7": {
-    "kode": "LI_MS-M7",
+  "LI-MS-M7": {
+    "kode": "LI-MS-M7",
     "tittel": { "nb": "Dødt plantemateriale i marine systemer" }
   },
-  "LI_TS": { "kode": "LI_TS", "tittel": { "nb": "Substrat på land" } },
-  "LI_TS-T3": { "kode": "LI_TS-T3", "tittel": { "nb": "Organisk jord" } },
-  "LI_TS-T4": {
-    "kode": "LI_TS-T4",
+  "LI-TS": { "kode": "LI-TS", "tittel": { "nb": "Substrat på land" } },
+  "LI-TS-T3": { "kode": "LI-TS-T3", "tittel": { "nb": "Organisk jord" } },
+  "LI-TS-T4": {
+    "kode": "LI-TS-T4",
     "tittel": { "nb": "Levende planter på land" }
   },
-  "LI_TS-T6": { "kode": "LI_TS-T6", "tittel": { "nb": "Ved-livsmedier" } },
-  "LI_TS-T10": {
-    "kode": "LI_TS-T10",
+  "LI-TS-T6": { "kode": "LI-TS-T6", "tittel": { "nb": "Ved-livsmedier" } },
+  "LI-TS-T10": {
+    "kode": "LI-TS-T10",
     "tittel": { "nb": "Dødt plantemateriale" }
   },
-  "LI_TS-T10_M7": {
-    "kode": "LI_TS-T10_M7",
+  "LI-TS-T10_M7": {
+    "kode": "LI-TS-T10_M7",
     "tittel": { "nb": "Dødt plantemateriale i marine systemer" }
   }
 }

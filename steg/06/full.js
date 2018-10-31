@@ -7,11 +7,10 @@ const r = {}
 
 function flettAttributter(o, props = {}) {
   for (let key of Object.keys(o)) {
-    r[key] = Object.assign({}, r[key], o[key], props)
+    const kode = key.replace("_", "-")
+    r[kode] = Object.assign({}, r[kode], o[key], props)
   }
 }
-
-function capitalize(s) {}
 
 function flett(filename, props = {}) {
   var data = io.lesDatafil(filename)
@@ -77,7 +76,7 @@ for (let key of Object.keys(r)) {
       node.tittel = Object.entries(node.tittel).reduce((acc, e) => {
         if (!e[1])
           log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
-        acc[e[0]] = typesystem.capitalizeTittel(e[1])
+        acc[e[0]] = e[1]
         return acc
       }, {})
       if (r[key].kode) log.warn("Har kode: ", key)

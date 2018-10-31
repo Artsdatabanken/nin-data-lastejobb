@@ -5,7 +5,7 @@ let ingress = io.lesKildedatafil("na_ingress")
 
 function kodefix(kode) {
   if (!kode) return kode
-  return kode.toUpperCase().replace(" ", "_")
+  return kode.toUpperCase().replace(" ", "-")
 }
 
 function importerKoder() {

@@ -165,7 +165,7 @@ function fjernEnkeltVerneområder(tre) {
   // Fjern barn fra VV - for mange, bruk alternative ruter
   const vv = tre.vv["@"].barn
   const keys = Object.keys(vv)
-  const vid = /^VV_\d+$/
+  const vid = /^VV-\d+$/
   keys.forEach(kode => {
     if (kode.match(vid)) delete vv[kode]
   })
