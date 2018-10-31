@@ -1,0 +1,62 @@
+{
+  "BS_6SO-1": {
+    "tittel": "Lavalpin",
+    "farge": "rgb(51,153,253)",
+    "min": 2.87,
+    "max": 4.6657
+  },
+  "BS_6SO-2": {
+    "tittel": "Nordboreal",
+    "farge": "rgb(167,253,88)",
+    "min": 1.7402,
+    "max": 2.8699
+  },
+  "BS_6SO-3": {
+    "tittel": "Mellomboreal",
+    "farge": "rgb(165,254,164)",
+    "min": 0.3802,
+    "max": 1.74
+  },
+  "BS_6SO-4": {
+    "tittel": "Sørboreal",
+    "farge": "rgb(253,250,64)",
+    "min": -1.2999,
+    "max": 0.3801
+  },
+  "BS_6SO-5": {
+    "tittel": "Boreonemoral",
+    "farge": "rgb(253,194,111)",
+    "min": -5.1858,
+    "max": -1.3
+  },
+  "BS_6SE-1": {
+    "tittel": "Sterkt oseanisk seksjon (O3)",
+    "farge": "rgb(50,67,253)",
+    "min": -5.8802,
+    "max": -2.9401
+  },
+  "BS_6SE-2": {
+    "tittel": "Klart oseanisk seksjon (O2)",
+    "farge": "rgb(104,117,252)",
+    "min": -2.9398,
+    "max": -1.02
+  },
+  "BS_6SE-3": {
+    "tittel": "Svakt oseanisk seksjon (O1)",
+    "farge": "rgb(129,253,244)",
+    "min": -1.0199,
+    "max": 0.6027
+  },
+  "BS_6SE-4": {
+    "tittel": "Overgangsseksjon (OC)",
+    "farge": "rgb(178,253,247)",
+    "min": 0.6031,
+    "max": 2.3499
+  },
+  "BS_6SE-5": {
+    "tittel": "Svakt kontinental seksjon (C1)",
+    "farge": "rgb(230,253,253)",
+    "min": 2.35,
+    "max": 4.3179
+  }
+}

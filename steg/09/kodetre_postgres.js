@@ -57,7 +57,7 @@ function eksporter(node, forfedre = [], nivå = 0) {
       nivå: nivå,
       delAv: lagDelAv(barn, forfedre),
       tittel: barn.tittel,
-      rasterColor: barn.rasterColor
+      index: barn.index
     }
     ut.push(rel)
     eksporter(barn, forfedre, nivå + 1)
