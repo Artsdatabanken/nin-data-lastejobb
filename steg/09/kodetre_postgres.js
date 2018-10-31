@@ -3,7 +3,7 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
-let inn = io.lesDatafil("raster_index")
+let inn = io.lesDatafil("full_med_rid")
 let ut = []
 
 Object.keys(inn).forEach(forelder => {
@@ -57,7 +57,7 @@ function eksporter(node, forfedre = [], nivå = 0) {
       nivå: nivå,
       delAv: lagDelAv(barn, forfedre),
       tittel: barn.tittel,
-      rasterColor: barn.rasterColor
+      index: barn.index
     }
     ut.push(rel)
     eksporter(barn, forfedre, nivå + 1)

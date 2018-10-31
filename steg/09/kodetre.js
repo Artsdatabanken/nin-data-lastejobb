@@ -3,7 +3,7 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
-let data = io.lesDatafil("raster_index")
+let data = io.lesDatafil("full_med_rid")
 
 function settInn(kode, forelder, tittel) {
   r.push({ kode: kode, forelder: forelder, tittel: tittel })

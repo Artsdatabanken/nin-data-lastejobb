@@ -46,6 +46,7 @@ function kobleForeldre() {
 }
 
 flettKildedata("annen_kode")
+flettKildedata("BS_6S")
 flettKildedata("vv_naturvernområde")
 flett("vv_naturvernområde")
 flett("inn_ao_fylke")
