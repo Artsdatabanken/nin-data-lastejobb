@@ -2,7 +2,7 @@ const config = require("../../config")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
-let tre = io.lesDatafil("raster_index")
+let tre = io.lesDatafil("full_med_rid")
 let mbtiles = io.lesDatafil("inn_mbtiles")
 
 function avrund1d(num) {

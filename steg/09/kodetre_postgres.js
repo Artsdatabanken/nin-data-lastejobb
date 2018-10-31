@@ -3,7 +3,7 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
-let inn = io.lesDatafil("raster_index")
+let inn = io.lesDatafil("full_med_rid")
 let ut = []
 
 Object.keys(inn).forEach(forelder => {
