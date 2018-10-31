@@ -43,6 +43,12 @@ Object {
     "kode": Object {
       "count": 179549,
     },
+    "max": Object {
+      "count": 40,
+    },
+    "min": Object {
+      "count": 40,
+    },
     "nivå": Object {
       "count": 179549,
     },
