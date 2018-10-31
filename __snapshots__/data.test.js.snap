@@ -1246,6 +1246,40 @@ Object {
 }
 `;
 
+exports[`data/kodehierarki.json har antall rader 1`] = `2`;
+
+exports[`data/kodehierarki.json har forventede nøkler 1`] = `
+Object {
+  "barn": Object {
+    "_": Object {
+      "_": Object {
+        "count": 179535,
+      },
+      "count": 31631,
+    },
+    "count": 1,
+    "~": Object {
+      "_": Object {
+        "count": 12,
+      },
+      "count": 1,
+    },
+  },
+  "foreldre": Object {
+    "_": Object {
+      "_": Object {
+        "count": 179547,
+      },
+      "count": 179546,
+    },
+    "count": 1,
+    "~": Object {
+      "count": 1,
+    },
+  },
+}
+`;
+
 exports[`data/la.csv.json har antall rader 1`] = `297`;
 
 exports[`data/la.csv.json har forventede nøkler 1`] = `
@@ -1945,9 +1979,9 @@ Object {
         },
         "zoom": Object {
           "_": Object {
-            "count": 5956,
+            "count": 5884,
           },
-          "count": 2978,
+          "count": 2942,
         },
       },
       "_": Object {
@@ -2306,9 +2340,9 @@ Object {
           },
           "zoom": Object {
             "_": Object {
-              "count": 1906,
+              "count": 1324,
             },
-            "count": 953,
+            "count": 662,
           },
         },
         "_": Object {
@@ -2496,9 +2530,9 @@ Object {
             },
             "zoom": Object {
               "_": Object {
-                "count": 1952,
+                "count": 1900,
               },
-              "count": 976,
+              "count": 950,
             },
           },
           "_": Object {
@@ -2599,9 +2633,9 @@ Object {
               },
               "zoom": Object {
                 "_": Object {
-                  "count": 662,
+                  "count": 558,
                 },
-                "count": 331,
+                "count": 279,
               },
             },
             "_": Object {
@@ -2992,9 +3026,9 @@ Object {
               },
               "zoom": Object {
                 "_": Object {
-                  "count": 120,
+                  "count": 90,
                 },
-                "count": 60,
+                "count": 45,
               },
             },
             "_": Object {
@@ -3071,9 +3105,9 @@ Object {
                 },
                 "zoom": Object {
                   "_": Object {
-                    "count": 628,
+                    "count": 386,
                   },
-                  "count": 314,
+                  "count": 193,
                 },
               },
               "_": Object {
@@ -3118,12 +3152,6 @@ Object {
                     },
                     "count": 4,
                   },
-                  "zoom": Object {
-                    "_": Object {
-                      "count": 8,
-                    },
-                    "count": 4,
-                  },
                 },
                 "_": Object {
                   "@": Object {
@@ -3155,12 +3183,6 @@ Object {
                     "tittel": Object {
                       "_": Object {
                         "count": 12,
-                      },
-                      "count": 12,
-                    },
-                    "zoom": Object {
-                      "_": Object {
-                        "count": 24,
                       },
                       "count": 12,
                     },
@@ -3250,9 +3272,9 @@ Object {
               },
               "zoom": Object {
                 "_": Object {
-                  "count": 122,
+                  "count": 8,
                 },
-                "count": 61,
+                "count": 4,
               },
             },
             "_": Object {
@@ -3320,9 +3342,9 @@ Object {
                 },
                 "zoom": Object {
                   "_": Object {
-                    "count": 610,
+                    "count": 20,
                   },
-                  "count": 305,
+                  "count": 10,
                 },
               },
               "count": 305,
@@ -3374,12 +3396,6 @@ Object {
                 },
                 "count": 4,
               },
-              "zoom": Object {
-                "_": Object {
-                  "count": 8,
-                },
-                "count": 4,
-              },
             },
             "_": Object {
               "@": Object {
@@ -3411,12 +3427,6 @@ Object {
                 "tittel": Object {
                   "_": Object {
                     "count": 20,
-                  },
-                  "count": 20,
-                },
-                "zoom": Object {
-                  "_": Object {
-                    "count": 40,
                   },
                   "count": 20,
                 },
@@ -3471,12 +3481,6 @@ Object {
                 },
                 "count": 2,
               },
-              "zoom": Object {
-                "_": Object {
-                  "count": 4,
-                },
-                "count": 2,
-              },
             },
             "_": Object {
               "@": Object {
@@ -3508,12 +3512,6 @@ Object {
                 "tittel": Object {
                   "_": Object {
                     "count": 10,
-                  },
-                  "count": 10,
-                },
-                "zoom": Object {
-                  "_": Object {
-                    "count": 20,
                   },
                   "count": 10,
                 },
@@ -3567,12 +3565,6 @@ Object {
                 },
                 "count": 3,
               },
-              "zoom": Object {
-                "_": Object {
-                  "count": 6,
-                },
-                "count": 3,
-              },
             },
             "_": Object {
               "@": Object {
@@ -3604,12 +3596,6 @@ Object {
                 "tittel": Object {
                   "_": Object {
                     "count": 15,
-                  },
-                  "count": 15,
-                },
-                "zoom": Object {
-                  "_": Object {
-                    "count": 30,
                   },
                   "count": 15,
                 },
@@ -3663,12 +3649,6 @@ Object {
                 },
                 "count": 3,
               },
-              "zoom": Object {
-                "_": Object {
-                  "count": 6,
-                },
-                "count": 3,
-              },
             },
             "_": Object {
               "@": Object {
@@ -3700,12 +3680,6 @@ Object {
                 "tittel": Object {
                   "_": Object {
                     "count": 15,
-                  },
-                  "count": 15,
-                },
-                "zoom": Object {
-                  "_": Object {
-                    "count": 30,
                   },
                   "count": 15,
                 },
@@ -3759,12 +3733,6 @@ Object {
                 },
                 "count": 3,
               },
-              "zoom": Object {
-                "_": Object {
-                  "count": 6,
-                },
-                "count": 3,
-              },
             },
             "_": Object {
               "@": Object {
@@ -3796,12 +3764,6 @@ Object {
                 "tittel": Object {
                   "_": Object {
                     "count": 15,
-                  },
-                  "count": 15,
-                },
-                "zoom": Object {
-                  "_": Object {
-                    "count": 30,
                   },
                   "count": 15,
                 },
@@ -4171,12 +4133,6 @@ Object {
             },
             "count": 8,
           },
-          "zoom": Object {
-            "_": Object {
-              "count": 16,
-            },
-            "count": 8,
-          },
         },
         "_": Object {
           "@": Object {
@@ -4223,12 +4179,6 @@ Object {
             "tittel": Object {
               "_": Object {
                 "count": 26,
-              },
-              "count": 26,
-            },
-            "zoom": Object {
-              "_": Object {
-                "count": 52,
               },
               "count": 26,
             },
@@ -4281,12 +4231,6 @@ Object {
                 },
                 "count": 12,
               },
-              "zoom": Object {
-                "_": Object {
-                  "count": 24,
-                },
-                "count": 12,
-              },
             },
             "_": Object {
               "@": Object {
@@ -4324,12 +4268,6 @@ Object {
                 "tittel": Object {
                   "_": Object {
                     "count": 4,
-                  },
-                  "count": 4,
-                },
-                "zoom": Object {
-                  "_": Object {
-                    "count": 8,
                   },
                   "count": 4,
                 },
