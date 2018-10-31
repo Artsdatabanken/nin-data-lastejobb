@@ -3,7 +3,7 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
-let data = io.lesDatafil("metabase_bbox")
+let data = io.lesDatafil("full")
 
 var p2c = {},
   c2p = {}

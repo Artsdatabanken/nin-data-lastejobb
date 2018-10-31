@@ -175,10 +175,11 @@ function zoomlevels(kode, bbox, zoom) {
   if (!barnAv[kode]) return
   barnAv[kode].forEach(bkode => {
     const barn = data[bkode]
-    barn.bbox = barn.bbox || bbox
-    barn.zoom = barn.zoom || zoom
-
-    zoomlevels(bkode, barn.bbox, barn.zoom)
+    if (barn) {
+      barn.bbox = barn.bbox || bbox
+      barn.zoom = barn.zoom || zoom
+      if (!barn) console.error(kode, bbox, zoom, barnAv[kode])
+    }
   })
 }
 
