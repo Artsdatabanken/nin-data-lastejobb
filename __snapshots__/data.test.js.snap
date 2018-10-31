@@ -43,6 +43,9 @@ Object {
     "nivå": Object {
       "count": 179549,
     },
+    "rasterColor": Object {
+      "count": 179549,
+    },
     "tittel": Object {
       "_": Object {
         "count": 252392,
@@ -1435,6 +1438,9 @@ Object {
     "overordnet": Object {
       "count": 1,
     },
+    "rasterColor": Object {
+      "count": 1,
+    },
     "tittel": Object {
       "_": Object {
         "count": 1,
@@ -1548,6 +1554,9 @@ Object {
             "count": 9,
           },
         },
+        "count": 9,
+      },
+      "rasterColor": Object {
         "count": 9,
       },
       "skjul": Object {
@@ -1929,6 +1938,9 @@ Object {
           },
           "count": 174022,
         },
+        "rasterColor": Object {
+          "count": 174022,
+        },
         "relasjoner": Object {
           "_": Object {
             "count": 26,
@@ -2293,6 +2305,9 @@ Object {
             },
             "count": 963,
           },
+          "rasterColor": Object {
+            "count": 963,
+          },
           "relasjoner": Object {
             "_": Object {
               "count": 1529,
@@ -2504,6 +2519,9 @@ Object {
               },
               "count": 976,
             },
+            "rasterColor": Object {
+              "count": 976,
+            },
             "stats": Object {
               "areal": Object {
                 "count": 413,
@@ -2610,6 +2628,9 @@ Object {
                 },
                 "count": 331,
               },
+              "rasterColor": Object {
+                "count": 331,
+              },
               "stats": Object {
                 "areal": Object {
                   "count": 255,
@@ -2689,6 +2710,9 @@ Object {
                   },
                   "count": 72,
                 },
+                "rasterColor": Object {
+                  "count": 72,
+                },
                 "stats": Object {
                   "areal": Object {
                     "count": 72,
@@ -2757,6 +2781,9 @@ Object {
                         "count": 20,
                       },
                     },
+                    "count": 4,
+                  },
+                  "rasterColor": Object {
                     "count": 4,
                   },
                   "stats": Object {
@@ -2845,6 +2872,9 @@ Object {
                   },
                   "count": 1,
                 },
+                "rasterColor": Object {
+                  "count": 1,
+                },
                 "stats": Object {
                   "areal": Object {
                     "count": 1,
@@ -2913,6 +2943,9 @@ Object {
                         "count": 10,
                       },
                     },
+                    "count": 2,
+                  },
+                  "rasterColor": Object {
                     "count": 2,
                   },
                   "stats": Object {
@@ -3003,6 +3036,9 @@ Object {
                 },
                 "count": 60,
               },
+              "rasterColor": Object {
+                "count": 60,
+              },
               "stats": Object {
                 "areal": Object {
                   "count": 45,
@@ -3082,6 +3118,9 @@ Object {
                   },
                   "count": 314,
                 },
+                "rasterColor": Object {
+                  "count": 314,
+                },
                 "stats": Object {
                   "areal": Object {
                     "count": 181,
@@ -3146,6 +3185,9 @@ Object {
                     },
                     "count": 4,
                   },
+                  "rasterColor": Object {
+                    "count": 4,
+                  },
                   "tittel": Object {
                     "_": Object {
                       "count": 4,
@@ -3178,6 +3220,9 @@ Object {
                           "count": 84,
                         },
                       },
+                      "count": 12,
+                    },
+                    "rasterColor": Object {
                       "count": 12,
                     },
                     "tittel": Object {
@@ -3249,6 +3294,9 @@ Object {
                 },
                 "count": 61,
               },
+              "rasterColor": Object {
+                "count": 61,
+              },
               "stats": Object {
                 "areal": Object {
                   "count": 4,
@@ -3317,6 +3365,9 @@ Object {
                       "count": 1525,
                     },
                   },
+                  "count": 305,
+                },
+                "rasterColor": Object {
                   "count": 305,
                 },
                 "stats": Object {
@@ -3390,6 +3441,9 @@ Object {
                 },
                 "count": 4,
               },
+              "rasterColor": Object {
+                "count": 4,
+              },
               "tittel": Object {
                 "_": Object {
                   "count": 4,
@@ -3422,6 +3476,9 @@ Object {
                       "count": 100,
                     },
                   },
+                  "count": 20,
+                },
+                "rasterColor": Object {
                   "count": 20,
                 },
                 "tittel": Object {
@@ -3475,6 +3532,9 @@ Object {
                 },
                 "count": 2,
               },
+              "rasterColor": Object {
+                "count": 2,
+              },
               "tittel": Object {
                 "_": Object {
                   "count": 2,
@@ -3507,6 +3567,9 @@ Object {
                       "count": 50,
                     },
                   },
+                  "count": 10,
+                },
+                "rasterColor": Object {
                   "count": 10,
                 },
                 "tittel": Object {
@@ -3559,6 +3622,9 @@ Object {
                 },
                 "count": 3,
               },
+              "rasterColor": Object {
+                "count": 3,
+              },
               "tittel": Object {
                 "_": Object {
                   "count": 3,
@@ -3591,6 +3657,9 @@ Object {
                       "count": 75,
                     },
                   },
+                  "count": 15,
+                },
+                "rasterColor": Object {
                   "count": 15,
                 },
                 "tittel": Object {
@@ -3643,6 +3712,9 @@ Object {
                 },
                 "count": 3,
               },
+              "rasterColor": Object {
+                "count": 3,
+              },
               "tittel": Object {
                 "_": Object {
                   "count": 3,
@@ -3675,6 +3747,9 @@ Object {
                       "count": 75,
                     },
                   },
+                  "count": 15,
+                },
+                "rasterColor": Object {
                   "count": 15,
                 },
                 "tittel": Object {
@@ -3727,6 +3802,9 @@ Object {
                 },
                 "count": 3,
               },
+              "rasterColor": Object {
+                "count": 3,
+              },
               "tittel": Object {
                 "_": Object {
                   "count": 3,
@@ -3759,6 +3837,9 @@ Object {
                       "count": 75,
                     },
                   },
+                  "count": 15,
+                },
+                "rasterColor": Object {
                   "count": 15,
                 },
                 "tittel": Object {
@@ -3824,6 +3905,9 @@ Object {
                     "count": 8,
                   },
                 },
+                "count": 2,
+              },
+              "rasterColor": Object {
                 "count": 2,
               },
               "stats": Object {
@@ -3894,6 +3978,9 @@ Object {
                       "count": 40,
                     },
                   },
+                  "count": 8,
+                },
+                "rasterColor": Object {
                   "count": 8,
                 },
                 "stats": Object {
@@ -3982,6 +4069,9 @@ Object {
                 },
                 "count": 2,
               },
+              "rasterColor": Object {
+                "count": 2,
+              },
               "stats": Object {
                 "areal": Object {
                   "count": 2,
@@ -4050,6 +4140,9 @@ Object {
                       "count": 35,
                     },
                   },
+                  "count": 7,
+                },
+                "rasterColor": Object {
                   "count": 7,
                 },
                 "stats": Object {
@@ -4127,6 +4220,9 @@ Object {
             },
             "count": 8,
           },
+          "rasterColor": Object {
+            "count": 8,
+          },
           "tittel": Object {
             "_": Object {
               "count": 8,
@@ -4174,6 +4270,9 @@ Object {
                   "count": 102,
                 },
               },
+              "count": 26,
+            },
+            "rasterColor": Object {
               "count": 26,
             },
             "tittel": Object {
@@ -4225,6 +4324,9 @@ Object {
                 },
                 "count": 12,
               },
+              "rasterColor": Object {
+                "count": 12,
+              },
               "tittel": Object {
                 "_": Object {
                   "count": 12,
@@ -4263,6 +4365,9 @@ Object {
                       "count": 16,
                     },
                   },
+                  "count": 4,
+                },
+                "rasterColor": Object {
                   "count": 4,
                 },
                 "tittel": Object {
@@ -4344,6 +4449,9 @@ Object {
                 "count": 4,
               },
             },
+            "count": 2,
+          },
+          "rasterColor": Object {
             "count": 2,
           },
           "tittel": Object {
@@ -4784,6 +4892,9 @@ Object {
     "nivå": Object {
       "count": 37,
     },
+    "rasterColor": Object {
+      "count": 177300,
+    },
     "relasjoner": Object {
       "_": Object {
         "count": 1555,
@@ -4854,6 +4965,9 @@ Object {
       "count": 1,
     },
     "kode": Object {
+      "count": 1,
+    },
+    "rasterColor": Object {
       "count": 1,
     },
     "tittel": Object {
@@ -5280,6 +5394,9 @@ Object {
     "nivå": Object {
       "count": 37,
     },
+    "rasterColor": Object {
+      "count": 179546,
+    },
     "relasjoner": Object {
       "_": Object {
         "count": 1555,
@@ -5347,6 +5464,9 @@ Object {
   "~": Object {
     "count": 1,
     "foreldre": Object {
+      "count": 1,
+    },
+    "rasterColor": Object {
       "count": 1,
     },
     "tittel": Object {
@@ -5773,6 +5893,9 @@ Object {
     "nivå": Object {
       "count": 37,
     },
+    "rasterColor": Object {
+      "count": 179546,
+    },
     "relasjoner": Object {
       "_": Object {
         "count": 1555,
@@ -5840,6 +5963,9 @@ Object {
   "~": Object {
     "count": 1,
     "foreldre": Object {
+      "count": 1,
+    },
+    "rasterColor": Object {
       "count": 1,
     },
     "tittel": Object {
@@ -6143,6 +6269,481 @@ Object {
 exports[`data/pr_prosjekt.json har antall rader 1`] = `0`;
 
 exports[`data/pr_prosjekt.json har forventede nøkler 1`] = `Object {}`;
+
+exports[`data/raster_index.json har antall rader 1`] = `179547`;
+
+exports[`data/raster_index.json har forventede nøkler 1`] = `
+Object {
+  "_": Object {
+    "_": Object {
+      "count": 297,
+    },
+    "betegnelse": Object {
+      "_": Object {
+        "count": 3305,
+      },
+      "count": 3305,
+    },
+    "count": 179546,
+    "data": Object {
+      "areal": Object {
+        "count": 2865,
+      },
+      "count": 2865,
+      "forvaltningsmyndighet": Object {
+        "count": 2865,
+      },
+      "iucn": Object {
+        "count": 2819,
+      },
+      "revisjonsdato": Object {
+        "count": 320,
+      },
+      "truetvurdering": Object {
+        "count": 2794,
+      },
+      "vernedato": Object {
+        "count": 2865,
+      },
+      "verneform": Object {
+        "count": 2865,
+      },
+      "verneplan": Object {
+        "count": 2865,
+      },
+    },
+    "farge": Object {
+      "count": 7,
+    },
+    "foreldre": Object {
+      "_": Object {
+        "count": 179547,
+      },
+      "count": 179546,
+    },
+    "graf": Object {
+      "_": Object {
+        "_": Object {
+          "count": 5430,
+          "erSubset": Object {
+            "count": 195,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 15329,
+            },
+            "count": 5430,
+          },
+        },
+        "count": 691,
+      },
+      "ble vernet i år": Object {
+        "_": Object {
+          "count": 5730,
+          "erSubset": Object {
+            "count": 5730,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5730,
+            },
+            "count": 5730,
+          },
+        },
+        "count": 2934,
+      },
+      "count": 4813,
+      "definerer hovedtype": Object {
+        "_": Object {
+          "count": 594,
+          "erSubset": Object {
+            "count": 594,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 594,
+            },
+            "count": 594,
+          },
+        },
+        "count": 93,
+      },
+      "definisjonsgrunnlag": Object {
+        "_": Object {
+          "count": 92,
+          "erSubset": Object {
+            "count": 92,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 92,
+            },
+            "count": 92,
+          },
+        },
+        "count": 92,
+      },
+      "differensierende miljøvariabel": Object {
+        "_": Object {
+          "count": 91,
+          "erSubset": Object {
+            "count": 91,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 91,
+            },
+            "count": 91,
+          },
+        },
+        "count": 68,
+      },
+      "forvalter": Object {
+        "_": Object {
+          "count": 2883,
+          "erSubset": Object {
+            "count": 2883,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 2883,
+            },
+            "count": 2883,
+          },
+        },
+        "count": 24,
+      },
+      "forvaltes av": Object {
+        "_": Object {
+          "count": 2865,
+          "erSubset": Object {
+            "count": 2865,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 2865,
+            },
+            "count": 2865,
+          },
+        },
+        "count": 2865,
+      },
+      "habitat": Object {
+        "_": Object {
+          "count": 4893,
+          "erSubset": Object {
+            "count": 4893,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 4893,
+            },
+            "count": 4893,
+          },
+        },
+        "count": 1001,
+      },
+      "iucn": Object {
+        "_": Object {
+          "count": 5638,
+          "erSubset": Object {
+            "count": 5638,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 8457,
+            },
+            "count": 5638,
+          },
+        },
+        "count": 2825,
+      },
+      "ligger i fylke": Object {
+        "_": Object {
+          "count": 5884,
+          "erSubset": Object {
+            "count": 5884,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5884,
+            },
+            "count": 5884,
+          },
+        },
+        "count": 2853,
+      },
+      "ligger i kommune": Object {
+        "_": Object {
+          "count": 6704,
+          "erSubset": Object {
+            "count": 6704,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 6704,
+            },
+            "count": 6704,
+          },
+        },
+        "count": 3225,
+      },
+      "mengdeart": Object {
+        "_": Object {
+          "count": 280,
+          "tittel": Object {
+            "_": Object {
+              "count": 817,
+            },
+            "count": 280,
+          },
+        },
+        "count": 90,
+      },
+      "prosedyrekategori": Object {
+        "_": Object {
+          "count": 92,
+          "erSubset": Object {
+            "count": 92,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 92,
+            },
+            "count": 92,
+          },
+        },
+        "count": 92,
+      },
+      "publisererer": Object {
+        "_": Object {
+          "count": 14,
+          "erSubset": Object {
+            "count": 14,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 14,
+            },
+            "count": 14,
+          },
+        },
+        "count": 7,
+      },
+      "publiseres av": Object {
+        "_": Object {
+          "count": 14,
+          "erSubset": Object {
+            "count": 14,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 15,
+            },
+            "count": 14,
+          },
+        },
+        "count": 12,
+      },
+      "skilleart": Object {
+        "_": Object {
+          "count": 47,
+          "tittel": Object {
+            "_": Object {
+              "count": 141,
+            },
+            "count": 47,
+          },
+        },
+        "count": 13,
+      },
+      "truet vurdering": Object {
+        "_": Object {
+          "count": 5496,
+          "erSubset": Object {
+            "count": 5496,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5496,
+            },
+            "count": 5496,
+          },
+        },
+        "count": 2752,
+      },
+      "tyngdepunktart": Object {
+        "_": Object {
+          "count": 584,
+          "tittel": Object {
+            "_": Object {
+              "count": 1657,
+            },
+            "count": 584,
+          },
+        },
+        "count": 112,
+      },
+      "underordnet miljøvariabel": Object {
+        "_": Object {
+          "count": 157,
+          "erSubset": Object {
+            "count": 157,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 157,
+            },
+            "count": 157,
+          },
+        },
+        "count": 67,
+      },
+      "verneform": Object {
+        "_": Object {
+          "count": 5730,
+          "erSubset": Object {
+            "count": 5730,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5730,
+            },
+            "count": 5730,
+          },
+        },
+        "count": 2885,
+      },
+      "verneområder som forvaltes av": Object {
+        "_": Object {
+          "count": 18,
+          "erSubset": Object {
+            "count": 18,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 18,
+            },
+            "count": 18,
+          },
+        },
+        "count": 18,
+      },
+      "verneplan": Object {
+        "_": Object {
+          "count": 5730,
+          "erSubset": Object {
+            "count": 5730,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5730,
+            },
+            "count": 5730,
+          },
+        },
+        "count": 2875,
+      },
+    },
+    "infoUrl": Object {
+      "count": 173938,
+    },
+    "ingress": Object {
+      "count": 142,
+    },
+    "max": Object {
+      "count": 38,
+    },
+    "metaUrl": Object {
+      "count": 7,
+    },
+    "min": Object {
+      "count": 38,
+    },
+    "naturlandskap": Object {
+      "count": 297,
+    },
+    "nivå": Object {
+      "count": 37,
+    },
+    "rasterColor": Object {
+      "count": 179546,
+    },
+    "relasjoner": Object {
+      "_": Object {
+        "count": 1555,
+        "kant": Object {
+          "count": 1555,
+        },
+        "kantRetur": Object {
+          "count": 1555,
+        },
+        "kode": Object {
+          "count": 1555,
+        },
+      },
+      "count": 288,
+    },
+    "render": Object {
+      "count": 1,
+    },
+    "skjul": Object {
+      "count": 1,
+    },
+    "sortering": Object {
+      "count": 19,
+    },
+    "stats": Object {
+      "areal": Object {
+        "count": 4266,
+      },
+      "arealPrefix": Object {
+        "count": 4266,
+      },
+      "count": 4266,
+      "geometrier": Object {
+        "count": 4266,
+      },
+      "geometrierPrefix": Object {
+        "count": 4266,
+      },
+    },
+    "tittel": Object {
+      "_": Object {
+        "count": 252389,
+      },
+      "count": 179546,
+      "ingress": Object {
+        "count": 1,
+      },
+    },
+    "type": Object {
+      "count": 5,
+    },
+    "url": Object {
+      "count": 171042,
+    },
+    "utenRamme": Object {
+      "count": 20,
+    },
+  },
+  "~": Object {
+    "count": 1,
+    "foreldre": Object {
+      "count": 1,
+    },
+    "rasterColor": Object {
+      "count": 1,
+    },
+    "tittel": Object {
+      "_": Object {
+        "count": 1,
+      },
+      "count": 1,
+    },
+  },
+}
+`;
 
 exports[`data/statistikk.json har antall rader 1`] = `4267`;
 
