@@ -56,6 +56,10 @@ Object {
 }
 `;
 
+exports[`build/raster_index.json har antall rader 1`] = `0`;
+
+exports[`build/raster_index.json har forventede nøkler 1`] = `Object {}`;
+
 exports[`data/ao_naturvernområde.json har antall rader 1`] = `458`;
 
 exports[`data/ao_naturvernområde.json har forventede nøkler 1`] = `
@@ -1253,14 +1257,14 @@ Object {
   "barn": Object {
     "_": Object {
       "_": Object {
-        "count": 177292,
+        "count": 179535,
       },
-      "count": 31153,
+      "count": 31631,
     },
     "count": 1,
     "~": Object {
       "_": Object {
-        "count": 9,
+        "count": 12,
       },
       "count": 1,
     },
@@ -1268,9 +1272,9 @@ Object {
   "foreldre": Object {
     "_": Object {
       "_": Object {
-        "count": 177301,
+        "count": 179547,
       },
-      "count": 177300,
+      "count": 179546,
     },
     "count": 1,
     "~": Object {
@@ -1613,11 +1617,11 @@ Object {
         "bbox": Object {
           "_": Object {
             "_": Object {
-              "count": 11912,
+              "count": 11768,
             },
-            "count": 5956,
+            "count": 5884,
           },
-          "count": 2978,
+          "count": 2942,
         },
         "betegnelse": Object {
           "_": Object {
@@ -1979,9 +1983,9 @@ Object {
         },
         "zoom": Object {
           "_": Object {
-            "count": 5956,
+            "count": 5884,
           },
-          "count": 2978,
+          "count": 2942,
         },
       },
       "_": Object {
@@ -2004,11 +2008,11 @@ Object {
           "bbox": Object {
             "_": Object {
               "_": Object {
-                "count": 3812,
+                "count": 2648,
               },
-              "count": 1906,
+              "count": 1324,
             },
-            "count": 953,
+            "count": 662,
           },
           "betegnelse": Object {
             "_": Object {
@@ -2340,9 +2344,9 @@ Object {
           },
           "zoom": Object {
             "_": Object {
-              "count": 1906,
+              "count": 1324,
             },
-            "count": 953,
+            "count": 662,
           },
         },
         "_": Object {
@@ -2362,11 +2366,11 @@ Object {
             "bbox": Object {
               "_": Object {
                 "_": Object {
-                  "count": 3904,
+                  "count": 3800,
                 },
-                "count": 1952,
+                "count": 1900,
               },
-              "count": 976,
+              "count": 950,
             },
             "count": 976,
             "farge": Object {
@@ -2530,9 +2534,9 @@ Object {
             },
             "zoom": Object {
               "_": Object {
-                "count": 1952,
+                "count": 1900,
               },
-              "count": 976,
+              "count": 950,
             },
           },
           "_": Object {
@@ -2552,11 +2556,11 @@ Object {
               "bbox": Object {
                 "_": Object {
                   "_": Object {
-                    "count": 1324,
+                    "count": 1116,
                   },
-                  "count": 662,
+                  "count": 558,
                 },
-                "count": 331,
+                "count": 279,
               },
               "count": 331,
               "farge": Object {
@@ -2633,9 +2637,9 @@ Object {
               },
               "zoom": Object {
                 "_": Object {
-                  "count": 662,
+                  "count": 558,
                 },
-                "count": 331,
+                "count": 279,
               },
             },
             "_": Object {
@@ -2969,11 +2973,11 @@ Object {
               "bbox": Object {
                 "_": Object {
                   "_": Object {
-                    "count": 240,
+                    "count": 180,
                   },
-                  "count": 120,
+                  "count": 90,
                 },
-                "count": 60,
+                "count": 45,
               },
               "count": 60,
               "farge": Object {
@@ -3026,9 +3030,9 @@ Object {
               },
               "zoom": Object {
                 "_": Object {
-                  "count": 120,
+                  "count": 90,
                 },
-                "count": 60,
+                "count": 45,
               },
             },
             "_": Object {
@@ -3048,11 +3052,11 @@ Object {
                 "bbox": Object {
                   "_": Object {
                     "_": Object {
-                      "count": 1256,
+                      "count": 772,
                     },
-                    "count": 628,
+                    "count": 386,
                   },
-                  "count": 314,
+                  "count": 193,
                 },
                 "count": 314,
                 "farge": Object {
@@ -3105,9 +3109,9 @@ Object {
                 },
                 "zoom": Object {
                   "_": Object {
-                    "count": 628,
+                    "count": 386,
                   },
-                  "count": 314,
+                  "count": 193,
                 },
               },
               "_": Object {
@@ -3121,15 +3125,6 @@ Object {
                         },
                         "count": 12,
                       },
-                    },
-                    "count": 4,
-                  },
-                  "bbox": Object {
-                    "_": Object {
-                      "_": Object {
-                        "count": 16,
-                      },
-                      "count": 8,
                     },
                     "count": 4,
                   },
@@ -3161,25 +3156,10 @@ Object {
                     },
                     "count": 4,
                   },
-                  "zoom": Object {
-                    "_": Object {
-                      "count": 8,
-                    },
-                    "count": 4,
-                  },
                 },
                 "_": Object {
                   "@": Object {
                     "barn": Object {
-                      "count": 12,
-                    },
-                    "bbox": Object {
-                      "_": Object {
-                        "_": Object {
-                          "count": 48,
-                        },
-                        "count": 24,
-                      },
                       "count": 12,
                     },
                     "count": 12,
@@ -3207,12 +3187,6 @@ Object {
                     "tittel": Object {
                       "_": Object {
                         "count": 12,
-                      },
-                      "count": 12,
-                    },
-                    "zoom": Object {
-                      "_": Object {
-                        "count": 24,
                       },
                       "count": 12,
                     },
@@ -3245,11 +3219,11 @@ Object {
               "bbox": Object {
                 "_": Object {
                   "_": Object {
-                    "count": 244,
+                    "count": 16,
                   },
-                  "count": 122,
+                  "count": 8,
                 },
-                "count": 61,
+                "count": 4,
               },
               "count": 61,
               "farge": Object {
@@ -3302,9 +3276,9 @@ Object {
               },
               "zoom": Object {
                 "_": Object {
-                  "count": 122,
+                  "count": 8,
                 },
-                "count": 61,
+                "count": 4,
               },
             },
             "_": Object {
@@ -3315,11 +3289,11 @@ Object {
                 "bbox": Object {
                   "_": Object {
                     "_": Object {
-                      "count": 1220,
+                      "count": 40,
                     },
-                    "count": 610,
+                    "count": 20,
                   },
-                  "count": 305,
+                  "count": 10,
                 },
                 "count": 305,
                 "farge": Object {
@@ -3372,9 +3346,9 @@ Object {
                 },
                 "zoom": Object {
                   "_": Object {
-                    "count": 610,
+                    "count": 20,
                   },
-                  "count": 305,
+                  "count": 10,
                 },
               },
               "count": 305,
@@ -3395,15 +3369,6 @@ Object {
                     },
                     "count": 20,
                   },
-                },
-                "count": 4,
-              },
-              "bbox": Object {
-                "_": Object {
-                  "_": Object {
-                    "count": 16,
-                  },
-                  "count": 8,
                 },
                 "count": 4,
               },
@@ -3435,25 +3400,10 @@ Object {
                 },
                 "count": 4,
               },
-              "zoom": Object {
-                "_": Object {
-                  "count": 8,
-                },
-                "count": 4,
-              },
             },
             "_": Object {
               "@": Object {
                 "barn": Object {
-                  "count": 20,
-                },
-                "bbox": Object {
-                  "_": Object {
-                    "_": Object {
-                      "count": 80,
-                    },
-                    "count": 40,
-                  },
                   "count": 20,
                 },
                 "count": 20,
@@ -3484,12 +3434,6 @@ Object {
                   },
                   "count": 20,
                 },
-                "zoom": Object {
-                  "_": Object {
-                    "count": 40,
-                  },
-                  "count": 20,
-                },
               },
               "count": 20,
             },
@@ -3510,15 +3454,6 @@ Object {
                     },
                     "count": 10,
                   },
-                },
-                "count": 2,
-              },
-              "bbox": Object {
-                "_": Object {
-                  "_": Object {
-                    "count": 8,
-                  },
-                  "count": 4,
                 },
                 "count": 2,
               },
@@ -3550,25 +3485,10 @@ Object {
                 },
                 "count": 2,
               },
-              "zoom": Object {
-                "_": Object {
-                  "count": 4,
-                },
-                "count": 2,
-              },
             },
             "_": Object {
               "@": Object {
                 "barn": Object {
-                  "count": 10,
-                },
-                "bbox": Object {
-                  "_": Object {
-                    "_": Object {
-                      "count": 40,
-                    },
-                    "count": 20,
-                  },
                   "count": 10,
                 },
                 "count": 10,
@@ -3599,12 +3519,6 @@ Object {
                   },
                   "count": 10,
                 },
-                "zoom": Object {
-                  "_": Object {
-                    "count": 20,
-                  },
-                  "count": 10,
-                },
               },
               "count": 10,
             },
@@ -3624,15 +3538,6 @@ Object {
                     },
                     "count": 15,
                   },
-                },
-                "count": 3,
-              },
-              "bbox": Object {
-                "_": Object {
-                  "_": Object {
-                    "count": 12,
-                  },
-                  "count": 6,
                 },
                 "count": 3,
               },
@@ -3664,25 +3569,10 @@ Object {
                 },
                 "count": 3,
               },
-              "zoom": Object {
-                "_": Object {
-                  "count": 6,
-                },
-                "count": 3,
-              },
             },
             "_": Object {
               "@": Object {
                 "barn": Object {
-                  "count": 15,
-                },
-                "bbox": Object {
-                  "_": Object {
-                    "_": Object {
-                      "count": 60,
-                    },
-                    "count": 30,
-                  },
                   "count": 15,
                 },
                 "count": 15,
@@ -3710,12 +3600,6 @@ Object {
                 "tittel": Object {
                   "_": Object {
                     "count": 15,
-                  },
-                  "count": 15,
-                },
-                "zoom": Object {
-                  "_": Object {
-                    "count": 30,
                   },
                   "count": 15,
                 },
@@ -3741,15 +3625,6 @@ Object {
                 },
                 "count": 3,
               },
-              "bbox": Object {
-                "_": Object {
-                  "_": Object {
-                    "count": 12,
-                  },
-                  "count": 6,
-                },
-                "count": 3,
-              },
               "count": 3,
               "farge": Object {
                 "count": 3,
@@ -3778,25 +3653,10 @@ Object {
                 },
                 "count": 3,
               },
-              "zoom": Object {
-                "_": Object {
-                  "count": 6,
-                },
-                "count": 3,
-              },
             },
             "_": Object {
               "@": Object {
                 "barn": Object {
-                  "count": 15,
-                },
-                "bbox": Object {
-                  "_": Object {
-                    "_": Object {
-                      "count": 60,
-                    },
-                    "count": 30,
-                  },
                   "count": 15,
                 },
                 "count": 15,
@@ -3824,12 +3684,6 @@ Object {
                 "tittel": Object {
                   "_": Object {
                     "count": 15,
-                  },
-                  "count": 15,
-                },
-                "zoom": Object {
-                  "_": Object {
-                    "count": 30,
                   },
                   "count": 15,
                 },
@@ -3855,15 +3709,6 @@ Object {
                 },
                 "count": 3,
               },
-              "bbox": Object {
-                "_": Object {
-                  "_": Object {
-                    "count": 12,
-                  },
-                  "count": 6,
-                },
-                "count": 3,
-              },
               "count": 3,
               "farge": Object {
                 "count": 3,
@@ -3892,25 +3737,10 @@ Object {
                 },
                 "count": 3,
               },
-              "zoom": Object {
-                "_": Object {
-                  "count": 6,
-                },
-                "count": 3,
-              },
             },
             "_": Object {
               "@": Object {
                 "barn": Object {
-                  "count": 15,
-                },
-                "bbox": Object {
-                  "_": Object {
-                    "_": Object {
-                      "count": 60,
-                    },
-                    "count": 30,
-                  },
                   "count": 15,
                 },
                 "count": 15,
@@ -3938,12 +3768,6 @@ Object {
                 "tittel": Object {
                   "_": Object {
                     "count": 15,
-                  },
-                  "count": 15,
-                },
-                "zoom": Object {
-                  "_": Object {
-                    "count": 30,
                   },
                   "count": 15,
                 },
@@ -4285,15 +4109,6 @@ Object {
             },
             "count": 8,
           },
-          "bbox": Object {
-            "_": Object {
-              "_": Object {
-                "count": 32,
-              },
-              "count": 16,
-            },
-            "count": 8,
-          },
           "count": 8,
           "farge": Object {
             "count": 8,
@@ -4322,12 +4137,6 @@ Object {
             },
             "count": 8,
           },
-          "zoom": Object {
-            "_": Object {
-              "count": 16,
-            },
-            "count": 8,
-          },
         },
         "_": Object {
           "@": Object {
@@ -4340,15 +4149,6 @@ Object {
                   },
                   "count": 11,
                 },
-              },
-              "count": 26,
-            },
-            "bbox": Object {
-              "_": Object {
-                "_": Object {
-                  "count": 104,
-                },
-                "count": 52,
               },
               "count": 26,
             },
@@ -4386,12 +4186,6 @@ Object {
               },
               "count": 26,
             },
-            "zoom": Object {
-              "_": Object {
-                "count": 52,
-              },
-              "count": 26,
-            },
           },
           "_": Object {
             "@": Object {
@@ -4404,15 +4198,6 @@ Object {
                     },
                     "count": 4,
                   },
-                },
-                "count": 12,
-              },
-              "bbox": Object {
-                "_": Object {
-                  "_": Object {
-                    "count": 48,
-                  },
-                  "count": 24,
                 },
                 "count": 12,
               },
@@ -4450,25 +4235,10 @@ Object {
                 },
                 "count": 12,
               },
-              "zoom": Object {
-                "_": Object {
-                  "count": 24,
-                },
-                "count": 12,
-              },
             },
             "_": Object {
               "@": Object {
                 "barn": Object {
-                  "count": 4,
-                },
-                "bbox": Object {
-                  "_": Object {
-                    "_": Object {
-                      "count": 16,
-                    },
-                    "count": 8,
-                  },
                   "count": 4,
                 },
                 "count": 4,
@@ -4502,12 +4272,6 @@ Object {
                 "tittel": Object {
                   "_": Object {
                     "count": 4,
-                  },
-                  "count": 4,
-                },
-                "zoom": Object {
-                  "_": Object {
-                    "count": 8,
                   },
                   "count": 4,
                 },
