@@ -28,12 +28,4 @@ function finn(kode) {
   return r.filter(node => node.kode === kode)
 }
 
-function valider(kode) {
-  const node = finn(kode)
-  if (!node) throw new Error("Mangler " + kode)
-  console.log(node)
-}
-
-valider("NA")
-
 io.skrivBuildfil(__filename, r)
