@@ -1329,7 +1329,7 @@ Object {
 }
 `;
 
-exports[`data/inn_mbtiles.json har antall rader 1`] = `5487`;
+exports[`data/inn_mbtiles.json har antall rader 1`] = `5489`;
 
 exports[`data/inn_mbtiles.json har forventede nøkler 1`] = `
 Object {
@@ -1659,35 +1659,35 @@ Object {
   },
   "_": Object {
     "bounds": Object {
-      "count": 5475,
+      "count": 5477,
     },
     "center": Object {
       "count": 5473,
     },
-    "count": 5475,
+    "count": 5477,
     "description": Object {
-      "count": 5475,
+      "count": 5477,
     },
     "format": Object {
-      "count": 5475,
+      "count": 5477,
     },
     "maxzoom": Object {
-      "count": 5475,
+      "count": 5477,
     },
     "minzoom": Object {
-      "count": 5475,
+      "count": 5477,
     },
     "modified": Object {
-      "count": 5475,
+      "count": 5477,
     },
     "name": Object {
-      "count": 5475,
+      "count": 5477,
     },
     "type": Object {
-      "count": 5475,
+      "count": 5477,
     },
     "version": Object {
-      "count": 5475,
+      "count": 5477,
     },
   },
 }
