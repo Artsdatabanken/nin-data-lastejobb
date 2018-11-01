@@ -3,9 +3,12 @@ const io = require("../../lib/io")
 const typesystem = require("@artsdatabanken/typesystem")
 
 let hovedtyper = io.lesDatafil("la.csv.json")
-let klg = io.lesDatafil("la_klg.csv.json")
 
 const r = {}
+
+function hack(kode) {
+  return kode.replace("re-id-kf", "re-idkf").split("_", "-")
+}
 
 hovedtyper.forEach(e => {
   const ny = {
@@ -17,7 +20,7 @@ hovedtyper.forEach(e => {
       if (verdi) {
         if (!ny.relasjoner) ny.relasjoner = []
         ny.relasjoner.push({
-          kode: "LA-" + verdi.replace("_", "-"),
+          kode: "LA-" + hack(verdi),
           kant: "definert av",
           kantRetur: "definerer"
         })
