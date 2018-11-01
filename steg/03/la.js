@@ -7,7 +7,10 @@ let hovedtyper = io.lesDatafil("la.csv.json")
 const r = {}
 
 function hack(kode) {
-  return kode.replace("re-id-kf", "re-idkf").split("_", "-")
+  return kode
+    .replace("RE-ID-KF", "RE-ID")
+    .split("_")
+    .join("-")
 }
 
 hovedtyper.forEach(e => {
