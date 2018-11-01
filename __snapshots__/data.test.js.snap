@@ -30,7 +30,7 @@ Object {
     "count": 180081,
     "delAv": Object {
       "_": Object {
-        "count": 1417481,
+        "count": 1417531,
       },
       "count": 180081,
     },
@@ -1945,12 +1945,12 @@ Object {
       },
       "barn": Object {
         "_": Object {
-          "count": 114,
+          "count": 103,
           "tittel": Object {
             "_": Object {
-              "count": 138,
+              "count": 127,
             },
-            "count": 114,
+            "count": 103,
           },
         },
         "count": 8,
@@ -2066,15 +2066,15 @@ Object {
         },
         "barn": Object {
           "_": Object {
-            "count": 171719,
+            "count": 171730,
             "sortering": Object {
               "count": 5,
             },
             "tittel": Object {
               "_": Object {
-                "count": 244254,
+                "count": 244265,
               },
-              "count": 171719,
+              "count": 171730,
             },
           },
           "count": 174016,
@@ -2082,11 +2082,11 @@ Object {
         "bbox": Object {
           "_": Object {
             "_": Object {
-              "count": 11768,
+              "count": 11776,
             },
-            "count": 5884,
+            "count": 5888,
           },
-          "count": 2942,
+          "count": 2944,
         },
         "betegnelse": Object {
           "_": Object {
@@ -2126,9 +2126,9 @@ Object {
           "count": 2955,
         },
         "formats": Object {
-          "count": 2942,
+          "count": 2944,
           "polygon": Object {
-            "count": 2942,
+            "count": 2944,
           },
         },
         "graf": Object {
@@ -2418,9 +2418,9 @@ Object {
         },
         "zoom": Object {
           "_": Object {
-            "count": 5884,
+            "count": 5888,
           },
-          "count": 2942,
+          "count": 2944,
         },
       },
       "_": Object {
@@ -4595,15 +4595,15 @@ Object {
           },
           "overordnet": Object {
             "_": Object {
-              "count": 16,
+              "count": 24,
               "kode": Object {
-                "count": 16,
+                "count": 24,
               },
               "tittel": Object {
                 "_": Object {
-                  "count": 16,
+                  "count": 32,
                 },
-                "count": 16,
+                "count": 24,
               },
             },
             "count": 8,
@@ -4647,15 +4647,15 @@ Object {
             },
             "overordnet": Object {
               "_": Object {
-                "count": 76,
+                "count": 102,
                 "kode": Object {
-                  "count": 76,
+                  "count": 102,
                 },
                 "tittel": Object {
                   "_": Object {
-                    "count": 76,
+                    "count": 128,
                   },
-                  "count": 76,
+                  "count": 102,
                 },
               },
               "count": 26,
@@ -4699,15 +4699,15 @@ Object {
               },
               "overordnet": Object {
                 "_": Object {
-                  "count": 38,
+                  "count": 50,
                   "kode": Object {
-                    "count": 38,
+                    "count": 50,
                   },
                   "tittel": Object {
                     "_": Object {
-                      "count": 38,
+                      "count": 62,
                     },
-                    "count": 38,
+                    "count": 50,
                   },
                 },
                 "count": 12,
@@ -4742,15 +4742,15 @@ Object {
                 },
                 "overordnet": Object {
                   "_": Object {
-                    "count": 12,
+                    "count": 16,
                     "kode": Object {
-                      "count": 12,
+                      "count": 16,
                     },
                     "tittel": Object {
                       "_": Object {
-                        "count": 12,
+                        "count": 20,
                       },
-                      "count": 12,
+                      "count": 16,
                     },
                   },
                   "count": 4,
@@ -4871,11 +4871,11 @@ Object {
     "bbox": Object {
       "_": Object {
         "_": Object {
-          "count": 21904,
+          "count": 21912,
         },
-        "count": 10952,
+        "count": 10956,
       },
-      "count": 5476,
+      "count": 5478,
     },
     "betegnelse": Object {
       "_": Object {
@@ -4921,12 +4921,12 @@ Object {
       "count": 177264,
     },
     "formats": Object {
-      "count": 5476,
+      "count": 5478,
       "gradient": Object {
         "count": 2,
       },
       "polygon": Object {
-        "count": 5476,
+        "count": 5478,
       },
     },
     "graf": Object {
@@ -5336,9 +5336,9 @@ Object {
     },
     "zoom": Object {
       "_": Object {
-        "count": 10952,
+        "count": 10956,
       },
-      "count": 5476,
+      "count": 5478,
     },
   },
   "~": Object {
@@ -5373,11 +5373,11 @@ Object {
     "bbox": Object {
       "_": Object {
         "_": Object {
-          "count": 21904,
+          "count": 21912,
         },
-        "count": 10952,
+        "count": 10956,
       },
-      "count": 5476,
+      "count": 5478,
     },
     "betegnelse": Object {
       "_": Object {
@@ -5423,12 +5423,12 @@ Object {
       "count": 180078,
     },
     "formats": Object {
-      "count": 5476,
+      "count": 5478,
       "gradient": Object {
         "count": 2,
       },
       "polygon": Object {
-        "count": 5476,
+        "count": 5478,
       },
     },
     "graf": Object {
@@ -5835,9 +5835,9 @@ Object {
     },
     "zoom": Object {
       "_": Object {
-        "count": 10952,
+        "count": 10956,
       },
-      "count": 5476,
+      "count": 5478,
     },
   },
   "~": Object {
@@ -5869,11 +5869,11 @@ Object {
     "bbox": Object {
       "_": Object {
         "_": Object {
-          "count": 21904,
+          "count": 21912,
         },
-        "count": 10952,
+        "count": 10956,
       },
-      "count": 5476,
+      "count": 5478,
     },
     "betegnelse": Object {
       "_": Object {
@@ -5919,12 +5919,12 @@ Object {
       "count": 180078,
     },
     "formats": Object {
-      "count": 5476,
+      "count": 5478,
       "gradient": Object {
         "count": 2,
       },
       "polygon": Object {
-        "count": 5476,
+        "count": 5478,
       },
     },
     "graf": Object {
@@ -6331,9 +6331,9 @@ Object {
     },
     "zoom": Object {
       "_": Object {
-        "count": 10952,
+        "count": 10956,
       },
-      "count": 5476,
+      "count": 5478,
     },
   },
   "~": Object {

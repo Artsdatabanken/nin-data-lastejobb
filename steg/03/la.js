@@ -26,22 +26,9 @@ hovedtyper.forEach(e => {
   })
   ny.pred_lnr = e.pred_lnr
   ny.naturlandskap = e.naturlandskap
-  const kode = e.s_kode.substring(0, 4) + "-" + e.s_kode.substring(4)
+  let kode = e.s_kode.substring(0, 4)
+  if (e.s_kode.length > 4) kode += "-" + e.s_kode.substring(4)
   r[kode] = ny
 })
 
-/*
-Object.keys(klg).forEach(kode => {
-  const gradKoder = klg[kode]
-  const relasjoner = []
-  gradKoder.forEach(gradKode => {
-    relasjoner.push({
-      kode: gradKode,
-      kant: "definert av",
-      kantRetur: "definerer"
-    })
-  })
-  r[kode].relasjon = relasjoner
-})
-*/
 io.skrivDatafil(__filename, r)
