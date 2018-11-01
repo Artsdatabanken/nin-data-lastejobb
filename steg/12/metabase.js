@@ -15,7 +15,6 @@ zoomlevels(typesystem.rotkode)
 let tre = {}
 Object.keys(data).forEach(kode => (tre[kode] = map(kode)))
 
-settInnAliaser(tre)
 lagRedirectFraTittel(tre)
 fjernEnkeltVerneområder(tre)
 settFargePåRelasjoner()
@@ -135,15 +134,6 @@ function injectAlias(from, kode, tre) {
     tittel: targetNode.tittel,
     sti: sti(targetNode.kode)
   }
-}
-
-function settInnAliaser(tre) {
-  Object.keys(data).forEach(kode => {
-    const node = data[kode]
-    const kodePath = typesystem.splittKode(kode.toLowerCase())
-    injectAlias(kodePath, kode, tre)
-    injectAlias([kode], kode, tre)
-  })
 }
 
 function settInnAlias(tre, kode, tittel) {
