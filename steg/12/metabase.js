@@ -8,14 +8,29 @@ let hierarki = io.lesDatafil("kodehierarki")
 const barnAv = hierarki.barn
 const foreldreTil = hierarki.foreldre
 
+let ukjenteKoder = []
+
+zoomlevels(typesystem.rotkode)
+
+let tre = {}
+Object.keys(data).forEach(kode => (tre[kode] = map(kode)))
+
+settInnAliaser(tre)
+lagRedirectFraTittel(tre)
+fjernEnkeltVerneområder(tre)
+settFargePåRelasjoner()
+
+if (ukjenteKoder.length > 0)
+  log.warn("Kobling til +" + ukjenteKoder.length + " ukjente koder")
+tre = { katalog: tre }
+io.skrivDatafil(__filename, tre)
+
 function sti(kode) {
   return typesystem
     .splittKode(kode)
     .join("/")
     .toLowerCase()
 }
-
-let ukjenteKoder = []
 
 function settFargePåRelasjoner() {
   Object.keys(data).forEach(kode => {
@@ -48,29 +63,21 @@ function nøstOppForfedre(forelderkey) {
   return r
 }
 
-function fjernPrefiks(kode, rotkode) {
-  const før = kode
-  kode = kode.replace(rotkode, "")
-  if ("/_-".indexOf(kode[0]) >= 0) kode = kode.substring(1)
-  return kode
-}
-
-function byggTreFra(tre, key) {
-  let rot = data[key]
-  if (!rot) throw new Error("Finner ikke " + key)
-  if (!rot.overordnet) {
-    if (!rot.foreldre) {
+function map(key) {
+  let node = data[key]
+  if (!node) throw new Error("Finner ikke " + key)
+  if (!node.overordnet) {
+    if (!node.foreldre) {
       log.warn("mangler forelder: " + key)
     }
-    rot.overordnet =
-      rot.foreldre && rot.foreldre.length > 0
-        ? nøstOppForfedre(rot.foreldre[0])
+    node.overordnet =
+      node.foreldre && node.foreldre.length > 0
+        ? nøstOppForfedre(node.foreldre[0])
         : ""
-    delete rot.foreldre
+    delete node.foreldre
   }
-  let node = { "@": rot }
-  let barn = {}
 
+  let barn = {}
   if (barnAv[key]) {
     barnAv[key].forEach(ckey => {
       const cnode = data[ckey]
@@ -80,16 +87,14 @@ function byggTreFra(tre, key) {
         sortering: cnode.sortering,
         skjul: cnode.skjul
       }
-      const child = byggTreFra(tre, ckey)
     })
   }
-  node["@"].barn = barn
-  settInn(tre, node, key)
+  node.barn = barn
   return node
 }
 
 function settInn(tre, node, kode) {
-  const segments = typesystem.splittKode(node["@"].kode.toLowerCase())
+  const segments = typesystem.splittKode(node.kode.toLowerCase())
   if (segments.length === 0) {
     Object.keys(node).forEach(key => {
       tre[key] = Object.assign({}, tre[key], node[key])
@@ -120,12 +125,10 @@ function injectAlias(from, kode, tre) {
   if (!leafKey) throw new Error(JSON.stringify(from))
   if (!tre[leafKey]) tre[leafKey] = {}
   const leafNode = tre[leafKey]
-  if (!leafNode["@"]) leafNode["@"] = {}
-  const me = leafNode["@"]
-  if (!me.se) me.se = {}
+  if (!leafNode.se) leafNode.se = {}
   if (!targetNode)
     throw new Error(JSON.stringify(from) + JSON.stringify(targetNode))
-  me.se[targetNode.kode] = {
+  leafNode.se[targetNode.kode] = {
     tittel: targetNode.tittel,
     sti: sti(targetNode.kode)
   }
@@ -140,14 +143,9 @@ function settInnAliaser(tre) {
   })
 }
 
-let acc = {}
 function settInnAlias(tre, kode, tittel) {
   if (!tittel) return
   const kodePath = typesystem.medGyldigeTegn(tittel.toLowerCase())
-  kodePath.split("").forEach(c => {
-    if (!acc[c]) acc[c] = 1
-    else acc[c] = acc[c] + 1
-  })
   if (kodePath.length === 0) throw new Error(tittel)
   injectAlias([kodePath], kode, tre)
 }
@@ -163,7 +161,7 @@ function lagRedirectFraTittel(tre) {
 
 function fjernEnkeltVerneområder(tre) {
   // Fjern barn fra VV - for mange, bruk alternative ruter
-  const vv = tre.vv["@"].barn
+  const vv = tre.VV.barn
   const keys = Object.keys(vv)
   const vid = /^VV-\d+$/
   keys.forEach(kode => {
@@ -182,17 +180,3 @@ function zoomlevels(kode, bbox, zoom) {
     }
   })
 }
-
-zoomlevels(typesystem.rotkode)
-
-let tre = {}
-let node = byggTreFra(tre, typesystem.rotkode)
-settInnAliaser(tre)
-lagRedirectFraTittel(tre)
-fjernEnkeltVerneområder(tre)
-settFargePåRelasjoner()
-
-if (ukjenteKoder.length > 0)
-  log.warn("Kobling til +" + ukjenteKoder.length + " ukjente koder")
-tre = { katalog: tre }
-io.skrivDatafil(__filename, tre)
