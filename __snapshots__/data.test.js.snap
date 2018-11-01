@@ -30,7 +30,7 @@ Object {
     "count": 180081,
     "delAv": Object {
       "_": Object {
-        "count": 1408368,
+        "count": 1417481,
       },
       "count": 180081,
     },
@@ -258,18 +258,18 @@ Object {
     },
     "relasjon": Object {
       "_": Object {
-        "count": 32277,
+        "count": 30182,
         "erSubset": Object {
-          "count": 26098,
+          "count": 24003,
         },
         "kant": Object {
-          "count": 32277,
+          "count": 30182,
         },
         "kantRetur": Object {
-          "count": 32277,
+          "count": 30182,
         },
         "kode": Object {
-          "count": 32277,
+          "count": 30182,
         },
       },
       "count": 3147,
@@ -426,7 +426,7 @@ Object {
         },
         "count": 2934,
       },
-      "count": 4370,
+      "count": 4806,
       "definerer hovedtype": Object {
         "_": Object {
           "count": 594,
@@ -516,6 +516,51 @@ Object {
           },
         },
         "count": 1001,
+      },
+      "iucn": Object {
+        "_": Object {
+          "count": 5638,
+          "erSubset": Object {
+            "count": 5638,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 8457,
+            },
+            "count": 5638,
+          },
+        },
+        "count": 2825,
+      },
+      "ligger i fylke": Object {
+        "_": Object {
+          "count": 5884,
+          "erSubset": Object {
+            "count": 5884,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5884,
+            },
+            "count": 5884,
+          },
+        },
+        "count": 2853,
+      },
+      "ligger i kommune": Object {
+        "_": Object {
+          "count": 6704,
+          "erSubset": Object {
+            "count": 6704,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 6704,
+            },
+            "count": 6704,
+          },
+        },
+        "count": 3225,
       },
       "mengdeart": Object {
         "_": Object {
@@ -847,7 +892,7 @@ Object {
         },
         "count": 2934,
       },
-      "count": 4370,
+      "count": 4806,
       "definerer hovedtype": Object {
         "_": Object {
           "count": 594,
@@ -937,6 +982,51 @@ Object {
           },
         },
         "count": 1001,
+      },
+      "iucn": Object {
+        "_": Object {
+          "count": 5638,
+          "erSubset": Object {
+            "count": 5638,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 8457,
+            },
+            "count": 5638,
+          },
+        },
+        "count": 2825,
+      },
+      "ligger i fylke": Object {
+        "_": Object {
+          "count": 5884,
+          "erSubset": Object {
+            "count": 5884,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5884,
+            },
+            "count": 5884,
+          },
+        },
+        "count": 2853,
+      },
+      "ligger i kommune": Object {
+        "_": Object {
+          "count": 6704,
+          "erSubset": Object {
+            "count": 6704,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 6704,
+            },
+            "count": 6704,
+          },
+        },
+        "count": 3225,
       },
       "mengdeart": Object {
         "_": Object {
@@ -1774,17 +1864,17 @@ Object {
 }
 `;
 
-exports[`data/mangler_data.json har antall rader 1`] = `3231`;
+exports[`data/mangler_data.json har antall rader 1`] = `2814`;
 
 exports[`data/mangler_data.json har forventede nøkler 1`] = `
 Object {
   "_": Object {
-    "count": 3231,
+    "count": 2814,
   },
 }
 `;
 
-exports[`data/metabase.json har antall rader 1`] = `376660`;
+exports[`data/metabase.json har antall rader 1`] = `377239`;
 
 exports[`data/metabase.json har forventede nøkler 1`] = `
 Object {
@@ -1828,18 +1918,18 @@ Object {
     "@": Object {
       "_": Object {
         "_": Object {
-          "count": 398181,
+          "count": 399015,
           "sti": Object {
-            "count": 398181,
+            "count": 399015,
           },
           "tittel": Object {
             "_": Object {
-              "count": 616705,
+              "count": 617539,
             },
-            "count": 398181,
+            "count": 399015,
           },
         },
-        "count": 376651,
+        "count": 377230,
         "~": Object {
           "count": 2,
           "sti": Object {
@@ -1874,7 +1964,7 @@ Object {
         },
         "count": 7,
       },
-      "count": 376659,
+      "count": 377238,
       "farge": Object {
         "count": 7,
       },
@@ -2115,6 +2205,60 @@ Object {
             },
             "count": 1001,
           },
+          "iucn": Object {
+            "_": Object {
+              "count": 2819,
+              "erSubset": Object {
+                "count": 2819,
+              },
+              "farge": Object {
+                "count": 2819,
+              },
+              "tittel": Object {
+                "_": Object {
+                  "count": 5638,
+                },
+                "count": 2819,
+              },
+            },
+            "count": 2819,
+          },
+          "ligger i fylke": Object {
+            "_": Object {
+              "count": 2942,
+              "erSubset": Object {
+                "count": 2942,
+              },
+              "farge": Object {
+                "count": 2942,
+              },
+              "tittel": Object {
+                "_": Object {
+                  "count": 2942,
+                },
+                "count": 2942,
+              },
+            },
+            "count": 2835,
+          },
+          "ligger i kommune": Object {
+            "_": Object {
+              "count": 3352,
+              "erSubset": Object {
+                "count": 3352,
+              },
+              "farge": Object {
+                "count": 3352,
+              },
+              "tittel": Object {
+                "_": Object {
+                  "count": 3352,
+                },
+                "count": 3352,
+              },
+            },
+            "count": 2813,
+          },
           "publisererer": Object {
             "_": Object {
               "count": 6,
@@ -2286,12 +2430,12 @@ Object {
           },
           "barn": Object {
             "_": Object {
-              "count": 1098,
+              "count": 1156,
               "tittel": Object {
                 "_": Object {
-                  "count": 1382,
+                  "count": 1440,
                 },
-                "count": 1098,
+                "count": 1156,
               },
             },
             "count": 668,
@@ -2361,7 +2505,7 @@ Object {
               },
               "count": 69,
             },
-            "count": 174,
+            "count": 198,
             "definisjonsgrunnlag": Object {
               "_": Object {
                 "count": 64,
@@ -2400,21 +2544,57 @@ Object {
             },
             "forvalter": Object {
               "_": Object {
-                "count": 2865,
+                "count": 770,
                 "erSubset": Object {
-                  "count": 2865,
+                  "count": 770,
                 },
                 "farge": Object {
-                  "count": 2865,
+                  "count": 770,
                 },
                 "tittel": Object {
                   "_": Object {
-                    "count": 2865,
+                    "count": 770,
                   },
-                  "count": 2865,
+                  "count": 770,
                 },
               },
               "count": 6,
+            },
+            "iucn": Object {
+              "_": Object {
+                "count": 2819,
+                "erSubset": Object {
+                  "count": 2819,
+                },
+                "farge": Object {
+                  "count": 2819,
+                },
+                "tittel": Object {
+                  "_": Object {
+                    "count": 2819,
+                  },
+                  "count": 2819,
+                },
+              },
+              "count": 6,
+            },
+            "ligger i fylke": Object {
+              "_": Object {
+                "count": 2942,
+                "erSubset": Object {
+                  "count": 2942,
+                },
+                "farge": Object {
+                  "count": 2942,
+                },
+                "tittel": Object {
+                  "_": Object {
+                    "count": 2942,
+                  },
+                  "count": 2942,
+                },
+              },
+              "count": 18,
             },
             "prosedyrekategori": Object {
               "_": Object {
@@ -2593,33 +2773,33 @@ Object {
             },
             "barn": Object {
               "_": Object {
-                "count": 290,
+                "count": 532,
                 "tittel": Object {
                   "_": Object {
-                    "count": 290,
+                    "count": 532,
                   },
-                  "count": 290,
+                  "count": 532,
                 },
               },
-              "count": 1169,
+              "count": 1227,
             },
             "bbox": Object {
               "_": Object {
                 "_": Object {
-                  "count": 4612,
+                  "count": 4844,
                 },
-                "count": 2306,
+                "count": 2422,
               },
-              "count": 1153,
+              "count": 1211,
             },
-            "count": 1169,
+            "count": 1227,
             "farge": Object {
-              "count": 1169,
+              "count": 1227,
             },
             "formats": Object {
-              "count": 1153,
+              "count": 1211,
               "polygon": Object {
-                "count": 1153,
+                "count": 1211,
               },
             },
             "graf": Object {
@@ -2635,24 +2815,42 @@ Object {
                 },
                 "count": 572,
               },
-              "count": 178,
+              "count": 590,
               "forvalter": Object {
                 "_": Object {
-                  "count": 18,
+                  "count": 2113,
                   "erSubset": Object {
-                    "count": 18,
+                    "count": 2113,
                   },
                   "farge": Object {
-                    "count": 18,
+                    "count": 2113,
                   },
                   "tittel": Object {
                     "_": Object {
-                      "count": 18,
+                      "count": 2113,
                     },
-                    "count": 18,
+                    "count": 2113,
                   },
                 },
                 "count": 18,
+              },
+              "ligger i kommune": Object {
+                "_": Object {
+                  "count": 3352,
+                  "erSubset": Object {
+                    "count": 3352,
+                  },
+                  "farge": Object {
+                    "count": 3352,
+                  },
+                  "tittel": Object {
+                    "_": Object {
+                      "count": 3352,
+                    },
+                    "count": 3352,
+                  },
+                },
+                "count": 412,
               },
               "mengdeart": Object {
                 "_": Object {
@@ -2692,10 +2890,10 @@ Object {
               },
             },
             "index": Object {
-              "count": 1169,
+              "count": 1227,
             },
             "kode": Object {
-              "count": 1169,
+              "count": 1227,
             },
             "max": Object {
               "count": 10,
@@ -2708,18 +2906,18 @@ Object {
             },
             "overordnet": Object {
               "_": Object {
-                "count": 4905,
+                "count": 5137,
                 "kode": Object {
-                  "count": 4905,
+                  "count": 5137,
                 },
                 "tittel": Object {
                   "_": Object {
-                    "count": 5473,
+                    "count": 5705,
                   },
-                  "count": 4905,
+                  "count": 5137,
                 },
               },
-              "count": 1169,
+              "count": 1227,
             },
             "relasjoner": Object {
               "_": Object {
@@ -2738,186 +2936,288 @@ Object {
             },
             "stats": Object {
               "areal": Object {
-                "count": 370,
+                "count": 413,
               },
               "arealPrefix": Object {
-                "count": 370,
+                "count": 413,
               },
-              "count": 370,
+              "count": 413,
               "geometrier": Object {
-                "count": 370,
+                "count": 413,
               },
               "geometrierPrefix": Object {
-                "count": 370,
+                "count": 413,
               },
             },
             "tittel": Object {
               "_": Object {
-                "count": 1453,
+                "count": 1511,
               },
-              "count": 1169,
+              "count": 1227,
             },
             "zoom": Object {
               "_": Object {
-                "count": 2306,
+                "count": 2422,
               },
-              "count": 1153,
+              "count": 1211,
             },
           },
           "_": Object {
             "@": Object {
               "barn": Object {
-                "count": 74,
+                "_": Object {
+                  "count": 68,
+                  "tittel": Object {
+                    "_": Object {
+                      "count": 68,
+                    },
+                    "count": 68,
+                  },
+                },
+                "count": 316,
               },
               "bbox": Object {
                 "_": Object {
                   "_": Object {
-                    "count": 84,
+                    "count": 1080,
                   },
-                  "count": 42,
+                  "count": 540,
                 },
-                "count": 21,
+                "count": 270,
               },
-              "count": 74,
+              "count": 316,
               "farge": Object {
-                "count": 74,
+                "count": 316,
               },
               "formats": Object {
-                "count": 21,
+                "count": 270,
                 "polygon": Object {
-                  "count": 21,
+                  "count": 270,
                 },
               },
               "index": Object {
-                "count": 74,
+                "count": 316,
               },
               "kode": Object {
-                "count": 74,
+                "count": 316,
               },
               "overordnet": Object {
                 "_": Object {
-                  "count": 355,
+                  "count": 1565,
                   "kode": Object {
-                    "count": 355,
+                    "count": 1565,
                   },
                   "tittel": Object {
                     "_": Object {
-                      "count": 355,
+                      "count": 1565,
                     },
-                    "count": 355,
+                    "count": 1565,
                   },
                 },
-                "count": 74,
+                "count": 316,
               },
               "stats": Object {
                 "areal": Object {
-                  "count": 27,
+                  "count": 255,
                 },
                 "arealPrefix": Object {
-                  "count": 27,
+                  "count": 255,
                 },
-                "count": 27,
+                "count": 255,
                 "geometrier": Object {
-                  "count": 27,
+                  "count": 255,
                 },
                 "geometrierPrefix": Object {
-                  "count": 27,
+                  "count": 255,
                 },
               },
               "tittel": Object {
                 "_": Object {
-                  "count": 74,
+                  "count": 316,
                 },
-                "count": 74,
+                "count": 316,
               },
               "zoom": Object {
                 "_": Object {
-                  "count": 42,
+                  "count": 540,
                 },
-                "count": 21,
+                "count": 270,
               },
             },
             "_": Object {
               "@": Object {
                 "barn": Object {
-                  "count": 4,
+                  "_": Object {
+                    "count": 4,
+                    "tittel": Object {
+                      "_": Object {
+                        "count": 4,
+                      },
+                      "count": 4,
+                    },
+                  },
+                  "count": 72,
                 },
                 "bbox": Object {
                   "_": Object {
                     "_": Object {
-                      "count": 16,
+                      "count": 288,
                     },
-                    "count": 8,
+                    "count": 144,
                   },
-                  "count": 4,
+                  "count": 72,
                 },
-                "count": 4,
+                "count": 72,
                 "farge": Object {
-                  "count": 4,
+                  "count": 72,
                 },
                 "formats": Object {
-                  "count": 4,
+                  "count": 72,
                   "polygon": Object {
-                    "count": 4,
+                    "count": 72,
                   },
                 },
                 "index": Object {
-                  "count": 4,
+                  "count": 72,
                 },
                 "kode": Object {
-                  "count": 4,
+                  "count": 72,
                 },
                 "overordnet": Object {
                   "_": Object {
-                    "count": 16,
+                    "count": 374,
                     "kode": Object {
-                      "count": 16,
+                      "count": 374,
                     },
                     "tittel": Object {
                       "_": Object {
-                        "count": 16,
+                        "count": 374,
                       },
-                      "count": 16,
+                      "count": 374,
                     },
                   },
-                  "count": 4,
+                  "count": 72,
                 },
                 "stats": Object {
                   "areal": Object {
-                    "count": 4,
+                    "count": 72,
                   },
                   "arealPrefix": Object {
-                    "count": 4,
+                    "count": 72,
                   },
-                  "count": 4,
+                  "count": 72,
                   "geometrier": Object {
-                    "count": 4,
+                    "count": 72,
                   },
                   "geometrierPrefix": Object {
-                    "count": 4,
+                    "count": 72,
                   },
                 },
                 "tittel": Object {
                   "_": Object {
-                    "count": 4,
+                    "count": 72,
                   },
-                  "count": 4,
+                  "count": 72,
                 },
                 "zoom": Object {
                   "_": Object {
-                    "count": 8,
+                    "count": 144,
                   },
-                  "count": 4,
+                  "count": 72,
                 },
               },
-              "count": 4,
+              "_": Object {
+                "@": Object {
+                  "barn": Object {
+                    "count": 4,
+                  },
+                  "bbox": Object {
+                    "_": Object {
+                      "_": Object {
+                        "count": 16,
+                      },
+                      "count": 8,
+                    },
+                    "count": 4,
+                  },
+                  "count": 4,
+                  "farge": Object {
+                    "count": 4,
+                  },
+                  "formats": Object {
+                    "count": 4,
+                    "polygon": Object {
+                      "count": 4,
+                    },
+                  },
+                  "index": Object {
+                    "count": 4,
+                  },
+                  "kode": Object {
+                    "count": 4,
+                  },
+                  "overordnet": Object {
+                    "_": Object {
+                      "count": 20,
+                      "kode": Object {
+                        "count": 20,
+                      },
+                      "tittel": Object {
+                        "_": Object {
+                          "count": 20,
+                        },
+                        "count": 20,
+                      },
+                    },
+                    "count": 4,
+                  },
+                  "stats": Object {
+                    "areal": Object {
+                      "count": 4,
+                    },
+                    "arealPrefix": Object {
+                      "count": 4,
+                    },
+                    "count": 4,
+                    "geometrier": Object {
+                      "count": 4,
+                    },
+                    "geometrierPrefix": Object {
+                      "count": 4,
+                    },
+                  },
+                  "tittel": Object {
+                    "_": Object {
+                      "count": 4,
+                    },
+                    "count": 4,
+                  },
+                  "zoom": Object {
+                    "_": Object {
+                      "count": 8,
+                    },
+                    "count": 4,
+                  },
+                },
+                "count": 4,
+              },
+              "count": 72,
             },
-            "count": 77,
+            "count": 319,
           },
           "aap": Object {
             "_": Object {
               "@": Object {
                 "barn": Object {
+                  "_": Object {
+                    "count": 2,
+                    "tittel": Object {
+                      "_": Object {
+                        "count": 2,
+                      },
+                      "count": 2,
+                    },
+                  },
                   "count": 1,
                 },
                 "bbox": Object {
@@ -2988,23 +3288,98 @@ Object {
                   "count": 1,
                 },
               },
+              "_": Object {
+                "@": Object {
+                  "barn": Object {
+                    "count": 2,
+                  },
+                  "bbox": Object {
+                    "_": Object {
+                      "_": Object {
+                        "count": 8,
+                      },
+                      "count": 4,
+                    },
+                    "count": 2,
+                  },
+                  "count": 2,
+                  "farge": Object {
+                    "count": 2,
+                  },
+                  "formats": Object {
+                    "count": 2,
+                    "polygon": Object {
+                      "count": 2,
+                    },
+                  },
+                  "index": Object {
+                    "count": 2,
+                  },
+                  "kode": Object {
+                    "count": 2,
+                  },
+                  "overordnet": Object {
+                    "_": Object {
+                      "count": 10,
+                      "kode": Object {
+                        "count": 10,
+                      },
+                      "tittel": Object {
+                        "_": Object {
+                          "count": 10,
+                        },
+                        "count": 10,
+                      },
+                    },
+                    "count": 2,
+                  },
+                  "stats": Object {
+                    "areal": Object {
+                      "count": 2,
+                    },
+                    "arealPrefix": Object {
+                      "count": 2,
+                    },
+                    "count": 2,
+                    "geometrier": Object {
+                      "count": 2,
+                    },
+                    "geometrierPrefix": Object {
+                      "count": 2,
+                    },
+                  },
+                  "tittel": Object {
+                    "_": Object {
+                      "count": 2,
+                    },
+                    "count": 2,
+                  },
+                  "zoom": Object {
+                    "_": Object {
+                      "count": 4,
+                    },
+                    "count": 2,
+                  },
+                },
+                "count": 2,
+              },
               "count": 1,
             },
             "count": 1,
           },
-          "count": 1177,
+          "count": 1235,
         },
         "a": Object {
           "_": Object {
             "@": Object {
               "barn": Object {
                 "_": Object {
-                  "count": 286,
+                  "count": 314,
                   "tittel": Object {
                     "_": Object {
-                      "count": 286,
+                      "count": 314,
                     },
-                    "count": 286,
+                    "count": 314,
                   },
                 },
                 "count": 60,
@@ -3089,53 +3464,74 @@ Object {
                       "count": 4,
                     },
                   },
-                  "count": 286,
+                  "count": 314,
                 },
-                "count": 286,
+                "bbox": Object {
+                  "_": Object {
+                    "_": Object {
+                      "count": 772,
+                    },
+                    "count": 386,
+                  },
+                  "count": 193,
+                },
+                "count": 314,
                 "farge": Object {
-                  "count": 286,
+                  "count": 314,
+                },
+                "formats": Object {
+                  "count": 193,
+                  "polygon": Object {
+                    "count": 193,
+                  },
                 },
                 "index": Object {
-                  "count": 286,
+                  "count": 314,
                 },
                 "kode": Object {
-                  "count": 286,
+                  "count": 314,
                 },
                 "overordnet": Object {
                   "_": Object {
-                    "count": 1430,
+                    "count": 1570,
                     "kode": Object {
-                      "count": 1430,
+                      "count": 1570,
                     },
                     "tittel": Object {
                       "_": Object {
-                        "count": 1430,
+                        "count": 1570,
                       },
-                      "count": 1430,
+                      "count": 1570,
                     },
                   },
-                  "count": 286,
+                  "count": 314,
                 },
                 "stats": Object {
                   "areal": Object {
-                    "count": 153,
+                    "count": 181,
                   },
                   "arealPrefix": Object {
-                    "count": 153,
+                    "count": 181,
                   },
-                  "count": 153,
+                  "count": 181,
                   "geometrier": Object {
-                    "count": 153,
+                    "count": 181,
                   },
                   "geometrierPrefix": Object {
-                    "count": 153,
+                    "count": 181,
                   },
                 },
                 "tittel": Object {
                   "_": Object {
-                    "count": 286,
+                    "count": 314,
                   },
-                  "count": 286,
+                  "count": 314,
+                },
+                "zoom": Object {
+                  "_": Object {
+                    "count": 386,
+                  },
+                  "count": 193,
                 },
               },
               "_": Object {
@@ -3225,7 +3621,7 @@ Object {
                 },
                 "count": 4,
               },
-              "count": 286,
+              "count": 314,
             },
             "count": 60,
           },
@@ -3319,9 +3715,24 @@ Object {
                 "barn": Object {
                   "count": 305,
                 },
+                "bbox": Object {
+                  "_": Object {
+                    "_": Object {
+                      "count": 40,
+                    },
+                    "count": 20,
+                  },
+                  "count": 10,
+                },
                 "count": 305,
                 "farge": Object {
                   "count": 305,
+                },
+                "formats": Object {
+                  "count": 10,
+                  "polygon": Object {
+                    "count": 10,
+                  },
                 },
                 "index": Object {
                   "count": 305,
@@ -3364,6 +3775,12 @@ Object {
                     "count": 305,
                   },
                   "count": 305,
+                },
+                "zoom": Object {
+                  "_": Object {
+                    "count": 20,
+                  },
+                  "count": 10,
                 },
               },
               "count": 305,
@@ -3827,6 +4244,15 @@ Object {
           "_": Object {
             "@": Object {
               "barn": Object {
+                "_": Object {
+                  "count": 8,
+                  "tittel": Object {
+                    "_": Object {
+                      "count": 8,
+                    },
+                    "count": 8,
+                  },
+                },
                 "count": 2,
               },
               "bbox": Object {
@@ -3896,6 +4322,81 @@ Object {
                 },
                 "count": 2,
               },
+            },
+            "_": Object {
+              "@": Object {
+                "barn": Object {
+                  "count": 8,
+                },
+                "bbox": Object {
+                  "_": Object {
+                    "_": Object {
+                      "count": 32,
+                    },
+                    "count": 16,
+                  },
+                  "count": 8,
+                },
+                "count": 8,
+                "farge": Object {
+                  "count": 8,
+                },
+                "formats": Object {
+                  "count": 8,
+                  "polygon": Object {
+                    "count": 8,
+                  },
+                },
+                "index": Object {
+                  "count": 8,
+                },
+                "kode": Object {
+                  "count": 8,
+                },
+                "overordnet": Object {
+                  "_": Object {
+                    "count": 40,
+                    "kode": Object {
+                      "count": 40,
+                    },
+                    "tittel": Object {
+                      "_": Object {
+                        "count": 40,
+                      },
+                      "count": 40,
+                    },
+                  },
+                  "count": 8,
+                },
+                "stats": Object {
+                  "areal": Object {
+                    "count": 8,
+                  },
+                  "arealPrefix": Object {
+                    "count": 8,
+                  },
+                  "count": 8,
+                  "geometrier": Object {
+                    "count": 8,
+                  },
+                  "geometrierPrefix": Object {
+                    "count": 8,
+                  },
+                },
+                "tittel": Object {
+                  "_": Object {
+                    "count": 8,
+                  },
+                  "count": 8,
+                },
+                "zoom": Object {
+                  "_": Object {
+                    "count": 16,
+                  },
+                  "count": 8,
+                },
+              },
+              "count": 8,
             },
             "count": 2,
           },
@@ -3905,6 +4406,15 @@ Object {
           "_": Object {
             "@": Object {
               "barn": Object {
+                "_": Object {
+                  "count": 7,
+                  "tittel": Object {
+                    "_": Object {
+                      "count": 7,
+                    },
+                    "count": 7,
+                  },
+                },
                 "count": 2,
               },
               "bbox": Object {
@@ -3975,6 +4485,81 @@ Object {
                 "count": 2,
               },
             },
+            "_": Object {
+              "@": Object {
+                "barn": Object {
+                  "count": 7,
+                },
+                "bbox": Object {
+                  "_": Object {
+                    "_": Object {
+                      "count": 28,
+                    },
+                    "count": 14,
+                  },
+                  "count": 7,
+                },
+                "count": 7,
+                "farge": Object {
+                  "count": 7,
+                },
+                "formats": Object {
+                  "count": 7,
+                  "polygon": Object {
+                    "count": 7,
+                  },
+                },
+                "index": Object {
+                  "count": 7,
+                },
+                "kode": Object {
+                  "count": 7,
+                },
+                "overordnet": Object {
+                  "_": Object {
+                    "count": 35,
+                    "kode": Object {
+                      "count": 35,
+                    },
+                    "tittel": Object {
+                      "_": Object {
+                        "count": 35,
+                      },
+                      "count": 35,
+                    },
+                  },
+                  "count": 7,
+                },
+                "stats": Object {
+                  "areal": Object {
+                    "count": 7,
+                  },
+                  "arealPrefix": Object {
+                    "count": 7,
+                  },
+                  "count": 7,
+                  "geometrier": Object {
+                    "count": 7,
+                  },
+                  "geometrierPrefix": Object {
+                    "count": 7,
+                  },
+                },
+                "tittel": Object {
+                  "_": Object {
+                    "count": 7,
+                  },
+                  "count": 7,
+                },
+                "zoom": Object {
+                  "_": Object {
+                    "count": 14,
+                  },
+                  "count": 7,
+                },
+              },
+              "count": 7,
+            },
             "count": 2,
           },
           "count": 1,
@@ -3982,7 +4567,7 @@ Object {
       },
       "count": 174016,
     },
-    "count": 376659,
+    "count": 377238,
     "klg": Object {
       "_": Object {
         "@": Object {
@@ -4275,7 +4860,7 @@ Object {
 }
 `;
 
-exports[`data/metabase_bbox.json har antall rader 1`] = `176848`;
+exports[`data/metabase_bbox.json har antall rader 1`] = `177265`;
 
 exports[`data/metabase_bbox.json har forventede nøkler 1`] = `
 Object {
@@ -4286,11 +4871,11 @@ Object {
     "bbox": Object {
       "_": Object {
         "_": Object {
-          "count": 19508,
+          "count": 21904,
         },
-        "count": 9754,
+        "count": 10952,
       },
-      "count": 4877,
+      "count": 5476,
     },
     "betegnelse": Object {
       "_": Object {
@@ -4298,7 +4883,7 @@ Object {
       },
       "count": 3304,
     },
-    "count": 176847,
+    "count": 177264,
     "data": Object {
       "areal": Object {
         "count": 2865,
@@ -4327,21 +4912,21 @@ Object {
       },
     },
     "farge": Object {
-      "count": 5785,
+      "count": 6202,
     },
     "foreldre": Object {
       "_": Object {
-        "count": 176848,
+        "count": 177265,
       },
-      "count": 176847,
+      "count": 177264,
     },
     "formats": Object {
-      "count": 4877,
+      "count": 5476,
       "gradient": Object {
         "count": 2,
       },
       "polygon": Object {
-        "count": 4877,
+        "count": 5476,
       },
     },
     "graf": Object {
@@ -4375,7 +4960,7 @@ Object {
         },
         "count": 2934,
       },
-      "count": 4320,
+      "count": 4756,
       "definerer hovedtype": Object {
         "_": Object {
           "count": 449,
@@ -4465,6 +5050,51 @@ Object {
           },
         },
         "count": 1001,
+      },
+      "iucn": Object {
+        "_": Object {
+          "count": 5638,
+          "erSubset": Object {
+            "count": 5638,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 8457,
+            },
+            "count": 5638,
+          },
+        },
+        "count": 2825,
+      },
+      "ligger i fylke": Object {
+        "_": Object {
+          "count": 5884,
+          "erSubset": Object {
+            "count": 5884,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5884,
+            },
+            "count": 5884,
+          },
+        },
+        "count": 2853,
+      },
+      "ligger i kommune": Object {
+        "_": Object {
+          "count": 6704,
+          "erSubset": Object {
+            "count": 6704,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 6704,
+            },
+            "count": 6704,
+          },
+        },
+        "count": 3225,
       },
       "mengdeart": Object {
         "_": Object {
@@ -4624,7 +5254,7 @@ Object {
       },
     },
     "index": Object {
-      "count": 176847,
+      "count": 177264,
     },
     "infoUrl": Object {
       "count": 173955,
@@ -4633,7 +5263,7 @@ Object {
       "count": 105,
     },
     "kode": Object {
-      "count": 176847,
+      "count": 177264,
     },
     "max": Object {
       "count": 48,
@@ -4676,24 +5306,24 @@ Object {
     },
     "stats": Object {
       "areal": Object {
-        "count": 3878,
+        "count": 4266,
       },
       "arealPrefix": Object {
-        "count": 3878,
+        "count": 4266,
       },
-      "count": 3878,
+      "count": 4266,
       "geometrier": Object {
-        "count": 3878,
+        "count": 4266,
       },
       "geometrierPrefix": Object {
-        "count": 3878,
+        "count": 4266,
       },
     },
     "tittel": Object {
       "_": Object {
-        "count": 249690,
+        "count": 250107,
       },
-      "count": 176847,
+      "count": 177264,
     },
     "type": Object {
       "count": 3,
@@ -4706,9 +5336,9 @@ Object {
     },
     "zoom": Object {
       "_": Object {
-        "count": 9754,
+        "count": 10952,
       },
-      "count": 4877,
+      "count": 5476,
     },
   },
   "~": Object {
@@ -4743,11 +5373,11 @@ Object {
     "bbox": Object {
       "_": Object {
         "_": Object {
-          "count": 19508,
+          "count": 21904,
         },
-        "count": 9754,
+        "count": 10952,
       },
-      "count": 4877,
+      "count": 5476,
     },
     "betegnelse": Object {
       "_": Object {
@@ -4793,12 +5423,12 @@ Object {
       "count": 180078,
     },
     "formats": Object {
-      "count": 4877,
+      "count": 5476,
       "gradient": Object {
         "count": 2,
       },
       "polygon": Object {
-        "count": 4877,
+        "count": 5476,
       },
     },
     "graf": Object {
@@ -4832,7 +5462,7 @@ Object {
         },
         "count": 2934,
       },
-      "count": 4370,
+      "count": 4806,
       "definerer hovedtype": Object {
         "_": Object {
           "count": 594,
@@ -4922,6 +5552,51 @@ Object {
           },
         },
         "count": 1001,
+      },
+      "iucn": Object {
+        "_": Object {
+          "count": 5638,
+          "erSubset": Object {
+            "count": 5638,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 8457,
+            },
+            "count": 5638,
+          },
+        },
+        "count": 2825,
+      },
+      "ligger i fylke": Object {
+        "_": Object {
+          "count": 5884,
+          "erSubset": Object {
+            "count": 5884,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5884,
+            },
+            "count": 5884,
+          },
+        },
+        "count": 2853,
+      },
+      "ligger i kommune": Object {
+        "_": Object {
+          "count": 6704,
+          "erSubset": Object {
+            "count": 6704,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 6704,
+            },
+            "count": 6704,
+          },
+        },
+        "count": 3225,
       },
       "mengdeart": Object {
         "_": Object {
@@ -5160,9 +5835,9 @@ Object {
     },
     "zoom": Object {
       "_": Object {
-        "count": 9754,
+        "count": 10952,
       },
-      "count": 4877,
+      "count": 5476,
     },
   },
   "~": Object {
@@ -5194,11 +5869,11 @@ Object {
     "bbox": Object {
       "_": Object {
         "_": Object {
-          "count": 19508,
+          "count": 21904,
         },
-        "count": 9754,
+        "count": 10952,
       },
-      "count": 4877,
+      "count": 5476,
     },
     "betegnelse": Object {
       "_": Object {
@@ -5244,12 +5919,12 @@ Object {
       "count": 180078,
     },
     "formats": Object {
-      "count": 4877,
+      "count": 5476,
       "gradient": Object {
         "count": 2,
       },
       "polygon": Object {
-        "count": 4877,
+        "count": 5476,
       },
     },
     "graf": Object {
@@ -5283,7 +5958,7 @@ Object {
         },
         "count": 2934,
       },
-      "count": 4370,
+      "count": 4806,
       "definerer hovedtype": Object {
         "_": Object {
           "count": 594,
@@ -5373,6 +6048,51 @@ Object {
           },
         },
         "count": 1001,
+      },
+      "iucn": Object {
+        "_": Object {
+          "count": 5638,
+          "erSubset": Object {
+            "count": 5638,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 8457,
+            },
+            "count": 5638,
+          },
+        },
+        "count": 2825,
+      },
+      "ligger i fylke": Object {
+        "_": Object {
+          "count": 5884,
+          "erSubset": Object {
+            "count": 5884,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 5884,
+            },
+            "count": 5884,
+          },
+        },
+        "count": 2853,
+      },
+      "ligger i kommune": Object {
+        "_": Object {
+          "count": 6704,
+          "erSubset": Object {
+            "count": 6704,
+          },
+          "tittel": Object {
+            "_": Object {
+              "count": 6704,
+            },
+            "count": 6704,
+          },
+        },
+        "count": 3225,
       },
       "mengdeart": Object {
         "_": Object {
@@ -5611,9 +6331,9 @@ Object {
     },
     "zoom": Object {
       "_": Object {
-        "count": 9754,
+        "count": 10952,
       },
-      "count": 4877,
+      "count": 5476,
     },
   },
   "~": Object {
@@ -6068,18 +6788,18 @@ Object {
     },
     "relasjon": Object {
       "_": Object {
-        "count": 25439,
+        "count": 23344,
         "erSubset": Object {
-          "count": 25439,
+          "count": 23344,
         },
         "kant": Object {
-          "count": 25439,
+          "count": 23344,
         },
         "kantRetur": Object {
-          "count": 25439,
+          "count": 23344,
         },
         "kode": Object {
-          "count": 25439,
+          "count": 23344,
         },
       },
       "count": 2865,
