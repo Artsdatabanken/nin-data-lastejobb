@@ -73,7 +73,7 @@ function fjernRelasjon(e, kode) {
 
 function kobleForvaltningsmyndighet(kode, e) {
   if (e.data.forvaltningsmyndighet !== "fylkesmann") return
-  const regexFylke = /VV_AO-(\d\d)/g
+  const regexFylke = /VV-AO-(\d\d)/g
   let fylke = []
   e.relasjon.forEach(r => {
     const match = regexFylke.exec(r.kode)
@@ -81,8 +81,8 @@ function kobleForvaltningsmyndighet(kode, e) {
   })
   //  if (kode === "VV_171") log.warn(fylke)
   if (fylke.length !== 1) return
-  relasjon(e, "forvaltes av", "VV_FM-FM-" + fylke[0], "forvalter")
-  fjernRelasjon(e, "VV_FM-FM")
+  relasjon(e, "forvaltes av", "VV-FM-FM-" + fylke[0], "forvalter")
+  fjernRelasjon(e, "VV-FM-FM")
 }
 
 function map(vo) {
@@ -119,8 +119,8 @@ function map(vo) {
     relasjon(e, "truet vurdering", kodeFraNavn(e.data.truetvurdering))
   }
 
-  if (e.data.iucn) relasjon(e, "iucn", "VV_PA-" + e.data.iucn)
-  relasjon(e, "ble vernet i år", "VV_VT-" + e.data.vernedato.substring(0, 4))
+  if (e.data.iucn) relasjon(e, "iucn", "VV-PA-" + e.data.iucn)
+  relasjon(e, "ble vernet i år", "VV-VT-" + e.data.vernedato.substring(0, 4))
   if (new Date(props.DATO_REVID).getFullYear() > 1900)
     e.data.revisjonsdato = props.DATO_REVID
 
@@ -129,8 +129,8 @@ function map(vo) {
     props.kommune.forEach(kommune => {
       const fnr = kommune.substring(0, 2)
       const knr = kommune.substring(2)
-      relasjon(e, "ligger i kommune", "VV_AO-" + fnr + "-" + knr)
-      relasjon(e, "ligger i fylke", "VV_AO-" + fnr)
+      relasjon(e, "ligger i kommune", "VV-AO-" + fnr + "-" + knr)
+      relasjon(e, "ligger i fylke", "VV-AO-" + fnr)
     })
   }
   kobleForvaltningsmyndighet(kode, e)
@@ -160,10 +160,10 @@ function finnManglendeNøkler(fn, prefiks) {
   })
 }
 
-finnManglendeNøkler(p => p.FORVALTNI, "VV_FM")
-finnManglendeNøkler(p => p.VERNEPLAN, "VV_VP")
-finnManglendeNøkler(p => p.VERNEFORM, "VV_VF")
-finnManglendeNøkler(p => p.TRUETVURD, "VV_TV")
+finnManglendeNøkler(p => p.FORVALTNI, "VV-FM")
+finnManglendeNøkler(p => p.VERNEPLAN, "VV-VP")
+finnManglendeNøkler(p => p.VERNEFORM, "VV-VF")
+finnManglendeNøkler(p => p.TRUETVURD, "VV-TV")
 
 if (manglerNøkler)
   log.warn(

@@ -11,8 +11,9 @@ let stats = io.lesDatafil("inn_statistikk")
 const r = {}
 
 stats.forEach(s => {
-  const kode = Object.keys(s)[0]
-  const sn = s[kode]
+  const skode = Object.keys(s)[0]
+  const kode = skode.replace("_", "-")
+  const sn = s[skode]
   r[kode] = {
     stats: {
       areal: sn.area,

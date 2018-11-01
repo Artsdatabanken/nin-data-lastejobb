@@ -1,10 +1,11 @@
-if (!process.env.DEBUG) process.env.DEBUG = "*"
 const path = require("path")
 const io = require("../../lib/io")
 const http = require("../../lib/http")
 const config = require("../../config")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
+
+// Leser fylkers navn fra SSB
 
 function mapFylker(kilde) {
   let r = {}

@@ -2,6 +2,8 @@ const config = require("../../config")
 const io = require("../../lib/io")
 const typesystem = require("@artsdatabanken/typesystem")
 
+// Leser prosedyrekategori for natursystem hovedtyper
+
 let hovedtyper = io.lesDatafil("na_hovedtype")
 
 const r = {}

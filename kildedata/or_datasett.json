@@ -1,9 +1,9 @@
 {
   "OR-AD": ["RL", "LA"],
-  "OR-KV": ["BS_8", "NA_I", "AO"],
+  "OR-KV": ["BS-8", "NA-I", "AO"],
   "OR-MD": ["NA", "VV", "BS"],
-  "OR-NB": ["NA_I"],
-  "OR-NI": ["BS_6SE", "BS_6SO"],
-  "OR-GU": ["MI_KA", "MI_BK"],
+  "OR-NB": ["NA-I"],
+  "OR-NI": ["BS-6SE", "BS-6SO"],
+  "OR-GU": ["MI-KA", "MI-BK"],
   "OR-SB": ["AO"]
 }

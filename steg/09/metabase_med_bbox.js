@@ -26,13 +26,13 @@ Object.keys(mbtiles).forEach(path => {
   const parts = path.split("/")
   if (parts.length < 3) return
   const klasse = parts[1]
-  const kode = parts[parts.length - 1]
+  const kode = parts[parts.length - 1].split("_").join("-")
   const mbtile = mbtiles[path]
   if (!tre[kode]) {
     log.warn("bbox for kode '" + kode + "', men koden eksisterer ikke")
     return
   }
-  const target = tre[kode.replace("_", "-")]
+  const target = tre[kode]
   if (mbtile.bounds) {
     // For now, no bounds for GeoJSON
     target.zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]

@@ -21,10 +21,11 @@ db.serialize(function() {
   db.run("BEGIN")
   Object.keys(data).forEach(kode => {
     // stmt.run(kode, 'compress(JSON.stringify(data[kode]))')
+    const payload = data[kode]["@"] || data[kode]
     db.run(
       "INSERT INTO meta (kode, verdi) VALUES (?,?)",
       kode,
-      compress(data[kode])
+      compress(payload)
     )
   })
   //  stmt.finalize()

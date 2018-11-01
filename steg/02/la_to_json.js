@@ -35,6 +35,7 @@ class CsvToJson {
 
     let r = {}
     for (let i = 0; i < record.length; i++) r[this.header[i]] = record[i].trim()
+    console.log(r)
     return r
   }
 }

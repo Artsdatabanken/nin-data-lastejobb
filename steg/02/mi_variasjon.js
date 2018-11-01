@@ -5,8 +5,8 @@ const log = require("log-less-fancy")()
 let koder = io.lesKildedatafil("mi")
 
 function kodefix(kode) {
-  if (!kode) return kode
-  kode = kode.toUpperCase()
+  if (!kode) return null
+  kode = kode.toUpperCase().replace("_", "-")
   if (kode.indexOf("BESYS") === 0)
     return kode.replace("BESYS", "BS-").replace("BS-0", "BS")
   if (kode === "LKM") return "MI"
