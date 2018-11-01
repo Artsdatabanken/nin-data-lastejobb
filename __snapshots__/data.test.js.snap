@@ -30,7 +30,7 @@ Object {
     "count": 180081,
     "delAv": Object {
       "_": Object {
-        "count": 1417531,
+        "count": 1417538,
       },
       "count": 180081,
     },
@@ -426,7 +426,7 @@ Object {
         },
         "count": 2934,
       },
-      "count": 4806,
+      "count": 4813,
       "definerer hovedtype": Object {
         "_": Object {
           "count": 594,
@@ -591,33 +591,33 @@ Object {
       },
       "publisererer": Object {
         "_": Object {
-          "count": 7,
+          "count": 14,
           "erSubset": Object {
-            "count": 7,
+            "count": 14,
           },
           "tittel": Object {
             "_": Object {
-              "count": 7,
+              "count": 14,
             },
-            "count": 7,
+            "count": 14,
           },
         },
-        "count": 4,
+        "count": 7,
       },
       "publiseres av": Object {
         "_": Object {
-          "count": 7,
+          "count": 14,
           "erSubset": Object {
-            "count": 7,
+            "count": 14,
           },
           "tittel": Object {
             "_": Object {
-              "count": 8,
+              "count": 15,
             },
-            "count": 7,
+            "count": 14,
           },
         },
-        "count": 6,
+        "count": 12,
       },
       "skilleart": Object {
         "_": Object {
@@ -892,7 +892,7 @@ Object {
         },
         "count": 2934,
       },
-      "count": 4806,
+      "count": 4813,
       "definerer hovedtype": Object {
         "_": Object {
           "count": 594,
@@ -1057,33 +1057,33 @@ Object {
       },
       "publisererer": Object {
         "_": Object {
-          "count": 7,
+          "count": 14,
           "erSubset": Object {
-            "count": 7,
+            "count": 14,
           },
           "tittel": Object {
             "_": Object {
-              "count": 7,
+              "count": 14,
             },
-            "count": 7,
+            "count": 14,
           },
         },
-        "count": 4,
+        "count": 7,
       },
       "publiseres av": Object {
         "_": Object {
-          "count": 7,
+          "count": 14,
           "erSubset": Object {
-            "count": 7,
+            "count": 14,
           },
           "tittel": Object {
             "_": Object {
-              "count": 8,
+              "count": 15,
             },
-            "count": 7,
+            "count": 14,
           },
         },
-        "count": 6,
+        "count": 12,
       },
       "skilleart": Object {
         "_": Object {
@@ -2150,7 +2150,7 @@ Object {
             },
             "count": 2865,
           },
-          "count": 3929,
+          "count": 3934,
           "definerer hovedtype": Object {
             "_": Object {
               "count": 299,
@@ -2261,18 +2261,36 @@ Object {
           },
           "publisererer": Object {
             "_": Object {
-              "count": 6,
+              "count": 13,
               "erSubset": Object {
-                "count": 6,
+                "count": 13,
               },
               "farge": Object {
-                "count": 6,
+                "count": 13,
               },
               "tittel": Object {
                 "_": Object {
-                  "count": 6,
+                  "count": 13,
                 },
-                "count": 6,
+                "count": 13,
+              },
+            },
+            "count": 7,
+          },
+          "publiseres av": Object {
+            "_": Object {
+              "count": 5,
+              "erSubset": Object {
+                "count": 5,
+              },
+              "farge": Object {
+                "count": 5,
+              },
+              "tittel": Object {
+                "_": Object {
+                  "count": 5,
+                },
+                "count": 5,
               },
             },
             "count": 4,
@@ -2505,7 +2523,7 @@ Object {
               },
               "count": 69,
             },
-            "count": 198,
+            "count": 200,
             "definisjonsgrunnlag": Object {
               "_": Object {
                 "count": 64,
@@ -2613,6 +2631,24 @@ Object {
                 },
               },
               "count": 66,
+            },
+            "publiseres av": Object {
+              "_": Object {
+                "count": 2,
+                "erSubset": Object {
+                  "count": 2,
+                },
+                "farge": Object {
+                  "count": 2,
+                },
+                "tittel": Object {
+                  "_": Object {
+                    "count": 2,
+                  },
+                  "count": 2,
+                },
+              },
+              "count": 2,
             },
             "truet vurdering": Object {
               "_": Object {
@@ -4960,7 +4996,7 @@ Object {
         },
         "count": 2934,
       },
-      "count": 4756,
+      "count": 4763,
       "definerer hovedtype": Object {
         "_": Object {
           "count": 449,
@@ -5125,33 +5161,33 @@ Object {
       },
       "publisererer": Object {
         "_": Object {
-          "count": 6,
+          "count": 13,
           "erSubset": Object {
-            "count": 6,
+            "count": 13,
           },
           "tittel": Object {
             "_": Object {
-              "count": 6,
+              "count": 13,
             },
-            "count": 6,
+            "count": 13,
           },
         },
-        "count": 4,
+        "count": 7,
       },
       "publiseres av": Object {
         "_": Object {
-          "count": 6,
+          "count": 13,
           "erSubset": Object {
-            "count": 6,
+            "count": 13,
           },
           "tittel": Object {
             "_": Object {
-              "count": 7,
+              "count": 14,
             },
-            "count": 6,
+            "count": 13,
           },
         },
-        "count": 5,
+        "count": 11,
       },
       "skilleart": Object {
         "_": Object {
@@ -5462,7 +5498,7 @@ Object {
         },
         "count": 2934,
       },
-      "count": 4806,
+      "count": 4813,
       "definerer hovedtype": Object {
         "_": Object {
           "count": 594,
@@ -5627,33 +5663,33 @@ Object {
       },
       "publisererer": Object {
         "_": Object {
-          "count": 7,
+          "count": 14,
           "erSubset": Object {
-            "count": 7,
+            "count": 14,
           },
           "tittel": Object {
             "_": Object {
-              "count": 7,
+              "count": 14,
             },
-            "count": 7,
+            "count": 14,
           },
         },
-        "count": 4,
+        "count": 7,
       },
       "publiseres av": Object {
         "_": Object {
-          "count": 7,
+          "count": 14,
           "erSubset": Object {
-            "count": 7,
+            "count": 14,
           },
           "tittel": Object {
             "_": Object {
-              "count": 8,
+              "count": 15,
             },
-            "count": 7,
+            "count": 14,
           },
         },
-        "count": 6,
+        "count": 12,
       },
       "skilleart": Object {
         "_": Object {
@@ -5958,7 +5994,7 @@ Object {
         },
         "count": 2934,
       },
-      "count": 4806,
+      "count": 4813,
       "definerer hovedtype": Object {
         "_": Object {
           "count": 594,
@@ -6123,33 +6159,33 @@ Object {
       },
       "publisererer": Object {
         "_": Object {
-          "count": 7,
+          "count": 14,
           "erSubset": Object {
-            "count": 7,
+            "count": 14,
           },
           "tittel": Object {
             "_": Object {
-              "count": 7,
+              "count": 14,
             },
-            "count": 7,
+            "count": 14,
           },
         },
-        "count": 4,
+        "count": 7,
       },
       "publiseres av": Object {
         "_": Object {
-          "count": 7,
+          "count": 14,
           "erSubset": Object {
-            "count": 7,
+            "count": 14,
           },
           "tittel": Object {
             "_": Object {
-              "count": 8,
+              "count": 15,
             },
-            "count": 7,
+            "count": 14,
           },
         },
-        "count": 6,
+        "count": 12,
       },
       "skilleart": Object {
         "_": Object {
