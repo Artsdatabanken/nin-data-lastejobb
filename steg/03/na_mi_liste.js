@@ -5,6 +5,8 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const config = require("../../config")
 
+// Lager liste av natursystemtyper og miljøvariabler
+
 let ninkoder = io.lesDatafil("na_kode")
 let variasjon = io.lesDatafil("mi_variasjon")
 let overrides = io.lesDatafil("na_overstyr_hierarki")
@@ -18,8 +20,8 @@ function skalMedISystemet(kode) {
   // Grunntyper utgår.. for no
   // Skal likevel med
   // if (typesystem.Natursystem.erGrunntype(kode)) return false
-  // Kartleggingsenheter B og D utgår
-  if (kode.match(/NA_.*-B-/g) || kode.match(/NA_.*-D-/g)) return false
+  // Kartleggingsenheter B og D utgår, men blir fjernet automatisk siden vi ikke har data der
+  // if (kode.match(/NA_.*-B-/g) || kode.match(/NA_.*-D-/g)) return false
   return true
 }
 

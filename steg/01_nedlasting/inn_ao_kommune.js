@@ -4,6 +4,8 @@ const http = require("../../lib/http")
 const typesystem = require("@artsdatabanken/typesystem")
 const config = require("../../config")
 
+// Leser kommuners navn fra SSB
+
 function parseSpråk(s) {
   switch (s) {
     case "Gáivuotna - Kåfjord - Kaivuono":

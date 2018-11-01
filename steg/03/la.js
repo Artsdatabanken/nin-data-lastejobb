@@ -17,7 +17,7 @@ hovedtyper.forEach(e => {
       if (verdi) {
         if (!ny.relasjoner) ny.relasjoner = []
         ny.relasjoner.push({
-          kode: "LA_" + verdi.replace("_", "-"),
+          kode: "LA-" + verdi.replace("_", "-"),
           kant: "definert av",
           kantRetur: "definerer"
         })
@@ -26,7 +26,8 @@ hovedtyper.forEach(e => {
   })
   ny.pred_lnr = e.pred_lnr
   ny.naturlandskap = e.naturlandskap
-  r[e.s_kode] = ny
+  const kode = e.s_kode.substring(0, 4) + "-" + e.s_kode.substring(4)
+  r[kode] = ny
 })
 
 /*

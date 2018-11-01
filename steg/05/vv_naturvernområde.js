@@ -120,7 +120,7 @@ function map(vo) {
   }
 
   if (e.data.iucn) relasjon(e, "iucn", "VV_PA-" + e.data.iucn)
-  relasjon(e, "ble vernet i år", "VV_VT-" + e.data.vernedato.substring(0, 4))
+  relasjon(e, "ble vernet i år", "VV-VT-" + e.data.vernedato.substring(0, 4))
   if (new Date(props.DATO_REVID).getFullYear() > 1900)
     e.data.revisjonsdato = props.DATO_REVID
 

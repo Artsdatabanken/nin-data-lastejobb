@@ -10,7 +10,7 @@ function fromCsv(csv) {
   if (!csv) return []
   return csv
     .split(",")
-    .map(kode => typesystem.miljøvariabel.prefiks + "_" + kode)
+    .map(kode => typesystem.miljøvariabel.prefiks + "-" + kode)
 }
 
 const prefiks = typesystem.natursystem.prefiks

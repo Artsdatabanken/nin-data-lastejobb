@@ -4,7 +4,7 @@ const log = require("log-less-fancy")()
 var shapefile = require("shapefile")
 const typesystem = require("@artsdatabanken/typesystem")
 
-// Konverter .shp til .json
+// Konverter verneområder i .shp til .json
 
 let r = {}
 
