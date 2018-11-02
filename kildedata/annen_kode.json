@@ -69,17 +69,17 @@
     "ingress": "Omfatter «variasjon i terrengets overflateformer som kan beskrives ved kontinuerlige variabler som for eksempel relativt relieff og terrengujevnhet».",
     "infoUrl": "https://artsdatabanken.no/Pages/182007"
   },
-  "MI-KA": {
+  "NA-MI-KA": {
     "ingress": "Innholdet av kalsium (’kalk’) og andre viktige plantenæringsstoffer i jorda, samt surhetsgraden (pH), er blant de aller viktigste miljøfaktorene i fastmark og våtmark. Økoklinen kalkinnhold (KA) beskriver samvariasjonen mellom disse faktorene – kalkrik jord er mindre sur og har høyere innhold av mange andre næringsstoffer enn sur jord. Variasjonen i næringsstoffer og pH påvirker både hvilke plantearter som kan trives på et sted og hvilke dyrearter som finnes i jord og vann. Man finner forskjellige planter på kalkrik jord og på sur jord, og blir vannet i innsjøer og elver for surt, er det mange fiskearter som ikke trives der lengre.",
     "infoUrl": "https://www.artsdatabanken.no/Pages/137908",
     "render": "underjord",
     "type": "gradient"
   },
-  "MI-KA-A": { "sortering": 1 },
-  "MI-KA-B": { "sortering": 2 },
-  "MI-KA-D": { "sortering": 3 },
-  "MI-KA-F": { "sortering": 4 },
-  "MI-KA-H": { "sortering": 5 },
+  "NA-MI-KA-A": { "sortering": 1 },
+  "NA-MI-KA-B": { "sortering": 2 },
+  "NA-MI-KA-D": { "sortering": 3 },
+  "NA-MI-KA-F": { "sortering": 4 },
+  "NA-MI-KA-H": { "sortering": 5 },
   "BS": {
     "tittel": { "nb": "Beskrivelse" },
     "ingress": "Variasjon som ikke kan beskrives ved hjelp av uLKM er sortert på ni grupper av Kilder til variasjon. Variasjonen langs disse beskrives ved bruk av variabler som er definert så presist som mulig, men som er delt i  klasser eller trinn uten noen direkte referanse til hvor mye variasjon i artssammensetning de gir opphav til.",

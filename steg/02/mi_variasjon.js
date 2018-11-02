@@ -10,7 +10,7 @@ function kodefix(kode) {
   if (kode.indexOf("BESYS") === 0)
     return kode.replace("BESYS", "NA-BS-").replace("BS0", "BS")
   if (kode === "LKM") return "MI"
-  if ("0123456789".indexOf(kode[0]) < 0) return "MI-" + kode
+  if ("0123456789".indexOf(kode[0]) < 0) return "NA-MI-" + kode
   return "NA-BS-" + kode
 }
 

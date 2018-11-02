@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@artsdatabanken/typesystem@^6.0.1":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/@artsdatabanken/typesystem/-/typesystem-6.0.1.tgz#ba673b5a67be10392a2dbc9bbaef408cf54bceab"
-  integrity sha512-lulzLEl5i1EKVupYTCnS0nKX4Rzbx8+D06RWY0r/GFvQF+s78355q7OLRRpS+h5LRO0F2lV7Z1WaZHH78fjVnw==
+"@artsdatabanken/typesystem@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@artsdatabanken/typesystem/-/typesystem-7.0.0.tgz#5d802028db8fd475dab15ad975281ca98cf88766"
+  integrity sha512-JM9VMgj7zc7iwSPZ4iGYX0EIdT8f5/0Wh/PaPhY0+kQdGFNNiC7oz/GUd+S3t7wNy3i2CY6BH+BlYs/siDWRxQ==
 
 "@babel/code-frame@^7.0.0":
   version "7.0.0"
