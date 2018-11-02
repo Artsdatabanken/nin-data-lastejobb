@@ -9,7 +9,7 @@ const barnAv = hierarki.barn
 const foreldreTil = hierarki.foreldre
 
 let ukjenteKoder = []
-
+let manglerKode = []
 zoomlevels(typesystem.rotkode)
 
 let tre = {}
@@ -21,6 +21,8 @@ settFargePåRelasjoner()
 
 if (ukjenteKoder.length > 0)
   log.warn("Kobling til +" + ukjenteKoder.length + " ukjente koder")
+if (Object.keys(manglerKode).length > 0)
+  log.warn("Mangler kode " + Object.keys(manglerKode))
 io.skrivDatafil(__filename, tre)
 
 function sti(kode) {
@@ -52,7 +54,7 @@ function nøstOppForfedre(forelderkey) {
   while (forelderkey) {
     let forelder = data[forelderkey]
     if (!forelder) {
-      log.warn("Mangler kode " + forelderkey)
+      manglerKode[forelderkey] = true
       return
     }
     r.push({ kode: forelderkey, tittel: forelder.tittel })

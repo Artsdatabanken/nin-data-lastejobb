@@ -25,47 +25,47 @@
     "infoUrl": "https://artsdatabanken.no/Pages/179717",
     "sortering": 3
   },
-  "BS-6SE": {
+  "NA-BS-6SE": {
     "tittel": { "nb": "Bioklimatisk seksjon" },
     "ingress": "Denne regionale komplekse miljøvariabelen fanger opp både humiditet og oseanitet. Bioklimatiske seksjoner er en av de aller viktigste regionale komplekse miljøvariablene også på global skala, der spennvidden i vegetasjonsformasjoner fra regnskog via steppe til ørken fanges opp av sju bioklimatiske seksjoner.",
     "infoUrl": "https://www.artsdatabanken.no/Pages/181900",
     "type": "gradient"
   },
-  "BS-6SO": {
+  "NA-BS-6SO": {
     "tittel": { "nb": "Bioklimatisk sone" },
     "ingress": "Bioklimatiske soner (BS) beskriver variasjon på land (og i ferskvann) relatert til varme. Alle organismer stiller krav til minstestemperatur for å overleve og for å reprodusere, og temperaturkravet varierer sterkt mellom arter. Alle arter har også en øvre toleransegrense for varme – blir det for varmt, stopper livsfunksjonene opp. Denne varmeøkoklinen er derfor på global basis en av de aller viktigste økoklinene, som forklarer arters utbredelse, breddegradsbestemt fordeling av klimasoner (tropisk, subtropisk, temperert, arktisk) og dominerende livsform (lauvtrær, bartrær, skogløse områder).",
     "infoUrl": "https://www.artsdatabanken.no/Pages/137992",
     "type": "gradient"
   },
-  "BS-1": {
+  "NA-BS-1": {
     "ingress": "Omfatter «de artene som lever sammen innenfor et gitt område» og beskrives ved å angi hvilke arter som forekommer og eventuelt også deres mengde.",
     "infoUrl": "https://artsdatabanken.no/Pages/179953"
   },
-  "BS-2": {
+  "NA-BS-2": {
     "ingress": "Dette er parallellen til artssammensetning, og omfatter «bergarter, mineraler, jordarter, jordsmonn og eventuelle fossiler som finnes innenfor et gitt område».",
     "infoUrl": "https://artsdatabanken.no/Pages/182002"
   },
-  "BS-3": {
+  "NA-BS-3": {
     "ingress": "Omfatter «mer eller mindre distinkt terrengform (overflateform på land eller utforming av bunnen i saltvanns- eller ferskvannssystemer) som kan gis en felles karakteristikk på grunnlag av egenskaper som ofte er forårsaket av én enkelt eller en kombinasjon av distinkte landformdannende (geomorfologiske) prosesser».",
     "infoUrl": "https://artsdatabanken.no/Pages/182003"
   },
-  "BS-4": {
+  "NA-BS-4": {
     "ingress": "Omfatter «fysisk observerbare, romlig avgrensete elementer som helt eller for det meste består av umodifiserte livsmedier og som ikke inngår i et natursystems vanlige bunn- eller marksystem».",
     "infoUrl": "https://artsdatabanken.no/Pages/182005"
   },
-  "BS-5": {
+  "NA-BS-5": {
     "ingress": "«Fysisk observerbare gjenstander som helt eller for det meste består av sterkt modifiserte eller syntetiske livsmedier og som er resultatet av menneskers virksomhet».",
     "infoUrl": "https://artsdatabanken.no/Pages/182004"
   },
-  "BS-6": {
+  "NA-BS-6": {
     "ingress": "Parallell variasjon i artssammensetning og makroklimafaktorer på grov romlig skala",
     "infoUrl": "https://artsdatabanken.no/Pages/182001"
   },
-  "BS-7": {
+  "NA-BS-7": {
     "ingress": "«Variasjon i miljøforhold som gir opphav til mønstre som er observerbare i et relativt kort tidsrom, typisk mindre enn 100(–200) år, og som ikke endrer det aktuelle systemets grunnleggende egenskaper, og den variasjonen i artssammensetning den gir opphav til».",
     "infoUrl": "https://artsdatabanken.no/Pages/182008"
   },
-  "BS-8": {
+  "NA-BS-8": {
     "ingress": "Omfatter «variasjon i terrengets overflateformer som kan beskrives ved kontinuerlige variabler som for eksempel relativt relieff og terrengujevnhet».",
     "infoUrl": "https://artsdatabanken.no/Pages/182007"
   },
