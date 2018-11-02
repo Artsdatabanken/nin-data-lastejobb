@@ -87,7 +87,8 @@ function map(key) {
       barn[ckey] = {
         tittel: cnode.tittel,
         sortering: cnode.sortering,
-        skjul: cnode.skjul
+        skjul: cnode.skjul,
+        farge: cnode.farge
       }
     })
   }

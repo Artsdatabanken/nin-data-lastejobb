@@ -7,7 +7,6 @@ let klg = io.lesDatafil("la_klg.csv.json")
 const r = {}
 
 klg.forEach(inn => {
-  console.log(inn)
   r["LA-" + hack(inn.field2)] = { tittel: { nb: inn.klg_navn } }
   r["LA-" + hack(inn.klg_trinn_kode)] = {
     tittel: { nb: inn.trinn_navn },
@@ -17,7 +16,6 @@ klg.forEach(inn => {
 })
 
 function hack(kode) {
-  console.log(kode)
   return kode
     .replace("RE-ID-KF", "RE-ID")
     .split("_")
