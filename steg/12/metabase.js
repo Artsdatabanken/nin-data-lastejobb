@@ -21,7 +21,6 @@ settFargePåRelasjoner()
 
 if (ukjenteKoder.length > 0)
   log.warn("Kobling til +" + ukjenteKoder.length + " ukjente koder")
-tre = { katalog: tre }
 io.skrivDatafil(__filename, tre)
 
 function sti(kode) {
@@ -82,6 +81,7 @@ function map(key) {
   let barn = {}
   if (barnAv[key]) {
     barnAv[key].forEach(ckey => {
+      if (erRelasjon(key, ckey)) return
       const cnode = data[ckey]
       if (!cnode) return
       barn[ckey] = {
@@ -94,6 +94,17 @@ function map(key) {
   }
   node.barn = barn
   return node
+}
+
+// Om den underliggende koden er definert som en relasjon
+function erRelasjon(key, ckey) {
+  const graf = data[key].graf
+  if (!graf) return false
+  for (var gkey in graf) {
+    const relasjon = graf[gkey]
+    for (var relkey in relasjon) if (relkey == ckey) return true
+  }
+  return false
 }
 
 function settInn(tre, node, kode) {
