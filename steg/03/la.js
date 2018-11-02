@@ -21,8 +21,8 @@ hovedtyper.forEach(e => {
     if (key.startsWith("klg_")) {
       const verdi = e[key]
       if (verdi) {
-        if (!ny.relasjoner) ny.relasjoner = []
-        ny.relasjoner.push({
+        if (!ny.relasjon) ny.relasjon = []
+        ny.relasjon.push({
           kode: "LA-" + hack(verdi),
           kant: "definert av",
           kantRetur: "definerer"
