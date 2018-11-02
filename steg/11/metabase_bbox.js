@@ -95,10 +95,10 @@ function harKartData(kode) {
     "MI-VR",
     "MI-VS",
     "MI-VT",
-    "BS-8",
-    "BS-2JM",
-    "BS-8ER",
-    "BS-8TH",
+    "NA-BS-8",
+    "NA-BS-2JM",
+    "NA-BS-8ER",
+    "NA-BS-8TH",
     "NA-HT-DG",
     "NA-HT-PK"
   ]

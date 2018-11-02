@@ -8,10 +8,10 @@ function kodefix(kode) {
   if (!kode) return null
   kode = kode.toUpperCase().replace("_", "-")
   if (kode.indexOf("BESYS") === 0)
-    return kode.replace("BESYS", "BS-").replace("BS-0", "BS")
+    return kode.replace("BESYS", "NA-BS-").replace("BS0", "BS")
   if (kode === "LKM") return "MI"
   if ("0123456789".indexOf(kode[0]) < 0) return "MI-" + kode
-  return "BS-" + kode
+  return "NA-BS-" + kode
 }
 
 let kodeliste = {}
