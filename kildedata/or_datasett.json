@@ -4,6 +4,6 @@
   "OR-MD": ["NA", "VV", "BS"],
   "OR-NB": ["NA-I"],
   "OR-NI": ["NA-BS-6SE", "NA-BS-6SO"],
-  "OR-GU": ["MI-KA", "MI-BK"],
+  "OR-GU": ["NA-MI-KA", "NA-MI-BK"],
   "OR-SB": ["AO"]
 }
