@@ -10,10 +10,7 @@ if (fs.existsSync(sqliteFilePath)) fs.unlinkSync(sqliteFilePath)
 
 let data = io.lesDatafil("metabase")
 
-const db = new sqlite3.Database(
-  sqliteFilePath,
-  sqlite3.OPEN_READWRITE | sqlite3.OPEN_CREATE
-)
+const db = new sqlite3.Database(sqliteFilePath)
 
 db.serialize(function() {
   db.run("CREATE TABLE meta(kode TEXT PRIMARY KEY, verdi BLOB);")
