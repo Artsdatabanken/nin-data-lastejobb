@@ -3,7 +3,7 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
-let inn = io.lesDatafil("full_med_rid")
+let inn = io.lesDatafil("full_med_graf")
 let ut = []
 
 Object.keys(inn).forEach(forelder => {
@@ -56,8 +56,7 @@ function eksporter(node, forfedre = [], nivå = 0) {
       kode: barn.kode,
       nivå: nivå,
       delAv: lagDelAv(barn, forfedre),
-      tittel: barn.tittel,
-      index: barn.index
+      tittel: barn.tittel
     }
     if (barn.min) rel.min = barn.min
     if (barn.max) rel.max = barn.max
