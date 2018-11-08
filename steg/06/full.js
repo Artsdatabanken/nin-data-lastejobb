@@ -62,31 +62,44 @@ flett("ar_taxon")
 flett("na_prosedyrekategori")
 flett("na_definisjonsgrunnlag")
 flett("statistikk")
-
+sjekkAtTitlerEksisterer()
+capsTitler()
 kobleForeldre()
 
-const notitle = []
-for (let key of Object.keys(r)) {
-  const node = r[key]
-  if (!node.se) {
-    if (!node.tittel) {
-      log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
-      notitle.push(key)
-    } else {
-      node.tittel = Object.entries(node.tittel).reduce((acc, e) => {
-        if (!e[1])
-          log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
-        acc[e[0]] = e[1]
-        return acc
-      }, {})
-      if (r[key].kode) log.warn("Har kode: ", key)
-    }
+function capsTitler() {
+  for (let key of Object.keys(r)) {
+    const tittel = r[key].tittel
+    Object.keys(tittel).forEach(lang => {
+      let tit = tittel[lang]
+      tittel[lang] = tit.replace(tit[0], tit[0].toUpperCase())
+    })
   }
 }
 
-if (notitle.length > 0) {
-  log.warn("Mangler tittel: " + notitle.join(", "))
-  notitle.forEach(key => delete r[key])
+function sjekkAtTitlerEksisterer() {
+  const notitle = []
+  for (let key of Object.keys(r)) {
+    const node = r[key]
+    if (!node.se) {
+      if (!node.tittel) {
+        log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
+        notitle.push(key)
+      } else {
+        node.tittel = Object.entries(node.tittel).reduce((acc, e) => {
+          if (!e[1])
+            log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
+          acc[e[0]] = e[1]
+          return acc
+        }, {})
+        if (r[key].kode) log.warn("Har kode: ", key)
+      }
+    }
+  }
+
+  if (notitle.length > 0) {
+    log.warn("Mangler tittel: " + notitle.join(", "))
+    notitle.forEach(key => delete r[key])
+  }
 }
 
 io.skrivDatafil(__filename, r)
