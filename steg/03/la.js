@@ -25,7 +25,8 @@ hovedtyper.forEach(e => {
         ny.relasjon.push({
           kode: "LA-" + hack(verdi),
           kant: "definert av",
-          kantRetur: "definerer"
+          kantRetur: "definerer",
+          erSubset: true
         })
       }
     }
