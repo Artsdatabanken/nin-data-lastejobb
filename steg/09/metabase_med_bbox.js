@@ -33,6 +33,13 @@ Object.keys(mbtiles).forEach(path => {
     return
   }
   const target = tre[kode]
+  if (mbtile.maxzoom) {
+    if (!target.viz) target.viz = {}
+    const viz = target.viz
+    if (!viz[klasse]) viz[klasse] = {}
+    viz[klasse].zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]
+    viz[klasse].format = mbtile.format
+  }
   if (mbtile.bounds) {
     // For now, no bounds for GeoJSON
     target.zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]
