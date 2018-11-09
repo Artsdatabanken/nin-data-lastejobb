@@ -8,7 +8,7 @@ script:
   - yarn build
   - yarn test
 before_deploy:
-  - git tag "$(date +'%Y%m%d-%H%M%S')-$(git log --format=%h -1)"
+  #  - git tag "$(date +'%Y%m%d-%H%M%S')-$(git log --format=%h -1)"
   - cd build
   - tar -zcf sqlite.tar.gz metabase.sqlite
   - tar -zcf postgres.tar.gz kodetre_postgres.json
@@ -21,7 +21,8 @@ deploy:
       - postgres.tar.gz
     skip_cleanup: true
   - provider: script
-    script: bash ../slack.sh "inside deploy"
+    #    script: bash ../slack.sh "inside deploy"
+    script: ls
     skip_cleanup: true
 after_deploy:
   provider: script
