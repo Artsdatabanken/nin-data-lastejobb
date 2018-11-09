@@ -13,20 +13,16 @@ before_deploy:
   - tar -zcf sqlite.tar.gz metabase.sqlite
   - tar -zcf postgres.tar.gz kodetre_postgres.json
 deploy:
-  - provider: releases
-    api_key: $GITHUB_TOKEN
-    file_glob: true
-    file:
-      - sqlite.tar.gz
-      - postgres.tar.gz
-    skip_cleanup: true
-  - provider: script
-    #    script: bash ../slack.sh "inside deploy"
-    script: ls
-    skip_cleanup: true
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file_glob: true
+  file:
+    - sqlite.tar.gz
+    - postgres.tar.gz
+  skip_cleanup: true
 after_deploy:
-  provider: script
-  script: echo "after deploy"
+  - echo "after deploy"
+  - bash ./slack ops deploy kverna
 notifications:
   slack:
     on_success: change
