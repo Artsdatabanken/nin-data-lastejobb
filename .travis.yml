@@ -22,6 +22,7 @@ deploy:
     skip_cleanup: true
   - provider: script
     script: bash ./slack.sh "inside deploy"
+
 after_deploy:
   provider: script
   script: bash ./slack.sh "after deploy"
