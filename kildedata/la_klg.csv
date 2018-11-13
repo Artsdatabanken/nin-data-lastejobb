@@ -23,7 +23,7 @@ KLG	RE-ID-KF	KLG_RE-ID-KF	Relieff i innlandsdal og fjordlandskap		4	dypt nedskå
 KLG	RE-ID-KF	KLG_RE-ID-KF	Relieff i innlandsdal og fjordlandskap		3	nedskåret	KLG_RE-ID-KF-3	> 0.13
 KLG	RE-ID-KF	KLG_RE-ID-KF	Relieff i innlandsdal og fjordlandskap		2	relativt åpen	KLG_RE-ID-KF-2	> 0.3
 KLG	RE-ID-KF	KLG_RE-ID-KF	Relieff i innlandsdal og fjordlandskap		1	åpen 	KLG_RE-ID-KF-1	> 0.5
-KLG	RE-IA	KLG_RE-IA	Relieff i innlandsås- og fjellandskap		5	tindepreg	KLG_RE-IA-5	tp1>125, hoh>300 and sink in inverse dem.
+KLG	RE-IA	KLG_RE-IA	Relieff i innlandsås- og fjellandskap		5	tindepreg	KLG_RE-IA-5	tp1>125 hoh>300 and sink in inverse dem.
 KLG	RE-IA	KLG_RE-IA	Relieff i innlandsås- og fjellandskap		4	kupert	KLG_RE-IA-4	RR>250
 KLG	RE-IA	KLG_RE-IA	Relieff i innlandsås- og fjellandskap		3	middels kupert 	KLG_RE-IA-3	250>RR>100
 KLG	RE-IA	KLG_RE-IA	Relieff i innlandsås- og fjellandskap		2	slakt til småkupert	KLG_RE-IA-2	RR<100
