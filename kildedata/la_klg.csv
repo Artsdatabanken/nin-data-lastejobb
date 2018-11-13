@@ -1,9 +1,9 @@
 Nivå	kode		KLG_Navn	Beskrivelse_KLG	Trinn	Trinn_navn	KLG_trinn_kode	verdier_klg_indekser
 KLG	AI	KLG_AI	Arealbruksintensitet		1	lav arealbruksintensitet	KLG_AI-1	<6
-KLG	AI	KLG_AI	Arealbruksintensitet		2	bebygde områder	KLG_AI-2	<11,7
+KLG	AI	KLG_AI	Arealbruksintensitet		2	bebygde områder	KLG_AI-2	<11.7
 KLG	AI	KLG_AI	Arealbruksintensitet		3	tettbebyggelse	KLG_AI-3	<13
 KLG	AI	KLG_AI	Arealbruksintensitet		4	by	KLG_AI-4	>13
-KLG	AI-KS	KLG_AI-KS	Arealbruksintensitet i kystslettelandskap		1	lav til middels arealbruksintensitet	KLG_AI-KS-1	<11,7
+KLG	AI-KS	KLG_AI-KS	Arealbruksintensitet i kystslettelandskap		1	lav til middels arealbruksintensitet	KLG_AI-KS-1	<11.7
 KLG	AI-KS	KLG_AI-KS	Arealbruksintensitet i kystslettelandskap		2	tettbebyggelse	KLG_AI-KS-2	<13
 KLG	AI-KS	KLG_AI-KS	Arealbruksintensitet i kystslettelandskap		3	by	KLG_AI-KS-3	>13
 KLG	BP	KLG_BP	Brepreg		1	ikke isbredominert	KLG_BP-1	< 0.25
