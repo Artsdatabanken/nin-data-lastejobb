@@ -26,27 +26,26 @@ Object.keys(mbtiles).forEach(path => {
   const parts = path.split("/")
   if (parts.length < 3) return
   const klasse = parts[1]
-  const kode = parts[parts.length - 1].split("_").join("-")
+  const kode = parts[parts.length - 1]
   const mbtile = mbtiles[path]
   if (!tre[kode]) {
     log.warn("bbox for kode '" + kode + "', men koden eksisterer ikke")
     return
   }
   const target = tre[kode]
+  if (!target.viz) target.viz = {}
+  const viz = target.viz
+  if (!viz[klasse]) viz[klasse] = {}
+  const cv = viz[klasse]
   if (mbtile.maxzoom) {
-    if (!target.viz) target.viz = {}
-    const viz = target.viz
-    if (!viz[klasse]) viz[klasse] = {}
-    viz[klasse].zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]
-    viz[klasse].format = mbtile.format
+    cv.zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]
   }
   if (mbtile.bounds) {
     // For now, no bounds for GeoJSON
-    target.zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]
+    cv.zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]
     target.bbox = avrund4d(mbtile.bounds)
   }
-  if (!target.formats) target.formats = {}
-  target.formats[klasse] = mbtile.format
+  if (mbtile.format) cv.format = mbtile.format
 })
 
 io.skrivDatafil(__filename, tre)
