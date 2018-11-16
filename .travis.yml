@@ -23,7 +23,7 @@ deploy:
 after_success:
   - echo "after success"
   - ls
-  - ./slack ops deploy kverna
+  - ./slack.sh ops deploy kverna
 notifications:
   slack:
     on_success: change
