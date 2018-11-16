@@ -20,9 +20,10 @@ deploy:
     - sqlite.tar.gz
     - postgres.tar.gz
   skip_cleanup: true
-after_deploy:
-  - echo "after deploy"
-  - bash ./slack ops deploy kverna
+after_success:
+  - echo "after success"
+  - ls
+  - ./slack ops deploy kverna
 notifications:
   slack:
     on_success: change
