@@ -21,9 +21,9 @@ deploy:
     - postgres.tar.gz
   skip_cleanup: true
 after_success:
-  - echo "after success"
+  - echo "0after success"
   - ls
-  - ./slack.sh ops deploy kverna
+  - ./slack.sh ops "deploy kverna"
 notifications:
   slack:
     on_success: change
