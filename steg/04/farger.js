@@ -16,11 +16,7 @@ function settFarge(kode, farge) {
   r[kode] = { farge: farge }
   const node = na[kode]
   if (node.foreldre) {
-    // if(kode===node.foreldre[0].kode) {
     log.warn("Mangler " + kode, node.foreldre[0])
-    //   return
-    // }
-
     node.foreldre.forEach(kode => settFarge(kode, farge))
   }
 }
