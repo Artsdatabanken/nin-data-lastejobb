@@ -3,7 +3,6 @@ const io = require("../../lib/io")
 
 let data = io.lesDatafil("metabase_med_bbox")
 const farger = io.lesDatafil("farger")
-
 let tempCounter = 0
 let tempColors = [
   "#d53e4f",
@@ -18,10 +17,9 @@ let tempColors = [
 
 function slåOppFarge(kode) {
   // Supersløvt prefiks oppslag
-  if (farger[kode]) return farger[kode]
-  for (let fkode of Object.keys(farger)) {
-    if (kode.startsWith(fkode)) return farger[fkode]
-  }
+  if (farger[kode]) return farger[kode].farge
+  for (let fkode of Object.keys(farger))
+    if (kode.startsWith(fkode)) return farger[fkode].farge
   return null
 }
 
