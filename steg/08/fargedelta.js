@@ -33,7 +33,6 @@ function blandDelta(kode) {
       total[2] += delta.vekt[2]
     } else delta.vekt = [0, 0, 0]
   }
-  console.log(total)
   const stack = []
   node.relasjon.forEach(relasjon => {
     const klg = relasjon.kode
@@ -50,7 +49,6 @@ function blandDelta(kode) {
     vekt: frac3d([1, 1, 1], total),
     kode: kode
   })
-  console.log("stack2", stack[stack.length - 1])
   const farge = mixer(stack)
   r[kode] = farge.toHslString()
 }
@@ -93,7 +91,6 @@ function HslVecToColor(vec) {
 }
 
 function mixer(stack) {
-  console.log("stack", stack)
   const vec = [0, 0, 0]
   stack.forEach(component => {
     const hsl = tinycolor(component.farge).toHsl()
