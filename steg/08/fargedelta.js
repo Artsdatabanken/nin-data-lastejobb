@@ -1,7 +1,8 @@
-const tinycolor = require("tinycolor2")
+const log = require("log-less-fancy")()
 const config = require("../../config")
 const io = require("../../lib/io")
 const typesystem = require("@artsdatabanken/typesystem")
+const blandFarger = require("../../lib/fargefunksjon")
 
 let farger = io.lesDatafil("farger")
 let la = io.lesDatafil("la.json")
@@ -22,7 +23,7 @@ function blandDelta(kode) {
     const klg = relasjon.kode
     const delta = farger[klg]
     if (!delta) {
-      console.warn("Mangler delta for " + klg)
+      log.warn("Mangler delta for " + klg)
       return
     }
     if (delta.vekt) {
@@ -49,8 +50,7 @@ function blandDelta(kode) {
     vekt: frac3d([1, 1, 1], total),
     kode: kode
   })
-  const farge = mixer(stack)
-  r[kode] = farge.toHslString()
+  r[kode] = blandFarger(stack)
 }
 
 function frac3d(part, total) {
@@ -70,35 +70,6 @@ function finnBasisfarge(kode) {
     if (farger[kode]) return farger[kode]
     kode = typesystem.forelder(kode)
   }
-}
-
-function colorToHslVec(color) {
-  const tc = tinycolor(color)
-  const hsl = tc.toHsl()
-  const h = hsl.h < 180 ? hsl.h : hsl.h - 360
-  const x = Math.cos((hsl.h / 180) * Math.PI) * hsl.s
-  const y = Math.sin((hsl.h / 180) * Math.PI) * hsl.s
-  const z = hsl.l
-  return [x, y, z]
-}
-
-function HslVecToColor(vec) {
-  const [x, y, z] = vec
-  const h = (Math.atan2(y, x) * 180) / Math.PI
-  const s = Math.sqrt(x * x + y * y)
-  const l = z
-  return tinycolor({ h: h > 0 ? h : h + 360, s: s, l: l })
-}
-
-function mixer(stack) {
-  const vec = [0, 0, 0]
-  stack.forEach(component => {
-    const hsl = tinycolor(component.farge).toHsl()
-    const xyz = colorToHslVec(hsl)
-    for (let i = 0; i < 3; i++) vec[i] += xyz[i] * component.vekt[i]
-  })
-  const r = HslVecToColor(vec)
-  return r
 }
 
 r = Object.assign(r, farger)
