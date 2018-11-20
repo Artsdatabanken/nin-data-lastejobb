@@ -9,8 +9,8 @@ function kodefix(kode) {
   kode = kode.toUpperCase().replace("_", "-")
   if (kode.indexOf("BESYS") === 0)
     return kode.replace("BESYS", "NA-BS-").replace("BS0", "BS")
-  if (kode === "LKM") return "MI"
-  if ("0123456789".indexOf(kode[0]) < 0) return "NA-MI-" + kode
+  if (kode === "LKM") return "LKM"
+  if ("0123456789".indexOf(kode[0]) < 0) return "NA-LKM-" + kode
   return "NA-BS-" + kode
 }
 
