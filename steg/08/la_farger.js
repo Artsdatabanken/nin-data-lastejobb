@@ -13,8 +13,6 @@ Object.keys(la).forEach(kode => {
   blandDelta(kode)
 })
 
-//blandDelta("LA-K-F-1")
-
 function blandDelta(kode) {
   const node = la[kode]
   if (!node.relasjon) return
@@ -50,7 +48,7 @@ function blandDelta(kode) {
     vekt: frac3d([1, 1, 1], total),
     kode: kode
   })
-  r[kode] = blandFarger(stack)
+  r[kode] = { farge: blandFarger(stack) }
 }
 
 function frac3d(part, total) {
@@ -72,5 +70,6 @@ function finnBasisfarge(kode) {
   }
 }
 
-r = Object.assign(r, farger)
+Object.keys(farger).forEach(kode => (r[kode] = farger[kode]))
+
 io.skrivDatafil(__filename, r)
