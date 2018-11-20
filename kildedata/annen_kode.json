@@ -25,18 +25,19 @@
         "kantRetur": "beskriver"
       },
       {
-        "kode": "NA-MI",
+        "kode": "NA-LKM",
         "kant": "lokal variasjon",
         "kantRetur": "naturtyper"
       }
     ]
   },
-  "NA-MI": {
+  "NA-LKM": {
     "tittel": { "nb": "Lokale komplekse miljøvariabler" },
     "ingress": "Lokale komplekse miljøvariabler (LKM) er definert som «variabler som hver består av flere enkeltmiljøvariabler som samvarierer i mer eller mindre sterk grad, og som gir opphav til variasjon i artssammensetning på relativt fin romlig skala og som har en virkning som vedvarer over relativt lang tid [typisk mer enn 100(–200) år]»",
     "infoUrl": "https://artsdatabanken.no/Pages/179717",
     "sortering": 3
   },
+
   "NA-BS-6SE": {
     "tittel": { "nb": "Bioklimatisk seksjon" },
     "ingress": "Denne regionale komplekse miljøvariabelen fanger opp både humiditet og oseanitet. Bioklimatiske seksjoner er en av de aller viktigste regionale komplekse miljøvariablene også på global skala, der spennvidden i vegetasjonsformasjoner fra regnskog via steppe til ørken fanges opp av sju bioklimatiske seksjoner.",
@@ -81,17 +82,90 @@
     "ingress": "Omfatter «variasjon i terrengets overflateformer som kan beskrives ved kontinuerlige variabler som for eksempel relativt relieff og terrengujevnhet».",
     "infoUrl": "https://artsdatabanken.no/Pages/182007"
   },
-  "NA-MI-KA": {
+  "NA-LKM-KA": {
     "ingress": "Innholdet av kalsium (’kalk’) og andre viktige plantenæringsstoffer i jorda, samt surhetsgraden (pH), er blant de aller viktigste miljøfaktorene i fastmark og våtmark. Økoklinen kalkinnhold (KA) beskriver samvariasjonen mellom disse faktorene – kalkrik jord er mindre sur og har høyere innhold av mange andre næringsstoffer enn sur jord. Variasjonen i næringsstoffer og pH påvirker både hvilke plantearter som kan trives på et sted og hvilke dyrearter som finnes i jord og vann. Man finner forskjellige planter på kalkrik jord og på sur jord, og blir vannet i innsjøer og elver for surt, er det mange fiskearter som ikke trives der lengre.",
     "infoUrl": "https://www.artsdatabanken.no/Pages/137908",
     "render": "underjord",
     "type": "gradient"
   },
-  "NA-MI-KA-A": { "sortering": 1 },
-  "NA-MI-KA-B": { "sortering": 2 },
-  "NA-MI-KA-D": { "sortering": 3 },
-  "NA-MI-KA-F": { "sortering": 4 },
-  "NA-MI-KA-H": { "sortering": 5 },
+  "NA-LKM-S3": {
+    "tittel": "Sedimentsortering",
+    "ingress": "Sedimentsortering er en flerdimensjonal lokal kompleks miljøvariabel (mLKM) som adresser hele spekteret av økologiske effekter av viktige prosesser knyttet til sedimentenes kornstørrelsesfordeling.",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/179770",
+    "render": "underjord",
+    "type": "gradient"
+  },
+  "NA-LKM-S3-E": {
+    "tittel": "Erosjonsmotstand",
+    "ingress": "Erosjonsmotstand er første «dimensjon» i S3-skjemaet fordi erosjonsmotstanden, eller eroderbarheten, anses som viktigste LKMg for å forklare variasjon i artssammensetning relatert til sedimentsammensetning. En presis definisjon av erosjonsmotstand er «et sediments evne til å motstå vannerosjon; målt som kritisk skjærstyrke, samt sedimentets evne til å motstå andre ytre påvirkninger slik det kommer til uttrykk gjennom sedimentets kornstørrelsesfordeling».",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/179771",
+    "render": "underjord",
+    "type": "gradient"
+  },
+  "NA-LKM-S3-E-0": {
+    "tittel": "ingen erosjonsmotstand",
+    "sortering": 1
+  },
+  "NA-LKM-S3-E-a": {
+    "tittel": "svært liten erosjonsmotstand",
+    "sortering": 2
+  },
+  "NA-LKM-S3-E-b": {
+    "tittel": "temmelig liten erosjonsmotstand",
+    "sortering": 3
+  },
+  "NA-LKM-S3-E-c": {
+    "tittel": "intermediær erosjonsmotstand",
+    "sortering": 4
+  },
+  "NA-LKM-S3-E-d": {
+    "tittel": "temmelig stor erosjonsmotstand",
+    "sortering": 5
+  },
+  "NA-LKM-S3-E-e": {
+    "tittel": "stor erosjonsmotstand",
+    "sortering": 6
+  },
+  "NA-LKM-S3-E-f": {
+    "tittel": "svært stor erosjonsmotstand",
+    "sortering": 7
+  },
+  "NA-LKM-S3-E-+": {
+    "tittel": "fast fjell",
+    "sortering": 8
+  },
+  "NA-LKM-S3-F": {
+    "tittel": "Finmaterialinnhold",
+    "ingress": "Finmaterialinnhold er viktig for å beskrive variasjon i  artssammensetningen fordi det på hvert trinn langs eroderbarhetsgradienten finnes finere og grovere sedimenter. Forskjellen mellom disse er avgjørende for sedimentenes innhold av gravende fauna (infauna) og påvekstorganismer (epifauna).",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/179772",
+    "render": "underjord",
+    "type": "gradient"
+  },
+  "NA-LKM-S3-F-0": {
+    "tittel": "uten finmateriale",
+    "sortering": 1
+  },
+  "NA-LKM-S3-F-a": {
+    "tittel": "finmaterialfattig",
+    "sortering": 2
+  },
+  "NA-LKM-S3-F-b": {
+    "tittel": "litt finmaterialrik",
+    "sortering": 2
+  },
+  "NA-LKM-S3-F-c": {
+    "tittel": "temmelig finmaterialrik",
+    "sortering": 3
+  },
+  "NA-LKM-S3-F-¤": {
+    "tittel": "finmaterialdominert",
+    "sortering": 4
+  },
+  "NA-LKM-KA-A": { "sortering": 1 },
+  "NA-LKM-KA-B": { "sortering": 2 },
+  "NA-LKM-KA-D": { "sortering": 3 },
+  "NA-LKM-KA-F": { "sortering": 4 },
+  "NA-LKM-KA-H": { "sortering": 5 },
   "NA-BS": {
     "tittel": { "nb": "Beskrivelsessystem" },
     "ingress": "Variasjon som ikke kan beskrives ved hjelp av uLKM er sortert på ni grupper av Kilder til variasjon. Variasjonen langs disse beskrives ved bruk av variabler som er definert så presist som mulig, men som er delt i  klasser eller trinn uten noen direkte referanse til hvor mye variasjon i artssammensetning de gir opphav til.",
