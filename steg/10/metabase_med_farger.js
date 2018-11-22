@@ -48,4 +48,5 @@ Object.keys(data).forEach(kode => {
   const node = data[kode]
   if (!node.farge) node.farge = "#afecaf"
 })
+
 io.skrivDatafil(__filename, data)
