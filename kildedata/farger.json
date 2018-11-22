@@ -194,21 +194,21 @@
   "LA-KLG-KA-1": { "farge": "hsl(86, 33%, 55%)", "vekt": [1, 1, 0] },
   "LA-KLG-KA-2": { "farge": "hsl(56, 33%, 55%)", "vekt": [1, 1, 0] },
 
-  "LA-KLG-AI-1": { "farge": "hsl(0, 0%, 50%)", "vekt": 0 },
+  "LA-KLG-AI-1": { "farge": "hsl(0, 0%, 100%)", "vekt": 0 },
   "LA-KLG-AI-2": { "farge": "hsl(0, 28%, 50%)", "vekt": [1, 0.5, 0] },
   "LA-KLG-AI-3": { "farge": "hsl(0, 39%, 50%)", "vekt": [0.5, 0.5, 0] },
   "LA-KLG-AI-4": { "farge": "hsl(0, 50%, 50%)", "vekt": [0.5, 0.5, 0] },
-  "LA-KLG-AI-KS-1": { "farge": "hsl(0, 0%, 50%)", "vekt": 0 },
+  "LA-KLG-AI-KS-1": { "farge": "hsl(0, 0%, 100%)", "vekt": 0 },
   "LA-KLG-AI-KS-2": { "farge": "hsl(0, 25%, 50%)", "vekt": [0.5, 0.5, 0] },
   "LA-KLG-AI-KS-3": { "farge": "hsl(0, 50%, 50%)", "vekt": [0.5, 0.5, 0] },
 
-  "LA-KLG-IP-1": { "farge": "hsl(205, 0%, 66%)", "vekt": 0 },
+  "LA-KLG-IP-1": { "farge": "hsl(105, 0%, 100%)", "vekt": 0 },
   "LA-KLG-IP-2": { "farge": "hsl(215, 25%, 66%)", "vekt": [1, 1, 0] },
   "LA-KLG-IP-3": { "farge": "hsl(215, 51%, 66%)", "vekt": [1, 1, 0] },
 
-  "LA-KLG-BP-1": { "farge": "hsl(0, 0%, 50%)", "vekt": 0 },
+  "LA-KLG-BP-1": { "farge": "hsl(0, 0%, 80%)", "vekt": 0 },
   "LA-KLG-BP-2": { "farge": "hsl(205, 30%, 100%)", "vekt": [1, 1, 1] },
 
-  "LA-KLG-JP-1": { "farge": "hsl(0, 0%, 66%)", "vekt": 0 },
+  "LA-KLG-JP-1": { "farge": "hsl(0, 0%, 100%)", "vekt": 0 },
   "LA-KLG-JP-2": { "farge": "hsl(46, 55%, 65%)", "vekt": [1, 1, 0] }
 }
