@@ -4,3 +4,4 @@ build/
 node_modules/
 .vscode/
 kildedata/raster_index.json
+log/
