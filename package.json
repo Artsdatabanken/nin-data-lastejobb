@@ -37,7 +37,7 @@
     "node-fetch": "^2.2.1",
     "polygon-lookup": "^2.4.0",
     "shapefile": "^0.6.6",
-    "sqlite3": "^4.0.3",
+    "sqlite3": "^4.0.4",
     "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
