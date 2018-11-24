@@ -32,7 +32,6 @@ function lagPalett(kode) {
 
 function fargeleggAlle(image, rotkode) {
   Object.keys(klg).forEach(klgKode => {
-    console.log(rotkode, klgKode)
     if (klgKode.startsWith(rotkode)) fargelegg(image, klgKode)
   })
 }
@@ -41,7 +40,7 @@ function fargelegg(image, klgKode) {
   const typer = lkm2type[klgKode]
   typer.forEach(type => {
     const index = koder[type]
-    if (index) settFarge(image, type, index)
+    if (index) settFarge(image, klgKode, index)
   })
 }
 
@@ -51,6 +50,6 @@ function settFarge(image, kode, x) {
     return
   }
   const color = Jimp.cssColorToHex(farger[kode].farge)
-  console.log(kode, x, color)
   image.setPixelColor(color, x, 0)
+  if (kode.startsWith("LA-KLG-JP")) console.log(x, kode, farger[kode].farge)
 }
