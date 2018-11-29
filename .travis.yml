@@ -14,7 +14,7 @@ before_deploy:
   - git tag "$(date +'%Y%m%d-%H%M%S')-$(git log --format=%h -1)"
   - cd build
   - tar -zcf sqlite.tar.gz metabase.sqlite
-  - tar -zcf postgres.tar.gz kodetre_postgres.json
+  - tar -zcf kodetre.tar.gz kodetre.json
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN

@@ -51,5 +51,4 @@ function settFarge(image, kode, x) {
   }
   const color = Jimp.cssColorToHex(farger[kode].farge)
   image.setPixelColor(color, x, 0)
-  if (kode.startsWith("LA-KLG-JP")) console.log(x, kode, farger[kode].farge)
 }
