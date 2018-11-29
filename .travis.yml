@@ -21,7 +21,7 @@ deploy:
   file_glob: true
   file:
     - sqlite.tar.gz
-    - postgres.tar.gz
+    - kodetre.tar.gz
   skip_cleanup: true
   on:
     branch: master
