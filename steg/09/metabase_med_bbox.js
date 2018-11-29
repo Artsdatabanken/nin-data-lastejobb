@@ -28,9 +28,8 @@ Object.keys(mbtiles).forEach(path => {
   const klasse = parts[1]
   const kode = parts[parts.length - 1].replace(".palette", "")
   const mbtile = mbtiles[path]
-  if (klasse === "indexed") console.log(klasse, kode, tre[kode])
   if (!tre[kode]) {
-    log.warn("bbox for kode '" + kode + "', men koden eksisterer ikke")
+    log.info("bbox for kode '" + kode + "', men koden eksisterer ikke")
     return
   }
   const target = tre[kode]
