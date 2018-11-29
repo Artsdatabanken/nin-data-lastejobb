@@ -19,6 +19,7 @@ function avrund4d(bounds) {
   return [ll, ur]
 }
 
+let ukjentBbox = 0
 // Forventer følgende katalogstruktur på tile serveren:
 // /kartkategori/?/?/kode
 // Dvs. at rotkatalog betraktes som klasse av data, eks. gradient eller trinn
@@ -28,11 +29,12 @@ Object.keys(mbtiles).forEach(path => {
   const klasse = parts[1]
   const kode = parts[parts.length - 1].replace(".palette", "")
   const mbtile = mbtiles[path]
-  if (klasse === "indexed") console.log(klasse, kode, tre[kode])
+
   if (!tre[kode]) {
-    log.warn("bbox for kode '" + kode + "', men koden eksisterer ikke")
+    ukjentBbox++
     return
   }
+
   const target = tre[kode]
   if (!target.viz) target.viz = {}
   const viz = target.viz
@@ -48,5 +50,8 @@ Object.keys(mbtiles).forEach(path => {
   }
   if (mbtile.format) cv.format = mbtile.format
 })
+
+if (ukjentBbox > 0)
+  log.info("bbox for '" + ukjentBbox + "' koder hvor koden ikke eksisterer.")
 
 io.skrivDatafil(__filename, tre)
