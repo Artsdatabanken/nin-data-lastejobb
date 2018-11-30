@@ -103,35 +103,35 @@
     "type": "gradient"
   },
   "NA-LKM-S3-E-0": {
-    "tittel": "ingen erosjonsmotstand",
+    "tittel": { "nb": "ingen erosjonsmotstand" },
     "sortering": 1
   },
   "NA-LKM-S3-E-a": {
-    "tittel": "svært liten erosjonsmotstand",
+    "tittel": { "nb": "svært liten erosjonsmotstand" },
     "sortering": 2
   },
   "NA-LKM-S3-E-b": {
-    "tittel": "temmelig liten erosjonsmotstand",
+    "tittel": { "nb": "temmelig liten erosjonsmotstand" },
     "sortering": 3
   },
   "NA-LKM-S3-E-c": {
-    "tittel": "intermediær erosjonsmotstand",
+    "tittel": { "nb": "intermediær erosjonsmotstand" },
     "sortering": 4
   },
   "NA-LKM-S3-E-d": {
-    "tittel": "temmelig stor erosjonsmotstand",
+    "tittel": { "nb": "temmelig stor erosjonsmotstand" },
     "sortering": 5
   },
   "NA-LKM-S3-E-e": {
-    "tittel": "stor erosjonsmotstand",
+    "tittel": { "nb": "stor erosjonsmotstand" },
     "sortering": 6
   },
   "NA-LKM-S3-E-f": {
-    "tittel": "svært stor erosjonsmotstand",
+    "tittel": { "nb": "svært stor erosjonsmotstand" },
     "sortering": 7
   },
   "NA-LKM-S3-E-+": {
-    "tittel": "fast fjell",
+    "tittel": { "nb": "fast fjell" },
     "sortering": 8
   },
   "NA-LKM-S3-F": {
@@ -142,23 +142,23 @@
     "type": "gradient"
   },
   "NA-LKM-S3-F-0": {
-    "tittel": "uten finmateriale",
+    "tittel": { "nb": "uten finmateriale" },
     "sortering": 1
   },
   "NA-LKM-S3-F-a": {
-    "tittel": "finmaterialfattig",
+    "tittel": { "nb": "finmaterialfattig" },
     "sortering": 2
   },
   "NA-LKM-S3-F-b": {
-    "tittel": "litt finmaterialrik",
+    "tittel": { "nb": "litt finmaterialrik" },
     "sortering": 2
   },
   "NA-LKM-S3-F-c": {
-    "tittel": "temmelig finmaterialrik",
+    "tittel": { "nb": "temmelig finmaterialrik" },
     "sortering": 3
   },
   "NA-LKM-S3-F-¤": {
-    "tittel": "finmaterialdominert",
+    "tittel": { "nb": "finmaterialdominert" },
     "sortering": 4
   },
   "NA-LKM-KA-A": { "sortering": 1 },
