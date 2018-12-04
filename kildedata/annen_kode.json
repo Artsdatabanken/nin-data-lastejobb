@@ -89,14 +89,14 @@
     "type": "gradient"
   },
   "NA-LKM-S3": {
-    "tittel": "Sedimentsortering",
+    "tittel": { "nb": "Sedimentsortering" },
     "ingress": "Sedimentsortering er en flerdimensjonal lokal kompleks miljøvariabel (mLKM) som adresser hele spekteret av økologiske effekter av viktige prosesser knyttet til sedimentenes kornstørrelsesfordeling.",
     "infoUrl": "https://www.artsdatabanken.no/Pages/179770",
     "render": "underjord",
     "type": "gradient"
   },
   "NA-LKM-S3-E": {
-    "tittel": "Erosjonsmotstand",
+    "tittel": { "nb": "Erosjonsmotstand" },
     "ingress": "Erosjonsmotstand er første «dimensjon» i S3-skjemaet fordi erosjonsmotstanden, eller eroderbarheten, anses som viktigste LKMg for å forklare variasjon i artssammensetning relatert til sedimentsammensetning. En presis definisjon av erosjonsmotstand er «et sediments evne til å motstå vannerosjon; målt som kritisk skjærstyrke, samt sedimentets evne til å motstå andre ytre påvirkninger slik det kommer til uttrykk gjennom sedimentets kornstørrelsesfordeling».",
     "infoUrl": "https://www.artsdatabanken.no/Pages/179771",
     "render": "underjord",
@@ -135,7 +135,7 @@
     "sortering": 8
   },
   "NA-LKM-S3-F": {
-    "tittel": "Finmaterialinnhold",
+    "tittel": { "nb": "Finmaterialinnhold" },
     "ingress": "Finmaterialinnhold er viktig for å beskrive variasjon i  artssammensetningen fordi det på hvert trinn langs eroderbarhetsgradienten finnes finere og grovere sedimenter. Forskjellen mellom disse er avgjørende for sedimentenes innhold av gravende fauna (infauna) og påvekstorganismer (epifauna).",
     "infoUrl": "https://www.artsdatabanken.no/Pages/179772",
     "render": "underjord",
