@@ -38,8 +38,6 @@ function addViz(klasse) {
   Object.keys(tre).forEach(xkode => {
     const path = `/${xkode.replace(/-/g, "/")}/${klasse}.3857.mbtiles`
     const mbtile = mbtiles[path]
-    if (xkode === "LA") console.log(xkode, path)
-    if (xkode === "LA") console.log(mbtile)
     if (!mbtile) return
 
     const target = tre[xkode]
@@ -57,7 +55,6 @@ function addViz(klasse) {
       target.bbox = avrund4d(mbtile.bounds)
     }
     if (mbtile.format) cv.format = mbtile.format
-    if (xkode === "LA") console.log(viz)
   })
 }
 
