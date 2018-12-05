@@ -3,7 +3,13 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
 let tre = io.lesDatafil("full_med_graf")
-let mbtiles = io.lesDatafil("inn_mbtiles")
+
+function readMbtiles() {
+  let mbtiles = io.lesDatafil("inn_mbtiles")
+  const r = {}
+  Object.keys(mbtiles).forEach(path => (r[path] = mbtiles[path]))
+  return r
+}
 
 function avrund1d(num) {
   return Math.round(parseFloat(num) * 1000) / 1000
@@ -23,33 +29,37 @@ let ukjentBbox = 0
 // Forventer følgende katalogstruktur på tile serveren:
 // /kartkategori/?/?/kode
 // Dvs. at rotkatalog betraktes som klasse av data, eks. gradient eller trinn
-Object.keys(mbtiles).forEach(path => {
-  const parts = path.split("/")
-  if (parts.length < 3) return
-  const klasse = parts[1]
-  const kode = parts[parts.length - 1].replace(".palette", "")
-  const mbtile = mbtiles[path]
+const mbtiles = readMbtiles()
 
-  if (!tre[kode]) {
-    ukjentBbox++
-    return
-  }
+const sourceTypes = ["vector", "raster.indexed"]
+sourceTypes.forEach(source => addViz(source))
 
-  const target = tre[kode]
-  if (!target.viz) target.viz = {}
-  const viz = target.viz
-  if (!viz[klasse]) viz[klasse] = {}
-  const cv = viz[klasse]
-  if (mbtile.maxzoom) {
-    cv.zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]
-  }
-  if (mbtile.bounds) {
-    // For now, no bounds for GeoJSON
-    cv.zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]
-    target.bbox = avrund4d(mbtile.bounds)
-  }
-  if (mbtile.format) cv.format = mbtile.format
-})
+function addViz(klasse) {
+  Object.keys(tre).forEach(xkode => {
+    const path = `/${xkode.replace(/-/g, "/")}/${klasse}.3857.mbtiles`
+    const mbtile = mbtiles[path]
+    if (xkode === "LA") console.log(xkode, path)
+    if (xkode === "LA") console.log(mbtile)
+    if (!mbtile) return
+
+    const target = tre[xkode]
+
+    if (!target.viz) target.viz = {}
+    const viz = target.viz
+    if (!viz[klasse]) viz[klasse] = {}
+    const cv = viz[klasse]
+    if (mbtile.maxzoom) {
+      cv.zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]
+    }
+    if (mbtile.bounds) {
+      // For now, no bounds for GeoJSON
+      cv.zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]
+      target.bbox = avrund4d(mbtile.bounds)
+    }
+    if (mbtile.format) cv.format = mbtile.format
+    if (xkode === "LA") console.log(viz)
+  })
+}
 
 if (ukjentBbox > 0)
   log.info("bbox for '" + ukjentBbox + "' koder hvor koden ikke eksisterer.")
