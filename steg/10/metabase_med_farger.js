@@ -3,6 +3,10 @@ const log = require("log-less-fancy")()
 const io = require("../../lib/io")
 const blandFarger = require("../../lib/fargefunksjon")
 
+/*
+Mix colors of child nodes to create colors for ancestor nodes missing colors
+*/
+
 let data = io.lesDatafil("metabase_med_bbox")
 let farger = io.lesDatafil("farger")
 const la_farger = io.lesDatafil("la_farger")
@@ -20,28 +24,35 @@ function barn(data) {
   return p2c
 }
 
-const blends = {}
-
 const p2c = barn(data)
-Object.keys(farger).forEach(kode => {
-  const farge_og_vekt = farger[kode]
-  const node = data[kode]
-  if (!node) return log.warn("Har farge for ukjent kode " + kode)
-  node.farge = farge_og_vekt.farge
-  node.foreldre.forEach(fkode => {
-    const forelder = data[fkode]
-    if (!forelder.farge) {
-      if (!blends[fkode]) blends[fkode] = []
-      blends[fkode].push(farge_og_vekt)
-    }
-  })
-})
 
-Object.keys(blends).forEach(kode => {
-  const blend = blends[kode]
-  const node = data[kode]
-  node.farge = blandFarger(blend)
-})
+function trickleColorsUp() {
+  const blends = {}
+  Object.keys(farger).forEach(kode => {
+    const farge_og_vekt = farger[kode]
+    const node = data[kode]
+    if (!node) return log.warn("Har farge for ukjent kode " + kode)
+    if (!node.farge) {
+      node.farge = farge_og_vekt.farge
+    }
+    node.foreldre.forEach(fkode => {
+      const forelder = data[fkode]
+      if (!farger[fkode]) {
+        if (!blends[fkode]) blends[fkode] = []
+        blends[fkode].push({ kode: kode, ...farge_og_vekt })
+      }
+    })
+  })
+
+  Object.keys(blends).forEach(kode => {
+    const blend = blends[kode]
+    const node = data[kode]
+    farger[kode] = { farge: blandFarger(blend) }
+  })
+  return Object.keys(blends).length > 0
+}
+
+while (trickleColorsUp()) {}
 
 // Fallback
 Object.keys(data).forEach(kode => {

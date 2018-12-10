@@ -41,18 +41,16 @@ function blandDelta(kode) {
   let farge = null
   switch (stack.length) {
     case 0:
-      farge = "hsl(255, 95%,50%)"
       break
     case 1:
-      farge = stack[0].farge
+      r[kode] = { farge: stack[0].farge }
       break
     default:
-      farge = blandFarger(stack)
+      r[kode] = { farge: blandFarger(stack) }
       break
   }
   //  if (tinycolor(farge).getBrightness() < 20) console.log(stack)
   //  if (tinycolor(farge).getBrightness() > 220) console.log(stack)
-  r[kode] = { farge: farge }
 }
 
 function normalize(stack) {
