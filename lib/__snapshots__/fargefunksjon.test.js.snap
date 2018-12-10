@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fargefunksjon mix saturation and color 1`] = `"hsl(120, 60%, 30%)"`;
