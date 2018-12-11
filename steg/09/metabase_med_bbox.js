@@ -58,7 +58,6 @@ function addViz(klasse) {
   })
 }
 
-if (ukjentBbox > 0)
-  log.info("bbox for '" + ukjentBbox + "' koder hvor koden ikke eksisterer.")
+if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
 
 io.skrivDatafil(__filename, tre)
