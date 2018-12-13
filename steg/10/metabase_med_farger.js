@@ -12,9 +12,6 @@ let farger = io.lesDatafil("farger")
 const la_farger = io.lesDatafil("la_farger")
 farger = Object.assign(farger, la_farger)
 
-console.log(data["NA-BS-6SO-1"])
-console.log(farger["NA-BS-6SO-1"])
-
 function barn(data) {
   const p2c = {}
   Object.keys(data).forEach(kode => {
@@ -36,7 +33,6 @@ function trickleColorsUp() {
     const node = data[kode]
     if (!node) return log.warn("Har farge for ukjent kode " + kode)
     if (!node.farge) {
-      if (kode === "NA-BS-6SO-1") console.log("_________", node.farge)
       node.farge = farge_og_vekt.farge
     }
     node.foreldre.forEach(fkode => {

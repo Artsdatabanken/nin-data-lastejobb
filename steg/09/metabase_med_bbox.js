@@ -37,10 +37,8 @@ sourceTypes.forEach(source => addViz(source))
 function addViz(klasse) {
   Object.keys(tre).forEach(xkode => {
     const path = `${xkode.replace(/-/g, "/")}/${klasse}.3857.mbtiles`
-    console.log(path)
     const mbtile = mbtiles[path]
     if (!mbtile) return
-    console.log("OKKK!")
 
     const target = tre[xkode]
 
