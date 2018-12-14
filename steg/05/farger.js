@@ -9,22 +9,18 @@ const tinycolor = require("tinycolor2")
 let r = {}
 
 function settFarger(kilde, mapper) {
+  if (!mapper) throw new Error("asdf")
   Object.keys(kilde).forEach(kode => {
-    let farge = kilde[kode]
-    if (mapper) farge = mapper(farge)
-    r[kode] = farge
+    let farge = mapper(kilde[kode])
+    r[kode] = farge.toHexString()
   })
 }
 
-const lighten20 = farge =>
-  tinycolor(farge)
-    .lighten(20)
-    .toHslString()
-
-const bareFargen = node => node.farge
+const bareFargen = node => tinycolor(node.farge)
+const lighten = node => tinycolor(node).lighten(20)
 
 settFarger(io.lesKildedatafil("farger"), bareFargen)
 settFarger(io.lesDatafil("la_farger"), bareFargen)
-settFarger(io.lesKildedatafil("farger_dominant", lighten20))
+settFarger(io.lesKildedatafil("farger_dominant"), lighten)
 
 io.skrivBuildfil(__filename, r)
