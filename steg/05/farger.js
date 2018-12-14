@@ -12,7 +12,7 @@ function settFarger(kilde, mapper) {
   Object.keys(kilde).forEach(kode => {
     let farge = kilde[kode]
     if (mapper) farge = mapper(farge)
-    r[kode] = { farge: farge }
+    r[kode] = farge
   })
 }
 
