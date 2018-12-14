@@ -21,8 +21,10 @@ const lighten20 = farge =>
     .lighten(20)
     .toHslString()
 
-settFarger(io.lesKildedatafil("farger"))
-settFarger(io.lesDatafil("la_farger"))
+const bareFargen = node => node.farge
+
+settFarger(io.lesKildedatafil("farger"), bareFargen)
+settFarger(io.lesDatafil("la_farger"), bareFargen)
 settFarger(io.lesKildedatafil("farger_dominant", lighten20))
 
 io.skrivBuildfil(__filename, r)
