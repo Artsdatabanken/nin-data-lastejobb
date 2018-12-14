@@ -1,0 +1,341 @@
+{
+  "NA": {
+    "tittel": { "nb": "Natursystem" },
+    "infoUrl": "https://www.artsdatabanken.no/Pages/222921",
+    "sortering": 1,
+    "farge": "hsl(120, 40%, 70%)",
+    "relasjon": [
+      {
+        "kode": "NA-BS",
+        "kant": "beskrevet av",
+        "kantRetur": "beskriver"
+      },
+      {
+        "kode": "NA-LKM",
+        "kant": "lokal variasjon",
+        "kantRetur": "naturtyper"
+      },
+      {
+        "kode": "NA-LSM",
+        "kant": "lokale egenskaper",
+        "kantRetur": "naturtyper"
+      }
+    ]
+  },
+  "NA-BS": {
+    "tittel": { "nb": "Beskrivelsessystem" },
+    "ingress": "Variasjon som ikke kan beskrives ved hjelp av uLKM er sortert på ni grupper av Kilder til variasjon. Variasjonen langs disse beskrives ved bruk av variabler som er definert så presist som mulig, men som er delt i  klasser eller trinn uten noen direkte referanse til hvor mye variasjon i artssammensetning de gir opphav til.",
+    "infoUrl": "https://artsdatabanken.no/Pages/179723",
+    "sortering": 2
+  },
+  "NA-LKM": {
+    "tittel": { "nb": "Lokale komplekse miljøvariabler" },
+    "ingress": "Lokale komplekse miljøvariabler (LKM) er definert som «variabler som hver består av flere enkeltmiljøvariabler som samvarierer i mer eller mindre sterk grad, og som gir opphav til variasjon i artssammensetning på relativt fin romlig skala og som har en virkning som vedvarer over relativt lang tid [typisk mer enn 100(–200) år]»",
+    "infoUrl": "https://artsdatabanken.no/Pages/179717",
+    "sortering": 3
+  },
+  "NA-LSM": {
+    "tittel": { "nb": "Lokale simple miljøvariabler" },
+    "ingress": "Lokale simple miljøvariabler (LSM) er enkeltmiljøvariabler som karakteriserer hovedtyper.",
+    "infoUrl": "",
+    "sortering": 4
+  },
+  "NA-LSM-X": {
+    "tittel": { "nb": "" },
+    "ingress": "",
+    "infoUrl": "",
+    "sortering": 1
+  },
+  "NA-LSM-X1": {
+    "tittel": { "nb": "På land" },
+    "ingress": "",
+    "infoUrl": "",
+    "sortering": 1,
+    "relasjon": [
+      {
+        "kode": "NA-T",
+        "kant": "definerer",
+        "kantRetur": "defineres av"
+      },
+      {
+        "kode": "NA-I",
+        "kant": "definerer",
+        "kantRetur": "defineres av"
+      },
+      {
+        "kode": "NA-V",
+        "kant": "definerer",
+        "kantRetur": "defineres av"
+      }
+    ]
+  },
+  "NA-LSM-X2": {
+    "tittel": { "nb": "I vann" },
+    "ingress": "...",
+    "infoUrl": "",
+    "sortering": 2,
+    "relasjon": [
+      {
+        "kode": "NA-F",
+        "kant": "definerer",
+        "kantRetur": "defineres av"
+      },
+      {
+        "kode": "NA-H",
+        "kant": "definerer",
+        "kantRetur": "defineres av"
+      },
+      {
+        "kode": "NA-L",
+        "kant": "definerer",
+        "kantRetur": "defineres av"
+      },
+      {
+        "kode": "NA-M",
+        "kant": "definerer",
+        "kantRetur": "defineres av"
+      }
+    ]
+  },
+  "NA-BS-6SE": {
+    "tittel": { "nb": "Bioklimatisk seksjon" },
+    "ingress": "Denne regionale komplekse miljøvariabelen fanger opp både humiditet og oseanitet. Bioklimatiske seksjoner er en av de aller viktigste regionale komplekse miljøvariablene også på global skala, der spennvidden i vegetasjonsformasjoner fra regnskog via steppe til ørken fanges opp av sju bioklimatiske seksjoner.",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/181900",
+    "type": "gradient"
+  },
+  "NA-BS-6SO": {
+    "tittel": { "nb": "Bioklimatisk sone" },
+    "ingress": "Bioklimatiske soner (BS) beskriver variasjon på land (og i ferskvann) relatert til varme. Alle organismer stiller krav til minstestemperatur for å overleve og for å reprodusere, og temperaturkravet varierer sterkt mellom arter. Alle arter har også en øvre toleransegrense for varme – blir det for varmt, stopper livsfunksjonene opp. Denne varmeøkoklinen er derfor på global basis en av de aller viktigste økoklinene, som forklarer arters utbredelse, breddegradsbestemt fordeling av klimasoner (tropisk, subtropisk, temperert, arktisk) og dominerende livsform (lauvtrær, bartrær, skogløse områder).",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/137992",
+    "type": "gradient"
+  },
+  "NA-BS-1": {
+    "ingress": "Omfatter «de artene som lever sammen innenfor et gitt område» og beskrives ved å angi hvilke arter som forekommer og eventuelt også deres mengde.",
+    "infoUrl": "https://artsdatabanken.no/Pages/179953"
+  },
+  "NA-BS-2": {
+    "ingress": "Dette er parallellen til artssammensetning, og omfatter «bergarter, mineraler, jordarter, jordsmonn og eventuelle fossiler som finnes innenfor et gitt område».",
+    "infoUrl": "https://artsdatabanken.no/Pages/182002"
+  },
+  "NA-BS-3": {
+    "ingress": "Omfatter «mer eller mindre distinkt terrengform (overflateform på land eller utforming av bunnen i saltvanns- eller ferskvannssystemer) som kan gis en felles karakteristikk på grunnlag av egenskaper som ofte er forårsaket av én enkelt eller en kombinasjon av distinkte landformdannende (geomorfologiske) prosesser».",
+    "infoUrl": "https://artsdatabanken.no/Pages/182003"
+  },
+  "NA-BS-4": {
+    "ingress": "Omfatter «fysisk observerbare, romlig avgrensete elementer som helt eller for det meste består av umodifiserte livsmedier og som ikke inngår i et natursystems vanlige bunn- eller marksystem».",
+    "infoUrl": "https://artsdatabanken.no/Pages/182005"
+  },
+  "NA-BS-5": {
+    "ingress": "«Fysisk observerbare gjenstander som helt eller for det meste består av sterkt modifiserte eller syntetiske livsmedier og som er resultatet av menneskers virksomhet».",
+    "infoUrl": "https://artsdatabanken.no/Pages/182004"
+  },
+  "NA-BS-6": {
+    "ingress": "Parallell variasjon i artssammensetning og makroklimafaktorer på grov romlig skala",
+    "infoUrl": "https://artsdatabanken.no/Pages/182001"
+  },
+  "NA-BS-7": {
+    "ingress": "«Variasjon i miljøforhold som gir opphav til mønstre som er observerbare i et relativt kort tidsrom, typisk mindre enn 100(–200) år, og som ikke endrer det aktuelle systemets grunnleggende egenskaper, og den variasjonen i artssammensetning den gir opphav til».",
+    "infoUrl": "https://artsdatabanken.no/Pages/182008"
+  },
+  "NA-BS-8": {
+    "ingress": "Omfatter «variasjon i terrengets overflateformer som kan beskrives ved kontinuerlige variabler som for eksempel relativt relieff og terrengujevnhet».",
+    "infoUrl": "https://artsdatabanken.no/Pages/182007"
+  },
+  "NA-LKM-BK": { "farge": "hsl(270, 70%, 60%)" },
+  "NA-LKM-KA": {
+    "ingress": "Innholdet av kalsium (’kalk’) og andre viktige plantenæringsstoffer i jorda, samt surhetsgraden (pH), er blant de aller viktigste miljøfaktorene i fastmark og våtmark. Økoklinen kalkinnhold (KA) beskriver samvariasjonen mellom disse faktorene – kalkrik jord er mindre sur og har høyere innhold av mange andre næringsstoffer enn sur jord. Variasjonen i næringsstoffer og pH påvirker både hvilke plantearter som kan trives på et sted og hvilke dyrearter som finnes i jord og vann. Man finner forskjellige planter på kalkrik jord og på sur jord, og blir vannet i innsjøer og elver for surt, er det mange fiskearter som ikke trives der lengre.",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/137908",
+    "render": "underjord",
+    "type": "gradient"
+  },
+  "NA-LKM-S3": {
+    "tittel": { "nb": "Sedimentsortering" },
+    "ingress": "Sedimentsortering er en flerdimensjonal lokal kompleks miljøvariabel (mLKM) som adresser hele spekteret av økologiske effekter av viktige prosesser knyttet til sedimentenes kornstørrelsesfordeling.",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/179770",
+    "render": "underjord",
+    "type": "gradient"
+  },
+  "NA-LKM-S3-E": {
+    "tittel": { "nb": "Erosjonsmotstand" },
+    "ingress": "Erosjonsmotstand er første «dimensjon» i S3-skjemaet fordi erosjonsmotstanden, eller eroderbarheten, anses som viktigste LKMg for å forklare variasjon i artssammensetning relatert til sedimentsammensetning. En presis definisjon av erosjonsmotstand er «et sediments evne til å motstå vannerosjon; målt som kritisk skjærstyrke, samt sedimentets evne til å motstå andre ytre påvirkninger slik det kommer til uttrykk gjennom sedimentets kornstørrelsesfordeling».",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/179771",
+    "render": "underjord",
+    "type": "gradient"
+  },
+  "NA-LKM-S3-E-0": {
+    "tittel": { "nb": "ingen erosjonsmotstand" },
+    "sortering": 1
+  },
+  "NA-LKM-S3-E-a": {
+    "tittel": { "nb": "svært liten erosjonsmotstand" },
+    "sortering": 2
+  },
+  "NA-LKM-S3-E-b": {
+    "tittel": { "nb": "temmelig liten erosjonsmotstand" },
+    "sortering": 3
+  },
+  "NA-LKM-S3-E-c": {
+    "tittel": { "nb": "intermediær erosjonsmotstand" },
+    "sortering": 4
+  },
+  "NA-LKM-S3-E-d": {
+    "tittel": { "nb": "temmelig stor erosjonsmotstand" },
+    "sortering": 5
+  },
+  "NA-LKM-S3-E-e": {
+    "tittel": { "nb": "stor erosjonsmotstand" },
+    "sortering": 6
+  },
+  "NA-LKM-S3-E-f": {
+    "tittel": { "nb": "svært stor erosjonsmotstand" },
+    "sortering": 7
+  },
+  "NA-LKM-S3-E-+": {
+    "tittel": { "nb": "fast fjell" },
+    "sortering": 8
+  },
+  "NA-LKM-S3-F": {
+    "tittel": { "nb": "Finmaterialinnhold" },
+    "ingress": "Finmaterialinnhold er viktig for å beskrive variasjon i  artssammensetningen fordi det på hvert trinn langs eroderbarhetsgradienten finnes finere og grovere sedimenter. Forskjellen mellom disse er avgjørende for sedimentenes innhold av gravende fauna (infauna) og påvekstorganismer (epifauna).",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/179772",
+    "render": "underjord",
+    "type": "gradient"
+  },
+  "NA-LKM-S3-F-0": {
+    "tittel": { "nb": "uten finmateriale" },
+    "sortering": 1
+  },
+  "NA-LKM-S3-F-a": {
+    "tittel": { "nb": "finmaterialfattig" },
+    "sortering": 2
+  },
+  "NA-LKM-S3-F-b": {
+    "tittel": { "nb": "litt finmaterialrik" },
+    "sortering": 2
+  },
+  "NA-LKM-S3-F-c": {
+    "tittel": { "nb": "temmelig finmaterialrik" },
+    "sortering": 3
+  },
+  "NA-LKM-S3-F-¤": {
+    "tittel": { "nb": "finmaterialdominert" },
+    "sortering": 4
+  },
+  "NA-LKM-KA-A": { "farge": "hsl(60, 44%, 95%)", "sortering": 1 },
+  "NA-LKM-KA-B": { "farge": "hsl(57, 50%, 90%)", "sortering": 2 },
+  "NA-LKM-KA-D": { "farge": "hsl(35, 56%, 85%)", "sortering": 3 },
+  "NA-LKM-KA-F": { "farge": "hsl(20, 62%, 80%)", "sortering": 4 },
+  "NA-LKM-KA-H": { "farge": "hsl(0, 68%, 75%)", "sortering": 5 },
+
+  "NA-T37-C-2": { "farge": "hsl(74, 7%, 70%)" },
+  "NA-T37-E-2": { "farge": "hsl(74, 7%, 70%)" },
+  "NA-T37": { "farge": "hsl(60, 3%, 64%)" },
+  "NA-T39-C-2": { "farge": "hsl(60, 4%, 65%)" },
+  "NA-T39-E-2": { "farge": "hsl(60, 4%, 65%)" },
+  "NA-T39": { "farge": "hsl(168, 2%, 74%)" },
+  "NA-T39-C-3": { "farge": "hsl(120, 1%, 75%)" },
+  "NA-T39-E-3": { "farge": "hsl(120, 1%, 75%)" },
+  "NA-T45-C-2": { "farge": "hsl(74, 29%, 73%)" },
+  "NA-T45-E-2": { "farge": "hsl(85, 40%, 59%)" },
+  "NA-T45": { "farge": "hsl(69, 35%, 62%)" },
+  "NA-T45-C-3": { "farge": "hsl(85, 40%, 59%)" },
+  "NA-T6-C-2": { "farge": "hsl(60, 2%, 52%)" },
+  "NA-T6-E-2": { "farge": "hsl(60, 2%, 52%)" },
+  "NA-T6": { "farge": "hsl(180, 2%, 73%)" },
+  "NA-V4-C-3": { "farge": "hsl(64, 28%, 61%)" },
+  "NA-V4-E-2": { "farge": "hsl(64, 28%, 61%)" },
+  "NA-V4": { "farge": "hsl(80, 18%, 67%)" },
+  "NA-T2-C-7": { "farge": "hsl(59, 41%, 46%)" },
+  "NA-T2-E-4": { "farge": "hsl(58, 13%, 67%)" },
+  "NA-T2": { "farge": "hsl(89, 11%, 66%)" },
+  "NA-T2-C-8": { "farge": "hsl(58, 13%, 67%)" },
+  "NA-T24-C-2": { "farge": "hsl(82, 25%, 65%)" },
+  "NA-T24-E-1": { "farge": "hsl(82, 25%, 65%)" },
+  "NA-T24": { "farge": "hsl(115, 5%, 70%)" },
+  "NA-T28-C-2": { "farge": "hsl(27, 17%, 56%)" },
+  "NA-T28-E-2": { "farge": "hsl(27, 17%, 56%)" },
+  "NA-T28": { "farge": "hsl(170, 3%, 80%)" },
+  "NA-T28-C-3": { "farge": "hsl(245, 5%, 75%)" },
+  "NA-T28-E-3": { "farge": "hsl(245, 5%, 75%)" },
+  "NA-T29-C-2": { "farge": "hsl(95, 9%, 57%)" },
+  "NA-T29-E-1": { "farge": "hsl(39, 6%, 69%)" },
+  "NA-T29": { "farge": "hsl(170, 3%, 80%)" },
+  "NA-T29-C-5": { "farge": "hsl(39, 6%, 69%)" },
+  "NA-T32-C-2": { "farge": "hsl(67, 17%, 60%)" },
+  "NA-T32-E-1": { "farge": "hsl(67, 17%, 60%)" },
+  "NA-T32": { "farge": "hsl(74, 24%, 61%)" },
+  "NA-T32-C-20": { "farge": "hsl(65, 24%, 77%)" },
+  "NA-T32-E-3": { "farge": "hsl(99, 23%, 72%)" },
+  "NA-T32-C-3": { "farge": "hsl(69, 20%, 65%)" },
+  "NA-T32-E-2": { "farge": "hsl(81, 23%, 62%)" },
+  "NA-T32-C-5": { "farge": "hsl(77, 33%, 64%)" },
+  "NA-T32-C-6": { "farge": "hsl(81, 23%, 62%)" },
+  "NA-T32-C-7": { "farge": "hsl(89, 30%, 65%)" },
+  "NA-T32-C-8": { "farge": "hsl(85, 33%, 62%)" },
+  "NA-T32-C-9": { "farge": "hsl(99, 23%, 72%)" },
+  "NA-T35-C-2": { "farge": "hsl(188, 7%, 65%)" },
+  "NA-T35-E-2": { "farge": "hsl(188, 7%, 65%)" },
+  "NA-T35": { "farge": "hsl(78, 23%, 64%)" },
+  "NA-T35-C-3": { "farge": "hsl(78, 23%, 64%)" },
+  "NA-T35-E-3": { "farge": "hsl(78, 23%, 64%)" },
+  "NA-T36-C-2": { "farge": "hsl(80, 4%, 70%)" },
+  "NA-T36-E-2": { "farge": "hsl(80, 4%, 70%)" },
+  "NA-T36": { "farge": "hsl(80, 4%, 70%)" },
+  "NA-T36-C-3": { "farge": "hsl(52, 11%, 81%)" },
+  "NA-T36-E-3": { "farge": "hsl(52, 11%, 81%)" },
+  "NA-V5-C-2": { "farge": "hsl(38, 12%, 61%)" },
+  "NA-V5-E-2": { "farge": "hsl(38, 12%, 61%)" },
+  "NA-V5": { "farge": "hsl(51, 6%, 69%)" },
+  "NA-V7-C-2": { "farge": "hsl(193, 13%, 55%)" },
+  "NA-V7-E-2": { "farge": "hsl(193, 13%, 55%)" },
+  "NA-V7": { "farge": "hsl(336, 2%, 68%)" },
+  "NA-T7-C-8": { "farge": "hsl(65, 29%, 60%)" },
+  "NA-T7-E-5": { "farge": "hsl(65, 29%, 60%)" },
+  "NA-T7": { "farge": "hsl(62, 16%, 57%)" },
+  "NA-F2": { "farge": "hsl(113, 7%, 65%)" },
+  "NA-F4": { "farge": "hsl(107, 5%, 53%)" },
+  "NA-F5": { "farge": "hsl(81, 13%, 65%)" },
+  "NA-H2": { "farge": "hsl(185, 4%, 72%)" },
+  "NA-L2": { "farge": "hsl(54, 5%, 61%)" },
+  "NA-L4": { "farge": "hsl(79, 15%, 60%)" },
+  "NA-L5": { "farge": "hsl(82, 29%, 59%)" },
+  "NA-L8": { "farge": "hsl(81, 13%, 65%)" },
+  "NA-M2": { "farge": "hsl(45, 8%, 50%)" },
+  "NA-M3": { "farge": "hsl(43, 14%, 61%)" },
+  "NA-M4": { "farge": "hsl(100, 1%, 79%)" },
+  "NA-M5": { "farge": "hsl(61, 30%, 63%)" },
+  "NA-M6": { "farge": "hsl(147, 9%, 60%)" },
+  "NA-M7": { "farge": "hsl(104, 16%, 65%)" },
+  "NA-M8": { "farge": "hsl(77, 19%, 46%)" },
+  "NA-M9": { "farge": "hsl(47, 6%, 49%)" },
+  "NA-T20": { "farge": "hsl(76, 9%, 68%)" },
+  "NA-T22": { "farge": "hsl(42, 19%, 67%)" },
+  "NA-T23": { "farge": "hsl(120, 6%, 64%)" },
+  "NA-T25": { "farge": "hsl(69, 18%, 63%)" },
+  "NA-T26": { "farge": "hsl(90, 1%, 79%)" },
+  "NA-T27": { "farge": "hsl(196, 11%, 65%)" },
+  "NA-T33": { "farge": "hsl(87, 23%, 66%)" },
+  "NA-T34": { "farge": "hsl(42, 25%, 70%)" },
+  "NA-T3": { "farge": "hsl(93, 4%, 70%)" },
+  "NA-T30": { "farge": "hsl(81, 8%, 55%)" },
+  "NA-T38": { "farge": "hsl(37, 14%, 53%)" },
+  "NA-T4": { "farge": "hsl(92, 41%, 47%)" },
+  "NA-T40": { "farge": "hsl(77, 31%, 58%)" },
+  "NA-T42": { "farge": "hsl(47, 4%, 70%)" },
+  "NA-T44": { "farge": "hsl(33, 24%, 73%)" },
+  "NA-T5": { "farge": "hsl(0, 0%, 59%)" },
+  "NA-T8": { "farge": "hsl(55, 17%, 50%)" },
+  "NA-T9": { "farge": "hsl(54, 26%, 65%)" },
+  "NA-V2": { "farge": "hsl(89, 17%, 61%)" },
+  "NA-V3": { "farge": "hsl(71, 12%, 65%)" },
+  "NA-V6": { "farge": "hsl(60, 1%, 72%)" },
+  "NA-V8": { "farge": "hsl(87, 8%, 65%)" },
+  "NA-V9": { "farge": "hsl(54, 12%, 72%)" },
+  "NA-H": { "farge": "hsl(190, 40%, 65%)" },
+  "NA-F": { "farge": "hsl(183, 76%, 74%)" },
+  "NA-T": { "farge": "hsl(105, 26%, 72%)" },
+  "NA-V": { "farge": "hsl(40, 52%, 82%)" },
+  "NA-I": { "farge": "hsl(180, 43%, 93%)" },
+  "NA-L": { "farge": "hsl(192, 48%, 74%)" },
+  "NA-M": { "farge": "hsl(221, 39%, 71%)" }
+}
