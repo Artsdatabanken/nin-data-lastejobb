@@ -8,7 +8,7 @@ Mix colors of child nodes to create colors for ancestor nodes missing colors
 */
 
 let data = io.lesDatafil("metabase_med_bbox")
-let farger = io.lesDatafil("farger")
+let farger = io.lesBuildfil("farger")
 const la_farger = io.lesDatafil("la_farger")
 farger = Object.assign(farger, la_farger)
 

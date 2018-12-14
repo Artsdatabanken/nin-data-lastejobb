@@ -14,6 +14,7 @@ before_deploy:
   - git tag "$(date +'%Y%m%d-%H%M%S')-$(git log --format=%h -1)"
   - cd build
   - tar -zcf sqlite.tar.gz metabase.sqlite
+  - tar -zcf farger.tar.gz farger.json
   - tar -zcf kodetre.tar.gz kodetre.json
 deploy:
   provider: releases
@@ -22,6 +23,7 @@ deploy:
   file:
     - sqlite.tar.gz
     - kodetre.tar.gz
+    - farger.tar.gz
   skip_cleanup: true
   on:
     branch: master
