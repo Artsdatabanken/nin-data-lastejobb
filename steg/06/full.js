@@ -45,6 +45,7 @@ function kobleForeldre() {
 }
 
 flettKildedata("annen_kode")
+flettKildedata("NA")
 flettKildedata("BS_6S")
 flettKildedata("vv_naturvernområde")
 flett("vv_naturvernområde")
@@ -71,7 +72,8 @@ function capsTitler() {
     const tittel = r[key].tittel
     Object.keys(tittel).forEach(lang => {
       let tit = tittel[lang]
-      tittel[lang] = tit.replace(tit[0], tit[0].toUpperCase())
+      if (tit) tittel[lang] = tit.replace(tit[0], tit[0].toUpperCase())
+      else log.warn("Mangler tittel: ", key)
     })
   }
 }

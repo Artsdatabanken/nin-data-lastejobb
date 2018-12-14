@@ -5,7 +5,7 @@ const typesystem = require("@artsdatabanken/typesystem")
 const blandFarger = require("../../lib/fargefunksjon")
 const tinycolor = require("tinycolor2")
 
-let farger = io.lesDatafil("farger")
+const farger = io.lesKildedatafil("farger")
 let la = io.lesDatafil("la.json")
 
 let r = {}
