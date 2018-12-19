@@ -164,34 +164,42 @@
   },
   "NA-LKM-S3-E-0": {
     "tittel": { "nb": "ingen erosjonsmotstand" },
+    "farge": "#fff7f3",
     "sortering": 1
   },
   "NA-LKM-S3-E-a": {
     "tittel": { "nb": "svært liten erosjonsmotstand" },
+    "farge": "#fde0dd",
     "sortering": 2
   },
   "NA-LKM-S3-E-b": {
     "tittel": { "nb": "temmelig liten erosjonsmotstand" },
+    "farge": "#fcc5c0",
     "sortering": 3
   },
   "NA-LKM-S3-E-c": {
     "tittel": { "nb": "intermediær erosjonsmotstand" },
+    "farge": "#fa9fb5",
     "sortering": 4
   },
   "NA-LKM-S3-E-d": {
     "tittel": { "nb": "temmelig stor erosjonsmotstand" },
+    "farge": "#f768a1",
     "sortering": 5
   },
   "NA-LKM-S3-E-e": {
     "tittel": { "nb": "stor erosjonsmotstand" },
+    "farge": "#dd3497",
     "sortering": 6
   },
   "NA-LKM-S3-E-f": {
     "tittel": { "nb": "svært stor erosjonsmotstand" },
+    "farge": "#ae017e",
     "sortering": 7
   },
   "NA-LKM-S3-E-+": {
     "tittel": { "nb": "fast fjell" },
+    "farge": "#7a0177",
     "sortering": 8
   },
   "NA-LKM-S3-F": {
@@ -203,22 +211,27 @@
   },
   "NA-LKM-S3-F-0": {
     "tittel": { "nb": "uten finmateriale" },
+    "farge": "#ffffcc",
     "sortering": 1
   },
   "NA-LKM-S3-F-a": {
     "tittel": { "nb": "finmaterialfattig" },
+    "farge": "#c2e699",
     "sortering": 2
   },
   "NA-LKM-S3-F-b": {
     "tittel": { "nb": "litt finmaterialrik" },
+    "farge": "#78c679",
     "sortering": 2
   },
   "NA-LKM-S3-F-c": {
     "tittel": { "nb": "temmelig finmaterialrik" },
+    "farge": "#31a354",
     "sortering": 3
   },
   "NA-LKM-S3-F-¤": {
     "tittel": { "nb": "finmaterialdominert" },
+    "farge": "#006837",
     "sortering": 4
   },
   "NA-LKM-KA-A": { "farge": "hsl(60, 44%, 95%)", "sortering": 1 },
