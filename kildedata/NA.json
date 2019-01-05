@@ -164,74 +164,245 @@
   },
   "NA-LKM-S3-E-0": {
     "tittel": { "nb": "ingen erosjonsmotstand" },
+    "ingress": "suspensjon",
+    "intervall": [
+      {
+        "minTekst": "",
+        "maxTekst": "",
+        "min": 0,
+        "max": 0,
+        "måleenhet": "mm"
+      }
+    ],
     "farge": "#fff7f3",
+    "gradientColor": "rgb(0,0,0)",
     "sortering": 1
   },
   "NA-LKM-S3-E-a": {
     "tittel": { "nb": "svært liten erosjonsmotstand" },
+    "ingress": "fin og middels sand, løst mudder",
+    "intervall": [
+      {
+        "tittel": "fin og middels sand; løst mudder",
+        "minTekst": "1/16",
+        "maxTekst": "1/2",
+        "min": 0.0625,
+        "max": 0.5,
+        "måleenhet": "mm"
+      }
+    ],
     "farge": "#fde0dd",
+    "gradientColor": "rgb(36,36,36)",
     "sortering": 2
   },
   "NA-LKM-S3-E-b": {
     "tittel": { "nb": "temmelig liten erosjonsmotstand" },
+    "ingress": "grov silt; grov sand",
+    "intervall": [
+      {
+        "tittel": "grov silt",
+        "minTekst": "1/64",
+        "maxTekst": "1/16",
+        "min": 0.015625,
+        "max": 0.0625,
+        "måleenhet": "mm"
+      },
+      {
+        "tittel": "grov sand",
+        "minTekst": "1/2",
+        "maxTekst": "4",
+        "min": 0.5,
+        "max": 4,
+        "måleenhet": "mm"
+      }
+    ],
     "farge": "#fcc5c0",
+    "gradientColor": "rgb(73,73,73)",
     "sortering": 3
   },
   "NA-LKM-S3-E-c": {
     "tittel": { "nb": "intermediær erosjonsmotstand" },
+    "ingress": "fin og middels silt; fin og middels grus",
+    "intervall": [
+      {
+        "tittel": "fin og middels silt",
+        "minTekst": "1/512",
+        "maxTekst": "1/64",
+        "min": 0.001953,
+        "max": 0.25,
+        "måleenhet": "mm"
+      },
+      {
+        "tittel": "fin og middels grus",
+        "minTekst": "4",
+        "maxTekst": "16",
+        "min": 4,
+        "max": 16,
+        "måleenhet": "mm"
+      }
+    ],
     "farge": "#fa9fb5",
+    "gradientColor": "rgb(109,109,109)",
     "sortering": 4
   },
   "NA-LKM-S3-E-d": {
     "tittel": { "nb": "temmelig stor erosjonsmotstand" },
+    "ingress": "leire; grov grus",
+    "intervall": [
+      {
+        "tittel": "leire",
+        "minTekst": "",
+        "maxTekst": "1/512",
+        "min": 0,
+        "max": 0.001953,
+        "måleenhet": "mm"
+      },
+      {
+        "tittel": "grov grus",
+        "minTekst": "16",
+        "maxTekst": "64",
+        "min": 16,
+        "max": 64,
+        "måleenhet": "mm"
+      }
+    ],
     "farge": "#f768a1",
+    "gradientColor": "rgb(145,145,145)",
     "sortering": 5
   },
   "NA-LKM-S3-E-e": {
     "tittel": { "nb": "stor erosjonsmotstand" },
+    "ingress": "fast leire; stein",
+    "intervall": [
+      {
+        "tittel": "fast leire",
+        "minTekst": "",
+        "maxTekst": "1/512",
+        "min": 0,
+        "max": 0.001953,
+        "måleenhet": "mm"
+      },
+      {
+        "tittel": "grov grus",
+        "minTekst": "64",
+        "maxTekst": "256",
+        "min": 64,
+        "max": 256,
+        "måleenhet": "mm"
+      }
+    ],
     "farge": "#dd3497",
+    "gradientColor": "rgb(181,181,181)",
     "sortering": 6
   },
   "NA-LKM-S3-E-f": {
     "tittel": { "nb": "svært stor erosjonsmotstand" },
+    "ingress": "blokker",
+    "intervall": [
+      {
+        "tittel": "blokker",
+        "minTekst": "256",
+        "maxTekst": "4096",
+        "min": 256,
+        "max": 4096,
+        "måleenhet": "mm"
+      }
+    ],
     "farge": "#ae017e",
+    "gradientColor": "rgb(218,218,218)",
     "sortering": 7
   },
   "NA-LKM-S3-E-+": {
     "tittel": { "nb": "fast fjell" },
+    "ingress": "",
+    "intervall": [
+      {
+        "tittel": "",
+        "minTekst": "4096",
+        "maxTekst": "",
+        "min": 4096,
+        "måleenhet": "mm"
+      }
+    ],
     "farge": "#7a0177",
+    "gradientColor": "rgb(254,254,254)",
     "sortering": 8
   },
   "NA-LKM-S3-F": {
     "tittel": { "nb": "Finmaterialinnhold" },
-    "ingress": "Finmaterialinnhold er viktig for å beskrive variasjon i  artssammensetningen fordi det på hvert trinn langs eroderbarhetsgradienten finnes finere og grovere sedimenter. Forskjellen mellom disse er avgjørende for sedimentenes innhold av gravende fauna (infauna) og påvekstorganismer (epifauna).",
+    "ingress": "Finmaterialinnhold er viktig for å beskrive variasjon i artssammensetningen fordi det på hvert trinn langs eroderbarhetsgradienten finnes finere og grovere sedimenter. Forskjellen mellom disse er avgjørende for sedimentenes innhold av gravende fauna (infauna) og påvekstorganismer (epifauna).",
     "infoUrl": "https://www.artsdatabanken.no/Pages/179772",
     "render": "underjord",
     "type": "gradient"
   },
   "NA-LKM-S3-F-0": {
     "tittel": { "nb": "uten finmateriale" },
+    "ingress": "suspensjon av løst finpartikulært materiale",
+    "intervall": {
+      "minTekst": "",
+      "maxTekst": "1",
+      "min": 0.0,
+      "max": 0.01,
+      "måleenhet": "% vektandel"
+    },
     "farge": "#ffffcc",
+    "gradientColor": "rgb(0,0,0)",
     "sortering": 1
   },
   "NA-LKM-S3-F-a": {
     "tittel": { "nb": "finmaterialfattig" },
+    "ingress": "suspensjon",
+    "intervall": {
+      "minTekst": "",
+      "maxTekst": "10",
+      "min": 0.0,
+      "max": 0.1,
+      "måleenhet": "% vektandel"
+    },
     "farge": "#c2e699",
+    "gradientColor": "rgb(64,64,64)",
     "sortering": 2
   },
   "NA-LKM-S3-F-b": {
     "tittel": { "nb": "litt finmaterialrik" },
+    "ingress": "suspensjon",
+    "intervall": {
+      "minTekst": "10",
+      "maxTekst": "30",
+      "min": 0.1,
+      "max": 0.3,
+      "måleenhet": "% vektandel"
+    },
     "farge": "#78c679",
+    "gradientColor": "rgb(127,127,127)",
     "sortering": 2
   },
   "NA-LKM-S3-F-c": {
     "tittel": { "nb": "temmelig finmaterialrik" },
+    "ingress": "suspensjon",
+    "intervall": {
+      "minTekst": "30",
+      "maxTekst": "60",
+      "min": 0.3,
+      "max": 0.6,
+      "måleenhet": "% vektandel"
+    },
     "farge": "#31a354",
+    "gradientColor": "rgb(191,191,191)",
     "sortering": 3
   },
   "NA-LKM-S3-F-¤": {
     "tittel": { "nb": "finmaterialdominert" },
+    "ingress": "suspensjon",
+    "intervall": {
+      "minTekst": "60",
+      "maxTekst": "",
+      "min": 0.6,
+      "max": 1.0,
+      "måleenhet": "% vektandel"
+    },
     "farge": "#006837",
+    "gradientColor": "rgb(254,254,254)",
     "sortering": 4
   },
   "NA-LKM-KA-A": { "farge": "hsl(60, 44%, 95%)", "sortering": 1 },
