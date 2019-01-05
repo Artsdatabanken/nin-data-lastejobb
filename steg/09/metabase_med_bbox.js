@@ -31,7 +31,7 @@ let ukjentBbox = 0
 // Dvs. at rotkatalog betraktes som klasse av data, eks. gradient eller trinn
 const mbtiles = readMbtiles()
 
-const sourceTypes = ["vector", "raster.indexed"]
+const sourceTypes = ["vector", "raster.indexed", "raster.gradient"]
 sourceTypes.forEach(source => addViz(source))
 
 function addViz(klasse) {
