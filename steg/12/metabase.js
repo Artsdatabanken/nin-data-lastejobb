@@ -89,6 +89,8 @@ function map(key) {
       barn[ckey] = {
         tittel: cnode.tittel,
         sortering: cnode.sortering,
+        intervall: cnode.intervall,
+        gradientColor: cnode.gradientColor,
         skjul: cnode.skjul,
         farge: cnode.farge
       }
