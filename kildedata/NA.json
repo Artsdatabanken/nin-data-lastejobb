@@ -353,9 +353,9 @@
     "tittel": { "nb": "finmaterialfattig" },
     "ingress": "suspensjon",
     "intervall": {
-      "minTekst": "",
+      "minTekst": "1",
       "maxTekst": "10",
-      "min": 0.0,
+      "min": 0.01,
       "max": 0.1,
       "måleenhet": "% vektandel"
     },
