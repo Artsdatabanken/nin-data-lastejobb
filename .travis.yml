@@ -25,6 +25,7 @@ deploy:
     - sqlite.tar.gz
     - kodetre.tar.gz
     - farger.tar.gz
+    - typer.tar.gz
   skip_cleanup: true
   on:
     branch: master
