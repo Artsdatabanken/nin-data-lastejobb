@@ -2,7 +2,7 @@ const config = require("../../config")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
-let tre = io.lesDatafil("full_med_graf")
+let tre = io.lesDatafil("full_med_bilder")
 
 function readMbtiles() {
   let mbtiles = io.lesDatafil("inn_mbtiles")
@@ -32,9 +32,9 @@ let ukjentBbox = 0
 const mbtiles = readMbtiles()
 
 const sourceTypes = ["vector", "raster.indexed", "raster.gradient"]
-sourceTypes.forEach(source => addViz(source))
+sourceTypes.forEach(source => addKartformat(source))
 
-function addViz(klasse) {
+function addKartformat(klasse) {
   Object.keys(tre).forEach(xkode => {
     const path = `${xkode.replace(/-/g, "/")}/${klasse}.3857.mbtiles`
     const mbtile = mbtiles[path]
@@ -42,10 +42,10 @@ function addViz(klasse) {
 
     const target = tre[xkode]
 
-    if (!target.viz) target.viz = {}
-    const viz = target.viz
-    if (!viz[klasse]) viz[klasse] = {}
-    const cv = viz[klasse]
+    if (!target.kartformat) target.kartformat = {}
+    const kartformat = target.kartformat
+    if (!kartformat[klasse]) kartformat[klasse] = {}
+    const cv = kartformat[klasse]
     if (mbtile.maxzoom) {
       cv.zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]
     }
