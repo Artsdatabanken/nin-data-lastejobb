@@ -16,6 +16,7 @@ before_deploy:
   - tar -zcf sqlite.tar.gz metabase.sqlite
   - tar -zcf farger.tar.gz farger.json
   - tar -zcf kodetre.tar.gz kodetre.json
+  - tar -zcf typer.tar.gz ??.json
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
