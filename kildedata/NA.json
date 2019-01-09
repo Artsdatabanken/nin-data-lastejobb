@@ -102,9 +102,15 @@
     "ingress": "Denne regionale komplekse miljøvariabelen fanger opp både humiditet og oseanitet. Bioklimatiske seksjoner er en av de aller viktigste regionale komplekse miljøvariablene også på global skala, der spennvidden i vegetasjonsformasjoner fra regnskog via steppe til ørken fanges opp av sju bioklimatiske seksjoner.",
     "infoUrl": "https://www.artsdatabanken.no/Pages/181900",
     "farge": "rgb(50,67,253)",
-    "type": "gradient",
-    "min": -5.1858,
-    "max": 4.6657
+    "kartformat": {
+      "raster.gradient": {
+        "visning": ["diskret", "kontinuerlig"],
+        "intervall": {
+          "original": [-5.1858, 4.6657],
+          "normalisertVerdi": [0, 255]
+        }
+      }
+    }
   },
   "NA-BS-6SO": {
     "tittel": { "nb": "Bioklimatisk sone" },
@@ -112,8 +118,15 @@
     "infoUrl": "https://www.artsdatabanken.no/Pages/137992",
     "farge": "rgb(253,194,111)",
     "type": "gradient",
-    "min": -4.7302,
-    "max": 4.3179
+    "kartformat": {
+      "raster.gradient": {
+        "visning": ["diskret", "kontinuerlig"],
+        "intervall": {
+          "original": [-4.7302, 4.3179],
+          "normalisertVerdi": [0, 255]
+        }
+      }
+    }
   },
   "NA-BS-1": {
     "ingress": "Omfatter «de artene som lever sammen innenfor et gitt område» og beskrives ved å angi hvilke arter som forekommer og eventuelt også deres mengde.",
@@ -151,22 +164,26 @@
   "NA-LKM-KA": {
     "ingress": "Innholdet av kalsium (’kalk’) og andre viktige plantenæringsstoffer i jorda, samt surhetsgraden (pH), er blant de aller viktigste miljøfaktorene i fastmark og våtmark. Økoklinen kalkinnhold (KA) beskriver samvariasjonen mellom disse faktorene – kalkrik jord er mindre sur og har høyere innhold av mange andre næringsstoffer enn sur jord. Variasjonen i næringsstoffer og pH påvirker både hvilke plantearter som kan trives på et sted og hvilke dyrearter som finnes i jord og vann. Man finner forskjellige planter på kalkrik jord og på sur jord, og blir vannet i innsjøer og elver for surt, er det mange fiskearter som ikke trives der lengre.",
     "infoUrl": "https://www.artsdatabanken.no/Pages/137908",
-    "render": "underjord",
     "type": "gradient"
   },
   "NA-LKM-S3": {
     "tittel": { "nb": "Sedimentsortering" },
     "ingress": "Sedimentsortering er en flerdimensjonal lokal kompleks miljøvariabel (mLKM) som adresser hele spekteret av økologiske effekter av viktige prosesser knyttet til sedimentenes kornstørrelsesfordeling.",
     "infoUrl": "https://www.artsdatabanken.no/Pages/179770",
-    "render": "underjord",
     "type": "gradient"
   },
   "NA-LKM-S3-E": {
     "tittel": { "nb": "Erosjonsmotstand" },
-    "ingress": "Erosjonsmotstand er første «dimensjon» i S3-skjemaet fordi erosjonsmotstanden, eller eroderbarheten, anses som viktigste LKMg for å forklare variasjon i artssammensetning relatert til sedimentsammensetning. En presis definisjon av erosjonsmotstand er «et sediments evne til å motstå vannerosjon; målt som kritisk skjærstyrke, samt sedimentets evne til å motstå andre ytre påvirkninger slik det kommer til uttrykk gjennom sedimentets kornstørrelsesfordeling».",
+    "ingress": "Sedimentets evne til å motstå vannerosjon; målt som kritisk skjærstyrke, samt sedimentets evne til å motstå andre ytre påvirkninger slik det kommer til uttrykk gjennom sedimentets kornstørrelsesfordeling».",
     "infoUrl": "https://www.artsdatabanken.no/Pages/179771",
-    "render": "underjord",
-    "type": "gradient"
+    "kartformat": {
+      "raster.gradient": {
+        "visning": ["klasser"],
+        "intervall": {
+          "normalisertVerdi": [0, 255]
+        }
+      }
+    }
   },
   "NA-LKM-S3-E-0": {
     "tittel": { "nb": "ingen erosjonsmotstand" },
@@ -182,6 +199,7 @@
     ],
     "farge": "#fff7f3",
     "gradientColor": "rgb(0,0,0)",
+    "normalisertVerdi": 0,
     "sortering": 1
   },
   "NA-LKM-S3-E-a": {
@@ -199,6 +217,7 @@
     ],
     "farge": "#fde0dd",
     "gradientColor": "rgb(36,36,36)",
+    "normalisertVerdi": 36,
     "sortering": 2
   },
   "NA-LKM-S3-E-b": {
@@ -224,6 +243,7 @@
     ],
     "farge": "#fcc5c0",
     "gradientColor": "rgb(73,73,73)",
+    "normalisertVerdi": 73,
     "sortering": 3
   },
   "NA-LKM-S3-E-c": {
@@ -249,6 +269,7 @@
     ],
     "farge": "#fa9fb5",
     "gradientColor": "rgb(109,109,109)",
+    "normalisertVerdi": 109,
     "sortering": 4
   },
   "NA-LKM-S3-E-d": {
@@ -274,6 +295,7 @@
     ],
     "farge": "#f768a1",
     "gradientColor": "rgb(145,145,145)",
+    "normalisertVerdi": 145,
     "sortering": 5
   },
   "NA-LKM-S3-E-e": {
@@ -299,6 +321,7 @@
     ],
     "farge": "#dd3497",
     "gradientColor": "rgb(181,181,181)",
+    "normalisertVerdi": 181,
     "sortering": 6
   },
   "NA-LKM-S3-E-f": {
@@ -316,6 +339,7 @@
     ],
     "farge": "#ae017e",
     "gradientColor": "rgb(218,218,218)",
+    "normalisertVerdi": 218,
     "sortering": 7
   },
   "NA-LKM-S3-E-+": {
@@ -332,14 +356,21 @@
     ],
     "farge": "#7a0177",
     "gradientColor": "rgb(254,254,254)",
+    "normalisertVerdi": 255,
     "sortering": 8
   },
   "NA-LKM-S3-F": {
     "tittel": { "nb": "Finmaterialinnhold" },
-    "ingress": "Finmaterialinnhold er viktig for å beskrive variasjon i artssammensetningen fordi det på hvert trinn langs eroderbarhetsgradienten finnes finere og grovere sedimenter. Forskjellen mellom disse er avgjørende for sedimentenes innhold av gravende fauna (infauna) og påvekstorganismer (epifauna).",
+    "ingress": "Organisk og uorganisk materiale med kornstørrelse < 1/16 mm (silt og leire). Finmaterialinnhold angis som vektprosentandel i sedimentet.",
     "infoUrl": "https://www.artsdatabanken.no/Pages/179772",
-    "render": "underjord",
-    "type": "gradient"
+    "kartformat": {
+      "raster.gradient": {
+        "visning": ["klasser"],
+        "intervall": {
+          "normalisertVerdi": [0, 255]
+        }
+      }
+    }
   },
   "NA-LKM-S3-F-0": {
     "tittel": { "nb": "uten finmateriale" },
@@ -353,6 +384,7 @@
     },
     "farge": "#ffffcc",
     "gradientColor": "rgb(0,0,0)",
+    "normalisertVerdi": 0,
     "sortering": 1
   },
   "NA-LKM-S3-F-a": {
@@ -367,6 +399,7 @@
     },
     "farge": "#c2e699",
     "gradientColor": "rgb(64,64,64)",
+    "normalisertVerdi": 64,
     "sortering": 2
   },
   "NA-LKM-S3-F-b": {
@@ -381,6 +414,7 @@
     },
     "farge": "#78c679",
     "gradientColor": "rgb(127,127,127)",
+    "normalisertVerdi": 127,
     "sortering": 2
   },
   "NA-LKM-S3-F-c": {
@@ -395,6 +429,7 @@
     },
     "farge": "#31a354",
     "gradientColor": "rgb(191,191,191)",
+    "normalisertVerdi": 191,
     "sortering": 3
   },
   "NA-LKM-S3-F-¤": {
@@ -409,6 +444,7 @@
     },
     "farge": "#006837",
     "gradientColor": "rgb(254,254,254)",
+    "normalisertVerdi": 254,
     "sortering": 4
   },
   "NA-LKM-KA-A": { "farge": "hsl(60, 44%, 95%)", "sortering": 1 },

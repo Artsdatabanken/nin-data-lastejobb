@@ -90,7 +90,7 @@ function map(key) {
         tittel: cnode.tittel,
         sortering: cnode.sortering,
         intervall: cnode.intervall,
-        gradientColor: cnode.gradientColor,
+        normalisertVerdi: cnode.normalisertVerdi,
         skjul: cnode.skjul,
         farge: cnode.farge
       }
