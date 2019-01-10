@@ -83,7 +83,6 @@ function normaliserGradientTrinn(bkode, barn, rgrad) {
   if (barn.normalisertVerdi) {
     const bv = barn.normalisertVerdi
     if (!Array.isArray(bv)) barn.normalisertVerdi = [bv, bv + 1]
-    console.log(barn)
     return
   }
   const intervall = barn.intervall
@@ -96,8 +95,8 @@ function normaliserGradientTrinn(bkode, barn, rgrad) {
   intervall.min = min
   intervall.max = max
   const span = tmax - tmin
-  const nmin = Math.trunc((255 * (min - tmin)) / span)
-  const nmax = Math.trunc((255 * (max - tmin)) / span)
+  const nmin = Math.trunc((256 * (min - tmin)) / span) - 1
+  const nmax = Math.trunc((256 * (max - tmin)) / span) - 1.001
   barn.normalisertVerdi = [nmin, nmax]
   log.debug("normalisert", bkode, "=>", barn.normalisertVerdi)
 }
