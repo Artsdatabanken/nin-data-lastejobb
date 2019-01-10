@@ -198,7 +198,6 @@
       }
     ],
     "farge": "#fff7f3",
-    "gradientColor": "rgb(0,0,0)",
     "normalisertVerdi": 0,
     "sortering": 1
   },
@@ -216,7 +215,6 @@
       }
     ],
     "farge": "#fde0dd",
-    "gradientColor": "rgb(36,36,36)",
     "normalisertVerdi": 36,
     "sortering": 2
   },
@@ -242,7 +240,6 @@
       }
     ],
     "farge": "#fcc5c0",
-    "gradientColor": "rgb(73,73,73)",
     "normalisertVerdi": 73,
     "sortering": 3
   },
@@ -268,7 +265,6 @@
       }
     ],
     "farge": "#fa9fb5",
-    "gradientColor": "rgb(109,109,109)",
     "normalisertVerdi": 109,
     "sortering": 4
   },
@@ -294,7 +290,6 @@
       }
     ],
     "farge": "#f768a1",
-    "gradientColor": "rgb(145,145,145)",
     "normalisertVerdi": 145,
     "sortering": 5
   },
@@ -320,7 +315,6 @@
       }
     ],
     "farge": "#dd3497",
-    "gradientColor": "rgb(181,181,181)",
     "normalisertVerdi": 181,
     "sortering": 6
   },
@@ -338,7 +332,6 @@
       }
     ],
     "farge": "#ae017e",
-    "gradientColor": "rgb(218,218,218)",
     "normalisertVerdi": 218,
     "sortering": 7
   },
@@ -355,8 +348,7 @@
       }
     ],
     "farge": "#7a0177",
-    "gradientColor": "rgb(254,254,254)",
-    "normalisertVerdi": 255,
+    "normalisertVerdi": 254,
     "sortering": 8
   },
   "NA-LKM-S3-F": {
@@ -383,7 +375,6 @@
       "måleenhet": "% vektandel"
     },
     "farge": "#ffffcc",
-    "gradientColor": "rgb(0,0,0)",
     "normalisertVerdi": 0,
     "sortering": 1
   },
@@ -398,7 +389,6 @@
       "måleenhet": "% vektandel"
     },
     "farge": "#c2e699",
-    "gradientColor": "rgb(64,64,64)",
     "normalisertVerdi": 64,
     "sortering": 2
   },
@@ -413,7 +403,6 @@
       "måleenhet": "% vektandel"
     },
     "farge": "#78c679",
-    "gradientColor": "rgb(127,127,127)",
     "normalisertVerdi": 127,
     "sortering": 2
   },
@@ -428,7 +417,6 @@
       "måleenhet": "% vektandel"
     },
     "farge": "#31a354",
-    "gradientColor": "rgb(191,191,191)",
     "normalisertVerdi": 191,
     "sortering": 3
   },
@@ -443,7 +431,6 @@
       "måleenhet": "% vektandel"
     },
     "farge": "#006837",
-    "gradientColor": "rgb(254,254,254)",
     "normalisertVerdi": 254,
     "sortering": 4
   },
