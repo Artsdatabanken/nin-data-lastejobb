@@ -1,9 +1,32 @@
 const config = require("../../config")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
+const typesystem = require("@artsdatabanken/typesystem")
 
-let tre = io.lesDatafil("full_med_bilder")
+let tre = io.lesDatafil("metabase_med_url")
 let hierarki = io.lesDatafil("kodehierarki")
+const barnAv = hierarki.barn
+
+let ukjentBbox = 0
+// Forventer følgende katalogstruktur på tile serveren:
+// /kartkategori/?/?/kode
+// Dvs. at rotkatalog betraktes som klasse av data, eks. gradient eller trinn
+const mapfiles = readMbtiles()
+const sourceTypes = [
+  { type: "polygon", suffix: "3857.mbtiles" },
+  { type: "raster.indexed", suffix: "3857.mbtiles" },
+  {
+    type: "raster.gradient",
+    suffix: "3857.mbtiles"
+  },
+  { type: "point", suffix: "4326.geojson" }
+]
+sourceTypes.forEach(source => addKartformat(source))
+normaliserGradienter()
+if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
+zoomlevels(typesystem.rotkode)
+
+io.skrivDatafil(__filename, tre)
 
 function readMbtiles() {
   let mbtiles = io.lesDatafil("inn_mbtiles")
@@ -26,37 +49,29 @@ function avrund4d(bounds) {
   return [ll, ur]
 }
 
-let ukjentBbox = 0
-// Forventer følgende katalogstruktur på tile serveren:
-// /kartkategori/?/?/kode
-// Dvs. at rotkatalog betraktes som klasse av data, eks. gradient eller trinn
-const mbtiles = readMbtiles()
-
-const sourceTypes = ["vector", "raster.indexed", "raster.gradient"]
-sourceTypes.forEach(source => addKartformat(source))
-normaliserGradienter()
-
-function addKartformat(klasse) {
+function addKartformat(source) {
+  const { type, suffix } = source
   Object.keys(tre).forEach(xkode => {
-    const path = `${xkode.replace(/-/g, "/")}/${klasse}.3857.mbtiles`
-    const mbtile = mbtiles[path]
-    if (!mbtile) return
-
+    const node = tre[xkode]
+    const path = `${node.url}/${type}.${suffix}`
+    const mapfile = mapfiles[path]
+    if (!mapfile) return
     const target = tre[xkode]
 
     if (!target.kartformat) target.kartformat = {}
     const kartformat = target.kartformat
-    if (!kartformat[klasse]) kartformat[klasse] = {}
-    const cv = kartformat[klasse]
-    if (mbtile.maxzoom) {
-      cv.zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]
+    if (!kartformat[type]) kartformat[type] = {}
+    const cv = kartformat[type]
+    cv.url = config.webserver + path
+    if (mapfile.maxzoom) {
+      cv.zoom = [parseInt(mapfile.minzoom), parseInt(mapfile.maxzoom)]
     }
-    if (mbtile.bounds) {
+    if (mapfile.bounds) {
       // For now, no bounds for GeoJSON
-      cv.zoom = [parseInt(mbtile.minzoom), parseInt(mbtile.maxzoom)]
-      target.bbox = avrund4d(mbtile.bounds)
+      cv.zoom = [parseInt(mapfile.minzoom), parseInt(mapfile.maxzoom)]
+      target.bbox = avrund4d(mapfile.bounds)
     }
-    if (mbtile.format) cv.format = mbtile.format
+    if (mapfile.format) cv.format = mapfile.format
   })
 }
 
@@ -80,6 +95,7 @@ function normaliserGradienter() {
 }
 
 function normaliserGradientTrinn(bkode, barn, rgrad) {
+  console.log(bkode)
   if (barn.normalisertVerdi) {
     const bv = barn.normalisertVerdi
     if (!Array.isArray(bv)) barn.normalisertVerdi = [bv, bv + 1]
@@ -101,6 +117,14 @@ function normaliserGradientTrinn(bkode, barn, rgrad) {
   log.debug("normalisert", bkode, "=>", barn.normalisertVerdi)
 }
 
-if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
-
-io.skrivDatafil(__filename, tre)
+function zoomlevels(kode, bbox, zoom) {
+  if (!barnAv[kode]) return
+  barnAv[kode].forEach(bkode => {
+    const barn = tre[bkode]
+    if (barn) {
+      barn.bbox = barn.bbox || bbox
+      barn.zoom = barn.zoom || zoom
+      if (!barn) console.error(kode, bbox, zoom, barnAv[kode])
+    }
+  })
+}

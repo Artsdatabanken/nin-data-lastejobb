@@ -7,7 +7,7 @@ const blandFarger = require("../../lib/fargefunksjon")
 Mix colors of child nodes to create colors for ancestor nodes missing colors
 */
 
-let data = io.lesDatafil("metabase_med_bbox")
+let data = io.lesDatafil("full_med_graf")
 let farger = io.lesBuildfil("farger")
 const la_farger = io.lesDatafil("la_farger")
 farger = Object.assign(farger, la_farger)

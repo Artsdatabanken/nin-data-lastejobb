@@ -3,6 +3,8 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
 let full = io.lesDatafil("full")
+Object.keys(full).forEach(kode => lagGrafkoblinger(kode, full[kode]))
+io.skrivDatafil(__filename, full)
 
 function tilBarn(node) {
   return {
@@ -47,9 +49,3 @@ function lagGrafkoblinger(kode, node) {
   })
   delete node.relasjon
 }
-
-Object.keys(full).forEach(key => {
-  lagGrafkoblinger(key, full[key])
-})
-
-io.skrivDatafil(__filename, full)

@@ -21,7 +21,7 @@ function lagKoder(kilde, nivå) {
   Object.keys(kilde).forEach(key => {
     const o = kilde[key]
     const e = {
-      tittel: { nb: "Naturvernområder i " + o.tittel.nb + " " + nivå }
+      tittel: { nb: "Naturvernområde i " + o.tittel.nb + " " + nivå }
     }
     if (nivå === "fylke") e.foreldre = ["VV-AO"]
     r["VV-" + key.replace("_", "-")] = e

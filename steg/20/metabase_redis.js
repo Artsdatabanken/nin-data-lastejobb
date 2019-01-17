@@ -6,7 +6,7 @@ const fs = require("fs")
 const REDIS = false
 if (!REDIS) return
 
-let data = io.lesDatafil("metabase")
+let data = io.lesDatafil("metabase_med_bbox")
 const dest = fs.createWriteStream("metabase.redis")
 Object.keys(data).forEach(key => {
   const value = JSON.stringify(data[key]).replace("'", "\\'")

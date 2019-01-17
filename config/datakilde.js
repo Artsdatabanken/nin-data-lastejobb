@@ -12,7 +12,7 @@ const datakilde = {
   ao_kommune_geom: "https://www.dropbox.com/s/cyi68l9mixg7bq7/LAU2018.zip?dl=1",
   statistikk:
     "https://test.artsdatabanken.no/data/json/codes/areasAndObservationsPerCode.json",
-  mbtiles: "http://maps.artsdatabanken.no/metadata.json"
+  mbtiles: "http://maps.artsdatabanken.no/index.json"
 }
 
 module.exports = datakilde

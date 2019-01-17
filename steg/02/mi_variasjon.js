@@ -9,7 +9,7 @@ function kodefix(kode) {
   kode = kode.toUpperCase().replace("_", "-")
   if (kode.indexOf("BESYS") === 0)
     return kode.replace("BESYS", "NA-BS-").replace("BS0", "BS")
-  if (kode === "LKM") return "LKM"
+  if (kode === "LKM") return "NA-LKM"
   if ("0123456789".indexOf(kode[0]) < 0) return "NA-LKM-" + kode
   return "NA-BS-" + kode
 }
@@ -21,7 +21,7 @@ function importerKoder() {
   for (let key of Object.keys(koder)) {
     const node = koder[key]
     const kode = kodefix(node.Kode.Id)
-    if (kode === "MI") node.Navn = "Miljøvariabel"
+    if (kode === "NA-LKM") node.Navn = "Lokale komplekse miljøvariabler"
     const tittel = node.Navn
     let o = {
       tittel: { nb: tittel }

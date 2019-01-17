@@ -41,10 +41,7 @@ function transform(record) {
     const value = record[i]
     if (value && !value.startsWith("Not_assigned")) r[header[i]] = value
   }
-  if (r.PK_LatinskNavnID === 4344) {
-    console.log(r.PK_LatinskNavnID)
-    console.log(JSON.stringify(r))
-  }
+
   if (!r["Hovedstatus"] in ["Gyldig", "Synonym"]) return
   // TODO: Fjern Underarter, varietet og form inntil videre
   if (r["Underart"]) return

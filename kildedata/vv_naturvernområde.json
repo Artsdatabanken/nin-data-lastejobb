@@ -161,6 +161,8 @@
   "VV-VT-2015": { "tittel": { "nb": "Vernet i år 2015" } },
   "VV-VT-2016": { "tittel": { "nb": "Vernet i år 2016" } },
   "VV-VT-2017": { "tittel": { "nb": "Vernet i år 2017" } },
+  "VV-VT-2018": { "tittel": { "nb": "Vernet i år 2018" } },
+  "VV-VT-2019": { "tittel": { "nb": "Vernet i år 2019" } },
   "VV-VF": {
     "tittel": { "nb": "Verneform" },
     "ingress": "Ulike typer vern sortert under forskjellig lovverk og/med tilhørende restriksjoner"
