@@ -4,13 +4,13 @@ const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
 let slettet_fordi_mangler_bbox = []
-let data = io.lesDatafil("metabase_med_farger")
+let tre = io.lesDatafil("metabase_kartformat")
 
-fjernKoderSomIkkeHarData(data)
-fjernRelasjonTilKoderSomIkkeHarData(data)
+fjernKoderSomIkkeHarData(tre)
+fjernRelasjonTilKoderSomIkkeHarData(tre)
 
 log.info("Mangler bbox for " + slettet_fordi_mangler_bbox.length + " koder")
-io.skrivDatafil(__filename, data)
+io.skrivDatafil(__filename, tre)
 io.skrivDatafil("mangler_data", slettet_fordi_mangler_bbox)
 
 function fjernKoderSomIkkeHarData(data) {
@@ -19,6 +19,12 @@ function fjernKoderSomIkkeHarData(data) {
     node.kode = kode
     if (!harKartData(kode)) {
       delete data[kode]
+      const forelderKode = node.overordnet[0].kode
+      const forelderNode = data[forelderKode]
+      if (forelderNode) {
+        // Kan allerede være slettet
+        delete forelderNode.barn[kode]
+      }
       slettet_fordi_mangler_bbox.push(kode)
     }
   })
@@ -29,10 +35,8 @@ function fjernRelasjonTilKoderSomIkkeHarData(data) {
     const node = data[parent]
     if (!node.graf) return
     Object.keys(node.graf).forEach(kode => {
-      Object.keys(node.graf[kode]).forEach(relatertKode => {
-        if (harKartData(relatertKode)) return
-        //      log.warn(`Fjerner relasjon til node som mangler data '${relatertKode}'`)
-        delete node.graf[kode][relatertKode]
+      node.graf.forEach(relasjon => {
+        relasjon.noder.filter(node => harKartData(node.kode))
       })
     })
   })
@@ -53,7 +57,9 @@ function harKartData(kode) {
   if (kode.indexOf("OR") === 0) return true
   if (kode.indexOf("NA-HT") === 0) return true
   if (kode.indexOf("LA") === 0) return true
-  if (!data[kode]) return false
+  // if (kode.indexOf("RL") === 0) return true
+  // if (kode.indexOf("FA") === 0) return true
+  if (!tre[kode]) return false
 
-  return data[kode].bbox
+  return !!tre[kode].bbox
 }

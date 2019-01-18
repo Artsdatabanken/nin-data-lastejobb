@@ -3,19 +3,19 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
-let data = io.lesDatafil("metabase_bbox")
+let tre = io.lesDatafil("metabase_med_farger")
 let hierarki = io.lesDatafil("kodehierarki")
 const barnAv = hierarki.barn
 const foreldreTil = hierarki.foreldre
 
 let ukjenteKoder = []
 let manglerKode = []
-zoomlevels(typesystem.rotkode)
 
-let tre = {}
-Object.keys(data).forEach(kode => (tre[kode] = map(kode)))
+Object.keys(tre).forEach(kode => mapOverordnet(kode))
+Object.keys(tre).forEach(kode => mapBarn(kode))
 
-lagRedirectFraTittel(tre)
+if (false) lagRedirectFraTittel(tre)
+
 fjernEnkeltVerneområder(tre)
 settFargePåRelasjoner()
 
@@ -23,6 +23,7 @@ if (ukjenteKoder.length > 0)
   log.warn("Kobling til +" + ukjenteKoder.length + " ukjente koder")
 if (Object.keys(manglerKode).length > 0)
   log.warn("Mangler kode " + Object.keys(manglerKode))
+
 io.skrivDatafil(__filename, tre)
 
 function sti(kode) {
@@ -33,17 +34,17 @@ function sti(kode) {
 }
 
 function settFargePåRelasjoner() {
-  Object.keys(data).forEach(kode => {
-    const node = data[kode]
+  Object.keys(tre).forEach(kode => {
+    const node = tre[kode]
     if (!node.graf) return
     Object.keys(node.graf).forEach(typeRelasjon => {
       Object.keys(node.graf[typeRelasjon]).forEach(kode => {
-        if (!data[kode]) {
+        if (!tre[kode]) {
           ukjenteKoder.push(kode)
           return
         }
         const sub = node.graf[typeRelasjon][kode]
-        sub.farge = data[kode].farge
+        sub.farge = tre[kode].farge
       })
     })
   })
@@ -52,22 +53,23 @@ function settFargePåRelasjoner() {
 function nøstOppForfedre(forelderkey) {
   let r = []
   while (forelderkey) {
-    let forelder = data[forelderkey]
+    let forelder = tre[forelderkey]
     if (!forelder) {
       manglerKode[forelderkey] = true
       return
     }
     r.push({ kode: forelderkey, tittel: forelder.tittel })
     const forfedre = foreldreTil[forelderkey]
-    if (!forfedre) return r
-    if (forfedre.length <= 0) return r
+    if (!forfedre) break
+    if (forfedre.length <= 0) break
     forelderkey = forfedre[0]
   }
   return r
 }
 
-function map(key) {
-  let node = data[key]
+function mapOverordnet(key) {
+  let node = tre[key]
+  if (key === "VV") log.warn(key, node)
   if (!node) throw new Error("Finner ikke " + key)
   if (!node.overordnet) {
     if (!node.foreldre) {
@@ -76,15 +78,18 @@ function map(key) {
     node.overordnet =
       node.foreldre && node.foreldre.length > 0
         ? nøstOppForfedre(node.foreldre[0])
-        : ""
+        : []
     delete node.foreldre
   }
+}
 
+function mapBarn(key) {
+  let node = tre[key]
   let barn = {}
   if (barnAv[key]) {
     barnAv[key].forEach(ckey => {
       if (erRelasjon(key, ckey)) return
-      const cnode = data[ckey]
+      const cnode = tre[ckey]
       if (!cnode) return
       barn[ckey] = {
         tittel: cnode.tittel,
@@ -97,16 +102,18 @@ function map(key) {
     })
   }
   node.barn = barn
-  return node
 }
 
 // Om den underliggende koden er definert som en relasjon
 function erRelasjon(key, ckey) {
-  const graf = data[key].graf
+  const graf = tre[key].graf
   if (!graf) return false
   for (var gkey in graf) {
     const relasjon = graf[gkey]
-    for (var relkey in relasjon) if (relkey == ckey) return true
+    for (var relkey in relasjon)
+      if (relkey == ckey) {
+        return true
+      }
   }
   return false
 }
@@ -130,7 +137,7 @@ function settInn(tre, node, kode) {
 }
 
 function injectAlias(from, kode, tre) {
-  const targetNode = data[kode]
+  const targetNode = tre[kode]
   const targetSti = sti(kode)
   if (targetSti === from.join("/").toLowerCase()) return
   for (let i = 0; i < from.length - 1; i++) {
@@ -160,8 +167,8 @@ function settInnAlias(tre, kode, tittel) {
 }
 
 function lagRedirectFraTittel(tre) {
-  Object.keys(data).forEach(kode => {
-    const node = data[kode]
+  Object.keys(tre).forEach(kode => {
+    const node = tre[kode]
     settInnAlias(tre, kode, node.tittel.nb)
     settInnAlias(tre, kode, node.tittel.la)
     settInnAlias(tre, kode, node.tittel.en)
@@ -171,21 +178,8 @@ function lagRedirectFraTittel(tre) {
 function fjernEnkeltVerneområder(tre) {
   // Fjern barn fra VV - for mange, bruk alternative ruter
   const vv = tre.VV.barn
-  const keys = Object.keys(vv)
-  const vid = /^VV-\d+$/
-  keys.forEach(kode => {
-    if (kode.match(vid)) delete vv[kode]
-  })
-}
-
-function zoomlevels(kode, bbox, zoom) {
-  if (!barnAv[kode]) return
-  barnAv[kode].forEach(bkode => {
-    const barn = data[bkode]
-    if (barn) {
-      barn.bbox = barn.bbox || bbox
-      barn.zoom = barn.zoom || zoom
-      if (!barn) console.error(kode, bbox, zoom, barnAv[kode])
-    }
-  })
+  const filter = /^VV-\d+$/
+  log.warn(tre.VV.length)
+  // TODO:
+  //  tre.VV.barn = vv.filter(x => !x.kode.match(filter))
 }

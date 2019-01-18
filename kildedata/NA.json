@@ -7,16 +7,16 @@
     "relasjon": [
       {
         "kode": "NA-BS",
-        "kant": "beskrevet av",
+        "kant": "beskrives av",
         "kantRetur": "beskriver"
       },
       {
         "kode": "NA-LKM",
-        "kant": "lokal variasjon",
-        "kantRetur": "naturtyper"
+        "kant": "inndelt ved hjelp av",
+        "kantRetur": "gir inndeling av"
       },
       {
-        "kode": "NA-LSM",
+        "kode": "NA-HT",
         "kant": "lokale egenskaper",
         "kantRetur": "naturtyper"
       }
@@ -41,7 +41,7 @@
     "sortering": 4
   },
   "NA-LSM-X": {
-    "tittel": { "nb": "" },
+    "tittel": { "nb": "X" },
     "ingress": "",
     "infoUrl": "",
     "sortering": 1

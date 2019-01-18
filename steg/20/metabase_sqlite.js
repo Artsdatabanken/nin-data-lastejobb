@@ -8,7 +8,7 @@ var zlib = require("zlib")
 const sqliteFilePath = config.getBuildPath("metabase", ".sqlite")
 if (fs.existsSync(sqliteFilePath)) fs.unlinkSync(sqliteFilePath)
 
-let data = io.lesDatafil("metabase")
+let data = io.lesBuildfil("metabase")
 
 const db = new sqlite3.Database(sqliteFilePath)
 
