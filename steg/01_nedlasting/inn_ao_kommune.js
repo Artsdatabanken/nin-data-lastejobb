@@ -1,4 +1,5 @@
 const path = require("path")
+const log = require("log-less-fancy")()
 const io = require("../../lib/io")
 const http = require("../../lib/http")
 const typesystem = require("@artsdatabanken/typesystem")
