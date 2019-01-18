@@ -15,13 +15,13 @@ function hack(kode) {
 
 hovedtyper.forEach(e => {
   const ny = {
-    tittel: { nb: e.name, en: e.field7 }
+    tittel: { nb: e.name, en: e.field7 },
+    relasjon: []
   }
   Object.keys(e).forEach(key => {
     if (key.startsWith("klg_")) {
       const verdi = e[key]
       if (verdi) {
-        if (!ny.relasjon) ny.relasjon = []
         ny.relasjon.push({
           kode: "LA-" + hack(verdi),
           kant: "definert av",
@@ -32,7 +32,13 @@ hovedtyper.forEach(e => {
     }
   })
   ny.pred_lnr = e.pred_lnr
-  ny.naturlandskap = e.naturlandskap === 1
+  const menneskeligPåvirkning = e.naturlandskap === 1 ? "LA-MP-NL" : "LA-MP-KL"
+  ny.relasjon.push({
+    kode: menneskeligPåvirkning,
+    kant: "menneskelig påvirkning",
+    kantRetur: "består av",
+    erSubset: true
+  })
   let kode = e.s_kode.substring(0, 4)
   if (e.s_kode.length > 4) kode += "-" + e.s_kode.substring(4)
   r[kode] = ny

@@ -1,0 +1,55 @@
+{
+  "LA": {
+    "tittel": { "nb": "Landskap" },
+    "ingress": "Landskapstypeinndelingen skiller mellom ulike typer av øko-landskap; enheter som kjennetegnes ved likheter i store landformer og terrengvariasjon, som bestemmer hvilke landskapsdel- og natursystem-typer som forekommer der.",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/10",
+    "relasjon": [
+      {
+        "kode": "LA-KLG",
+        "kant": "defineres av",
+        "kantRetur": "definerer"
+      }
+    ]
+  },
+  "LA-KLG": { "tittel": { "nb": "Landskapsgradient" } },
+  "LA-KLG-AI": {},
+  "LA-MP": {
+    "tittel": { "nb": "Menneskelig påvirkning" },
+    "relasjon": [
+      {
+        "kode": "LA",
+        "kant": "definerer",
+        "kantRetur": "menneskelig påvirkning"
+      },
+      {
+        "kode": "LA-KLG-AI",
+        "kant": "defineres av",
+        "kantRetur": "viser"
+      },
+      {
+        "kode": "LA-KLG-AI-KS",
+        "kant": "defineres av",
+        "kantRetur": "viser"
+      },
+      {
+        "kode": "LA-KLG-JP",
+        "kant": "defineres av",
+        "kantRetur": "viser"
+      }
+    ]
+  },
+  "LA-MP-NL": {
+    "tittel": { "nb": "Naturlandskap" },
+    "farge": "#91cf60",
+    "sortering": 1,
+    "ingress": "Naturlandskap brukes om landskap hvor de naturlige, økologiske prosesser er dominerende og hvor kulturpåvirkningen er liten og ubetydelig. Det kan være inngrep eller spor av inngrep, men økosystemet er lite endret.",
+    "infoUrl": "https://no.wikipedia.org/wiki/Naturlandskap"
+  },
+  "LA-MP-KL": {
+    "tittel": { "nb": "Kulturlandskap" },
+    "farge": "#fc8d59",
+    "sortering": 2,
+    "ingress": "Kulturlandskap er landskap som i større eller mindre grad er påvirka av mennesker.",
+    "infoUrl": "https://no.wikipedia.org/wiki/Kulturlandskap"
+  }
+}

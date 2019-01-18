@@ -69,7 +69,6 @@ function nøstOppForfedre(forelderkey) {
 
 function mapOverordnet(key) {
   let node = tre[key]
-  if (key === "VV") log.warn(key, node)
   if (!node) throw new Error("Finner ikke " + key)
   if (!node.overordnet) {
     if (!node.foreldre) {
