@@ -72,7 +72,7 @@ async function importKommuner() {
     `http://data.ssb.no/api/klass/v1/classifications/131/codes.json?from=${from}&to=${to}`,
     config.getCachePath("ssb") + "kommuner.json"
   )
-  return mapKommuner(kommuner)
+  return mapKommuner(kommuner.codes)
 }
 
 importKommuner()
