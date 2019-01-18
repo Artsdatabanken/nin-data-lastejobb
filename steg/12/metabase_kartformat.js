@@ -114,7 +114,7 @@ function normaliserGradientTrinn(bkode, barn, rgrad) {
   const nmin = Math.trunc((256 * (min - tmin)) / span) - 1
   const nmax = Math.trunc((256 * (max - tmin)) / span) - 1.001
   barn.normalisertVerdi = [nmin, nmax]
-  log.debug("normalisert", bkode, "=>", barn.normalisertVerdi)
+  //  log.debug("normalisert", bkode, "=>", barn.normalisertVerdi)
 }
 
 function zoomlevels(kode, bbox, zoom) {

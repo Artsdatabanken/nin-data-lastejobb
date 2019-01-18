@@ -1,7 +1,7 @@
 const Jimp = require("jimp")
 const io = require("../../lib/io")
 
-let koder = io.lesKildedatafil("la_index")
+let koder = io.lesKildedatafil("Natur_i_Norge/Landskap/la_index")
 let farger = io.lesDatafil("la_farger")
 let la = io.lesDatafil("la")
 let klg = io.lesDatafil("la_klg")

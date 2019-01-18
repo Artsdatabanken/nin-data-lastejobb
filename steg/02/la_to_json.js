@@ -39,8 +39,8 @@ class CsvToJson {
   }
 }
 
-importer("la.csv")
-importer("la_klg.csv")
+importer("Natur_i_Norge/Landskap/la.csv")
+importer("Natur_i_Norge/Landskap/la_klg.csv")
 
 function importer(csvFil) {
   const kildefil = config.kildedataPath + "/" + csvFil
