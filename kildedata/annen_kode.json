@@ -9,49 +9,5 @@
     "tittel": { "nb": "Fylke" },
     "utenRamme": true,
     "sortering": 6
-  },
-  "OR": {
-    "tittel": { "nb": "Datakilde" },
-    "utenRamme": true,
-    "ingress": "...",
-    "sortering": 7
-  },
-  "LI": { "tittel": { "nb": "Livsmedium" } },
-  "FA": { "tittel": { "nb": "Fremmed art" } },
-  "FA-SE": { "tittel": { "nb": "Svært høy risiko" } },
-  "FA-HI": { "tittel": { "nb": "Høy risiko" } },
-  "FA-PH": { "tittel": { "nb": "Potensielt høy risiko" } },
-  "FA-LO": { "tittel": { "nb": "Lav risiko" } },
-  "FA-NK": { "tittel": { "nb": "Ingen kjent risiko" } },
-  "LI-MS": { "tittel": { "nb": "Substrat i marine systemer" } },
-  "LI-MS-M7": { "tittel": { "nb": "Dødt plantemateriale i marine systemer" } },
-  "LI-TS": { "tittel": { "nb": "Substrat på land" } },
-  "LI-TS-T3": { "tittel": { "nb": "Organisk jord" } },
-  "LI-TS-T4": { "tittel": { "nb": "Levende planter på land" } },
-  "LI-TS-T6": { "tittel": { "nb": "Ved-livsmedier" } },
-  "LI-TS-T10": { "tittel": { "nb": "Dødt plantemateriale" } },
-  "LI-TS-T10_M7": {
-    "tittel": { "nb": "Dødt plantemateriale i marine systemer" }
-  },
-  "NA-HT": { "tittel": { "nb": "Hovedtyper" } },
-  "NA-HT-KG": {
-    "tittel": { "nb": "Kunnskapsgrunnlag om hovedtypen generelt" },
-    "type": "gradient"
-  },
-  "NA-HT-KG-GI": {
-    "tittel": { "nb": "Kunnskapsgrunnlag om grunntypeinndelingen" },
-    "type": "gradient"
-  },
-  "NA-HT-KG-GI1": { "tittel": { "nb": "1" } },
-  "NA-HT-KG-GI2": { "tittel": { "nb": "2" } },
-  "NA-HT-KG-GI3": { "tittel": { "nb": "3" } },
-  "NA-HT-KG-GI4": { "tittel": { "nb": "4" } },
-  "NA-HT-KG-GI5": { "tittel": { "nb": "5" } },
-  "NA-HT-KG1": { "tittel": { "nb": "1" } },
-  "NA-HT-KG2": { "tittel": { "nb": "2" } },
-  "NA-HT-KG3": { "tittel": { "nb": "3" } },
-  "NA-HT-KG4": { "tittel": { "nb": "4" } },
-  "NA-HT-KG5": { "tittel": { "nb": "5" } },
-  "NA-HT-PK": { "tittel": { "nb": "Prosedyrekategori" } },
-  "NA-HT-DG": { "tittel": { "nb": "Definisjonsgrunnlag" } }
+  }
 }

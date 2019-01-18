@@ -17,9 +17,8 @@ const csvOptions = {
 }
 
 let header
-let rows = 0
 
-importCsv(kildefil).then(x => console.log(rows))
+importCsv(kildefil)
 
 async function importCsv(kildefil) {
   await rs
@@ -30,7 +29,6 @@ async function importCsv(kildefil) {
 }
 
 function transform(record) {
-  rows++
   //  log.warn(rows)
   if (!header) {
     header = record

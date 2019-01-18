@@ -34,6 +34,27 @@
     "infoUrl": "https://artsdatabanken.no/Pages/179717",
     "sortering": 3
   },
+  "NA-HT": { "tittel": { "nb": "Hovedtyper" } },
+  "NA-HT-KG": {
+    "tittel": { "nb": "Kunnskapsgrunnlag om hovedtypen generelt" },
+    "type": "gradient"
+  },
+  "NA-HT-KG-GI": {
+    "tittel": { "nb": "Kunnskapsgrunnlag om grunntypeinndelingen" },
+    "type": "gradient"
+  },
+  "NA-HT-KG-GI1": { "tittel": { "nb": "1" } },
+  "NA-HT-KG-GI2": { "tittel": { "nb": "2" } },
+  "NA-HT-KG-GI3": { "tittel": { "nb": "3" } },
+  "NA-HT-KG-GI4": { "tittel": { "nb": "4" } },
+  "NA-HT-KG-GI5": { "tittel": { "nb": "5" } },
+  "NA-HT-KG1": { "tittel": { "nb": "1" } },
+  "NA-HT-KG2": { "tittel": { "nb": "2" } },
+  "NA-HT-KG3": { "tittel": { "nb": "3" } },
+  "NA-HT-KG4": { "tittel": { "nb": "4" } },
+  "NA-HT-KG5": { "tittel": { "nb": "5" } },
+  "NA-HT-PK": { "tittel": { "nb": "Prosedyrekategori" } },
+  "NA-HT-DG": { "tittel": { "nb": "Definisjonsgrunnlag" } },
   "NA-LSM": {
     "tittel": { "nb": "Lokale simple miljøvariabler" },
     "ingress": "Lokale simple miljøvariabler (LSM) er enkeltmiljøvariabler som karakteriserer hovedtyper.",

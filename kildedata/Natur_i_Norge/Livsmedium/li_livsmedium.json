@@ -1,5 +1,15 @@
 {
-  "LI": { "kode": "LI", "tittel": { "nb": "Livsmedium" } },
+  "LI": { "tittel": { "nb": "Livsmedium" } },
+  "LI-MS": { "tittel": { "nb": "Substrat i marine systemer" } },
+  "LI-MS-M7": { "tittel": { "nb": "Dødt plantemateriale i marine systemer" } },
+  "LI-TS": { "tittel": { "nb": "Substrat på land" } },
+  "LI-TS-T3": { "tittel": { "nb": "Organisk jord" } },
+  "LI-TS-T4": { "tittel": { "nb": "Levende planter på land" } },
+  "LI-TS-T6": { "tittel": { "nb": "Ved-livsmedier" } },
+  "LI-TS-T10": { "tittel": { "nb": "Dødt plantemateriale" } },
+  "LI-TS-T10_M7": {
+    "tittel": { "nb": "Dødt plantemateriale i marine systemer" }
+  },
   "LI-MS": {
     "kode": "LI-MS",
     "tittel": { "nb": "Substrat i marine systemer" }

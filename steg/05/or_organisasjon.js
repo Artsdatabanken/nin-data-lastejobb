@@ -3,8 +3,8 @@ const log = require("log-less-fancy")()
 const config = require("../../config")
 const typesystem = require("@artsdatabanken/typesystem")
 
-let organisasjon = io.lesKildedatafil("or_organisasjon")
-let datasett = io.lesKildedatafil("or_datasett")
+let organisasjon = io.lesKildedatafil("Datakilde/or_organisasjon")
+let datasett = io.lesKildedatafil("Datakilde/or_datasett")
 
 function lagRelasjonTilDatasett(kilde) {
   Object.keys(datasett).forEach(key => {
