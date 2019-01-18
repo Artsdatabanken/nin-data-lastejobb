@@ -32,7 +32,7 @@ hovedtyper.forEach(e => {
     }
   })
   ny.pred_lnr = e.pred_lnr
-  ny.naturlandskap = e.naturlandskap
+  ny.naturlandskap = e.naturlandskap === 1
   let kode = e.s_kode.substring(0, 4)
   if (e.s_kode.length > 4) kode += "-" + e.s_kode.substring(4)
   r[kode] = ny
