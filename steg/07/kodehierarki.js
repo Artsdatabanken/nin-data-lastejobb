@@ -12,6 +12,7 @@ function mapForelderTilBarn(kode, node) {
   if (!c2p[kode]) c2p[kode] = []
   if (!node.foreldre) {
     if (!node.se) {
+      log.warn(node)
       throw new Error("Mangler forelder: " + kode)
     }
     return

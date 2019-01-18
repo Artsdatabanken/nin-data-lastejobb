@@ -19,6 +19,7 @@ function flett(filename, props = {}) {
 
 function flettKildedata(filename, props = {}) {
   var data = io.lesKildedatafil(filename)
+  console.log(data)
   flettAttributter(data, props)
 }
 
@@ -44,11 +45,16 @@ function kobleForeldre() {
   }
 }
 
-flettKildedata("annen_kode")
+flettKildedata("typer")
+flettKildedata("Art/typer")
+flettKildedata("Art/Fremmed_Art/typer")
+flettKildedata("Fylke/typer")
 flettKildedata("Natur_i_Norge/Landskap/typer")
-flettKildedata("Natur_i_Norge/Natursystem/NA")
-flettKildedata("Natur_i_Norge/Natursystem/Beskrivelsessystem/BS_6S")
-flettKildedata("Natur_i_Norge/Naturvernområde/vv_naturvernområde")
+flettKildedata("Natur_i_Norge/Natursystem/typer")
+flettKildedata(
+  "Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/typer"
+)
+flettKildedata("Natur_i_Norge/Naturvernområde/typer")
 flett("vv_naturvernområde")
 flett("inn_ao_fylke")
 flett("inn_ao_kommune")

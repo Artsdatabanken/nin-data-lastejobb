@@ -4,7 +4,7 @@ const log = require("log-less-fancy")()
 
 let koder = io.lesKildedatafil(
   "Natur_i_Norge/Natursystem/Lokale_komplekse_miljøvariabler/mi"
-)
+).data
 
 function kodefix(kode) {
   if (!kode) return null

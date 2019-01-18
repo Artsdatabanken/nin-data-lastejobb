@@ -1,6 +1,6 @@
 const io = require("../../lib/io")
 const config = require("../../config")
-let alleKoder = io.lesKildedatafil("Natur_i_Norge/Natursystem/na")
+let alleKoder = io.lesKildedatafil("Natur_i_Norge/Natursystem/na").data
 let ingress = io.lesKildedatafil("Natur_i_Norge/Natursystem/na_ingress")
 
 function kodefix(kode) {
