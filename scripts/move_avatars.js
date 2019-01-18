@@ -1,8 +1,9 @@
-const config = require("./config")
-const io = require("./lib/io")
+const config = require("../config")
+const io = require("../lib/io")
 const log = require("log-less-fancy")()
 
-const base = "/home/grunnkart/tilesdata"
+const destBase = "/home/grunnkart/tilesdata"
+const srcBase = "/home/grunnkart/staging/assets"
 
 let data = io.lesBuildfil("metabase")
 Object.keys(data).forEach(kode => {
@@ -10,9 +11,13 @@ Object.keys(data).forEach(kode => {
   const sti = kode.split("-").join("/")
   //  console.log(`mkdir -p "${base}/${node.url}/"`)
   console.log(
-    `cp ${base}/bilde/avatar/40/${kode}.jpg "${base}/${node.url}/avatar_40.jpg"`
+    `cp ${srcBase}/bilde/avatar/40/${kode}.jpg "${destBase}/${
+      node.url
+    }/avatar_40.jpg"`
   )
   console.log(
-    `cp ${base}/bilde/avatar/40/${kode}.png "${base}/${node.url}/avatar_40.png"`
+    `cp ${srcBase}/bilde/avatar/40/${kode}.png "${destBase}/${
+      node.url
+    }/avatar_40.png"`
   )
 })
