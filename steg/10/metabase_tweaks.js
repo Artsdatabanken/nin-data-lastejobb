@@ -180,5 +180,6 @@ function fjernEnkeltVerneområder(tre) {
   const vv = tre.VV.barn
   const filter = /^VV-\d+$/
   log.warn(tre.VV.length)
-  tre.VV.barn = vv.filter(x => !x.kode.match(filter))
+  // TODO:
+  //  tre.VV.barn = vv.filter(x => !x.kode.match(filter))
 }
