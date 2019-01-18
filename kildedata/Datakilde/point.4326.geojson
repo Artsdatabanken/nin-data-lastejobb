@@ -11,10 +11,20 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
+        "coordinates": [10.40663, 63.41385]
+      },
+      "properties": {
+        "kode": "OR-NI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
         "coordinates": [10.4007505, 63.4419937]
       },
       "properties": {
-        "kode": "OR_AD"
+        "kode": "OR-AD"
       }
     },
     {
@@ -24,7 +34,7 @@
         "coordinates": [10.2469949, 60.1437896]
       },
       "properties": {
-        "kode": "OR_KV"
+        "kode": "OR-KV"
       }
     },
     {
@@ -34,7 +44,7 @@
         "coordinates": [10.7460947, 59.9228191]
       },
       "properties": {
-        "kode": "OR_SB"
+        "kode": "OR-SB"
       }
     },
     {
@@ -44,7 +54,7 @@
         "coordinates": [12.014313, 60.1739179]
       },
       "properties": {
-        "kode": "OR_SB"
+        "kode": "OR-SB"
       }
     },
     {
@@ -54,7 +64,7 @@
         "coordinates": [9.6437508, 63.1276611]
       },
       "properties": {
-        "kode": "OR_GU"
+        "kode": "OR-GU"
       }
     },
     {
@@ -64,7 +74,7 @@
         "coordinates": [10.4430814, 63.4549263]
       },
       "properties": {
-        "kode": "OR_GU"
+        "kode": "OR-GU"
       }
     },
     {
@@ -74,7 +84,7 @@
         "coordinates": [10.3984684, 63.4385012]
       },
       "properties": {
-        "kode": "OR_MD"
+        "kode": "OR-MD"
       }
     },
     {
@@ -84,7 +94,7 @@
         "coordinates": [10.796705, 59.9140789]
       },
       "properties": {
-        "kode": "OR_MD"
+        "kode": "OR-MD"
       }
     }
   ]
