@@ -46,9 +46,9 @@ function kobleForeldre() {
 
 flettKildedata("annen_kode")
 flettKildedata("Natur_i_Norge/Landskap/typer")
-flettKildedata("NA")
-flettKildedata("BS_6S")
-flettKildedata("vv_naturvernområde")
+flettKildedata("Natur_i_Norge/Natursystem/NA")
+flettKildedata("Natur_i_Norge/Natursystem/Beskrivelsessystem/BS_6S")
+flettKildedata("Natur_i_Norge/Naturvernområde/vv_naturvernområde")
 flett("vv_naturvernområde")
 flett("inn_ao_fylke")
 flett("inn_ao_kommune")

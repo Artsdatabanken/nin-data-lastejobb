@@ -2,7 +2,9 @@ const io = require("../../lib/io")
 const config = require("../../config")
 const log = require("log-less-fancy")()
 
-let koder = io.lesKildedatafil("mi")
+let koder = io.lesKildedatafil(
+  "Natur_i_Norge/Natursystem/Lokale_komplekse_miljøvariabler/mi"
+)
 
 function kodefix(kode) {
   if (!kode) return null

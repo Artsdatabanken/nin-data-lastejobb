@@ -1,4 +1,10 @@
 {
+  "OR": {
+    "tittel": { "nb": "Datakilde" },
+    "utenRamme": true,
+    "ingress": "",
+    "sortering": 7
+  },
   "OR-AD": {
     "farge": "hsl(24, 100%, 50%)",
     "tittel": { "nb": "Artsdatabanken" },

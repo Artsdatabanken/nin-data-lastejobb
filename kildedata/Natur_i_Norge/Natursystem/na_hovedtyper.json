@@ -4,8 +4,7 @@
     "HTK": "M1",
     "Navn": "Eufotisk fast saltvannsbunn",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "M11 [1-5, pp]",
@@ -20,8 +19,7 @@
     "HTK": "M2",
     "Navn": "Afotisk fast saltvannsbunn",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "M8 [1]",
@@ -36,8 +34,7 @@
     "HTK": "M3",
     "Navn": "Fast fjærebeltebunn",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "S4",
@@ -52,8 +49,7 @@
     "HTK": "M4",
     "Navn": "Eufotisk marin sedimentbunn",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "M4 pp., M13, M15",
@@ -68,8 +64,7 @@
     "HTK": "M5",
     "Navn": "Afotisk marin sedimentbunn",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "M4 pp, M12, M14 [1]",
@@ -84,8 +79,7 @@
     "HTK": "M6",
     "Navn": "Korallrev-bunn",
     "PrK": "2",
-    "PrK-tekst":
-      "Med variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Med variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "A",
     "Definisjonsgrunnlag-tekst": "normal, strukturerende artsgruppe",
     "NiN[1] ": "M6",
@@ -100,8 +94,7 @@
     "HTK": "M7",
     "Navn": "Marin undervannseng",
     "PrK": "2",
-    "PrK-tekst":
-      "Med variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Med variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "A",
     "Definisjonsgrunnlag-tekst": "normal, strukturerende artsgruppe",
     "NiN[1] ": "M15 [3]",
@@ -116,8 +109,7 @@
     "HTK": "M8",
     "Navn": "Helofytt-saltvannsump",
     "PrK": "2",
-    "PrK-tekst":
-      "Med variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Med variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "A ",
     "Definisjonsgrunnlag-tekst": "normal, strukturerende artsgruppe",
     "NiN[1] ": "S7 [10, 12]",
@@ -207,8 +199,7 @@
     "HTK": "M14",
     "Navn": "Sterkt endret eller ny fast saltvannsbunn",
     "PrK": "12a",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
     "GrL": "N",
     "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse",
     "NiN[1] ": "M1 pp. S1 [3,4]",
@@ -223,8 +214,7 @@
     "HTK": "M15",
     "Navn": "Sterkt endret eller ny marin sedimentbunn ",
     "PrK": "12a",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
     "GrL": "N",
     "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse",
     "NiN[1] ": "M1 pp. S1 [1,2]",
@@ -239,8 +229,7 @@
     "HTK": "L1",
     "Navn": "Eufotisk fast ferskvannsbunn ",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "F6",
@@ -255,8 +244,7 @@
     "HTK": "L2",
     "Navn": "Eufotisk limnisk sedimentbunn",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "F5 F7[1, 3,4]",
@@ -271,8 +259,7 @@
     "HTK": "L3",
     "Navn": "Afotisk limnisk sedimentbunn",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "F4",
@@ -287,8 +274,7 @@
     "HTK": "L4",
     "Navn": "Helofytt-ferskvannssump",
     "PrK": "2",
-    "PrK-tekst":
-      "Med variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Med variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "A",
     "Definisjonsgrunnlag-tekst": "normal, strukturerende artsgruppe",
     "NiN[1] ": "F7 [5, 6]",
@@ -333,8 +319,7 @@
     "HTK": "L7",
     "Navn": "Sterkt endret eller ny fast ferskvannsbunn",
     "PrK": "12a",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
     "GrL": "N",
     "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse",
     "NiN[1] ": "F1 p.p.",
@@ -349,8 +334,7 @@
     "HTK": "L8",
     "Navn": "Sterkt endret eller ny limnisk sedimentbunn",
     "PrK": "12a",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
     "GrL": "N",
     "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse",
     "NiN[1] ": "F1 p.p.",
@@ -365,8 +349,7 @@
     "HTK": "T1",
     "Navn": "Nakent berg",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0L",
     "Definisjonsgrunnlag-tekst": "normal, ikke jorddekt",
     "NiN[1] ": "T9, T14, T20",
@@ -381,8 +364,7 @@
     "HTK": "T2",
     "Navn": "Åpen grunnlendt mark ",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "T25",
@@ -397,8 +379,7 @@
     "HTK": "T3",
     "Navn": "Fjellhei, leside og tundra",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "T29 [1-16]",
@@ -413,8 +394,7 @@
     "HTK": "T4",
     "Navn": "Fastmarksskogsmark",
     "PrK": "2",
-    "PrK-tekst":
-      "Med variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Med variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "A",
     "Definisjonsgrunnlag-tekst": "normal, strukturerende artsgruppe",
     "NiN[1] ": "T23",
@@ -551,8 +531,7 @@
     "PrK": "4",
     "PrK-tekst": "Preget av aktiv regulerende forstyrrelse ",
     "GrL": "RL",
-    "Definisjonsgrunnlag-tekst":
-      "betinget av regulerende forstyrrelse, ikke jorddekt",
+    "Definisjonsgrunnlag-tekst": "betinget av regulerende forstyrrelse, ikke jorddekt",
     "NiN[1] ": "T17 [1-4]",
     "dLKM": "RU ",
     "hLKM": "KA,S1 ",
@@ -612,8 +591,7 @@
     "PrK": "5",
     "PrK-tekst": "Preget av aktiv destabiliserende forstyrrelse",
     "GrL": "DL",
-    "Definisjonsgrunnlag-tekst":
-      "betinget av destabiliserende forstyrrelse, ikke jorddekt",
+    "Definisjonsgrunnlag-tekst": "betinget av destabiliserende forstyrrelse, ikke jorddekt",
     "NiN[1] ": "T18 [1-3]",
     "dLKM": "SU",
     "hLKM": "S1 ",
@@ -628,8 +606,7 @@
     "PrK": "5",
     "PrK-tekst": "Preget av aktiv destabiliserende forstyrrelse",
     "GrL": "DL",
-    "Definisjonsgrunnlag-tekst":
-      "betinget av destabiliserende forstyrrelse, ikke jorddekt",
+    "Definisjonsgrunnlag-tekst": "betinget av destabiliserende forstyrrelse, ikke jorddekt",
     "NiN[1] ": "T8",
     "dLKM": "VF",
     "hLKM": "S1 ",
@@ -732,11 +709,9 @@
     "HTK": "T25",
     "Navn": "Historisk skredmark",
     "PrK": "6a",
-    "PrK-tekst":
-      "Preget av historisk disruptivt miljøstress eller destabiliserende forstyrrelse - Rask suksesjon",
+    "PrK-tekst": "Preget av historisk disruptivt miljøstress eller destabiliserende forstyrrelse - Rask suksesjon",
     "GrL": "XD",
-    "Definisjonsgrunnlag-tekst":
-      "betinget av destabiliserende historisk forstyrrelse",
+    "Definisjonsgrunnlag-tekst": "betinget av destabiliserende historisk forstyrrelse",
     "NiN[1] ": "T18 p.p.",
     "dLKM": "SH",
     "hLKM": "S1 ",
@@ -749,11 +724,9 @@
     "HTK": "T26",
     "Navn": "Breforland og snøavsmeltingsområde",
     "PrK": "6b",
-    "PrK-tekst":
-      "Preget av historisk disruptivt miljøstress eller destabiliserende forstyrrelse - Langsom eller frosset suksesjon ",
+    "PrK-tekst": "Preget av historisk disruptivt miljøstress eller destabiliserende forstyrrelse - Langsom eller frosset suksesjon ",
     "GrL": "XSL ",
-    "Definisjonsgrunnlag-tekst":
-      "betinget av historisk miljøstress, ikke jorddekt",
+    "Definisjonsgrunnlag-tekst": "betinget av historisk miljøstress, ikke jorddekt",
     "NiN[1] ": "T11",
     "dLKM": "SH",
     "hLKM": "",
@@ -766,11 +739,9 @@
     "HTK": "T27",
     "Navn": "Blokkmark",
     "PrK": "6b",
-    "PrK-tekst":
-      "Preget av historisk disruptivt miljøstress eller destabiliserende forstyrrelse - Langsom eller frosset suksesjon ",
+    "PrK-tekst": "Preget av historisk disruptivt miljøstress eller destabiliserende forstyrrelse - Langsom eller frosset suksesjon ",
     "GrL": "XRL",
-    "Definisjonsgrunnlag-tekst":
-      "betinget av historisk regulerende forstyrrelse, ikke jorddekt",
+    "Definisjonsgrunnlag-tekst": "betinget av historisk regulerende forstyrrelse, ikke jorddekt",
     "NiN[1] ": "T22",
     "dLKM": "SH",
     "hLKM": "SV ",
@@ -783,11 +754,9 @@
     "HTK": "T28",
     "Navn": "Polarørken",
     "PrK": "6b",
-    "PrK-tekst":
-      "Preget av historisk disruptivt miljøstress eller destabiliserende forstyrrelse - Langsom eller frosset suksesjon ",
+    "PrK-tekst": "Preget av historisk disruptivt miljøstress eller destabiliserende forstyrrelse - Langsom eller frosset suksesjon ",
     "GrL": "XRL",
-    "Definisjonsgrunnlag-tekst":
-      "betinget av historisk regulerende forstyrrelse, ikke jorddekt",
+    "Definisjonsgrunnlag-tekst": "betinget av historisk regulerende forstyrrelse, ikke jorddekt",
     "NiN[1] ": "T21",
     "dLKM": "SH,PF",
     "hLKM": "KA",
@@ -800,11 +769,9 @@
     "HTK": "T29",
     "Navn": "Grus- og steindominert strand og strandlinje",
     "PrK": "6b",
-    "PrK-tekst":
-      "Preget av historisk disruptivt miljøstress eller destabiliserende forstyrrelse - Langsom eller frosset suksesjon ",
+    "PrK-tekst": "Preget av historisk disruptivt miljøstress eller destabiliserende forstyrrelse - Langsom eller frosset suksesjon ",
     "GrL": "XRL",
-    "Definisjonsgrunnlag-tekst":
-      "betinget av historisk regulerende forstyrrelse, ikke jorddekt",
+    "Definisjonsgrunnlag-tekst": "betinget av historisk regulerende forstyrrelse, ikke jorddekt",
     "NiN[1] ": "T12",
     "dLKM": "SH",
     "hLKM": "",
@@ -819,8 +786,7 @@
     "PrK": "9",
     "PrK-tekst": "Preget av aktiv destabiliserende forstyrrelse",
     "GrL": "AD",
-    "Definisjonsgrunnlag-tekst":
-      "betinget av destabiliserende forstyrrelse, strukturerende artsgruppe",
+    "Definisjonsgrunnlag-tekst": "betinget av destabiliserende forstyrrelse, strukturerende artsgruppe",
     "NiN[1] ": "T7",
     "dLKM": "VF",
     "hLKM": "",
@@ -893,8 +859,7 @@
     "HTK": "T35",
     "Navn": "Sterkt endret åpen fastmark med løsmassedekke",
     "PrK": "12a",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
     "GrL": "N",
     "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse",
     "NiN[1] ": "T2 pp.",
@@ -909,8 +874,7 @@
     "HTK": "T36",
     "Navn": "Ny fastmark på tidligere våtmark og ferskvannsbunn",
     "PrK": "12a",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
     "GrL": "N",
     "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse",
     "NiN[1] ": "T2 pp.",
@@ -923,11 +887,9 @@
   {
     "Kunnskapsgrunnlag - Grunntypeinndelingen": "3",
     "HTK": "T37",
-    "Navn":
-      "Ny fastmark på sterkt modifi-serte og syntetiske substrater, i rask suksesjon",
+    "Navn": "Ny fastmark på sterkt modifi-serte og syntetiske substrater, i rask suksesjon",
     "PrK": "12a",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
     "GrL": "N",
     "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse",
     "NiN[1] ": "T2 pp.",
@@ -942,8 +904,7 @@
     "HTK": "T38",
     "Navn": "Treplantasje",
     "PrK": "12a",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
     "GrL": "N",
     "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse",
     "NiN[1] ": "T23 pp.",
@@ -958,11 +919,9 @@
     "HTK": "T39",
     "Navn": "Sterkt endret eller ny fastmark i langsom suksesjon",
     "PrK": "12b",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Langsom suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Langsom suksesjon",
     "GrL": "NL",
-    "Definisjonsgrunnlag-tekst":
-      "sterk menneskebetinget forstyrrelse, i langsom suksesjon",
+    "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse, i langsom suksesjon",
     "NiN[1] ": "T2 pp.",
     "dLKM": "SX",
     "hLKM": "",
@@ -975,11 +934,9 @@
     "HTK": "T40",
     "Navn": "Sterkt endret fastmark med preg av semi-naturlig eng",
     "PrK": "13a",
-    "PrK-tekst":
-      "Sterkt endret system uten jordbruksproduksjon som hovedformål",
+    "PrK-tekst": "Sterkt endret system uten jordbruksproduksjon som hovedformål",
     "GrL": "NH",
-    "Definisjonsgrunnlag-tekst":
-      "sterk menneskebetinget forstyrrelse, med hevdpreg",
+    "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse, med hevdpreg",
     "NiN[1] ": "T2 pp.",
     "dLKM": "SX,MB ",
     "hLKM": "",
@@ -992,8 +949,7 @@
     "HTK": "T41",
     "Navn": "Oppdyrket mark med preg av semi-naturlig eng",
     "PrK": "13b",
-    "PrK-tekst":
-      "Sterkt endret system preget av ekstensiv hevd - Oppdyrka mark",
+    "PrK-tekst": "Sterkt endret system preget av ekstensiv hevd - Oppdyrka mark",
     "GrL": "NHJ",
     "Definisjonsgrunnlag-tekst": "sterkt endret jordbruksmark",
     "NiN[1] ": "T3 pp.",
@@ -1008,11 +964,9 @@
     "HTK": "T42",
     "Navn": "Sterkt endret, hyppig bearbeidet fastmark med intensivt hevdpreg",
     "PrK": "14a",
-    "PrK-tekst":
-      "Sterkt endret system uten jordbruksproduksjon som hovedformål",
+    "PrK-tekst": "Sterkt endret system uten jordbruksproduksjon som hovedformål",
     "GrL": "NH",
-    "Definisjonsgrunnlag-tekst":
-      "sterk menneskebetinget forstyrrelse, med hevdpreg",
+    "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse, med hevdpreg",
     "NiN[1] ": "T2 pp.",
     "dLKM": "SX,MB ",
     "hLKM": "",
@@ -1025,11 +979,9 @@
     "HTK": "T43",
     "Navn": "Sterkt endret, varig fastmark med intensivt hevdpreg",
     "PrK": "14a",
-    "PrK-tekst":
-      "Sterkt endret system uten jordbruksproduksjon som hovedformål",
+    "PrK-tekst": "Sterkt endret system uten jordbruksproduksjon som hovedformål",
     "GrL": "NH",
-    "Definisjonsgrunnlag-tekst":
-      "sterk menneskebetinget forstyrrelse, med hevdpreg",
+    "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse, med hevdpreg",
     "NiN[1] ": "T2 pp.",
     "dLKM": "SX,MB ",
     "hLKM": "",
@@ -1072,8 +1024,7 @@
     "HTK": "V1",
     "Navn": "Åpen jordvannsmyr",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "V6[4-15], V7 [2-7] p.p.",
@@ -1088,8 +1039,7 @@
     "HTK": "V2",
     "Navn": "Myr- og sumpskogsmark",
     "PrK": "2",
-    "PrK-tekst":
-      "Med variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Med variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "A",
     "Definisjonsgrunnlag-tekst": "normal, strukturerende artsgruppe",
     "NiN[1] ": "V7 [2-7] p.p.",
@@ -1181,8 +1131,7 @@
     "PrK": "7",
     "PrK-tekst": "Preget av miljøstress med strukturerende artsgruppe",
     "GrL": "AS",
-    "Definisjonsgrunnlag-tekst":
-      "miljøstressbetinget, strukturerende artsgruppe",
+    "Definisjonsgrunnlag-tekst": "miljøstressbetinget, strukturerende artsgruppe",
     "NiN[1] ": "V7 p.p.",
     "dLKM": "VT",
     "hLKM": "",
@@ -1225,8 +1174,7 @@
     "HTK": "V11",
     "Navn": "Torvtak",
     "PrK": "12a",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
     "GrL": "N",
     "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse",
     "NiN[1] ": "V1[3]",
@@ -1241,8 +1189,7 @@
     "HTK": "V12",
     "Navn": "Grøftet torvmark",
     "PrK": "12a",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
     "GrL": "N",
     "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse",
     "NiN[1] ": "V1[1,2]",
@@ -1257,8 +1204,7 @@
     "HTK": "V13",
     "Navn": "Ny våtmark",
     "PrK": "12a",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
     "GrL": "N",
     "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse",
     "NiN[1] ": "V2",
@@ -1273,8 +1219,7 @@
     "HTK": "H1",
     "Navn": "Havvannmasser",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "-",
@@ -1302,8 +1247,7 @@
   {
     "Kunnskapsgrunnlag - Grunntypeinndelingen": "2",
     "HTK": "H3",
-    "Navn":
-      "Ikke-sirkulerende marine vannmasser i fysisk avgrensete saltvannsforekomster",
+    "Navn": "Ikke-sirkulerende marine vannmasser i fysisk avgrensete saltvannsforekomster",
     "PrK": "3",
     "PrK-tekst": "Preget av miljøstress",
     "GrL": "S",
@@ -1320,8 +1264,7 @@
     "HTK": "H4",
     "Navn": "Sterkt endrete marine vannmasser",
     "PrK": "12a",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
     "GrL": "N",
     "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse",
     "NiN[1] ": "-",
@@ -1336,8 +1279,7 @@
     "HTK": "F1",
     "Navn": "Elvevannmasser",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "-",
@@ -1352,8 +1294,7 @@
     "HTK": "F2",
     "Navn": "Sirkulerende innsjø-vannmasser",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "-",
@@ -1383,8 +1324,7 @@
     "HTK": "F4",
     "Navn": "Sterkt endrete elvevannmasser",
     "PrK": "12a",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
     "GrL": "N",
     "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse",
     "NiN[1] ": "-",
@@ -1399,8 +1339,7 @@
     "HTK": "F5",
     "Navn": "Sterkt endrete innsjøvannmasser",
     "PrK": "12a",
-    "PrK-tekst":
-      "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
+    "PrK-tekst": "Sterkt endret system uten eller med svake spor etter av hevd - Rask suksesjon",
     "GrL": "N",
     "Definisjonsgrunnlag-tekst": "sterk menneskebetinget forstyrrelse",
     "NiN[1] ": "-",
@@ -1415,8 +1354,7 @@
     "HTK": "I1",
     "Navn": "Snø- og isdekt fastmark",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "T1",
@@ -1431,8 +1369,7 @@
     "HTK": "I2",
     "Navn": "Polar havis",
     "PrK": "1",
-    "PrK-tekst":
-      "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
+    "PrK-tekst": "Uten variasjon i artssammensetning betinget av strukturerende artsgruppe",
     "GrL": "0",
     "Definisjonsgrunnlag-tekst": "normal hovedtype",
     "NiN[1] ": "-",

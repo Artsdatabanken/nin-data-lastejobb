@@ -12,7 +12,19 @@
     ]
   },
   "LA-KLG": { "tittel": { "nb": "Landskapsgradient" } },
-  "LA-KLG-AI": {},
+  "LA-KLG-BP": { "ingress": "Om landskapet er dominert av isbre." },
+  "LA-KLG-JP": {
+    "ingress": "I hvor stor grad landskapet er dominert av jordbruk, gjennom andel dyrket mark."
+  },
+  "LA-KLG-RE": {
+    "ingress": "Beskriver grov-skala terrengform."
+  },
+  "LA-KLG-RE-KS": {
+    "ingress": "Beskriver grov-skala terrengform."
+  },
+  "LA-KLG-IP": {
+    "ingress": "I hvor stor grad landskapet er dominert av innsjøer."
+  },
   "LA-MP": {
     "tittel": { "nb": "Menneskelig påvirkning" },
     "relasjon": [
