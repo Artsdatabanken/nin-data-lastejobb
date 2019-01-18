@@ -95,7 +95,6 @@ function normaliserGradienter() {
 }
 
 function normaliserGradientTrinn(bkode, barn, rgrad) {
-  console.log(bkode)
   if (barn.normalisertVerdi) {
     const bv = barn.normalisertVerdi
     if (!Array.isArray(bv)) barn.normalisertVerdi = [bv, bv + 1]
