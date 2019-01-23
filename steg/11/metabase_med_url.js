@@ -36,7 +36,7 @@ function urlify(tittel, kode) {
 function url(kode) {
   const node = tre[kode]
   if (!node.overordnet) {
-    log.warn("Mangler overordnet:" + kode)
+    log.warn("Mangler overordnet: " + kode)
     return
   }
   node.overordnet.forEach(node => (node.url = tre[node.kode].url))
