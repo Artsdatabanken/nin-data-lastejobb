@@ -17,6 +17,7 @@ before_deploy:
   - tar -zcf farger.tar.gz farger.json
   - tar -zcf kodetre.tar.gz kodetre.json
   - tar -zcf typer.tar.gz ??.json
+  - tar -zcf full-text-index.tar.gz full-text-index.json
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
@@ -26,6 +27,7 @@ deploy:
     - kodetre.tar.gz
     - farger.tar.gz
     - typer.tar.gz
+    - full-text-index.tar.gz
   skip_cleanup: true
   on:
     branch: master
