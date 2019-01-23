@@ -8,11 +8,11 @@ const index = {}
 
 function push(hit, score, text) {
   if (!text) return
-  if (!index[hit.key]) index[hit.key] = { title: hit.title }
-  const item = index[hit.key]
+  if (!index[hit.kode]) index[hit.kode] = { hit: hit, text: {} }
+  const item = index[hit.kode]
   score = parseInt(100 * score)
-  if (!item[score]) item[score] = []
-  item[score].push(text)
+  if (!item.text[score]) item.text[score] = []
+  item.text[score].push(text)
 }
 
 function overordnet(hit, array, score) {
@@ -26,8 +26,7 @@ function overordnet(hit, array, score) {
 
 Object.keys(tre).forEach(kode => {
   const node = tre[kode]
-  const hit = { key: node.url, title: node.tittel.nb }
-  // Lavere vekt dypere ned i strukturen (prioriterer toppnoder)
+  const hit = { kode: node.kode, url: node.url, title: node.tittel.nb }
   const cf = Math.pow(0.99, node.overordnet.length + 1)
   push(hit, 1.0 * cf, node.kode)
   push(hit, 1.0 * cf, node.tittel.nb)
