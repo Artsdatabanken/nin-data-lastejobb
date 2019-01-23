@@ -27,19 +27,21 @@ function overordnet(hit, array, score) {
 Object.keys(tre).forEach(kode => {
   const node = tre[kode]
   const hit = { key: node.url, title: node.tittel.nb }
-  push(hit, 1.0, node.kode)
-  push(hit, 1.0, node.tittel.nb)
-  push(hit, 0.5, node.nivå)
-  push(hit, 0.7, node.ingress)
-  overordnet(hit, node.overordnet, 0.7)
+  // Lavere vekt dypere ned i strukturen (prioriterer toppnoder)
+  const cf = Math.pow(0.99, node.overordnet.length + 1)
+  push(hit, 1.0 * cf, node.kode)
+  push(hit, 1.0 * cf, node.tittel.nb)
+  push(hit, 0.5 * cf, node.nivå)
+  push(hit, 0.7 * cf, node.ingress)
+  overordnet(hit, node.overordnet, 0.7 * cf)
   node.graf &&
     node.graf.forEach(gn => {
-      push(hit, 0.3, gn.type)
+      push(hit, 0.3 * cf, gn.type)
       gn.noder.forEach(gnc => {
-        push(hit, 0.7, gnc.kode)
-        push(hit, 0.7, gnc.tittel.nb)
+        push(hit, 0.7 * cf, gnc.kode)
+        push(hit, 0.7 * cf, gnc.tittel.nb)
       })
     })
 })
 
-io.skrivDatafil(__filename, index)
+io.skrivBuildfil(__filename, index)
