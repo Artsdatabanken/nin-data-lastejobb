@@ -98,7 +98,7 @@ function sjekkAtTitlerEksisterer() {
         node.tittel = Object.entries(node.tittel).reduce((acc, e) => {
           if (!e[1])
             log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
-          acc[e[0]] = e[1]
+          acc[e[0]] = e[1].trim()
           return acc
         }, {})
         if (r[key].kode) log.warn("Har kode: ", key)

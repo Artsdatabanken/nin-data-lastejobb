@@ -3,8 +3,18 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
+// Bygger fulltext-index for lookup-api
+
 const tre = io.lesBuildfil("metabase")
 const index = {}
+
+/*
+[
+  {"kode": "OR", "url": "Natur_i_Norge/Datakilde", "title": "Datakilder"},
+  {"kode": "LA", "url": "Natur_i_Norge/Landskap", "title": "Landskap"}
+]
+
+*/
 
 function push(hit, score, text) {
   if (!text) return
