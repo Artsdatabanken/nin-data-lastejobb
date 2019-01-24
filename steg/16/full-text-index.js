@@ -39,7 +39,7 @@ Object.keys(tre).forEach(kode => {
   const hit = { kode: node.kode, url: node.url, title: node.tittel.nb }
   const cf = Math.pow(0.99, node.overordnet.length + 1)
   push(hit, 1.0 * cf, node.kode)
-  push(hit, 1.0 * cf, node.tittel.nb)
+  push(hit, 0.98 * cf, node.tittel.nb)
   push(hit, 0.5 * cf, node.nivå)
   push(hit, 0.7 * cf, node.ingress)
   overordnet(hit, node.overordnet, 0.7 * cf)
