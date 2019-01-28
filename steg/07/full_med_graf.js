@@ -4,6 +4,7 @@ const log = require("log-less-fancy")()
 
 let full = io.lesDatafil("full")
 Object.keys(full).forEach(kode => lagGrafkoblinger(kode, full[kode]))
+
 io.skrivDatafil(__filename, full)
 
 function tilBarn(node) {
@@ -24,8 +25,6 @@ function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
     return
   }
   if (kodeFra === kodeTil) {
-    console.log(nodeFra)
-    console.log(nodeTil)
     throw new Error("Relasjon til seg selv fra " + kodeTil)
   }
 

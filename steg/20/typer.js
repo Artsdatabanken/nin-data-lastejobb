@@ -5,8 +5,7 @@ const typesystem = require("@artsdatabanken/typesystem")
 
 let data = io.lesBuildfil("metabase")
 
-const prefixes = ["AO", "LA", "NA", "OR", "VV"]
-//const prefixes = ["AR", "AO", "FA", "LA", "NA", "OR", "RL", "VV"]
+const prefixes = ["AO", "NN-LA", "NN-NA", "OR", "VV"]
 
 prefixes.forEach(prefix => {
   log.debug(prefix)

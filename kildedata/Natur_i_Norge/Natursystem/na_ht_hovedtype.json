@@ -1,23 +1,29 @@
 {
-  "NA-HT": { "kode": "NA-HT", "tittel": { "nb": "Hovedtyper" } },
-  "NA-HT-KG": {
-    "kode": "NA-HT-KG",
+  "NN-NA-HT": { "kode": "NN-NA-HT", "tittel": { "nb": "Hovedtyper" } },
+  "NN-NA-HT-KG": {
+    "kode": "NN-NA-HT-KG",
     "tittel": { "nb": "Kunnskapsgrunnlag om hovedtypen generelt" }
   },
-  "NA-HT-KG-GI": {
-    "kode": "NA-HT-KG-GI",
+  "NN-NA-HT-KG-GI": {
+    "kode": "NN-NA-HT-KG-GI",
     "tittel": { "nb": "Kunnskapsgrunnlag om grunntypeinndelingen" }
   },
-  "NA-HT-KG-GI1": { "kode": "NA-HT-KG-GI1", "tittel": { "nb": "1" } },
-  "NA-HT-KG-GI2": { "kode": "NA-HT-KG-GI2", "tittel": { "nb": "2" } },
-  "NA-HT-KG-GI3": { "kode": "NA-HT-KG-GI3", "tittel": { "nb": "3" } },
-  "NA-HT-KG-GI4": { "kode": "NA-HT-KG-GI4", "tittel": { "nb": "4" } },
-  "NA-HT-KG-GI5": { "kode": "NA-HT-KG-GI5", "tittel": { "nb": "5" } },
-  "NA-HT-KG1": { "kode": "NA-HT-KG1", "tittel": { "nb": "1" } },
-  "NA-HT-KG2": { "kode": "NA-HT-KG2", "tittel": { "nb": "2" } },
-  "NA-HT-KG3": { "kode": "NA-HT-KG3", "tittel": { "nb": "3" } },
-  "NA-HT-KG4": { "kode": "NA-HT-KG4", "tittel": { "nb": "4" } },
-  "NA-HT-KG5": { "kode": "NA-HT-KG5", "tittel": { "nb": "5" } },
-  "NA-HT-PK": { "kode": "NA-HT-PK", "tittel": { "nb": "Prosedyrekategori" } },
-  "NA-HT-DG": { "kode": "NA-HT-DG", "tittel": { "nb": "Definisjonsgrunnlag" } }
+  "NN-NA-HT-KG-GI1": { "kode": "NN-NA-HT-KG-GI1", "tittel": { "nb": "1" } },
+  "NN-NA-HT-KG-GI2": { "kode": "NN-NA-HT-KG-GI2", "tittel": { "nb": "2" } },
+  "NN-NA-HT-KG-GI3": { "kode": "NN-NA-HT-KG-GI3", "tittel": { "nb": "3" } },
+  "NN-NA-HT-KG-GI4": { "kode": "NN-NA-HT-KG-GI4", "tittel": { "nb": "4" } },
+  "NN-NA-HT-KG-GI5": { "kode": "NN-NA-HT-KG-GI5", "tittel": { "nb": "5" } },
+  "NN-NA-HT-KG1": { "kode": "NN-NA-HT-KG1", "tittel": { "nb": "1" } },
+  "NN-NA-HT-KG2": { "kode": "NN-NA-HT-KG2", "tittel": { "nb": "2" } },
+  "NN-NA-HT-KG3": { "kode": "NN-NA-HT-KG3", "tittel": { "nb": "3" } },
+  "NN-NA-HT-KG4": { "kode": "NN-NA-HT-KG4", "tittel": { "nb": "4" } },
+  "NN-NA-HT-KG5": { "kode": "NN-NA-HT-KG5", "tittel": { "nb": "5" } },
+  "NN-NA-HT-PK": {
+    "kode": "NN-NA-HT-PK",
+    "tittel": { "nb": "Prosedyrekategori" }
+  },
+  "NN-NA-HT-DG": {
+    "kode": "NN-NA-HT-DG",
+    "tittel": { "nb": "Definisjonsgrunnlag" }
+  }
 }

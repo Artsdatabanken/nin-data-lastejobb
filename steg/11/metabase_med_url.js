@@ -25,7 +25,9 @@ function addUrl(kode, node) {
 }
 
 function urlify(tittel, kode) {
-  let s = kode.startsWith(typesystem.art.prefiks) ? tittel.la : tittel.nb
+  let s = kode.startsWith(typesystem.art.prefiks)
+    ? tittel.la || tittel.nb
+    : tittel.nb
   if (!s) {
     log.error("Mangler tittel: " + kode + ": " + JSON.stringify(tittel))
     return kode
@@ -35,12 +37,10 @@ function urlify(tittel, kode) {
 
 function url(kode) {
   const node = tre[kode]
-  if (!node.overordnet) {
-    log.warn("Mangler overordnet: " + kode)
-    return
-  }
+  if (!node.overordnet) throw new Error("Mangler overordnet: " + kode)
+
   node.overordnet.forEach(node => (node.url = tre[node.kode].url))
-  let sti = node.overordnet.map(f => f.tittel)
+  let sti = node.overordnet.slice(0, -1).map(f => f.tittel)
   sti = sti.reverse()
   sti.push(node.tittel)
   return sti.map(e => urlify(e, kode)).join("/")

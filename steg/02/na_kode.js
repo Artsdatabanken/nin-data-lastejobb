@@ -14,7 +14,7 @@ function importerKoder() {
     const kode = kodefix(node.Kode.Id)
     let o = { tittel: { nb: node.Navn } }
     if (ingress[kode]) o.ingress = ingress[kode]
-    mineKoder[kode] = o
+    mineKoder["NN-" + kode] = o
   }
   return mineKoder
 }
