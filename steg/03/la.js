@@ -23,7 +23,7 @@ hovedtyper.forEach(e => {
       const verdi = e[key]
       if (verdi) {
         ny.relasjon.push({
-          kode: "LA-" + hack(verdi),
+          kode: "NN-LA-" + hack(verdi),
           kant: "definert av",
           kantRetur: "definerer",
           erSubset: true
@@ -32,7 +32,8 @@ hovedtyper.forEach(e => {
     }
   })
   ny.pred_lnr = e.pred_lnr
-  const menneskeligPåvirkning = e.naturlandskap === 1 ? "LA-MP-NL" : "LA-MP-KL"
+  const menneskeligPåvirkning =
+    e.naturlandskap === 1 ? "NN-LA-MP-NL" : "NN-LA-MP-KL"
   ny.relasjon.push({
     kode: menneskeligPåvirkning,
     kant: "menneskelig påvirkning",
@@ -41,7 +42,7 @@ hovedtyper.forEach(e => {
   })
   let kode = e.s_kode.substring(0, 4)
   if (e.s_kode.length > 4) kode += "-" + e.s_kode.substring(4)
-  r[kode] = ny
+  r["NN-" + kode] = ny
 })
 
 io.skrivDatafil(__filename, r)

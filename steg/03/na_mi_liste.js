@@ -41,9 +41,10 @@ for (let kode of Object.keys(alle)) {
   noder[kode] = node
 }
 
-log.debug(
-  "Koder som ble fjernet fordi det er definert at de ikke skal med: " +
-    fjernet.length
-)
+fjernet.length > 0 &&
+  log.debug(
+    "Koder som ble fjernet fordi det er definert at de ikke skal med: " +
+      fjernet.length
+  )
 
 io.skrivDatafil(__filename, noder)

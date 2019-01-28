@@ -1,208 +1,208 @@
 {
-  "LA-KLG-AI-1": {
+  "NN-NA-KLG-AI-1": {
     "farge": "hsl(5, 100%, 50%)",
     "weight": 0,
     "tittel": { "nb": "lav arealbruksintensitet" }
   },
-  "LA-KLG-AI-2": {
+  "NN-NA-KLG-AI-2": {
     "farge": "hsl(5, 100%, 50%)",
     "weight": 0.5,
     "tittel": { "nb": "bebygde områder" }
   },
-  "LA-KLG-AI-3": {
+  "NN-NA-KLG-AI-3": {
     "farge": "hsl(5, 100%, 50%)",
     "weight": 1,
     "tittel": { "nb": "tettsted/tettbebyggelse" }
   },
-  "LA-KLG-AI-4": {
+  "NN-NA-KLG-AI-4": {
     "farge": "hsl(5, 100%, 50%)",
 
     "weight": 1.5,
     "tittel": { "nb": "storby" }
   },
-  "LA-KLG-AI-KS-1": {
+  "NN-NA-KLG-AI-KS-1": {
     "farge": "hsl(5, 100%, 50%)",
     "weight": 0,
     "tittel": { "nb": "lav/middels arealbruksintensitet" }
   },
-  "LA-KLG-AI-KS-2": {
+  "NN-NA-KLG-AI-KS-2": {
     "farge": "hsl(5, 100%, 50%)",
     "weight": 0.75,
     "tittel": { "nb": "tettsted" }
   },
-  "LA-KLG-AI-KS-3": {
+  "NN-NA-KLG-AI-KS-3": {
     "farge": "hsl(5, 100%, 50%)",
 
     "weight": 1.5,
     "tittel": { "nb": "storby" }
   },
-  "LA-KLG-BP-1": {
+  "NN-NA-KLG-BP-1": {
     "farge": "hsl(185, 55%, 100%)",
 
     "weight": 0,
     "tittel": { "nb": "uten isbre" }
   },
-  "LA-KLG-BP-2": {
+  "NN-NA-KLG-BP-2": {
     "farge": "hsl(195, 30%, 100%)",
 
     "weight": 3,
     "tittel": { "nb": "isbre" }
   },
-  "LA-KLG-IP-1": {
+  "NN-NA-KLG-IP-1": {
     "farge": "hsl(195, 55%, 75%)",
     "weight": 0,
     "tittel": { "nb": "uten større innsjø" }
   },
-  "LA-KLG-IP-2": {
+  "NN-NA-KLG-IP-2": {
     "farge": "hsl(195, 55%, 75%)",
 
     "weight": 1,
     "tittel": { "nb": "middels stor innsjø" }
   },
-  "LA-KLG-IP-3": {
+  "NN-NA-KLG-IP-3": {
     "farge": "hsl(195, 75%, 75%)",
 
     "weight": 1,
     "tittel": { "nb": "større innsjø" }
   },
-  "LA-KLG-IYK-1": {
+  "NN-NA-KLG-IYK-1": {
     "farge": "hsl(65, 11%, 75%)",
 
     "weight": 1,
     "tittel": { "nb": "skjermet indre kystslette" }
   },
-  "LA-KLG-IYK-2": {
+  "NN-NA-KLG-IYK-2": {
     "farge": "hsl(55, 11%, 75%)",
 
     "weight": 1,
     "tittel": { "nb": "middels eksponert kystslette" }
   },
-  "LA-KLG-IYK-3": {
+  "NN-NA-KLG-IYK-3": {
     "farge": "hsl(44, 11%, 75%)",
 
     "weight": 1,
     "tittel": { "nb": "eksponert kystslette på ytre kyst" }
   },
-  "LA-KLG-IYK-4": {
+  "NN-NA-KLG-IYK-4": {
     "farge": "hsl(33, 11%, 75%)",
 
     "weight": 1,
     "tittel": { "nb": "svært eksponert kystslette mot åpent hav" }
   },
-  "LA-KLG-JP-1": {
+  "NN-NA-KLG-JP-1": {
     "farge": "hsl(44, 88%, 75%)",
     "weight": 0,
     "tittel": { "nb": "uten høyt jordbrukspreg" }
   },
-  "LA-KLG-JP-2": {
+  "NN-NA-KLG-JP-2": {
     "farge": "hsl(44, 88%, 75%)",
 
     "weight": 1,
     "tittel": { "nb": "høyt jordbrukspreg" }
   },
-  "LA-KLG-KA-1": {
+  "NN-NA-KLG-KA-1": {
     "farge": "hsl(66, 66%, 75%)",
 
     "weight": 1,
     "tittel": { "nb": "innlandsslette" }
   },
-  "LA-KLG-KA-2": {
+  "NN-NA-KLG-KA-2": {
     "farge": "hsl(66, 33%, 75%)",
 
     "weight": 1,
     "tittel": { "nb": "kystnær innlandsslette" }
   },
-  "LA-KLG-RE-IA-1": {
+  "NN-NA-KLG-RE-IA-1": {
     "farge": "hsl(185, 0%, 55%)",
     "weight": 1,
     "tittel": { "nb": "dalformet ås- og fjellandskap" }
   },
-  "LA-KLG-RE-IA-2": {
+  "NN-NA-KLG-RE-IA-2": {
     "farge": "hsl(185, 0%, 65%)",
     "weight": 1,
     "tittel": { "nb": "småkupert/slakt ås- og fjellandskap" }
   },
-  "LA-KLG-RE-IA-3": {
+  "NN-NA-KLG-RE-IA-3": {
     "farge": "hsl(185, 0%, 75%)",
     "weight": 1,
     "tittel": { "nb": "middels kupert ås- og fjellandskap" }
   },
-  "LA-KLG-RE-IA-4": {
+  "NN-NA-KLG-RE-IA-4": {
     "farge": "hsl(185, 0%, 85%)",
     "weight": 1,
     "tittel": { "nb": "kupert ås- og fjellandskap" }
   },
-  "LA-KLG-RE-IA-5": {
+  "NN-NA-KLG-RE-IA-5": {
     "farge": "hsl(185, 0%, 95%)",
     "weight": 1,
     "tittel": { "nb": "åser og fjell med tindepreg" }
   },
-  "LA-KLG-RE-ID-1": {
+  "NN-NA-KLG-RE-ID-1": {
     "farge": "hsl(0, 100%, 50%)",
     "weight": [0, 0.8, 0],
     "tittel": { "nb": "dypt nedskåret dal/fjord" }
   },
-  "LA-KLG-RE-ID-2": {
+  "NN-NA-KLG-RE-ID-2": {
     "farge": "hsl(0, 100%, 50%)",
     "weight": [0, 0.7, 0],
     "tittel": { "nb": "nedskåret dal/fjord" }
   },
-  "LA-KLG-RE-ID-3": {
+  "NN-NA-KLG-RE-ID-3": {
     "farge": "hsl(0, 100%, 50%)",
     "weight": [0, 0.6, 0],
     "tittel": { "nb": "relativt åpen dal/fjord" }
   },
-  "LA-KLG-RE-ID-4": {
+  "NN-NA-KLG-RE-ID-4": {
     "farge": "hsl(0, 100%, 50%)",
     "weight": [0, 0.5, 0],
     "tittel": { "nb": "åpen dal/fjord" }
   },
-  "LA-KLG-RE-KS-1": {
+  "NN-NA-KLG-RE-KS-1": {
     "farge": "hsl(222,50%, 45%)",
 
     "weight": 1,
     "tittel": { "nb": "slak" }
   },
-  "LA-KLG-RE-KS-2": {
+  "NN-NA-KLG-RE-KS-2": {
     "farge": "hsl(222,50%, 35%)",
 
     "weight": 3,
     "tittel": { "nb": "middels kupert" }
   },
-  "LA-KLG-RE-KS-3": {
+  "NN-NA-KLG-RE-KS-3": {
     "farge": "hsl(222,50%, 25%)",
 
     "weight": 1,
     "tittel": { "nb": "bratte åser, restfjell, klipper og stup" }
   },
-  "LA-KLG-VE-1": {
+  "NN-NA-KLG-VE-1": {
     "farge": "hsl(77, 47%, 42%)",
     "weight": 1,
     "tittel": { "nb": "under skoggrensen" }
   },
-  "LA-KLG-VE-2": {
+  "NN-NA-KLG-VE-2": {
     "farge": "hsl(66, 35%, 42%)",
     "weight": 1,
     "tittel": { "nb": "ved skoggrensen" }
   },
-  "LA-KLG-VE-3": {
+  "NN-NA-KLG-VE-3": {
     "farge": "hsl(55, 23%, 42%)",
 
     "weight": 1,
     "tittel": { "nb": "snaumark over skoggrensen" }
   },
-  "LA-KLG-VE-4": {
+  "NN-NA-KLG-VE-4": {
     "farge": "hsl(33, 1%, 42%)",
 
     "weight": 1,
     "tittel": { "nb": "bart fjell over skoggrensen" }
   },
-  "LA-KLG-VP-1": {
+  "NN-NA-KLG-VP-1": {
     "farge": "hsl(33, 55%, 100%)",
     "weight": 0,
     "tittel": { "nb": "uten høyt våtmarkspreg" }
   },
-  "LA-KLG-VP-2": {
+  "NN-NA-KLG-VP-2": {
     "farge": "hsl(58, 58%, 55%)",
     "weight": 1,
     "tittel": { "nb": "høyt våtmarkspreg" }

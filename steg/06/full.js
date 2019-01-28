@@ -5,9 +5,16 @@ const log = require("log-less-fancy")()
 
 const r = {}
 
+function flyttNiNUnderNN(kode) {
+  const prefix = kode.substring(0, 2)
+  if ("NA_LA".indexOf(prefix) < 0) return kode
+  return "NN-" + kode
+}
+
 function flettAttributter(o, props = {}) {
   for (let key of Object.keys(o)) {
-    const kode = key.replace("_", "-")
+    let kode = key.replace("_", "-")
+    kode = flyttNiNUnderNN(kode)
     r[kode] = Object.assign({}, r[kode], o[key], props)
   }
 }
@@ -19,7 +26,6 @@ function flett(filename, props = {}) {
 
 function flettKildedata(filename, props = {}) {
   var data = io.lesKildedatafil(filename)
-  console.log(data)
   flettAttributter(data, props)
 }
 

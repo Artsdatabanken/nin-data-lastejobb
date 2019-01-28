@@ -19,8 +19,10 @@ const sourceTypes = [
     type: "raster.gradient",
     suffix: "3857.mbtiles"
   },
-  { type: "point", suffix: "4326.geojson" }
+  { type: "point", suffix: "4326.geojson" },
+  { type: "observasjon.rutenett", suffix: "32633.geojson" }
 ]
+
 sourceTypes.forEach(source => addKartformat(source))
 normaliserGradienter()
 if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
@@ -55,6 +57,7 @@ function addKartformat(source) {
     const node = tre[xkode]
     const path = `${node.url}/${type}.${suffix}`
     const mapfile = mapfiles[path]
+    if (xkode == "AO") log.warn(xkode, path, mapfile)
     if (!mapfile) return
     const target = tre[xkode]
 

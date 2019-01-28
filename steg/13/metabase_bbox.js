@@ -44,10 +44,10 @@ function fjernRelasjonTilKoderSomIkkeHarData(data) {
 
 function harKartData(kode) {
   const visAlltid = [
-    "NA-BS-8",
-    "NA-BS-2JM",
-    "NA-BS-8ER",
-    "NA-BS-8TH",
+    //    "NA-BS-8",
+    //    "NA-BS-2JM",
+    //    "NA-BS-8ER",
+    //    "NA-BS-8TH",
     "NA-HT-DG",
     "NA-HT-PK"
   ]

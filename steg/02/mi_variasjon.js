@@ -23,7 +23,6 @@ function importerKoder() {
   for (let key of Object.keys(koder)) {
     const node = koder[key]
     const kode = kodefix(node.Kode.Id)
-    if (kode === "NA-LKM") node.Navn = "Lokale komplekse miljøvariabler"
     const tittel = node.Navn
     let o = {
       tittel: { nb: tittel }
@@ -34,4 +33,6 @@ function importerKoder() {
 }
 
 const imp = importerKoder()
+imp["NA-LKM"].tittel.nb = "Lokale komplekse miljøvariabler"
+
 io.skrivDatafil(__filename, imp)
