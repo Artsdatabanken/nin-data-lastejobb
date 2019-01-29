@@ -15,15 +15,12 @@ unzipper.on("error", function(err) {
 })
 
 unzipper.on("extract", function(json) {
-  log.debug(json)
-})
-
-unzipper.on("progress", function(fileIndex, fileCount) {
-  log.debug("Extracted file " + (fileIndex + 1) + " of " + fileCount)
+  log.debug("Extracted " + json.map(e => Object.values(e)[0]).join(", "))
 })
 
 unzipper.extract({
   path: config.dataRoot,
+  restrict: false,
   strip: 1, // Fjern 1 katalognivå i zippen
   filter: function(file) {
     return file.type !== "SymbolicLink"
