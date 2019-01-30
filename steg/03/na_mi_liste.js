@@ -21,7 +21,7 @@ function skalMedISystemet(kode) {
   // Skal likevel med
   // if (typesystem.Natursystem.erGrunntype(kode)) return false
   // Kartleggingsenheter B og D utgår, men blir fjernet automatisk siden vi ikke har data der
-  // if (kode.match(/NA_.*-B-/g) || kode.match(/NA_.*-D-/g)) return false
+  if (kode.match(/NN-NA-.*-B-/g) || kode.match(/NN-NA-.*-D-/g)) return false
   return true
 }
 
