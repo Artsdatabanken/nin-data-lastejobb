@@ -22,6 +22,7 @@ hovedtyper.forEach(e => {
     tittel: { nb: e.name, en: e.field7 },
     relasjon: []
   }
+  if (e.kortnavn) ny.tittel_kort = e.kortnavn
   const klger = {}
   Object.keys(e).forEach(key => {
     if (key.startsWith("klg_")) {
@@ -52,6 +53,8 @@ hovedtyper.forEach(e => {
   })
   let kode = e.s_kode.substring(0, 4)
   if (e.s_kode.length > 4) kode += "-" + e.s_kode.substring(4)
+  if (kode.startsWith("LA-K-F"))
+    ny.ingress = ny.ingress.replace(/dallandskap/g, "fjordlandskap")
   r["NN-" + kode] = ny
 })
 
