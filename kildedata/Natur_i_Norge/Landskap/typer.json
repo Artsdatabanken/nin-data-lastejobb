@@ -55,13 +55,13 @@
     "farge": "#91cf60",
     "sortering": 1,
     "ingress": "Naturlandskap brukes om landskap hvor de naturlige, økologiske prosesser er dominerende og hvor kulturpåvirkningen er liten og ubetydelig. Det kan være inngrep eller spor av inngrep, men økosystemet er lite endret.",
-    "infoUrl": "https://no.wikipedia.org/wiki/Naturlandskap"
+    "infoUrl": ""
   },
   "NN-LA-MP-KL": {
     "tittel": { "nb": "Kulturlandskap" },
     "farge": "#fc8d59",
     "sortering": 2,
     "ingress": "Kulturlandskap er landskap som i større eller mindre grad er påvirka av mennesker.",
-    "infoUrl": "https://no.wikipedia.org/wiki/Kulturlandskap"
+    "infoUrl": ""
   }
 }

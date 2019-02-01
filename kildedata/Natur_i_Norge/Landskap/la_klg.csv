@@ -31,10 +31,10 @@ KLG	RE-IA	KLG_RE-IA	Relieff i innlandsås- og fjellandskap	Landskapstypen omfatt
 KLG	RE-KS	KLG_RE-KS	Relieff i kystslettelandskap	Områdene er tilnærmet flate, med liten terrenguro og med grunne havområder. 		1	slak	KLG_RE-KS-1	< 0.62
 KLG	RE-KS	KLG_RE-KS	Relieff i kystslettelandskap	Områdene hører til den mer kuperte delen av kystsletta med vekslende terreng over og under havnivå.		2	middels kupert	KLG_RE-KS-2	> 0.62
 KLG	RE-KS	KLG_RE-KS	Relieff i kystslettelandskap	Områdene har bratte åser eller ‘restfjell’ som står høyere enn kystslettelandskapet omkring, med en brem av lavt/flatt land omkring.  		3	bratte åser, restfjell, klipper og stup	KLG_RE-KS-3	TPI>10
-KLG	VE	KLG_VE	Vegetasjon	Områdene ligger under skoggrensen, og de delene avlandskapet som ikke er dominert av vann, vassdrag og våtmarker (og evt. jordbruk og bebygde områder) er normalt dekket med skog.		1	under skoggrensen	KLG_VE-1	
-KLG	VE	KLG_VE	Vegetasjon	Områdene er overveiende åpne og ligger like nedenfor den klimatiske skoggrensen, med veksling mellom åpne heiområder, innslag av fjellskog, enger og dvergbuskdominert vegetasjon. Disse områdene er ofte formet gjennom avskoging av fastmarksskogsmark og opprettholdelse av åpen mark gjennom rydding av kratt og trær og sommerbeite med moderat beitetrykk. 		2	hei under skoggrensen	KLG_VE-2	
-KLG	VE	KLG_VE	Vegetasjon	Områdene ligger over skoggrensen, med åpne men i hovedsak vegetasjonsdekte områder i fjellet. Vegetasjonen veksler mellom rabber, fjellheier, lesider og myrer.		3	hei over skoggrensen	KLG_VE-3	
-KLG	VE	KLG_VE	Vegetasjon	Områdene ligger over skoggrensen og er dominert av bart fjell og/eller blokkmark.		4	bart fjell over skoggrensen	KLG_VE-4	
-KLG	VP	KLG_VP	Våtmarkspreg			1	uten høyt våtmarkspreg	KLG_VP-1	< 0.2 
-KLG	VP	KLG_VP	Våtmarkspreg	Områdene har store våtmarksområder med myrer og/eller mange små vann.		2	høyt våtmarkspreg	KLG_VP-2	> 0.2 
-									
+KLG	VE	KLG_VE	Vegetasjon	Områdene ligger under skoggrensen, og de delene av landskapet som ikke er dominert av vann, vassdrag og våtmarker (og evt. jordbruk og bebygde områder) er normalt dekket med skog.		1	under skoggrensen	KLG_VE-1
+KLG	VE	KLG_VE	Vegetasjon	Områdene er overveiende åpne og ligger like nedenfor den klimatiske skoggrensen, med veksling mellom åpne heiområder, innslag av fjellskog, enger og dvergbuskdominert vegetasjon. Disse områdene er ofte formet gjennom avskoging av fastmarksskogsmark og opprettholdelse av åpen mark gjennom rydding av kratt og trær og sommerbeite med moderat beitetrykk. 		2	hei under skoggrensen	KLG_VE-2
+KLG	VE	KLG_VE	Vegetasjon	Områdene ligger over skoggrensen, med åpne men i hovedsak vegetasjonsdekte områder i fjellet. Vegetasjonen veksler mellom rabber, fjellheier, lesider og myrer.		3	hei over skoggrensen	KLG_VE-3
+KLG	VE	KLG_VE	Vegetasjon	Områdene ligger over skoggrensen og er dominert av bart fjell og/eller blokkmark.		4	bart fjell over skoggrensen	KLG_VE-4
+KLG	VP	KLG_VP	Våtmarkspreg			1	uten høyt våtmarkspreg	KLG_VP-1	< 0.2
+KLG	VP	KLG_VP	Våtmarkspreg	Områdene har store våtmarksområder med myrer og/eller mange små vann.		2	høyt våtmarkspreg	KLG_VP-2	> 0.2
+

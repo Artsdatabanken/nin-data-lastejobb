@@ -33,6 +33,7 @@ class CsvToJson {
       return
     }
 
+    if (record.length <= 1) return null
     let r = {}
     for (let i = 0; i < record.length; i++) r[this.header[i]] = record[i].trim()
     return r
