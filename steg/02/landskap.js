@@ -40,12 +40,12 @@ class CsvToJson {
   }
 }
 
-importer("Natur_i_Norge/Landskap/la.csv")
-importer("Natur_i_Norge/Landskap/la_klg.csv")
+importer("Natur_i_Norge/Landskap/typer.csv", "landskap")
+importer("Natur_i_Norge/Landskap/gradienter.csv", "landskapsgradient")
 
-function importer(csvFil) {
+function importer(csvFil, utFil) {
   const kildefil = config.kildedataPath + "/" + csvFil
-  const writePath = config.getDataPath(csvFil + ".json")
+  const writePath = config.getDataPath(utFil + ".csv.json")
   log.info("Import " + csvFil + " to " + writePath)
   new CsvToJson().convert(kildefil, writePath)
 }
