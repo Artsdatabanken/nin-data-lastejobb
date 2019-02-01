@@ -41,7 +41,6 @@ hovedtyper.forEach(e => {
   ny.ingress = e.beskrivelse
   if (!ny.ingress && e.rekkefølge_kjeding_klg)
     ny.ingress = kjedGradientbeskrivelser(e.rekkefølge_kjeding_klg, klger)
-  if (!ny.ingress) console.log(e)
   ny.pred_lnr = e.pred_lnr
   const menneskeligPåvirkning =
     e.naturlandskap === 1 ? "NN-LA-MP-NL" : "NN-LA-MP-KL"
@@ -63,7 +62,6 @@ function kjedGradientbeskrivelser(rekkefølge, klger) {
       const kode = hack(k)
       const klgkode = klger[kode]
       if (!klgkode) return
-      if (!klgkode) console.log(kode, klger)
       return klg[klgkode]._beskrivelse
     })
     .join(" ")
