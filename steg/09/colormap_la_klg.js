@@ -1,3 +1,4 @@
+const log = require("log-less-fancy")()
 const Jimp = require("jimp")
 const io = require("../../lib/io")
 
@@ -37,6 +38,7 @@ function fargeleggAlle(image, rotkode) {
 }
 
 function fargelegg(image, klgKode) {
+  log.warn(klgKode)
   const typer = lkm2type[klgKode]
   typer.forEach(type => {
     const index = koder[type]

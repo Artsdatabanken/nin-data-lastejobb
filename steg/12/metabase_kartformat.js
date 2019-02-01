@@ -57,7 +57,6 @@ function addKartformat(source) {
     const node = tre[xkode]
     const path = `${node.url}/${type}.${suffix}`
     const mapfile = mapfiles[path]
-    if (xkode == "AO") log.warn(xkode, path, mapfile)
     if (!mapfile) return
     const target = tre[xkode]
 
