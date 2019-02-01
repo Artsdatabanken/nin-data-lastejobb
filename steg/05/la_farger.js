@@ -6,7 +6,7 @@ const blandFarger = require("../../lib/fargefunksjon")
 const tinycolor = require("tinycolor2")
 
 const farger = io.lesKildedatafil("farger")
-let la = io.lesDatafil("la.json")
+let la = io.lesDatafil("landskap.json")
 
 let r = {}
 

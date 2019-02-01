@@ -8,7 +8,6 @@ let data = io.lesBuildfil("metabase")
 const prefixes = ["AO", "NN-LA", "NN-NA", "OR", "VV"]
 
 prefixes.forEach(prefix => {
-  log.debug(prefix)
   skrivFil(prefix)
 })
 

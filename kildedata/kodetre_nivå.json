@@ -14,9 +14,9 @@
     "Slekt",
     "Art"
   ],
-  "BS": ["Beskrivelsesystem", "Kilde til variasjon", "Variabel", "Verdi"],
-  "MI": ["Lokal kompleks miljøvariabel", "Miljøvariabel", "Basistrinn"],
-  "NA": [
+  "NN-NA-BS": ["Beskrivelsesystem", "Kilde til variasjon", "Variabel", "Verdi"],
+  "NN-NA-LKM": ["Lokal kompleks miljøvariabel", "Miljøvariabel", "Basistrinn"],
+  "NN-NA": [
     "Naturmangfold",
     "Hovedtypegruppe",
     "Hovedtype",
