@@ -2,7 +2,7 @@ const config = require("../../config")
 const io = require("../../lib/io")
 const typesystem = require("@artsdatabanken/typesystem")
 
-let klg = io.lesDatafil("la_klg.csv.json")
+let klg = io.lesDatafil("landskapsgradient.csv.json")
 
 const r = {}
 
@@ -13,7 +13,14 @@ klg.forEach(inn => {
     tittel: { nb: inn.trinn_navn },
     min: inn.verdier_klg_indekser,
     max: inn.verdier_klg_indekser,
-    _beskrivelse: inn.beskrivelse_klg
+    _beskrivelse: inn.beskrivelse_klg,
+    intervall: {
+      minTekst: inn.mintekst,
+      maxTekst: inn.makstekst,
+      min: inn.min,
+      max: inn.maks,
+      måleenhet: inn.måleenhet
+    }
   }
 })
 

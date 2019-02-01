@@ -4,8 +4,8 @@ const io = require("../../lib/io")
 
 let koder = io.lesKildedatafil("Natur_i_Norge/Landskap/la_index")
 let farger = io.lesDatafil("la_farger")
-let la = io.lesDatafil("la")
-let klg = io.lesDatafil("la_klg")
+let la = io.lesDatafil("landskap")
+let klg = io.lesDatafil("landskapsgradient")
 
 Object.keys(klg).forEach(kode => lagPalett(kode))
 
@@ -38,7 +38,6 @@ function fargeleggAlle(image, rotkode) {
 }
 
 function fargelegg(image, klgKode) {
-  log.warn(klgKode)
   const typer = lkm2type[klgKode]
   typer.forEach(type => {
     const index = koder[type]

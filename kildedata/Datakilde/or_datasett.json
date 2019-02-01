@@ -1,9 +1,9 @@
 {
   "OR-AD": ["RL", "LA"],
-  "OR-KV": ["NA-BS-8", "NA-I", "AO"],
-  "OR-MD": ["NA", "VV", "NA-BS"],
-  "OR-NB": ["NA-I"],
-  "OR-NI": ["NA-BS-6SE", "NA-BS-6SO"],
-  "OR-GU": ["NA-LKM-KA", "NA-LKM-BK", "NA-LKM-S3"],
+  "OR-KV": ["NN-NA-BS-8", "NN-NA-I", "AO"],
+  "OR-MD": ["NN-NA", "VV", "NN-NA-BS"],
+  "OR-NB": ["NN-NA-I"],
+  "OR-NI": ["NN-NA-BS-6SE", "NN-NA-BS-6SO"],
+  "OR-GU": ["NN-NA-LKM-KA", "NN-NA-LKM-BK", "NN-NA-LKM-S3"],
   "OR-SB": ["AO"]
 }
