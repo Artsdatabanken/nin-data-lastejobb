@@ -1,3 +1,4 @@
+/*const log = require("log-less-fancy")()
 const config = require("../../config")
 const io = require("../../lib/io")
 const typesystem = require("@artsdatabanken/typesystem")
@@ -10,29 +11,23 @@ const typesystem = require("@artsdatabanken/typesystem")
 let stats = io.lesDatafil("inn_statistikk")
 const r = {}
 
+const map = { MI: "NN-", AO: "", NA: "NN-", BS: "NN-", VV: "" }
 stats.forEach(s => {
   const skode = Object.keys(s)[0]
-  const kode = skode.replace("_", "-")
+  let kode = skode.replace("_", "-")
+  const prefix = kode.substring(0, 2)
+  if (!(prefix in map)) log.warn(kode)
+  kode = map[prefix] + kode
+  kode = kode.replace("NN-MI", "NN-LKM")
   const sn = s[skode]
   r[kode] = {
     stats: {
       areal: sn.area,
       geometrier: sn.areas,
-      arter: sn.observations
+      arter: sn.observedSpecies
     }
   }
 })
 
-// Akkumulerte data
-Object.keys(r).forEach(kode => {
-  const stats = r[kode].stats
-  const prefix = typesystem.splittKode(kode)[0]
-  const toppnode = r[prefix].stats
-  if (prefix) {
-    stats.arealPrefix = toppnode.areal
-    stats.arterPrefix = toppnode.arter
-    stats.geometrierPrefix = toppnode.geometrier
-  }
-})
-
 io.skrivDatafil(__filename, r)
+*/

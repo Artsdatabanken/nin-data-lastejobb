@@ -20,8 +20,6 @@ function exec(jsFile) {
 
 let files = findFiles(config.lasteScriptPath, ".js")
 files = files.sort()
-log.info("Fant totalt " + files.length + " skriptfiler")
-log.debug("Scriptfiler: " + files)
+log.info("Fant " + files.length + " lastejobber")
 files = files.filter(file => file.indexOf(".test") < 0)
-log.info("Kjører " + files.length + " lastejobber...")
 files.forEach(file => exec(file))

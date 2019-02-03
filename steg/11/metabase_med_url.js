@@ -24,7 +24,7 @@ function addUrl(kode, node) {
   node.graf = grafArray
 }
 
-function urlify(tittel, kode) {
+function urlify(tittel, kode, old) {
   let s = kode.startsWith(typesystem.art.prefiks)
     ? tittel.la || tittel.nb
     : tittel.nb
@@ -32,7 +32,14 @@ function urlify(tittel, kode) {
     log.error("Mangler tittel: " + kode + ": " + JSON.stringify(tittel))
     return kode
   }
-  return s.replace(/[\/:\s]/g, "_")
+
+  let url = s.replace(/[\/:\s]/g, "_")
+  if (old) {
+    url = url.replace("_%", "prosent")
+    url = url.replace("%", "_prosent")
+    url = url.replace("__", "_")
+  }
+  return url
 }
 
 function url(kode) {
@@ -43,5 +50,8 @@ function url(kode) {
   let sti = node.overordnet.slice(0, -1).map(f => f.tittel)
   sti = sti.reverse()
   sti.push(node.tittel)
-  return sti.map(e => urlify(e, kode)).join("/")
+  const oldUrl = sti.map(e => urlify(e, kode, false)).join("/")
+  const newUrl = sti.map(e => urlify(e, kode)).join("/")
+  if (oldUrl !== newUrl) log.info("mv ", url1, url)
+  return newUrl
 }

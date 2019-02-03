@@ -63,5 +63,32 @@
     "sortering": 2,
     "ingress": "Kulturlandskap er landskap som i større eller mindre grad er påvirka av mennesker.",
     "infoUrl": ""
+  },
+  "NN-LA-KLG-AI": {
+    "kartformat": {
+      "raster.gradient": {
+        "visning": ["kontinuerlig"],
+        "intervall": {
+          "original": [0, 13.228172302246],
+          "normalisertVerdi": [0, 254]
+        }
+      }
+    }
+  },
+  "NN-LA-KLG-AI-1": {
+    "sortering": 1,
+    "farge": "#fff"
+  },
+  "NN-LA-KLG-AI-2": {
+    "sortering": 2,
+    "farge": "#ff0"
+  },
+  "NN-LA-KLG-AI-3": {
+    "sortering": 3,
+    "farge": "#f80"
+  },
+  "NN-LA-KLG-AI-4": {
+    "sortering": 4,
+    "farge": "#f00"
   }
 }

@@ -87,7 +87,10 @@ function normaliserGradienter() {
     if (!rgrad) return
     const intervall = rgrad.intervall
     if (!intervall) return
-    if (!intervall.original) return // Kan bare normalisere hvis vi har opprinnelig intervall
+    if (!intervall.original) {
+      log.warn("Mangler opprinnelig intervall for " + kode)
+      return
+    }
     const barna = hierarki.barn[kode]
     barna.forEach(bkode => {
       const barn = tre[bkode]
@@ -112,10 +115,9 @@ function normaliserGradientTrinn(bkode, barn, rgrad) {
   intervall.min = min
   intervall.max = max
   const span = tmax - tmin
-  const nmin = Math.trunc((256 * (min - tmin)) / span) - 1
-  const nmax = Math.trunc((256 * (max - tmin)) / span) - 1.001
+  const nmin = Math.trunc((255 * (min - tmin)) / span)
+  const nmax = Math.trunc((255 * (max - tmin)) / span) - 0.001
   barn.normalisertVerdi = [nmin, nmax]
-  //  log.debug("normalisert", bkode, "=>", barn.normalisertVerdi)
 }
 
 function zoomlevels(kode, bbox, zoom) {
