@@ -33,38 +33,50 @@
   "NN-LA-M-S": { "farge": "hsl(200, 60%, 90%)" },
   "NN-LA-M-A": { "farge": "hsl(200, 33%, 90%)" },
 
-  "NN-LA-KLG-IYK-4": { "farge": "hsl(210, 45%, 45%)", "vekt": [1, 1, 0] },
-  "NN-LA-KLG-IYK-3": { "farge": "hsl(199, 33%, 50%)", "vekt": [1, 1, 0] },
-  "NN-LA-KLG-IYK-2": { "farge": "hsl(188, 21%, 55%)", "vekt": [1, 1, 0] },
-  "NN-LA-KLG-IYK-1": { "farge": "hsl(177, 11%, 60%)", "vekt": [1, 1, 0] },
+  "NN-LA-KLG-IYK-4": { "fargebidrag": "hsl(210, 45%, 45%)", "vekt": [1, 1, 0] },
+  "NN-LA-KLG-IYK-3": { "fargebidrag": "hsl(199, 33%, 50%)", "vekt": [1, 1, 0] },
+  "NN-LA-KLG-IYK-2": { "fargebidrag": "hsl(188, 21%, 55%)", "vekt": [1, 1, 0] },
+  "NN-LA-KLG-IYK-1": { "fargebidrag": "hsl(177, 11%, 60%)", "vekt": [1, 1, 0] },
 
-  "NN-LA-KLG-VE-1": { "farge": "hsl(77, 31%, 66%)", "vekt": [1, 1, 1] },
-  "NN-LA-KLG-VE-2": { "farge": "hsl(66, 22%, 66%)", "vekt": [1, 1, 1] },
-  "NN-LA-KLG-VE-3": { "farge": "hsl(55, 15%, 66%)", "vekt": [1, 1, 1] },
-  "NN-LA-KLG-VE-4": { "farge": "hsl(33, 11%, 66%)", "vekt": [1, 1, 1] },
+  "NN-LA-KLG-VE-1": { "fargebidrag": "hsl(77, 31%, 66%)", "vekt": [1, 1, 1] },
+  "NN-LA-KLG-VE-2": { "fargebidrag": "hsl(66, 22%, 66%)", "vekt": [1, 1, 1] },
+  "NN-LA-KLG-VE-3": { "fargebidrag": "hsl(55, 15%, 66%)", "vekt": [1, 1, 1] },
+  "NN-LA-KLG-VE-4": { "fargebidrag": "hsl(33, 11%, 66%)", "vekt": [1, 1, 1] },
 
-  "NN-LA-KLG-VP-1": { "farge": "hsl(33, 55%, 100%)", "vekt": 0 },
-  "NN-LA-KLG-VP-2": { "farge": "hsl(165, 41%, 35%)", "vekt": [1, 1, 0] },
+  "NN-LA-KLG-VP-1": { "fargebidrag": "hsl(33, 55%, 100%)", "vekt": 0 },
+  "NN-LA-KLG-VP-2": { "fargebidrag": "hsl(165, 41%, 35%)", "vekt": [1, 1, 0] },
 
-  "NN-LA-KLG-KA-1": { "farge": "hsl(77, 44%, 55%)", "vekt": [1, 1, 0.1] },
-  "NN-LA-KLG-KA-2": { "farge": "hsl(77, 11%, 55%)", "vekt": [1, 1, 0.1] },
+  "NN-LA-KLG-KA-1": { "fargebidrag": "hsl(77, 44%, 55%)", "vekt": [1, 1, 0.1] },
+  "NN-LA-KLG-KA-2": { "fargebidrag": "hsl(77, 11%, 55%)", "vekt": [1, 1, 0.1] },
 
-  "NN-LA-KLG-AI-1": { "farge": "hsl(0, 0%, 100%)", "vekt": 0 },
-  "NN-LA-KLG-AI-2": { "farge": "hsl(220, 0%, 75%)", "vekt": [0, 0.33, 0] },
-  "NN-LA-KLG-AI-3": { "farge": "hsl(220, 0%, 50%)", "vekt": [0, 0.66, 0] },
-  "NN-LA-KLG-AI-4": { "farge": "hsl(220, 0%, 25%)", "vekt": [0, 1, 0] },
+  "NN-LA-KLG-AI-1": { "fargebidrag": "hsl(0, 0%, 100%)", "vekt": 0 },
+  "NN-LA-KLG-AI-2": {
+    "fargebidrag": "hsl(220, 0%, 75%)",
+    "vekt": [0, 0.33, 0]
+  },
+  "NN-LA-KLG-AI-3": {
+    "fargebidrag": "hsl(220, 0%, 50%)",
+    "vekt": [0, 0.66, 0]
+  },
+  "NN-LA-KLG-AI-4": { "fargebidrag": "hsl(220, 0%, 25%)", "vekt": [0, 1, 0] },
 
-  "NN-LA-KLG-AI-KS-1": { "farge": "hsl(0, 0%, 100%)", "vekt": 0 },
-  "NN-LA-KLG-AI-KS-2": { "farge": "hsl(220, 0%, 66%)", "vekt": [0, 0.5, 0] },
-  "NN-LA-KLG-AI-KS-3": { "farge": "hsl(220, 0%, 33%)", "vekt": [0, 1, 0] },
+  "NN-LA-KLG-AI-KS-1": { "fargebidrag": "hsl(0, 0%, 100%)", "vekt": 0 },
+  "NN-LA-KLG-AI-KS-2": {
+    "fargebidrag": "hsl(220, 0%, 66%)",
+    "vekt": [0, 0.5, 0]
+  },
+  "NN-LA-KLG-AI-KS-3": {
+    "fargebidrag": "hsl(220, 0%, 33%)",
+    "vekt": [0, 1, 0]
+  },
 
-  "NN-LA-KLG-IP-1": { "farge": "hsl(105, 0%, 100%)", "vekt": 0 },
-  "NN-LA-KLG-IP-2": { "farge": "hsl(225, 25%, 66%)", "vekt": [2, 1, 0] },
-  "NN-LA-KLG-IP-3": { "farge": "hsl(225, 51%, 66%)", "vekt": [2, 1, 0] },
+  "NN-LA-KLG-IP-1": { "fargebidrag": "hsl(105, 0%, 100%)", "vekt": 0 },
+  "NN-LA-KLG-IP-2": { "fargebidrag": "hsl(225, 25%, 66%)", "vekt": [2, 1, 0] },
+  "NN-LA-KLG-IP-3": { "fargebidrag": "hsl(225, 51%, 66%)", "vekt": [2, 1, 0] },
 
-  "NN-LA-KLG-BP-1": { "farge": "hsl(0, 0%, 80%)", "vekt": 0 },
-  "NN-LA-KLG-BP-2": { "farge": "hsl(205, 50%, 95%)", "vekt": [1, 1, 4] },
+  "NN-LA-KLG-BP-1": { "fargebidrag": "hsl(0, 0%, 80%)", "vekt": 0 },
+  "NN-LA-KLG-BP-2": { "fargebidrag": "hsl(205, 50%, 95%)", "vekt": [1, 1, 4] },
 
-  "NN-LA-KLG-JP-1": { "farge": "hsl(0, 0%, 100%)", "vekt": 0 },
-  "NN-LA-KLG-JP-2": { "farge": "hsl(20, 75%, 65%)", "vekt": [2, 1, 0.1] }
+  "NN-LA-KLG-JP-1": { "fargebidrag": "hsl(0, 0%, 100%)", "vekt": 0 },
+  "NN-LA-KLG-JP-2": { "fargebidrag": "hsl(20, 75%, 65%)", "vekt": [2, 1, 0.1] }
 }

@@ -29,7 +29,7 @@ function blandDelta(kode) {
       if (!Array.isArray(delta.vekt))
         delta.vekt = [delta.vekt, delta.vekt, delta.vekt]
       stack.push({
-        farge: delta.farge,
+        farge: delta.fargebidrag,
         vekt: [...delta.vekt],
         kode: klg
       })
@@ -70,13 +70,6 @@ function normalize(stack) {
 
 function harVekt(arr) {
   return arr.find(e => e > 0)
-}
-
-function finnBasisfarge(kode) {
-  while (true) {
-    if (farger[kode]) return farger[kode]
-    kode = typesystem.forelder(kode)
-  }
 }
 
 Object.keys(farger).forEach(kode => (r[kode] = farger[kode]))

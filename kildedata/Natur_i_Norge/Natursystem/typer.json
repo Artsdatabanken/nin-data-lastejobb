@@ -201,6 +201,8 @@
       "raster.gradient": {
         "visning": ["klasser"],
         "intervall": {
+          "original": [0, 10000],
+          "måleenhet": "mm",
           "normalisertVerdi": [0, 255]
         }
       }
@@ -380,6 +382,8 @@
       "raster.gradient": {
         "visning": ["klasser"],
         "intervall": {
+          "original": [0, 1],
+          "måleenhet": "%",
           "normalisertVerdi": [0, 255]
         }
       }

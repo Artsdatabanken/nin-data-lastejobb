@@ -8,6 +8,7 @@ const r = {}
 function flyttNiNUnderNN(kode) {
   const prefix = kode.substring(0, 2)
   if ("NA_LA".indexOf(prefix) < 0) return kode
+  log.warn(kode)
   return "NN-" + kode
 }
 
@@ -75,7 +76,7 @@ flett("landskapsgradient")
 flett("ar_taxon")
 flett("na_prosedyrekategori")
 flett("na_definisjonsgrunnlag")
-flett("statistikk")
+flett("inn_statistikk")
 flettKildedata("rl_rødliste")
 sjekkAtTitlerEksisterer()
 capsTitler()
@@ -85,7 +86,7 @@ function capsTitler() {
   for (let key of Object.keys(r)) {
     const tittel = r[key].tittel
     Object.keys(tittel).forEach(lang => {
-      let tit = tittel[lang]
+      let tit = tittel[lang].replace(/\s+/g, " ") // Fix double space issues in source data
       if (tit) tittel[lang] = tit.replace(tit[0], tit[0].toUpperCase())
       else log.warn("Mangler tittel: ", key)
     })
