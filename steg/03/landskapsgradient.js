@@ -7,8 +7,7 @@ let klg = io.lesDatafil("landskapsgradient.csv.json")
 const r = {}
 
 klg.forEach(inn => {
-  if (!inn.field2) return
-  r["NN-LA-" + hack(inn.field2)] = { tittel: { nb: inn.klg_navn } }
+  r["NN-LA-" + hack(inn.kode)] = { tittel: { nb: inn.klg_navn } }
   r["NN-LA-" + hack(inn.klg_trinn_kode)] = {
     tittel: { nb: inn.trinn_navn },
     min: inn.verdier_klg_indekser,
