@@ -13,9 +13,6 @@
   },
   "NN-LA-KLG": { "tittel": { "nb": "Landskapsgradient" } },
   "NN-LA-KLG-BP": { "ingress": "Om landskapet er dominert av isbre." },
-  "NN-LA-KLG-JP": {
-    "ingress": "I hvor stor grad landskapet er dominert av jordbruk, gjennom andel dyrket mark."
-  },
   "NN-LA-KLG-RE": {
     "ingress": "Beskriver grov-skala terrengform."
   },
@@ -70,7 +67,7 @@
         "visning": ["kontinuerlig"],
         "intervall": {
           "original": [0, 13.228172302246],
-          "normalisertVerdi": [0, 254]
+          "normalisertVerdi": [0, 255]
         }
       }
     }
@@ -90,5 +87,86 @@
   "NN-LA-KLG-AI-4": {
     "sortering": 4,
     "farge": "#f00"
+  },
+  "NN-LA-KLG-AI-KS": {
+    "kartformat": {
+      "raster.gradient": {
+        "visning": ["kontinuerlig"],
+        "intervall": {
+          "original": [0, 13.228172302246],
+          "normalisertVerdi": [0, 255]
+        }
+      }
+    }
+  },
+  "NN-LA-KLG-AI-KS-1": {
+    "sortering": 1,
+    "farge": "#fff"
+  },
+  "NN-LA-KLG-AI-KS-2": {
+    "sortering": 3,
+    "farge": "#f80"
+  },
+  "NN-LA-KLG-AI-KS-3": {
+    "sortering": 4,
+    "farge": "#f00"
+  },
+  "NN-LA-KLG-KA": {
+    "kartformat": {
+      "raster.gradient": {
+        "visning": ["kontinuerlig"],
+        "intervall": {
+          "original": [1, 210.64946875],
+          "normalisertVerdi": [1, 255]
+        }
+      }
+    }
+  },
+  "NN-LA-KLG-KA-1": {
+    "sortering": 1,
+    "farge": "#5ab4ac"
+  },
+  "NN-LA-KLG-KA-2": {
+    "sortering": 2,
+    "farge": "#d8b365"
+  },
+  "NN-LA-KLG-JP": {
+    "ingress": "I hvor stor grad landskapet er dominert av jordbruk, gjennom andel dyrket mark.",
+    "kartformat": {
+      "raster.gradient": {
+        "visning": ["kontinuerlig"],
+        "intervall": {
+          "original": [0, 1],
+          "normalisertVerdi": [0, 255]
+        }
+      }
+    }
+  },
+  "NN-LA-KLG-JP-1": {
+    "sortering": 1,
+    "farge": "#fff"
+  },
+  "NN-LA-KLG-JP-2": {
+    "sortering": 2,
+    "farge": "#c70"
+  },
+  "NN-LA-KLG-VP": {
+    "kartformat": {
+      "raster.gradient": {
+        "visning": ["kontinuerlig"],
+        "intervall": {
+          "original": [0, 2],
+          "normalisertVerdi": [0, 255]
+        }
+      }
+    }
+  },
+  "NN-LA-KLG-VP-1": {
+    "sortering": 1,
+    "farge": "#fff"
+  },
+  "NN-LA-KLG-VP-2": {
+    "sortering": 2,
+    "farge": "#8f4"
   }
 }
