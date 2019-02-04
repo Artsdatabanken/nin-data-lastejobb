@@ -8,7 +8,7 @@ const config = require("../../config")
 class CsvToJson {
   constructor(csvOptions) {
     this.csvOptions = csvOptions || {
-      delimiter: "\t",
+      delimiter: ",",
       relax_column_count: true,
       escape: "\\"
     }
