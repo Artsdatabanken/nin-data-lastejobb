@@ -6,6 +6,9 @@ const typesystem = require("@artsdatabanken/typesystem")
 const config = require("../../config")
 
 // Leser kommuners navn fra SSB
+// TODO: Vurder å lese fra Kartverket:
+// https://ws.geonorge.no/kommuneinfo/v1/#/default/get_fylkerkommuner
+// Fullstendig mangel på historikk :(
 
 function parseSpråk(s) {
   switch (s) {
@@ -55,7 +58,7 @@ function mapKommuner(kommuner) {
     if (ci.code !== "9999") {
       r[kode] = {
         tittel: { nb: parseSpråk(ci.name) },
-        betegnelse: { nb: "kommune" }
+        nivå: { nb: "kommune" }
       }
     }
   })
