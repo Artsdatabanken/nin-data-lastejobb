@@ -15,29 +15,111 @@
   "OR": { "farge": "hsl(70, 0%, 70%)" },
   "RL": { "farge": "hsl(12, 40%, 70%)" },
 
-  "NN-LA-KLG-RE-IA-1": { "farge": "hsl(185, 0%, 80%)", "vekt": [0, 0, 1] },
-  "NN-LA-KLG-RE-IA-2": { "farge": "hsl(185, 0%, 84%)", "vekt": [0, 0, 1] },
-  "NN-LA-KLG-RE-IA-3": { "farge": "hsl(185, 0%, 88%)", "vekt": [0, 0, 1] },
-  "NN-LA-KLG-RE-IA-4": { "farge": "hsl(185, 0%, 92%)", "vekt": [0, 0, 1] },
-  "NN-LA-KLG-RE-IA-5": { "farge": "hsl(185, 0%, 96%)", "vekt": [0, 0, 1] },
-  "NN-LA-KLG-RE-ID-1": { "farge": "hsl(190, 10%, 83%)", "vekt": [0.1, 0, 1] },
-  "NN-LA-KLG-RE-ID-2": { "farge": "hsl(190, 10%, 75%)", "vekt": [0.1, 0, 1] },
-  "NN-LA-KLG-RE-ID-3": { "farge": "hsl(190, 10%, 67%)", "vekt": [1, 1, 1] },
-  "NN-LA-KLG-RE-ID-4": { "farge": "hsl(190, 10%, 60%)", "vekt": [1, 1, 1] },
-  "NN-LA-KLG-RE-KS-1": { "farge": "hsl(222,0%, 64%)", "vekt": [0, 0, 1] },
-  "NN-LA-KLG-RE-KS-2": { "farge": "hsl(222,0%, 76%)", "vekt": [0, 0, 1] },
-  "NN-LA-KLG-RE-KS-3": { "farge": "hsl(222,0%, 87%)", "vekt": [0, 0, 1] },
+  "NN-LA-MP-NL": {
+    "tittel": { "nb": "Naturlandskap" },
+    "farge": "#91cf60",
+    "sortering": 1,
+    "ingress": "Naturlandskap brukes om landskap hvor de naturlige, økologiske prosesser er dominerende og hvor kulturpåvirkningen er liten og ubetydelig. Det kan være inngrep eller spor av inngrep, men økosystemet er lite endret.",
+    "infoUrl": ""
+  },
+  "NN-LA-MP-KL": {
+    "tittel": { "nb": "Kulturlandskap" },
+    "farge": "#fc8d59",
+    "sortering": 2,
+    "ingress": "Kulturlandskap er landskap som i større eller mindre grad er påvirka av mennesker.",
+    "infoUrl": ""
+  },
+  "NN-LA-KLG-AI": {
+    "farge": "#f80",
+    "kartformat": {
+      "raster.gradient": {
+        "visning": ["kontinuerlig"],
+        "intervall": {
+          "original": [0, 13.228172302246],
+          "normalisertVerdi": [0, 255]
+        }
+      }
+    }
+  },
+  "NN-LA-KLG-AI-KS": {
+    "sortering": 4,
+    "farge": "#f00"
+  },
+  "NN-LA-KLG-KA": {
+    "farge": "#5ab4ac",
+    "kartformat": {
+      "raster.gradient": {
+        "visning": ["kontinuerlig"],
+        "intervall": {
+          "original": [1, 210.64946875],
+          "normalisertVerdi": [1, 255]
+        }
+      }
+    }
+  },
+  "NN-LA-KLG-JP": {
+    "farge": "hsl(20, 75%, 65%)"
+  },
+  "NN-LA-KLG-VP": {
+    "farge": "#8f4"
+  },
+  "NN-LA-KLG-RE-IA": { "farge": "hsl(185, 0%, 80%)" },
+  "NN-LA-KLG-RE-IA-1": {
+    "fargebidrag": "hsl(185, 0%, 80%)",
+    "vekt": [0, 0, 1]
+  },
+  "NN-LA-KLG-RE-IA-2": {
+    "fargebidrag": "hsl(185, 0%, 84%)",
+    "vekt": [0, 0, 1]
+  },
+  "NN-LA-KLG-RE-IA-3": {
+    "fargebidrag": "hsl(185, 0%, 88%)",
+    "vekt": [0, 0, 1]
+  },
+  "NN-LA-KLG-RE-IA-4": {
+    "fargebidrag": "hsl(185, 0%, 92%)",
+    "vekt": [0, 0, 1]
+  },
+  "NN-LA-KLG-RE-IA-5": {
+    "fargebidrag": "hsl(185, 0%, 96%)",
+    "vekt": [0, 0, 1]
+  },
+  "NN-LA-KLG-RE-ID": {
+    "farge": "hsl(190, 10%, 60%)"
+  },
+  "NN-LA-KLG-RE-ID-1": {
+    "fargebidrag": "hsl(190, 10%, 83%)",
+    "vekt": [0.1, 0, 1]
+  },
+  "NN-LA-KLG-RE-ID-2": {
+    "fargebidrag": "hsl(190, 10%, 75%)",
+    "vekt": [0.1, 0, 1]
+  },
+  "NN-LA-KLG-RE-ID-3": {
+    "fargebidrag": "hsl(190, 10%, 67%)",
+    "vekt": [1, 1, 1]
+  },
+  "NN-LA-KLG-RE-ID-4": {
+    "fargebidrag": "hsl(190, 10%, 60%)",
+    "vekt": [1, 1, 1]
+  },
+  "NN-LA-KLG-RE-KS": { "farge": "hsl(222,0%, 64%)" },
+  "NN-LA-KLG-RE-KS-1": { "fargebidrag": "hsl(222,0%, 64%)", "vekt": [0, 0, 1] },
+  "NN-LA-KLG-RE-KS-2": { "fargebidrag": "hsl(222,0%, 76%)", "vekt": [0, 0, 1] },
+  "NN-LA-KLG-RE-KS-3": { "fargebidrag": "hsl(222,0%, 87%)", "vekt": [0, 0, 1] },
 
   "NN-LA-M": { "farge": "hsl(200, 55%, 54%)" },
   "NN-LA-M-D": { "farge": "hsl(200, 60%, 70%)" },
   "NN-LA-M-S": { "farge": "hsl(200, 60%, 90%)" },
   "NN-LA-M-A": { "farge": "hsl(200, 33%, 90%)" },
 
+  "NN-LA-KLG-IYK": { "farge": "hsl(210, 45%, 45%)" },
   "NN-LA-KLG-IYK-4": { "fargebidrag": "hsl(210, 45%, 45%)", "vekt": [1, 1, 0] },
   "NN-LA-KLG-IYK-3": { "fargebidrag": "hsl(199, 33%, 50%)", "vekt": [1, 1, 0] },
   "NN-LA-KLG-IYK-2": { "fargebidrag": "hsl(188, 21%, 55%)", "vekt": [1, 1, 0] },
   "NN-LA-KLG-IYK-1": { "fargebidrag": "hsl(177, 11%, 60%)", "vekt": [1, 1, 0] },
 
+  "NN-LA-KLG-VE": { "farge": "hsl(77, 31%, 66%)" },
   "NN-LA-KLG-VE-1": { "fargebidrag": "hsl(77, 31%, 66%)", "vekt": [1, 1, 1] },
   "NN-LA-KLG-VE-2": { "fargebidrag": "hsl(66, 22%, 66%)", "vekt": [1, 1, 1] },
   "NN-LA-KLG-VE-3": { "fargebidrag": "hsl(55, 15%, 66%)", "vekt": [1, 1, 1] },
@@ -70,10 +152,12 @@
     "vekt": [0, 1, 0]
   },
 
+  "NN-LA-KLG-IP": { "farge": "hsl(225, 51%, 66%)" },
   "NN-LA-KLG-IP-1": { "fargebidrag": "hsl(105, 0%, 100%)", "vekt": 0 },
   "NN-LA-KLG-IP-2": { "fargebidrag": "hsl(225, 25%, 66%)", "vekt": [2, 1, 0] },
   "NN-LA-KLG-IP-3": { "fargebidrag": "hsl(225, 51%, 66%)", "vekt": [2, 1, 0] },
 
+  "NN-LA-KLG-BP": { "farge": "hsl(205, 50%, 95%)" },
   "NN-LA-KLG-BP-1": { "fargebidrag": "hsl(0, 0%, 80%)", "vekt": 0 },
   "NN-LA-KLG-BP-2": { "fargebidrag": "hsl(205, 50%, 95%)", "vekt": [1, 1, 4] },
 

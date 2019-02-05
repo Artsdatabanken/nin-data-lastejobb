@@ -67,6 +67,7 @@ Object.keys(diagArt).forEach(key => {
   }
 })
 
-log.warn("Ukjente koder", ukjenteKoder)
-log.warn("Ukjente arter", Object.keys(ukjenteArter).length)
+if (ukjenteKoder) log.warn("Ukjente naturtyper", ukjenteKoder)
+if (Object.keys(ukjenteArter).length > 0)
+  log.warn("Ukjente arter", Object.keys(ukjenteArter).length)
 io.skrivDatafil(__filename, r)
