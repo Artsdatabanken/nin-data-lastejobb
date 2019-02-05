@@ -34,7 +34,7 @@
     "log-less-fancy": "^1.3.3",
     "node-fetch": "^2.3.0",
     "polygon-lookup": "^2.4.0",
-    "prettier": "^1.16.2",
+    "prettier": "^1.16.4",
     "shapefile": "^0.6.6",
     "sqlite3": "^4.0.6",
     "tinycolor2": "^1.4.1"
@@ -43,10 +43,10 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "eslint": "^5.12.1",
+    "eslint": "^5.13.0",
     "husky": "^1.3.1",
-    "jest": "^24.0.0",
-    "lint-staged": "^8.1.1",
+    "jest": "^24.1.0",
+    "lint-staged": "^8.1.3",
     "pretty-quick": "^1.10.0"
   }
 }
