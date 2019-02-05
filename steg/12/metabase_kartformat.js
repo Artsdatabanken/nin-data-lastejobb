@@ -106,7 +106,6 @@ function normaliserGradientTrinn(bkode, barn, rgrad) {
     return
   }
   const intervall = barn.intervall
-  //  if (bkode.indexOf("KLG-KA") > 0) console.log(bkode, barn)
   if (!intervall) return log.warn("Mangler intervall for " + bkode)
   if (Array.isArray(intervall)) return
   let { min, max } = intervall

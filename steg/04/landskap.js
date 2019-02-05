@@ -8,13 +8,10 @@ let klg = io.lesDatafil("landskapsgradient.json")
 const r = {}
 
 function hack(kode) {
-  return (
-    "NN-LA-" +
-    kode
-      .replace("RE-ID-KF", "RE-ID")
-      .split("_")
-      .join("-")
-  )
+  kode = kode.replace("RE-", "RE")
+  kode = kode.replace("ID-KF", "IDKF")
+  kode = kode.replace("AI-KS", "AIKS")
+  return "NN-LA-" + kode.split("_").join("-")
 }
 
 hovedtyper.forEach(e => {
@@ -29,7 +26,7 @@ hovedtyper.forEach(e => {
       const verdi = e[key]
       if (verdi) {
         const kode = hack(verdi)
-        klger[kode.substring(0, kode.length - 2)] = kode
+        klger[hack(kode.substring(0, kode.length - 2))] = kode
         ny.relasjon.push({
           kode: hack(verdi),
           kant: "definert av",
@@ -65,6 +62,7 @@ function kjedGradientbeskrivelser(rekkefølge, klger) {
       const kode = hack(k)
       const klgkode = klger[kode]
       if (!klgkode) return
+      if (!klg[klgkode]) throw new Error("Ukjent klg " + klgkode)
       return klg[klgkode]._beskrivelse
     })
     .join(" ")

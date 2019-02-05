@@ -10,10 +10,10 @@ function kodefix(kode) {
   if (!kode) return null
   kode = kode.toUpperCase().replace("_", "-")
   if (kode.indexOf("BESYS") === 0)
-    return kode.replace("BESYS", "NA-BS-").replace("BS0", "BS")
-  if (kode === "LKM") return "NA-LKM"
-  if ("0123456789".indexOf(kode[0]) < 0) return "NA-LKM-" + kode
-  return "NA-BS-" + kode
+    return kode.replace("BESYS", "NN-NA-BS-").replace("BS0", "BS")
+  if (kode === "LKM") return "NN-NA-LKM"
+  if ("0123456789".indexOf(kode[0]) < 0) return "NN-NA-LKM-" + kode
+  return "NN-NA-BS-" + kode
 }
 
 let kodeliste = {}
@@ -33,6 +33,6 @@ function importerKoder() {
 }
 
 const imp = importerKoder()
-imp["NA-LKM"].tittel.nb = "Lokale komplekse miljøvariabler"
+imp["NN-NA-LKM"].tittel.nb = "Lokale komplekse miljøvariabler"
 
 io.skrivDatafil(__filename, imp)
