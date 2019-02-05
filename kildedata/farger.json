@@ -41,7 +41,7 @@
       }
     }
   },
-  "NN-LA-KLG-AI-KS": {
+  "NN-LA-KLG-AIKS": {
     "sortering": 4,
     "farge": "#f00"
   },
@@ -63,50 +63,50 @@
   "NN-LA-KLG-VP": {
     "farge": "#8f4"
   },
-  "NN-LA-KLG-RE-IA": { "farge": "hsl(185, 0%, 80%)" },
-  "NN-LA-KLG-RE-IA-1": {
+  "NN-LA-KLG-REIA": { "farge": "hsl(185, 0%, 80%)" },
+  "NN-LA-KLG-REIA-1": {
     "fargebidrag": "hsl(185, 0%, 80%)",
     "vekt": [0, 0, 1]
   },
-  "NN-LA-KLG-RE-IA-2": {
+  "NN-LA-KLG-REIA-2": {
     "fargebidrag": "hsl(185, 0%, 84%)",
     "vekt": [0, 0, 1]
   },
-  "NN-LA-KLG-RE-IA-3": {
+  "NN-LA-KLG-REIA-3": {
     "fargebidrag": "hsl(185, 0%, 88%)",
     "vekt": [0, 0, 1]
   },
-  "NN-LA-KLG-RE-IA-4": {
+  "NN-LA-KLG-REIA-4": {
     "fargebidrag": "hsl(185, 0%, 92%)",
     "vekt": [0, 0, 1]
   },
-  "NN-LA-KLG-RE-IA-5": {
+  "NN-LA-KLG-REIA-5": {
     "fargebidrag": "hsl(185, 0%, 96%)",
     "vekt": [0, 0, 1]
   },
-  "NN-LA-KLG-RE-ID": {
+  "NN-LA-KLG-REIDKF": {
     "farge": "hsl(190, 10%, 60%)"
   },
-  "NN-LA-KLG-RE-ID-1": {
+  "NN-LA-KLG-REIDKF-1": {
     "fargebidrag": "hsl(190, 10%, 83%)",
     "vekt": [0.1, 0, 1]
   },
-  "NN-LA-KLG-RE-ID-2": {
+  "NN-LA-KLG-REIDKF-2": {
     "fargebidrag": "hsl(190, 10%, 75%)",
     "vekt": [0.1, 0, 1]
   },
-  "NN-LA-KLG-RE-ID-3": {
+  "NN-LA-KLG-REIDKF-3": {
     "fargebidrag": "hsl(190, 10%, 67%)",
     "vekt": [1, 1, 1]
   },
-  "NN-LA-KLG-RE-ID-4": {
+  "NN-LA-KLG-REIDKF-4": {
     "fargebidrag": "hsl(190, 10%, 60%)",
     "vekt": [1, 1, 1]
   },
-  "NN-LA-KLG-RE-KS": { "farge": "hsl(222,0%, 64%)" },
-  "NN-LA-KLG-RE-KS-1": { "fargebidrag": "hsl(222,0%, 64%)", "vekt": [0, 0, 1] },
-  "NN-LA-KLG-RE-KS-2": { "fargebidrag": "hsl(222,0%, 76%)", "vekt": [0, 0, 1] },
-  "NN-LA-KLG-RE-KS-3": { "fargebidrag": "hsl(222,0%, 87%)", "vekt": [0, 0, 1] },
+  "NN-LA-KLG-REKS": { "farge": "hsl(222,0%, 64%)" },
+  "NN-LA-KLG-REKS-1": { "fargebidrag": "hsl(222,0%, 64%)", "vekt": [0, 0, 1] },
+  "NN-LA-KLG-REKS-2": { "fargebidrag": "hsl(222,0%, 76%)", "vekt": [0, 0, 1] },
+  "NN-LA-KLG-REKS-3": { "fargebidrag": "hsl(222,0%, 87%)", "vekt": [0, 0, 1] },
 
   "NN-LA-M": { "farge": "hsl(200, 55%, 54%)" },
   "NN-LA-M-D": { "farge": "hsl(200, 60%, 70%)" },
@@ -142,12 +142,12 @@
   },
   "NN-LA-KLG-AI-4": { "fargebidrag": "hsl(220, 0%, 25%)", "vekt": [0, 1, 0] },
 
-  "NN-LA-KLG-AI-KS-1": { "fargebidrag": "hsl(0, 0%, 100%)", "vekt": 0 },
-  "NN-LA-KLG-AI-KS-2": {
+  "NN-LA-KLG-AIKS-1": { "fargebidrag": "hsl(0, 0%, 100%)", "vekt": 0 },
+  "NN-LA-KLG-AIKS-2": {
     "fargebidrag": "hsl(220, 0%, 66%)",
     "vekt": [0, 0.5, 0]
   },
-  "NN-LA-KLG-AI-KS-3": {
+  "NN-LA-KLG-AIKS-3": {
     "fargebidrag": "hsl(220, 0%, 33%)",
     "vekt": [0, 1, 0]
   },

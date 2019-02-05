@@ -24,10 +24,10 @@ klg.forEach(inn => {
 })
 
 function hack(kode) {
-  return kode
-    .replace("RE-ID-KF", "RE-ID")
-    .split("_")
-    .join("-")
+  kode = kode.replace("RE-", "RE")
+  kode = kode.replace("ID-KF", "IDKF")
+  kode = kode.replace("AI-KS", "AIKS")
+  return kode.split("_").join("-")
 }
 
 io.skrivDatafil(__filename, r)

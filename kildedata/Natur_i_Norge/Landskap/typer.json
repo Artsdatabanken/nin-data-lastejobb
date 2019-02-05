@@ -13,10 +13,7 @@
   },
   "NN-LA-KLG": { "tittel": { "nb": "Landskapsgradient" } },
   "NN-LA-KLG-BP": { "ingress": "Om landskapet er dominert av isbre." },
-  "NN-LA-KLG-RE": {
-    "ingress": "Beskriver grov-skala terrengform."
-  },
-  "NN-LA-KLG-RE-KS": {
+  "NN-LA-KLG-REKS": {
     "ingress": "Beskriver grov-skala terrengform."
   },
   "NN-LA-KLG-IP": {
@@ -36,7 +33,7 @@
         "kantRetur": "viser"
       },
       {
-        "kode": "NN-LA-KLG-AI-KS",
+        "kode": "NN-LA-KLG-AIKS",
         "kant": "defineres av",
         "kantRetur": "viser"
       },
@@ -88,7 +85,7 @@
     "sortering": 4,
     "farge": "#f00"
   },
-  "NN-LA-KLG-AI-KS": {
+  "NN-LA-KLG-AIKS": {
     "kartformat": {
       "raster.gradient": {
         "visning": ["kontinuerlig"],
@@ -99,15 +96,15 @@
       }
     }
   },
-  "NN-LA-KLG-AI-KS-1": {
+  "NN-LA-KLG-AIKS-1": {
     "sortering": 1,
     "farge": "#fff"
   },
-  "NN-LA-KLG-AI-KS-2": {
+  "NN-LA-KLG-AIKS-2": {
     "sortering": 3,
     "farge": "#f80"
   },
-  "NN-LA-KLG-AI-KS-3": {
+  "NN-LA-KLG-AIKS-3": {
     "sortering": 4,
     "farge": "#f00"
   },
