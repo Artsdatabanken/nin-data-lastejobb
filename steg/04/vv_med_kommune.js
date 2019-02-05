@@ -8,6 +8,7 @@ let vo = io.lesDatafil("vv_verneområde_geojson")
 var lookup = new PolygonLookup(kommuner)
 
 let treff = 0
+manglerKommune = []
 
 function koblePåKommune(vo) {
   let nater = vo.geometry.coordinates
@@ -27,11 +28,7 @@ function koblePåKommune(vo) {
   vo.properties.kommune = Object.keys(hits)
   //  if (vo.properties.IID === "VV00000171") log.warn(hits)
   if (vo.properties.kommune.length <= 0)
-    log.warn(
-      "Fant ikke kommune for",
-      vo.properties.IID,
-      vo.properties.OMRADENAVN
-    )
+    manglerKommune.push(vo.properties.OMRADENAVN)
 }
 
 Object.keys(vo).forEach(iid => {
@@ -39,5 +36,8 @@ Object.keys(vo).forEach(iid => {
   koblePåKommune(v)
 })
 
-log.info(`${treff} av ${Object.keys(vo).length} ligger innenfor en kommune`)
+const total = Object.keys(vo).length
+if (treff < total)
+  log.info(`${total - treff} områder ligger utenfor alle kommuner`)
+
 io.skrivDatafil(__filename, vo)
