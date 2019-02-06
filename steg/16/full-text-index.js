@@ -18,7 +18,7 @@ const index = {}
 
 function push(hit, score, text) {
   if (!text) return
-  if (typeof text === "string") {
+  if (typeof text !== "string") {
     return log.warn("Ugyldig kriterie:", hit, JSON.stringify(text))
   }
   if (!hit.kode) throw new Error("hm")
