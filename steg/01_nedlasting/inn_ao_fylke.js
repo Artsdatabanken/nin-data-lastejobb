@@ -19,7 +19,7 @@ function mapFylker(kilde) {
     if (ci.code !== "99") {
       r[kode] = {
         tittel: { nb: ci.name },
-        betegnelse: { nb: "fylke" },
+        nivå: "fylke",
         utenRamme: true
       } //Kommunevåpen har en form som gjør at det ikke passer å croppe dem til en sirkel }
     }
