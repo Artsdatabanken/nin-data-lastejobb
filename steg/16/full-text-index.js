@@ -18,9 +18,14 @@ const index = {}
 
 function push(hit, score, text) {
   if (!text) return
+  if (typeof text !== "string") {
+    return log.warn("Ugyldig kriterie:", hit, JSON.stringify(text))
+  }
+  if (!hit.kode) throw new Error("hm")
   if (!index[hit.kode]) index[hit.kode] = { hit: hit, text: {} }
   const item = index[hit.kode]
   score = parseInt(100 * score)
+  if (!score) throw new Error("hm2")
   if (!item.text[score]) item.text[score] = []
   item.text[score].push(text)
 }

@@ -58,7 +58,7 @@ function mapKommuner(kommuner) {
     if (ci.code !== "9999") {
       r[kode] = {
         tittel: { nb: parseSpråk(ci.name) },
-        nivå: { nb: "kommune" }
+        nivå: "kommune"
       }
     }
   })
