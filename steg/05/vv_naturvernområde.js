@@ -91,7 +91,7 @@ function map(vo) {
   const kode = typesystem.verneområde.leggTilPrefiks(iid)
   let e = {
     tittel: {
-      nb: props.OMRADENAVN
+      nb: props.OMRADENAVN + " " + props.VERNEFORM.toLowerCase()
     },
     infoUrl: config.infoUrl.verneområde + props.IID,
     relasjon: [],

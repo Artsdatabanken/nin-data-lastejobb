@@ -1,7 +1,12 @@
+const fs = require("fs")
 const config = require("../../config")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
+
+let mods = ""
+
+const usedUrls = {}
 
 let tre = io.lesDatafil("metabase_tweaks")
 Object.keys(tre).forEach(kode => addUrl(kode, tre[kode]))
@@ -9,6 +14,8 @@ io.skrivDatafil(__filename, tre)
 
 function addUrl(kode, node) {
   node.url = url(kode)
+  if (usedUrls[node.url]) log.warn("Duplikat URL: " + node.url)
+  usedUrls[node.url] = true
   if (!node.graf) return
   const grafArray = []
   Object.keys(node.graf).forEach(typeRelasjon => {
@@ -24,7 +31,7 @@ function addUrl(kode, node) {
   node.graf = grafArray
 }
 
-function urlify(tittel, kode, old) {
+function urlify(tittel, kode, makevalid) {
   let s = kode.startsWith(typesystem.art.prefiks)
     ? tittel.la || tittel.nb
     : tittel.nb
@@ -34,8 +41,7 @@ function urlify(tittel, kode, old) {
   }
 
   let url = s.replace(/[\/:\s]/g, "_")
-  if (old) {
-    url = url.replace("_%", "prosent")
+  if (makevalid) {
     url = url.replace("%", "_prosent")
     url = url.replace("__", "_")
   }
@@ -51,7 +57,10 @@ function url(kode) {
   sti = sti.reverse()
   sti.push(node.tittel)
   const oldUrl = sti.map(e => urlify(e, kode, false)).join("/")
-  const newUrl = sti.map(e => urlify(e, kode)).join("/")
-  if (oldUrl !== newUrl) log.info("mv ", url1, url)
+  const newUrl = sti.map(e => urlify(e, kode, true)).join("/")
+  if (oldUrl !== newUrl) log.info("mv ", oldUrl, newUrl)
+  if (oldUrl !== newUrl) mods += `\nmv "${oldUrl}" "${newUrl}"`
   return newUrl
 }
+
+//fs.writeFileSync("rename.sh", mods)
