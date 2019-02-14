@@ -58,7 +58,7 @@ function url(kode) {
   sti.push(node.tittel)
   const oldUrl = sti.map(e => urlify(e, kode, false)).join("/")
   const newUrl = sti.map(e => urlify(e, kode, true)).join("/")
-  if (oldUrl !== newUrl) log.info("mv ", oldUrl, newUrl)
+  //  if (oldUrl !== newUrl) log.info("mv ", oldUrl, newUrl)
   if (oldUrl !== newUrl) mods += `\nmv "${oldUrl}" "${newUrl}"`
   return newUrl
 }
