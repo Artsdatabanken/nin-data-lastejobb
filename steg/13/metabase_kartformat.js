@@ -68,6 +68,7 @@ function addKartformat(source) {
     if (mapfile.maxzoom) {
       cv.zoom = [parseInt(mapfile.minzoom), parseInt(mapfile.maxzoom)]
     }
+    cv.filnavn = mapfile.filename
     cv.størrelse = mapfile.size
     cv.oppdatert = mapfile.mtime
     if (mapfile.bounds) {
