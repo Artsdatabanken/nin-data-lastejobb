@@ -44,7 +44,7 @@ function lagGrafkoblinger(kode, node) {
     //    if (kode == "VV_386") log.warn(kode, e.kode)
     if (!e.kode) throw new Error("Mangler kode " + e.kode)
     lagGrafkobling(kode, e.kode, e.kant, e, e.erSubset)
-    lagGrafkobling(e.kode, kode, e.kantRetur, e, false)
+    if (e.kantRetur) lagGrafkobling(e.kode, kode, e.kantRetur, e, false)
   })
   delete node.relasjon
 }
