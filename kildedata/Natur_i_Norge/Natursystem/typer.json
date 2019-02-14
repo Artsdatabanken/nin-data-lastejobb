@@ -55,69 +55,6 @@
   "NN-NA-HT-KG5": { "tittel": { "nb": "5" } },
   "NN-NA-HT-PK": { "tittel": { "nb": "Prosedyrekategori" } },
   "NN-NA-HT-DG": { "tittel": { "nb": "Definisjonsgrunnlag" } },
-  "NN-NA-LSM": {
-    "tittel": { "nb": "Lokale simple miljøvariabler" },
-    "ingress": "Lokale simple miljøvariabler (LSM) er enkeltmiljøvariabler som karakteriserer hovedtyper.",
-    "infoUrl": "",
-    "sortering": 4
-  },
-  "NN-NA-LSM-X": {
-    "tittel": { "nb": "X" },
-    "ingress": "",
-    "infoUrl": "",
-    "sortering": 1
-  },
-  "NN-NA-LSM-X1": {
-    "tittel": { "nb": "På land" },
-    "ingress": "",
-    "infoUrl": "",
-    "sortering": 1,
-    "relasjon": [
-      {
-        "kode": "NN-NA-T",
-        "kant": "definerer",
-        "kantRetur": "defineres av"
-      },
-      {
-        "kode": "NN-NA-I",
-        "kant": "definerer",
-        "kantRetur": "defineres av"
-      },
-      {
-        "kode": "NN-NA-V",
-        "kant": "definerer",
-        "kantRetur": "defineres av"
-      }
-    ]
-  },
-  "NN-NA-LSM-X2": {
-    "tittel": { "nb": "I vann" },
-    "ingress": "...",
-    "infoUrl": "",
-    "sortering": 2,
-    "relasjon": [
-      {
-        "kode": "NN-NA-F",
-        "kant": "definerer",
-        "kantRetur": "defineres av"
-      },
-      {
-        "kode": "NN-NA-H",
-        "kant": "definerer",
-        "kantRetur": "defineres av"
-      },
-      {
-        "kode": "NN-NA-L",
-        "kant": "definerer",
-        "kantRetur": "defineres av"
-      },
-      {
-        "kode": "NN-NA-M",
-        "kant": "definerer",
-        "kantRetur": "defineres av"
-      }
-    ]
-  },
   "NN-NA-BS-6SE": {
     "tittel": { "nb": "Bioklimatisk seksjon" },
     "ingress": "Denne regionale komplekse miljøvariabelen fanger opp både humiditet og oseanitet. Bioklimatiske seksjoner er en av de aller viktigste regionale komplekse miljøvariablene også på global skala, der spennvidden i vegetasjonsformasjoner fra regnskog via steppe til ørken fanges opp av sju bioklimatiske seksjoner.",

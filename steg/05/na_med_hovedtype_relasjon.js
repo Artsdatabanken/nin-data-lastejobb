@@ -12,6 +12,7 @@ const lkmTekst = {
   t: "tilleggs-miljøvariabel",
   d: "differensierende miljøvariabel"
 }
+
 function relasjon(node, kant, kode, kantRetur = "definerer hovedtype") {
   node.relasjon.push({
     kode: kode,

@@ -43,6 +43,10 @@ function fjernRelasjonTilKoderSomIkkeHarData(data) {
 }
 
 function harKartData(kode) {
+  const node = tre[kode]
+  if (!node) return false
+  // Ta med alt som har relasjoner
+  if (node.graf && Object.keys(node.graf).length > 0) return true
   const visAlltid = [
     //    "NA-BS-8",
     //    "NA-BS-2JM",
@@ -59,7 +63,6 @@ function harKartData(kode) {
   if (kode.indexOf("LA") === 0) return true
   // if (kode.indexOf("RL") === 0) return true
   // if (kode.indexOf("FA") === 0) return true
-  if (!tre[kode]) return false
 
   return !!tre[kode].bbox
 }
