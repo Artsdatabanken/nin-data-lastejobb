@@ -24,10 +24,11 @@ const ht = {}
 Object.keys(basistrinn).forEach(grunntype => {
   const mier = basistrinn[grunntype]
   mier.forEach(mi => {
-    relasjon(na[grunntype], "defineres av", mi, null)
     const hovedtype = mor(grunntype)
-    const lkmVerdi = mor(mi)
-    ht[hovedtype] = lkmVerdi
+    const lkmkode = mor(mi)
+    const lkm = na[lkmkode]
+    relasjon(na[grunntype], lkm.tittel.nb, mi, null)
+    ht[hovedtype] = lkmkode
   })
 })
 
