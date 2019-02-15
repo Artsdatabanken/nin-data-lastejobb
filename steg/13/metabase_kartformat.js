@@ -27,7 +27,6 @@ sourceTypes.forEach(source => addKartformat(source))
 normaliserGradienter()
 if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
 zoomlevels(typesystem.rotkode)
-
 io.skrivDatafil(__filename, tre)
 
 function readMbtiles() {
