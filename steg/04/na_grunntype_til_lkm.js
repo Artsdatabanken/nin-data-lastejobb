@@ -8,7 +8,7 @@ const typesystem = require("@artsdatabanken/typesystem")
 let rows = io.lesDatafil("na_grunntype_til_lkm.csv.json")
 let nin_liste = io.lesDatafil("na_kode")
 let mi_liste = io.lesDatafil("na_mi_liste")
-
+log.warn(mi_liste[""])
 const replace = {
   "S3-E": "S3E",
   "S3-F": "S3F",
