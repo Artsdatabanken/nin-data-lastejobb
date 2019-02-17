@@ -71,7 +71,7 @@ function lagGrafGradientkobling(kode, node, type, kantnode) {
   const gradForelder = full[grkode0].foreldre[0]
   const src = full[gradForelder]
   if (src.type) log.warn(gradForelder, src.type)
-  if (src.type !== "gradient") return
+  if (src.type !== "gradient") return false
   let g = []
   barnAv[gradForelder].forEach(bkode => {
     const b = full[bkode]
@@ -92,12 +92,14 @@ function lagGrafGradientkobling(kode, node, type, kantnode) {
     tittel: node.tittel,
     trinn: g
   }
+  return true
 }
 
 function lagGrafGradientkoblinger(kode, node) {
   if (!node.graf) return
   Object.keys(node.graf).forEach(kant => {
     const kantnode = node.graf[kant]
-    lagGrafGradientkobling(kode, node, kant, kantnode)
+    if (lagGrafGradientkobling(kode, node, kant, kantnode))
+      delete node.graf[kant]
   })
 }
