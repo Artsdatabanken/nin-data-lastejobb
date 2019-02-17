@@ -40096,16 +40096,16 @@
           "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S1"
         },
         {
-          "Id": "S3S",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S"
+          "Id": "S3-S",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S"
         },
         {
-          "Id": "S3F",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F"
+          "Id": "S3-F",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F"
         },
         {
-          "Id": "S3E",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E"
+          "Id": "S3-E",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E"
         },
         {
           "Id": "SY",
@@ -41282,8 +41282,8 @@
     {
       "Navn": "Erosjonsmotstand (i sorterte sedimenter)",
       "Kode": {
-        "Id": "S3E",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E"
+        "Id": "S3-E",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E"
       },
       "OverordnetKode": {
         "Id": "LKM",
@@ -41291,132 +41291,132 @@
       },
       "UnderordnetKoder": [
         {
-          "Id": "S3E-+",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-+"
+          "Id": "S3-E-+",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-+"
         },
         {
-          "Id": "S3E-f",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-f"
+          "Id": "S3-E-f",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-f"
         },
         {
-          "Id": "S3E-e",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-e"
+          "Id": "S3-E-e",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-e"
         },
         {
-          "Id": "S3E-d",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-d"
+          "Id": "S3-E-d",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-d"
         },
         {
-          "Id": "S3E-c",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-c"
+          "Id": "S3-E-c",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-c"
         },
         {
-          "Id": "S3E-b",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-b"
+          "Id": "S3-E-b",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-b"
         },
         {
-          "Id": "S3E-a",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-a"
+          "Id": "S3-E-a",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-a"
         },
         {
-          "Id": "S3E-0",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-0"
+          "Id": "S3-E-0",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-0"
         }
       ]
     },
     {
       "Navn": "fast fjell",
       "Kode": {
-        "Id": "S3E-+",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-+"
+        "Id": "S3-E-+",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-+"
       },
       "OverordnetKode": {
-        "Id": "S3E",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E"
+        "Id": "S3-E",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E"
       }
     },
     {
       "Navn": "ingen erosjonsmotstand",
       "Kode": {
-        "Id": "S3E-0",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-0"
+        "Id": "S3-E-0",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-0"
       },
       "OverordnetKode": {
-        "Id": "S3E",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E"
+        "Id": "S3-E",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E"
       }
     },
     {
       "Navn": "svært liten erosjonsmotstand",
       "Kode": {
-        "Id": "S3E-a",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-a"
+        "Id": "S3-E-a",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-a"
       },
       "OverordnetKode": {
-        "Id": "S3E",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E"
+        "Id": "S3-E",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E"
       }
     },
     {
       "Navn": "temmelig liten erosjonsmotstand",
       "Kode": {
-        "Id": "S3E-b",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-b"
+        "Id": "S3-E-b",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-b"
       },
       "OverordnetKode": {
-        "Id": "S3E",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E"
+        "Id": "S3-E",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E"
       }
     },
     {
       "Navn": "intermediær erosjonsmotstand",
       "Kode": {
-        "Id": "S3E-c",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-c"
+        "Id": "S3-E-c",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-c"
       },
       "OverordnetKode": {
-        "Id": "S3E",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E"
+        "Id": "S3-E",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E"
       }
     },
     {
       "Navn": "temmelig stor erosjonsmotstand",
       "Kode": {
-        "Id": "S3E-d",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-d"
+        "Id": "S3-E-d",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-d"
       },
       "OverordnetKode": {
-        "Id": "S3E",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E"
+        "Id": "S3-E",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E"
       }
     },
     {
       "Navn": "stor erosjonsmotstand",
       "Kode": {
-        "Id": "S3E-e",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-e"
+        "Id": "S3-E-e",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-e"
       },
       "OverordnetKode": {
-        "Id": "S3E",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E"
+        "Id": "S3-E",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E"
       }
     },
     {
       "Navn": "svært stor erosjonsmotstand",
       "Kode": {
-        "Id": "S3E-f",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E-f"
+        "Id": "S3-E-f",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E-f"
       },
       "OverordnetKode": {
-        "Id": "S3E",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3E"
+        "Id": "S3-E",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-E"
       }
     },
     {
       "Navn": "Finmaterialinnhold (i sorterte sedimenter)",
       "Kode": {
-        "Id": "S3F",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F"
+        "Id": "S3-F",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F"
       },
       "OverordnetKode": {
         "Id": "LKM",
@@ -41424,87 +41424,87 @@
       },
       "UnderordnetKoder": [
         {
-          "Id": "S3F-¤",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F-¤"
+          "Id": "S3-F-¤",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F-¤"
         },
         {
-          "Id": "S3F-c",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F-c"
+          "Id": "S3-F-c",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F-c"
         },
         {
-          "Id": "S3F-b",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F-b"
+          "Id": "S3-F-b",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F-b"
         },
         {
-          "Id": "S3F-a",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F-a"
+          "Id": "S3-F-a",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F-a"
         },
         {
-          "Id": "S3F-0",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F-0"
+          "Id": "S3-F-0",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F-0"
         }
       ]
     },
     {
       "Navn": "finmaterialdominert",
       "Kode": {
-        "Id": "S3F-¤",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F-¤"
+        "Id": "S3-F-¤",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F-¤"
       },
       "OverordnetKode": {
-        "Id": "S3F",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F"
+        "Id": "S3-F",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F"
       }
     },
     {
       "Navn": "uten finmateriale",
       "Kode": {
-        "Id": "S3F-0",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F-0"
+        "Id": "S3-F-0",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F-0"
       },
       "OverordnetKode": {
-        "Id": "S3F",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F"
+        "Id": "S3-F",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F"
       }
     },
     {
       "Navn": "finmaterialfattig",
       "Kode": {
-        "Id": "S3F-a",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F-a"
+        "Id": "S3-F-a",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F-a"
       },
       "OverordnetKode": {
-        "Id": "S3F",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F"
+        "Id": "S3-F",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F"
       }
     },
     {
       "Navn": "litt finmaterialrik",
       "Kode": {
-        "Id": "S3F-b",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F-b"
+        "Id": "S3-F-b",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F-b"
       },
       "OverordnetKode": {
-        "Id": "S3F",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F"
+        "Id": "S3-F",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F"
       }
     },
     {
       "Navn": "temmelig finmaterialrik",
       "Kode": {
-        "Id": "S3F-c",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F-c"
+        "Id": "S3-F-c",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F-c"
       },
       "OverordnetKode": {
-        "Id": "S3F",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3F"
+        "Id": "S3-F",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-F"
       }
     },
     {
       "Navn": "Spesielle sorterte sedimenter",
       "Kode": {
-        "Id": "S3S",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S"
+        "Id": "S3-S",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S"
       },
       "OverordnetKode": {
         "Id": "LKM",
@@ -41512,95 +41512,95 @@
       },
       "UnderordnetKoder": [
         {
-          "Id": "S3S-e",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S-e"
+          "Id": "S3-S-e",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S-e"
         },
         {
-          "Id": "S3S-d",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S-d"
+          "Id": "S3-S-d",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S-d"
         },
         {
-          "Id": "S3S-c",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S-c"
+          "Id": "S3-S-c",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S-c"
         },
         {
-          "Id": "S3S-b",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S-b"
+          "Id": "S3-S-b",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S-b"
         },
         {
-          "Id": "S3S-a",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S-a"
+          "Id": "S3-S-a",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S-a"
         },
         {
-          "Id": "S3S-0",
-          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S-0"
+          "Id": "S3-S-0",
+          "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S-0"
         }
       ]
     },
     {
       "Navn": "usortert eller normalt sediment",
       "Kode": {
-        "Id": "S3S-0",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S-0"
+        "Id": "S3-S-0",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S-0"
       },
       "OverordnetKode": {
-        "Id": "S3S",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S"
+        "Id": "S3-S",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S"
       }
     },
     {
       "Navn": "skjellsand",
       "Kode": {
-        "Id": "S3S-a",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S-a"
+        "Id": "S3-S-a",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S-a"
       },
       "OverordnetKode": {
-        "Id": "S3S",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S"
+        "Id": "S3-S",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S"
       }
     },
     {
       "Navn": "ruglbunn",
       "Kode": {
-        "Id": "S3S-b",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S-b"
+        "Id": "S3-S-b",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S-b"
       },
       "OverordnetKode": {
-        "Id": "S3S",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S"
+        "Id": "S3-S",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S"
       }
     },
     {
       "Navn": "svampspikelbunn",
       "Kode": {
-        "Id": "S3S-c",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S-c"
+        "Id": "S3-S-c",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S-c"
       },
       "OverordnetKode": {
-        "Id": "S3S",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S"
+        "Id": "S3-S",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S"
       }
     },
     {
       "Navn": "korallgrus",
       "Kode": {
-        "Id": "S3S-d",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S-d"
+        "Id": "S3-S-d",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S-d"
       },
       "OverordnetKode": {
-        "Id": "S3S",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S"
+        "Id": "S3-S",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S"
       }
     },
     {
       "Navn": "myrtorv",
       "Kode": {
-        "Id": "S3S-e",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S-e"
+        "Id": "S3-S-e",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S-e"
       },
       "OverordnetKode": {
-        "Id": "S3S",
-        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3S"
+        "Id": "S3-S",
+        "Definisjon": "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/HentKode/S3-S"
       }
     },
     {
