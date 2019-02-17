@@ -38,8 +38,9 @@ function fixGradient(node) {
 
 function addUrl(kode, node) {
   node.url = url(kode)
-  if (usedUrls[node.url]) log.warn("Dupe URL " + kode + ": " + node.url)
-  usedUrls[node.url] = true
+  if (usedUrls[node.url])
+    log.warn("Dupe URL " + kode + "," + usedUrls[node.url] + ": " + node.url)
+  usedUrls[node.url] = kode
   fixGraf(node)
   fixGradient(node)
 }
