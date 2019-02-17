@@ -12,10 +12,7 @@ let tre = io.lesDatafil("metabase_tweaks")
 Object.keys(tre).forEach(kode => addUrl(kode, tre[kode]))
 io.skrivDatafil(__filename, tre)
 
-function addUrl(kode, node) {
-  node.url = url(kode)
-  if (usedUrls[node.url]) log.warn("Duplikat URL: " + node.url)
-  usedUrls[node.url] = true
+function fixGraf(node) {
   if (!node.graf) return
   const grafArray = []
   Object.keys(node.graf).forEach(typeRelasjon => {
@@ -29,6 +26,22 @@ function addUrl(kode, node) {
     grafArray.push(tr)
   })
   node.graf = grafArray
+}
+
+function fixGradient(node) {
+  if (!node.gradient) return
+  Object.keys(node.gradient).forEach(type => {
+    const grad = node.gradient[type]
+    grad.url = url(grad.kode)
+  })
+}
+
+function addUrl(kode, node) {
+  node.url = url(kode)
+  if (usedUrls[node.url]) log.warn("Dupe URL " + kode + ": " + node.url)
+  usedUrls[node.url] = true
+  fixGraf(node)
+  fixGradient(node)
 }
 
 function urlify(tittel, kode, makevalid) {
