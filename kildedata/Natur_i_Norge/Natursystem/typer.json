@@ -124,6 +124,126 @@
     "infoUrl": "https://www.artsdatabanken.no/Pages/137908",
     "type": "gradient"
   },
+  "NN-NA-LKM-DL": {
+    "type": "gradient",
+    "farge0": "#3cf",
+    "farge": "#336"
+  },
+  "NN-NA-LKM-DM": {
+    "type": "gradient",
+    "farge0": "#3cf",
+    "farge": "#336"
+  },
+  "NN-NA-LKM-GS": {
+    "type": "gradient",
+    "farge0": "#af6",
+    "farge": "#A53"
+  },
+  "NN-NA-LKM-HF": {
+    "type": "gradient",
+    "farge0": "#fff",
+    "farge": "#f0f"
+  },
+  "NN-NA-LKM-HI": {
+    "type": "gradient",
+    "farge0": "#8f1",
+    "farge": "#f3f"
+  },
+  "NN-NA-LKM-HU": {
+    "type": "gradient",
+    "farge0": "#8ff",
+    "farge": "#a33"
+  },
+  "NN-NA-LKM-IF": {
+    "type": "gradient",
+    "farge0": "#3f0",
+    "farge": "#bff"
+  },
+  "NN-NA-LKM-IO": {
+    "type": "gradient",
+    "farge0": "#aaa",
+    "farge": "#0f8"
+  },
+  "NN-NA-LKM-JV": {
+    "type": "gradient",
+    "farge0": "#3af",
+    "farge": "#f73"
+  },
+  "NN-NA-LKM-KI": {
+    "type": "gradient",
+    "farge0": "#aaa",
+    "farge": "#0cf"
+  },
+  "NN-NA-LKM-LA": {
+    "type": "gradient",
+    "farge0": "#0af",
+    "farge": "#ff0"
+  },
+  "NN-NA-LKM-NG": {
+    "type": "gradient",
+    "farge0": "#fff",
+    "farge": "#e90"
+  },
+  "NN-NA-LKM-OR": {
+    "type": "gradient",
+    "farge0": "#fff",
+    "farge": "#39F"
+  },
+  "NN-NA-LKM-RU": {
+    "type": "gradient",
+    "farge0": "#fff",
+    "farge": "#f39"
+  },
+  "NN-NA-LKM-S1": {
+    "type": "gradient",
+    "farge0": "#000",
+    "farge": "#eee"
+  },
+  "NN-NA-LKM-SA": {
+    "type": "gradient",
+    "farge0": "#000",
+    "farge": "#eee"
+  },
+  "NN-NA-LKM-SM": {
+    "type": "gradient",
+    "farge0": "#eee",
+    "farge": "#e0e"
+  },
+  "NN-NA-LKM-SU": {
+    "type": "gradient",
+    "farge0": "#eee",
+    "farge": "#e03"
+  },
+  "NN-NA-LKM-SV": {
+    "type": "gradient",
+    "farge0": "#0d5",
+    "farge": "#def"
+  },
+  "NN-NA-LKM-UE": {
+    "type": "gradient",
+    "farge0": "#0d5",
+    "farge": "#de0"
+  },
+  "NN-NA-LKM-UF": {
+    "type": "gradient",
+    "farge0": "#0d5",
+    "farge": "#d00"
+  },
+  "NN-NA-LKM-VF": {
+    "type": "gradient",
+    "farge0": "#fd5",
+    "farge": "#0df"
+  },
+  "NN-NA-LKM-VI": {
+    "type": "gradient",
+    "farge0": "#eee",
+    "farge": "#e0a"
+  },
+  "NN-NA-LKM-VM": {
+    "type": "gradient",
+    "farge0": "#e35",
+    "farge": "#36a"
+  },
   "NN-NA-LKM-S3": {
     "tittel": { "nb": "Sedimentsortering" },
     "ingress": "Sedimentsortering er en flerdimensjonal lokal kompleks miljøvariabel (mLKM) som adresser hele spekteret av økologiske effekter av viktige prosesser knyttet til sedimentenes kornstørrelsesfordeling.",
@@ -134,6 +254,7 @@
     "tittel": { "nb": "Erosjonsmotstand" },
     "ingress": "Sedimentets evne til å motstå vannerosjon; målt som kritisk skjærstyrke, samt sedimentets evne til å motstå andre ytre påvirkninger slik det kommer til uttrykk gjennom sedimentets kornstørrelsesfordeling».",
     "infoUrl": "https://www.artsdatabanken.no/Pages/179771",
+    "type": "gradient",
     "kartformat": {
       "raster.gradient": {
         "visning": ["klasser"],
@@ -315,6 +436,7 @@
     "tittel": { "nb": "Finmaterialinnhold" },
     "ingress": "Organisk og uorganisk materiale med kornstørrelse < 1/16 mm (silt og leire). Finmaterialinnhold angis som vektprosentandel i sedimentet.",
     "infoUrl": "https://www.artsdatabanken.no/Pages/179772",
+    "type": "gradient",
     "kartformat": {
       "raster.gradient": {
         "visning": ["klasser"],
@@ -397,10 +519,14 @@
     "sortering": 4
   },
   "NN-NA-LKM-KA-A": { "farge": "hsl(60, 44%, 95%)", "sortering": 1 },
-  "NN-NA-LKM-KA-B": { "farge": "hsl(57, 50%, 90%)", "sortering": 2 },
-  "NN-NA-LKM-KA-D": { "farge": "hsl(35, 56%, 85%)", "sortering": 3 },
-  "NN-NA-LKM-KA-F": { "farge": "hsl(20, 62%, 80%)", "sortering": 4 },
-  "NN-NA-LKM-KA-H": { "farge": "hsl(0, 68%, 75%)", "sortering": 5 },
+  "NN-NA-LKM-KA-B": { "farge": "hsl(53, 49%, 90%)", "sortering": 2 },
+  "NN-NA-LKM-KA-C": { "farge": "hsl(46, 54%, 85%)", "sortering": 3 },
+  "NN-NA-LKM-KA-D": { "farge": "hsl(39, 59%, 80%)", "sortering": 4 },
+  "NN-NA-LKM-KA-E": { "farge": "hsl(33, 63%, 75%)", "sortering": 5 },
+  "NN-NA-LKM-KA-F": { "farge": "hsl(26, 68%, 70%)", "sortering": 6 },
+  "NN-NA-LKM-KA-G": { "farge": "hsl(19, 73%, 65%)", "sortering": 7 },
+  "NN-NA-LKM-KA-H": { "farge": "hsl(12, 78%, 60%)", "sortering": 8 },
+  "NN-NA-LKM-KA-I": { "farge": "hsl(5, 83%, 55%)", "sortering": 9 },
 
   "NN-NA-T37-C-2": { "farge": "hsl(74, 7%, 70%)" },
   "NN-NA-T37-E-2": { "farge": "hsl(74, 7%, 70%)" },
