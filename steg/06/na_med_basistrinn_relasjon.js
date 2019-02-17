@@ -27,7 +27,7 @@ Object.keys(basistrinn).forEach(grunntype => {
     const hovedtype = mor(grunntype)
     const lkmkode = mor(mi)
     const lkm = na[lkmkode]
-    relasjon(na[grunntype], lkm.tittel.nb, mi, "definerer")
+    relasjon(na[grunntype], lkm.tittel.nb, mi, "definerer grunntype")
     if (!ht[hovedtype]) ht[hovedtype] = {}
     ht[hovedtype][lkmkode] = true
   })
@@ -35,10 +35,9 @@ Object.keys(basistrinn).forEach(grunntype => {
 
 delete ht["NN-NA"]
 
-console.log(ht["NN-NA-T1"])
 Object.keys(ht).forEach(hovedtype => {
   Object.keys(ht[hovedtype]).forEach(lkm =>
-    relasjon(na[hovedtype], "defineres av", lkm, "definerer")
+    relasjon(na[hovedtype], "defineres av", lkm, "definerer hovedtype")
   )
 })
 
