@@ -59,10 +59,11 @@ function supplerMedFarger(farge0, farge, barn) {
   const f1 = new tinycolor(farge0)
   const f = new tinycolor(farge)
   for (let i = 0; i < barn.length; i++) {
-    const node = full[barn[i].kode]
-    if (node.farge) continue
+    const barnet = barn[i]
+    const node = full[barnet.kode]
     const color = tinycolor.mix(f1, f, (100 * i) / (barn.length - 1))
-    node.farge = color.toHexString()
+    node.farge = node.farge || color.toHexString()
+    barnet.farge = barnet.farge || color.toHexString()
   }
 }
 
@@ -70,7 +71,6 @@ function lagGrafGradientkobling(kode, node, type, kantnode) {
   const grkode0 = Object.keys(kantnode)[0]
   const gradForelder = full[grkode0].foreldre[0]
   const src = full[gradForelder]
-  if (src.type) log.warn(gradForelder, src.type)
   if (src.type !== "gradient") return false
   let g = []
   barnAv[gradForelder].forEach(bkode => {
@@ -89,7 +89,7 @@ function lagGrafGradientkobling(kode, node, type, kantnode) {
   node.gradient[type] = {
     kode: gradForelder,
     url: node.url,
-    tittel: node.tittel,
+    tittel: src.tittel,
     trinn: g
   }
   return true
