@@ -7,7 +7,6 @@ const typesystem = require("@artsdatabanken/typesystem")
 let full = io.lesDatafil("full")
 let hierarki = io.lesDatafil("kodehierarki")
 const barnAv = hierarki.barn
-
 Object.keys(full).forEach(kode => lagGrafkoblinger(kode, full[kode]))
 Object.keys(full).forEach(kode => lagGrafGradientkoblinger(kode, full[kode]))
 
@@ -47,7 +46,6 @@ function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
 function lagGrafkoblinger(kode, node) {
   if (!node.relasjon) return
   node.relasjon.forEach(e => {
-    //    if (kode == "VV_386") log.warn(kode, e.kode)
     if (!e.kode) throw new Error("Mangler kode " + e.kode)
     lagGrafkobling(kode, e.kode, e.kant, e, e.erSubset)
     if (e.kantRetur) lagGrafkobling(e.kode, kode, e.kantRetur, e, false)
@@ -102,4 +100,30 @@ function lagGrafGradientkoblinger(kode, node) {
     if (lagGrafGradientkobling(kode, node, kant, kantnode))
       delete node.graf[kant]
   })
+  propagerGradientTilForfedre(node)
+}
+
+function propagerGradientTilForfedre(node) {
+  node.foreldre.forEach(formor => {
+    if (formor.split("-").length > 1) propagerGradientTilFormor(formor, node)
+  })
+}
+
+function propagerGradientTilFormor(formorkode, node) {
+  const formor = full[formorkode]
+  const src = node.gradient
+  if (!src) return
+  if (!formor.gradient) formor.gradient = {}
+  const dst = formor.gradient
+  Object.keys(src).forEach(type => {
+    const srcg = src[type]
+    if (!dst[type]) dst[type] = Object.assign({}, srcg)
+    else {
+      const srct = srcg.trinn
+      const dstt = dst[type].trinn
+      for (let i = 0; i < dstt.length; i++)
+        dstt[i].på = dstt[i].på || srct[i].på
+    }
+  })
+  propagerGradientTilForfedre(formor)
 }
