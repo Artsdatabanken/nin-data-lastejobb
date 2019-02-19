@@ -6,8 +6,6 @@ const typesystem = require("@artsdatabanken/typesystem")
 let slettet_fordi_mangler_bbox = []
 let tre = io.lesDatafil("metabase_kartformat")
 
-console.log(harKartdata("AO"))
-return
 fjernKoderSomIkkeHarData(tre)
 //fjernRelasjonTilKoderSomIkkeHarData(tre)
 
