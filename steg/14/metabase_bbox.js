@@ -48,14 +48,7 @@ function harKartdata(kode) {
   // Ta med alt som har relasjoner
   if (node.gradient && Object.keys(node.gradient).length > 0) return true
   if (node.graf && Object.keys(node.graf).length > 0) return true
-  const visAlltid = [
-    //    "NA-BS-8",
-    //    "NA-BS-2JM",
-    //    "NA-BS-8ER",
-    //    "NA-BS-8TH",
-    //"NA-HT-DG",
-    //"NA-HT-PK"
-  ]
+  const visAlltid = ["OR"]
   if (visAlltid.includes(kode)) return true
   if (kode === typesystem.rotkode) return true
   // if (kode.indexOf("VV") === 0) return true
