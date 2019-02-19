@@ -18,13 +18,15 @@ farger = Object.assign(farger, la_farger)
 
 Object.keys(data).forEach(kode => {
   const node = data[kode]
-  if (node.type === "gradient" && node.farge0) {
-    const barna = typesystem.sorterKoder(barnAv[kode])
-    gradientrampe(node.farge0, node.farge, barna)
-  }
+  if (node.type !== "gradient") return
+  const barna = typesystem.sorterKoder(barnAv[kode])
+  if (!node.farge0) node.farge0 = barna[0].farge
+  if (!node.farge) node.farge = barna[barna.length - 1].farge
+  if (node.farge0 && node.farge) gradientrampe(node.farge0, node.farge, barna)
 })
 
 while (trickleColorsUp()) {}
+settFargePåGradienter()
 
 // Fallback
 Object.keys(data).forEach(kode => {
@@ -79,4 +81,17 @@ function gradientrampe(farge0, farge, barn) {
     const color = tinycolor.mix(f1, f, (100 * i) / (barn.length - 1))
     node.farge = node.farge || color.toHexString()
   }
+}
+
+function settFargePåGradienter() {
+  Object.keys(data).forEach(kode => {
+    const node = data[kode]
+    if (!node.gradient) return
+    Object.keys(node.gradient).forEach(type => {
+      const grad = node.gradient[type]
+      grad.trinn.forEach(
+        trinn => (trinn.farge = trinn.farge || data[trinn.kode].farge)
+      )
+    })
+  })
 }

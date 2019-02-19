@@ -53,18 +53,6 @@ function lagGrafkoblinger(kode, node) {
   delete node.relasjon
 }
 
-function supplerMedFarger(farge0, farge, barn) {
-  const f1 = new tinycolor(farge0)
-  const f = new tinycolor(farge)
-  for (let i = 0; i < barn.length; i++) {
-    const barnet = barn[i]
-    const node = full[barnet.kode]
-    const color = tinycolor.mix(f1, f, (100 * i) / (barn.length - 1))
-    node.farge = node.farge || color.toHexString()
-    barnet.farge = barnet.farge || color.toHexString()
-  }
-}
-
 function lagGrafGradientkobling(kode, node, type, kantnode) {
   const gradienter = {}
   Object.keys(kantnode).forEach(grkode0 => {
@@ -83,9 +71,6 @@ function lagGrafGradientkobling(kode, node, type, kantnode) {
 }
 
 function lagGrafGradientkobling2(kode, node, type, kantnode) {
-  if (kode.startsWith("NN-LA-I")) {
-    log.warn(kode)
-  }
   const grkode0 = Object.keys(kantnode)[0]
   const gradForelder = full[grkode0].foreldre[0]
   const src = full[gradForelder]
@@ -105,7 +90,6 @@ function lagGrafGradientkobling2(kode, node, type, kantnode) {
   if (node.gradient === undefined) node.gradient = {}
   if (node.gradient[type] === undefined) node.gradient[type] = []
   g = g.sort((a, b) => (a.kode > b.kode ? 1 : -1))
-  supplerMedFarger(src.farge0, src.farge, g)
   node.gradient[type] = {
     kode: gradForelder,
     farge0: src.farge0,
