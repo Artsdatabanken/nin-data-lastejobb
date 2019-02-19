@@ -12,6 +12,7 @@ prefixes.forEach(prefix => {
 })
 
 function skrivFil(prefix) {
+  if (!data[prefix]) throw new Error("Unknown prefix " + prefix)
   const dok = {
     meta: {
       tittel: data[prefix].tittel.nb,
