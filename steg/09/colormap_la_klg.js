@@ -39,7 +39,11 @@ function fargeleggAlle(image, rotkode) {
 
 function fargelegg(image, klgKode) {
   const typer = lkm2type[klgKode]
-  if (!typer) throw new Error("Finner ikke " + klgKode)
+  if (!typer) {
+    log.warn("Finner ikke ", klgKode)
+    return
+    //    throw new Error("Finner ikke " + klgKode)
+  }
   typer.forEach(type => {
     const index = koder[type]
     if (index) settFarge(image, klgKode, index)

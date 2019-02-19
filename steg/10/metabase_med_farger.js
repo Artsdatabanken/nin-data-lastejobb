@@ -69,6 +69,7 @@ Object.keys(data).forEach(kode => {
 })
 
 io.skrivDatafil(__filename, data)
+
 function gradientrampe(farge0, farge, barn) {
   const f1 = new tinycolor(farge0)
   const f = new tinycolor(farge)

@@ -82,7 +82,10 @@ function lagGrafGradientkobling(kode, node, type, kantnode) {
   })
 }
 
-function lagGrafGradientkobling(kode, node, type, kantnode) {
+function lagGrafGradientkobling2(kode, node, type, kantnode) {
+  if (kode.startsWith("NN-LA-I")) {
+    log.warn(kode)
+  }
   const grkode0 = Object.keys(kantnode)[0]
   const gradForelder = full[grkode0].foreldre[0]
   const src = full[gradForelder]
@@ -105,6 +108,8 @@ function lagGrafGradientkobling(kode, node, type, kantnode) {
   supplerMedFarger(src.farge0, src.farge, g)
   node.gradient[type] = {
     kode: gradForelder,
+    farge0: src.farge0,
+    farge: src.farge,
     url: node.url,
     tittel: src.tittel,
     trinn: g
