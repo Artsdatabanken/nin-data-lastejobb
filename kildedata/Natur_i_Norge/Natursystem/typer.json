@@ -142,22 +142,22 @@
   "NN-NA-LKM-HF": {
     "type": "gradient",
     "farge0": "#fff",
-    "farge": "#f0f"
+    "farge": "#a4d"
   },
   "NN-NA-LKM-HI": {
     "type": "gradient",
-    "farge0": "#8f1",
-    "farge": "#f3f"
+    "farge0": "#af3",
+    "farge": "#f8f"
   },
   "NN-NA-LKM-HU": {
     "type": "gradient",
     "farge0": "#8ff",
-    "farge": "#a33"
+    "farge": "#b99"
   },
   "NN-NA-LKM-IF": {
     "type": "gradient",
-    "farge0": "#3f0",
-    "farge": "#bff"
+    "farge0": "#2d0",
+    "farge": "#aee"
   },
   "NN-NA-LKM-IO": {
     "type": "gradient",
@@ -166,8 +166,8 @@
   },
   "NN-NA-LKM-JV": {
     "type": "gradient",
-    "farge0": "#3af",
-    "farge": "#f73"
+    "farge0": "#477",
+    "farge": "#f44"
   },
   "NN-NA-LKM-KI": {
     "type": "gradient",
@@ -227,7 +227,7 @@
   "NN-NA-LKM-UF": {
     "type": "gradient",
     "farge0": "#0d5",
-    "farge": "#d00"
+    "farge": "#da5"
   },
   "NN-NA-LKM-VF": {
     "type": "gradient",
