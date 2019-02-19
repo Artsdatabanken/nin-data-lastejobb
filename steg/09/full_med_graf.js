@@ -66,12 +66,30 @@ function supplerMedFarger(farge0, farge, barn) {
 }
 
 function lagGrafGradientkobling(kode, node, type, kantnode) {
+  const gradienter = {}
+  Object.keys(kantnode).forEach(grkode0 => {
+    const forelder = full[grkode0].foreldre[0]
+    if (full[forelder].type === "gradient") gradienter[forelder] = grkode0
+  })
+  Object.keys(gradienter).forEach(grkode => {
+    lagGrafGradientkobling2(
+      kode,
+      node,
+      full[grkode].tittel.nb,
+      kantnode,
+      grkode
+    )
+  })
+}
+
+function lagGrafGradientkobling(kode, node, type, kantnode) {
   const grkode0 = Object.keys(kantnode)[0]
   const gradForelder = full[grkode0].foreldre[0]
   const src = full[gradForelder]
   if (src.type !== "gradient") return false
   let g = []
-  barnAv[gradForelder].forEach(bkode => {
+  const barna = typesystem.sorterKoder(barnAv[gradForelder])
+  barna.forEach(bkode => {
     const b = full[bkode]
     g.push({
       kode: bkode,
@@ -79,6 +97,7 @@ function lagGrafGradientkobling(kode, node, type, kantnode) {
       farge: b.farge,
       på: !!kantnode[bkode]
     })
+    if (kantnode[bkode]) delete kantnode[bkode]
   })
   if (node.gradient === undefined) node.gradient = {}
   if (node.gradient[type] === undefined) node.gradient[type] = []
@@ -97,8 +116,7 @@ function lagGrafGradientkoblinger(kode, node) {
   if (!node.graf) return
   Object.keys(node.graf).forEach(kant => {
     const kantnode = node.graf[kant]
-    if (lagGrafGradientkobling(kode, node, kant, kantnode))
-      delete node.graf[kant]
+    lagGrafGradientkobling(kode, node, kant, kantnode)
   })
   propagerGradientTilForfedre(node)
 }
