@@ -82,7 +82,6 @@ function lagGrafGradientkobling2(kode, node, type, kantnode) {
     g.push({
       kode: bkode,
       tittel: b.tittel,
-      farge: b.farge,
       på: !!kantnode[bkode]
     })
     if (kantnode[bkode]) delete kantnode[bkode]
@@ -92,8 +91,6 @@ function lagGrafGradientkobling2(kode, node, type, kantnode) {
   g = g.sort((a, b) => (a.kode > b.kode ? 1 : -1))
   node.gradient[type] = {
     kode: gradForelder,
-    farge0: src.farge0,
-    farge: src.farge,
     url: node.url,
     tittel: src.tittel,
     trinn: g
