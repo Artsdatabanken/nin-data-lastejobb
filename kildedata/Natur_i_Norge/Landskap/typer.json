@@ -12,11 +12,19 @@
     ]
   },
   "NN-LA-KLG": { "tittel": { "nb": "Landskapsgradient" } },
-  "NN-LA-KLG-BP": { "ingress": "Om landskapet er dominert av isbre." },
+  "NN-LA-KLG-BP": {
+    "type": "gradient",
+    "ingress": "Om landskapet er dominert av isbre."
+  },
+  "NN-LA-KLG-REIA": {
+    "type": "gradient"
+  },
   "NN-LA-KLG-REKS": {
+    "type": "gradient",
     "ingress": "Beskriver grov-skala terrengform."
   },
   "NN-LA-KLG-IP": {
+    "type": "gradient",
     "ingress": "I hvor stor grad landskapet er dominert av innsjøer."
   },
   "NN-LA-MP": {
@@ -59,6 +67,7 @@
     "infoUrl": ""
   },
   "NN-LA-KLG-AI": {
+    "type": "gradient",
     "kartformat": {
       "raster.gradient": {
         "visning": ["kontinuerlig"],
@@ -86,6 +95,7 @@
     "farge": "#f00"
   },
   "NN-LA-KLG-AIKS": {
+    "type": "gradient",
     "kartformat": {
       "raster.gradient": {
         "visning": ["kontinuerlig"],
@@ -109,6 +119,7 @@
     "farge": "#f00"
   },
   "NN-LA-KLG-KA": {
+    "type": "gradient",
     "kartformat": {
       "raster.gradient": {
         "visning": ["kontinuerlig"],
@@ -128,6 +139,7 @@
     "farge": "#d8b365"
   },
   "NN-LA-KLG-JP": {
+    "type": "gradient",
     "ingress": "I hvor stor grad landskapet er dominert av jordbruk, gjennom andel dyrket mark.",
     "kartformat": {
       "raster.gradient": {
@@ -147,7 +159,11 @@
     "sortering": 2,
     "farge": "#c70"
   },
+  "NN-LA-KLG-VE": {
+    "type": "gradient"
+  },
   "NN-LA-KLG-VP": {
+    "type": "gradient",
     "kartformat": {
       "raster.gradient": {
         "visning": ["kontinuerlig"],

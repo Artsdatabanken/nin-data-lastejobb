@@ -35,12 +35,13 @@ Object.keys(basistrinn).forEach(grunntype => {
 
 delete ht["NN-NA"]
 
+/*
 Object.keys(ht).forEach(hovedtype => {
   Object.keys(ht[hovedtype]).forEach(lkm =>
     relasjon(na[hovedtype], "defineres av", lkm, "definerer hovedtype")
   )
 })
-
+*/
 /*Object.keys(lkm).forEach(kode => {
   relasjon(na[kode], "definerer", lkm[kode], "defineres av")
 })*/

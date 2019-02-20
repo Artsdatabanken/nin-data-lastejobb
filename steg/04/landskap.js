@@ -24,9 +24,9 @@ hovedtyper.forEach(e => {
   Object.keys(e).forEach(key => {
     if (key.startsWith("klg_")) {
       const verdi = e[key]
-      if (verdi) {
+      if (verdi && parseInt(verdi.split("-").pop()) > 0) {
         const kode = hack(verdi)
-        klger[hack(kode.substring(0, kode.length - 2))] = kode
+        klger[kode.substring(0, kode.length - 2)] = kode
         ny.relasjon.push({
           kode: hack(verdi),
           kant: "definert av",

@@ -3,32 +3,29 @@ const config = require("../../config")
 const log = require("log-less-fancy")()
 const io = require("../../lib/io")
 const blandFarger = require("../../lib/fargefunksjon")
-const typesystem = require("@artsdatabanken/typesystem")
 
 /*
 Mix colors of child nodes to create colors for ancestor nodes missing colors
 */
 
-let data = io.lesDatafil("full_med_graf")
-let hierarki = io.lesDatafil("kodehierarki")
-const barnAv = hierarki.barn
+let data = io.lesDatafil("full")
 let farger = io.lesBuildfil("farger")
 const la_farger = io.lesDatafil("la_farger")
 farger = Object.assign(farger, la_farger)
+let hierarki = io.lesDatafil("kodehierarki")
+const barnAv = hierarki.barn
+
+const p2c = barn(data)
 
 Object.keys(data).forEach(kode => {
   const node = data[kode]
-  if (node.type !== "gradient") return
-  const barnkoder = typesystem.sorterKoder(barnAv[kode])
-  // if (kode === "NN-LA-KLG-JP") debugger
-  if (!node.farge0) node.farge0 = data[barnkoder[0]].farge
-  if (!node.farge) node.farge = data[barnkoder[barnkoder.length - 1]].farge
-  if (node.farge0 && node.farge)
-    gradientrampe(node.farge0, node.farge, barnkoder)
+  if (node.type === "gradient" && node.farge0) {
+    if (kode === "NN-LA-KLG-VE") debugger
+    gradientrampe(node.farge0, node.farge, barnAv[kode])
+  }
 })
 
 while (trickleColorsUp()) {}
-settFargePåGradienter()
 
 // Fallback
 Object.keys(data).forEach(kode => {
@@ -37,6 +34,18 @@ Object.keys(data).forEach(kode => {
 })
 
 io.skrivDatafil(__filename, data)
+
+function barn(data) {
+  const p2c = {}
+  Object.keys(data).forEach(kode => {
+    const node = data[kode]
+    node.foreldre.forEach(forelder => {
+      if (!p2c[forelder]) p2c[forelder] = [kode]
+      else p2c[forelder].push(kode)
+    })
+  })
+  return p2c
+}
 
 function trickleColorsUp() {
   const blends = {}
@@ -64,36 +73,14 @@ function trickleColorsUp() {
   return Object.keys(blends).length > 0
 }
 
-while (trickleColorsUp()) {}
-
-// Fallback
-Object.keys(data).forEach(kode => {
-  const node = data[kode]
-  if (!node.farge) node.farge = "#afecaf"
-})
-
-io.skrivDatafil(__filename, data)
-
-function gradientrampe(farge0, farge, barnkoder) {
+function gradientrampe(farge0, farge, banaskoder) {
   const f1 = new tinycolor(farge0)
   const f = new tinycolor(farge)
-  for (let i = 0; i < barnkoder.length; i++) {
-    const barnkode = barnkoder[i]
-    const node = data[barnkode]
-    const color = tinycolor.mix(f1, f, (100 * i) / (barnkoder.length - 1))
+  for (let i = 0; i < banaskoder.length; i++) {
+    const bankode = banaskoder[i]
+    const node = data[bankode]
+    const color = tinycolor.mix(f1, f, (100 * i) / (banaskoder.length - 1))
     node.farge = node.farge || color.toHexString()
+    bankode.farge = bankode.farge || color.toHexString()
   }
-}
-
-function settFargePåGradienter() {
-  Object.keys(data).forEach(kode => {
-    const node = data[kode]
-    if (!node.gradient) return
-    Object.keys(node.gradient).forEach(type => {
-      const grad = node.gradient[type]
-      grad.trinn.forEach(
-        trinn => (trinn.farge = trinn.farge || data[trinn.kode].farge)
-      )
-    })
-  })
 }
