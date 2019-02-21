@@ -57,7 +57,6 @@ function harKartdata(kode) {
   //  if (kode.indexOf("LA") === 0) return true
   if (kode.indexOf("RL") === 0) return true
   // if (kode.indexOf("FA") === 0) return true
-  if (kode.indexOf()) return !!tre[kode].bbox
 
   return harBarnMedKartdata(node)
 }
@@ -66,7 +65,6 @@ function harBarnMedKartdata(node) {
   if (node.kartformat) return true
   const barn = node.barn
   if (!barn) return false
-  for (var key in Object.keys(barn))
-    if (harBarnMedKartdata(barn[key])) return true
+  for (var key in Object.keys(barn)) if (harBarnMedKartdata(key)) return true
   return false
 }
