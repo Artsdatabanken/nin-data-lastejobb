@@ -63,7 +63,7 @@ function kjedGradientbeskrivelser(rekkefølge, klger) {
       const klgkode = klger[kode]
       if (!klgkode) return
       if (!klg[klgkode]) throw new Error("Ukjent klg " + klgkode)
-      return klg[klgkode]._beskrivelse
+      return klg[klgkode].ingress
     })
     .join(" ")
     .trim()
