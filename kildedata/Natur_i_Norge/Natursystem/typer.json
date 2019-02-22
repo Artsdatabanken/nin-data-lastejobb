@@ -518,6 +518,8 @@
     "normalisertVerdi": 254,
     "sortering": 4
   },
+  "NN-NA-LKM-PF-A": { "type": "flagg" },
+  "NN-NA-LKM-OF-A": { "type": "flagg" },
   "NN-NA-LKM-KA-A": { "farge": "hsl(60, 44%, 95%)" },
   "NN-NA-LKM-KA-B": { "farge": "hsl(53, 49%, 90%)" },
   "NN-NA-LKM-KA-C": { "farge": "hsl(46, 54%, 85%)" },
