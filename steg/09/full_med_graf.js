@@ -36,11 +36,19 @@ function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
   if (!nodeFra.graf) nodeFra.graf = {}
   if (!nodeFra.graf[kant]) nodeFra.graf[kant] = {}
   let kobling = Object.assign({}, metadata, tilBarn(nodeTil))
-  kobling.erSubset = erSubset
-  delete kobling.kode
-  delete kobling.kant
-  delete kobling.kantRetur
-  nodeFra.graf[kant][kodeTil] = kobling
+  kobling.type = nodeTil.type
+  if (nodeTil.type === "flagg") {
+    if (!nodeFra.flagg) nodeFra.flagg = {}
+    nodeFra.flagg[kobling.kode] = {
+      tittel: nodeTil.tittel
+    }
+  } else {
+    kobling.erSubset = erSubset
+    delete kobling.kode
+    delete kobling.kant
+    delete kobling.kantRetur
+    nodeFra.graf[kant][kodeTil] = kobling
+  }
 }
 
 function lagGrafkoblinger(kode, node) {
