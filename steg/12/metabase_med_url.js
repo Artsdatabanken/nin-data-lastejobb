@@ -12,7 +12,17 @@ let tre = io.lesDatafil("metabase_tweaks")
 Object.keys(tre).forEach(kode => addUrl(kode, tre[kode]))
 io.skrivDatafil(__filename, tre)
 
-function fixGraf(node) {
+function addUrl(kode, node) {
+  node.url = url(kode)
+  if (usedUrls[node.url])
+    log.warn("Dupe URL " + kode + "," + usedUrls[node.url] + ": " + node.url)
+  usedUrls[node.url] = kode
+  urlPåGraf(node)
+  urlPåGradient(node)
+  urlPåFlagg(node)
+}
+
+function urlPåGraf(node) {
   if (!node.graf) return
   const grafArray = []
   Object.keys(node.graf).forEach(typeRelasjon => {
@@ -28,7 +38,7 @@ function fixGraf(node) {
   node.graf = grafArray
 }
 
-function fixGradient(node) {
+function urlPåGradient(node) {
   if (!node.gradient) return
   Object.keys(node.gradient).forEach(type => {
     const grad = node.gradient[type]
@@ -36,13 +46,11 @@ function fixGradient(node) {
   })
 }
 
-function addUrl(kode, node) {
-  node.url = url(kode)
-  if (usedUrls[node.url])
-    log.warn("Dupe URL " + kode + "," + usedUrls[node.url] + ": " + node.url)
-  usedUrls[node.url] = kode
-  fixGraf(node)
-  fixGradient(node)
+function urlPåFlagg(node) {
+  if (!node.flagg) return
+  Object.keys(node.flagg).forEach(kode => {
+    node.flagg[kode].url = tre[kode].url
+  })
 }
 
 function urlify(tittel, kode, makevalid) {

@@ -29,11 +29,22 @@ Object.keys(data).forEach(kode => {
 
 while (trickleColorsUp()) {}
 settFargePåGradienter()
+settFargePåFlagg()
 
 // Fallback
 Object.keys(data).forEach(kode => {
   const node = data[kode]
   //  if (!node.farge) node.farge = "#afecaf"
+})
+
+io.skrivDatafil(__filename, data)
+
+while (trickleColorsUp()) {}
+
+// Fallback
+Object.keys(data).forEach(kode => {
+  const node = data[kode]
+  if (!node.farge) node.farge = "#afecaf"
 })
 
 io.skrivDatafil(__filename, data)
@@ -64,16 +75,6 @@ function trickleColorsUp() {
   return Object.keys(blends).length > 0
 }
 
-while (trickleColorsUp()) {}
-
-// Fallback
-Object.keys(data).forEach(kode => {
-  const node = data[kode]
-  if (!node.farge) node.farge = "#afecaf"
-})
-
-io.skrivDatafil(__filename, data)
-
 function gradientrampe(farge0, farge, barnkoder) {
   const f1 = new tinycolor(farge0)
   const f = new tinycolor(farge)
@@ -94,6 +95,16 @@ function settFargePåGradienter() {
       grad.trinn.forEach(
         trinn => (trinn.farge = trinn.farge || data[trinn.kode].farge)
       )
+    })
+  })
+}
+
+function settFargePåFlagg() {
+  Object.keys(data).forEach(skode => {
+    const node = data[skode]
+    if (!node.flagg) return
+    Object.keys(node.flagg).forEach(kode => {
+      node.flagg[kode].farge = data[kode].farge
     })
   })
 }
