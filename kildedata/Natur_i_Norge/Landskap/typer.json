@@ -19,6 +19,9 @@
   "NN-LA-KLG-REIA": {
     "type": "gradient"
   },
+  "NN-LA-KLG-REIDKF": {
+    "type": "gradient"
+  },
   "NN-LA-KLG-REKS": {
     "type": "gradient",
     "ingress": "Beskriver grov-skala terrengform."
