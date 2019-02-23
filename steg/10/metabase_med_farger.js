@@ -19,12 +19,12 @@ farger = Object.assign(farger, la_farger)
 Object.keys(data).forEach(kode => {
   const node = data[kode]
   if (node.type !== "gradient") return
+  if (kode === "NN-LA-KLG-REIDKF") debugger
   const barnkoder = typesystem.sorterKoder(barnAv[kode])
-  // if (kode === "NN-LA-KLG-JP") debugger
-  if (!node.farge0) node.farge0 = data[barnkoder[0]].farge
-  if (!node.farge) node.farge = data[barnkoder[barnkoder.length - 1]].farge
-  if (node.farge0 && node.farge)
-    gradientrampe(node.farge0, node.farge, barnkoder)
+  const f = farger[kode]
+  if (!f) return
+  if (!f.farge0) return
+  gradientrampe(f.farge0, f.farge, barnAv[kode])
 })
 
 while (trickleColorsUp()) {}
