@@ -127,7 +127,7 @@
       "raster.gradient": {
         "visning": ["kontinuerlig"],
         "intervall": {
-          "original": [1, 210.64946875],
+          "original": [0, 210.64946875],
           "normalisertVerdi": [1, 255]
         }
       }
