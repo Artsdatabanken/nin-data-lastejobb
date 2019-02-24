@@ -8,7 +8,7 @@ const config = {
   DATAKEY: "@",
   lasteScriptPath: "./steg/",
   datakilde: datakilde,
-  webserver: "https://maps.artsdatabanken.no/",
+  webserver: "https://data.artsdatabanken.no/",
   infoUrl: {
     nin: "https://www.artsdatabanken.no/NiN2.0/",
     verneområde: "http://faktaark.naturbase.no/Vern?id="
