@@ -9,7 +9,7 @@ const barnAv = hierarki.barn
 
 let ukjentBbox = 0
 // Forventer følgende katalogstruktur på tile serveren:
-// /kartkategori/?/?/kode
+// /type/subtype/.../format.projeksjon.filtype
 // Dvs. at rotkatalog betraktes som klasse av data, eks. gradient eller trinn
 const mapfiles = readMbtiles()
 const sourceTypes = [
@@ -53,6 +53,7 @@ function avrund4d(bounds) {
 function addKartformat(source) {
   const { type, suffix } = source
   Object.keys(tre).forEach(xkode => {
+    if (xkode === "NN-LA-KLG-AIKS") debugger
     const node = tre[xkode]
     const path = `${node.url}/${type}.${suffix}`
     const mapfile = mapfiles[path]
