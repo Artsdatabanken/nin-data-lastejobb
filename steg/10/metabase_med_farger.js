@@ -22,7 +22,7 @@ Object.keys(data).forEach(kode => {
   const barnkoder = typesystem.sorterKoder(barnAv[kode])
   const f = farger[kode]
   if (f) {
-    node.farge0 = node.farge0 || f.farge
+    node.farge0 = node.farge0 || f.farge0
     node.farge = node.farge || f.farge
   }
   if (!node.farge0) return
