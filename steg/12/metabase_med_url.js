@@ -13,7 +13,7 @@ Object.keys(tre).forEach(kode => addUrl(kode, tre[kode]))
 io.skrivDatafil(__filename, tre)
 
 function addUrl(kode, node) {
-  node.url = url(kode)
+  if (!node.hasOwnProperty("url")) node.url = url(kode)
   if (usedUrls[node.url])
     log.warn("Dupe URL " + kode + "," + usedUrls[node.url] + ": " + node.url)
   usedUrls[node.url] = kode
