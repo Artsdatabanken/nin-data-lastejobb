@@ -74,7 +74,7 @@ function url(kode) {
   const node = tre[kode]
   if (!node.overordnet) throw new Error("Mangler overordnet: " + kode)
 
-  node.overordnet.forEach(node => (node.url = tre[node.kode].url))
+  node.overordnet.forEach(node => (node.url = url(node.kode)))
   let sti = node.overordnet.slice(0, -1).map(f => f.tittel)
   sti = sti.reverse()
   sti.push(node.tittel)
