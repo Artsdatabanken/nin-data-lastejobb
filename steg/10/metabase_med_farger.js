@@ -19,7 +19,6 @@ farger = Object.assign(farger, la_farger)
 Object.keys(data).forEach(kode => {
   const node = data[kode]
   if (node.type !== "gradient") return
-  if (kode === "NN-NA-LKM-OR") debugger
   const barnkoder = typesystem.sorterKoder(barnAv[kode])
   const f = farger[kode]
   if (f) {
@@ -33,16 +32,6 @@ Object.keys(data).forEach(kode => {
 while (trickleColorsUp()) {}
 settFargePåGradienter()
 settFargePåFlagg()
-
-// Fallback
-Object.keys(data).forEach(kode => {
-  const node = data[kode]
-  //  if (!node.farge) node.farge = "#afecaf"
-})
-
-io.skrivDatafil(__filename, data)
-
-while (trickleColorsUp()) {}
 
 // Fallback
 Object.keys(data).forEach(kode => {
