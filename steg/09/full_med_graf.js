@@ -96,7 +96,6 @@ function lagGrafGradientkobling2(kode, node, type, kantnode) {
   })
   if (node.gradient === undefined) node.gradient = {}
   if (node.gradient[type] === undefined) node.gradient[type] = []
-  g = g.sort((a, b) => (a.kode > b.kode ? 1 : -1))
   node.gradient[type] = {
     kode: gradForelder,
     url: node.url,
