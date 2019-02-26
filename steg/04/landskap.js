@@ -29,7 +29,7 @@ hovedtyper.forEach(e => {
         klger[kode.substring(0, kode.length - 2)] = kode
         ny.relasjon.push({
           kode: hack(verdi),
-          kant: "definert av",
+          kant: klg[hack(verdi)].tittel.nb,
           kantRetur: "definerer",
           erSubset: true
         })
