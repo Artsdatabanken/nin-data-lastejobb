@@ -118,7 +118,10 @@
   "NN-LA-M-S": { "farge": "hsl(200, 60%, 90%)" },
   "NN-LA-M-A": { "farge": "hsl(200, 33%, 90%)" },
 
-  "NN-LA-KLG-IYK": { "farge": "hsl(210, 45%, 45%)" },
+  "NN-LA-KLG-IYK": {
+    "farge": "hsl(210, 45%, 45%)",
+    "farge0": "hsl(177, 11%, 60%)"
+  },
   "NN-LA-KLG-IYK-4": { "fargebidrag": "hsl(210, 45%, 45%)", "vekt": [1, 1, 0] },
   "NN-LA-KLG-IYK-3": { "fargebidrag": "hsl(199, 33%, 50%)", "vekt": [1, 1, 0] },
   "NN-LA-KLG-IYK-2": { "fargebidrag": "hsl(188, 21%, 55%)", "vekt": [1, 1, 0] },
