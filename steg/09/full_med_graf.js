@@ -79,6 +79,7 @@ function lagGrafGradientkobling(kode, node, type, kantnode) {
 }
 
 function lagGrafGradientkobling2(kode, node, type, kantnode) {
+  if (kode === "NN-LA-K-S-48") debugger
   const grkode0 = Object.keys(kantnode)[0]
   const gradForelder = full[grkode0].foreldre[0]
   const src = full[gradForelder]
