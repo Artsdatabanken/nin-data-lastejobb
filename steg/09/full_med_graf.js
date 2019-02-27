@@ -61,6 +61,16 @@ function lagGrafkoblinger(kode, node) {
   delete node.relasjon
 }
 
+function lagGrafGradientkoblinger(kode, node) {
+  if (!node.graf) return
+  Object.keys(node.graf).forEach(kant => {
+    const kantnode = node.graf[kant]
+    lagGrafGradientkobling(kode, node, kant, kantnode)
+  })
+
+  propagerGradientTilForfedre(node)
+}
+
 function lagGrafGradientkobling(kode, node, type, kantnode) {
   const gradienter = {}
   Object.keys(kantnode).forEach(grkode0 => {
@@ -79,7 +89,6 @@ function lagGrafGradientkobling(kode, node, type, kantnode) {
 }
 
 function lagGrafGradientkobling2(kode, node, type, kantnode) {
-  if (kode === "NN-LA-K-S-48") debugger
   const grkode0 = Object.keys(kantnode)[0]
   const gradForelder = full[grkode0].foreldre[0]
   const src = full[gradForelder]
@@ -93,6 +102,7 @@ function lagGrafGradientkobling2(kode, node, type, kantnode) {
       tittel: b.tittel,
       på: !!kantnode[bkode]
     })
+    //    if (kode === k) log.warn(kode, bkode, !!kantnode[bkode], kantnode[bkode])
     if (kantnode[bkode]) delete kantnode[bkode]
   })
   if (node.gradient === undefined) node.gradient = {}
@@ -132,10 +142,13 @@ function propagerGradientTilFormor(formorkode, node) {
   const src = node.gradient
   if (!src) return
   if (!formor.gradient) formor.gradient = {}
+  const k = "NN-LA-I-A-1"
+  if (formorkode === k) debugger
+
   const dst = formor.gradient
   Object.keys(src).forEach(type => {
     const srcg = src[type]
-    if (!dst[type]) dst[type] = Object.assign({}, srcg)
+    if (!dst[type]) dst[type] = JSON.parse(JSON.stringify(srcg))
     else {
       const srct = srcg.trinn
       const dstt = dst[type].trinn

@@ -26,10 +26,11 @@ hovedtyper.forEach(e => {
       const verdi = e[key]
       if (verdi && parseInt(verdi.split("-").pop()) > 0) {
         const kode = hack(verdi)
+        const gradientkode = typesystem.forelder(kode)
         klger[kode.substring(0, kode.length - 2)] = kode
         ny.relasjon.push({
           kode: hack(verdi),
-          kant: klg[hack(verdi)].tittel.nb,
+          kant: klg[gradientkode].tittel.nb,
           kantRetur: "definerer",
           erSubset: true
         })
