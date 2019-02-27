@@ -83,7 +83,7 @@ function lagGrafGradientkobling2(kode, node, type, kantnode) {
   const grkode0 = Object.keys(kantnode)[0]
   const gradForelder = full[grkode0].foreldre[0]
   const src = full[gradForelder]
-  if (src.type !== "gradient") return false
+  if (!skalMed(gradForelder)) return false
   let g = []
   const barna = typesystem.sorterKoder(barnAv[gradForelder])
   barna.forEach(bkode => {
@@ -104,6 +104,12 @@ function lagGrafGradientkobling2(kode, node, type, kantnode) {
     trinn: g
   }
   return true
+}
+
+function skalMed(kode) {
+  if (kode.startsWith("NN-NA-LKM")) return true
+  if (kode.startsWith("NN-LA-KLG")) return true
+  return false
 }
 
 function lagGrafGradientkoblinger(kode, node) {
