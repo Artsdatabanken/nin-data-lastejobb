@@ -25,7 +25,6 @@ Object.keys(data).forEach(kode => {
     node.farge0 = node.farge0 || f.farge0
     node.farge = node.farge || f.farge
   }
-  if (!node.farge0) return
   gradientrampe(node.farge0, node.farge, barnAv[kode])
 })
 
@@ -73,8 +72,14 @@ function gradientrampe(farge0, farge, barnkoder) {
   for (let i = 0; i < barnkoder.length; i++) {
     const barnkode = barnkoder[i]
     const node = data[barnkode]
-    const color = tinycolor.mix(f1, f, (100 * i) / (barnkoder.length - 1))
-    node.farge = node.farge || color.toHexString()
+    if (!node.farge) {
+      if (!f1 || !f)
+        throw new Error(
+          "Mangler farge eller farge0 for forelder av " + barnkode
+        )
+      const color = tinycolor.mix(f1, f, (100 * i) / (barnkoder.length - 1))
+      node.farge = node.farge || color.toHexString()
+    }
   }
 }
 
