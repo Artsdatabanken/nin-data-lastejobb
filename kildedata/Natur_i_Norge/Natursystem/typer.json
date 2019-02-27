@@ -234,6 +234,15 @@
     "farge0": "#fd5",
     "farge": "#0df"
   },
+  "NN-NA-LKM-TV": {
+    "type": "gradient",
+    "farge0": "#f49",
+    "farge": "#fe4"
+  },
+  "NN-NA-LKM-VT": {
+    "farge0": "#8f4",
+    "farge": "#8fd"
+  },
   "NN-NA-LKM-VI": {
     "type": "gradient",
     "farge0": "#eee",
