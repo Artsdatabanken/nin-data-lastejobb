@@ -75,6 +75,7 @@ function lagGrafGradientkobling(kode, node, type, kantnode) {
   const gradienter = {}
   Object.keys(kantnode).forEach(grkode0 => {
     const forelder = full[grkode0].foreldre[0]
+    if (!full[forelder]) debugger
     if (full[forelder].type === "gradient") gradienter[forelder] = grkode0
   })
   Object.keys(gradienter).forEach(grkode => {
