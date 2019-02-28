@@ -40,17 +40,18 @@ function transform(record) {
     if (value && !value.startsWith("Not_assigned")) r[header[i]] = value
   }
 
-  if (!r["Hovedstatus"] in ["Gyldig", "Synonym"]) return
-  // TODO: Fjern Underarter, varietet og form inntil videre
-  if (r["Underart"]) return
+  // TODO: Fjern varietet og form inntil videre
+  //  if (r["Underart"]) return
   if (r["Varietet"]) return
   if (r["Form"]) return
-  //  if (r["Art"]) return
 
   const o = {
     id: r.PK_LatinskNavnID,
     parentId: r.FK_OverordnaLatinskNavnID,
-    tittel: { la: settSammenNavn(r) }
+    tittel: { la: settSammenNavn(r) },
+    status: r.Hovedstatus,
+    gyldigId: r.FK_GyldigLatinskNavnID,
+    finnesINorge: r.FinnesINorge === "Ja"
   }
   //  if (o.tittel.la === "Incertae sedis") return
   //  if (o.tittel.la === "Incerta sedis") return
@@ -72,18 +73,38 @@ function pop(o, key, r, suffix) {
   o[key] = capitalizeFirstLetter(value)
 }
 
+const hierarki = [
+  "Rike",
+  "Underrike",
+  "Rekke",
+  "Underrekke",
+  "Overklasse",
+  "Klasse",
+  "Underklasse",
+  "Infraklasse",
+  "Kohort",
+  "Overorden",
+  "Orden",
+  "Underorden",
+  "Infraorden",
+  "Overfamilie",
+  "Familie",
+  "Underfamilie",
+  "Tribus",
+  "Undertribus",
+  "Slekt",
+  "Underslekt",
+  "Seksjon",
+  "Art",
+  "Underart",
+  "Varietet",
+  "Form"
+].reverse()
+
 function settSammenNavn(r) {
-  if (r["Underart"]) return `${r["Art"]} ${r["Underart"]}`
-  if (r["Varietet"]) return `${r["Art"]} ${r["Varietet"]}`
-  if (r["Form"]) return `${r["Art"]} ${r["Form"]}`
-  if (r["Art"]) return `${r["Slekt"]} ${r["Art"]}`
-  if (r["Slekt"]) return r["Slekt"]
-  if (r["Familie"]) return r["Familie"]
-  if (r["Orden"]) return r["Orden"]
-  if (r["Underklasse"]) return r["Underklasse"]
-  if (r["Klasse"]) return r["Klasse"]
-  if (r["Underrekke"]) return r["Underrekke"]
-  if (r["Rekke"]) return r["Rekke"]
-  if (r["Rike"]) return r["Rike"]
+  for (i = 0; i < hierarki.length; i++) {
+    const nivå = hierarki[i]
+    if (r[nivå]) return r[nivå]
+  }
   throw new Error("Mangler navn på art med sciId #" + r.PK_LatinskNavnID)
 }
