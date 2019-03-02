@@ -65,6 +65,6 @@ function harBarnMedKartdata(node) {
   if (node.kartformat) return true
   const barn = node.barn
   if (!barn) return false
-  for (var key in Object.keys(barn)) if (harBarnMedKartdata(key)) return true
+  for (const kode of Object.keys(barn)) if (harKartdata(kode)) return true
   return false
 }
