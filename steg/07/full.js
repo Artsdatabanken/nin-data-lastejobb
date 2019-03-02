@@ -4,61 +4,15 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
 const r = {}
-
-function flyttNiNUnderNN(kode) {
-  const prefix = kode.substring(0, 2)
-  if ("NA_LA".indexOf(prefix) < 0) return kode
-  log.warn(kode)
-  return "NN-" + kode
-}
-
-function flettAttributter(o, props = {}) {
-  for (let key of Object.keys(o)) {
-    let kode = key.replace("_", "-")
-    kode = flyttNiNUnderNN(kode)
-    kode = kode.toUpperCase()
-    r[kode] = Object.assign({}, r[kode], o[key], props)
-  }
-}
-
-function flett(filename, props = {}) {
-  var data = io.lesDatafil(filename)
-  flettAttributter(data, props)
-}
-
-function flettKildedata(filename, props = {}) {
-  var data = io.lesKildedatafil(filename)
-  flettAttributter(data, props)
-}
-
-let counts = {}
-
-function finnForeldre(kode) {
-  if (kode === typesystem.rotkode) return []
-  const segs = typesystem.splittKode(kode)
-  if (segs.length <= 1) return [typesystem.rotkode]
-  const len = segs[segs.length - 1].length
-  kode = kode.substring(0, kode.length - len)
-  while (kode.length > 0) {
-    if (kode in r) return [kode]
-    kode = kode.substring(0, kode.length - 1)
-  }
-  return [typesystem.rotkode]
-}
-
-function kobleForeldre() {
-  for (let key of Object.keys(r)) {
-    const node = r[key]
-    if (!node.foreldre) node.foreldre = finnForeldre(key)
-  }
-}
-
 flettKildedata("typer")
 flettKildedata("Art/typer")
 flettKildedata("Art/Fremmed_Art/typer")
 flettKildedata("Fylke/typer")
 flettKildedata("Natur_i_Norge/Landskap/typer")
 flettKildedata("Natur_i_Norge/Natursystem/typer")
+flettKildedata(
+  "Natur_i_Norge/Natursystem/Lokale_komplekse_miljøvariabler/typer"
+)
 flettKildedata(
   "Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/typer"
 )
@@ -82,6 +36,57 @@ flettKildedata("rl_rødliste")
 sjekkAtTitlerEksisterer()
 capsTitler()
 kobleForeldre()
+propagerNedFlaggAttributt()
+
+function flettAttributter(o, props = {}) {
+  for (let key of Object.keys(o)) {
+    let kode = key.replace("_", "-")
+    kode = kode.toUpperCase()
+    r[kode] = Object.assign({}, r[kode], o[key], props)
+  }
+}
+
+function flett(filename, props = {}) {
+  var data = io.lesDatafil(filename)
+  flettAttributter(data, props)
+}
+
+function flettKildedata(filename, props = {}) {
+  var data = io.lesKildedatafil(filename)
+  flettAttributter(data, props)
+}
+
+function finnForeldre(kode) {
+  if (kode === typesystem.rotkode) return []
+  const segs = typesystem.splittKode(kode)
+  if (segs.length <= 1) return [typesystem.rotkode]
+  const len = segs[segs.length - 1].length
+  kode = kode.substring(0, kode.length - len)
+  while (kode.length > 0) {
+    if (kode in r) return [kode]
+    kode = kode.substring(0, kode.length - 1)
+  }
+  return [typesystem.rotkode]
+}
+
+function kobleForeldre() {
+  for (let key of Object.keys(r)) {
+    const node = r[key]
+    if (!node.foreldre) node.foreldre = finnForeldre(key)
+  }
+}
+
+function propagerNedFlaggAttributt() {
+  for (let kode of Object.keys(r)) {
+    const node = r[kode]
+    for (const fkode of node.foreldre) {
+      if (r[fkode].type === "flagg") node.type = "flagg"
+      if (r[fkode].type === "gradient") node.type = "gradientverdi"
+    }
+    if (kode.startsWith("NN-NA-LKM"))
+      if (!node.type) log.warn("Missing type: " + kode)
+  }
+}
 
 function capsTitler() {
   for (let key of Object.keys(r)) {
