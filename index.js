@@ -3,7 +3,6 @@ if (!process.env.DEBUG) process.env.DEBUG = "*"
 const fs = require("fs")
 const { spawnSync } = require("child_process")
 const path = require("path")
-const fetch = require("node-fetch")
 const log = require("log-less-fancy")()
 const { findFiles } = require("./lib/io")
 const config = require("./config")
