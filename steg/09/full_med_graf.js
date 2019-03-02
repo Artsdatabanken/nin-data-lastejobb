@@ -8,6 +8,7 @@ let full = io.lesDatafil("full")
 let hierarki = io.lesDatafil("kodehierarki")
 const barnAv = hierarki.barn
 Object.keys(full).forEach(kode => lagGrafkoblinger(kode, full[kode]))
+Object.keys(full).forEach(kode => lagGradientPåSegSelv(kode, full[kode]))
 Object.keys(full).forEach(kode => lagGrafGradientkoblinger(kode, full[kode]))
 
 io.skrivDatafil(__filename, full)
@@ -16,6 +17,16 @@ function tilBarn(node) {
   return {
     tittel: node.tittel
   }
+}
+
+function lagGradientPåSegSelv(kode, node) {
+  if (!node.foreldre) return
+  const grkode = node.foreldre[0]
+  if (!grkode) return
+  const forelder = full[grkode]
+  if (forelder.type !== "gradient") return
+  const kantnode = { [kode]: true }
+  lagGrafGradientkobling2(kode, node, forelder.tittel.nb, kantnode)
 }
 
 function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
@@ -74,9 +85,9 @@ function lagGrafGradientkoblinger(kode, node) {
 function lagGrafGradientkobling(kode, node, type, kantnode) {
   const gradienter = {}
   Object.keys(kantnode).forEach(grkode0 => {
-    const forelder = full[grkode0].foreldre[0]
-    if (!full[forelder]) debugger
-    if (full[forelder].type === "gradient") gradienter[forelder] = grkode0
+    const forelderkode = full[grkode0].foreldre[0]
+    const forelder = full[forelderkode]
+    if (forelder.type === "gradient") gradienter[forelderkode] = grkode0
   })
   Object.keys(gradienter).forEach(grkode => {
     lagGrafGradientkobling2(
@@ -143,8 +154,6 @@ function propagerGradientTilFormor(formorkode, node) {
   const src = node.gradient
   if (!src) return
   if (!formor.gradient) formor.gradient = {}
-  const k = "NN-LA-I-A-1"
-  if (formorkode === k) debugger
 
   const dst = formor.gradient
   Object.keys(src).forEach(type => {
