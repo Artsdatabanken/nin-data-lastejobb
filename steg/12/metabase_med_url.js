@@ -10,6 +10,7 @@ const usedUrls = {}
 
 let tre = io.lesDatafil("metabase_tweaks")
 Object.keys(tre).forEach(kode => addUrl(kode, tre[kode]))
+Object.keys(tre).forEach(kode => addUrlPåRelasjoner(kode, tre[kode]))
 io.skrivDatafil(__filename, tre)
 
 function addUrl(kode, node) {
@@ -17,6 +18,9 @@ function addUrl(kode, node) {
   if (usedUrls[node.url])
     log.warn("Dupe URL " + kode + "," + usedUrls[node.url] + ": " + node.url)
   usedUrls[node.url] = kode
+}
+
+function addUrlPåRelasjoner(kode, node) {
   urlPåGraf(node)
   urlPåGradient(node)
   urlPåFlagg(node)
