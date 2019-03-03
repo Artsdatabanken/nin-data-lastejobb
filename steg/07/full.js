@@ -42,7 +42,8 @@ function flettAttributter(o, props = {}) {
   for (let key of Object.keys(o)) {
     let kode = key.replace("_", "-")
     kode = kode.toUpperCase()
-    r[kode] = Object.assign({}, r[kode], o[key], props)
+    const node = Object.assign({}, r[kode], o[key], props)
+    r[kode] = node
   }
 }
 

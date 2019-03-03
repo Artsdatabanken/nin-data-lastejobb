@@ -58,7 +58,7 @@ function nøstOppForfedre(forelderkey) {
       manglerKode[forelderkey] = true
       return
     }
-    r.push({ kode: forelderkey, tittel: forelder.tittel })
+    r.push({ kode: forelderkey, tittel: forelder.tittel, nivå: forelder.nivå })
     const forfedre = foreldreTil[forelderkey]
     if (!forfedre) break
     if (forfedre.length <= 0) break

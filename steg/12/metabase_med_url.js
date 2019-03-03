@@ -11,9 +11,25 @@ const usedUrls = {}
 let tre = io.lesDatafil("metabase_tweaks")
 Object.keys(tre).forEach(kode => addUrl(kode, tre[kode]))
 Object.keys(tre).forEach(kode => addUrlPåRelasjoner(kode, tre[kode]))
+Object.keys(tre).forEach(kode => oppdaterNivå(tre[kode]))
 io.skrivDatafil(__filename, tre)
 
+function oppdaterNivå(node) {
+  oppdaterNivå1(node)
+  node.overordnet.forEach(ov => {
+    oppdaterNivå1(ov)
+  })
+}
+
+function oppdaterNivå1(node) {
+  if (node.tittel.nb === "Nålkapselmoser") debugger
+  if (node.url === "Katalog") return
+  node.nivå = node.nivå || typesystem.hentNivaa(node.url)[0]
+}
+
 function addUrl(kode, node) {
+  if (!node.hasOwnProperty("url")) node.url = url(kode)
+  if (!node.hasOwnProperty("url")) node.url = url(kode)
   if (!node.hasOwnProperty("url")) node.url = url(kode)
   if (usedUrls[node.url])
     log.warn("Dupe URL " + kode + "," + usedUrls[node.url] + ": " + node.url)
