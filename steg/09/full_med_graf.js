@@ -10,6 +10,7 @@ const barnAv = hierarki.barn
 Object.keys(full).forEach(kode => lagGrafkoblinger(kode, full[kode]))
 Object.keys(full).forEach(kode => lagGradientPåSegSelv(kode, full[kode]))
 Object.keys(full).forEach(kode => lagGrafGradientkoblinger(kode, full[kode]))
+Object.keys(full).forEach(kode => propagerGradientTilRelasjon(kode, full[kode]))
 
 io.skrivDatafil(__filename, full)
 
@@ -78,7 +79,6 @@ function lagGrafGradientkoblinger(kode, node) {
     const kantnode = node.graf[kant]
     lagGrafGradientkobling(kode, node, kant, kantnode)
   })
-
   propagerGradientTilForfedre(node)
 }
 
@@ -134,37 +134,68 @@ function skalMed(kode) {
   return false
 }
 
-function lagGrafGradientkoblinger(kode, node) {
-  if (!node.graf) return
-  Object.keys(node.graf).forEach(kant => {
-    const kantnode = node.graf[kant]
-    lagGrafGradientkobling(kode, node, kant, kantnode)
-  })
-  propagerGradientTilForfedre(node)
-}
-
 function propagerGradientTilForfedre(node) {
   node.foreldre.forEach(formor => {
     if (formor.split("-").length > 1) propagerGradientTilFormor(formor, node)
   })
 }
 
-function propagerGradientTilFormor(formorkode, node) {
-  const formor = full[formorkode]
-  const src = node.gradient
-  if (!src) return
-  if (!formor.gradient) formor.gradient = {}
+function propagerGradientTilRelasjon(kode, node) {
+  const graf = node.graf
+  if (!graf) return
+  Object.keys(graf).forEach(gk => {
+    const rel = graf[gk]
+    const vekt = frekvens(gk)
+    Object.keys(rel).forEach(kode => {
+      if (!kode.startsWith("AR")) return
+      propagerGradientTilNode(full[kode], node, vekt)
+    })
+  })
+}
 
-  const dst = formor.gradient
+function frekvens(tekst) {
+  const tab = {
+    vanlig_art: 1,
+    konstant_art: 1,
+    mengdeart: 1,
+    "gradient-tyngdepunktart": 2,
+    tyngdepunktart: 1,
+    absolutt_skilleart: 1,
+    "sterk_relativ skilleart": 1,
+    "svak_relativ skilleart": 1,
+    skilleart: 1,
+    kjennetegnende_tyngdepunktart: 1,
+    dominerende_mengdeart: 1
+  }
+  if (!tab.hasOwnProperty(tekst) && tekst.indexOf("art") >= 0)
+    throw new Error("Ukjent forekomst: " + tekst)
+  return tab[tekst]
+}
+
+function propagerGradientTilNode(tilNode, fraNode, vekt) {
+  const src = fraNode.gradient
+  if (!src) return
+  if (!tilNode.gradient) tilNode.gradient = {}
+
+  const dst = tilNode.gradient
   Object.keys(src).forEach(type => {
     const srcg = src[type]
     if (!dst[type]) dst[type] = JSON.parse(JSON.stringify(srcg))
     else {
       const srct = srcg.trinn
       const dstt = dst[type].trinn
-      for (let i = 0; i < dstt.length; i++)
-        dstt[i].på = dstt[i].på || srct[i].på
+      for (let i = 0; i < dstt.length; i++) {
+        if (srct[i].på) {
+          dstt[i].på = true
+          dstt[i].vekt = Math.max(dstt[i].vekt || 0, vekt)
+        }
+      }
     }
   })
+}
+
+function propagerGradientTilFormor(formorkode, node) {
+  const formor = full[formorkode]
+  propagerGradientTilNode(formor, node)
   propagerGradientTilForfedre(formor)
 }
