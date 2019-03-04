@@ -7,9 +7,10 @@
   },
   "VV-FM": {
     "tittel": { "nb": "Forvaltningsmyndighet" },
-    "ingress": "Ansvarlig forvaltningsmyndighet for området"
+    "ingress": "Ansvarlig forvaltningsmyndighet for området",
+    "type": "flagg"
   },
-  "VV-FM-FM": { "tittel": { "nb": "Fylkesmann" } },
+  "VV-FM-FM": { "tittel": { "nb": "Fylkesmann" }, "type": "flagg" },
   "VV-FM-KO": { "tittel": { "nb": "Kommune" } },
   "VV-FM-NP": { "tittel": { "nb": "Nasjonalparkstyre" } },
   "VV-FM-VO": { "tittel": { "nb": "Verneområdestyre" } },
@@ -21,7 +22,8 @@
       "en": "Protected Area Categories"
     },
     "ingress": "Naturreservat Verdens Naturvernunion IUCN, har på oppdrag fra FN vedtatt et internasjonalt system for kategorisering av verneområder.",
-    "infoUrl": "https://www.iucn.org/theme/protected-areas/about/protected-area-categories"
+    "infoUrl": "https://www.iucn.org/theme/protected-areas/about/protected-area-categories",
+    "type": "flagg"
   },
   "VV-PA-IA": {
     "tittel": {
@@ -73,7 +75,8 @@
   },
   "VV-VP": {
     "tittel": { "nb": "Verneplan" },
-    "ingress": "Angir hva slags verneplan området tilhører."
+    "ingress": "Angir hva slags verneplan området tilhører.",
+    "type": "flagg"
   },
   "VV-VP-SV": { "tittel": { "nb": "Skogvern" } },
   "VV-VP-NP": {
@@ -91,7 +94,7 @@
   "VV-VP-VM": { "tittel": { "nb": "Verneplan for myr" } },
   "VV-VP-KG": { "tittel": { "nb": "Kvartærgeologi" } },
   "VV-VP-MV": { "tittel": { "nb": "Marin verneplan" } },
-  "VV-VT": { "tittel": { "nb": "Vernet tidspunkt" } },
+  "VV-VT": { "tittel": { "nb": "Vernet tidspunkt" }, "type": "flagg" },
   "VV-VT-1915": { "tittel": { "nb": "Vernet i år 1915" } },
   "VV-VT-1917": { "tittel": { "nb": "Vernet i år 1917" } },
   "VV-VT-1918": { "tittel": { "nb": "Vernet i år 1918" } },
@@ -165,7 +168,8 @@
   "VV-VT-2019": { "tittel": { "nb": "Vernet i år 2019" } },
   "VV-VF": {
     "tittel": { "nb": "Verneform" },
-    "ingress": "Ulike typer vern sortert under forskjellig lovverk og/med tilhørende restriksjoner"
+    "ingress": "Ulike typer vern sortert under forskjellig lovverk og/med tilhørende restriksjoner",
+    "type": "flagg"
   },
   "VV-VF-NR": { "tittel": { "nb": "Naturreservat" } },
   "VV-VF-NP": { "tittel": { "nb": "Nasjonalpark" } },
@@ -195,10 +199,10 @@
     "tittel": { "nb": "Marint verneområde (naturmangfoldloven)" }
   },
   "VV-VF-BV": { "tittel": { "nb": "Biotopvern" } },
-  "VV-TV": { "tittel": { "nb": "Truet vurdering" } },
+  "VV-TV": { "tittel": { "nb": "Truet vurdering" }, "type": "flagg" },
   "VV-TV-IT": { "tittel": { "nb": "Ikke truet" } },
   "VV-TV-U": { "tittel": { "nb": "Ukjent" } },
   "VV-TV-T": { "tittel": { "nb": "Truet" } },
   "VV-TV-N": { "tittel": { "nb": "Null" } },
-  "VV-AO": { "tittel": { "nb": "Fylke" } }
+  "VV-AO": { "tittel": { "nb": "Fylke" }, "type": "flagg" }
 }
