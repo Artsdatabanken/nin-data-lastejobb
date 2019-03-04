@@ -141,19 +141,38 @@ function propagerGradientTilForfedre(node) {
 }
 
 function propagerGradientTilRelasjon(kode, node) {
-  if (kode === "NN-NA-V8-C-2") debugger
   const graf = node.graf
   if (!graf) return
   Object.keys(graf).forEach(gk => {
     const rel = graf[gk]
+    const vekt = frekvens(gk)
     Object.keys(rel).forEach(kode => {
       if (!kode.startsWith("AR")) return
-      propagerGradientTilNode(full[kode], node)
+      propagerGradientTilNode(full[kode], node, vekt)
     })
   })
 }
 
-function propagerGradientTilNode(tilNode, fraNode) {
+function frekvens(tekst) {
+  const tab = {
+    vanlig_art: 1,
+    konstant_art: 1,
+    mengdeart: 1,
+    "gradient-tyngdepunktart": 2,
+    tyngdepunktart: 1,
+    absolutt_skilleart: 1,
+    "sterk_relativ skilleart": 1,
+    "svak_relativ skilleart": 1,
+    skilleart: 1,
+    kjennetegnende_tyngdepunktart: 1,
+    dominerende_mengdeart: 1
+  }
+  if (!tab.hasOwnProperty(tekst) && tekst.indexOf("art") >= 0)
+    throw new Error("Ukjent forekomst: " + tekst)
+  return tab[tekst]
+}
+
+function propagerGradientTilNode(tilNode, fraNode, vekt) {
   const src = fraNode.gradient
   if (!src) return
   if (!tilNode.gradient) tilNode.gradient = {}
@@ -165,8 +184,12 @@ function propagerGradientTilNode(tilNode, fraNode) {
     else {
       const srct = srcg.trinn
       const dstt = dst[type].trinn
-      for (let i = 0; i < dstt.length; i++)
-        dstt[i].på = dstt[i].på || srct[i].på
+      for (let i = 0; i < dstt.length; i++) {
+        if (srct[i].på) {
+          dstt[i].på = true
+          dstt[i].vekt = Math.max(dstt[i].vekt || 0, vekt)
+        }
+      }
     }
   })
 }

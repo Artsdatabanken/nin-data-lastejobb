@@ -22,7 +22,6 @@ function oppdaterNivå(node) {
 }
 
 function oppdaterNivå1(node) {
-  if (node.tittel.nb === "Nålkapselmoser") debugger
   if (node.url === "Katalog") return
   node.nivå = node.nivå || typesystem.hentNivaa(node.url)[0]
 }
