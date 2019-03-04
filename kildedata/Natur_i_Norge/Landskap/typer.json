@@ -32,6 +32,7 @@
   },
   "NN-LA-MP": {
     "tittel": { "nb": "Menneskelig påvirkning" },
+    "type": "flagg",
     "relasjon": [
       {
         "kode": "NN-LA",
