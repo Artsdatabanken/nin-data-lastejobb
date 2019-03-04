@@ -10,6 +10,7 @@ const barnAv = hierarki.barn
 Object.keys(full).forEach(kode => lagGrafkoblinger(kode, full[kode]))
 Object.keys(full).forEach(kode => lagGradientPåSegSelv(kode, full[kode]))
 Object.keys(full).forEach(kode => lagGrafGradientkoblinger(kode, full[kode]))
+Object.keys(full).forEach(kode => propagerGradientTilRelasjon(kode, full[kode]))
 
 io.skrivDatafil(__filename, full)
 
@@ -78,7 +79,6 @@ function lagGrafGradientkoblinger(kode, node) {
     const kantnode = node.graf[kant]
     lagGrafGradientkobling(kode, node, kant, kantnode)
   })
-
   propagerGradientTilForfedre(node)
 }
 
@@ -134,28 +134,31 @@ function skalMed(kode) {
   return false
 }
 
-function lagGrafGradientkoblinger(kode, node) {
-  if (!node.graf) return
-  Object.keys(node.graf).forEach(kant => {
-    const kantnode = node.graf[kant]
-    lagGrafGradientkobling(kode, node, kant, kantnode)
-  })
-  propagerGradientTilForfedre(node)
-}
-
 function propagerGradientTilForfedre(node) {
   node.foreldre.forEach(formor => {
     if (formor.split("-").length > 1) propagerGradientTilFormor(formor, node)
   })
 }
 
-function propagerGradientTilFormor(formorkode, node) {
-  const formor = full[formorkode]
-  const src = node.gradient
-  if (!src) return
-  if (!formor.gradient) formor.gradient = {}
+function propagerGradientTilRelasjon(kode, node) {
+  if (kode === "NN-NA-V8-C-2") debugger
+  const graf = node.graf
+  if (!graf) return
+  Object.keys(graf).forEach(gk => {
+    const rel = graf[gk]
+    Object.keys(rel).forEach(kode => {
+      if (!kode.startsWith("AR")) return
+      propagerGradientTilNode(full[kode], node)
+    })
+  })
+}
 
-  const dst = formor.gradient
+function propagerGradientTilNode(tilNode, fraNode) {
+  const src = fraNode.gradient
+  if (!src) return
+  if (!tilNode.gradient) tilNode.gradient = {}
+
+  const dst = tilNode.gradient
   Object.keys(src).forEach(type => {
     const srcg = src[type]
     if (!dst[type]) dst[type] = JSON.parse(JSON.stringify(srcg))
@@ -166,5 +169,10 @@ function propagerGradientTilFormor(formorkode, node) {
         dstt[i].på = dstt[i].på || srct[i].på
     }
   })
+}
+
+function propagerGradientTilFormor(formorkode, node) {
+  const formor = full[formorkode]
+  propagerGradientTilNode(formor, node)
   propagerGradientTilForfedre(formor)
 }
