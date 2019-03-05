@@ -53,15 +53,16 @@ function avrund4d(bounds) {
 function addKartformat(source) {
   const { type, suffix } = source
   Object.keys(tre).forEach(xkode => {
-    if (xkode === "NN-LA-KLG-AIKS") debugger
     const node = tre[xkode]
     const path = `${node.url}/${type}.${suffix}`
     const mapfile = mapfiles[path]
     if (!mapfile) return
     const target = tre[xkode]
 
-    if (!target.kartformat) target.kartformat = {}
-    const kartformat = target.kartformat
+    if (!target.kart) target.kart = { format: {} }
+    //    target.kart.antallUndernivå = antallUndernivå(node)
+    target.kartformat = target.kart.format // TODO: Remove
+    const kartformat = target.kart.format
     if (!kartformat[type]) kartformat[type] = {}
     const cv = kartformat[type]
     cv.url = config.webserver + path
