@@ -7,18 +7,18 @@
     "relasjon": [
       {
         "kode": "NN-NA-BS",
-        "kant": "beskrives av",
-        "kantRetur": "beskriver"
+        "kant": "Beskrives av",
+        "kantRetur": "Beskriver"
       },
       {
         "kode": "NN-NA-LKM",
-        "kant": "inndeles ved hjelp av",
-        "kantRetur": "gir inndeling av"
+        "kant": "Inndeles ved hjelp av",
+        "kantRetur": "Gir inndeling av"
       },
       {
         "kode": "NN-NA-HT",
-        "kant": "lokale egenskaper",
-        "kantRetur": "naturtyper"
+        "kant": "Lokale egenskaper",
+        "kantRetur": "Naturtyper"
       }
     ]
   },
