@@ -35,16 +35,24 @@ function overordnet(hit, array, score) {
   const node = array.shift()
   if (!node) return
   push(hit, score, node.kode)
-  push(hit, score, node.tittel.nb)
+  pushTittel(hit, score, node.tittel)
   overordnet(hit, array, score * 0.9)
+}
+
+function pushTittel(hit, score, tittel) {
+  Object.values(tittel).forEach(text => push(hit, score, text))
 }
 
 Object.keys(tre).forEach(kode => {
   const node = tre[kode]
-  const hit = { kode: node.kode, url: node.url, title: node.tittel.nb }
+  const hit = {
+    kode: node.kode,
+    url: node.url,
+    title: node.tittel.nb || node.tittel.la
+  }
   const cf = Math.pow(0.99, node.overordnet.length + 1)
   push(hit, 1.0 * cf, node.kode)
-  push(hit, 0.98 * cf, node.tittel.nb)
+  pushTittel(hit, 0.98 * cf, node.tittel)
   push(hit, 0.5 * cf, node.nivå)
   push(hit, 0.7 * cf, node.ingress)
   overordnet(hit, node.overordnet, 0.7 * cf)
@@ -53,7 +61,7 @@ Object.keys(tre).forEach(kode => {
       push(hit, 0.3 * cf, gn.type)
       gn.noder.forEach(gnc => {
         push(hit, 0.7 * cf, gnc.kode)
-        push(hit, 0.7 * cf, gnc.tittel.nb)
+        pushTittel(hit, 0.7 * cf, gnc.tittel)
       })
     })
 })
