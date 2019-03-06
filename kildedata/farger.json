@@ -62,6 +62,7 @@
     "farge": "hsl(20, 75%, 65%)"
   },
   "NN-LA-KLG-VP": {
+    "farge0": "",
     "farge": "#8f4"
   },
   "NN-LA-KLG-REIA": { "farge0": "#8f8", "farge": "#f88" },
@@ -119,7 +120,7 @@
   "NN-LA-M-A": { "farge": "hsl(200, 33%, 90%)" },
 
   "NN-LA-KLG-IYK": {
-    "farge": "hsl(210, 45%, 45%)",
+    "farge": "hsl(210, 45%, 60%)",
     "farge0": "hsl(177, 11%, 60%)"
   },
   "NN-LA-KLG-IYK-4": { "fargebidrag": "hsl(210, 45%, 45%)", "vekt": [1, 1, 0] },
@@ -128,8 +129,8 @@
   "NN-LA-KLG-IYK-1": { "fargebidrag": "hsl(177, 11%, 60%)", "vekt": [1, 1, 0] },
 
   "NN-LA-KLG-VE": {
-    "farge0": "hsl(17, 31%, 66%)",
-    "farge": "hsl(77, 51%, 66%)"
+    "farge0": "hsl(77, 51%, 60%)",
+    "farge": "hsl(27, 11%, 60%)"
   },
   "NN-LA-KLG-VE-1": { "fargebidrag": "hsl(77, 31%, 66%)", "vekt": [1, 1, 1] },
   "NN-LA-KLG-VE-2": { "fargebidrag": "hsl(66, 22%, 66%)", "vekt": [1, 1, 1] },
@@ -139,26 +140,49 @@
   "NN-LA-KLG-VP-1": { "fargebidrag": "hsl(33, 55%, 100%)", "vekt": 0 },
   "NN-LA-KLG-VP-2": { "fargebidrag": "hsl(165, 41%, 35%)", "vekt": [1, 1, 0] },
 
-  "NN-LA-KLG-KA-1": { "fargebidrag": "hsl(77, 44%, 55%)", "vekt": [1, 1, 0.1] },
-  "NN-LA-KLG-KA-2": { "fargebidrag": "hsl(77, 11%, 55%)", "vekt": [1, 1, 0.1] },
-
-  "NN-LA-KLG-AI-1": { "fargebidrag": "hsl(0, 0%, 100%)", "vekt": 0 },
+  "NN-LA-KLG-KA-1": {
+    "farge": "hsl(260, 80%, 60%)",
+    "fargebidrag": "hsl(77, 44%, 55%)",
+    "vekt": [1, 1, 0.1]
+  },
+  "NN-LA-KLG-KA-2": {
+    "farge": "hsl(355, 80%, 60%)",
+    "fargebidrag": "hsl(77, 11%, 55%)",
+    "vekt": [1, 1, 0.1]
+  },
+  "NN-LA-KLG-AI-1": {
+    "farge": "#fff",
+    "fargebidrag": "hsl(0, 0%, 100%)",
+    "vekt": 0
+  },
   "NN-LA-KLG-AI-2": {
+    "farge": "#cc0",
     "fargebidrag": "hsl(220, 0%, 75%)",
     "vekt": [0, 0.33, 0]
   },
   "NN-LA-KLG-AI-3": {
+    "farge": "#c60",
     "fargebidrag": "hsl(220, 0%, 50%)",
     "vekt": [0, 0.66, 0]
   },
-  "NN-LA-KLG-AI-4": { "fargebidrag": "hsl(220, 0%, 25%)", "vekt": [0, 1, 0] },
+  "NN-LA-KLG-AI-4": {
+    "farge": "#c00",
+    "fargebidrag": "hsl(220, 0%, 25%)",
+    "vekt": [0, 1, 0]
+  },
 
-  "NN-LA-KLG-AIKS-1": { "fargebidrag": "hsl(0, 0%, 100%)", "vekt": 0 },
+  "NN-LA-KLG-AIKS-1": {
+    "farge": "#fff",
+    "fargebidrag": "hsl(0, 0%, 100%)",
+    "vekt": 0
+  },
   "NN-LA-KLG-AIKS-2": {
+    "farge": "#f80",
     "fargebidrag": "hsl(220, 0%, 66%)",
     "vekt": [0, 0.5, 0]
   },
   "NN-LA-KLG-AIKS-3": {
+    "farge": "#f00",
     "fargebidrag": "hsl(220, 0%, 33%)",
     "vekt": [0, 1, 0]
   },

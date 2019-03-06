@@ -82,22 +82,6 @@
       }
     }
   },
-  "NN-LA-KLG-AI-1": {
-    "sortering": 1,
-    "farge": "#fff"
-  },
-  "NN-LA-KLG-AI-2": {
-    "sortering": 2,
-    "farge": "#ff0"
-  },
-  "NN-LA-KLG-AI-3": {
-    "sortering": 3,
-    "farge": "#f80"
-  },
-  "NN-LA-KLG-AI-4": {
-    "sortering": 4,
-    "farge": "#f00"
-  },
   "NN-LA-KLG-AIKS": {
     "type": "gradient",
     "kartformat": {
@@ -109,18 +93,6 @@
         }
       }
     }
-  },
-  "NN-LA-KLG-AIKS-1": {
-    "sortering": 1,
-    "farge": "#fff"
-  },
-  "NN-LA-KLG-AIKS-2": {
-    "sortering": 3,
-    "farge": "#f80"
-  },
-  "NN-LA-KLG-AIKS-3": {
-    "sortering": 4,
-    "farge": "#f00"
   },
   "NN-LA-KLG-KA": {
     "type": "gradient",
@@ -135,12 +107,10 @@
     }
   },
   "NN-LA-KLG-KA-1": {
-    "sortering": 1,
-    "farge": "#5ab4ac"
+    "sortering": 1
   },
   "NN-LA-KLG-KA-2": {
-    "sortering": 2,
-    "farge": "#d8b365"
+    "sortering": 2
   },
   "NN-LA-KLG-JP": {
     "type": "gradient",
@@ -154,14 +124,6 @@
         }
       }
     }
-  },
-  "NN-LA-KLG-JP-1": {
-    "sortering": 1,
-    "farge": "#fff"
-  },
-  "NN-LA-KLG-JP-2": {
-    "sortering": 2,
-    "farge": "#c70"
   },
   "NN-LA-KLG-VE": {
     "type": "gradient"
@@ -180,13 +142,5 @@
         }
       }
     }
-  },
-  "NN-LA-KLG-VP-1": {
-    "sortering": 1,
-    "farge": "#fff"
-  },
-  "NN-LA-KLG-VP-2": {
-    "sortering": 2,
-    "farge": "#8f4"
   }
 }
