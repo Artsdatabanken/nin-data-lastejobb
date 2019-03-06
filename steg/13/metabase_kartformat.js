@@ -59,7 +59,7 @@ function addKartformat(source) {
     if (!mapfile) return
     const target = tre[xkode]
 
-    if (!target.kart) target.kart = { format: {} }
+    if (!target.kart) target.kart = { format: target.kartformat || {} }
     //    target.kart.antallUndernivå = antallUndernivå(node)
     target.kartformat = target.kart.format // TODO: Remove
     const kartformat = target.kart.format
