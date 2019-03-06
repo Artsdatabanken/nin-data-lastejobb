@@ -48,10 +48,11 @@ function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
   if (!nodeFra.graf) nodeFra.graf = {}
   if (!nodeFra.graf[kant]) nodeFra.graf[kant] = {}
   let kobling = Object.assign({}, metadata, tilBarn(nodeTil))
+  if (kodeFra === "NN-LA-KLG-AI") debugger
   kobling.type = nodeTil.type
   if (nodeTil.type === "flagg") {
     if (!nodeFra.flagg) nodeFra.flagg = {}
-    nodeFra.flagg[kobling.kode] = {
+    nodeFra.flagg[kodeTil] = {
       tittel: nodeTil.tittel
     }
   } else {
@@ -65,6 +66,7 @@ function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
 
 function lagGrafkoblinger(kode, node) {
   if (!node.relasjon) return
+  if (kode === "NN-LA-KLG-AI") debugger
   node.relasjon.forEach(e => {
     if (!e.kode) throw new Error("Mangler kode " + e.kode)
     lagGrafkobling(kode, e.kode, e.kant, e, e.erSubset)
