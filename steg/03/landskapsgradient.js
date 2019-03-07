@@ -25,6 +25,7 @@ klg.forEach(inn => {
   else {
     r["NN-LA-" + hack(inn.kode)] = {
       tittel: { nb: inn.klg_navn },
+      måleenhet: inn.måleenhet,
       ingress: inn.beskrivelse_klg
     }
   }
