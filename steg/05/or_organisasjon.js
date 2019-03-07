@@ -13,8 +13,8 @@ function lagRelasjonTilDatasett(kilde) {
     o.relasjon = sett.map(s => {
       return {
         kode: s,
-        kant: "publisererer",
-        kantRetur: "publiseres av",
+        kant: "Datasett",
+        kantRetur: "Datakilde",
         erSubset: true
       }
     })
