@@ -14,9 +14,9 @@ let ukjentBbox = 0
 const mapfiles = readMbtiles()
 const sourceTypes = [
   { type: "polygon", suffix: "3857.mbtiles" },
-  { type: "raster.indexed", suffix: "3857.mbtiles" },
+  { type: "raster_indexed", suffix: "3857.mbtiles" },
   {
-    type: "raster.gradient",
+    type: "raster_gradient",
     suffix: "3857.mbtiles"
   },
   { type: "point", suffix: "4326.geojson" },
@@ -81,13 +81,13 @@ function addKartformat(source) {
   })
 }
 
-// Regn ut fargeverdier for trinn i kartformat raster.gradient.mbtiles
+// Regn ut fargeverdier for trinn i kartformat raster_gradient.mbtiles
 function normaliserGradienter() {
   Object.keys(tre).forEach(kode => {
     const target = tre[kode]
     const kartformat = target.kartformat
     if (!kartformat) return
-    const rgrad = kartformat["raster.gradient"]
+    const rgrad = kartformat["raster_gradient"]
     if (!rgrad) return
     const intervall = rgrad.intervall
     if (!intervall) return
