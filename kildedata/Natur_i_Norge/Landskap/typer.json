@@ -73,7 +73,7 @@
   "NN-LA-KLG-AI": {
     "type": "gradient",
     "kartformat": {
-      "raster.gradient": {
+      "raster_gradient": {
         "visning": ["kontinuerlig"],
         "intervall": {
           "original": [0, 13.228172302246],
@@ -85,7 +85,7 @@
   "NN-LA-KLG-AIKS": {
     "type": "gradient",
     "kartformat": {
-      "raster.gradient": {
+      "raster_gradient": {
         "visning": ["kontinuerlig"],
         "intervall": {
           "original": [0, 13.228172302246],
@@ -97,7 +97,7 @@
   "NN-LA-KLG-KA": {
     "type": "gradient",
     "kartformat": {
-      "raster.gradient": {
+      "raster_gradient": {
         "visning": ["kontinuerlig"],
         "intervall": {
           "original": [0, 210.64946875],
@@ -116,7 +116,7 @@
     "type": "gradient",
     "ingress": "I hvor stor grad landskapet er dominert av jordbruk, gjennom andel dyrket mark.",
     "kartformat": {
-      "raster.gradient": {
+      "raster_gradient": {
         "visning": ["kontinuerlig"],
         "intervall": {
           "original": [0, 1],
@@ -134,7 +134,7 @@
   "NN-LA-KLG-VP": {
     "type": "gradient",
     "kartformat": {
-      "raster.gradient": {
+      "raster_gradient": {
         "visning": ["kontinuerlig"],
         "intervall": {
           "original": [0, 2],

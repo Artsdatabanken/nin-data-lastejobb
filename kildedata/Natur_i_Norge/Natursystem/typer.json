@@ -55,7 +55,7 @@
     "infoUrl": "https://www.artsdatabanken.no/Pages/181900",
     "farge": "rgb(50,67,253)",
     "kartformat": {
-      "raster.gradient": {
+      "raster_gradient": {
         "visning": ["diskret", "kontinuerlig"],
         "intervall": {
           "original": [-5.1858, 4.6657],
@@ -71,7 +71,7 @@
     "farge": "rgb(253,194,111)",
     "type": "gradient",
     "kartformat": {
-      "raster.gradient": {
+      "raster_gradient": {
         "visning": ["diskret", "kontinuerlig"],
         "intervall": {
           "original": [-4.7302, 4.3179],
