@@ -28,6 +28,7 @@ function map(ht) {
     infoUrl: ht.infoUrl,
     relasjon: []
   }
+
   relasjon(o, "definisjonsgrunnlag", ht.definisjonsgrunnlag.kode)
   relasjon(o, "prosedyrekategori", ht.prosedyrekategori.kode)
   if (!ht.lkm) return o
