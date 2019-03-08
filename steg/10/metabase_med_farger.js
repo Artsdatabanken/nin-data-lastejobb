@@ -46,11 +46,20 @@ io.skrivDatafil(__filename, data)
 function blandBarnasFarger(kode) {
   const node = data[kode]
   if (node.farge) return node.farge
+  const farger = []
   const barna = barnAv[kode]
-  if (!barna) return "#af3"
-  const farger = barna.map(bk => {
-    return { farge: data[bk].farge ? data[bk].farge : blandBarnasFarger(bk) }
-  })
+  if (barna)
+    barna.forEach(bk => {
+      const farge = data[bk].farge ? data[bk].farge : blandBarnasFarger(bk)
+      if (farge) farger.push({ farge: farge })
+    })
+  if (farger.length === 0 && node.gradient) {
+    Object.keys(node.gradient).forEach(relasjon => {
+      node.gradient[relasjon].trinn.forEach(bk => {
+        if (bk.farge) farger.push({ farge: bk.farge })
+      })
+    })
+  }
   node.farge = blandFarger(farger)
   return node.farge
 }
