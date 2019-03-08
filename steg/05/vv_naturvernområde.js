@@ -54,7 +54,11 @@ function ordNummer(s, index) {
 function relasjon(e, kant, kode, kantRetur, erSubset = true) {
   for (const rl of e.relasjon) if (rl.kode === kode) return
 
-  const rel = { kode: kode, kant: kant, kantRetur: kantRetur || kant }
+  const rel = {
+    kode: kode,
+    kant: kant,
+    kantRetur: kantRetur || "Naturvernområde"
+  }
   if (erSubset) rel.erSubset = true
   e.relasjon.push(rel)
 }
@@ -119,7 +123,7 @@ function map(vo) {
     relasjon(e, "truet vurdering", kodeFraNavn(e.data.truetvurdering))
   }
 
-  if (e.data.iucn) relasjon(e, "iucn", "VV-PA-" + e.data.iucn)
+  if (e.data.iucn) relasjon(e, "IUCN", "VV-PA-" + e.data.iucn)
   relasjon(e, "ble vernet i år", "VV-VT-" + e.data.vernedato.substring(0, 4))
   if (new Date(props.DATO_REVID).getFullYear() > 1900)
     e.data.revisjonsdato = props.DATO_REVID
