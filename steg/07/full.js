@@ -85,7 +85,7 @@ function propagerNedFlaggAttributt() {
       if (r[fkode].type === "gradient") node.type = "gradientverdi"
     }
     if (kode.startsWith("NN-NA-LKM"))
-      if (!node.type) log.warn("Missing type: " + kode)
+      if (!node.type) log.warn("Missing type attribute on: " + kode)
   }
 }
 
