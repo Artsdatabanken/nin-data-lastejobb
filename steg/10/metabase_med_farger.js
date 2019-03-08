@@ -11,6 +11,7 @@ Mix colors of child nodes to create colors for ancestor nodes missing colors
 
 let data = io.lesDatafil("full_med_graf")
 let hierarki = io.lesDatafil("kodehierarki")
+const foreldre = hierarki.foreldre
 const barnAv = hierarki.barn
 let farger = io.lesBuildfil("farger")
 const la_farger = io.lesDatafil("la_farger")
@@ -40,6 +41,18 @@ Object.keys(data).forEach(kode => {
   const node = data[kode]
   if (!node.farge) node.farge = blandBarnasFarger(kode)
 })
+Object.keys(data).forEach(kode => {
+  const node = data[kode]
+  if (!node.farge) node.farge = brukOverordnetsFarge(kode)
+})
+
+function brukOverordnetsFarge(kode) {
+  while (foreldre[kode]) {
+    kode = foreldre[kode]
+    const node = data[kode]
+    if (node.farge) return node.farge
+  }
+}
 
 io.skrivDatafil(__filename, data)
 
@@ -60,6 +73,7 @@ function blandBarnasFarger(kode) {
       })
     })
   }
+  if (farger.length === 0) return null
   node.farge = blandFarger(farger)
   return node.farge
 }
