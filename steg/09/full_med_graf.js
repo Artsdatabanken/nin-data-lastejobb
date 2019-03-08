@@ -48,9 +48,8 @@ function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
   if (!nodeFra.graf) nodeFra.graf = {}
   if (!nodeFra.graf[kant]) nodeFra.graf[kant] = {}
   let kobling = Object.assign({}, metadata, tilBarn(nodeTil))
-  if (kodeFra === "NN-LA-KLG-AI") debugger
   kobling.type = nodeTil.type
-  if (nodeTil.type === "flagg") {
+  if (nodeTil.type === "flagg" && kobling.kant !== "Datasett") {
     if (!nodeFra.flagg) nodeFra.flagg = {}
     nodeFra.flagg[kodeTil] = {
       tittel: nodeTil.tittel
@@ -60,17 +59,35 @@ function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
     delete kobling.kode
     delete kobling.kant
     delete kobling.kantRetur
+    delete kobling.kantReturFraAlleBarna
     nodeFra.graf[kant][kodeTil] = kobling
   }
+}
+function lagGrafkoblingerTilAlleBarna(
+  kodeFra,
+  kodeTil,
+  kant,
+  metadata,
+  erSubset
+) {
+  const barna = barnAv[kodeFra] || []
+  lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset)
+  barna.forEach(kodeFraBarn => {
+    lagGrafkoblingerTilAlleBarna(kodeFraBarn, kodeTil, kant, metadata, erSubset)
+  })
 }
 
 function lagGrafkoblinger(kode, node) {
   if (!node.relasjon) return
-  if (kode === "NN-LA-KLG-AI") debugger
   node.relasjon.forEach(e => {
     if (!e.kode) throw new Error("Mangler kode " + e.kode)
     lagGrafkobling(kode, e.kode, e.kant, e, e.erSubset)
-    if (e.kantRetur) lagGrafkobling(e.kode, kode, e.kantRetur, e, false)
+
+    if (e.kantRetur) {
+      if (e.kantReturFraAlleBarna) {
+        lagGrafkoblingerTilAlleBarna(e.kode, kode, e.kantRetur, e, e.erSubset)
+      } else lagGrafkobling(e.kode, kode, e.kantRetur, e, false)
+    }
   })
   delete node.relasjon
 }

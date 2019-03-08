@@ -1,9 +1,0 @@
-{
-  "OR-AD": ["RL", "LA"],
-  "OR-KV": ["NN-NA-BS-8", "NN-NA-I", "AO"],
-  "OR-MD": ["NN-NA", "VV", "NN-NA-BS"],
-  "OR-NB": ["NN-NA-I"],
-  "OR-NI": ["NN-NA-BS-6SE", "NN-NA-BS-6SO"],
-  "OR-GU": ["NN-NA-LKM-KA", "NN-NA-LKM-BK", "NN-NA-LKM-S3"],
-  "OR-SB": ["AO"]
-}
