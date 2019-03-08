@@ -47,7 +47,8 @@ function harKartdata(kode) {
   if (!node) return false
   // Ta med alt som har relasjoner
   if (node.gradient && Object.keys(node.gradient).length > 0) return true
-  if (node.graf && Object.keys(node.graf).length > 0) return true
+  if (kode === "NN-NA-T39-C-3") debugger
+  if (harRelasjon(node.graf)) return true
   const visAlltid = ["OR"]
   if (visAlltid.includes(kode)) return true
   if (kode === typesystem.rotkode) return true
@@ -59,6 +60,12 @@ function harKartdata(kode) {
   // if (kode.indexOf("FA") === 0) return true
 
   return harBarnMedKartdata(node)
+}
+
+function harRelasjon(graf) {
+  if (!graf) return false
+  if (Object.keys(graf).length !== 1) return true
+  return graf[0].type !== "Datakilde"
 }
 
 function harBarnMedKartdata(node) {
