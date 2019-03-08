@@ -36,13 +36,24 @@ while (trickleColorsUp()) {}
 settFargePåGradienter()
 settFargePåFlagg()
 
-// Fallback
 Object.keys(data).forEach(kode => {
   const node = data[kode]
-  if (!node.farge) node.farge = "#afecaf"
+  if (!node.farge) node.farge = blandBarnasFarger(kode)
 })
 
 io.skrivDatafil(__filename, data)
+
+function blandBarnasFarger(kode) {
+  const node = data[kode]
+  if (node.farge) return node.farge
+  const barna = barnAv[kode]
+  if (!barna) return "#af3"
+  const farger = barna.map(bk => {
+    return { farge: data[bk].farge ? data[bk].farge : blandBarnasFarger(bk) }
+  })
+  node.farge = blandFarger(farger)
+  return node.farge
+}
 
 function trickleColorsUp() {
   const blends = {}
