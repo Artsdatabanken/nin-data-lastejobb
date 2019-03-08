@@ -11,7 +11,7 @@ const r = {}
 Object.keys(hovedtyper).forEach(kode => {
   const hovedtype = hovedtyper[kode]
   const pk = hovedtype.prosedyrekategori
-  const pkkode = pk.kode
+  const pkkode = pk.kode.toUpperCase()
   if (!r[pkkode])
     r[pkkode] = {
       foreldre: [typesystem.natursystem.hovedtype.prosedyrekategori.prefiks],

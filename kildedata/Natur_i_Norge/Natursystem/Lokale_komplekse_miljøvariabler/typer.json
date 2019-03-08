@@ -14,6 +14,15 @@
     "farge": "hsl(270,70%, 60%)",
     "type": "flagg"
   },
+  "NN-NA-LKM-DD": {
+    "type": "flagg"
+  },
+  "NN-NA-LKM-DEHT": {
+    "tittel": {
+      "nb": "Definisjonsgrunnlag for hovedtypen"
+    },
+    "type": "flagg"
+  },
   "NN-NA-LKM-DL": {
     "farge": "#336",
     "farge0": "#3cf",
@@ -23,6 +32,15 @@
     "farge": "#336",
     "farge0": "#3cf",
     "type": "gradient"
+  },
+  "NN-NA-LKM-ER": {
+    "type": "flagg"
+  },
+  "NN-NA-LKM-FK": {
+    "type": "flagg"
+  },
+  "NN-NA-LKM-FR": {
+    "type": "flagg"
   },
   "NN-NA-LKM-GS": {
     "farge": "#A53",
@@ -39,6 +57,12 @@
     "farge0": "#af3",
     "type": "gradient"
   },
+  "NN-NA-LKM-HR": {
+    "type": "flagg"
+  },
+  "NN-NA-LKM-HS": {
+    "type": "flagg"
+  },
   "NN-NA-LKM-HU": {
     "farge": "#b99",
     "farge0": "#8ff",
@@ -53,6 +77,9 @@
     "farge": "#0f8",
     "farge0": "#aaa",
     "type": "gradient"
+  },
+  "NN-NA-LKM-JF": {
+    "type": "flagg"
   },
   "NN-NA-LKM-JV": {
     "farge": "#f62",
@@ -96,13 +123,31 @@
     "farge0": "#aaa",
     "type": "gradient"
   },
+  "NN-NA-LKM-KO": {
+    "type": "flagg"
+  },
   "NN-NA-LKM-KT": {
+    "type": "flagg"
+  },
+  "NN-NA-LKM-KY": {
     "type": "flagg"
   },
   "NN-NA-LKM-LA": {
     "farge": "#ff0",
     "farge0": "#0af",
     "type": "gradient"
+  },
+  "NN-NA-LKM-LK": {
+    "type": "flagg"
+  },
+  "NN-NA-LKM-MB": {
+    "type": "flagg"
+  },
+  "NN-NA-LKM-MF": {
+    "type": "flagg"
+  },
+  "NN-NA-LKM-MX": {
+    "type": "flagg"
   },
   "NN-NA-LKM-NG": {
     "farge": "#e90",
@@ -112,12 +157,18 @@
   "NN-NA-LKM-OF": {
     "type": "flagg"
   },
+  "NN-NA-LKM-OM": {
+    "type": "flagg"
+  },
   "NN-NA-LKM-OR": {
     "farge": "#39F",
     "farge0": "#fff",
     "type": "gradient"
   },
   "NN-NA-LKM-PF": {
+    "type": "flagg"
+  },
+  "NN-NA-LKM-PRK": {
     "type": "flagg"
   },
   "NN-NA-LKM-RU": {
@@ -138,7 +189,6 @@
     }
   },
   "NN-NA-LKM-S3-E": {
-    "måleenhet": "mm",
     "infoUrl": "https://www.artsdatabanken.no/Pages/179771",
     "ingress": "Sedimentets evne til å motstå vannerosjon; målt som kritisk skjærstyrke, samt sedimentets evne til å motstå andre ytre påvirkninger slik det kommer til uttrykk gjennom sedimentets kornstørrelsesfordeling».",
     "kartformat": {
@@ -150,6 +200,7 @@
         "visning": ["klasser"]
       }
     },
+    "måleenhet": "mm",
     "tittel": {
       "nb": "Erosjonsmotstand"
     },
@@ -338,7 +389,6 @@
     }
   },
   "NN-NA-LKM-S3-F": {
-    "måleenhet": "% vektandel",
     "infoUrl": "https://www.artsdatabanken.no/Pages/179772",
     "ingress": "Organisk og uorganisk materiale med kornstørrelse < 1/16 mm (silt og leire). Finmaterialinnhold angis som vektprosentandel i sedimentet.",
     "kartformat": {
@@ -350,6 +400,7 @@
         "visning": ["klasser"]
       }
     },
+    "måleenhet": "% vektandel",
     "tittel": {
       "nb": "Finmaterialinnhold"
     },
@@ -435,6 +486,9 @@
       "nb": "finmaterialdominert"
     }
   },
+  "NN-NA-LKM-S3-S": {
+    "type": "flagg"
+  },
   "NN-NA-LKM-SA": {
     "farge": "#eee",
     "farge0": "#000",
@@ -451,10 +505,19 @@
     "farge0": "hsl(280,20%,50%)",
     "type": "gradient"
   },
+  "NN-NA-LKM-SH": {
+    "type": "flagg"
+  },
   "NN-NA-LKM-SM": {
     "farge": "#e0e",
     "farge0": "#eee",
     "type": "gradient"
+  },
+  "NN-NA-LKM-SP": {
+    "type": "flagg"
+  },
+  "NN-NA-LKM-SS": {
+    "type": "flagg"
   },
   "NN-NA-LKM-SU": {
     "farge": "#e03",
@@ -466,7 +529,16 @@
     "farge0": "#0d5",
     "type": "gradient"
   },
+  "NN-NA-LKM-SX": {
+    "type": "flagg"
+  },
   "NN-NA-LKM-SY": {
+    "type": "flagg"
+  },
+  "NN-NA-LKM-TE": {
+    "type": "flagg"
+  },
+  "NN-NA-LKM-TU": {
     "type": "flagg"
   },
   "NN-NA-LKM-TV": {
@@ -499,81 +571,15 @@
     "farge0": "#bbb",
     "type": "gradient"
   },
-  "NN-NA-LKM-VS": {
-    "farge0": "hsl(240,70%,90%)",
-    "farge": "hsl(220,60%,50%)",
-    "type": "gradient"
-  },
-  "NN-NA-LKM-VT": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-ER": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-SX": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-MX": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-TU": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-MB": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-KY": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-HR": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-FR": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-JF": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-SS": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-SH": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-S3-S": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-MF": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-OM": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-TE": {
-    "type": "flagg"
-  },
   "NN-NA-LKM-VR": {
     "type": "flagg"
   },
-  "NN-NA-LKM-FK": {
-    "type": "flagg"
+  "NN-NA-LKM-VS": {
+    "farge": "hsl(220,60%,50%)",
+    "farge0": "hsl(240,70%,90%)",
+    "type": "gradient"
   },
-  "NN-NA-LKM-HS": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-DD": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-LK": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-KO": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-DEHT": {
-    "type": "flagg"
-  },
-  "NN-NA-LKM-SP": {
+  "NN-NA-LKM-VT": {
     "type": "flagg"
   }
 }
