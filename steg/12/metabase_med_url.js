@@ -28,8 +28,6 @@ function oppdaterNivå1(node) {
 
 function addUrl(kode, node) {
   if (!node.hasOwnProperty("url")) node.url = url(kode)
-  if (!node.hasOwnProperty("url")) node.url = url(kode)
-  if (!node.hasOwnProperty("url")) node.url = url(kode)
   if (usedUrls[node.url])
     log.warn("Dupe URL " + kode + "," + usedUrls[node.url] + ": " + node.url)
   usedUrls[node.url] = kode
@@ -49,7 +47,7 @@ function urlPåGraf(node) {
     Object.keys(node.graf[typeRelasjon]).forEach(kode => {
       const sub = node.graf[typeRelasjon][kode]
       sub.kode = kode
-      sub.url = url(kode)
+      sub.url = tre[kode]
       tr.noder.push(sub)
     })
     grafArray.push(tr)
@@ -61,7 +59,7 @@ function urlPåGradient(node) {
   if (!node.gradient) return
   Object.keys(node.gradient).forEach(type => {
     const grad = node.gradient[type]
-    grad.url = url(grad.kode)
+    grad.url = tre[grad.kode]
   })
 }
 
@@ -101,6 +99,13 @@ function url(kode) {
   sti.push(node.tittel)
   const oldUrl = sti.map(e => urlify(e, kode, false)).join("/")
   const newUrl = sti.map(e => urlify(e, kode, true)).join("/")
+  if (node.data) {
+    const x = newUrl.substring(
+      0,
+      newUrl.length - node.data.verneform.length - 1
+    )
+    console.log(`mv "${x}/*" "${newUrl}/"`)
+  }
   //  if (oldUrl !== newUrl) log.info("mv ", oldUrl, newUrl)
   if (oldUrl !== newUrl) mods += `\nmv "${oldUrl}" "${newUrl}"`
   return newUrl

@@ -20,9 +20,11 @@ const sourceTypes = [
     suffix: "3857.mbtiles"
   },
   { type: "point", suffix: "4326.geojson" },
+  { type: "område", suffix: ".png" },
   { type: "observasjon.rutenett", suffix: "32633.geojson" }
 ]
 
+addKartformat({ type: "område", suffix: ".png" })
 sourceTypes.forEach(source => addKartformat(source))
 normaliserGradienter()
 if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
@@ -53,9 +55,11 @@ function avrund4d(bounds) {
 function addKartformat(source) {
   const { type, suffix } = source
   Object.keys(tre).forEach(xkode => {
+    //    if (xkode === "VV-261") debugger
     const node = tre[xkode]
     const path = `${node.url}/${type}.${suffix}`
     const mapfile = mapfiles[path]
+    if (mapfile === "område.png") debugger
     if (!mapfile) return
     const target = tre[xkode]
 
