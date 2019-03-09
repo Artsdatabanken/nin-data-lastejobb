@@ -47,7 +47,7 @@ function urlPåGraf(node) {
     Object.keys(node.graf[typeRelasjon]).forEach(kode => {
       const sub = node.graf[typeRelasjon][kode]
       sub.kode = kode
-      sub.url = tre[kode]
+      sub.url = url(kode)
       tr.noder.push(sub)
     })
     grafArray.push(tr)
@@ -59,7 +59,7 @@ function urlPåGradient(node) {
   if (!node.gradient) return
   Object.keys(node.gradient).forEach(type => {
     const grad = node.gradient[type]
-    grad.url = tre[grad.kode]
+    grad.url = url(grad.kode)
   })
 }
 
@@ -88,6 +88,7 @@ function urlify(tittel, kode, makevalid) {
 }
 
 function url(kode) {
+  if (tre[kode].url) return tre[kode].url
   const node = tre[kode]
   if (!node.overordnet) {
     log.error(kode, JSON.stringify(node))
@@ -97,17 +98,10 @@ function url(kode) {
   let sti = node.overordnet.slice(0, -1).map(f => f.tittel)
   sti = sti.reverse()
   sti.push(node.tittel)
-  const oldUrl = sti.map(e => urlify(e, kode, false)).join("/")
+  //  const oldUrl = sti.map(e => urlify(e, kode, false)).join("/")
   const newUrl = sti.map(e => urlify(e, kode, true)).join("/")
-  if (node.data) {
-    const x = newUrl.substring(
-      0,
-      newUrl.length - node.data.verneform.length - 1
-    )
-    console.log(`mv "${x}/*" "${newUrl}/"`)
-  }
   //  if (oldUrl !== newUrl) log.info("mv ", oldUrl, newUrl)
-  if (oldUrl !== newUrl) mods += `\nmv "${oldUrl}" "${newUrl}"`
+  //if (oldUrl !== newUrl) mods += `\nmv "${oldUrl}" "${newUrl}"`
   return newUrl
 }
 
