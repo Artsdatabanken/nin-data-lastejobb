@@ -28,8 +28,6 @@ function oppdaterNivå1(node) {
 
 function addUrl(kode, node) {
   if (!node.hasOwnProperty("url")) node.url = url(kode)
-  if (!node.hasOwnProperty("url")) node.url = url(kode)
-  if (!node.hasOwnProperty("url")) node.url = url(kode)
   if (usedUrls[node.url])
     log.warn("Dupe URL " + kode + "," + usedUrls[node.url] + ": " + node.url)
   usedUrls[node.url] = kode
@@ -90,6 +88,7 @@ function urlify(tittel, kode, makevalid) {
 }
 
 function url(kode) {
+  if (tre[kode].url) return tre[kode].url
   const node = tre[kode]
   if (!node.overordnet) {
     log.error(kode, JSON.stringify(node))
@@ -99,10 +98,10 @@ function url(kode) {
   let sti = node.overordnet.slice(0, -1).map(f => f.tittel)
   sti = sti.reverse()
   sti.push(node.tittel)
-  const oldUrl = sti.map(e => urlify(e, kode, false)).join("/")
+  //  const oldUrl = sti.map(e => urlify(e, kode, false)).join("/")
   const newUrl = sti.map(e => urlify(e, kode, true)).join("/")
   //  if (oldUrl !== newUrl) log.info("mv ", oldUrl, newUrl)
-  if (oldUrl !== newUrl) mods += `\nmv "${oldUrl}" "${newUrl}"`
+  //if (oldUrl !== newUrl) mods += `\nmv "${oldUrl}" "${newUrl}"`
   return newUrl
 }
 

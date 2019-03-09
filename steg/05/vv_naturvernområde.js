@@ -115,12 +115,12 @@ function map(vo) {
   relasjon(
     e,
     "forvaltes av",
-    kodeFraNavn(e.data.forvaltningsmyndighet),
+    kodeFraNavn("Forvaltes av " + e.data.forvaltningsmyndighet.toLowerCase()),
     "forvalter"
   )
   if (props.TRUETVURD) {
     e.data.truetvurdering = props.TRUETVURD
-    relasjon(e, "truet vurdering", kodeFraNavn(e.data.truetvurdering))
+    relasjon(e, "truet vurdering", kodeForTruet(e.data.truetvurdering))
   }
 
   if (e.data.iucn) relasjon(e, "IUCN", "VV-PA-" + e.data.iucn)
@@ -153,27 +153,6 @@ function groupByKeys(filterFn) {
 
 let manglerNøkler = false
 
-function finnManglendeNøkler(fn, prefiks) {
-  const keys = Object.keys(groupByKeys(vo => fn(vo.properties)))
-  keys.forEach(key => {
-    const tittel = key
-    if (!tittel2Kode[tittel.toLowerCase()]) {
-      manglerNøkler = true
-      console.log(`"${prefiks}-???": {"tittel": {"nb": "${tittel}" }},`)
-    }
-  })
-}
-
-finnManglendeNøkler(p => p.FORVALTNI, "VV-FM")
-finnManglendeNøkler(p => p.VERNEPLAN, "VV-VP")
-finnManglendeNøkler(p => p.VERNEFORM, "VV-VF")
-finnManglendeNøkler(p => p.TRUETVURD, "VV-TV")
-
-if (manglerNøkler)
-  log.warn(
-    "Nøklene over mangler i typesystemet.  Legg dem inn i VV_naturvernområde.json manuelt."
-  )
-
 const år = {}
 Object.keys(vo).forEach(key => {
   const o = vo[key]
@@ -184,3 +163,20 @@ Object.keys(vo).forEach(key => {
 Object.keys(vo).forEach(key => map(vo[key]))
 
 io.skrivDatafil(__filename, r)
+
+function kodeForTruet(truet) {
+  switch (truet) {
+    case "Ikke truet":
+      return "VV-TV-IT"
+    case "Ukjent":
+      return "VV-TV-U"
+    case "Truet":
+      return "VV-TV-T"
+    case "Null":
+      return "VV-TV-N"
+    case "Ikke vurdert":
+      return "VV-TV-N"
+    default:
+      throw new Error("Truet: " + truet + "?")
+  }
+}
