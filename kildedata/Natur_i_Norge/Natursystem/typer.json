@@ -55,13 +55,15 @@
     "farge": "rgb(50,67,253)",
     "infoUrl": "https://www.artsdatabanken.no/Pages/181900",
     "ingress": "Denne regionale komplekse miljøvariabelen fanger opp både humiditet og oseanitet. Bioklimatiske seksjoner er en av de aller viktigste regionale komplekse miljøvariablene også på global skala, der spennvidden i vegetasjonsformasjoner fra regnskog via steppe til ørken fanges opp av sju bioklimatiske seksjoner.",
-    "kartformat": {
-      "raster_gradient": {
-        "intervall": {
-          "normalisertVerdi": [0, 255],
-          "original": [-5.1858, 4.6657]
-        },
-        "visning": ["diskret", "kontinuerlig"]
+    "kart": {
+      "format": {
+        "raster_gradient": {
+          "intervall": {
+            "normalisertVerdi": [0, 255],
+            "original": [-5.1858, 4.6657]
+          },
+          "visning": ["diskret", "kontinuerlig"]
+        }
       }
     },
     "måleenhet": "PCA1",
@@ -73,13 +75,15 @@
     "farge": "rgb(253,194,111)",
     "infoUrl": "https://www.artsdatabanken.no/Pages/137992",
     "ingress": "Bioklimatiske soner (BS) beskriver variasjon på land (og i ferskvann) relatert til varme. Alle organismer stiller krav til minstestemperatur for å overleve og for å reprodusere, og temperaturkravet varierer sterkt mellom arter. Alle arter har også en øvre toleransegrense for varme – blir det for varmt, stopper livsfunksjonene opp. Denne varmeøkoklinen er derfor på global basis en av de aller viktigste økoklinene, som forklarer arters utbredelse, breddegradsbestemt fordeling av klimasoner (tropisk, subtropisk, temperert, arktisk) og dominerende livsform (lauvtrær, bartrær, skogløse områder).",
-    "kartformat": {
-      "raster_gradient": {
-        "intervall": {
-          "normalisertVerdi": [0, 255],
-          "original": [-4.7302, 4.3179]
-        },
-        "visning": ["diskret", "kontinuerlig"]
+    "kart": {
+      "format": {
+        "raster_gradient": {
+          "intervall": {
+            "normalisertVerdi": [0, 255],
+            "original": [-4.7302, 4.3179]
+          },
+          "visning": ["diskret", "kontinuerlig"]
+        }
       }
     },
     "måleenhet": "PCA2",

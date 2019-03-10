@@ -4,7 +4,7 @@ const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
 let slettet_fordi_mangler_bbox = []
-let tre = io.lesDatafil("metabase_kartformat")
+let tre = io.lesDatafil("metabase_kart")
 
 fjernKoderSomIkkeHarData(tre)
 //fjernRelasjonTilKoderSomIkkeHarData(tre)
@@ -63,7 +63,7 @@ function harRelasjon(graf) {
 }
 
 function harBarnMedKartdata(node) {
-  if (node.kartformat) return true
+  if (node.kart) return true
   const barn = node.barn
   if (!barn) return false
   for (const kode of Object.keys(barn)) if (harKartdata(kode)) return true

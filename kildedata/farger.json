@@ -31,12 +31,14 @@
   },
   "NN-LA-KLG-AI": {
     "farge": "#f80",
-    "kartformat": {
-      "raster_gradient": {
-        "visning": ["kontinuerlig"],
-        "intervall": {
-          "original": [0, 13.228172302246],
-          "normalisertVerdi": [0, 255]
+    "kart": {
+      "format": {
+        "raster_gradient": {
+          "visning": ["kontinuerlig"],
+          "intervall": {
+            "original": [0, 13.228172302246],
+            "normalisertVerdi": [0, 255]
+          }
         }
       }
     }
@@ -48,12 +50,14 @@
   },
   "NN-LA-KLG-KA": {
     "farge": "#5ab4ac",
-    "kartformat": {
-      "raster_gradient": {
-        "visning": ["kontinuerlig"],
-        "intervall": {
-          "original": [1, 210.64946875],
-          "normalisertVerdi": [1, 255]
+    "kart": {
+      "format": {
+        "raster_gradient": {
+          "visning": ["kontinuerlig"],
+          "intervall": {
+            "original": [1, 210.64946875],
+            "normalisertVerdi": [1, 255]
+          }
         }
       }
     }

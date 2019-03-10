@@ -72,36 +72,42 @@
   },
   "NN-LA-KLG-AI": {
     "type": "gradient",
-    "kartformat": {
-      "raster_gradient": {
-        "visning": ["kontinuerlig"],
-        "intervall": {
-          "original": [0, 13.228172302246],
-          "normalisertVerdi": [0, 255]
+    "kart": {
+      "format": {
+        "raster_gradient": {
+          "visning": ["kontinuerlig"],
+          "intervall": {
+            "original": [0, 13.228172302246],
+            "normalisertVerdi": [0, 255]
+          }
         }
       }
     }
   },
   "NN-LA-KLG-AIKS": {
     "type": "gradient",
-    "kartformat": {
-      "raster_gradient": {
-        "visning": ["kontinuerlig"],
-        "intervall": {
-          "original": [0, 13.228172302246],
-          "normalisertVerdi": [0, 255]
+    "kart": {
+      "format": {
+        "raster_gradient": {
+          "visning": ["kontinuerlig"],
+          "intervall": {
+            "original": [0, 13.228172302246],
+            "normalisertVerdi": [0, 255]
+          }
         }
       }
     }
   },
   "NN-LA-KLG-KA": {
     "type": "gradient",
-    "kartformat": {
-      "raster_gradient": {
-        "visning": ["kontinuerlig"],
-        "intervall": {
-          "original": [0, 210.64946875],
-          "normalisertVerdi": [1, 255]
+    "kart": {
+      "format": {
+        "raster_gradient": {
+          "visning": ["kontinuerlig"],
+          "intervall": {
+            "original": [0, 210.64946875],
+            "normalisertVerdi": [1, 255]
+          }
         }
       }
     }
@@ -115,12 +121,14 @@
   "NN-LA-KLG-JP": {
     "type": "gradient",
     "ingress": "I hvor stor grad landskapet er dominert av jordbruk, gjennom andel dyrket mark.",
-    "kartformat": {
-      "raster_gradient": {
-        "visning": ["kontinuerlig"],
-        "intervall": {
-          "original": [0, 1],
-          "normalisertVerdi": [0, 255]
+    "kart": {
+      "format": {
+        "raster_gradient": {
+          "visning": ["kontinuerlig"],
+          "intervall": {
+            "original": [0, 1],
+            "normalisertVerdi": [0, 255]
+          }
         }
       }
     }
@@ -133,12 +141,14 @@
   },
   "NN-LA-KLG-VP": {
     "type": "gradient",
-    "kartformat": {
-      "raster_gradient": {
-        "visning": ["kontinuerlig"],
-        "intervall": {
-          "original": [0, 2],
-          "normalisertVerdi": [0, 255]
+    "kart": {
+      "format": {
+        "raster_gradient": {
+          "visning": ["kontinuerlig"],
+          "intervall": {
+            "original": [0, 2],
+            "normalisertVerdi": [0, 255]
+          }
         }
       }
     }
