@@ -2,7 +2,7 @@ const config = require("../../config")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
-
+const path = require("path")
 let tre = io.lesDatafil("metabase_med_url")
 let hierarki = io.lesDatafil("kodehierarki")
 const barnAv = hierarki.barn
@@ -12,20 +12,8 @@ let ukjentBbox = 0
 // /type/subtype/.../format.projeksjon.filtype
 // Dvs. at rotkatalog betraktes som klasse av data, eks. gradient eller trinn
 const mapfiles = readMbtiles()
-const sourceTypes = [
-  { type: "polygon", suffix: "3857.mbtiles" },
-  { type: "raster_indexed", suffix: "3857.mbtiles" },
-  {
-    type: "raster_gradient",
-    suffix: "3857.mbtiles"
-  },
-  { type: "point", suffix: "4326.geojson" },
-  { type: "område", suffix: ".png" },
-  { type: "observasjon.rutenett", suffix: "32633.geojson" }
-]
 
-addKartformat({ type: "område", suffix: ".png" })
-sourceTypes.forEach(source => addKartformat(source))
+addKartformat()
 normaliserGradienter()
 if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
 zoomlevels(typesystem.rotkode)
@@ -34,7 +22,12 @@ io.skrivDatafil(__filename, tre)
 function readMbtiles() {
   let mbtiles = io.lesDatafil("inn_mbtiles")
   const r = {}
-  Object.keys(mbtiles).forEach(path => (r[path] = mbtiles[path]))
+  Object.keys(mbtiles).forEach(mapfile => {
+    const p = path.parse(mapfile)
+    const url = p.dir
+    if (!r[url]) r[url] = []
+    r[url].push(mbtiles[mapfile])
+  })
   return r
 }
 
@@ -52,36 +45,35 @@ function avrund4d(bounds) {
   return [ll, ur]
 }
 
-function addKartformat(source) {
-  const { type, suffix } = source
+function addKartformat() {
   Object.keys(tre).forEach(xkode => {
-    if (xkode === "AR-101825") debugger
     const node = tre[xkode]
-    const path = `${node.url}/${type}.${suffix}`
-    const mapfile = mapfiles[path]
-    if (mapfile === "område.png") debugger
-    if (!mapfile) return
     const target = tre[xkode]
-
-    if (!target.kart) target.kart = { format: target.kartformat || {} }
-    //    target.kart.antallUndernivå = antallUndernivå(node)
-    target.kartformat = target.kart.format // TODO: Remove
-    const kartformat = target.kart.format
-    if (!kartformat[type]) kartformat[type] = {}
-    const cv = kartformat[type]
-    cv.url = config.webserver + path
-    if (mapfile.maxzoom) {
-      cv.zoom = [parseInt(mapfile.minzoom), parseInt(mapfile.maxzoom)]
-    }
-    cv.filnavn = mapfile.filename
-    cv.størrelse = mapfile.size
-    cv.oppdatert = mapfile.mtime
-    if (mapfile.bounds) {
-      // For now, no bounds for GeoJSON
-      cv.zoom = [parseInt(mapfile.minzoom), parseInt(mapfile.maxzoom)]
-      target.bbox = avrund4d(mapfile.bounds)
-    }
-    if (mapfile.format) cv.format = mapfile.format
+    const maps = mapfiles[node.url]
+    if (!maps) return
+    maps.forEach(mapfile => {
+      if (node.url.indexOf("Myrtillus") >= 0) debugger
+      if (".mbtiles.geojson".indexOf(path.extname(mapfile.filename)) < 0) return
+      if (mapfile.filename.indexOf("3857") < 0) return
+      if (!target.kart) target.kart = { format: target.kartformat || {} }
+      const kartformat = target.kart.format
+      const type = mapfile.filename.split(".").shift()
+      if (!kartformat[type]) kartformat[type] = {}
+      const cv = kartformat[type]
+      cv.url = config.webserver + node.url + "/" + mapfile.filename
+      if (mapfile.maxzoom) {
+        cv.zoom = [parseInt(mapfile.minzoom), parseInt(mapfile.maxzoom)]
+      }
+      cv.filnavn = mapfile.filename
+      cv.størrelse = mapfile.size
+      cv.oppdatert = mapfile.mtime
+      if (mapfile.bounds) {
+        // For now, no bounds for GeoJSON
+        cv.zoom = [parseInt(mapfile.minzoom), parseInt(mapfile.maxzoom)]
+        target.bbox = avrund4d(mapfile.bounds)
+      }
+      if (mapfile.format) cv.format = mapfile.format
+    })
   })
 }
 
