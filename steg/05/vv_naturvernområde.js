@@ -4,7 +4,7 @@ const config = require("../../config")
 const typesystem = require("@artsdatabanken/typesystem")
 
 let vo = io.lesDatafil("vv_med_kommune")
-let vvKoder = io.lesKildedatafil("Natur_i_Norge/Naturvernområde/typer")
+let vvKoder = io.lesKildedatafil("Naturvernområde/typer")
 
 function invert(o) {
   let r = {}

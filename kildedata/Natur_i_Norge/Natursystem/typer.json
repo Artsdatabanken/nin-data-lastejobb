@@ -1,224 +1,509 @@
 {
   "NN-NA": {
-    "tittel": { "nb": "Natursystem" },
-    "infoUrl": "https://www.artsdatabanken.no/Pages/222921",
-    "sortering": 1,
     "farge": "hsl(120, 40%, 70%)",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/222921",
     "relasjon": [
       {
-        "kode": "NN-NA-BS",
         "kant": "Beskrives av",
-        "kantRetur": "Natursystem"
+        "kantRetur": "Natursystem",
+        "kode": "NN-NA-BS"
       },
       {
-        "kode": "NN-NA-HT",
         "kant": "Lokale egenskaper",
-        "kantRetur": "Naturtyper"
+        "kantRetur": "Naturtyper",
+        "kode": "NN-NA-HT"
       }
-    ]
-  },
-  "NN-NA-BS": {
-    "tittel": { "nb": "Beskrivelsessystem" },
-    "ingress": "Variasjon som ikke kan beskrives ved hjelp av uLKM er sortert på ni grupper av Kilder til variasjon. Variasjonen langs disse beskrives ved bruk av variabler som er definert så presist som mulig, men som er delt i  klasser eller trinn uten noen direkte referanse til hvor mye variasjon i artssammensetning de gir opphav til.",
-    "infoUrl": "https://artsdatabanken.no/Pages/179723",
-    "sortering": 2
-  },
-  "NN-NA-HT": { "tittel": { "nb": "Hovedtyper" } },
-  "NN-NA-HT-KG": {
-    "tittel": { "nb": "Kunnskapsgrunnlag om hovedtypen generelt" },
-    "type": "gradient"
-  },
-  "NN-NA-HT-KG-GI": {
-    "tittel": { "nb": "Kunnskapsgrunnlag om grunntypeinndelingen" },
-    "type": "gradient"
-  },
-  "NN-NA-HT-KG-GI1": { "tittel": { "nb": "1" } },
-  "NN-NA-HT-KG-GI2": { "tittel": { "nb": "2" } },
-  "NN-NA-HT-KG-GI3": { "tittel": { "nb": "3" } },
-  "NN-NA-HT-KG-GI4": { "tittel": { "nb": "4" } },
-  "NN-NA-HT-KG-GI5": { "tittel": { "nb": "5" } },
-  "NN-NA-HT-KG1": { "tittel": { "nb": "1" } },
-  "NN-NA-HT-KG2": { "tittel": { "nb": "2" } },
-  "NN-NA-HT-KG3": { "tittel": { "nb": "3" } },
-  "NN-NA-HT-KG4": { "tittel": { "nb": "4" } },
-  "NN-NA-HT-KG5": { "tittel": { "nb": "5" } },
-  "NN-NA-HT-PK": { "tittel": { "nb": "Prosedyrekategori" } },
-  "NN-NA-HT-DG": { "tittel": { "nb": "Definisjonsgrunnlag" } },
-  "NN-NA-BS-6SE": {
-    "tittel": { "nb": "Bioklimatisk seksjon" },
-    "måleenhet": "PCA1",
-    "ingress": "Denne regionale komplekse miljøvariabelen fanger opp både humiditet og oseanitet. Bioklimatiske seksjoner er en av de aller viktigste regionale komplekse miljøvariablene også på global skala, der spennvidden i vegetasjonsformasjoner fra regnskog via steppe til ørken fanges opp av sju bioklimatiske seksjoner.",
-    "infoUrl": "https://www.artsdatabanken.no/Pages/181900",
-    "farge": "rgb(50,67,253)",
-    "kartformat": {
-      "raster_gradient": {
-        "visning": ["diskret", "kontinuerlig"],
-        "intervall": {
-          "original": [-5.1858, 4.6657],
-          "normalisertVerdi": [0, 255]
-        }
-      }
+    ],
+    "sortering": 1,
+    "tittel": {
+      "nb": "Natursystem"
     }
   },
-  "NN-NA-BS-6SO": {
-    "tittel": { "nb": "Bioklimatisk sone" },
-    "måleenhet": "PCA2",
-    "ingress": "Bioklimatiske soner (BS) beskriver variasjon på land (og i ferskvann) relatert til varme. Alle organismer stiller krav til minstestemperatur for å overleve og for å reprodusere, og temperaturkravet varierer sterkt mellom arter. Alle arter har også en øvre toleransegrense for varme – blir det for varmt, stopper livsfunksjonene opp. Denne varmeøkoklinen er derfor på global basis en av de aller viktigste økoklinene, som forklarer arters utbredelse, breddegradsbestemt fordeling av klimasoner (tropisk, subtropisk, temperert, arktisk) og dominerende livsform (lauvtrær, bartrær, skogløse områder).",
-    "infoUrl": "https://www.artsdatabanken.no/Pages/137992",
-    "farge": "rgb(253,194,111)",
-    "type": "gradient",
-    "kartformat": {
-      "raster_gradient": {
-        "visning": ["diskret", "kontinuerlig"],
-        "intervall": {
-          "original": [-4.7302, 4.3179],
-          "normalisertVerdi": [0, 255]
-        }
-      }
+  "NN-NA-BS": {
+    "infoUrl": "https://artsdatabanken.no/Pages/179723",
+    "ingress": "Variasjon som ikke kan beskrives ved hjelp av uLKM er sortert på ni grupper av Kilder til variasjon. Variasjonen langs disse beskrives ved bruk av variabler som er definert så presist som mulig, men som er delt i  klasser eller trinn uten noen direkte referanse til hvor mye variasjon i artssammensetning de gir opphav til.",
+    "sortering": 2,
+    "tittel": {
+      "nb": "Beskrivelsessystem"
     }
   },
   "NN-NA-BS-1": {
-    "ingress": "Omfatter «de artene som lever sammen innenfor et gitt område» og beskrives ved å angi hvilke arter som forekommer og eventuelt også deres mengde.",
-    "infoUrl": "https://artsdatabanken.no/Pages/179953"
+    "infoUrl": "https://artsdatabanken.no/Pages/179953",
+    "ingress": "Omfatter «de artene som lever sammen innenfor et gitt område» og beskrives ved å angi hvilke arter som forekommer og eventuelt også deres mengde."
   },
   "NN-NA-BS-2": {
-    "ingress": "Dette er parallellen til artssammensetning, og omfatter «bergarter, mineraler, jordarter, jordsmonn og eventuelle fossiler som finnes innenfor et gitt område».",
-    "infoUrl": "https://artsdatabanken.no/Pages/182002"
+    "infoUrl": "https://artsdatabanken.no/Pages/182002",
+    "ingress": "Dette er parallellen til artssammensetning, og omfatter «bergarter, mineraler, jordarter, jordsmonn og eventuelle fossiler som finnes innenfor et gitt område»."
   },
   "NN-NA-BS-3": {
-    "ingress": "Omfatter «mer eller mindre distinkt terrengform (overflateform på land eller utforming av bunnen i saltvanns- eller ferskvannssystemer) som kan gis en felles karakteristikk på grunnlag av egenskaper som ofte er forårsaket av én enkelt eller en kombinasjon av distinkte landformdannende (geomorfologiske) prosesser».",
-    "infoUrl": "https://artsdatabanken.no/Pages/182003"
+    "infoUrl": "https://artsdatabanken.no/Pages/182003",
+    "ingress": "Omfatter «mer eller mindre distinkt terrengform (overflateform på land eller utforming av bunnen i saltvanns- eller ferskvannssystemer) som kan gis en felles karakteristikk på grunnlag av egenskaper som ofte er forårsaket av én enkelt eller en kombinasjon av distinkte landformdannende (geomorfologiske) prosesser»."
   },
   "NN-NA-BS-4": {
-    "ingress": "Omfatter «fysisk observerbare, romlig avgrensete elementer som helt eller for det meste består av umodifiserte livsmedier og som ikke inngår i et natursystems vanlige bunn- eller marksystem».",
-    "infoUrl": "https://artsdatabanken.no/Pages/182005"
+    "infoUrl": "https://artsdatabanken.no/Pages/182005",
+    "ingress": "Omfatter «fysisk observerbare, romlig avgrensete elementer som helt eller for det meste består av umodifiserte livsmedier og som ikke inngår i et natursystems vanlige bunn- eller marksystem»."
   },
   "NN-NA-BS-5": {
-    "ingress": "«Fysisk observerbare gjenstander som helt eller for det meste består av sterkt modifiserte eller syntetiske livsmedier og som er resultatet av menneskers virksomhet».",
-    "infoUrl": "https://artsdatabanken.no/Pages/182004"
+    "infoUrl": "https://artsdatabanken.no/Pages/182004",
+    "ingress": "«Fysisk observerbare gjenstander som helt eller for det meste består av sterkt modifiserte eller syntetiske livsmedier og som er resultatet av menneskers virksomhet»."
   },
   "NN-NA-BS-6": {
-    "ingress": "Parallell variasjon i artssammensetning og makroklimafaktorer på grov romlig skala",
-    "infoUrl": "https://artsdatabanken.no/Pages/182001"
+    "infoUrl": "https://artsdatabanken.no/Pages/182001",
+    "ingress": "Parallell variasjon i artssammensetning og makroklimafaktorer på grov romlig skala"
+  },
+  "NN-NA-BS-6SE": {
+    "farge": "rgb(50,67,253)",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/181900",
+    "ingress": "Denne regionale komplekse miljøvariabelen fanger opp både humiditet og oseanitet. Bioklimatiske seksjoner er en av de aller viktigste regionale komplekse miljøvariablene også på global skala, der spennvidden i vegetasjonsformasjoner fra regnskog via steppe til ørken fanges opp av sju bioklimatiske seksjoner.",
+    "kartformat": {
+      "raster_gradient": {
+        "intervall": {
+          "normalisertVerdi": [0, 255],
+          "original": [-5.1858, 4.6657]
+        },
+        "visning": ["diskret", "kontinuerlig"]
+      }
+    },
+    "måleenhet": "PCA1",
+    "tittel": {
+      "nb": "Bioklimatisk seksjon"
+    }
+  },
+  "NN-NA-BS-6SO": {
+    "farge": "rgb(253,194,111)",
+    "infoUrl": "https://www.artsdatabanken.no/Pages/137992",
+    "ingress": "Bioklimatiske soner (BS) beskriver variasjon på land (og i ferskvann) relatert til varme. Alle organismer stiller krav til minstestemperatur for å overleve og for å reprodusere, og temperaturkravet varierer sterkt mellom arter. Alle arter har også en øvre toleransegrense for varme – blir det for varmt, stopper livsfunksjonene opp. Denne varmeøkoklinen er derfor på global basis en av de aller viktigste økoklinene, som forklarer arters utbredelse, breddegradsbestemt fordeling av klimasoner (tropisk, subtropisk, temperert, arktisk) og dominerende livsform (lauvtrær, bartrær, skogløse områder).",
+    "kartformat": {
+      "raster_gradient": {
+        "intervall": {
+          "normalisertVerdi": [0, 255],
+          "original": [-4.7302, 4.3179]
+        },
+        "visning": ["diskret", "kontinuerlig"]
+      }
+    },
+    "måleenhet": "PCA2",
+    "tittel": {
+      "nb": "Bioklimatisk sone"
+    },
+    "type": "gradient"
   },
   "NN-NA-BS-7": {
-    "ingress": "«Variasjon i miljøforhold som gir opphav til mønstre som er observerbare i et relativt kort tidsrom, typisk mindre enn 100(–200) år, og som ikke endrer det aktuelle systemets grunnleggende egenskaper, og den variasjonen i artssammensetning den gir opphav til».",
-    "infoUrl": "https://artsdatabanken.no/Pages/182008"
+    "infoUrl": "https://artsdatabanken.no/Pages/182008",
+    "ingress": "«Variasjon i miljøforhold som gir opphav til mønstre som er observerbare i et relativt kort tidsrom, typisk mindre enn 100(–200) år, og som ikke endrer det aktuelle systemets grunnleggende egenskaper, og den variasjonen i artssammensetning den gir opphav til»."
   },
   "NN-NA-BS-8": {
-    "ingress": "Omfatter «variasjon i terrengets overflateformer som kan beskrives ved kontinuerlige variabler som for eksempel relativt relieff og terrengujevnhet».",
-    "infoUrl": "https://artsdatabanken.no/Pages/182007"
+    "infoUrl": "https://artsdatabanken.no/Pages/182007",
+    "ingress": "Omfatter «variasjon i terrengets overflateformer som kan beskrives ved kontinuerlige variabler som for eksempel relativt relieff og terrengujevnhet»."
   },
-
-  "NN-NA-T37-C-2": { "farge": "hsl(74, 7%, 70%)" },
-  "NN-NA-T37-E-2": { "farge": "hsl(74, 7%, 70%)" },
-  "NN-NA-T37": { "farge": "hsl(60, 3%, 64%)" },
-  "NN-NA-T39-C-2": { "farge": "hsl(60, 4%, 65%)" },
-  "NN-NA-T39-E-2": { "farge": "hsl(60, 4%, 65%)" },
-  "NN-NA-T39": { "farge": "hsl(168, 2%, 74%)" },
-  "NN-NA-T39-C-3": { "farge": "hsl(120, 1%, 75%)" },
-  "NN-NA-T39-E-3": { "farge": "hsl(120, 1%, 75%)" },
-  "NN-NA-T45-C-2": { "farge": "hsl(74, 29%, 73%)" },
-  "NN-NA-T45-E-2": { "farge": "hsl(85, 40%, 59%)" },
-  "NN-NA-T45": { "farge": "hsl(69, 35%, 62%)" },
-  "NN-NA-T45-C-3": { "farge": "hsl(85, 40%, 59%)" },
-  "NN-NA-T6-C-2": { "farge": "hsl(60, 2%, 52%)" },
-  "NN-NA-T6-E-2": { "farge": "hsl(60, 2%, 52%)" },
-  "NN-NA-T6": { "farge": "hsl(180, 2%, 73%)" },
-  "NN-NA-V4-C-3": { "farge": "hsl(64, 28%, 61%)" },
-  "NN-NA-V4-E-2": { "farge": "hsl(64, 28%, 61%)" },
-  "NN-NA-V4": { "farge": "hsl(80, 18%, 67%)" },
-  "NN-NA-T2-C-7": { "farge": "hsl(59, 41%, 46%)" },
-  "NN-NA-T2-E-4": { "farge": "hsl(58, 13%, 67%)" },
-  "NN-NA-T2": { "farge": "hsl(89, 11%, 66%)" },
-  "NN-NA-T2-C-8": { "farge": "hsl(58, 13%, 67%)" },
-  "NN-NA-T24-C-2": { "farge": "hsl(82, 25%, 65%)" },
-  "NN-NA-T24-E-1": { "farge": "hsl(82, 25%, 65%)" },
-  "NN-NA-T24": { "farge": "hsl(115, 5%, 70%)" },
-  "NN-NA-T28-C-2": { "farge": "hsl(27, 17%, 56%)" },
-  "NN-NA-T28-E-2": { "farge": "hsl(27, 17%, 56%)" },
-  "NN-NA-T28": { "farge": "hsl(170, 3%, 80%)" },
-  "NN-NA-T28-C-3": { "farge": "hsl(245, 5%, 75%)" },
-  "NN-NA-T28-E-3": { "farge": "hsl(245, 5%, 75%)" },
-  "NN-NA-T29-C-2": { "farge": "hsl(95, 9%, 57%)" },
-  "NN-NA-T29-E-1": { "farge": "hsl(39, 6%, 69%)" },
-  "NN-NA-T29": { "farge": "hsl(170, 3%, 80%)" },
-  "NN-NA-T29-C-5": { "farge": "hsl(39, 6%, 69%)" },
-  "NN-NA-T32-C-2": { "farge": "hsl(67, 17%, 60%)" },
-  "NN-NA-T32-E-1": { "farge": "hsl(67, 17%, 60%)" },
-  "NN-NA-T32": { "farge": "hsl(74, 24%, 61%)" },
-  "NN-NA-T32-C-20": { "farge": "hsl(65, 24%, 77%)" },
-  "NN-NA-T32-E-3": { "farge": "hsl(99, 23%, 72%)" },
-  "NN-NA-T32-C-3": { "farge": "hsl(69, 20%, 65%)" },
-  "NN-NA-T32-E-2": { "farge": "hsl(81, 23%, 62%)" },
-  "NN-NA-T32-C-5": { "farge": "hsl(77, 33%, 64%)" },
-  "NN-NA-T32-C-6": { "farge": "hsl(81, 23%, 62%)" },
-  "NN-NA-T32-C-7": { "farge": "hsl(89, 30%, 65%)" },
-  "NN-NA-T32-C-8": { "farge": "hsl(85, 33%, 62%)" },
-  "NN-NA-T32-C-9": { "farge": "hsl(99, 23%, 72%)" },
-  "NN-NA-T35-C-2": { "farge": "hsl(188, 7%, 65%)" },
-  "NN-NA-T35-E-2": { "farge": "hsl(188, 7%, 65%)" },
-  "NN-NA-T35": { "farge": "hsl(78, 23%, 64%)" },
-  "NN-NA-T35-C-3": { "farge": "hsl(78, 23%, 64%)" },
-  "NN-NA-T35-E-3": { "farge": "hsl(78, 23%, 64%)" },
-  "NN-NA-T36-C-2": { "farge": "hsl(80, 4%, 70%)" },
-  "NN-NA-T36-E-2": { "farge": "hsl(80, 4%, 70%)" },
-  "NN-NA-T36": { "farge": "hsl(80, 4%, 70%)" },
-  "NN-NA-T36-C-3": { "farge": "hsl(52, 11%, 81%)" },
-  "NN-NA-T36-E-3": { "farge": "hsl(52, 11%, 81%)" },
-  "NN-NA-V5-C-2": { "farge": "hsl(38, 12%, 61%)" },
-  "NN-NA-V5-E-2": { "farge": "hsl(38, 12%, 61%)" },
-  "NN-NA-V5": { "farge": "hsl(51, 6%, 69%)" },
-  "NN-NA-V7-C-2": { "farge": "hsl(193, 13%, 55%)" },
-  "NN-NA-V7-E-2": { "farge": "hsl(193, 13%, 55%)" },
-  "NN-NA-V7": { "farge": "hsl(336, 2%, 68%)" },
-  "NN-NA-T7-C-8": { "farge": "hsl(65, 29%, 60%)" },
-  "NN-NA-T7-E-5": { "farge": "hsl(65, 29%, 60%)" },
-  "NN-NA-T7": { "farge": "hsl(62, 16%, 57%)" },
-  "NN-NA-F2": { "farge": "hsl(113, 7%, 65%)" },
-  "NN-NA-F4": { "farge": "hsl(107, 5%, 53%)" },
-  "NN-NA-F5": { "farge": "hsl(81, 13%, 65%)" },
-  "NN-NA-H2": { "farge": "hsl(185, 4%, 72%)" },
-  "NN-NA-L2": { "farge": "hsl(54, 5%, 61%)" },
-  "NN-NA-L4": { "farge": "hsl(79, 15%, 60%)" },
-  "NN-NA-L5": { "farge": "hsl(82, 29%, 59%)" },
-  "NN-NA-L8": { "farge": "hsl(81, 13%, 65%)" },
-  "NN-NA-M2": { "farge": "hsl(45, 8%, 50%)" },
-  "NN-NA-M3": { "farge": "hsl(43, 14%, 61%)" },
-  "NN-NA-M4": { "farge": "hsl(100, 1%, 79%)" },
-  "NN-NA-M5": { "farge": "hsl(61, 30%, 63%)" },
-  "NN-NA-M6": { "farge": "hsl(147, 9%, 60%)" },
-  "NN-NA-M7": { "farge": "hsl(104, 16%, 65%)" },
-  "NN-NA-M8": { "farge": "hsl(77, 19%, 46%)" },
-  "NN-NA-M9": { "farge": "hsl(47, 6%, 49%)" },
-  "NN-NA-T20": { "farge": "hsl(76, 9%, 68%)" },
-  "NN-NA-T22": { "farge": "hsl(42, 19%, 67%)" },
-  "NN-NA-T23": { "farge": "hsl(120, 6%, 64%)" },
-  "NN-NA-T25": { "farge": "hsl(69, 18%, 63%)" },
-  "NN-NA-T26": { "farge": "hsl(90, 1%, 79%)" },
-  "NN-NA-T27": { "farge": "hsl(196, 11%, 65%)" },
-  "NN-NA-T33": { "farge": "hsl(87, 23%, 66%)" },
-  "NN-NA-T34": { "farge": "hsl(42, 25%, 70%)" },
-  "NN-NA-T3": { "farge": "hsl(93, 4%, 70%)" },
-  "NN-NA-T30": { "farge": "hsl(81, 8%, 55%)" },
-  "NN-NA-T38": { "farge": "hsl(37, 14%, 53%)" },
-  "NN-NA-T4": { "farge": "hsl(92, 41%, 47%)" },
-  "NN-NA-T40": { "farge": "hsl(77, 31%, 58%)" },
-  "NN-NA-T42": { "farge": "hsl(47, 4%, 70%)" },
-  "NN-NA-T44": { "farge": "hsl(33, 24%, 73%)" },
-  "NN-NA-T5": { "farge": "hsl(0, 0%, 59%)" },
-  "NN-NA-T8": { "farge": "hsl(55, 17%, 50%)" },
-  "NN-NA-T9": { "farge": "hsl(54, 26%, 65%)" },
-  "NN-NA-V2": { "farge": "hsl(89, 17%, 61%)" },
-  "NN-NA-V3": { "farge": "hsl(71, 12%, 65%)" },
-  "NN-NA-V6": { "farge": "hsl(60, 1%, 72%)" },
-  "NN-NA-V8": { "farge": "hsl(87, 8%, 65%)" },
-  "NN-NA-V9": { "farge": "hsl(54, 12%, 72%)" },
-  "NN-NA-H": { "farge": "hsl(190, 40%, 65%)" },
-  "NN-NA-F": { "farge": "hsl(183, 76%, 74%)" },
-  "NN-NA-T": { "farge": "hsl(105, 26%, 72%)" },
-  "NN-NA-V": { "farge": "hsl(40, 52%, 82%)" },
-  "NN-NA-I": { "farge": "hsl(180, 43%, 93%)" },
-  "NN-NA-L": { "farge": "hsl(192, 48%, 74%)" },
-  "NN-NA-M": { "farge": "hsl(221, 39%, 71%)" }
+  "NN-NA-F": {
+    "farge": "hsl(183, 76%, 74%)"
+  },
+  "NN-NA-F2": {
+    "farge": "hsl(113, 7%, 65%)"
+  },
+  "NN-NA-F4": {
+    "farge": "hsl(107, 5%, 53%)"
+  },
+  "NN-NA-F5": {
+    "farge": "hsl(81, 13%, 65%)"
+  },
+  "NN-NA-H": {
+    "farge": "hsl(190, 40%, 65%)"
+  },
+  "NN-NA-H2": {
+    "farge": "hsl(185, 4%, 72%)"
+  },
+  "NN-NA-HT": {
+    "tittel": {
+      "nb": "Hovedtyper"
+    }
+  },
+  "NN-NA-HT-DG": {
+    "tittel": {
+      "nb": "Definisjonsgrunnlag"
+    }
+  },
+  "NN-NA-HT-KG": {
+    "tittel": {
+      "nb": "Kunnskapsgrunnlag om hovedtypen generelt"
+    },
+    "type": "gradient"
+  },
+  "NN-NA-HT-KG-GI": {
+    "tittel": {
+      "nb": "Kunnskapsgrunnlag om grunntypeinndelingen"
+    },
+    "type": "gradient"
+  },
+  "NN-NA-HT-KG-GI1": {
+    "tittel": {
+      "nb": "1"
+    }
+  },
+  "NN-NA-HT-KG-GI2": {
+    "tittel": {
+      "nb": "2"
+    }
+  },
+  "NN-NA-HT-KG-GI3": {
+    "tittel": {
+      "nb": "3"
+    }
+  },
+  "NN-NA-HT-KG-GI4": {
+    "tittel": {
+      "nb": "4"
+    }
+  },
+  "NN-NA-HT-KG-GI5": {
+    "tittel": {
+      "nb": "5"
+    }
+  },
+  "NN-NA-HT-KG1": {
+    "tittel": {
+      "nb": "1"
+    }
+  },
+  "NN-NA-HT-KG2": {
+    "tittel": {
+      "nb": "2"
+    }
+  },
+  "NN-NA-HT-KG3": {
+    "tittel": {
+      "nb": "3"
+    }
+  },
+  "NN-NA-HT-KG4": {
+    "tittel": {
+      "nb": "4"
+    }
+  },
+  "NN-NA-HT-KG5": {
+    "tittel": {
+      "nb": "5"
+    }
+  },
+  "NN-NA-HT-PK": {
+    "tittel": {
+      "nb": "Prosedyrekategori"
+    }
+  },
+  "NN-NA-I": {
+    "farge": "hsl(180, 43%, 93%)"
+  },
+  "NN-NA-L": {
+    "farge": "hsl(192, 48%, 74%)"
+  },
+  "NN-NA-L2": {
+    "farge": "hsl(54, 5%, 61%)"
+  },
+  "NN-NA-L4": {
+    "farge": "hsl(79, 15%, 60%)"
+  },
+  "NN-NA-L5": {
+    "farge": "hsl(82, 29%, 59%)"
+  },
+  "NN-NA-L8": {
+    "farge": "hsl(81, 13%, 65%)"
+  },
+  "NN-NA-M": {
+    "farge": "hsl(221, 39%, 71%)"
+  },
+  "NN-NA-M2": {
+    "farge": "hsl(45, 8%, 50%)"
+  },
+  "NN-NA-M3": {
+    "farge": "hsl(43, 14%, 61%)"
+  },
+  "NN-NA-M4": {
+    "farge": "hsl(100, 1%, 79%)"
+  },
+  "NN-NA-M5": {
+    "farge": "hsl(61, 30%, 63%)"
+  },
+  "NN-NA-M6": {
+    "farge": "hsl(147, 9%, 60%)"
+  },
+  "NN-NA-M7": {
+    "farge": "hsl(104, 16%, 65%)"
+  },
+  "NN-NA-M8": {
+    "farge": "hsl(77, 19%, 46%)"
+  },
+  "NN-NA-M9": {
+    "farge": "hsl(47, 6%, 49%)"
+  },
+  "NN-NA-T": {
+    "farge": "hsl(105, 26%, 72%)"
+  },
+  "NN-NA-T2": {
+    "farge": "hsl(89, 11%, 66%)"
+  },
+  "NN-NA-T2-C-7": {
+    "farge": "hsl(59, 41%, 46%)"
+  },
+  "NN-NA-T2-C-8": {
+    "farge": "hsl(58, 13%, 67%)"
+  },
+  "NN-NA-T2-E-4": {
+    "farge": "hsl(58, 13%, 67%)"
+  },
+  "NN-NA-T20": {
+    "farge": "hsl(76, 9%, 68%)"
+  },
+  "NN-NA-T22": {
+    "farge": "hsl(42, 19%, 67%)"
+  },
+  "NN-NA-T23": {
+    "farge": "hsl(120, 6%, 64%)"
+  },
+  "NN-NA-T24": {
+    "farge": "hsl(115, 5%, 70%)"
+  },
+  "NN-NA-T24-C-2": {
+    "farge": "hsl(82, 25%, 65%)"
+  },
+  "NN-NA-T24-E-1": {
+    "farge": "hsl(82, 25%, 65%)"
+  },
+  "NN-NA-T25": {
+    "farge": "hsl(69, 18%, 63%)"
+  },
+  "NN-NA-T26": {
+    "farge": "hsl(90, 1%, 79%)"
+  },
+  "NN-NA-T27": {
+    "farge": "hsl(196, 11%, 65%)"
+  },
+  "NN-NA-T28": {
+    "farge": "hsl(170, 3%, 80%)"
+  },
+  "NN-NA-T28-C-2": {
+    "farge": "hsl(27, 17%, 56%)"
+  },
+  "NN-NA-T28-C-3": {
+    "farge": "hsl(245, 5%, 75%)"
+  },
+  "NN-NA-T28-E-2": {
+    "farge": "hsl(27, 17%, 56%)"
+  },
+  "NN-NA-T28-E-3": {
+    "farge": "hsl(245, 5%, 75%)"
+  },
+  "NN-NA-T29": {
+    "farge": "hsl(170, 3%, 80%)"
+  },
+  "NN-NA-T29-C-2": {
+    "farge": "hsl(95, 9%, 57%)"
+  },
+  "NN-NA-T29-C-5": {
+    "farge": "hsl(39, 6%, 69%)"
+  },
+  "NN-NA-T29-E-1": {
+    "farge": "hsl(39, 6%, 69%)"
+  },
+  "NN-NA-T3": {
+    "farge": "hsl(93, 4%, 70%)"
+  },
+  "NN-NA-T30": {
+    "farge": "hsl(81, 8%, 55%)"
+  },
+  "NN-NA-T32": {
+    "farge": "hsl(74, 24%, 61%)"
+  },
+  "NN-NA-T32-C-2": {
+    "farge": "hsl(67, 17%, 60%)"
+  },
+  "NN-NA-T32-C-20": {
+    "farge": "hsl(65, 24%, 77%)"
+  },
+  "NN-NA-T32-C-3": {
+    "farge": "hsl(69, 20%, 65%)"
+  },
+  "NN-NA-T32-C-5": {
+    "farge": "hsl(77, 33%, 64%)"
+  },
+  "NN-NA-T32-C-6": {
+    "farge": "hsl(81, 23%, 62%)"
+  },
+  "NN-NA-T32-C-7": {
+    "farge": "hsl(89, 30%, 65%)"
+  },
+  "NN-NA-T32-C-8": {
+    "farge": "hsl(85, 33%, 62%)"
+  },
+  "NN-NA-T32-C-9": {
+    "farge": "hsl(99, 23%, 72%)"
+  },
+  "NN-NA-T32-E-1": {
+    "farge": "hsl(67, 17%, 60%)"
+  },
+  "NN-NA-T32-E-2": {
+    "farge": "hsl(81, 23%, 62%)"
+  },
+  "NN-NA-T32-E-3": {
+    "farge": "hsl(99, 23%, 72%)"
+  },
+  "NN-NA-T33": {
+    "farge": "hsl(87, 23%, 66%)"
+  },
+  "NN-NA-T34": {
+    "farge": "hsl(42, 25%, 70%)"
+  },
+  "NN-NA-T35": {
+    "farge": "hsl(78, 23%, 64%)"
+  },
+  "NN-NA-T35-C-2": {
+    "farge": "hsl(188, 7%, 65%)"
+  },
+  "NN-NA-T35-C-3": {
+    "farge": "hsl(78, 23%, 64%)"
+  },
+  "NN-NA-T35-E-2": {
+    "farge": "hsl(188, 7%, 65%)"
+  },
+  "NN-NA-T35-E-3": {
+    "farge": "hsl(78, 23%, 64%)"
+  },
+  "NN-NA-T36": {
+    "farge": "hsl(80, 4%, 70%)"
+  },
+  "NN-NA-T36-C-2": {
+    "farge": "hsl(80, 4%, 70%)"
+  },
+  "NN-NA-T36-C-3": {
+    "farge": "hsl(52, 11%, 81%)"
+  },
+  "NN-NA-T36-E-2": {
+    "farge": "hsl(80, 4%, 70%)"
+  },
+  "NN-NA-T36-E-3": {
+    "farge": "hsl(52, 11%, 81%)"
+  },
+  "NN-NA-T37": {
+    "farge": "hsl(60, 3%, 64%)"
+  },
+  "NN-NA-T37-C-2": {
+    "farge": "hsl(74, 7%, 70%)"
+  },
+  "NN-NA-T37-E-2": {
+    "farge": "hsl(74, 7%, 70%)"
+  },
+  "NN-NA-T38": {
+    "farge": "hsl(37, 14%, 53%)"
+  },
+  "NN-NA-T39": {
+    "farge": "hsl(168, 2%, 74%)"
+  },
+  "NN-NA-T39-C-2": {
+    "farge": "hsl(60, 4%, 65%)"
+  },
+  "NN-NA-T39-C-3": {
+    "farge": "hsl(120, 1%, 75%)"
+  },
+  "NN-NA-T39-E-2": {
+    "farge": "hsl(60, 4%, 65%)"
+  },
+  "NN-NA-T39-E-3": {
+    "farge": "hsl(120, 1%, 75%)"
+  },
+  "NN-NA-T4": {
+    "farge": "hsl(92, 41%, 47%)"
+  },
+  "NN-NA-T40": {
+    "farge": "hsl(77, 31%, 58%)"
+  },
+  "NN-NA-T42": {
+    "farge": "hsl(47, 4%, 70%)"
+  },
+  "NN-NA-T44": {
+    "farge": "hsl(33, 24%, 73%)"
+  },
+  "NN-NA-T45": {
+    "farge": "hsl(69, 35%, 62%)"
+  },
+  "NN-NA-T45-C-2": {
+    "farge": "hsl(74, 29%, 73%)"
+  },
+  "NN-NA-T45-C-3": {
+    "farge": "hsl(85, 40%, 59%)"
+  },
+  "NN-NA-T45-E-2": {
+    "farge": "hsl(85, 40%, 59%)"
+  },
+  "NN-NA-T5": {
+    "farge": "hsl(0, 0%, 59%)"
+  },
+  "NN-NA-T6": {
+    "farge": "hsl(180, 2%, 73%)"
+  },
+  "NN-NA-T6-C-2": {
+    "farge": "hsl(60, 2%, 52%)"
+  },
+  "NN-NA-T6-E-2": {
+    "farge": "hsl(60, 2%, 52%)"
+  },
+  "NN-NA-T7": {
+    "farge": "hsl(62, 16%, 57%)"
+  },
+  "NN-NA-T7-C-8": {
+    "farge": "hsl(65, 29%, 60%)"
+  },
+  "NN-NA-T7-E-5": {
+    "farge": "hsl(65, 29%, 60%)"
+  },
+  "NN-NA-T8": {
+    "farge": "hsl(55, 17%, 50%)"
+  },
+  "NN-NA-T9": {
+    "farge": "hsl(54, 26%, 65%)"
+  },
+  "NN-NA-V": {
+    "farge": "hsl(40, 52%, 82%)"
+  },
+  "NN-NA-V2": {
+    "farge": "hsl(89, 17%, 61%)"
+  },
+  "NN-NA-V3": {
+    "farge": "hsl(71, 12%, 65%)"
+  },
+  "NN-NA-V4": {
+    "farge": "hsl(80, 18%, 67%)"
+  },
+  "NN-NA-V4-C-3": {
+    "farge": "hsl(64, 28%, 61%)"
+  },
+  "NN-NA-V4-E-2": {
+    "farge": "hsl(64, 28%, 61%)"
+  },
+  "NN-NA-V5": {
+    "farge": "hsl(51, 6%, 69%)"
+  },
+  "NN-NA-V5-C-2": {
+    "farge": "hsl(38, 12%, 61%)"
+  },
+  "NN-NA-V5-E-2": {
+    "farge": "hsl(38, 12%, 61%)"
+  },
+  "NN-NA-V6": {
+    "farge": "hsl(60, 1%, 72%)"
+  },
+  "NN-NA-V7": {
+    "farge": "hsl(336, 2%, 68%)"
+  },
+  "NN-NA-V7-C-2": {
+    "farge": "hsl(193, 13%, 55%)"
+  },
+  "NN-NA-V7-E-2": {
+    "farge": "hsl(193, 13%, 55%)"
+  },
+  "NN-NA-V8": {
+    "farge": "hsl(87, 8%, 65%)"
+  },
+  "NN-NA-V9": {
+    "farge": "hsl(54, 12%, 72%)"
+  }
 }

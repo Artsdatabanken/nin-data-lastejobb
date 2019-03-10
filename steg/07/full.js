@@ -16,7 +16,7 @@ flettKildedata(
 flettKildedata(
   "Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/typer"
 )
-flettKildedata("Natur_i_Norge/Naturvernområde/typer")
+flettKildedata("Naturvernområde/typer")
 flett("vv_naturvernområde")
 flett("inn_ao_fylke")
 flett("inn_ao_kommune")
