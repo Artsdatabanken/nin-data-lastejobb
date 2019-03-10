@@ -55,7 +55,7 @@ function avrund4d(bounds) {
 function addKartformat(source) {
   const { type, suffix } = source
   Object.keys(tre).forEach(xkode => {
-    //    if (xkode === "VV-261") debugger
+    if (xkode === "AR-101825") debugger
     const node = tre[xkode]
     const path = `${node.url}/${type}.${suffix}`
     const mapfile = mapfiles[path]
