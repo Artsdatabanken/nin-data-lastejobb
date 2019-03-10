@@ -48,6 +48,7 @@ function transform(record) {
   const o = {
     id: r.PK_LatinskNavnID,
     parentId: r.FK_OverordnaLatinskNavnID,
+    taxonId: r.PK_TaksonID,
     tittel: { la: settSammenNavn(r) },
     status: r.Hovedstatus,
     gyldigId: r.FK_GyldigLatinskNavnID,

@@ -14,7 +14,6 @@ Object.keys(taxon2Data).forEach(kode => {
   let node = taxon2Data[kode]
   if (!node.finnesINorge) return
   while (node) {
-    if (kode === "AR-108610") debugger
     node.finnesINorge = true
     node = taxon2Data[node.parentId]
   }
@@ -43,7 +42,6 @@ function forelderkode(id) {
 
 let koder = {}
 taxons.forEach(c => {
-  if (c.id.indexOf("108610") >= 0) debugger
   if (c.status !== "Gyldig") return
   if (!c.finnesINorge) return
   const kode = typesystem.art.lagKode(c.id)
