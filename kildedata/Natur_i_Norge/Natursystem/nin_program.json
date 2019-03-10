@@ -1455,7 +1455,10 @@
         "beskrivelse": "E18 Erstatningsareal",
         "navn": "BAS_16_ASPLAN_VF_E18-HØNE_1"
       },
-      { "beskrivelse": "", "navn": "Geodata Test Og Overlapp" }
+      {
+        "beskrivelse": "",
+        "navn": "Geodata Test Og Overlapp"
+      }
     ]
   },
   {
@@ -1494,7 +1497,10 @@
         "beskrivelse": "Skogkartlegging, Lykling,  Nordfjella nord (SKOG_MFU_HO_LYKLING_1, Hordaland, Miljøfaglig Utredning)",
         "navn": "SKOG_MFU_HO_LYKLING_1"
       },
-      { "beskrivelse": "", "navn": "Geodata Test Og Vedlikehold 2" },
+      {
+        "beskrivelse": "",
+        "navn": "Geodata Test Og Vedlikehold 2"
+      },
       {
         "beskrivelse": "Skogkartlegging, Stygglandet (SKOG_BIOF_HE_STYGGLANDET_1, Hedmark, Biofokus)",
         "navn": "SKOG_BIOF_HE_STYGGLANDET_1"
