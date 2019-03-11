@@ -119,7 +119,6 @@ function normaliserGradientTrinn(bkode, barn, rgrad) {
   const x1 = Math.trunc((nrange * (min - tmin)) / span) + nmin
   const x2 = Math.trunc((nrange * (max - tmin)) / span) + nmin
   barn.normalisertVerdi = [x1, x2]
-  if (bkode === "NN-LA-KLG-KA-1") debugger
 }
 
 function zoomlevels(kode, bbox, zoom) {
