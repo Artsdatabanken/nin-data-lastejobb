@@ -1,5 +1,5 @@
 {
-  "OR-ADB": ["RL", "LA"],
+  "OR-ADB": ["RL", "NN-LA"],
   "OR-KV": ["NN-NA-BS-8", "NN-NA-I", "AO"],
   "OR-MDIR": ["NN-NA", "VV", "NN-NA-BS"],
   "OR-NIBIO": ["NN-NA-I"],
