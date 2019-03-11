@@ -55,11 +55,11 @@ function addKartformat() {
       if (node.url.indexOf("Myrtillus") >= 0) debugger
       if (".mbtiles.geojson".indexOf(path.extname(mapfile.filename)) < 0) return
       if (mapfile.filename.indexOf("3857") < 0) return
-      if (!target.kart) target.kart = { format: target.kartformat || {} }
-      const kartformat = target.kart.format
+      if (!target.kart) target.kart = { format: {} }
+      const format = target.kart.format
       const type = mapfile.filename.split(".").shift()
-      if (!kartformat[type]) kartformat[type] = {}
-      const cv = kartformat[type]
+      if (!format[type]) format[type] = {}
+      const cv = format[type]
       cv.url = config.webserver + node.url + "/" + mapfile.filename
       if (mapfile.maxzoom) {
         cv.zoom = [parseInt(mapfile.minzoom), parseInt(mapfile.maxzoom)]
@@ -81,9 +81,9 @@ function addKartformat() {
 function normaliserGradienter() {
   Object.keys(tre).forEach(kode => {
     const target = tre[kode]
-    const kartformat = target.kartformat
-    if (!kartformat) return
-    const rgrad = kartformat["raster_gradient"]
+    if (!target.kart) return
+    const format = target.kart.format
+    const rgrad = format["raster_gradient"]
     if (!rgrad) return
     const intervall = rgrad.intervall
     if (!intervall) return

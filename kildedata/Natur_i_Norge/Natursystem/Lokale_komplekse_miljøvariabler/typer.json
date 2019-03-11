@@ -191,13 +191,15 @@
   "NN-NA-LKM-S3-E": {
     "infoUrl": "https://www.artsdatabanken.no/Pages/179771",
     "ingress": "Sedimentets evne til å motstå vannerosjon; målt som kritisk skjærstyrke, samt sedimentets evne til å motstå andre ytre påvirkninger slik det kommer til uttrykk gjennom sedimentets kornstørrelsesfordeling».",
-    "kartformat": {
-      "raster_gradient": {
-        "intervall": {
-          "normalisertVerdi": [0, 255],
-          "original": [0, 10000]
-        },
-        "visning": ["klasser"]
+    "kart": {
+      "format": {
+        "raster_gradient": {
+          "intervall": {
+            "normalisertVerdi": [0, 255],
+            "original": [0, 10000]
+          },
+          "visning": ["klasser"]
+        }
       }
     },
     "måleenhet": "mm",
@@ -391,13 +393,15 @@
   "NN-NA-LKM-S3-F": {
     "infoUrl": "https://www.artsdatabanken.no/Pages/179772",
     "ingress": "Organisk og uorganisk materiale med kornstørrelse < 1/16 mm (silt og leire). Finmaterialinnhold angis som vektprosentandel i sedimentet.",
-    "kartformat": {
-      "raster_gradient": {
-        "intervall": {
-          "normalisertVerdi": [0, 255],
-          "original": [0, 1]
-        },
-        "visning": ["klasser"]
+    "kart": {
+      "format": {
+        "raster_gradient": {
+          "intervall": {
+            "normalisertVerdi": [0, 255],
+            "original": [0, 1]
+          },
+          "visning": ["klasser"]
+        }
       }
     },
     "måleenhet": "% vektandel",
