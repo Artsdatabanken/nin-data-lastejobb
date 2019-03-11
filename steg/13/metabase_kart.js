@@ -52,7 +52,6 @@ function addKartformat() {
     const maps = mapfiles[node.url]
     if (!maps) return
     maps.forEach(mapfile => {
-      if (node.url.indexOf("Myrtillus") >= 0) debugger
       if (".mbtiles.geojson".indexOf(path.extname(mapfile.filename)) < 0) return
       if (mapfile.filename.indexOf("3857") < 0) return
       if (!target.kart) target.kart = { format: {} }
@@ -115,9 +114,12 @@ function normaliserGradientTrinn(bkode, barn, rgrad) {
   intervall.min = min
   intervall.max = max
   const span = tmax - tmin
-  const nmin = Math.trunc((255 * (min - tmin)) / span) + tmin
-  const nmax = Math.trunc((255 * (max - tmin)) / span) //- 0.001
-  barn.normalisertVerdi = [nmin, nmax]
+  const [nmin, nmax] = rgrad.intervall.normalisertVerdi
+  const nrange = nmax - nmin
+  const x1 = Math.trunc((nrange * (min - tmin)) / span) + nmin
+  const x2 = Math.trunc((nrange * (max - tmin)) / span) + nmin
+  barn.normalisertVerdi = [x1, x2]
+  if (bkode === "NN-LA-KLG-KA-1") debugger
 }
 
 function zoomlevels(kode, bbox, zoom) {
