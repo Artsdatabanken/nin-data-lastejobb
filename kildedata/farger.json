@@ -145,7 +145,7 @@
   "NN-LA-KLG-VP-2": { "fargebidrag": "hsl(165, 41%, 35%)", "vekt": [1, 1, 0] },
 
   "NN-LA-KLG-KA-1": {
-    "farge": "hsl(77, 100%, 100%)",
+    "farge": "#5ab4ac",
     "fargebidrag": "hsl(77, 44%, 55%)",
     "vekt": [1, 1, 0.1]
   },
