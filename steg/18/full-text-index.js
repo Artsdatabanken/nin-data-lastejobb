@@ -21,11 +21,11 @@ function push(hit, score, text) {
   if (typeof text !== "string") {
     return log.warn("Ugyldig kriterie:", hit, JSON.stringify(text))
   }
-  if (!hit.kode) throw new Error("hm")
+  if (!hit.kode) throw new Error("Mangler kode")
   if (!index[hit.kode]) index[hit.kode] = { hit: hit, text: {} }
   const item = index[hit.kode]
   score = parseInt(100 * score)
-  if (!score) throw new Error("hm2")
+  if (!score) throw new Error("Mangler score")
   if (!item.text[score]) item.text[score] = []
   item.text[score].push(text)
 }
@@ -50,7 +50,9 @@ Object.keys(tre).forEach(kode => {
     url: node.url,
     title: node.tittel.nb || node.tittel.la
   }
-  const cf = Math.pow(0.99, node.overordnet.length + 1)
+  let dybde = node.overordnet.length + 1
+  if (kode.match(/LKM|KLG/)) dybde -= 1 // Boost gradientene som går igjen som byggeklosser på samme nivå i typene
+  const cf = Math.pow(0.99, dybde)
   push(hit, 1.0 * cf, node.kode)
   pushTittel(hit, 0.98 * cf, node.tittel)
   push(hit, 0.5 * cf, node.nivå)
