@@ -21,6 +21,7 @@ function lagKoder(kilde, nivå) {
   Object.keys(kilde).forEach(key => {
     const o = kilde[key]
     const e = {
+      type: "flagg",
       tittel: { nb: "Naturvernområde i " + o.tittel.nb + " " + nivå }
     }
     if (nivå === "fylke") e.foreldre = ["VV-AO"]
