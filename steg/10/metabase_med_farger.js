@@ -39,6 +39,7 @@ settFargePåFlagg()
 
 Object.keys(data).forEach(kode => {
   const node = data[kode]
+  if (kode === "AR") debugger
   if (!node.farge) node.farge = blandBarnasFarger(kode)
 })
 Object.keys(data).forEach(kode => {

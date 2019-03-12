@@ -25,7 +25,7 @@ function linkOne(kodeFra, kodeTil, funksjon, tag) {
   relasjon.push({
     kode: kodeTil,
     kant: variabel,
-    kantRetur: "habitat"
+    kantRetur: "Habitat"
   })
 }
 
