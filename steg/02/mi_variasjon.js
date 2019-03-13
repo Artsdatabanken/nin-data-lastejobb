@@ -8,7 +8,10 @@ let koder = io.lesKildedatafil(
 
 function kodefix(kode) {
   if (!kode) return null
-  kode = kode.toUpperCase().replace("_", "-")
+  kode = kode.toUpperCase()
+  kode = kode.replace("_", "-")
+  kode = kode.replace("–", "-")
+
   if (kode.indexOf("BESYS") === 0)
     return kode.replace("BESYS", "NN-NA-BS-").replace("BS0", "BS")
   if (kode === "LKM") return "NN-NA-LKM"
