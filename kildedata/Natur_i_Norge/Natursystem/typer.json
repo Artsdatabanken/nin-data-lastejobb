@@ -126,13 +126,15 @@
   "NN-NA-HT-DG": {
     "tittel": {
       "nb": "Definisjonsgrunnlag"
-    }
+    },
+    "farge": "#ea5"
   },
   "NN-NA-HT-KG": {
     "tittel": {
       "nb": "Kunnskapsgrunnlag om hovedtypen generelt"
     },
-    "type": "gradient"
+    "type": "gradient",
+    "farge": "#5ae"
   },
   "NN-NA-HT-KG-GI": {
     "tittel": {
