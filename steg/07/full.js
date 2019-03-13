@@ -28,6 +28,7 @@ flett("na_mi_liste")
 flett("mi_variasjon")
 flett("landskap")
 flett("landskapsgradient")
+flett("landskap_relasjon_natursystem")
 flett("ar_taxon")
 flett("na_prosedyrekategori")
 flett("na_definisjonsgrunnlag")
@@ -115,7 +116,10 @@ function sjekkAtTitlerEksisterer() {
           acc[e[0]] = e[1].trim()
           return acc
         }, {})
-        if (r[key].kode) log.warn("Har kode: ", key)
+        if (r[key].kode) {
+          debugger
+          log.warn("Har kode: ", key)
+        }
       }
     }
   }

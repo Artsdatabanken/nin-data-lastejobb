@@ -42,6 +42,10 @@ class CsvToJson {
 
 importer("Natur_i_Norge/Landskap/typer.csv", "landskap")
 importer("Natur_i_Norge/Landskap/gradienter.csv", "landskapsgradient")
+importer(
+  "Natur_i_Norge/Landskap/relasjon_natursystem.csv",
+  "landskap_relasjon_natursystem"
+)
 
 function importer(csvFil, utFil) {
   const kildefil = config.kildedataPath + "/" + csvFil

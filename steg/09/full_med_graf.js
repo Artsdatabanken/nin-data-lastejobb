@@ -82,7 +82,6 @@ function lagGrafkoblinger(kode, node) {
   node.relasjon.forEach(e => {
     if (!e.kode) throw new Error("Mangler kode " + e.kode)
     lagGrafkobling(kode, e.kode, e.kant, e, e.erSubset)
-
     if (e.kantRetur) {
       if (e.kantReturFraAlleBarna) {
         lagGrafkoblingerTilAlleBarna(e.kode, kode, e.kantRetur, e, e.erSubset)
