@@ -16,6 +16,8 @@ io.skrivDatafil(__filename, tre)
 
 function oppdaterNivå(node) {
   oppdaterNivå1(node)
+  const undernivå = typesystem.hentNivaa(node.url + "/x")
+  if (undernivå) node.undernivå = undernivå[0]
   node.overordnet.forEach(ov => {
     oppdaterNivå1(ov)
   })
