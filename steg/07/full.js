@@ -4,19 +4,6 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
 const r = {}
-flettKildedata("typer")
-flettKildedata("Art/typer")
-flettKildedata("Art/Fremmed_Art/typer")
-flettKildedata("Fylke/typer")
-flettKildedata("Natur_i_Norge/Landskap/typer")
-flettKildedata("Natur_i_Norge/Natursystem/typer")
-flettKildedata(
-  "Natur_i_Norge/Natursystem/Lokale_komplekse_miljøvariabler/typer"
-)
-flettKildedata(
-  "Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/typer"
-)
-flettKildedata("Naturvernområde/typer")
 flett("vv_naturvernområde")
 flett("inn_ao_fylke")
 flett("inn_ao_kommune")
@@ -34,10 +21,48 @@ flett("na_prosedyrekategori")
 flett("na_definisjonsgrunnlag")
 flett("inn_statistikk")
 flettKildedata("rl_rødliste")
+flettKildedata("Art/typer")
+flettKildedata("Art/Fremmed_Art/typer")
+flettKildedata("Fylke/typer")
+flettKildedata("Natur_i_Norge/Landskap/typer")
+flettKildedata("Natur_i_Norge/Natursystem/typer")
+flettKildedata(
+  "Natur_i_Norge/Natursystem/Lokale_komplekse_miljøvariabler/typer"
+)
+flettKildedata(
+  "Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/typer"
+)
+flettKildedata("Naturvernområde/typer")
+flettKildedata("typer")
 sjekkAtTitlerEksisterer()
 capsTitler()
 kobleForeldre()
+overrideDefects()
 propagerNedFlaggAttributt()
+
+// På sedimentsortering er det innført et ekstra tullenivå som bryter med systemet
+// For å unngå en heap av trøbbel justerer vi kodene inn rett under LKM og dropper
+// mellomnivået
+function overrideDefects() {
+  const koder = ["NN-NA-LKM-S3-E", "NN-NA-LKM-S3-F", "NN-NA-LKM-S3-S"]
+  Object.keys(r).forEach(kode => {
+    const node = r[kode]
+    koder.forEach(m => {
+      if (node.relasjon) {
+        const node = r[kode]
+        node.relasjon.forEach(rel => {
+          rel.kode = rel.kode.replace("NN-NA-LKM-S3-", "NN-NA-LKM-S3")
+        })
+      }
+      if (!kode.startsWith(m)) return
+      const destKode = kode.replace("S3-", "S3")
+      node.foreldre[0] = kode === m ? "NN-NA-LKM" : m.replace("S3-", "S3")
+      r[destKode] = node
+      delete r[kode]
+    })
+  })
+  delete r["NN-NA-LKM-S3"]
+}
 
 function flettAttributter(o, props = {}) {
   for (let key of Object.keys(o)) {
