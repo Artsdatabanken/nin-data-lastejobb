@@ -30,8 +30,8 @@ hovedtyper.forEach(e => {
         klger[kode.substring(0, kode.length - 2)] = kode
         ny.relasjon.push({
           kode: hack(verdi),
-          kant: klg[gradientkode].tittel.nb,
-          kantRetur: "definerer",
+          kant: "Landskapsgradient",
+          kantRetur: "Landskapstype",
           erSubset: true
         })
       }

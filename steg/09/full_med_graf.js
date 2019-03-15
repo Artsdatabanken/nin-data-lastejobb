@@ -103,6 +103,7 @@ function lagGrafGradientkoblinger(kode, node) {
 function lagGrafGradientkobling(kode, node, type, kantnode) {
   const gradienter = {}
   Object.keys(kantnode).forEach(grkode0 => {
+    if (!erISammeDomene(kode, grkode0)) return
     const forelderkode = full[grkode0].foreldre[0]
     const forelder = full[forelderkode]
     if (forelder.type === "gradient") gradienter[forelderkode] = grkode0
@@ -111,6 +112,14 @@ function lagGrafGradientkobling(kode, node, type, kantnode) {
     const forelderkode = full[grkode].foreldre[0]
     lagGrafGradientkobling2(kode, node, full[forelderkode], kantnode, grkode)
   })
+}
+
+function erISammeDomene(kode1, kode2) {
+  return prefix(kode1) === prefix(kode2)
+}
+
+function prefix(kode) {
+  return kode.replace("NN-", "").split("-")[0]
 }
 
 function lagGrafGradientkobling2(kode, node, xxxx, kantnode) {
