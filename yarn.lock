@@ -3,9 +3,9 @@
 
 
 "@artsdatabanken/typesystem@^10.0.0":
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/@artsdatabanken/typesystem/-/typesystem-10.0.3.tgz#a946f932445749d1b35f73d859ce03aa68df5cdc"
-  integrity sha512-1lFiBQ7nTW7gpL8PaRwhUhJeBehNyGEHSsLhmiKIPMn071wUL4LEb5Uv27GO8BTK78LTCrb7RUtUG7FCmyZ3yQ==
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/@artsdatabanken/typesystem/-/typesystem-10.0.4.tgz#9043c8a0011bd85b2eb7e1a72893371d114cd1d3"
+  integrity sha512-9Y9Q5oYY/QGPXBUWiZILMXu5p7h1+CkulT1UcsUeNJBOpuHXg2vK0IEsqywwUvjuD8xp++8d44aQtAA6lrQeaw==
 
 "@babel/code-frame@^7.0.0":
   version "7.0.0"

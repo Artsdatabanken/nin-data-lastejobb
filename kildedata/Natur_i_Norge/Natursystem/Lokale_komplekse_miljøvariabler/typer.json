@@ -1,10 +1,13 @@
 {
+  "NN-NA-HT-PK": {
+    "type": "flagg"
+  },
   "NN-NA-LKM": {
     "infoUrl": "https://artsdatabanken.no/Pages/179717",
     "ingress": "Lokale komplekse miljøvariabler (LKM) er definert som «variabler som hver består av flere enkeltmiljøvariabler som samvarierer i mer eller mindre sterk grad, og som gir opphav til variasjon i artssammensetning på relativt fin romlig skala og som har en virkning som vedvarer over relativt lang tid [typisk mer enn 100(–200) år]»",
     "sortering": 3,
     "tittel": {
-      "nb": "Lokale komplekse miljøvariabler"
+      "nb": "Miljøvariabler"
     }
   },
   "NN-NA-LKM-AS": {
@@ -168,9 +171,6 @@
   "NN-NA-LKM-PF": {
     "type": "flagg"
   },
-  "NN-NA-LKM-PRK": {
-    "type": "flagg"
-  },
   "NN-NA-LKM-RU": {
     "farge": "#f39",
     "farge0": "#fff",
@@ -187,6 +187,9 @@
     "tittel": {
       "nb": "Sedimentsortering"
     }
+  },
+  "NN-NA-LKM-S3-S": {
+    "type": "flagg"
   },
   "NN-NA-LKM-S3-E": {
     "infoUrl": "https://www.artsdatabanken.no/Pages/179771",
@@ -489,9 +492,6 @@
     "tittel": {
       "nb": "finmaterialdominert"
     }
-  },
-  "NN-NA-LKM-S3-S": {
-    "type": "flagg"
   },
   "NN-NA-LKM-SA": {
     "farge": "#eee",
