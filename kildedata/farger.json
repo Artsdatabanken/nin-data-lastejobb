@@ -212,12 +212,12 @@
   },
 
   "NN-LA-KLG-JP-1": {
-    "farge": "hsl(120, 35%, 65%)",
+    "farge": "hsl(120, 0%, 100%)",
     "fargebidrag": "hsl(0, 0%, 100%)",
     "vekt": 0
   },
   "NN-LA-KLG-JP-2": {
-    "farge": "hsl(20, 75%, 65%)",
+    "farge": "hsl(20, 65%, 60%)",
     "fargebidrag": "hsl(20, 75%, 65%)",
     "vekt": [2, 1, 0.1]
   }
