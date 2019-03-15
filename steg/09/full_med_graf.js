@@ -108,23 +108,20 @@ function lagGrafGradientkobling(kode, node, type, kantnode) {
     if (forelder.type === "gradient") gradienter[forelderkode] = grkode0
   })
   Object.keys(gradienter).forEach(grkode => {
-    lagGrafGradientkobling2(
-      kode,
-      node,
-      full[grkode].tittel.nb,
-      kantnode,
-      grkode
-    )
+    const forelderkode = full[grkode].foreldre[0]
+    lagGrafGradientkobling2(kode, node, full[forelderkode], kantnode, grkode)
   })
 }
 
-function lagGrafGradientkobling2(kode, node, type, kantnode) {
+function lagGrafGradientkobling2(kode, node, xxxx, kantnode) {
   const grkode0 = Object.keys(kantnode)[0]
-  const gradForelder = full[grkode0].foreldre[0]
-  const src = full[gradForelder]
-  if (!skalMed(gradForelder)) return false
+  const kodeGradForelder = full[grkode0].foreldre[0]
+  const kodeGradFarfar = full[kodeGradForelder].foreldre[0]
+  const gradForelder = full[kodeGradForelder]
+  const gradFarfar = full[kodeGradFarfar]
+  if (!skalMed(kodeGradForelder)) return false
   let g = []
-  const barna = typesystem.sorterKoder(barnAv[gradForelder])
+  const barna = typesystem.sorterKoder(barnAv[kodeGradForelder])
   barna.forEach(bkode => {
     const b = full[bkode]
     g.push({
@@ -136,11 +133,15 @@ function lagGrafGradientkobling2(kode, node, type, kantnode) {
     if (kantnode[bkode]) delete kantnode[bkode]
   })
   if (node.gradient === undefined) node.gradient = {}
-  if (node.gradient[type] === undefined) node.gradient[type] = []
-  node.gradient[type] = {
-    kode: gradForelder,
+  if (node.gradient[kodeGradFarfar] === undefined)
+    node.gradient[kodeGradFarfar] = {
+      tittel: gradFarfar.tittel,
+      barn: {}
+    }
+  node.gradient[kodeGradFarfar].barn[kodeGradForelder] = {
+    kode: kodeGradForelder,
     url: node.url,
-    tittel: src.tittel,
+    tittel: gradForelder.tittel,
     trinn: g
   }
   return true
@@ -197,17 +198,22 @@ function propagerGradientTilNode(tilNode, fraNode, vekt) {
 
   const dst = tilNode.gradient
   Object.keys(src).forEach(type => {
-    const srcg = src[type]
-    if (!dst[type]) dst[type] = JSON.parse(JSON.stringify(srcg))
+    const srcl = src[type]
+    if (!dst[type]) dst[type] = JSON.parse(JSON.stringify(srcl))
     else {
-      const srct = srcg.trinn
-      const dstt = dst[type].trinn
-      for (let i = 0; i < dstt.length; i++) {
-        if (srct[i].på) {
-          dstt[i].på = true
-          dstt[i].vekt = Math.max(dstt[i].vekt || 0, vekt)
+      Object.entries(srcl.barn).forEach(([kode, srcg]) => {
+        const srct = srcg.trinn
+        if (!dst[type].barn[kode])
+          return (dst[type].barn[kode] = JSON.parse(JSON.stringify(srcg)))
+
+        const dstt = dst[type].barn[kode].trinn
+        for (let i = 0; i < dstt.length; i++) {
+          if (srct[i].på) {
+            dstt[i].på = true
+            dstt[i].vekt = Math.max(dstt[i].vekt || 0, vekt)
+          }
         }
-      }
+      })
     }
   })
 }

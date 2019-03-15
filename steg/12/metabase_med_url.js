@@ -59,9 +59,12 @@ function urlPåGraf(node) {
 
 function urlPåGradient(node) {
   if (!node.gradient) return
-  Object.keys(node.gradient).forEach(type => {
-    const grad = node.gradient[type]
-    grad.url = url(grad.kode)
+  Object.keys(node.gradient).forEach(pkode => {
+    const grad = node.gradient[pkode]
+    grad.url = url(pkode)
+    Object.keys(grad.barn).forEach(kode => {
+      grad.barn[kode].url = url(kode)
+    })
   })
 }
 
@@ -90,6 +93,7 @@ function urlify(tittel, kode, makevalid) {
 }
 
 function url(kode) {
+  if (!tre[kode]) debugger
   if (tre[kode].url) return tre[kode].url
   const node = tre[kode]
   if (!node.overordnet) {
