@@ -39,7 +39,6 @@ settFargePåFlagg()
 
 Object.keys(data).forEach(kode => {
   const node = data[kode]
-  if (kode === "AR") debugger
   if (!node.farge) node.farge = blandBarnasFarger(kode)
 })
 Object.keys(data).forEach(kode => {
@@ -69,8 +68,11 @@ function blandBarnasFarger(kode) {
     })
   if (farger.length === 0 && node.gradient) {
     Object.keys(node.gradient).forEach(relasjon => {
-      node.gradient[relasjon].trinn.forEach(bk => {
-        if (bk.farge) farger.push({ farge: bk.farge })
+      const gruppe = node.gradient[relasjon]
+      Object.keys(gruppe.barn).forEach(grkode => {
+        gruppe.barn[grkode].trinn.forEach(bk => {
+          if (bk.farge) farger.push({ farge: bk.farge })
+        })
       })
     })
   }
@@ -127,10 +129,13 @@ function settFargePåGradienter() {
     const node = data[kode]
     if (!node.gradient) return
     Object.keys(node.gradient).forEach(type => {
-      const grad = node.gradient[type]
-      grad.trinn.forEach(
-        trinn => (trinn.farge = trinn.farge || data[trinn.kode].farge)
-      )
+      const gruppe = node.gradient[type]
+      Object.keys(gruppe.barn).forEach(type => {
+        const grad = gruppe.barn[type]
+        grad.trinn.forEach(
+          trinn => (trinn.farge = trinn.farge || data[trinn.kode].farge)
+        )
+      })
     })
   })
 }

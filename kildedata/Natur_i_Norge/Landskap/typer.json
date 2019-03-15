@@ -6,7 +6,7 @@
     "relasjon": [
       {
         "kode": "NN-LA-KLG",
-        "kant": "defineres av",
+        "kant": "Landskapsgradient",
         "kantRetur": "definerer"
       }
     ]
@@ -41,17 +41,17 @@
       },
       {
         "kode": "NN-LA-KLG-AI",
-        "kant": "defineres av",
+        "kant": "Landskapsgradient",
         "kantRetur": "viser"
       },
       {
         "kode": "NN-LA-KLG-AIKS",
-        "kant": "defineres av",
+        "kant": "Landskapsgradient",
         "kantRetur": "viser"
       },
       {
         "kode": "NN-LA-KLG-JP",
-        "kant": "defineres av",
+        "kant": "Landskapsgradient",
         "kantRetur": "viser"
       }
     ]
