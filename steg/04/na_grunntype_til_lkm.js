@@ -8,7 +8,6 @@ const typesystem = require("@artsdatabanken/typesystem")
 let rows = io.lesDatafil("na_grunntype_til_lkm.csv.json")
 let nin_liste = io.lesDatafil("na_kode")
 let mi_liste = io.lesDatafil("na_mi_liste")
-log.warn(mi_liste[""])
 const replace = {
   "S3-E": "S3E",
   "S3-F": "S3F",
@@ -54,11 +53,12 @@ rows.forEach(row => {
     if (!e) return
     if (e.startsWith("HS*")) return // Se bort fra hovedtypetilpasset
     const list = decode(e)
-    //    const mi = "NN-NA-LKM-" + e.toUpperCase()
     list.forEach(mi => {
-      if (!(mi in mi_liste)) return (ukjent_mi[mi] = (ukjent_mi[mi] || 0) + 1)
+      const hackKode = mi.replace("S3", "S3-")
+      if (!(hackKode in mi_liste))
+        return (ukjent_mi[mi] = (ukjent_mi[mi] || 0) + 1)
       if (!r[na]) r[na] = []
-      r[na].push(mi)
+      r[na].push(hackKode)
     })
   }
 })
