@@ -110,8 +110,8 @@ function map(vo) {
   }
   e.betegnelse = { nb: e.data.verneform.toLowerCase() }
 
-  relasjon(e, "verneform", kodeFraNavn(e.data.verneform))
-  relasjon(e, "verneplan", kodeFraNavn(e.data.verneplan))
+  relasjon(e, "Verneform", kodeFraNavn(e.data.verneform))
+  relasjon(e, "Verneplan", kodeFraNavn(e.data.verneplan))
   relasjon(
     e,
     "forvaltes av",
@@ -120,11 +120,11 @@ function map(vo) {
   )
   if (props.TRUETVURD) {
     e.data.truetvurdering = props.TRUETVURD
-    relasjon(e, "truet vurdering", kodeForTruet(e.data.truetvurdering))
+    relasjon(e, "Truet vurdering", kodeForTruet(e.data.truetvurdering))
   }
 
   if (e.data.iucn) relasjon(e, "IUCN", "VV-PA-" + e.data.iucn)
-  relasjon(e, "ble vernet i år", "VV-VT-" + e.data.vernedato.substring(0, 4))
+  relasjon(e, "Ble vernet i år", "VV-VT-" + e.data.vernedato.substring(0, 4))
   if (new Date(props.DATO_REVID).getFullYear() > 1900)
     e.data.revisjonsdato = props.DATO_REVID
 
@@ -133,8 +133,8 @@ function map(vo) {
     props.kommune.forEach(kommune => {
       const fnr = kommune.substring(0, 2)
       const knr = kommune.substring(2)
-      relasjon(e, "ligger i kommune", "VV-AO-" + fnr + "-" + knr)
-      relasjon(e, "ligger i fylke", "VV-AO-" + fnr)
+      relasjon(e, "Ligger i kommune", "VV-AO-" + fnr + "-" + knr)
+      relasjon(e, "Ligger i fylke", "VV-AO-" + fnr)
     })
   }
   kobleForvaltningsmyndighet(kode, e)
