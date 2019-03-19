@@ -7,7 +7,21 @@ let tre = io.lesDatafil("metabase_bilder")
 let hierarki = io.lesDatafil("kodehierarki")
 const barnAv = hierarki.barn
 Object.keys(tre).forEach(kode => mapBarn(kode))
+Object.keys(tre).forEach(kode => flyttDatakildeTilToppnivå(kode))
+
 io.skrivBuildfil("metabase", tre)
+
+function flyttDatakildeTilToppnivå(kode) {
+  const node = tre[kode]
+  if (!node.graf) return
+  for (let i = 0; i < node.graf.length; i++) {
+    const gn = node.graf[i]
+    if (gn.type !== "Datakilde") continue
+    node.datakilde = gn.noder
+    node.graf.splice(i, 1)
+    break
+  }
+}
 
 function mapBarn(key) {
   let node = tre[key]
