@@ -14,6 +14,21 @@ let na_overstyr_hierarki = io.lesDatafil("na_overstyr_hierarki")
 
 let r = {}
 
+// TODO:
+const map = {
+  mengdeart: true,
+  kjennetegnende_tyngdepunktart: true,
+  tyngdepunktart: true,
+  vanlig_art: true,
+  dominerende_mengdeart: true,
+  absolutt_skilleart: true,
+  "svak_relativ skilleart": true,
+  "sterk_relativ skilleart": true,
+  konstant_art: true,
+  skilleart: true,
+  "gradient-tyngdepunktart": true
+}
+
 function linkOne(kodeFra, kodeTil, funksjon, tag) {
   const variabel = tag
 
