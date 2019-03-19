@@ -45,6 +45,7 @@ function settFargePåRelasjoner() {
         }
         const sub = node.graf[typeRelasjon][kode]
         sub.farge = tre[kode].farge
+        delete sub.erSubset
       })
     })
   })
