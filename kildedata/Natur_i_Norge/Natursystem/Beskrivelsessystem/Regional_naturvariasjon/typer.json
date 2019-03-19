@@ -1,6 +1,6 @@
 {
   "NN-NA-BS-6SO-1": {
-    "tittel": "Lavalpin",
+    "tittel": { "nb": "Lavalpin" },
     "farge": "rgb(253,194,111)",
     "sortering": 1,
     "intervall": {
@@ -12,7 +12,7 @@
     }
   },
   "NN-NA-BS-6SO-2": {
-    "tittel": "Nordboreal",
+    "tittel": { "nb": "Nordboreal" },
     "farge": "rgb(253,250,64)",
     "sortering": 2,
     "intervall": {
@@ -24,7 +24,7 @@
     }
   },
   "NN-NA-BS-6SO-3": {
-    "tittel": "Mellomboreal",
+    "tittel": { "nb": "Mellomboreal" },
     "farge": "rgb(165,254,164)",
     "sortering": 3,
     "intervall": {
@@ -36,7 +36,7 @@
     }
   },
   "NN-NA-BS-6SO-4": {
-    "tittel": "Sørboreal",
+    "tittel": { "nb": "Sørboreal" },
     "farge": "rgb(167,253,88)",
     "sortering": 4,
     "intervall": {
@@ -48,7 +48,7 @@
     }
   },
   "NN-NA-BS-6SO-5": {
-    "tittel": "Boreonemoral",
+    "tittel": { "nb": "Boreonemoral" },
     "farge": "rgb(51,153,253)",
     "sortering": 5,
     "intervall": {
@@ -60,7 +60,7 @@
     }
   },
   "NN-NA-BS-6SE-1": {
-    "tittel": "Sterkt oseanisk seksjon (O3)",
+    "tittel": { "nb": "Sterkt oseanisk seksjon (O3)" },
     "farge": "rgb(50,67,253)",
     "sortering": 1,
     "intervall": {
@@ -72,7 +72,7 @@
     }
   },
   "NN-NA-BS-6SE-2": {
-    "tittel": "Klart oseanisk seksjon (O2)",
+    "tittel": { "nb": "Klart oseanisk seksjon (O2)" },
     "farge": "rgb(104,117,252)",
     "sortering": 2,
     "intervall": {
@@ -84,7 +84,7 @@
     }
   },
   "NN-NA-BS-6SE-3": {
-    "tittel": "Svakt oseanisk seksjon (O1)",
+    "tittel": { "nb": "Svakt oseanisk seksjon (O1)" },
     "farge": "rgb(129,253,244)",
     "sortering": 3,
     "intervall": {
@@ -96,7 +96,7 @@
     }
   },
   "NN-NA-BS-6SE-4": {
-    "tittel": "Overgangsseksjon (OC)",
+    "tittel": { "nb": "Overgangsseksjon (OC)" },
     "farge": "rgb(178,253,247)",
     "sortering": 4,
     "intervall": {
@@ -108,7 +108,7 @@
     }
   },
   "NN-NA-BS-6SE-5": {
-    "tittel": "Svakt kontinental seksjon (C1)",
+    "tittel": { "nb": "Svakt kontinental seksjon (C1)" },
     "farge": "rgb(230,253,253)",
     "sortering": 5,
     "intervall": {

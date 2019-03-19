@@ -50,6 +50,7 @@ function addKartformat() {
     const node = tre[xkode]
     const target = tre[xkode]
     const maps = mapfiles[node.url]
+    if (xkode === "NN-NA-BS-6SE") debugger
     if (!maps) return
     maps.forEach(mapfile => {
       if (".mbtiles.geojson".indexOf(path.extname(mapfile.filename)) < 0) return
