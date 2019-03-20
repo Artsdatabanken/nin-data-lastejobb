@@ -17,6 +17,7 @@ function fjernKoderSomIkkeHarData(data) {
   Object.keys(data).forEach(kode => {
     const node = data[kode]
     node.kode = kode
+    if (kode === "NN-NA-BS-6SO-2") debugger
     if (!harKartdata(kode)) {
       delete data[kode]
       const forelderKode = node.overordnet[0].kode
