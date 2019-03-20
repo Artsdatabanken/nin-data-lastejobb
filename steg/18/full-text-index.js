@@ -45,13 +45,15 @@ function pushTittel(hit, score, tittel) {
 
 Object.keys(tre).forEach(kode => {
   const node = tre[kode]
+  if (kode === "NN-LA") debugger
   const hit = {
     kode: node.kode,
     url: node.url,
     title: node.tittel.nb || node.tittel.la
   }
   let dybde = node.overordnet.length + 1
-  if (kode.match(/LKM|KLG/)) dybde -= 1 // Boost gradientene som går igjen som byggeklosser på samme nivå i typene
+  if (kode.match(/LKM|KLG/)) dybde -= 0.5 // Boost gradientene som går igjen som byggeklosser på samme nivå i typene
+  if (kode.startsWith("VV")) dybde += 2 // Nedprioriter verneområder
   const cf = Math.pow(0.99, dybde)
   push(hit, 1.0 * cf, node.kode)
   pushTittel(hit, 0.98 * cf, node.tittel)
