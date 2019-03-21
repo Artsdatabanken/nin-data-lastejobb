@@ -23,9 +23,17 @@ function skrivFil(prefix) {
     data: []
   }
 
+  // Ta med alle overordnede koder til rot
+  const node = data[prefix]
+  node.overordnet.forEach(ookode => {
+    const node = data[ookode.kode]
+    dok.data.push(node)
+  })
+
   Object.keys(data).forEach(kode => {
     const node = data[kode]
     if (kode.indexOf(prefix) === 0) dok.data.push(node)
   })
+
   io.skrivBuildfil(prefix + "/" + prefix, dok)
 }
