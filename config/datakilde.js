@@ -14,7 +14,7 @@ const datakilde = {
   kommuner:
     "https://nedlasting.geonorge.no/geonorge/Basisdata/Kommuner/GeoJSON/Basisdata_0000_Norge_25833_Kommuner_GEOJSON.zip",
   statistikk: "https://maps.artsdatabanken.no/statistikk.json",
-  mbtiles: "http://maps.artsdatabanken.no/index.json"
+  filindeks: "http://maps.artsdatabanken.no/index.json"
 }
 
 module.exports = datakilde

@@ -5,31 +5,16 @@ const typesystem = require("@artsdatabanken/typesystem")
 const path = require("path")
 let tre = io.lesDatafil("metabase_med_url")
 let hierarki = io.lesDatafil("kodehierarki")
+let filindeks = io.lesDatafil("filindeks")
 const barnAv = hierarki.barn
 
 let ukjentBbox = 0
-// Forventer følgende katalogstruktur på tile serveren:
-// /type/subtype/.../format.projeksjon.filtype
-// Dvs. at rotkatalog betraktes som klasse av data, eks. gradient eller trinn
-const mapfiles = readMbtiles()
 
 addKartformat()
 normaliserGradienter()
 if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
 zoomlevels(typesystem.rotkode)
 io.skrivDatafil(__filename, tre)
-
-function readMbtiles() {
-  let mbtiles = io.lesDatafil("inn_mbtiles")
-  const r = {}
-  Object.keys(mbtiles).forEach(mapfile => {
-    const p = path.parse(mapfile)
-    const url = p.dir
-    if (!r[url]) r[url] = []
-    r[url].push(mbtiles[mapfile])
-  })
-  return r
-}
 
 function avrund1d(num) {
   return Math.round(parseFloat(num) * 1000) / 1000
@@ -49,7 +34,7 @@ function addKartformat() {
   Object.keys(tre).forEach(xkode => {
     const node = tre[xkode]
     const target = tre[xkode]
-    const maps = mapfiles[node.url]
+    const maps = filindeks[node.url]
     if (xkode === "NN-NA-BS-6SE") debugger
     if (!maps) return
     maps.forEach(mapfile => {
