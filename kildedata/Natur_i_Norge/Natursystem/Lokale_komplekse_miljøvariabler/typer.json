@@ -241,7 +241,7 @@
         "måleenhet": "mm"
       }
     ],
-    "normalisertVerdi": 0,
+    "normalisertVerdi": [0, 35],
     "sortering": 1,
     "tittel": {
       "nb": "ingen erosjonsmotstand"
@@ -260,7 +260,7 @@
         "tittel": "fin og middels sand; løst mudder"
       }
     ],
-    "normalisertVerdi": 36,
+    "normalisertVerdi": [36, 72],
     "sortering": 2,
     "tittel": {
       "nb": "svært liten erosjonsmotstand"
@@ -287,7 +287,7 @@
         "tittel": "grov sand"
       }
     ],
-    "normalisertVerdi": 73,
+    "normalisertVerdi": [73, 109],
     "sortering": 3,
     "tittel": {
       "nb": "temmelig liten erosjonsmotstand"
@@ -314,7 +314,7 @@
         "tittel": "fin og middels grus"
       }
     ],
-    "normalisertVerdi": 109,
+    "normalisertVerdi": [109, 145],
     "sortering": 4,
     "tittel": {
       "nb": "intermediær erosjonsmotstand"
@@ -341,7 +341,7 @@
         "tittel": "grov grus"
       }
     ],
-    "normalisertVerdi": 145,
+    "normalisertVerdi": [145, 181],
     "sortering": 5,
     "tittel": {
       "nb": "temmelig stor erosjonsmotstand"
@@ -368,7 +368,7 @@
         "tittel": "grov grus"
       }
     ],
-    "normalisertVerdi": 181,
+    "normalisertVerdi": [181, 217],
     "sortering": 6,
     "tittel": {
       "nb": "stor erosjonsmotstand"
@@ -387,7 +387,7 @@
         "tittel": "blokker"
       }
     ],
-    "normalisertVerdi": 218,
+    "normalisertVerdi": [218, 255],
     "sortering": 7,
     "tittel": {
       "nb": "svært stor erosjonsmotstand"
