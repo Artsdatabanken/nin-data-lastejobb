@@ -12,7 +12,7 @@ Object.keys(full).forEach(kode => {
   const fil = filindeks[node.url]
   node.foto = node.foto || {}
   if (!fil) return
-  if (fil["forside_408.png"]) return
+  if (!fil["forside_408.png"]) return
   node.foto.forside = {
     url: baseUrl + node.url + "/forside_408.jpg",
     lisens: "",
