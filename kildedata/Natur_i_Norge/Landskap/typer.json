@@ -76,7 +76,7 @@
     "kart": {
       "format": {
         "raster_gradient": {
-          "visning": ["kontinuerlig"],
+          "visning": ["diskret", "kontinuerlig"],
           "intervall": {
             "original": [0, 13.228172302246],
             "normalisertVerdi": [0, 255]
@@ -90,7 +90,7 @@
     "kart": {
       "format": {
         "raster_gradient": {
-          "visning": ["kontinuerlig"],
+          "visning": ["diskret", "kontinuerlig"],
           "intervall": {
             "original": [0, 13.228172302246],
             "normalisertVerdi": [0, 255]
@@ -104,7 +104,7 @@
     "kart": {
       "format": {
         "raster_gradient": {
-          "visning": ["kontinuerlig"],
+          "visning": ["diskret", "kontinuerlig"],
           "intervall": {
             "original": [0, 210.64946875],
             "normalisertVerdi": [1, 255]
@@ -125,7 +125,7 @@
     "kart": {
       "format": {
         "raster_gradient": {
-          "visning": ["kontinuerlig"],
+          "visning": ["diskret", "kontinuerlig"],
           "intervall": {
             "original": [0, 1],
             "normalisertVerdi": [0, 255]
@@ -145,7 +145,7 @@
     "kart": {
       "format": {
         "raster_gradient": {
-          "visning": ["kontinuerlig"],
+          "visning": ["diskret", "kontinuerlig"],
           "intervall": {
             "original": [0, 2],
             "normalisertVerdi": [0, 255]
