@@ -32,8 +32,17 @@ function skrivFil(prefix) {
 
   Object.keys(data).forEach(kode => {
     const node = data[kode]
+    if (!kode.startsWith("VV")) fyllPåMedSøsken(node)
     if (kode.indexOf(prefix) === 0) dok.data.push(node)
   })
 
   io.skrivBuildfil(prefix + "/" + prefix, dok)
+}
+
+function fyllPåMedSøsken(node) {
+  if (node.overordnet.length <= 0) return
+  const forelderkode = node.overordnet[0].kode
+  const forelder = data[forelderkode]
+  const søsken = forelder.barn
+  node.søsken = søsken
 }
