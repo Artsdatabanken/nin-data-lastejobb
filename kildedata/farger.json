@@ -30,18 +30,7 @@
     "infoUrl": ""
   },
   "NN-LA-KLG-AI": {
-    "farge": "#f80",
-    "kart": {
-      "format": {
-        "raster_gradient": {
-          "visning": ["kontinuerlig"],
-          "intervall": {
-            "original": [0, 13.228172302246],
-            "normalisertVerdi": [0, 255]
-          }
-        }
-      }
-    }
+    "farge": "#f80"
   },
   "NN-LA-KLG-AIKS": {
     "sortering": 4,
