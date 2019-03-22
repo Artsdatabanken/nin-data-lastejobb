@@ -55,8 +55,8 @@
     "farge": "hsl(20, 75%, 65%)"
   },
   "NN-LA-KLG-VP": {
-    "farge0": "",
-    "farge": "#8f4"
+    "farge0": "#fff",
+    "farge": "#f48"
   },
   "NN-LA-KLG-REIA": { "farge0": "#8f8", "farge": "#f88" },
   "NN-LA-KLG-REIA-1": {
