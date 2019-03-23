@@ -11,7 +11,9 @@ function hack(kode) {
   kode = kode.replace("RE-", "RE")
   kode = kode.replace("ID-KF", "IDKF")
   kode = kode.replace("AI-KS", "AIKS")
-  return "NN-LA-" + kode.split("_").join("-")
+  kode = kode.split("_").join("-")
+  if (kode.startsWith("KLG")) return "NN-LA-" + kode
+  return "NN-LA-TI-" + kode.replace("LA-", "")
 }
 
 hovedtyper.forEach(e => {
@@ -53,7 +55,7 @@ hovedtyper.forEach(e => {
   if (e.s_kode.length > 4) kode += "-" + e.s_kode.substring(4)
   if (kode.startsWith("LA-K-F"))
     ny.ingress = ny.ingress.replace(/dallandskap/g, "fjordlandskap")
-  r["NN-" + kode] = ny
+  r[hack(kode)] = ny
 })
 
 function kjedGradientbeskrivelser(rekkefølge, klger) {

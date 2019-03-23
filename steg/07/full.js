@@ -68,6 +68,7 @@ function flettAttributter(o, props = {}) {
   for (let key of Object.keys(o)) {
     let kode = key.replace("_", "-")
     kode = kode.toUpperCase()
+    if (kode.startsWith("NN-NA-V")) debugger
     const node = Object.assign({}, r[kode], o[key], props)
     r[kode] = node
   }
@@ -107,6 +108,9 @@ function propagerNedFlaggAttributt() {
   for (let kode of Object.keys(r)) {
     const node = r[kode]
     for (const fkode of node.foreldre) {
+      const foreldernode = r[fkode]
+      if (!foreldernode)
+        throw new Error(`Forelderen ${fkode} til ${kode} mangler.`)
       if (r[fkode].type === "flagg") node.type = "flagg"
       if (r[fkode].type === "gradient") node.type = "gradientverdi"
     }

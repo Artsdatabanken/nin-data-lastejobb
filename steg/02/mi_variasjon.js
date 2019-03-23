@@ -36,6 +36,6 @@ function importerKoder() {
 }
 
 const imp = importerKoder()
-imp["NN-NA-LKM"].tittel.nb = "Lokale komplekse miljøvariabler"
+imp["NN-NA-LKM"].tittel.nb = "Miljøvariabler"
 
 io.skrivDatafil(__filename, imp)

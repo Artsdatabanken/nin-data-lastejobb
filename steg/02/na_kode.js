@@ -6,7 +6,9 @@ let ingress = io.lesKildedatafil("Natur_i_Norge/Natursystem/beskrivelse")
 
 function kodefix(kode) {
   if (!kode) return kode
-  return kode.toUpperCase().replace(" ", "-")
+  const frags = kode.toUpperCase().split(" ")
+  if (frags.length < 2) return "NN-NA-TI"
+  return "NN-NA-TI-" + frags.pop()
 }
 
 function importerKoder() {
@@ -15,7 +17,7 @@ function importerKoder() {
     const kode = kodefix(node.Kode.Id)
     let o = { tittel: { nb: node.Navn } }
     if (ingress[kode]) o.ingress = ingress[kode]
-    mineKoder["NN-" + kode] = o
+    mineKoder[kode] = o
   }
   return mineKoder
 }

@@ -35,6 +35,7 @@ for (let kode of Object.keys(alle)) {
   var parts = kode.split("_")
   if (parts[1] & !node.infoUrl) node.infoUrl = config.infoUrl.nin + parts[1]
 
+  if (kode === "NN-NA-TI-T1-E-1") debugger
   if (overrides[kode]) node.foreldre = overrides[kode]
   noder[kode] = node
 }

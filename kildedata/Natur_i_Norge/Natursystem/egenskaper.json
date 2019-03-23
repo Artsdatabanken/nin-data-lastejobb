@@ -18,10 +18,6 @@
   "NN-NA-HT-KG3": { "kode": "NN-NA-HT-KG3", "tittel": { "nb": "3" } },
   "NN-NA-HT-KG4": { "kode": "NN-NA-HT-KG4", "tittel": { "nb": "4" } },
   "NN-NA-HT-KG5": { "kode": "NN-NA-HT-KG5", "tittel": { "nb": "5" } },
-  "NN-NA-HT-PK": {
-    "kode": "NN-NA-HT-PK",
-    "tittel": { "nb": "Prosedyrekategori" }
-  },
   "NN-NA-HT-DG": {
     "kode": "NN-NA-HT-DG",
     "tittel": { "nb": "Definisjonsgrunnlag" }

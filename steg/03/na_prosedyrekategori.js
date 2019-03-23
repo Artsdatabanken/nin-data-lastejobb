@@ -14,7 +14,7 @@ Object.keys(hovedtyper).forEach(kode => {
   const pkkode = pk.kode.toUpperCase()
   if (!r[pkkode])
     r[pkkode] = {
-      foreldre: [typesystem.natursystem.hovedtype.prosedyrekategori.prefiks],
+      foreldre: ["NN-NA-LKM-PRK"],
       tittel: pk.tittel,
       nivå: "prosedyrekategori"
     }

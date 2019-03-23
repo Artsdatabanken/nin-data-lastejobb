@@ -69,9 +69,9 @@ function mapnakode(kode) {
   kode = kode.trim()
   if (!kode) return
   kode = kode.replace("–", "-")
-  kode = kode.replace("BS-", "NA-BS-")
   kode = kode.replace("RE-IA", "REIA")
-  return "NN-" + kode
+  kode = kode.replace("NA-", "NN-NA-TI-")
+  kode = kode.replace("BS-", "NN-NA-BS-")
 }
 
 function mapkant(kant) {
