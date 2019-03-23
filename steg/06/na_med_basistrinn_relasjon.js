@@ -22,23 +22,12 @@ Object.keys(basistrinn).forEach(grunntype => {
 
 delete ht["NN-NA"]
 
-/*
-Object.keys(ht).forEach(hovedtype => {
-  Object.keys(ht[hovedtype]).forEach(lkm =>
-    relasjon(na[hovedtype], "defineres av", lkm, "definerer hovedtype")
-  )
-})
-*/
-/*Object.keys(lkm).forEach(kode => {
-  relasjon(na[kode], "definerer", lkm[kode], "defineres av")
-})*/
-
 function flettNatursystemOgLkm() {
   let na = io.lesDatafil("na_med_hovedtype_relasjon")
   let mi = io.lesDatafil("na_mi_liste")
-  Object.keys(mi).forEach(
-    kode => (na[kode] = Object.assign(na[kode] || {}, mi[kode]))
-  )
+  Object.keys(mi).forEach(kode => {
+    na[kode] = Object.assign(na[kode] || {}, mi[kode])
+  })
   return na
 }
 

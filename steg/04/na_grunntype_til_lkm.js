@@ -31,8 +31,8 @@ function makeRange(seq) {
   return seq.join("")
 }
 
-function decode(mi) {
-  mi = mi.toUpperCase()
+function decode(mii) {
+  mi = mii.toUpperCase()
   Object.entries(replace).forEach(([key, value]) => {
     mi = mi.replace(key, value)
   })
@@ -41,12 +41,14 @@ function decode(mi) {
   var verdi = mi.substring(splitPos + 1)
   verdi = makeRange(verdi)
   const r = []
-  for (const c of verdi) r.push("NN-NA-LKM-" + kode + "-" + c)
+  const nykode = "NN-NA-LKM-" + kode + "-"
+  if (!kode) debugger
+  for (const c of verdi) r.push(nykode + c)
   return r
 }
 
 rows.forEach(row => {
-  const na = "NN-" + row["grunntype_kode"]
+  const na = "NN-NA-TI-" + row["grunntype_kode"].replace("NA-", "")
   if (!(na in nin_liste)) return (ukjent_nin[na] = (ukjent_nin[na] || 0) + 1)
   for (var i = 1; i <= 6; i++) {
     const e = row["lkm_basistrinn" + i]
@@ -55,8 +57,10 @@ rows.forEach(row => {
     const list = decode(e)
     list.forEach(mi => {
       const hackKode = mi.replace("S3", "S3-")
-      if (!(hackKode in mi_liste))
+      if (!(hackKode in mi_liste)) {
+        log.warn(mi, hackKode)
         return (ukjent_mi[mi] = (ukjent_mi[mi] || 0) + 1)
+      }
       if (!r[na]) r[na] = []
       r[na].push(hackKode)
     })

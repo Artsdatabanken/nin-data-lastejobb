@@ -2,15 +2,9 @@
   "NN-LA": {
     "tittel": { "nb": "Landskap" },
     "ingress": "Landskapstypeinndelingen skiller mellom ulike typer av øko-landskap; enheter som kjennetegnes ved likheter i store landformer og terrengvariasjon, som bestemmer hvilke landskapsdel- og natursystem-typer som forekommer der.",
-    "infoUrl": "https://www.artsdatabanken.no/Pages/10",
-    "relasjon": [
-      {
-        "kode": "NN-LA-KLG",
-        "kant": "Landskapsgradient",
-        "kantRetur": "Landskapstyper"
-      }
-    ]
+    "infoUrl": "https://www.artsdatabanken.no/Pages/10"
   },
+  "NN-LA-TI": { "tittel": { "nb": "Typeinndeling" } },
   "NN-LA-KLG": { "tittel": { "nb": "Landskapsgradient" } },
   "NN-LA-KLG-BP": {
     "type": "gradient",

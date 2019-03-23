@@ -40,11 +40,10 @@ hovedtyper.forEach(ht => {
     kode_hovedtype.definisjonsgrunnlag.prefiks + "-" + ht["GrL"].trim()
   me.definisjonsgrunnlag.tittel = { nb: ht["Definisjonsgrunnlag-tekst"] }
   me.prosedyrekategori = {}
-  me.prosedyrekategori.kode =
-    kode_hovedtype.prosedyrekategori.prefiks + ht["PrK"].toUpperCase()
+  me.prosedyrekategori.kode = "NN-NA-LKM-PRK-" + ht["PrK"].toUpperCase()
   me.prosedyrekategori.tittel = { nb: ht["PrK-tekst"].trim() }
   me.nin1 = ht["NiN[1] "]
-  r[typesystem.natursystem.leggTilPrefiks(ht.HTK)] = me
+  r["NN-NA-TI-" + ht.HTK] = me
 })
 
 io.skrivDatafil(__filename, r)
