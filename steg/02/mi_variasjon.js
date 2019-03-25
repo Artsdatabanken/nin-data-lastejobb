@@ -3,7 +3,7 @@ const config = require("../../config")
 const log = require("log-less-fancy")()
 
 let koder = io.lesKildedatafil(
-  "Natur_i_Norge/Natursystem/Lokale_komplekse_miljøvariabler/mi"
+  "Natur_i_Norge/Natursystem/kodeliste_v2b_variasjon"
 ).data
 
 function kodefix(kode) {

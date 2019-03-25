@@ -2,7 +2,7 @@ const log = require("log-less-fancy")()
 const Jimp = require("jimp")
 const io = require("../../lib/io")
 
-let koder = io.lesKildedatafil("Natur_i_Norge/Landskap/la_index")
+let koder = io.lesKildedatafilOld("Natur_i_Norge/Landskap/la_index")
 let farger = io.lesDatafil("la_farger")
 let la = io.lesDatafil("landskap")
 let klg = io.lesDatafil("landskapsgradient")

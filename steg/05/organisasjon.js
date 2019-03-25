@@ -5,7 +5,7 @@ const typesystem = require("@artsdatabanken/typesystem")
 const csv = require("../../lib/csv")
 
 const organisasjonTilKode = {}
-let organisasjon = io.lesKildedatafil("Datakilde/organisasjon")
+let organisasjon = io.lesKildedatafilOld("Datakilde/organisasjon")
 Object.entries(organisasjon).forEach(([kode, o]) => {
   organisasjonTilKode[o.tittel.nb] = kode
   organisasjonTilKode[kode] = kode

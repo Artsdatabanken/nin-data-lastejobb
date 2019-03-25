@@ -2,7 +2,7 @@ const config = require("../../config")
 const io = require("../../lib/io")
 const typesystem = require("@artsdatabanken/typesystem")
 
-let hovedtyper = io.lesKildedatafil(config.datakilde.na_hovedtyper)
+let hovedtyper = io.lesKildedatafil(config.datakilde.na_hovedtype)
 let mi = io.lesDatafil("mi_variasjon")
 
 function fromCsv(csv) {

@@ -1,12 +1,11 @@
 const datakilde = {
   ar_taxon: "http://eksport.artsdatabanken.no/artsnavnebase/Artsnavnebase.csv",
-  mi_variasjon:
-    "Natur_i_Norge/Natursystem/Lokale_komplekse_miljøvariabler/mi_variasjon", // "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/alleKoder",
-  na_diagnostisk_art: "Natur_i_Norge/Natursystem/diagnostisk_art",
-  na_koder: "Natur_i_Norge/Natursystem/gamle_koder_v2b", // "https://webtjenester.artsdatabanken.no/NiN/v2b/koder/alleKoder",
-  na_hovedtyper: "Natur_i_Norge/Natursystem/hovedtyper",
-  na_grunntyper: "Natur_i_Norge/Natursystem/grunntyper",
-  or_organisasjon: "Datakilde/or_organisasjon",
+  mi_variasjon: "Natur_i_Norge/Natursystem/kodeliste_v2b_variasjon", // "https://webtjenester.artsdatabanken.no/NiN/v2b/variasjon/alleKoder",
+  na_diagnostisk_art: "Natur_i_Norge/Natursystem/Typeinndeling/diagnostisk_art",
+  na_koder: "Natur_i_Norge/Natursystem/kodeliste_v2b", // "https://webtjenester.artsdatabanken.no/NiN/v2b/koder/alleKoder",
+  na_hovedtype: "Natur_i_Norge/Natursystem/Typeinndeling/hovedtype",
+  na_grunntyper: "Natur_i_Norge/Natursystem/Typeinndeling/kartleggingsenhet",
+  or_organisasjon: "Datakilde/organisasjon",
   vv_verneområe:
     "http://trdefme02.miljodirektoratet.no/nedlasting/Naturbase/Shape/naturvern_utm33.zip",
   // https://kartkatalog.geonorge.no/metadata/kartverket/statistiske-inndelinger-lau/f7be9f83-e5e0-4914-8076-e37424221930

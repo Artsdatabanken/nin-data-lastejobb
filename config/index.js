@@ -13,7 +13,8 @@ const config = {
     nin: "https://www.artsdatabanken.no/NiN2.0/",
     verneområde: "http://faktaark.naturbase.no/Vern?id="
   },
-  kildedataPath: "./kildedata",
+  kildedataPathOld: "./kildedata",
+  kildedataPath: "./nin-data",
   getCachePath: function(relPath) {
     return cachePath + "/" + relPath + "/"
   },
