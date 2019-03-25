@@ -7,10 +7,13 @@ const typesystem = require("@artsdatabanken/typesystem")
 let full = io.lesDatafil("full")
 let hierarki = io.lesDatafil("kodehierarki")
 const barnAv = hierarki.barn
+const skalPropageresNed = []
+
 Object.keys(full).forEach(kode => lagGrafkoblinger(kode, full[kode]))
 Object.keys(full).forEach(kode => lagGradientPåSegSelv(kode, full[kode]))
 Object.keys(full).forEach(kode => lagGrafGradientkoblinger(kode, full[kode]))
 Object.keys(full).forEach(kode => propagerGradientTilRelasjon(kode, full[kode]))
+propagerGrafkoblinger()
 
 io.skrivDatafil(__filename, full)
 
@@ -48,23 +51,27 @@ function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
   }
 
   if (!nodeFra.graf) nodeFra.graf = {}
-  if (!nodeFra.graf[kant]) nodeFra.graf[kant] = {}
   let kobling = Object.assign({}, metadata, tilBarn(nodeTil))
   kobling.type = nodeTil.type
+  if (kobling.kant === "Datasett" && nodeFra.graf["Datakilde"]) return
+  if (!nodeFra.graf[kant]) nodeFra.graf[kant] = {}
   if (nodeTil.type === "flagg" && kobling.kant !== "Datasett") {
     if (!nodeFra.flagg) nodeFra.flagg = {}
     nodeFra.flagg[kodeTil] = {
       tittel: nodeTil.tittel
     }
-  } else {
-    kobling.erSubset = erSubset
-    delete kobling.kode
-    delete kobling.kant
-    delete kobling.kantRetur
-    delete kobling.kantReturFraAlleBarna
-    nodeFra.graf[kant][kodeTil] = kobling
+    return true
   }
+
+  kobling.erSubset = erSubset
+  delete kobling.kode
+  delete kobling.kant
+  delete kobling.kantRetur
+  delete kobling.kantReturFraAlleBarna
+  nodeFra.graf[kant][kodeTil] = kobling
+  return true
 }
+
 function lagGrafkoblingerTilAlleBarna(
   kodeFra,
   kodeTil,
@@ -72,10 +79,33 @@ function lagGrafkoblingerTilAlleBarna(
   metadata,
   erSubset
 ) {
-  const barna = barnAv[kodeFra] || []
-  lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset)
-  barna.forEach(kodeFraBarn => {
-    lagGrafkoblingerTilAlleBarna(kodeFraBarn, kodeTil, kant, metadata, erSubset)
+  if (lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset)) {
+    const barna = barnAv[kodeFra] || []
+    barna.forEach(kodeFraBarn => {
+      lagGrafkoblingerTilAlleBarna(
+        kodeFraBarn,
+        kodeTil,
+        kant,
+        metadata,
+        erSubset
+      )
+    })
+  }
+}
+
+function propagerGrafkoblinger() {
+  skalPropageresNed.forEach(e => {
+    if (e.kode === "NN-NA-BS") debugger
+    const barna = barnAv[e.kode] || []
+    barna.forEach(barnkode =>
+      lagGrafkoblingerTilAlleBarna(
+        barnkode,
+        e.tilKode,
+        e.kantRetur,
+        e,
+        e.erSubset
+      )
+    )
   })
 }
 
@@ -85,9 +115,15 @@ function lagGrafkoblinger(kode, node) {
     if (!e.kode) throw new Error("Mangler kode " + e.kode)
     lagGrafkobling(kode, e.kode, e.kant, e, e.erSubset)
     if (e.kantRetur) {
-      if (e.kantReturFraAlleBarna) {
-        lagGrafkoblingerTilAlleBarna(e.kode, kode, e.kantRetur, e, e.erSubset)
-      } else lagGrafkobling(e.kode, kode, e.kantRetur, e, false)
+      lagGrafkobling(
+        e.kode,
+        kode,
+        e.kantRetur,
+        e,
+        e.kantReturFraAlleBarna && e.erSubset
+      )
+      if (e.kantReturFraAlleBarna)
+        skalPropageresNed.push({ ...e, tilKode: kode })
     }
   })
   delete node.relasjon
