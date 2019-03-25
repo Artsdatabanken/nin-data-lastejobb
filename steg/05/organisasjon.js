@@ -12,7 +12,7 @@ Object.entries(organisasjon).forEach(([kode, o]) => {
   organisasjonTilKode[kode.replace("OR-", "")] = kode
 })
 
-let datasett = csv.les("./nin-data/Natur_i_Norge/datasett.csv")
+let datasett = csv.les("nin-data/Natur_i_Norge/datasett.csv")
 // Sorter slik at mer spesifikke koder kommer sist og overstyrer generell datakilde
 datasett.sort((a, b) => a.Datasett.length - b.Datasett.length)
 lagRelasjonTilDatasett(datasett)
