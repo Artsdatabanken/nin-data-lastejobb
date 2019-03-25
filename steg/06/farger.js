@@ -19,10 +19,10 @@ function settFarger(kilde, mapper) {
 const bareFargen = node => tinycolor(node.farge)
 const lighten = node => tinycolor(node).lighten(20)
 
-settFarger(io.lesKildedatafil("farger"), bareFargen)
+settFarger(io.lesKildedatafilOld("farger"), bareFargen)
 settFarger(io.lesDatafil("la_farger"), bareFargen)
 settFarger(
-  io.lesKildedatafil("Natur_i_Norge/Natursystem/farger_dominant"),
+  io.lesKildedatafilOld("Natur_i_Norge/Natursystem/farger_dominant"),
   lighten
 )
 

@@ -41,7 +41,7 @@ class CsvToJson {
 }
 
 importer(
-  "Natur_i_Norge/Natursystem/Basistrinn_per_grunntype.csv",
+  "Natur_i_Norge/Natursystem/Typeinndeling/basistrinn_per_grunntype.csv",
   "na_grunntype_til_lkm"
 )
 

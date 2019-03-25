@@ -40,10 +40,13 @@ class CsvToJson {
   }
 }
 
-importer("Natur_i_Norge/Landskap/typer.csv", "landskap")
-importer("Natur_i_Norge/Landskap/gradienter.csv", "landskapsgradient")
+importer("Natur_i_Norge/Landskap/Typeinndeling/type.csv", "landskap")
 importer(
-  "Natur_i_Norge/Landskap/relasjon_natursystem.csv",
+  "Natur_i_Norge/Landskap/Landskapsgradient/gradient.csv",
+  "landskapsgradient"
+)
+importer(
+  "Natur_i_Norge/Landskap/Landskapsgradient/relasjon_til_natursystem.csv",
   "landskap_relasjon_natursystem"
 )
 

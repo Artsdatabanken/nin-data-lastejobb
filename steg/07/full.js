@@ -20,20 +20,18 @@ flett("ar_taxon")
 flett("na_prosedyrekategori")
 flett("na_definisjonsgrunnlag")
 flett("inn_statistikk")
-flettKildedata("rl_rødliste")
-flettKildedata("Art/typer")
-flettKildedata("Art/Fremmed_Art/typer")
-flettKildedata("Fylke/typer")
-flettKildedata("Natur_i_Norge/Landskap/typer")
-flettKildedata("Natur_i_Norge/Natursystem/typer")
+flettKildedataOld("rl_rødliste")
+flettKildedataOld("Art/typer")
+flettKildedataOld("Art/Fremmed_Art/typer")
+flettKildedataOld("Fylke/typer")
+flettKildedata("Natur_i_Norge/Landskap/Typeinndeling/type")
+flettKildedata("Natur_i_Norge/Natursystem/type")
+flettKildedata("Natur_i_Norge/Natursystem/Miljøvariabler/type")
 flettKildedata(
-  "Natur_i_Norge/Natursystem/Lokale_komplekse_miljøvariabler/typer"
+  "Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/type"
 )
-flettKildedata(
-  "Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/typer"
-)
-flettKildedata("Naturvernområde/typer")
-flettKildedata("typer")
+flettKildedataOld("Naturvernområde/typer")
+flettKildedataOld("typer")
 sjekkAtTitlerEksisterer()
 capsTitler()
 kobleForeldre()
@@ -81,6 +79,10 @@ function flett(filename, props = {}) {
 
 function flettKildedata(filename, props = {}) {
   var data = io.lesKildedatafil(filename)
+  flettAttributter(data, props)
+}
+function flettKildedataOld(filename, props = {}) {
+  var data = io.lesKildedatafilOld(filename)
   flettAttributter(data, props)
 }
 
