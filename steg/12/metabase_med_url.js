@@ -24,7 +24,7 @@ function oppdaterNivå(node) {
 }
 
 function oppdaterNivå1(node) {
-  if (node.url === "Åpne_data") return
+  if (node.url === "Katalog") return
   node.nivå = node.nivå || typesystem.hentNivaa(node.url)[0]
 }
 
