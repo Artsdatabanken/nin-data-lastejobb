@@ -3,7 +3,7 @@ const config = require("../../config")
 const io = require("../../lib/io")
 const typesystem = require("@artsdatabanken/typesystem")
 
-let rel = io.lesDatafil("landskap_relasjon_natursystem.csv.json")
+let rel = io.lesDatafil("relasjon_til_natursystem.csv.json")
 let klg = io.lesDatafil("landskapsgradient.json")
 let na = io.lesDatafil("na_mi_liste.json")
 let bs = io.lesDatafil("mi_variasjon.json")
@@ -72,6 +72,7 @@ function mapnakode(kode) {
   kode = kode.replace("RE-IA", "REIA")
   kode = kode.replace("NA-", "NN-NA-TI-")
   kode = kode.replace("BS-", "NN-NA-BS-")
+  return kode
 }
 
 function mapkant(kant) {
