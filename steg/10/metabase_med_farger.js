@@ -41,6 +41,7 @@ Object.keys(data).forEach(kode => {
   const node = data[kode]
   if (!node.farge) node.farge = blandBarnasFarger(kode)
 })
+
 Object.keys(data).forEach(kode => {
   const node = data[kode]
   if (!node.farge) node.farge = brukOverordnetsFarge(kode)
@@ -57,6 +58,8 @@ function brukOverordnetsFarge(kode) {
 io.skrivDatafil(__filename, data)
 
 function blandBarnasFarger(kode) {
+  if (kode.startsWith("AR-")) return data["AR"].farge
+
   const node = data[kode]
   if (node.farge) return node.farge
   const farger = []
