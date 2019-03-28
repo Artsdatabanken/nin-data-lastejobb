@@ -25,10 +25,15 @@ function finnReserverbilder() {
     if (!barn) return
     barn.sort((a, b) => a > b)
     for (let i = 0; i < barn.length; i++) {
+      if (xkode === "NN-NA-TI") debugger
       const bn = tre[barn[i]]
       const burl = bn.url
-      if (!mapfiles[burl]) continue
-      script.push(`cp -n ${burl}/forside_408.jpg ${node.url}/`)
+      const filer = mapfiles[burl]
+      if (!filer) continue
+      const bilde = filer["forside_408.png"] || filer["forside_408.jpg"]
+      if (!bilde) return
+      script.push(`cp -n ${burl}/${bilde.filename} ${node.url}/`)
+      log.warn(`cp -n ${burl}/${bilde.filename} ${node.url}/`)
       break
     }
   })
