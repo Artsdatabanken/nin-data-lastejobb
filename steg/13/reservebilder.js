@@ -49,6 +49,7 @@ function finnReserverbilder(basename) {
     if (!barn) return
     barn.sort((a, b) => a > b)
     for (let i = 0; i < barn.length; i++) {
+      if (xkode === "NN-NA-TI") debugger
       const bn = tre[barn[i]]
       const burl = bn.url
       const filer = filindeks[burl]
