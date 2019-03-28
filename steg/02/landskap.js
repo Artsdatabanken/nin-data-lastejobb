@@ -47,7 +47,7 @@ importer(
 )
 importer(
   "Natur_i_Norge/Landskap/Landskapsgradient/relasjon_til_natursystem.csv",
-  "relasjon_til_natursystem"
+  "landskap_relasjon_natursystem"
 )
 
 function importer(csvFil, utFil) {
