@@ -17,15 +17,14 @@ io.skrivDatafil(__filename, script)
 
 function finnReserverbilder() {
   Object.keys(tre).forEach(xkode => {
+    if (xkode === "~") debugger
     const node = tre[xkode]
     const maps = mapfiles[node.url]
-    if (!maps) return
-    if (maps["forside_408.jpg"]) return // Already have an image
+    if (maps && maps["forside_408.jpg"]) return // Already have an image
     const barn = barnAv[xkode]
     if (!barn) return
     barn.sort((a, b) => a > b)
     for (let i = 0; i < barn.length; i++) {
-      if (xkode === "NN-NA-TI") debugger
       const bn = tre[barn[i]]
       const burl = bn.url
       const filer = mapfiles[burl]
