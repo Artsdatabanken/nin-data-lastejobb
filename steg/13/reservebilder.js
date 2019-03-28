@@ -19,7 +19,8 @@ function finnReserverbilder() {
   Object.keys(tre).forEach(xkode => {
     const node = tre[xkode]
     const maps = mapfiles[node.url]
-    if (maps) return
+    if (!maps) return
+    if (maps["forside_408.jpg"]) return // Already have an image
     const barn = barnAv[xkode]
     if (!barn) return
     barn.sort((a, b) => a > b)

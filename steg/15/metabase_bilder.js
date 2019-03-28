@@ -9,11 +9,11 @@ let filindeks = io.lesDatafil("filindeks")
 
 Object.keys(full).forEach(kode => {
   const node = full[kode]
-  const fil = filindeks[node.url]
+  const filer = filindeks[node.url]
   node.foto = node.foto || {}
-  if (!fil) return
+  if (!filer) return
   if (kode == "NN-NA") debugger
-  const forside = fil.find(x => x.filename.indexOf("forside_408") === 0)
+  const forside = filer["forside_408.jpg"] || filer["forside_408.png"]
   if (!forside) return
   node.foto.forside = {
     url: baseUrl + node.url + "/" + forside.filename,

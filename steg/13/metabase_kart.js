@@ -35,9 +35,9 @@ function addKartformat() {
     const node = tre[xkode]
     const target = tre[xkode]
     const maps = filindeks[node.url]
-    if (xkode === "NN-NA-BS-6SE") debugger
     if (!maps) return
-    maps.forEach(mapfile => {
+    Object.keys(maps).forEach(base => {
+      const mapfile = maps[base]
       if (".mbtiles.geojson".indexOf(path.extname(mapfile.filename)) < 0) return
       if (mapfile.filename.indexOf("3857") < 0) return
       if (!target.kart) target.kart = { format: {} }
