@@ -53,5 +53,12 @@
     "ingress": "Statistisk sentralbyrå (SSB) er den sentrale institusjonen for innsamling, bearbeiding og formidling av offisiell statistikk i Norge. SSB har, i henhold til statistikkloven av 1989,[4] rett til å bestemme hva som skal være offisiell statistikk, samt ansvaret for å samordne all offisiell statistikk i Norge.",
     "infoUrl": "https://no.wikipedia.org/wiki/Statistisk_sentralbyr%C3%A5",
     "metaUrl": "https://www.ssb.no"
+  },
+  "OR-WP": {
+    "farge": "hsl(0, 0%, 50%)",
+    "tittel": { "nb": "Wikipedia", "en": "Wikipedia" },
+    "ingress": "Wikipedia er en internasjonal internettbasert encyklopedi som utgis av den ideelle organisasjonen Wikimedia Foundation, med hovedsete i Florida i USA. Den er en wiki, som betyr at alle kan redigere innholdet.",
+    "infoUrl": "https://no.wikipedia.org/wiki/Wikipedia",
+    "metaUrl": "https://no.wikipedia.org"
   }
 }
