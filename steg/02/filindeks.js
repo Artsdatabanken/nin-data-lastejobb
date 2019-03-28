@@ -12,8 +12,8 @@ function lesFilindeks() {
   Object.keys(inn_filindeks).forEach(mapfile => {
     const p = path.parse(mapfile)
     const url = p.dir
-    if (!r[url]) r[url] = []
-    r[url].push(inn_filindeks[mapfile])
+    if (!r[url]) r[url] = {}
+    r[url][p.base] = inn_filindeks[mapfile]
   })
   return r
 }
