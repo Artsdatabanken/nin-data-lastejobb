@@ -49,6 +49,10 @@ importer(
   "Natur_i_Norge/Landskap/Landskapsgradient/relasjon_til_natursystem.csv",
   "relasjon_til_natursystem"
 )
+importer(
+  "Natur_i_Norge/Landskap/bilder_som_gjenbrukes.csv",
+  "landskap_bilder_som_gjenbrukes"
+)
 
 function importer(csvFil, utFil) {
   const kildefil = config.kildedataPath + "/" + csvFil
