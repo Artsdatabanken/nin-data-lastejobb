@@ -87,7 +87,7 @@ function blandBarnasFarger(kode) {
 function trickleColorsUp() {
   const blends = {}
   Object.keys(farger).forEach(kode => {
-    const farge_og_vekt = farger[kode]
+    const farge_og_vekt = { farge: farger[kode] }
     const node = data[kode]
     if (!node) return log.warn("Har farge for ukjent kode " + kode)
     if (!node.farge) {
