@@ -2,7 +2,7 @@ const config = require("../../config")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 
-const baseUrl = "https://maps.artsdatabanken.no/"
+const baseUrl = "https://data.artsdatabanken.no/"
 
 let full = io.lesDatafil("metabase_bbox")
 let filindeks = io.lesDatafil("filindeks")
