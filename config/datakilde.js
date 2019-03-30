@@ -12,8 +12,8 @@ const datakilde = {
   ao_kommune_geom: "https://www.dropbox.com/s/cyi68l9mixg7bq7/LAU2018.zip?dl=1",
   kommuner:
     "https://nedlasting.geonorge.no/geonorge/Basisdata/Kommuner/GeoJSON/Basisdata_0000_Norge_25833_Kommuner_GEOJSON.zip",
-  statistikk: "https://maps.artsdatabanken.no/statistikk.json",
-  filindeks: "http://maps.artsdatabanken.no/index.json"
+  statistikk: "https://data.artsdatabanken.no/statistikk.json",
+  filindeks: "http://data.artsdatabanken.no/index.json"
 }
 
 module.exports = datakilde
