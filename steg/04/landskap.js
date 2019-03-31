@@ -44,7 +44,7 @@ hovedtyper.forEach(e => {
     ny.ingress = kjedGradientbeskrivelser(e.rekkefølge_kjeding_klg, klger)
   ny.pred_lnr = e.pred_lnr
   const menneskeligPåvirkning =
-    e.naturlandskap === 1 ? "NN-LA-MP-NL" : "NN-LA-MP-KL"
+    e.naturlandskap === 1 ? "NN-LA-TI-AP-NL" : "NN-LA-TI-AP-AL"
   ny.relasjon.push({
     kode: menneskeligPåvirkning,
     kant: "menneskelig påvirkning",
