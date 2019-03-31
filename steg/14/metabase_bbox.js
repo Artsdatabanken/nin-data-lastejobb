@@ -5,6 +5,8 @@ const typesystem = require("@artsdatabanken/typesystem")
 
 let slettet_fordi_mangler_bbox = []
 let tre = io.lesDatafil("metabase_kart")
+let hierarki = io.lesDatafil("kodehierarki")
+const barnAv = hierarki.barn
 
 fjernKoderSomIkkeHarData(tre)
 //fjernRelasjonTilKoderSomIkkeHarData(tre)
@@ -22,10 +24,6 @@ function fjernKoderSomIkkeHarData(data) {
       delete data[kode]
       const forelderKode = node.overordnet[0].kode
       const forelderNode = data[forelderKode]
-      if (forelderNode) {
-        // Kan allerede være slettet
-        delete forelderNode.barn[kode]
-      }
       slettet_fordi_mangler_bbox.push(kode)
     }
   })
@@ -65,8 +63,8 @@ function harRelasjon(graf) {
 
 function harBarnMedKartdata(node) {
   if (node.kart) return true
-  const barn = node.barn
+  const barn = barnAv[node.kode]
   if (!barn) return false
-  for (const kode of Object.keys(barn)) if (harKartdata(kode)) return true
+  for (const kode of barn) if (harKartdata(kode)) return true
   return false
 }
