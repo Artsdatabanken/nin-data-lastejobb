@@ -9,6 +9,8 @@ const barnAv = hierarki.barn
 Object.keys(tre).forEach(kode => mapBarn(kode))
 Object.keys(tre).forEach(kode => flyttDatakildeTilToppnivå(kode))
 
+fjernEnkeltVerneområder(tre)
+
 io.skrivBuildfil("metabase", tre)
 
 function flyttDatakildeTilToppnivå(kode) {
@@ -28,9 +30,7 @@ function mapBarn(key) {
   let barn = []
   if (barnAv[key]) {
     barnAv[key].forEach(ckey => {
-      if (erRelasjon(key, ckey)) {
-        return
-      }
+      if (erRelasjon(key, ckey)) return
       const cnode = tre[ckey]
       if (!cnode) return
       barn.push({
@@ -50,7 +50,9 @@ function mapBarn(key) {
 
 // Om den underliggende koden er definert som en relasjon
 function erRelasjon(key, ckey) {
-  const graf = tre[key].graf
+  const nodeFra = tre[key]
+  if (nodeFra.flagg && nodeFra.flagg[ckey]) return true
+  const graf = nodeFra.graf
   if (!graf) return false
   for (var relasjon of graf) {
     for (var node of relasjon.noder) {
@@ -60,4 +62,13 @@ function erRelasjon(key, ckey) {
     }
   }
   return false
+}
+
+function fjernEnkeltVerneområder(tre) {
+  // Fjern barn fra VV - for mange, bruk alternative ruter
+  const vv = tre.VV.barn
+  const filter = /^VV-\d+$/
+  Object.keys(vv).forEach(kode => {
+    if (kode.match(filter)) delete vv[kode]
+  })
 }
