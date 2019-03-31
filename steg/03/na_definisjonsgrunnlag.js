@@ -12,7 +12,7 @@ Object.keys(hovedtyper).forEach(kode => {
   const pkkode = dg.kode
   if (!r[pkkode])
     r[pkkode] = {
-      foreldre: [typesystem.natursystem.hovedtype.definisjonsgrunnlag.prefiks],
+      foreldre: ["NN-NA-TI-HT-DG"],
       tittel: dg.tittel,
       nivå: "definisjonsgrunnlag"
     }

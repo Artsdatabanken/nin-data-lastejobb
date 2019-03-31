@@ -95,7 +95,6 @@ function lagGrafkoblingerTilAlleBarna(
 
 function propagerGrafkoblinger() {
   skalPropageresNed.forEach(e => {
-    if (e.kode === "NN-NA-BS") debugger
     const barna = barnAv[e.kode] || []
     barna.forEach(barnkode =>
       lagGrafkoblingerTilAlleBarna(
