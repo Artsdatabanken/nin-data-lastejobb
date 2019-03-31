@@ -2,7 +2,7 @@ const log = require("log-less-fancy")()
 const Jimp = require("jimp")
 const io = require("../../lib/io")
 
-let koder = io.lesKildedatafilOld("Natur_i_Norge/Landskap/la_index")
+let fargeindeks = io.lesKildedatafilOld("Natur_i_Norge/Landskap/la_index")
 let farger = io.lesDatafil("la_farger")
 let la = io.lesDatafil("landskap")
 let klg = io.lesDatafil("landskapsgradient")
@@ -45,7 +45,7 @@ function fargelegg(image, klgKode) {
     //    throw new Error("Finner ikke " + klgKode)
   }
   typer.forEach(type => {
-    const index = koder[type]
+    const index = fargeindeks[type]
     if (index) settFarge(image, klgKode, index)
   })
 }
