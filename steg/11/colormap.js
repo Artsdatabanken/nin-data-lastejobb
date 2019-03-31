@@ -4,9 +4,9 @@ const io = require("../../lib/io")
 let koder = io.lesKildedatafilOld("Natur_i_Norge/Landskap/la_index")
 let meta = io.lesDatafil("metabase_med_farger")
 
-new Jimp(512, 8, 0xff0000ff, (err, image) => {
-  const color = Jimp.cssColorToHex("#00f")
-  for (let y = 0; y < 8; y++) image.setPixelColor(color, 0, y)
+new Jimp(512, 8, 0xffffffff, (err, image) => {
+  //  const color = Jimp.cssColorToHex("rgba(255,255,255,0.0)")
+  //  for (let y = 0; y < 8; y++) image.setPixelColor(color, 0, y)
   for (let nivå = 1; nivå < 9; nivå++) fyllNivå(nivå, image, nivå - 1)
   image.write("LA.palette.png")
 })

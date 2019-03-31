@@ -112,7 +112,10 @@ function mapBarn(key) {
 
 // Om den underliggende koden er definert som en relasjon
 function erRelasjon(key, ckey) {
-  const graf = tre[key].graf
+  if (ckey === "NN-LA-TI-AP") debugger
+  const nodeFra = tre[key]
+  if (nodeFra.flagg && nodeFra.flagg[ckey]) return true
+  const graf = nodeFra.graf
   if (!graf) return false
   for (var gkey in graf) {
     const relasjon = graf[gkey]
