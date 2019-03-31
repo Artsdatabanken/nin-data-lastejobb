@@ -21,17 +21,17 @@ flett("na_prosedyrekategori")
 flett("na_definisjonsgrunnlag")
 flett("inn_statistikk")
 flettKildedataOld("rl_rødliste")
-flettKildedataOld("Art/typer")
-flettKildedataOld("Art/Fremmed_Art/typer")
-flettKildedataOld("Fylke/typer")
+flettKildedataOld("Art/type")
+flettKildedataOld("Art/Fremmed_Art/type")
+flettKildedataOld("Fylke/type")
 flettKildedata("Natur_i_Norge/Landskap/Typeinndeling/type")
 flettKildedata("Natur_i_Norge/Natursystem/type")
 flettKildedata("Natur_i_Norge/Natursystem/Miljøvariabler/type")
 flettKildedata(
   "Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/type"
 )
-flettKildedataOld("Naturvernområde/typer")
-flettKildedataOld("typer")
+flettKildedataOld("Naturvernområde/type")
+flettKildedataOld("type")
 sjekkAtTitlerEksisterer()
 capsTitler()
 kobleForeldre()
@@ -136,6 +136,7 @@ function sjekkAtTitlerEksisterer() {
   const notitle = []
   for (let key of Object.keys(r)) {
     const node = r[key]
+    if (node.farge) debugger
     if (!node.se) {
       if (!node.tittel) {
         log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
