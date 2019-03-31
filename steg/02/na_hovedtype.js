@@ -14,7 +14,9 @@ function fromCsv(csv) {
 }
 
 const prefiks = typesystem.natursystem.prefiks
-const kode_hovedtype = typesystem.natursystem.hovedtype
+const kode_hovedtype = "NN-NA-TI-HT"
+const kode_kunnskap = "NN-NA-TI-HT-KG"
+const kode_definisjonsgrunnlag = "NN-NA-TI-HT-DG"
 
 r = {}
 hovedtyper.forEach(ht => {
@@ -24,10 +26,10 @@ hovedtyper.forEach(ht => {
   const gi = parseInt(ht["Kunnskapsgrunnlag - Grunntypeinndelingen"])
   me.kunnskap = {
     inndeling: {
-      kode: kode_hovedtype.kunnskap.prefiks + "-GI" + gi,
+      kode: kode_kunnskap + "-GI" + gi,
       verdi: gi
     },
-    generelt: { kode: kode_hovedtype.kunnskap.prefiks + hg, verdi: hg }
+    generelt: { kode: kode_kunnskap + hg, verdi: hg }
   }
   me.lkm = {
     d: fromCsv(ht.dLKM),
@@ -37,7 +39,7 @@ hovedtyper.forEach(ht => {
   }
   me.definisjonsgrunnlag = {}
   me.definisjonsgrunnlag.kode =
-    kode_hovedtype.definisjonsgrunnlag.prefiks + "-" + ht["GrL"].trim()
+    kode_definisjonsgrunnlag + "-" + ht["GrL"].trim()
   me.definisjonsgrunnlag.tittel = { nb: ht["Definisjonsgrunnlag-tekst"] }
   me.prosedyrekategori = {}
   me.prosedyrekategori.kode = "NN-NA-LKM-PRK-" + ht["PrK"].toUpperCase()
