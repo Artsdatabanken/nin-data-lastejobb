@@ -8,7 +8,7 @@ new Jimp(512, 8, 0xffffffff, (err, image) => {
   //  const color = Jimp.cssColorToHex("rgba(255,255,255,0.0)")
   //  for (let y = 0; y < 8; y++) image.setPixelColor(color, 0, y)
   for (let nivå = 1; nivå < 9; nivå++) fyllNivå(nivå, image, nivå - 1)
-  image.write("LA.palette.png")
+  image.write("data/LA.palette.png")
 })
 
 function fyllNivå(nivå, image, y) {
