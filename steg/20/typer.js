@@ -32,7 +32,7 @@ function skrivFil(prefix) {
 
   Object.keys(data).forEach(kode => {
     const node = data[kode]
-    if (!kode.startsWith("VV")) fyllPåMedSøsken(node)
+    fyllPåMedSøsken(node)
     if (kode.indexOf(prefix) === 0) dok.data.push(node)
   })
 
