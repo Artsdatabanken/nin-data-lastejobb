@@ -43,17 +43,17 @@ function makePal(kode) {
   })
 }
 
-function fyllNivå(kode, nivå, image, y) {
+function fyllNivå(kode, nivå, image, y, overstyrMedFargeFrakode) {
   Object.keys(koder).forEach(ikode => {
     const index = koder[ikode]
     if (!ikode.startsWith(kode)) return
-    settFarge(image, kode, index, y)
+    settFarge(image, overstyrMedFargeFrakode || kode, index, y)
   })
   if (nivå > 1) {
     const barn = barnAv[kode] || []
     barn.forEach(barn => fyllNivå(barn, nivå - 1, image, y))
     const typer = klg2type[kode] || []
-    typer.forEach(barn => fyllNivå(barn, nivå - 1, image, y))
+    typer.forEach(barn => fyllNivå(barn, nivå - 1, image, y, kode))
   }
 }
 
