@@ -32,7 +32,6 @@ function settFarge(image, kode, x, y) {
     return
   }
   const farge = meta[kode].farge
-  if (kode.startsWith("NN-LA-TI-M")) console.log(y, x, farge, kode)
   const color = Jimp.cssColorToHex(farge)
   image.setPixelColor(color, x, y)
 }

@@ -12,7 +12,6 @@ Object.keys(full).forEach(kode => {
   const filer = filindeks[node.url]
   node.foto = node.foto || {}
   if (!filer) return
-  if (kode == "NN-LA-KLG-REIA") debugger
   add(filer, node, "forside", 408)
   add(filer, node, "banner", 950)
   // TODO: temp fallback
