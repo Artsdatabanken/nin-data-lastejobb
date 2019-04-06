@@ -8,12 +8,14 @@ let hierarki = io.lesDatafil("kodehierarki")
 let filindeks = io.lesDatafil("filindeks")
 const barnAv = hierarki.barn
 
+const brukerEttOgSammeRasterIndexKart = ["NN-LA-TI"]
 let ukjentBbox = 0
 
 addKartformat()
 normaliserGradienter()
 if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
 zoomlevels(typesystem.rotkode)
+settDefaultVisning()
 io.skrivDatafil(__filename, tre)
 
 function avrund1d(num) {
@@ -28,6 +30,19 @@ function avrund4d(bounds) {
   if (ll[0] > ur[0] || ll[1] > ur[1])
     throw new Error("Ugyldig bbox " + JSON.stringify(bboxjson))
   return [ll, ur]
+}
+
+function settDefaultVisning() {
+  const prio = ["raster_gradient", "raster_indexed", "polygon"]
+  Object.keys(tre).forEach(kode => {
+    const kart = tre[kode].kart
+    if (!kart) return
+    for (let pri of prio)
+      if (kart.format[pri]) {
+        kart.aktivtFormat = pri
+        return
+      }
+  })
 }
 
 function addKartformat() {
