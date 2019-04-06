@@ -51,7 +51,10 @@
     "farge0": "#fff",
     "farge": "#f48"
   },
-  "NN-LA-KLG-REIA": { "farge0": "#8f8", "farge": "#f88" },
+  "NN-LA-KLG-REIA": {
+    "farge0": "hsl(185, 0%, 90%)",
+    "farge": "hsl(273, 90%, 50%)"
+  },
   "NN-LA-KLG-REIA-1": {
     "fargebidrag": "hsl(185, 0%, 80%)",
     "vekt": [0, 0, 1]
@@ -73,8 +76,8 @@
     "vekt": [0, 0, 1]
   },
   "NN-LA-KLG-REIDKF": {
-    "farge0": "#8f8",
-    "farge": "#f88"
+    "farge0": "hsl(185, 0%, 90%)",
+    "farge": "hsl(273, 90%, 50%)"
   },
   "NN-LA-KLG-REIDKF-1": {
     "fargebidrag": "hsl(190, 10%, 83%)",
@@ -93,51 +96,92 @@
     "vekt": [1, 1, 1]
   },
   "NN-LA-KLG-REKS": {
-    "farge0": "#8f8",
-    "farge": "#f88"
+    "farge0": "hsl(185, 0%, 90%)",
+    "farge": "hsl(273, 90%, 50%)"
   },
-  "NN-LA-KLG-REKS-1": { "fargebidrag": "hsl(222,0%, 64%)", "vekt": [0, 0, 1] },
-  "NN-LA-KLG-REKS-2": { "fargebidrag": "hsl(222,0%, 76%)", "vekt": [0, 0, 1] },
-  "NN-LA-KLG-REKS-3": { "fargebidrag": "hsl(222,0%, 87%)", "vekt": [0, 0, 1] },
+  "NN-LA-KLG-REKS-1": {
+    "fargebidrag": "hsl(222,0%, 64%)",
+    "vekt": [0, 0, 1]
+  },
+  "NN-LA-KLG-REKS-2": {
+    "fargebidrag": "hsl(222,0%, 76%)",
+    "vekt": [0, 0, 1]
+  },
+  "NN-LA-KLG-REKS-3": {
+    "fargebidrag": "hsl(222,0%, 87%)",
+    "vekt": [0, 0, 1]
+  },
 
   "NN-LA-TI-M": { "farge": "hsl(200, 55%, 54%)" },
-  "NN-LA-TI-M-D": { "farge": "hsl(200, 60%, 70%)" },
-  "NN-LA-TI-M-S": { "farge": "hsl(200, 60%, 90%)" },
-  "NN-LA-TI-M-A": { "farge": "hsl(200, 33%, 90%)" },
+  "NN-LA-TI-M-D": { "farge": "hsl(200, 60%, 40%)" },
+  "NN-LA-TI-M-S": { "farge": "hsl(200, 70%, 60%)" },
+  "NN-LA-TI-M-A": { "farge": "hsl(200, 80%, 70%)" },
 
   "NN-LA-KLG-IYK": {
     "farge": "hsl(210, 45%, 60%)",
     "farge0": "hsl(177, 11%, 60%)"
   },
-  "NN-LA-KLG-IYK-4": { "fargebidrag": "hsl(210, 45%, 45%)", "vekt": [1, 1, 0] },
-  "NN-LA-KLG-IYK-3": { "fargebidrag": "hsl(199, 33%, 50%)", "vekt": [1, 1, 0] },
-  "NN-LA-KLG-IYK-2": { "fargebidrag": "hsl(188, 21%, 55%)", "vekt": [1, 1, 0] },
-  "NN-LA-KLG-IYK-1": { "fargebidrag": "hsl(177, 11%, 60%)", "vekt": [1, 1, 0] },
+  "NN-LA-KLG-IYK-4": {
+    "farge": "hsl(210, 45%, 45%)",
+    "fargebidrag": "hsl(210, 45%, 45%)",
+    "vekt": [1, 1, 0]
+  },
+  "NN-LA-KLG-IYK-3": {
+    "farge": "hsl(210, 35%, 50%)",
+    "fargebidrag": "hsl(199, 33%, 50%)",
+    "vekt": [1, 1, 0]
+  },
+  "NN-LA-KLG-IYK-2": {
+    "farge": "hsl(210, 25%, 75%)",
+    "fargebidrag": "hsl(188, 21%, 55%)",
+    "vekt": [1, 1, 0]
+  },
+  "NN-LA-KLG-IYK-1": {
+    "farge": "hsl(210, 15%, 90%)",
+    "fargebidrag": "hsl(177, 11%, 60%)",
+    "vekt": [1, 1, 0]
+  },
 
   "NN-LA-KLG-VE": {
     "farge0": "hsl(77, 51%, 60%)",
     "farge": "hsl(27, 11%, 60%)"
   },
-  "NN-LA-KLG-VE-1": { "fargebidrag": "hsl(77, 31%, 66%)", "vekt": [1, 1, 1] },
-  "NN-LA-KLG-VE-2": { "fargebidrag": "hsl(66, 22%, 66%)", "vekt": [1, 1, 1] },
-  "NN-LA-KLG-VE-3": { "fargebidrag": "hsl(55, 15%, 66%)", "vekt": [1, 1, 1] },
-  "NN-LA-KLG-VE-4": { "fargebidrag": "hsl(33, 11%, 66%)", "vekt": [1, 1, 1] },
+  "NN-LA-KLG-VE-1": {
+    "farge": "hsl(97, 81%, 46%)",
+    "fargebidrag": "hsl(77, 81%, 46%)",
+    "vekt": [1, 1, 1]
+  },
+  "NN-LA-KLG-VE-2": {
+    "farge": "hsl(97, 71%, 62%)",
+    "fargebidrag": "hsl(66, 32%, 66%)",
+    "vekt": [1, 1, 1]
+  },
+  "NN-LA-KLG-VE-3": {
+    "farge": "hsl(97, 61%, 77%)",
+    "fargebidrag": "hsl(55, 25%, 66%)",
+    "vekt": [1, 1, 1]
+  },
+  "NN-LA-KLG-VE-4": {
+    "farge": "hsl(97, 51%, 90%)",
+    "fargebidrag": "hsl(33,  1%, 66%)",
+    "vekt": [1, 1, 1]
+  },
 
   "NN-LA-KLG-VP-1": { "fargebidrag": "hsl(33, 55%, 100%)", "vekt": 0 },
-  "NN-LA-KLG-VP-2": { "fargebidrag": "hsl(165, 41%, 35%)", "vekt": [1, 1, 0] },
+  "NN-LA-KLG-VP-2": { "fargebidrag": "hsl(265, 41%, 35%)", "vekt": [1, 1, 0] },
 
   "NN-LA-KLG-KA-1": {
     "farge": "#5050ff",
-    "fargebidrag": "hsl(77, 44%, 55%)",
-    "vekt": [1, 1, 0.1]
+    "fargebidrag": "hsl(77, 24%, 77%)",
+    "vekt": [1, 0, 0.1]
   },
   "NN-LA-KLG-KA-2": {
-    "farge": "#fff",
+    "farge": "hsl(120, 0%, 95%)",
     "fargebidrag": "hsl(77, 11%, 55%)",
-    "vekt": [1, 1, 0.1]
+    "vekt": [1, 0, 0.1]
   },
   "NN-LA-KLG-AI-1": {
-    "farge": "#fff",
+    "farge": "hsl(120, 0%, 95%)",
     "fargebidrag": "hsl(0, 0%, 100%)",
     "vekt": 0
   },
@@ -158,7 +202,7 @@
   },
 
   "NN-LA-KLG-AIKS-1": {
-    "farge": "#fff",
+    "farge": "hsl(120, 0%, 95%)",
     "fargebidrag": "hsl(0, 0%, 100%)",
     "vekt": 0
   },
@@ -177,30 +221,34 @@
     "farge0": "hsl(225, 0%, 66%)",
     "farge": "hsl(225, 51%, 66%)"
   },
-  "NN-LA-KLG-IP-1": { "fargebidrag": "hsl(105, 0%, 100%)", "vekt": 0 },
-  "NN-LA-KLG-IP-2": { "fargebidrag": "hsl(225, 25%, 66%)", "vekt": [2, 1, 0] },
-  "NN-LA-KLG-IP-3": { "fargebidrag": "hsl(225, 51%, 66%)", "vekt": [2, 1, 0] },
+  "NN-LA-KLG-IP-1": {
+    "farge": "hsl(120, 0%, 95%)",
+    "fargebidrag": "hsl(105, 0%, 100%)",
+    "vekt": 0
+  },
+  "NN-LA-KLG-IP-2": { "fargebidrag": "hsl(225, 45%, 66%)", "vekt": [2, 1, 0] },
+  "NN-LA-KLG-IP-3": { "fargebidrag": "hsl(225, 61%, 66%)", "vekt": [2, 1, 0] },
 
   "NN-LA-KLG-BP": { "farge": "hsl(205, 50%, 95%)" },
   "NN-LA-KLG-BP-1": {
-    "farge": "hsl(110, 10%, 50%)",
+    "farge": "hsl(120, 0%, 95%)",
     "fargebidrag": "hsl(0, 0%, 80%)",
     "vekt": 0
   },
   "NN-LA-KLG-BP-2": {
     "farge": "hsl(205, 50%, 75%)",
-    "fargebidrag": "hsl(205, 50%, 95%)",
+    "fargebidrag": "hsl(205, 80%, 95%)",
     "vekt": [1, 1, 4]
   },
 
   "NN-LA-KLG-JP-1": {
-    "farge": "hsl(120, 0%, 100%)",
+    "farge": "hsl(120, 0%, 95%)",
     "fargebidrag": "hsl(0, 0%, 100%)",
     "vekt": 0
   },
   "NN-LA-KLG-JP-2": {
-    "farge": "hsl(20, 65%, 60%)",
-    "fargebidrag": "hsl(20, 75%, 65%)",
+    "farge": "hsl(20, 85%, 60%)",
+    "fargebidrag": "hsl(20, 95%, 65%)",
     "vekt": [2, 1, 0.1]
   }
 }
