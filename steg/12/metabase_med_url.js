@@ -59,11 +59,15 @@ function urlPåGraf(node) {
 
 function urlPåGradient(node) {
   if (!node.gradient) return
-  Object.keys(node.gradient).forEach(pkode => {
-    const grad = node.gradient[pkode]
-    grad.url = url(pkode)
-    Object.keys(grad.barn).forEach(kode => {
-      grad.barn[kode].url = url(kode)
+  Object.keys(node.gradient).forEach(domenekode => {
+    const domenenode = node.gradient[domenekode]
+    domenenode.url = url(domenekode)
+    Object.keys(domenenode.barn).forEach(gradientkode => {
+      const gradientnode = domenenode.barn[gradientkode]
+      gradientnode.url = url(gradientkode)
+      gradientnode.trinn.forEach(trinn => {
+        trinn.url = url(trinn.kode)
+      })
     })
   })
 }
