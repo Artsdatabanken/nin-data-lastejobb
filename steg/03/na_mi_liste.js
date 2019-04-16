@@ -36,6 +36,7 @@ for (let kode of Object.keys(alle)) {
   if (parts[1] & !node.infoUrl) node.infoUrl = config.infoUrl.nin + parts[1]
 
   if (kode === "NN-NA-TI-T1-E-1") debugger
+  kode = kode.replace("LKM-S3-", "LKM-S3")
   if (overrides[kode]) node.foreldre = overrides[kode]
   noder[kode] = node
 }
