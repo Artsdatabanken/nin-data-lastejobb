@@ -41,10 +41,10 @@ function bildefil(url, basename) {
 
 function finnReserverbilder(basename) {
   Object.keys(tre).forEach(xkode => {
-    if (xkode === "~") debugger
     const node = tre[xkode]
     const maps = filindeks[node.url]
     if (maps && maps[basename + ".jpg"]) return // Already have an image
+    if (maps && maps[basename + ".png"]) return // Already have an image
     const barn = barnAv[xkode]
     if (!barn) return
     barn.sort((a, b) => a > b)
@@ -62,6 +62,7 @@ function finnReserverbilder(basename) {
 }
 
 function dupliser(kildeUrl, bildefilnavn, målUrl) {
+  if (målUrl.indexOf("Buskerud") >= 0) debugger
   script.push(`cp -n ${kildeUrl}/${bildefilnavn} ${målUrl}/`)
   log.warn(`cp -n ${kildeUrl}/${bildefilnavn} ${målUrl}/`)
 }
