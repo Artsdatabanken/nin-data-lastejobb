@@ -31,11 +31,16 @@ function makeRange(seq) {
   return seq.join("")
 }
 
+function hack(kode) {
+  Object.entries(replace).forEach(([key, value]) => {
+    kode = kode.replace(key, value)
+  })
+  return kode
+}
+
 function decode(mii) {
   mi = mii.toUpperCase()
-  Object.entries(replace).forEach(([key, value]) => {
-    mi = mi.replace(key, value)
-  })
+  mi = hack(mi)
   const splitPos = mi.indexOf("-")
   var kode = mi.substring(0, splitPos)
   var verdi = mi.substring(splitPos + 1)
@@ -48,7 +53,7 @@ function decode(mii) {
 }
 
 rows.forEach(row => {
-  const na = "NN-NA-TI-" + row["grunntype_kode"].replace("NA-", "")
+  let na = "NN-NA-TI-" + row["grunntype_kode"].replace("NA-", "")
   if (!(na in nin_liste)) return (ukjent_nin[na] = (ukjent_nin[na] || 0) + 1)
   for (var i = 1; i <= 6; i++) {
     const e = row["lkm_basistrinn" + i]
@@ -56,13 +61,14 @@ rows.forEach(row => {
     if (e.startsWith("HS*")) return // Se bort fra hovedtypetilpasset
     const list = decode(e)
     list.forEach(mi => {
-      const hackKode = mi.replace("S3", "S3-")
-      if (!(hackKode in mi_liste)) {
-        log.warn(mi, hackKode)
+      if (mi.indexOf("S3-") >= 0) debugger
+      if (!(mi in mi_liste)) {
+        debugger
+        log.warn(mi, mi)
         return (ukjent_mi[mi] = (ukjent_mi[mi] || 0) + 1)
       }
       if (!r[na]) r[na] = []
-      r[na].push(hackKode)
+      r[na].push(mi)
     })
   }
 })
