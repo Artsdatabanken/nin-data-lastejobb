@@ -5,6 +5,8 @@ const sqlite3 = require("sqlite3")
 const fs = require("fs")
 var zlib = require("zlib")
 
+return false // No longer in use - transitioned to flat files
+
 const sqliteFilePath = config.getBuildPath("metabase", ".sqlite")
 if (fs.existsSync(sqliteFilePath)) fs.unlinkSync(sqliteFilePath)
 
