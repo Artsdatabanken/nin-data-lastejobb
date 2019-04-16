@@ -2,7 +2,12 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 var PolygonLookup = require("polygon-lookup")
 
-let kommuner = io.lesDatafil("LAU2_2018", ".geojson")
+let basisdata = io.lesDatafil(
+  "Basisdata_0000_Norge_25833_Kommuner_GEOJSON",
+  ".geojson"
+)
+const kommuner = basisdata["administrative_enheter.kommune"]
+
 let vo = io.lesDatafil("vv_verneområde_geojson")
 
 var lookup = new PolygonLookup(kommuner)
@@ -20,7 +25,7 @@ function koblePåKommune(vo) {
     const punkt = nater[i]
     var poly = lookup.search(punkt[0], punkt[1])
     if (poly) {
-      const kommunenummer = poly.properties.LAU_CODE.toString().padStart(4, "0")
+      const kommunenummer = poly.properties.kommunenummer
       hits[kommunenummer] = 1
       treff++
     }
