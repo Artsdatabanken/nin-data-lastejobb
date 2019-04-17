@@ -7,7 +7,7 @@ const typesystem = require("@artsdatabanken/typesystem")
 let full = io.lesDatafil("full")
 let hierarki = io.lesDatafil("kodehierarki")
 const barnAv = hierarki.barn
-const skalPropageresNed = []
+const skalPropageresNed = {}
 
 Object.keys(full).forEach(kode => lagGrafkoblinger(kode, full[kode]))
 Object.keys(full).forEach(kode => lagGradientPåSegSelv(kode, full[kode]))
@@ -34,6 +34,7 @@ function lagGradientPåSegSelv(kode, node) {
 }
 
 function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
+  //  if (kodeFra === "OR-KV" || kodeTil === "OR-KV") debugger
   if (!kant)
     throw new Error(
       "Mangler navn på kant i relasjon fra " + kodeFra + " til " + kodeTil
@@ -53,7 +54,6 @@ function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
   if (!nodeFra.graf) nodeFra.graf = {}
   let kobling = Object.assign({}, metadata, tilBarn(nodeTil))
   kobling.type = nodeTil.type
-  if (kobling.kant === "Datasett" && nodeFra.graf["Datakilde"]) return
   if (!nodeFra.graf[kant]) nodeFra.graf[kant] = {}
   if (nodeTil.type === "flagg" && kobling.kant !== "Datasett") {
     if (!nodeFra.flagg) nodeFra.flagg = {}
@@ -79,32 +79,35 @@ function lagGrafkoblingerTilAlleBarna(
   metadata,
   erSubset
 ) {
-  if (lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset)) {
-    const barna = barnAv[kodeFra] || []
-    barna.forEach(kodeFraBarn => {
-      lagGrafkoblingerTilAlleBarna(
-        kodeFraBarn,
-        kodeTil,
-        kant,
-        metadata,
-        erSubset
-      )
-    })
-  }
+  if (!lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset)) return
+  const barna = barnAv[kodeFra] || []
+  barna.forEach(kodeFraBarn => {
+    lagGrafkoblingerTilAlleBarna(kodeFraBarn, kodeTil, kant, metadata, erSubset)
+  })
 }
 
 function propagerGrafkoblinger() {
-  skalPropageresNed.forEach(e => {
-    const barna = barnAv[e.kode] || []
-    barna.forEach(barnkode =>
-      lagGrafkoblingerTilAlleBarna(
-        barnkode,
-        e.tilKode,
-        e.kantRetur,
-        e,
-        e.erSubset
-      )
-    )
+  Object.entries(skalPropageresNed).forEach(([kode, relasjoner]) => {
+    Object.entries(relasjoner).forEach(([relasjon, kanter]) => {
+      const barna = barnAv[kode] || []
+      barna.forEach(barnkode => {
+        const barnet = full[barnkode]
+        if (barnet.graf && barnet.graf[relasjon]) {
+          debugger
+          return
+        }
+
+        kanter.forEach(e =>
+          lagGrafkoblingerTilAlleBarna(
+            barnkode,
+            e.kode,
+            e.kantRetur,
+            e,
+            e.erSubset
+          )
+        )
+      })
+    })
   })
 }
 
@@ -121,8 +124,11 @@ function lagGrafkoblinger(kode, node) {
         e,
         e.kantReturFraAlleBarna && e.erSubset
       )
-      if (e.kantReturFraAlleBarna)
-        skalPropageresNed.push({ ...e, tilKode: kode })
+      if (e.kantReturFraAlleBarna) {
+        if (!skalPropageresNed[e.kode]) skalPropageresNed[e.kode] = {}
+        const barn = skalPropageresNed[e.kode]
+        barn[e.kant] = [...(barn[e.kant] || []), { ...e, kode }]
+      }
     }
   })
   delete node.relasjon
