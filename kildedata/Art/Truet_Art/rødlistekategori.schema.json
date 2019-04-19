@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "typer": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kode": {
+            "type": "string"
+          },
+          "tittel": {
+            "type": "object",
+            "properties": {
+              "nb": {
+                "type": "string"
+              }
+            }
+          },
+          "ingress": {
+            "type": "string"
+          },
+          "infoUrl": {
+            "type": "string"
+          },
+          "sortering": {
+            "type": "number"
+          }
+        },
+        "required": ["kode", "tittel"]
+      }
+    }
+  }
+}
