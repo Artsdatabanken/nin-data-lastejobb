@@ -1,0 +1,20 @@
+{
+  "$schema": "./rødlistekategori.schema.json",
+  "typer": [
+    {
+      "kode": "RL",
+      "tittel": { "nb": "Truet art/natur" },
+      "ingress": "Truede arter er arter som står i fare for å dø ut. Den offisielle oversikten over hvilke arter dette gjelder gis i den nasjonale rødlista. Fjellrev, ulv og lomvi er blant artene som er kritisk truet.",
+      "infoUrl": "https://no.wikipedia.org/wiki/IUCNs_r%C3%B8dliste#R%C3%B8dlistestatus",
+      "sortering": 5
+    },
+    { "kode": "RL-RE", "sortering": 1, "tittel": { "nb": "Regionalt utdødd" } },
+    { "kode": "RL-CR", "sortering": 2, "tittel": { "nb": "Kritisk truet" } },
+    { "kode": "RL-EN", "sortering": 3, "tittel": { "nb": "Sterkt truet" } },
+    { "kode": "RL-VU", "sortering": 4, "tittel": { "nb": "Sårbar" } },
+    { "kode": "RL-NT", "sortering": 5, "tittel": { "nb": "Nær truet" } },
+    { "kode": "RL-LC", "sortering": 6, "tittel": { "nb": "Ikke rødlistet" } },
+    { "kode": "RL-NA", "sortering": 7, "tittel": { "nb": "Ikke vurdert" } },
+    { "kode": "RL-DD", "sortering": 8, "tittel": { "nb": "Datamangel" } }
+  ]
+}
