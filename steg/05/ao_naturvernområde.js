@@ -3,7 +3,7 @@ const log = require("log-less-fancy")()
 const config = require("../../config")
 const typesystem = require("@artsdatabanken/typesystem")
 
-let kommuner = io.lesDatafil("inn_ao_kommune")
+let kommuner = io.lesDatafil("kommune")
 let fylker = io.lesDatafil("inn_ao_fylke")
 
 const r = {}
