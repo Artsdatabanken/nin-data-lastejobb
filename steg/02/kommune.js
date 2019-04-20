@@ -9,8 +9,8 @@ const kommuneNummerTilKode = knr =>
 let inn_kommune = io.readJson("./kommune-data/kommune.json").items
 
 const r = {}
-Object.entries(inn_kommune).forEach(([knr, item]) => {
-  const kode = kommuneNummerTilKode(knr)
+inn_kommune.forEach(item => {
+  const kode = kommuneNummerTilKode(item.code)
   item.tittel = { nb: item.itemLabel.replace(" kommune", "") }
   item.nivå = "kommune"
   item.naboer = item.naboer.map(nabo => kommuneNummerTilKode(nabo))
