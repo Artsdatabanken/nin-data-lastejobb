@@ -6,7 +6,7 @@ const log = require("log-less-fancy")()
 const r = {}
 flett("vv_naturvernområde")
 flett("inn_ao_fylke")
-flett("inn_ao_kommune")
+flett("kommune")
 flett("ao_naturvernområde")
 flett("organisasjon")
 flett("ar_diagnostisk_art")
