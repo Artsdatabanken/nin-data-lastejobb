@@ -1,3 +1,4 @@
+data_
 data/
 cache/
 build/
@@ -7,4 +8,4 @@ kildedata/raster_index.json
 log/
 nin-data/
 kommune-data/
-
+naturvern-data/

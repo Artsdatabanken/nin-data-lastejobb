@@ -1,7 +1,6 @@
 if (!process.env.DEBUG) process.env.DEBUG = "*"
 const path = require("path")
 const datakilde = require("./datakilde")
-const cachePath = "./cache"
 
 const config = {
   // Navnet på attributtet som inneholder data for noden selv
@@ -15,9 +14,6 @@ const config = {
   },
   kildedataPathOld: "./kildedata",
   kildedataPath: "./nin-data",
-  getCachePath: function(relPath) {
-    return cachePath + "/" + relPath + "/"
-  },
   dataRoot: "./data",
   buildRoot: "./build",
   getDataPath: function(relPath, extension = ".json") {
