@@ -40,4 +40,4 @@ function moveKey(o, src, destPath) {
   delete o[src]
 }
 
-io.skrivDatafil(__filename, r)
+io.skrivDatafil("kommune.json", r)
