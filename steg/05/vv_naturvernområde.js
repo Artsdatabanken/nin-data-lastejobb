@@ -1,54 +1,13 @@
-const io = require("../../lib/io")
-const log = require("log-less-fancy")()
+const { io, log } = require("lastejobb")
 const config = require("../../config")
 const typesystem = require("@artsdatabanken/typesystem")
 
-let vo = io.lesDatafil("vv_med_kommune")
-let vvKoder = io.lesKildedatafilOld("Naturvernområde/type")
-
-function invert(o) {
-  let r = {}
-  Object.keys(vvKoder).map(key => {
-    const o = vvKoder[key]
-    const tittel = o.tittel.nb.toLowerCase()
-    r[tittel] = key
-  })
-  return r
-}
-
-const tittel2Kode = invert(vvKoder)
-
-let r = {}
-
-function polygonArea(points) {
-  const numPoints = points.length
-  let area = 0
-  let prev = points[numPoints - 1]
-  for (let i = 0; i < numPoints; i++) {
-    let cur = points[i]
-    area += (prev[0] + cur[0]) * (prev[1] - cur[1])
-    prev = cur
-  }
-  return area / 2
-}
-
-function multiPolygonArea(geometries) {
-  let area = 0
-  if (Array.isArray(geometries[0][0]))
-    geometries.forEach(geom => (area += multiPolygonArea(geom)))
-  else return polygonArea(geometries)
-  return area
-}
+let vo = io.readJson("./naturvern/naturvernområde.json")
 
 function kodeFraNavn(navn) {
   const kode = tittel2Kode[navn.toLowerCase()]
   if (!kode) throw new Error(`Finner ikke kode for '${navn}'`)
   return kode
-}
-
-function ordNummer(s, index) {
-  if (!s) return null
-  return s.split(" ")[index]
 }
 
 function relasjon(e, kant, kode, kantRetur, erSubset = true) {
@@ -61,10 +20,6 @@ function relasjon(e, kant, kode, kantRetur, erSubset = true) {
   }
   if (erSubset) rel.erSubset = true
   e.relasjon.push(rel)
-}
-
-function førsteBokstavStor(s) {
-  return s[0].toUpperCase() + s.slice(1)
 }
 
 function fjernRelasjon(e, kode) {
@@ -90,47 +45,44 @@ function kobleForvaltningsmyndighet(kode, e) {
 }
 
 function map(vo) {
-  const props = vo.properties
-  const iid = parseInt(props.IID.substring(2))
-  const kode = typesystem.verneområde.leggTilPrefiks(iid)
+  let r = {}
+  const kode = vo.kode
   let e = {
     tittel: {
-      nb: props.OMRADENAVN + " " + props.VERNEFORM.toLowerCase()
+      nb: vo.navn.offisielt
     },
-    infoUrl: config.infoUrl.verneområde + props.IID,
+    infoUrl: vo.lenke.naturbase, // TODO: Fjern
+    lenke: vo.lenke,
     relasjon: [],
     data: {
-      areal: Math.round(multiPolygonArea(vo.geometry.coordinates)),
-      vernedato: props.VERNEDATO,
-      verneform: props.VERNEFORM.toLowerCase(),
-      verneplan: props.VERNEPLAN.toLowerCase(),
-      forvaltningsmyndighet: props.FORVALTNI.toLowerCase(),
-      iucn: ordNummer(props.IUCN, 1)
+      ...vo,
+      areal: Math.round(multiPolygonArea(vo.geometry.coordinates))
     }
   }
-  e.betegnelse = { nb: e.data.verneform.toLowerCase() }
+  e.betegnelse = { nb: vo.verneform.navn.nb }
 
-  relasjon(e, "Verneform", kodeFraNavn(e.data.verneform))
-  relasjon(e, "Verneplan", kodeFraNavn(e.data.verneplan))
+  relasjon(e, "Verneform", vo.verneform.kode)
+  relasjon(e, "Verneplan", vo.verneplan.kode)
   relasjon(
     e,
     "forvaltes av",
-    kodeFraNavn("Forvaltes av " + e.data.forvaltningsmyndighet.toLowerCase()),
+    kodeFraNavn(vo.forvaltning.ansvarlig.tittel.nb),
     "forvalter"
   )
-  if (props.TRUETVURD) {
-    e.data.truetvurdering = props.TRUETVURD
-    relasjon(e, "Truet vurdering", kodeForTruet(e.data.truetvurdering))
+  if (vo.vurdering.truet.kode) {
+    relasjon(e, "Truet vurdering", vo.vurdering.truet.kode)
   }
 
-  if (e.data.iucn) relasjon(e, "IUCN", "VV-PA-" + e.data.iucn)
-  relasjon(e, "Ble vernet i år", "VV-VT-" + e.data.vernedato.substring(0, 4))
-  if (new Date(props.DATO_REVID).getFullYear() > 1900)
-    e.data.revisjonsdato = props.DATO_REVID
+  if (vo.vurdering.iucn) relasjon(e, "IUCN", vo.vurdering.iucn.kode)
+  if (vo.revisjon.dato.førstvernet)
+    relasjon(
+      e,
+      "Ble vernet i år",
+      "VV-VT-" + vo.revisjon.dato.førstvernet.substring(0, 4)
+    )
 
-  // e.foreldre.push(typesystem.verneområde.prefiks)
-  if (props.kommune) {
-    props.kommune.forEach(kommune => {
+  if (vo.kommune) {
+    vo.kommune.forEach(kommune => {
       const fnr = kommune.substring(0, 2)
       const knr = kommune.substring(2)
       relasjon(e, "Ligger i kommune", "VV-AO-" + fnr + "-" + knr)
@@ -141,42 +93,13 @@ function map(vo) {
   r[kode] = e
 }
 
-function groupByKeys(filterFn) {
-  let r = {}
-  Object.keys(vo).forEach(key => {
-    const o = vo[key]
-    const k = filterFn(o)
-    r[k] = r[k] + 1 || 1
-  })
-  return r
-}
-
-let manglerNøkler = false
-
 const år = {}
-Object.keys(vo).forEach(key => {
-  const o = vo[key]
-  const y = o.properties.VERNEDATO.substring(0, 4)
+vo.items.forEach(o => {
+  const vernedato = o.revisjon.dato.førstvernet || o.revisjon.dato.vernet
+  if (!vernedato) return log.warn("Mangler dato for vern: " + o.lenke.naturbase)
+  const y = vernedato.substring(0, 4)
   år[y] = år[y] + 1 || 1
 })
 
-Object.keys(vo).forEach(key => map(vo[key]))
-
+vo.items.forEach(vo => map(vo))
 io.skrivDatafil(__filename, r)
-
-function kodeForTruet(truet) {
-  switch (truet) {
-    case "Ikke truet":
-      return "VV-TV-IT"
-    case "Ukjent":
-      return "VV-TV-U"
-    case "Truet":
-      return "VV-TV-T"
-    case "Null":
-      return "VV-TV-N"
-    case "Ikke vurdert":
-      return "VV-TV-N"
-    default:
-      throw new Error("Truet: " + truet + "?")
-  }
-}

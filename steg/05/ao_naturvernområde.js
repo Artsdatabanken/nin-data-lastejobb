@@ -1,28 +1,16 @@
 const io = require("../../lib/io")
-const log = require("log-less-fancy")()
-const config = require("../../config")
-const typesystem = require("@artsdatabanken/typesystem")
 
-let kommuner = io.lesDatafil("kommune")
-let fylker = io.lesDatafil("inn_ao_fylke")
+let kommuner = io.readJson("./kommune-data/kommune.json").items
+let fylker = io.readJson("./kommune-data/fylke.json").items
 
 const r = {}
 
-function lagRelasjonTilVerneområdeRot() {
-  return {
-    kode: typesystem.verneområde.prefiks + "-AO",
-    kant: "verneområde",
-    kantRetur: "fylke",
-    erSubset: true
-  }
-}
-
 function lagKoder(kilde, nivå) {
-  Object.keys(kilde).forEach(key => {
-    const o = kilde[key]
+  kilde.forEach(o => {
+    const key = "AO-" + o.code.replace("NO-", "")
     const e = {
       type: "flagg",
-      tittel: { nb: "Naturvernområde i " + o.tittel.nb + " " + nivå }
+      tittel: { nb: "Naturvernområde i " + o.itemLabel + " " + nivå }
     }
     if (nivå === "fylke") e.foreldre = ["VV-AO"]
     r["VV-" + key.replace("_", "-")] = e
@@ -31,10 +19,10 @@ function lagKoder(kilde, nivå) {
 }
 
 function lagFylkesmann(kilde) {
-  Object.keys(kilde).forEach(key => {
-    const o = kilde[key]
+  kilde.forEach(o => {
+    const key = "AO-" + o.code.replace("NO-", "")
     const e = {
-      tittel: { nb: "Fylkesmannen i " + o.tittel.nb },
+      tittel: { nb: "Fylkesmannen i " + o.itemLabel },
       foreldre: ["VV-FM-FM"],
       relasjon: [
         {
