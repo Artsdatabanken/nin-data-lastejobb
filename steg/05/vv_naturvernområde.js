@@ -1,14 +1,6 @@
 const { io, log } = require("lastejobb")
-const config = require("../../config")
-const typesystem = require("@artsdatabanken/typesystem")
 
 let vo = io.readJson("./naturvern/naturvernområde.json")
-
-function kodeFraNavn(navn) {
-  const kode = tittel2Kode[navn.toLowerCase()]
-  if (!kode) throw new Error(`Finner ikke kode for '${navn}'`)
-  return kode
-}
 
 function relasjon(e, kant, kode, kantRetur, erSubset = true) {
   for (const rl of e.relasjon) if (rl.kode === kode) return
@@ -31,7 +23,7 @@ function fjernRelasjon(e, kode) {
 }
 
 function kobleForvaltningsmyndighet(kode, e) {
-  if (e.data.forvaltningsmyndighet !== "fylkesmann") return
+  if (e.forvaltning.ansvarlig.kode !== "VV-FM-FM") return
   const regexFylke = /VV-AO-(\d\d)/g
   let fylke = []
   e.relasjon.forEach(r => {
@@ -52,23 +44,15 @@ function map(vo) {
       nb: vo.navn.offisielt
     },
     infoUrl: vo.lenke.naturbase, // TODO: Fjern
-    lenke: vo.lenke,
     relasjon: [],
-    data: {
-      ...vo,
-      areal: Math.round(multiPolygonArea(vo.geometry.coordinates))
-    }
+    ...vo
   }
-  e.betegnelse = { nb: vo.verneform.navn.nb }
-
-  relasjon(e, "Verneform", vo.verneform.kode)
-  relasjon(e, "Verneplan", vo.verneplan.kode)
-  relasjon(
-    e,
-    "forvaltes av",
-    kodeFraNavn(vo.forvaltning.ansvarlig.tittel.nb),
-    "forvalter"
-  )
+  if (vo.verneform) {
+    e.betegnelse = { nb: vo.verneform.navn.nb }
+    relasjon(e, "Verneform", vo.verneform.kode)
+  }
+  if (vo.verneplan) relasjon(e, "Verneplan", vo.verneplan.kode)
+  relasjon(e, "forvaltes av", vo.forvaltning.ansvarlig.kode, "forvalter")
   if (vo.vurdering.truet.kode) {
     relasjon(e, "Truet vurdering", vo.vurdering.truet.kode)
   }
@@ -81,8 +65,8 @@ function map(vo) {
       "VV-VT-" + vo.revisjon.dato.førstvernet.substring(0, 4)
     )
 
-  if (vo.kommune) {
-    vo.kommune.forEach(kommune => {
+  if (vo.geografi.kommune) {
+    vo.geografi.kommune.forEach(kommune => {
       const fnr = kommune.substring(0, 2)
       const knr = kommune.substring(2)
       relasjon(e, "Ligger i kommune", "VV-AO-" + fnr + "-" + knr)
@@ -102,4 +86,4 @@ vo.items.forEach(o => {
 })
 
 vo.items.forEach(vo => map(vo))
-io.skrivDatafil(__filename, r)
+io.skrivDatafil(__filename, vo)
