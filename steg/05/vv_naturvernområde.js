@@ -30,7 +30,6 @@ function kobleForvaltningsmyndighet(kode, e) {
     const match = regexFylke.exec(r.kode)
     if (match) fylke.push(match[1])
   })
-  //  if (kode === "VV_171") log.warn(fylke)
   if (fylke.length !== 1) return
   relasjon(e, "forvaltes av", "VV-FM-FM-" + fylke[0], "forvalter")
   fjernRelasjon(e, "VV-FM-FM")
