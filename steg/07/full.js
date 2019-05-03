@@ -1,13 +1,11 @@
-const config = require("../../config")
 const typesystem = require("@artsdatabanken/typesystem")
-const io = require("../../lib/io")
-const log = require("log-less-fancy")()
+const { io, json, log } = require("lastejobb")
 
 const r = {}
 flett("vv_naturvernområde")
+flett("naturvern_typer")
 flett("inn_ao_fylke")
 flett("kommune")
-flett("ao_naturvernområde")
 flett("organisasjon")
 flett("ar_diagnostisk_art")
 flett("na_med_basistrinn_relasjon")
@@ -66,7 +64,6 @@ function flettAttributter(o, props = {}) {
   for (let key of Object.keys(o)) {
     let kode = key.replace("_", "-")
     kode = kode.toUpperCase()
-    if (kode.startsWith("NN-NA-V")) debugger
     const node = Object.assign({}, r[kode], o[key], props)
     r[kode] = node
   }
@@ -74,15 +71,17 @@ function flettAttributter(o, props = {}) {
 
 function flett(filename, props = {}) {
   var data = io.lesDatafil(filename)
-  flettAttributter(data, props)
+  let o = data
+  if (o.items) o = json.arrayToObject(data.items, { uniqueKey: "kode" })
+  flettAttributter(o, props)
 }
 
 function flettKildedata(filename, props = {}) {
-  var data = io.lesKildedatafil(filename)
+  var data = io.readJson("./nin-data/" + filename + ".json")
   flettAttributter(data, props)
 }
 function flettKildedataOld(filename, props = {}) {
-  var data = io.lesKildedatafilOld(filename)
+  var data = io.readJson("./kildedata/" + filename + ".json")
   flettAttributter(data, props)
 }
 
@@ -136,8 +135,8 @@ function sjekkAtTitlerEksisterer() {
   const notitle = []
   for (let key of Object.keys(r)) {
     const node = r[key]
-    if (node.farge) debugger
     if (!node.se) {
+      if (!node.tittel && node.navn) node.tittel = node.navn
       if (!node.tittel) {
         log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
         notitle.push(key)
