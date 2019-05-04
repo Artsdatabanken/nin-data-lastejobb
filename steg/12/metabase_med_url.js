@@ -4,8 +4,6 @@ const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
-let mods = ""
-
 const usedUrls = {}
 
 let tre = io.lesDatafil("metabase_tweaks")
