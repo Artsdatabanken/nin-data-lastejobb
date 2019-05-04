@@ -1,5 +1,3 @@
-const tinycolor = require("tinycolor2")
-const config = require("../../config")
 const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
