@@ -1,14 +1,12 @@
 // @flow
 if (!process.env.DEBUG) process.env.DEBUG = "*"
-const fs = require("fs")
 const { spawnSync } = require("child_process")
-const path = require("path")
 const log = require("log-less-fancy")()
 const { findFiles } = require("./lib/io")
 const config = require("./config")
 
 function exec(jsFile) {
-  log.debug("Kjører " + jsFile)
+  log.debug("================= " + jsFile)
   const r = spawnSync("node", ["--max_old_space_size=2096", `"${jsFile}"`], {
     encoding: "buffer",
     shell: true,

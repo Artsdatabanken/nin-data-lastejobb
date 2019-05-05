@@ -1,13 +1,12 @@
-const config = require("../../config")
 const typesystem = require("@artsdatabanken/typesystem")
-const io = require("../../lib/io")
-const log = require("log-less-fancy")()
+const { io, json, log } = require("lastejobb")
 
 const r = {}
-flett("vv_naturvernområde")
-flett("inn_ao_fylke")
-flett("kommune")
-flett("ao_naturvernområde")
+
+flett("naturvernområde")
+flett("naturvern_typer")
+flettKildedata("kommune/kommune")
+flettKildedata("kommune/fylke")
 flett("organisasjon")
 flett("ar_diagnostisk_art")
 flett("na_med_basistrinn_relasjon")
@@ -24,11 +23,11 @@ flettKildedataOld("rl_rødliste")
 flettKildedataOld("Art/type")
 flettKildedataOld("Art/Fremmed_Art/type")
 flettKildedataOld("Fylke/type")
-flettKildedata("Natur_i_Norge/Landskap/Typeinndeling/type")
-flettKildedata("Natur_i_Norge/Natursystem/type")
-flettKildedata("Natur_i_Norge/Natursystem/Miljøvariabler/type")
+flettKildedata("nin-data/Natur_i_Norge/Landskap/Typeinndeling/type")
+flettKildedata("nin-data/Natur_i_Norge/Natursystem/type")
+flettKildedata("nin-data/Natur_i_Norge/Natursystem/Miljøvariabler/type")
 flettKildedata(
-  "Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/type"
+  "nin-data/Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/type"
 )
 flettKildedataOld("Naturvernområde/type")
 flettKildedataOld("type")
@@ -55,8 +54,7 @@ function overrideDefects() {
       if (!kode.startsWith(m)) return
       const destKode = kode.replace("S3-", "S3")
       node.foreldre[0] = kode === m ? "NN-NA-LKM" : m.replace("S3-", "S3")
-      r[destKode] = node
-      delete r[kode]
+      json.moveKey(r, kode, destKode)
     })
   })
   delete r["NN-NA-LKM-S3"]
@@ -66,23 +64,34 @@ function flettAttributter(o, props = {}) {
   for (let key of Object.keys(o)) {
     let kode = key.replace("_", "-")
     kode = kode.toUpperCase()
-    if (kode.startsWith("NN-NA-V")) debugger
-    const node = Object.assign({}, r[kode], o[key], props)
+    const src = o[key]
+
+    // TEMP HACK
+    json.moveKey(src, "navn", "tittel")
+    if (src.tittel) {
+      if (!src.tittel.nb && src.tittel.nob)
+        json.moveKey(src.tittel, "nob", "nb")
+    }
+    const node = Object.assign({}, r[kode], src, props)
     r[kode] = node
   }
 }
 
 function flett(filename, props = {}) {
   var data = io.lesDatafil(filename)
-  flettAttributter(data, props)
+  let o = data
+  if (o.items) o = json.arrayToObject(data.items, { uniqueKey: "kode" })
+  flettAttributter(o, props)
 }
 
 function flettKildedata(filename, props = {}) {
-  var data = io.lesKildedatafil(filename)
-  flettAttributter(data, props)
+  var data = io.readJson(filename + ".json")
+  let o = data
+  if (o.items) o = json.arrayToObject(data.items, { uniqueKey: "kode" })
+  flettAttributter(o, props)
 }
 function flettKildedataOld(filename, props = {}) {
-  var data = io.lesKildedatafilOld(filename)
+  var data = io.readJson("./kildedata/" + filename + ".json")
   flettAttributter(data, props)
 }
 
@@ -136,7 +145,6 @@ function sjekkAtTitlerEksisterer() {
   const notitle = []
   for (let key of Object.keys(r)) {
     const node = r[key]
-    if (node.farge) debugger
     if (!node.se) {
       if (!node.tittel) {
         log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)

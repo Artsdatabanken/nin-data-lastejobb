@@ -1,5 +1,4 @@
 const tinycolor = require("tinycolor2")
-const config = require("../../config")
 const log = require("log-less-fancy")()
 const io = require("../../lib/io")
 const blandFarger = require("../../lib/fargefunksjon")
@@ -19,7 +18,6 @@ farger = Object.assign(farger, la_farger)
 
 Object.keys(data).forEach(kode => {
   const node = data[kode]
-  const barn = barnAv[kode]
   const f = farger[kode]
   if (!f) return
   node.farge0 = node.farge0 || f.farge0

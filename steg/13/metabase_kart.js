@@ -8,7 +8,6 @@ let hierarki = io.lesDatafil("kodehierarki")
 let filindeks = io.lesDatafil("filindeks")
 const barnAv = hierarki.barn
 
-const brukerEttOgSammeRasterIndexKart = ["NN-LA-TI"]
 let ukjentBbox = 0
 
 addKartformat()
