@@ -3,7 +3,7 @@ const { io, json, log } = require("lastejobb")
 
 const r = {}
 
-flett("vv_naturvernområde")
+flett("naturvernområde")
 flett("naturvern_typer")
 flettKildedata("kommune/kommune")
 flettKildedata("kommune/fylke")
