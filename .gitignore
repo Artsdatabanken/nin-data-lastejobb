@@ -7,5 +7,5 @@ node_modules/
 kildedata/raster_index.json
 log/
 nin-data/
-kommune-data/
-naturvern-data/
+kommune/
+naturvern/
