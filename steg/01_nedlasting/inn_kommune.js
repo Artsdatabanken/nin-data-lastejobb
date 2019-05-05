@@ -1,5 +1,4 @@
-const config = require("../../config")
-const git = require("../../lib/git")
+const { git } = require("lastejobb")
 
 // Download "Natur i Norge" data kildedata - fylke og kommune
 git.clone("https://github.com/Artsdatabanken/kommune-data.git", "kommune")
