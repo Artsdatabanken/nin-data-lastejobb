@@ -1,4 +1,5 @@
 const { io } = require("lastejobb")
+const config = require("../../config")
 const path = require("path")
 
 const baseUrl = "https://data.artsdatabanken.no/"
@@ -9,10 +10,10 @@ let filindeks = io.lesDatafil("filindeks")
 Object.keys(full).forEach(kode => {
   const node = full[kode]
   const filer = filindeks[node.url]
-  node.foto = node.foto || {}
   if (!filer) return
-  add(filer, node, "forside", 408)
+  add(filer, node, "foto", 408)
   add(filer, node, "banner", 950)
+  add(filer, node, "logo", 40)
   addKilde(node)
   addBilder(node, filer)
   // TODO: temp fallback
@@ -27,20 +28,8 @@ function addBilder(node, filer) {
     if (".png.jpg".indexOf(p.ext) < 0) return
     const parts = p.name.split("_")
     let [format, width] = parts
-    switch (width) {
-      case "40":
-        format = "avatar"
-        break
-      case "408":
-        format = "foto"
-        break
-      case "950":
-        format = "banner"
-        break
-    }
-    const mk = format
-    bilde[mk] = bilde[mk] || {}
-    bilde[mk].url = fil
+    bilde[format] = bilde[format] || {}
+    bilde[format].url = config.webserver + node.url + "/" + fil
   })
 }
 
@@ -66,10 +55,11 @@ function urlMedBildeOgMetadata(url) {
 }
 
 function add(filer, node, tag, width) {
-  const basename = "forside_" + width
+  node.bilde = node.bilde || {}
+  const basename = tag + "_" + width
   const imgfile = filer[basename + ".jpg"] || filer[basename + ".png"]
   if (!imgfile) return
-  node.foto[tag] = {
+  node.bilde[tag] = {
     url: baseUrl + node.url + "/" + imgfile.filename
   }
 }
