@@ -9,6 +9,7 @@ let filindeks = io.lesDatafil("filindeks")
 
 Object.keys(full).forEach(kode => {
   const node = full[kode]
+  node.bilde = node.bilde || {}
   const filer = filindeks[node.url]
   if (!filer) return
   add(filer, node, "foto", 408)
@@ -21,7 +22,6 @@ Object.keys(full).forEach(kode => {
 })
 
 function addBilder(node, filer) {
-  node.bilde = node.bilde || {}
   const bilde = node.bilde
   Object.keys(filer).forEach(fil => {
     const p = path.parse(fil)
@@ -34,7 +34,6 @@ function addBilder(node, filer) {
 }
 
 function addKilde(node) {
-  node.bilde = node.bilde || {}
   const bilde = node.bilde
   if (!node.mediakilde) return
   Object.keys(node.mediakilde).forEach(mk => {
