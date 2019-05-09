@@ -1,7 +1,4 @@
 const io = require("../../lib/io")
-const log = require("log-less-fancy")()
-const config = require("../../config")
-const typesystem = require("@artsdatabanken/typesystem")
 const csv = require("../../lib/csv")
 
 const organisasjonTilKode = {}
