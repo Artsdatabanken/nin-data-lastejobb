@@ -1,5 +1,4 @@
-const io = require("../../lib/io")
-const config = require("../../config")
+const { io } = require("lastejobb")
 let inn_filindeks = io.lesDatafil("Natur_i_Norge/Natursystem/inn_filindeks")
 const path = require("path")
 

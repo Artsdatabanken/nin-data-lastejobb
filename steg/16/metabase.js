@@ -1,7 +1,4 @@
-const config = require("../../config")
-const io = require("../../lib/io")
-const log = require("log-less-fancy")()
-const typesystem = require("@artsdatabanken/typesystem")
+const { io } = require("lastejobb")
 
 let tre = io.lesDatafil("metabase_bilder")
 let hierarki = io.lesDatafil("kodehierarki")

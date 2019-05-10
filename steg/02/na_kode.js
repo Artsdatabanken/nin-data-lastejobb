@@ -1,8 +1,9 @@
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 const config = require("../../config")
-let alleKoder = io.lesKildedatafil(config.datakilde.na_koder).data
-let ingress = io.lesKildedatafil(
-  "Natur_i_Norge/Natursystem/Typeinndeling/beskrivelse"
+let alleKoder = io.readJson("./nin-data/" + config.datakilde.na_koder + ".json")
+  .data
+let ingress = io.readJson(
+  "./nin-data/Natur_i_Norge/Natursystem/Typeinndeling/beskrivelse.json"
 )
 
 function kodefix(kode) {
