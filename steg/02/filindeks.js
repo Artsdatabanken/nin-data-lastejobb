@@ -1,5 +1,5 @@
 const { io } = require("lastejobb")
-let inn_filindeks = io.lesDatafil("Natur_i_Norge/Natursystem/inn_filindeks")
+let inn_filindeks = io.lesDatafil("filindeks.json")
 const path = require("path")
 
 // Forventer følgende katalogstruktur på tile serveren:

@@ -2,7 +2,7 @@ return false // No longer in use - transitioned to flat files
 return false // No longer in use - transitioned to flat files
 
 const config = require("../../config")
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
 const sqlite3 = require("sqlite3")
 const fs = require("fs")

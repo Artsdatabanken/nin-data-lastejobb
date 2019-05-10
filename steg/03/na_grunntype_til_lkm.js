@@ -1,7 +1,6 @@
 var JSONStream = require("JSONStream")
 var csv = require("csv")
 const fs = require("fs")
-const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const config = require("../../config")
 

@@ -1,4 +1,4 @@
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 const config = require("../../config")
 const typesystem = require("@artsdatabanken/typesystem")
 
@@ -6,7 +6,9 @@ const typesystem = require("@artsdatabanken/typesystem")
 // Vi ønsker følgende struktur NA_T -> NA_T1 -> NA_T1-E-1 -> NA_T1-C-1 -> NA_T1-1
 // Dette for at grovere nivåer da tar med seg mer spesifikke data og viser også disse dataene.
 
-let grunntyper = io.lesKildedatafil(config.datakilde.na_grunntyper)
+let grunntyper = io.readJson(
+  "nin-data/" + config.datakilde.na_grunntyper + ".json"
+)
 
 let foreldre = {}
 

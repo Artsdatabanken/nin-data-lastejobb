@@ -1,7 +1,7 @@
 const Jimp = require("jimp")
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 
-let koder = io.lesKildedatafilOld("Natur_i_Norge/Landskap/la_index")
+let koder = io.readJson("kildedata/Natur_i_Norge/Landskap/la_index.json")
 let meta = io.lesDatafil("metabase_med_farger")
 let hierarki = io.lesDatafil("kodehierarki")
 const barnAv = hierarki.barn

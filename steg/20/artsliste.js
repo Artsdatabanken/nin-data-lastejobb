@@ -1,8 +1,4 @@
-const config = require("../../config")
-const io = require("../../lib/io")
-const log = require("log-less-fancy")()
-const fs = require("fs")
-const execSync = require("child_process").execSync
+const { io } = require("lastejobb")
 
 let data = io.lesBuildfil("metabase")
 const taxons = readTaxons()

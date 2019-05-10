@@ -1,6 +1,4 @@
-const config = require("../config")
-const io = require("../lib/io")
-const log = require("log-less-fancy")()
+const { io } = require("lastejobb")
 
 const destBase = "/home/grunnkart/tilesdata"
 const srcBase = "/home/grunnkart/staging/assets"

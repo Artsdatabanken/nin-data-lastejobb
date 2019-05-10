@@ -1,8 +1,8 @@
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 const csv = require("../../lib/csv")
 
 const organisasjonTilKode = {}
-let organisasjon = io.lesKildedatafilOld("Datakilde/organisasjon")
+let organisasjon = io.readJson("kildedata/Datakilde/organisasjon.json")
 Object.entries(organisasjon).forEach(([kode, o]) => {
   organisasjonTilKode[o.tittel.nb] = kode
   organisasjonTilKode[kode] = kode

@@ -1,6 +1,4 @@
-const config = require("../../config")
-const io = require("../../lib/io")
-const typesystem = require("@artsdatabanken/typesystem")
+const { io } = require("lastejobb")
 
 // Leser prosedyrekategori for natursystem hovedtyper
 
