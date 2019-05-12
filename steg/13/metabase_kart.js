@@ -15,7 +15,7 @@ normaliserGradienter()
 if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
 zoomlevels(typesystem.rotkode)
 settDefaultVisning()
-io.skrivDatafil(__filename, tre)
+io.skrivDatafil(tre)
 
 function avrund1d(num) {
   return Math.round(parseFloat(num) * 1000) / 1000
@@ -47,6 +47,7 @@ function settDefaultVisning() {
 function addKartformat() {
   Object.keys(tre).forEach(xkode => {
     const node = tre[xkode]
+    if (sladd(node.url)) return
     const target = tre[xkode]
     const maps = filindeks[node.url]
     if (!maps) return
@@ -131,4 +132,16 @@ function zoomlevels(kode, bbox, zoom) {
       if (!barn) console.error(kode, bbox, zoom, barnAv[kode])
     }
   })
+}
+
+function sladd(url) {
+  if (!url) return false
+  if (url.indexOf("Regional_naturvariasjon") >= 0) return false
+  if (url.indexOf("Erosjon") >= 0) return false
+  if (url.indexOf("Finmat") >= 0) return false
+  if (url.indexOf("Sediment") >= 0) return false
+  if (url.indexOf("Ultrama") >= 0) return false
+  if (url.indexOf("Kalk") >= 0) return false
+  if (url.indexOf("Natur_i_Norge/Natursystem") >= 0) return true
+  return false
 }
