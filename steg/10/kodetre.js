@@ -39,8 +39,4 @@ function lagDelAv(node) {
   return delAv
 }
 
-function finn(kode) {
-  return r.filter(node => node.kode === kode)
-}
-
 io.skrivBuildfil(__filename, r)
