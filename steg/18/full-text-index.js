@@ -43,7 +43,6 @@ function pushTittel(hit, score, tittel) {
 
 Object.keys(tre).forEach(kode => {
   const node = tre[kode]
-  if (kode === "NN-LA") debugger
   const hit = {
     kode: node.kode,
     url: node.url,
