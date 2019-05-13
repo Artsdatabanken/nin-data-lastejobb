@@ -46,7 +46,7 @@ importer(
 
 function importer(csvFil, utFil) {
   const kildefil = config.kildedataPath + "/" + csvFil
-  const writePath = config.getDataPath(utFil + ".csv.json")
+  const writePath = "data/" + utFil + ".csv.json"
   log.info("Import " + csvFil + " to " + writePath)
   new CsvToJson().convert(kildefil, writePath)
 }

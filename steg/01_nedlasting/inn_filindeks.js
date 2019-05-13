@@ -3,7 +3,7 @@ const config = require("../../config")
 
 // Laster ned bounding bokser for koder
 http
-  .downloadJson(config.datakilde.filindeks, config.getDataPath(__filename))
+  .downloadJson(config.datakilde.filindeks, "inn_filindeks.json")
   .catch(err => {
     log.fatal(err)
   })

@@ -1,4 +1,4 @@
-const { io } = require("lastejobb")
+/*const { io } = require("lastejobb")
 const config = require("../../config")
 const path = require("path")
 
@@ -63,4 +63,5 @@ function add(filer, node, tag, width) {
   }
 }
 
-io.skrivDatafil(full)
+io.skrivDatafil(__filename, full)
+*/

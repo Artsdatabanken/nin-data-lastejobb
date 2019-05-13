@@ -10,5 +10,5 @@ Object.keys(full).forEach(kode => {
   delete node.mediakilde
 })
 
-io.skrivDatafil(full)
-io.skrivBuildfil(r, "mediakilde")
+io.skrivDatafil("metabase_bilder", full)
+io.skrivBuildfil("mediakilde", r)

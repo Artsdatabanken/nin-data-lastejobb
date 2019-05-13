@@ -1,5 +1,5 @@
 const { io } = require("lastejobb")
-let inn_filindeks = io.lesDatafil("filindeks.json")
+let inn_filindeks = io.lesDatafil("inn_filindeks.json")
 const path = require("path")
 
 // Forventer følgende katalogstruktur på tile serveren:
