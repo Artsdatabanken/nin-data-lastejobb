@@ -15,7 +15,7 @@ normaliserGradienter()
 if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
 zoomlevels(typesystem.rotkode)
 settDefaultVisning()
-io.skrivDatafil(tre)
+io.skrivDatafil(__filename, tre)
 
 function avrund1d(num) {
   return Math.round(parseFloat(num) * 1000) / 1000
@@ -53,6 +53,7 @@ function addKartformat() {
     if (!maps) return
     Object.keys(maps).forEach(base => {
       const mapfile = maps[base]
+      if (!mapfile.filename) return // Is a directory
       if (".mbtiles.geojson".indexOf(path.extname(mapfile.filename)) < 0) return
       if (mapfile.filename.indexOf("3857") < 0) return
       if (!target.kart) target.kart = { format: {} }
