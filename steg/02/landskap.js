@@ -1,7 +1,7 @@
 var JSONStream = require("JSONStream")
 var csv = require("csv")
 const fs = require("fs")
-const log = require("log-less-fancy")()
+const { log } = require("lastejobb")
 const config = require("../../config")
 
 class CsvToJson {
