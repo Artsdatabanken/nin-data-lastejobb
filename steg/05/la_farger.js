@@ -65,10 +65,6 @@ function normalize(stack) {
   })
 }
 
-function harVekt(arr) {
-  return arr.find(e => e > 0)
-}
-
 Object.keys(farger).forEach(kode => (r[kode] = farger[kode]))
 
 io.skrivDatafil(__filename, r)
