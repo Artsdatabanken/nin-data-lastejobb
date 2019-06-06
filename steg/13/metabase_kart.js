@@ -51,29 +51,29 @@ function addKartformat() {
     const target = tre[xkode]
     const maps = filindeks[node.url]
     if (!maps) return
-    Object.keys(maps).forEach(base => {
-      const mapfile = maps[base]
-      if (!mapfile.filename) return // Is a directory
-      if (".mbtiles.geojson".indexOf(path.extname(mapfile.filename)) < 0) return
-      if (mapfile.filename.indexOf("3857") < 0) return
+    Object.keys(maps).forEach(filename => {
+      const fileinfo = maps[filename]
+      if (!filename) return // Is a directory
+      if (".mbtiles.geojson".indexOf(path.extname(filename)) < 0) return
+      if (filename.indexOf("3857") < 0) return
       if (!target.kart) target.kart = { format: {} }
       const format = target.kart.format
-      const type = mapfile.filename.split(".").shift()
+      const type = filename.split(".").shift()
       if (!format[type]) format[type] = {}
       const cv = format[type]
-      cv.url = config.webserver + node.url + "/" + mapfile.filename
-      if (mapfile.maxzoom) {
-        cv.zoom = [parseInt(mapfile.minzoom), parseInt(mapfile.maxzoom)]
+      cv.url = config.webserver + node.url + "/" + filename
+      if (fileinfo.maxzoom) {
+        cv.zoom = [parseInt(fileinfo.minzoom), parseInt(fileinfo.maxzoom)]
       }
-      cv.filnavn = mapfile.filename
-      cv.størrelse = mapfile.size
-      cv.oppdatert = mapfile.mtime
-      if (mapfile.bounds) {
+      cv.filnavn = filename
+      cv.størrelse = fileinfo.size
+      cv.oppdatert = fileinfo.mtime
+      if (fileinfo.bounds) {
         // For now, no bounds for GeoJSON
-        cv.zoom = [parseInt(mapfile.minzoom), parseInt(mapfile.maxzoom)]
-        target.bbox = avrund4d(mapfile.bounds)
+        cv.zoom = [parseInt(fileinfo.minzoom), parseInt(fileinfo.maxzoom)]
+        target.bbox = avrund4d(fileinfo.bounds)
       }
-      if (mapfile.format) cv.format = mapfile.format
+      if (fileinfo.format) cv.format = fileinfo.format
     })
   })
 }
