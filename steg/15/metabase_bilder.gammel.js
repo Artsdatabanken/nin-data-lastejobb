@@ -1,6 +1,4 @@
-/*const { io } = require("lastejobb")
-const config = require("../../config")
-const path = require("path")
+const { io } = require("lastejobb")
 
 const baseUrl = "https://data.artsdatabanken.no/"
 
@@ -12,28 +10,15 @@ Object.keys(full).forEach(kode => {
   node.bilde = node.bilde || {}
   const filer = filindeks[node.url]
   if (!filer) return
-  add(filer, node, "foto", 408)
-  add(filer, node, "banner", 950)
-  add(filer, node, "logo", 40)
-  addKilde(node)
-  addBilder(node, filer)
+  addMedia(filer, node, "foto", 408)
+  addMedia(filer, node, "banner", 950)
+  addMedia(filer, node, "logo", 40)
+  addMediaSource(node)
+  // addBilder(node, filer)
   // TODO: temp fallback
-  if (!node.banner && node.forside) node.banner = node.forside
 })
 
-function addBilder(node, filer) {
-  const bilde = node.bilde
-  Object.keys(filer).forEach(fil => {
-    const p = path.parse(fil)
-    if (".png.jpg".indexOf(p.ext) < 0) return
-    const parts = p.name.split("_")
-    let [format, width] = parts
-    bilde[format] = bilde[format] || {}
-    bilde[format].url = config.webserver + node.url + "/" + fil
-  })
-}
-
-function addKilde(node) {
+function addMediaSource(node) {
   const bilde = node.bilde
   if (!node.mediakilde) return
   Object.keys(node.mediakilde).forEach(mk => {
@@ -53,7 +38,7 @@ function urlMedBildeOgMetadata(url) {
   return `https://commons.wikimedia.org/wiki/File:${file}#/media/File:${file}`
 }
 
-function add(filer, node, tag, width) {
+function addMedia(filer, node, tag, width) {
   node.bilde = node.bilde || {}
   const basename = tag + "_" + width
   const imgfile = filer[basename + ".jpg"] || filer[basename + ".png"]
@@ -64,4 +49,3 @@ function add(filer, node, tag, width) {
 }
 
 io.skrivDatafil(__filename, full)
-*/

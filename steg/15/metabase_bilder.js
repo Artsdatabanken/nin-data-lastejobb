@@ -6,7 +6,7 @@ let r = []
 Object.keys(full).forEach(kode => {
   const node = full[kode]
   if (!node.mediakilde) return
-  r.push({ kode: kode, ...node.mediakilde })
+  r.push({ kode, ...node.mediakilde })
   delete node.mediakilde
 })
 

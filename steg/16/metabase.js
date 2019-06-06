@@ -1,6 +1,6 @@
 const { io } = require("lastejobb")
 
-let tre = io.lesDatafil("metabase_bilder")
+let tre = io.lesDatafil("metabase_bilder.gammel.json")
 let hierarki = io.lesDatafil("kodehierarki")
 const barnAv = hierarki.barn
 Object.keys(tre).forEach(kode => mapBarn(kode))
