@@ -30,7 +30,7 @@
     "farge": "#A2B8C0",
     "tittel": { "nb": "Norsk institutt for naturforskning" },
     "ingress": "Stiftelsen Norsk institutt for naturforskning (NINA) er en norsk stiftelse, opprettet i 1988, som forsker på natur og samspillet mellom natur og samfunn.  NINAs primære aktivitet er å drive anvendt forskning. Stiftelsen har både biologer og samfunnsforskere. Viktige arbeidsområder for NINA er biologisk mangfold, fornybar energi, rovvilt, havbruk, miljødatabaser, bruk og forvaltning av naturressurser, konsekvensanalyser, økologiske effekter av klimaendringer og økonomiske effekter av naturbruk.",
-    "infoUrl": "https://no.wikipedia.org/wiki/Norsk_institutt_fOR-naturforskning",
+    "infoUrl": "https://no.wikipedia.org/wiki/Norsk_institutt_for_naturforskning",
     "metaUrl": "https://nina.no"
   },
   "OR-NIBIO": {
@@ -56,9 +56,9 @@
   },
   "OR-WP": {
     "farge": "hsl(0, 0%, 50%)",
-    "tittel": { "nb": "Wikipedia", "en": "Wikipedia" },
-    "ingress": "Wikipedia er en internasjonal internettbasert encyklopedi som utgis av den ideelle organisasjonen Wikimedia Foundation, med hovedsete i Florida i USA. Den er en wiki, som betyr at alle kan redigere innholdet.",
-    "infoUrl": "https://no.wikipedia.org/wiki/Wikipedia",
-    "metaUrl": "https://no.wikipedia.org"
+    "tittel": { "nb": "Wikidata", "en": "Wikidata" },
+    "ingress": "Wikidata er et prosjekt for å lage en dugnadsbasert database for å støtte Wikimedia-prosjekter som Wikipedia. Prosjektet ble starta av Wikipedia på tysk, og er ment å tilby standardiserte typer data til bruk på Wikimedia-prosjekter, for eksempel fødselsdatoer og geografiske data, og skal kunne brukes på samme måte som mediefiler fra Wikimedia Commons brukes.  Wikidata ble Wikimedia Foundations første nye prosjekt siden 2006.  Prosjektet ble oppretta med støtte fra Allen Institute for Artificial Intelligence, Gordon and Betty Moore Foundation og Google.",
+    "infoUrl": "https://www.wikidata.org/wiki/Wikidata:Introduction",
+    "metaUrl": "https://www.wikidata.org/wiki/Wikidata:Main_Page"
   }
 }

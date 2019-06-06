@@ -1,5 +1,4 @@
-const config = require("../../config")
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 const typesystem = require("@artsdatabanken/typesystem")
 
 let hovedtyper = io.lesDatafil("landskap.csv.json")

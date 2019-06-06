@@ -1,8 +1,6 @@
-const config = require("../../config")
-const io = require("../../lib/io")
-const typesystem = require("@artsdatabanken/typesystem")
+const { io } = require("lastejobb")
 
-let hovedtyper = io.lesDatafil(config.getDataPath("na_hovedtype"))
+let hovedtyper = io.lesDatafil("na_hovedtype")
 
 r = {}
 

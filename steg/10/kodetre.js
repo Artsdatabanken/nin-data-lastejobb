@@ -1,6 +1,4 @@
-const config = require("../../config")
-const io = require("../../lib/io")
-const log = require("log-less-fancy")()
+const { io } = require("lastejobb")
 const typesystem = require("@artsdatabanken/typesystem")
 
 let data = io.lesDatafil("full_med_graf")
@@ -39,10 +37,6 @@ function lagDelAv(node) {
     })
   })
   return delAv
-}
-
-function finn(kode) {
-  return r.filter(node => node.kode === kode)
 }
 
 io.skrivBuildfil(__filename, r)

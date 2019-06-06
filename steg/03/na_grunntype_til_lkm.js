@@ -1,7 +1,6 @@
 var JSONStream = require("JSONStream")
 var csv = require("csv")
 const fs = require("fs")
-const io = require("../../lib/io")
 const log = require("log-less-fancy")()
 const config = require("../../config")
 
@@ -47,7 +46,7 @@ importer(
 
 function importer(csvFil, utFil) {
   const kildefil = config.kildedataPath + "/" + csvFil
-  const writePath = config.getDataPath(utFil + ".csv.json")
+  const writePath = "data/" + utFil + ".csv.json"
   log.info("Import " + csvFil + " to " + writePath)
   new CsvToJson().convert(kildefil, writePath)
 }

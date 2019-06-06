@@ -1,8 +1,7 @@
 // @flow
 if (!process.env.DEBUG) process.env.DEBUG = "*"
 const { spawnSync } = require("child_process")
-const log = require("log-less-fancy")()
-const { findFiles } = require("./lib/io")
+const { io, log } = require("lastejobb")
 const config = require("./config")
 
 function exec(jsFile) {
@@ -15,7 +14,7 @@ function exec(jsFile) {
   if (r.status > 0) process.exit(1)
 }
 
-let files = findFiles(config.lasteScriptPath, ".js")
+let files = io.findFiles(config.lasteScriptPath, ".js")
 files = files.sort()
 log.info("Fant " + files.length + " lastejobber")
 files = files.filter(file => file.indexOf(".test") < 0)

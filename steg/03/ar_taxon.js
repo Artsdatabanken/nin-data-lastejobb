@@ -1,6 +1,4 @@
-const io = require("../../lib/io")
-const log = require("log-less-fancy")()
-const config = require("../../config")
+const { io } = require("lastejobb")
 const typesystem = require("@artsdatabanken/typesystem")
 
 const taxons = io.lesDatafil("ar_taxon_to_json")

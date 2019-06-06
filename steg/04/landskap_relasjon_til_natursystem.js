@@ -1,7 +1,5 @@
 const log = require("log-less-fancy")()
-const config = require("../../config")
-const io = require("../../lib/io")
-const typesystem = require("@artsdatabanken/typesystem")
+const { io } = require("lastejobb")
 
 let rel = io.lesDatafil("relasjon_til_natursystem.csv.json")
 let klg = io.lesDatafil("landskapsgradient.json")

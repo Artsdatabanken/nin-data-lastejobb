@@ -73,7 +73,7 @@ function map(vo) {
     })
   }
   kobleForvaltningsmyndighet(kode, e)
-  r[kode] = e
+  return e
 }
 
 const år = {}
@@ -84,5 +84,5 @@ vo.items.forEach(o => {
   år[y] = år[y] + 1 || 1
 })
 
-vo.items.forEach(vo => map(vo))
-io.skrivDatafil(__filename, vo)
+const r = vo.items.map(vv => map(vv))
+io.skrivDatafil(__filename, r)

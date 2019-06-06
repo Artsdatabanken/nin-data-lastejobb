@@ -1,9 +1,7 @@
-const io = require("../../lib/io")
-const config = require("../../config")
-const log = require("log-less-fancy")()
+const { io } = require("lastejobb")
 
-let koder = io.lesKildedatafil(
-  "Natur_i_Norge/Natursystem/kodeliste_v2b_variasjon"
+let koder = io.readJson(
+  "nin-data/Natur_i_Norge/Natursystem/kodeliste_v2b_variasjon.json"
 ).data
 
 function kodefix(kode) {

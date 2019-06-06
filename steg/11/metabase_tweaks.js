@@ -1,11 +1,9 @@
-const config = require("../../config")
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
 let tre = io.lesDatafil("metabase_med_farger")
 let hierarki = io.lesDatafil("kodehierarki")
-const barnAv = hierarki.barn
 const foreldreTil = hierarki.foreldre
 
 let ukjenteKoder = []

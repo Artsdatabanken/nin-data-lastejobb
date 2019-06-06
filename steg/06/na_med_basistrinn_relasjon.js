@@ -1,7 +1,4 @@
-const io = require("../../lib/io")
-const log = require("log-less-fancy")()
-const config = require("../../config")
-const typesystem = require("@artsdatabanken/typesystem")
+const { io } = require("lastejobb")
 
 let basistrinn = io.lesDatafil("na_grunntype_til_lkm")
 
