@@ -1,9 +1,5 @@
 //if (!process.env.DEBUG) process.env.DEBUG = "*"
-const path = require("path")
-const io = require("../../lib/io")
-const log = require("log-less-fancy")()
-const config = require("../../config")
-const typesystem = require("@artsdatabanken/typesystem")
+const { io } = require("lastejobb")
 const tinycolor = require("tinycolor2")
 
 let r = {}
@@ -19,10 +15,10 @@ function settFarger(kilde, mapper) {
 const bareFargen = node => tinycolor(node.farge)
 const lighten = node => tinycolor(node).lighten(20)
 
-settFarger(io.lesKildedatafilOld("farger"), bareFargen)
+settFarger(io.readJson("kildedata/farger.json"), bareFargen)
 settFarger(io.lesDatafil("la_farger"), bareFargen)
 settFarger(
-  io.lesKildedatafilOld("Natur_i_Norge/Natursystem/farger_dominant"),
+  io.readJson("kildedata/Natur_i_Norge/Natursystem/farger_dominant.json"),
   lighten
 )
 

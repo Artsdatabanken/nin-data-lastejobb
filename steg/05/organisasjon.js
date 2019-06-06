@@ -1,11 +1,8 @@
-const io = require("../../lib/io")
-const log = require("log-less-fancy")()
-const config = require("../../config")
-const typesystem = require("@artsdatabanken/typesystem")
+const { io } = require("lastejobb")
 const csv = require("../../lib/csv")
 
 const organisasjonTilKode = {}
-let organisasjon = io.lesKildedatafilOld("Datakilde/organisasjon")
+let organisasjon = io.readJson("kildedata/Datakilde/organisasjon.json")
 Object.entries(organisasjon).forEach(([kode, o]) => {
   organisasjonTilKode[o.tittel.nb] = kode
   organisasjonTilKode[kode] = kode

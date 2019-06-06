@@ -1,5 +1,4 @@
-const config = require("../../config")
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
@@ -21,22 +20,8 @@ function fjernKoderSomIkkeHarData(data) {
     node.kode = kode
     if (!harKartdata(kode)) {
       delete data[kode]
-      const forelderKode = node.overordnet[0].kode
-      const forelderNode = data[forelderKode]
       slettet_fordi_mangler_bbox.push(kode)
     }
-  })
-}
-
-function fjernRelasjonTilKoderSomIkkeHarData(data) {
-  Object.keys(data).forEach(parent => {
-    const node = data[parent]
-    if (!node.graf) return
-    Object.keys(node.graf).forEach(kode => {
-      node.graf.forEach(relasjon => {
-        relasjon.noder.filter(node => harKartdata(node.kode))
-      })
-    })
   })
 }
 
@@ -44,12 +29,14 @@ function harKartdata(kode) {
   const node = tre[kode]
   if (!node) return false
   // Ta med alt som har relasjoner
+  if (node.kart && Object.keys(node.kart).length > 0) return true
   if (node.gradient && Object.keys(node.gradient).length > 0) return true
   if (harRelasjon(node.graf)) return true
   const visAlltid = ["OR"]
   if (visAlltid.includes(kode)) return true
   if (kode === typesystem.rotkode) return true
   if (kode.indexOf("RL") === 0) return true
+  if (kode.indexOf("VV") === 0) return true
 
   return harBarnMedKartdata(node)
 }

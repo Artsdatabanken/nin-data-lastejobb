@@ -1,9 +1,6 @@
 if (!process.env.DEBUG) process.env.DEBUG = "*"
-const path = require("path")
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
-const config = require("../../config")
-const typesystem = require("@artsdatabanken/typesystem")
 
 let rows = io.lesDatafil("na_grunntype_til_lkm.csv.json")
 let nin_liste = io.lesDatafil("na_kode")

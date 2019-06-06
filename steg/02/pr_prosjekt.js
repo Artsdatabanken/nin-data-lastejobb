@@ -1,9 +1,8 @@
-const io = require("../../lib/io")
-const config = require("../../config")
-const typesystem = require("@artsdatabanken/typesystem")
-const log = require("log-less-fancy")()
+const { io } = require("lastejobb")
 
-let koder = io.lesKildedatafil("Natur_i_Norge/Natursystem/kartleggingsprogram")
+let koder = io.readJson(
+  "nin-data/Natur_i_Norge/Natursystem/kartleggingsprogram.json"
+)
 
 function importerProsjekter(prosjekter) {
   for (let key of Object.keys(prosjekter)) {

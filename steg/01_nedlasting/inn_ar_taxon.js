@@ -1,15 +1,9 @@
 if (!process.env.DEBUG) process.env.DEBUG = "*"
-const path = require("path")
-const http = require("../../lib/http")
+const { http, log } = require("lastejobb")
 const config = require("../../config")
-const log = require("log-less-fancy")()
-
 // Laster ned arter fra Artsdatabanken sitt API
 http
-  .downloadBinary2File(
-    config.datakilde.ar_taxon,
-    config.getDataPath(__filename, ".csv")
-  )
+  .downloadBinary(config.datakilde.ar_taxon, "inn_ar_taxon.csv")
   .catch(err => {
     log.fatal(err)
   })

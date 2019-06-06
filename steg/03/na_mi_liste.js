@@ -1,7 +1,5 @@
 if (!process.env.DEBUG) process.env.DEBUG = "*"
-const path = require("path")
-const typesystem = require("@artsdatabanken/typesystem")
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
 const config = require("../../config")
 

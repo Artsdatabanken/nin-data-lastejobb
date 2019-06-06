@@ -1,7 +1,5 @@
-const config = require("../../config")
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
-const typesystem = require("@artsdatabanken/typesystem")
 
 // Bygger fulltext-index for lookup-api
 
@@ -45,7 +43,6 @@ function pushTittel(hit, score, tittel) {
 
 Object.keys(tre).forEach(kode => {
   const node = tre[kode]
-  if (kode === "NN-LA") debugger
   const hit = {
     kode: node.kode,
     url: node.url,

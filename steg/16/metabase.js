@@ -1,9 +1,6 @@
-const config = require("../../config")
-const io = require("../../lib/io")
-const log = require("log-less-fancy")()
-const typesystem = require("@artsdatabanken/typesystem")
+const { io } = require("lastejobb")
 
-let tre = io.lesDatafil("metabase_bilder")
+let tre = io.lesDatafil("metabase_bilder.gammel.json")
 let hierarki = io.lesDatafil("kodehierarki")
 const barnAv = hierarki.barn
 Object.keys(tre).forEach(kode => mapBarn(kode))

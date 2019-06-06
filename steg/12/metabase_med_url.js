@@ -1,6 +1,4 @@
-const fs = require("fs")
-const config = require("../../config")
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
