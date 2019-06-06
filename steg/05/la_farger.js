@@ -1,11 +1,8 @@
 const log = require("log-less-fancy")()
-const config = require("../../config")
-const io = require("../../lib/io")
-const typesystem = require("@artsdatabanken/typesystem")
+const { io } = require("lastejobb")
 const blandFarger = require("../../lib/fargefunksjon")
-const tinycolor = require("tinycolor2")
 
-const farger = io.lesKildedatafilOld("farger")
+const farger = io.readJson("kildedata/farger.json")
 let la = io.lesDatafil("landskap.json")
 
 let r = {}
@@ -66,10 +63,6 @@ function normalize(stack) {
     delta.vekt[1] /= total[1]
     delta.vekt[2] /= total[2]
   })
-}
-
-function harVekt(arr) {
-  return arr.find(e => e > 0)
 }
 
 Object.keys(farger).forEach(kode => (r[kode] = farger[kode]))

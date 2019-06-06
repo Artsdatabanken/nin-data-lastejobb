@@ -1,6 +1,6 @@
 const tinycolor = require("tinycolor2")
 const log = require("log-less-fancy")()
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 const blandFarger = require("../../lib/fargefunksjon")
 const typesystem = require("@artsdatabanken/typesystem")
 

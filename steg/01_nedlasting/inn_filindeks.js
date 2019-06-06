@@ -1,10 +1,7 @@
-const http = require("../../lib/http")
+const { http, log } = require("lastejobb")
 const config = require("../../config")
-const log = require("log-less-fancy")()
 
 // Laster ned bounding bokser for koder
-http
-  .downloadJson2File(config.datakilde.filindeks, config.getDataPath(__filename))
-  .catch(err => {
-    log.fatal(err)
-  })
+http.downloadJson(config.datakilde.filindeks, "filindeks.json").catch(err => {
+  log.fatal(err)
+})

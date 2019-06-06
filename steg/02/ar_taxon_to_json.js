@@ -1,14 +1,10 @@
 var JSONStream = require("JSONStream")
 var csv = require("csv")
 const fs = require("fs")
-const io = require("../../lib/io")
-const log = require("log-less-fancy")()
-const config = require("../../config")
 
-const kildefil = config.getDataPath("inn_ar_taxon", ".csv")
+const kildefil = "data/inn_ar_taxon.csv"
 const rs = fs.createReadStream(kildefil, "latin1")
-const writePath = config.getDataPath(__filename)
-const ws = fs.createWriteStream(writePath)
+const ws = fs.createWriteStream("data/ar_taxon_to_json.json")
 
 const csvOptions = {
   delimiter: ";",
@@ -18,9 +14,9 @@ const csvOptions = {
 
 let header
 
-importCsv(kildefil)
+importCsv(rs, ws)
 
-async function importCsv(kildefil) {
+async function importCsv(rs, ws) {
   await rs
     .pipe(csv.parse(csvOptions))
     .pipe(csv.transform(transform))

@@ -1,8 +1,8 @@
 const log = require("log-less-fancy")()
 const Jimp = require("jimp")
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 
-let fargeindeks = io.lesKildedatafilOld("Natur_i_Norge/Landskap/la_index")
+let fargeindeks = io.readJson("kildedata/Natur_i_Norge/Landskap/la_index.json")
 let farger = io.lesDatafil("la_farger")
 let la = io.lesDatafil("landskap")
 let klg = io.lesDatafil("landskapsgradient")

@@ -33,7 +33,7 @@ function skrivFil(prefix) {
     if (kode.indexOf(prefix) === 0) dok.data.push(node)
   })
 
-  io.skrivBuildfil(prefix + "/" + prefix, dok)
+  io.skrivBuildfil(prefix, dok)
 }
 
 function fyllPåMedSøsken(node) {

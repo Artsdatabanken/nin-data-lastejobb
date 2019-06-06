@@ -1,9 +1,10 @@
 const config = require("../../config")
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 const typesystem = require("@artsdatabanken/typesystem")
 
-let hovedtyper = io.lesKildedatafil(config.datakilde.na_hovedtype)
-let mi = io.lesDatafil("mi_variasjon")
+let hovedtyper = io.readJson(
+  "nin-data/" + config.datakilde.na_hovedtype + ".json"
+)
 
 function fromCsv(csv) {
   csv = csv.trim()
@@ -13,8 +14,6 @@ function fromCsv(csv) {
     .map(kode => typesystem.miljøvariabel.prefiks + "-" + kode)
 }
 
-const prefiks = typesystem.natursystem.prefiks
-const kode_hovedtype = "NN-NA-TI-HT"
 const kode_kunnskap = "NN-NA-TI-HT-KG"
 const kode_definisjonsgrunnlag = "NN-NA-TI-HT-DG"
 

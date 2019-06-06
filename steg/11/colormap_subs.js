@@ -1,7 +1,7 @@
 const Jimp = require("jimp")
-const io = require("../../lib/io")
+const { io } = require("lastejobb")
 
-let koder = io.lesKildedatafilOld("Natur_i_Norge/Landskap/la_index")
+let koder = io.readJson("kildedata/Natur_i_Norge/Landskap/la_index.json")
 let meta = io.lesDatafil("metabase_med_farger")
 let hierarki = io.lesDatafil("kodehierarki")
 const barnAv = hierarki.barn
@@ -36,8 +36,6 @@ function lagPalett(kode) {
 
 function makePal(kode) {
   new Jimp(512, 8, 0xffffffff, (err, image) => {
-    //  const color = Jimp.cssColorToHex("rgba(255,255,255,0.0)")
-    //  for (let y = 0; y < 8; y++) image.setPixelColor(color, 0, y)
     for (let nivå = 1; nivå < 9; nivå++) fyllNivå(kode, nivå, image, nivå - 1)
     image.write(`data/${kode}.palette.png`)
   })
@@ -46,7 +44,7 @@ function makePal(kode) {
 function fyllNivå(kode, nivå, image, y, overstyrMedFargeFrakode) {
   Object.keys(koder).forEach(ikode => {
     const index = koder[ikode]
-    if (!ikode.startsWith(kode)) return
+    if (kode !== ikode && !ikode.startsWith(kode + "-")) return
     settFarge(image, overstyrMedFargeFrakode || kode, index, y)
   })
   if (nivå > 1) {
