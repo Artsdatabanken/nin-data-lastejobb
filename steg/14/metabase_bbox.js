@@ -25,20 +25,11 @@ function fjernKoderSomIkkeHarData(data) {
   })
 }
 
-function fjernRelasjonTilKoderSomIkkeHarData(data) {
-  Object.keys(data).forEach(parent => {
-    const node = data[parent]
-    if (!node.graf) return
-    node.graf.forEach(relasjon => {
-      relasjon.noder.filter(node => harKartdata(node.kode))
-    })
-  })
-}
-
 function harKartdata(kode) {
   const node = tre[kode]
   if (!node) return false
   // Ta med alt som har relasjoner
+  if (node.kart && Object.keys(node.kart).length > 0) return true
   if (node.gradient && Object.keys(node.gradient).length > 0) return true
   if (harRelasjon(node.graf)) return true
   const visAlltid = ["OR"]
