@@ -38,11 +38,19 @@ function urlMedBildeOgMetadata(url) {
   return `https://commons.wikimedia.org/wiki/File:${file}#/media/File:${file}`
 }
 
+function findFile(filer, name) {
+  const e = filer[name]
+  if (!e) return null
+  return { filename: name, ...e }
+}
+
 function addMedia(filer, node, tag, width) {
   node.bilde = node.bilde || {}
   const basename = tag + "_" + width
-  const imgfile = filer[basename + ".jpg"] || filer[basename + ".png"]
+  const imgfile =
+    findFile[(filer, basename + ".jpg")] || findFile(filer, basename + ".png")
   if (!imgfile) return
+  if (!imgfile.filename) debugger
   node.bilde[tag] = {
     url: baseUrl + node.url + "/" + imgfile.filename
   }
