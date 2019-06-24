@@ -48,7 +48,7 @@ function addMedia(filer, node, tag, width) {
   node.bilde = node.bilde || {}
   const basename = tag + "_" + width
   const imgfile =
-    findFile[(filer, basename + ".jpg")] || findFile(filer, basename + ".png")
+    findFile(filer, basename + ".jpg") || findFile(filer, basename + ".png")
   if (!imgfile) return
   if (!imgfile.filename) debugger
   node.bilde[tag] = {
