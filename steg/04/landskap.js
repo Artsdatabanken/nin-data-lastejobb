@@ -1,7 +1,6 @@
 const { io } = require("lastejobb")
-const typesystem = require("@artsdatabanken/typesystem")
 
-let hovedtyper = io.lesDatafil("landskap.csv.json")
+let hovedtyper = io.lesDatafil("landskap.csv.json").items
 let klg = io.lesDatafil("landskapsgradient.json")
 
 const r = {}
@@ -17,17 +16,16 @@ function hack(kode) {
 
 hovedtyper.forEach(e => {
   const ny = {
-    tittel: { nb: e.name, en: e.field7 },
+    tittel: { nb: e.Name, en: e.Name_EN },
     relasjon: []
   }
-  if (e.kortnavn) ny.tittel_kort = e.kortnavn
+  if (e.Kortnavn) ny.tittel_kort = e.Kortnavn
   const klger = {}
   Object.keys(e).forEach(key => {
-    if (key.startsWith("klg_")) {
+    if (key.startsWith("KLG_")) {
       const verdi = e[key]
       if (verdi && parseInt(verdi.split("-").pop()) > 0) {
         const kode = hack(verdi)
-        const gradientkode = typesystem.forelder(kode)
         klger[kode.substring(0, kode.length - 2)] = kode
         ny.relasjon.push({
           kode: hack(verdi),
@@ -38,20 +36,20 @@ hovedtyper.forEach(e => {
       }
     }
   })
-  ny.ingress = e.beskrivelse
+  ny.ingress = e.Beskrivelse
   if (!ny.ingress && e.rekkefølge_kjeding_klg)
     ny.ingress = kjedGradientbeskrivelser(e.rekkefølge_kjeding_klg, klger)
-  ny.pred_lnr = e.pred_lnr
+  ny.pred_lnr = e.Pred_Lnr
   const menneskeligPåvirkning =
-    e.naturlandskap === 1 ? "NN-LA-TI-AP-NL" : "NN-LA-TI-AP-AL"
+    e.Naturlandskap === 1 ? "NN-LA-TI-AP-NL" : "NN-LA-TI-AP-AL"
   ny.relasjon.push({
     kode: menneskeligPåvirkning,
     kant: "menneskelig påvirkning",
     kantRetur: "består av",
     erSubset: true
   })
-  let kode = e.s_kode.substring(0, 4)
-  if (e.s_kode.length > 4) kode += "-" + e.s_kode.substring(4)
+  let kode = e.S_kode.substring(0, 4)
+  if (e.S_kode.length > 4) kode += "-" + e.S_kode.substring(4)
   if (kode.startsWith("LA-K-F"))
     ny.ingress = ny.ingress.replace(/dallandskap/g, "fjordlandskap")
   r[hack(kode)] = ny
