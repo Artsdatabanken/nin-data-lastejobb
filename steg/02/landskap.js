@@ -1,8 +1,8 @@
 var JSONStream = require("JSONStream")
-var csv = require("csv")
 const fs = require("fs")
-const { log } = require("lastejobb")
+const { csv, io, log } = require("lastejobb")
 const config = require("../../config")
+var csv2 = require("csv")
 
 class CsvToJson {
   constructor(csvOptions) {
@@ -18,8 +18,8 @@ class CsvToJson {
     const rs = fs.createReadStream(kildefil, "utf-8")
     const ws = fs.createWriteStream(writePath)
     await rs
-      .pipe(csv.parse(this.csvOptions))
-      .pipe(csv.transform(this.transform))
+      .pipe(csv2.parse(this.csvOptions))
+      .pipe(csv2.transform(this.transform))
       .pipe(JSONStream.stringify())
       .pipe(ws)
   }
@@ -52,8 +52,16 @@ importer(
   "Natur_i_Norge/Landskap/bilder_som_gjenbrukes.csv",
   "landskap_bilder_som_gjenbrukes"
 )
+importer2("Natur_i_Norge/Landskap/Typeinndeling/type.csv", "landskap2")
 
 function importer(csvFil, utFil) {
+  const kildefil = config.kildedataPath + "/" + csvFil
+  const json = csv.les(kildefil, { from_line: 2 })
+  const writePath = "data/" + utFil + ".csv.json"
+  io.writeJson(writePath, json)
+}
+
+function importer2(csvFil, utFil) {
   const kildefil = config.kildedataPath + "/" + csvFil
   const writePath = "data/" + utFil + ".csv.json"
   log.info("Import " + csvFil + " to " + writePath)

@@ -1,7 +1,7 @@
 const log = require("log-less-fancy")()
 const { io } = require("lastejobb")
 
-let rel = io.lesDatafil("relasjon_til_natursystem.csv.json")
+let rel = io.lesDatafil("relasjon_til_natursystem.csv.json").items
 let klg = io.lesDatafil("landskapsgradient.json")
 let na = io.lesDatafil("na_mi_liste.json")
 let bs = io.lesDatafil("mi_variasjon.json")
@@ -15,14 +15,16 @@ const r = map(data)
 function akkumuler(rel) {
   const r = []
   rel.forEach(e => {
-    const kode = mapklgkode(e.gradient)
+    const kode = mapklgkode(e.Gradient)
     if (!klg[kode]) return log.warn("Ukjent KLG " + kode)
     const keys = Object.keys(e)
-    const node = { kode: kode, relasjon: [] }
     const relasjon = {}
-    for (let i = 2; i < keys.length; i++) {
-      const kant = keys[i]
+    for (let i = 0; i < keys.length; i++) {
+      let kant = keys[i]
       const mål = e[kant].split(",")
+      kant = kant.toLowerCase()
+      if (kant === " ") continue
+      if (kant === "Gradient") continue
       mål.forEach(m => {
         const målkode = mapnakode(m)
         if (!målkode) return
