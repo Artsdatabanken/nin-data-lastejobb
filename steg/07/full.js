@@ -29,7 +29,6 @@ flettKildedata("nin-data/Natur_i_Norge/Natursystem/Miljøvariabler/type")
 flettKildedata(
   "nin-data/Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/type"
 )
-flettKildedataOld("Naturvernområde/type")
 flettKildedataOld("type")
 sjekkAtTitlerEksisterer()
 capsTitler()
@@ -71,6 +70,8 @@ function flettAttributter(o, props = {}) {
     if (src.tittel) {
       if (!src.tittel.nb && src.tittel.nob)
         json.moveKey(src.tittel, "nob", "nb")
+      if (!src.tittel.nb && src.tittel.eng)
+        json.moveKey(src.tittel, "eng", "en")
     }
     const node = Object.assign({}, r[kode], src, props)
     r[kode] = node

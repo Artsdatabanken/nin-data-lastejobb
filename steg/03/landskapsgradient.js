@@ -1,16 +1,16 @@
 const { io } = require("lastejobb")
 
-let klg = io.lesDatafil("landskapsgradient.csv.json")
+let klg = io.lesDatafil("landskapsgradient.csv.json").items
 
 const r = {}
 
 klg.forEach(inn => {
-  if (inn.klg_trinn_kode)
-    r["NN-LA-" + hack(inn.klg_trinn_kode)] = {
-      tittel: { nb: inn.trinn_navn },
+  if (inn.KLG_trinn_kode)
+    r["NN-LA-" + hack(inn.KLG_trinn_kode)] = {
+      tittel: { nb: inn.Trinn_navn },
       min: inn.verdier_klg_indekser,
       max: inn.verdier_klg_indekser,
-      ingress: inn.beskrivelse_klg,
+      ingress: inn.Beskrivelse_KLG,
       intervall: {
         minTekst: inn.mintekst,
         maxTekst: inn.makstekst,
@@ -21,9 +21,9 @@ klg.forEach(inn => {
     }
   else {
     r["NN-LA-" + hack(inn.kode)] = {
-      tittel: { nb: inn.klg_navn },
+      tittel: { nb: inn.KLG_Navn },
       måleenhet: inn.måleenhet,
-      ingress: inn.beskrivelse_klg
+      ingress: inn.Beskrivelse_KLG
     }
   }
 })

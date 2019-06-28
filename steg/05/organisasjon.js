@@ -1,5 +1,4 @@
-const { io } = require("lastejobb")
-const csv = require("../../lib/csv")
+const { csv, io } = require("lastejobb")
 
 const organisasjonTilKode = {}
 let organisasjon = io.readJson("kildedata/Datakilde/organisasjon.json")
