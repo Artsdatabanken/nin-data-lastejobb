@@ -22,7 +22,7 @@ function fjernRelasjon(e, kode) {
     }
 }
 
-function kobleForvaltningsmyndighet(kode, e) {
+function kobleForvaltningsmyndighet(e) {
   if (e.forvaltning.ansvarlig.kode !== "VV-FM-FM") return
   const regexFylke = /VV-AO-(\d\d)/g
   let fylke = []
@@ -72,7 +72,7 @@ function map(vo) {
       relasjon(e, "Ligger i fylke", "VV-AO-" + fnr)
     })
   }
-  kobleForvaltningsmyndighet(kode, e)
+  kobleForvaltningsmyndighet(e)
   return e
 }
 
