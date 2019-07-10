@@ -1,6 +1,6 @@
 {
   "name": "nin-data-lastejobb",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "engines": {
     "node": ">=10.0.0"
@@ -28,10 +28,10 @@
     "babel-eslint": "^10.0.2",
     "csv": "^5.1.1",
     "decompress-zip": "^0.2.2",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "fs-extra": "^8.0.1",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "fs-extra": "^8.1.0",
     "jimp": "^0.6.4",
-    "lastejobb": "^1.22.2",
+    "lastejobb": "^1.23.1",
     "log-less-fancy": "^1.4.0",
     "node-fetch": "^2.6.0",
     "polygon-lookup": "^2.5.0",
@@ -44,10 +44,10 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "eslint": "^6.0.0",
-    "husky": "^2.4.0",
-    "jest": "^24.3.1",
-    "lint-staged": "^8.2.0",
-    "pretty-quick": "^1.11.0"
+    "eslint": "^6.0.1",
+    "husky": "^3.0.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.1.0",
+    "pretty-quick": "^1.11.1"
   }
 }
