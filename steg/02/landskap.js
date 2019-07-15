@@ -13,7 +13,7 @@ importer(
 
 function importer(csvFil, utFil) {
   const kildefil = config.kildedataPath + "/" + csvFil
-  const json = csv.les(kildefil, { from_line: 2 })
+  const json = csv.les(kildefil, { from_line: 1 })
   const writePath = "data/" + utFil + ".csv.json"
   io.writeJson(writePath, json)
 }
