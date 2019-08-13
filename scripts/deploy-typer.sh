@@ -8,8 +8,11 @@ scp build/AR.json grunnkart@hydra:~/tilesdata/Biota/metadata_med_undertyper.json
 scp build/VV.json grunnkart@hydra:~/tilesdata/Naturvernområde/metadata_med_undertyper.json
 scp build/OR.json grunnkart@hydra:~/tilesdata/Datakilde/metadata_med_undertyper.json
 scp build/RL.json grunnkart@hydra:~/tilesdata/Truet_art_natur/metadata_med_undertyper.json
-scp build/metabase.json grunnkart@hydra:~/tilesdata/metadata_med_undertyper.json
 scp build/mediakilde.json grunnkart@hydra:~/tilesdata/
 
+ssh grunnkart@hydra cp ./metabase.json ./tilesdata/metadata_med_undertyper.json 
+ssh grunnkart@hydra cp ./metabase.json /dockerdata/punkt-oppslag-api/build
+
 ssh grunnkart@hydra docker restart nin-lookup-api
+ssh grunnkart@hydra docker restart punkt-oppslag-api
 
