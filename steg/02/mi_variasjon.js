@@ -3,6 +3,9 @@ const { io } = require("lastejobb")
 let koder = io.readJson(
   "nin-data/Natur_i_Norge/Natursystem/kodeliste_v2b_variasjon.json"
 ).data
+let banlist = io.readJson(
+  "nin-data/Natur_i_Norge/Natursystem/kodeliste_v2b_variasjon.ignore.json"
+)
 
 function kodefix(kode) {
   if (!kode) return null
@@ -17,13 +20,12 @@ function kodefix(kode) {
   return "NN-NA-BS-" + kode
 }
 
-let kodeliste = {}
-
 function importerKoder() {
   const mineKoder = {}
   for (let key of Object.keys(koder)) {
     const node = koder[key]
     const kode = kodefix(node.Kode.Id)
+    if (banlist[kode]) continue
     const tittel = node.Navn
     let o = {
       tittel: { nb: tittel }
