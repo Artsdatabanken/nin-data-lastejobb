@@ -10,7 +10,8 @@ taxons.forEach(tx => {
 
 Object.keys(taxon2Data).forEach(kode => {
   let node = taxon2Data[kode]
-  if (!node.finnesINorge) return
+  // Underarter flagges med finnes i Norge, mens "forelder" ikke finnes i Norge.
+  // if (!node.finnesINorge) return
   while (node) {
     node.finnesINorge = true
     node = taxon2Data[node.parentId]
