@@ -9,7 +9,7 @@
   "scripts": {
     "build": "node --max_old_space_size=6144 index",
     "test": "node --max_old_space_size=6144 node_modules/.bin/jest",
-    "deploy": "firebase --token \"$FIREBASE_TOKEN\" -P adb-kode database:set -y / build/metabase.json",
+    "deploy": "./scripts/deploy.sh",
     "precommit": "pretty-quick --staged"
   },
   "repository": {
