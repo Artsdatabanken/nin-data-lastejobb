@@ -27,7 +27,7 @@ function avrund4d(bounds) {
   const ll = [bboxjson[1], bboxjson[0]]
   const ur = [bboxjson[3], bboxjson[2]]
   if (ll[0] > ur[0] || ll[1] > ur[1])
-    throw new Error("Ugyldig bbox " + JSON.stringify(bboxjson))
+    log.warn("Ugyldig bbox " + JSON.stringify(bboxjson))
   return [ll, ur]
 }
 
@@ -93,6 +93,7 @@ function normaliserGradienter() {
       return
     }
     const barna = hierarki.barn[kode]
+    if (!barna) return
     barna.forEach(bkode => {
       const barn = tre[bkode]
       normaliserGradientTrinn(bkode, barn, rgrad)
@@ -137,6 +138,7 @@ function zoomlevels(kode, bbox, zoom) {
 
 function sladd(url) {
   if (!url) return false
+  if (url.indexOf("Terreng") >= 0) return false
   if (url.indexOf("Regional_naturvariasjon") >= 0) return false
   if (url.indexOf("Erosjon") >= 0) return false
   if (url.indexOf("Finmat") >= 0) return false
