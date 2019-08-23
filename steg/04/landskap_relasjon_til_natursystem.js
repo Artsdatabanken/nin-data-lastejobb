@@ -23,11 +23,12 @@ function akkumuler(rel) {
       let kant = keys[i]
       const mål = e[kant].split(",")
       kant = kant.toLowerCase()
-      if (kant === " ") continue
-      if (kant === "Gradient") continue
+      if (kant.trim().length <= 0) continue
+      if (kant.toLowerCase() === "gradient") continue
       mål.forEach(m => {
         const målkode = mapnakode(m)
         if (!målkode) return
+        if (!na[målkode]) debugger
         if (!na[målkode]) return log.warn("Relasjon til ukjent type " + målkode)
         if (!relasjon[kant]) relasjon[kant] = {}
         relasjon[kant][målkode] = true
