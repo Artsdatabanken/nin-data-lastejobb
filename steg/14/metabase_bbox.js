@@ -35,7 +35,8 @@ function harKartdata(kode) {
   const visAlltid = ["OR"]
   if (visAlltid.includes(kode)) return true
   if (kode === typesystem.rotkode) return true
-  if (kode.indexOf("AO-MG") === 0) return true
+  if (kode.indexOf("AO") === 0) return true
+  if (kode.indexOf("SN") === 0) return true
   if (kode.indexOf("RL") === 0) return true
   if (kode.indexOf("VV") === 0) return true
   if (kode.indexOf("NN-NA-BS-8") === 0) return true
