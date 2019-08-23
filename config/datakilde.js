@@ -7,7 +7,6 @@ const datakilde = {
   na_grunntyper: "Natur_i_Norge/Natursystem/Typeinndeling/kartleggingsenhet",
   or_organisasjon: "Datakilde/organisasjon",
   // https://kartkatalog.geonorge.no/metadata/kartverket/statistiske-inndelinger-lau/f7be9f83-e5e0-4914-8076-e37424221930
-  statistikk: "https://data.artsdatabanken.no/statistikk.json",
   filindeks: "http://data.artsdatabanken.no/index.json"
 }
 

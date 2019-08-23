@@ -7,7 +7,10 @@ const config = require("../../config")
 // observations: antall arter observert innenfor denne koden sitt areal
 // areas: antall geometrier i undernivåer
 http
-  .downloadBinary(config.datakilde.statistikk, "inn_statistikk.json")
+  .downloadBinary(
+    "https://data.artsdatabanken.no/statistikk.json",
+    "inn_statistikk.json"
+  )
   .catch(err => {
     log.fatal(err)
   })
