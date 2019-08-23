@@ -3,6 +3,7 @@ const { io, json, log } = require("lastejobb")
 
 const r = {}
 
+flettKildedata("stedsnavn/type")
 flett("naturvern_typer")
 flett("naturvernområde")
 flettKildedata("kommune/kommune")
@@ -159,7 +160,7 @@ function sjekkAtTitlerEksisterer() {
         }, {})
         if (r[key].kode) {
           debugger
-          log.warn("Har kode: ", key)
+          log.warn("Har allerede unødig kode property: ", key)
         }
       }
     }
