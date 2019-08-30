@@ -12,6 +12,8 @@ Object.keys(full).forEach(kode => lagGradientPåSegSelv(kode, full[kode]))
 Object.keys(full).forEach(kode => lagGrafGradientkoblinger(kode, full[kode]))
 Object.keys(full).forEach(kode => propagerGradientTilRelasjon(kode, full[kode]))
 Object.keys(full).forEach(kode => propagerNedPresisjon(kode, full[kode]))
+Object.keys(full).forEach(kode => propagerNedMålestokk(kode, full[kode]))
+
 propagerGrafkoblinger()
 
 io.skrivDatafil(__filename, full)
@@ -276,15 +278,31 @@ function propagerGradientTilFormor(formorkode, node) {
 }
 
 function propagerNedPresisjon(kode, node) {
-  if (!node.presisjon) return
+  if (!node.kart || !node.kart.presisjon) return
   const barn = barnAv[kode] || []
-  barn.forEach(bkode => propagerPresisjonTilBarn(bkode, node.presisjon))
+  barn.forEach(bkode => propagerPresisjonTilBarn(bkode, node.kart.presisjon))
 }
 
 function propagerPresisjonTilBarn(kode, presisjon) {
   const barnet = full[kode]
-  if (barnet.presisjon) return
-  barnet.presisjon = presisjon
+  barnet.kart = barnet.kart || {}
+  if (barnet.kart.presisjon) return
+  barnet.kart.presisjon = presisjon
   const barn = barnAv[kode] || []
   barn.forEach(bkode => propagerPresisjonTilBarn(bkode, presisjon))
+}
+
+function propagerNedMålestokk(kode, node) {
+  if (!node.kart || !node.kart.målestokk) return
+  const barn = barnAv[kode] || []
+  barn.forEach(bkode => propagerMålestokkTilBarn(bkode, node.kart.målestokk))
+}
+
+function propagerMålestokkTilBarn(kode, målestokk) {
+  const barnet = full[kode]
+  barnet.kart = barnet.kart || {}
+  if (barnet.kart.målestokk) return
+  barnet.kart.målestokk = målestokk
+  const barn = barnAv[kode] || []
+  barn.forEach(bkode => propagerMålestokkTilBarn(bkode, målestokk))
 }

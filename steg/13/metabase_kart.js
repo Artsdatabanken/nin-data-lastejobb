@@ -36,6 +36,7 @@ function settDefaultVisning() {
   Object.keys(tre).forEach(kode => {
     const kart = tre[kode].kart
     if (!kart) return
+    if (!kart.format) return
     for (let pri of prio)
       if (kart.format[pri]) {
         kart.aktivtFormat = pri
@@ -56,7 +57,8 @@ function addKartformat() {
       if (!filename) return // Is a directory
       if (".mbtiles.geojson".indexOf(path.extname(filename)) < 0) return
       if (filename.indexOf("3857") < 0) return
-      if (!target.kart) target.kart = { format: {} }
+      if (!target.kart) target.kart = {}
+      if (!target.kart.format) target.kart.format = {}
       const format = target.kart.format
       const type = filename.split(".").shift()
       if (!format[type]) format[type] = {}
@@ -83,6 +85,7 @@ function normaliserGradienter() {
   Object.keys(tre).forEach(kode => {
     const target = tre[kode]
     if (!target.kart) return
+    if (!target.kart.format) return
     const format = target.kart.format
     const rgrad = format["raster_gradient"]
     if (!rgrad) return
