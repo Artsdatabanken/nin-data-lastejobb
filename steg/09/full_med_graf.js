@@ -11,6 +11,7 @@ Object.keys(full).forEach(kode => lagGrafkoblinger(kode, full[kode]))
 Object.keys(full).forEach(kode => lagGradientPåSegSelv(kode, full[kode]))
 Object.keys(full).forEach(kode => lagGrafGradientkoblinger(kode, full[kode]))
 Object.keys(full).forEach(kode => propagerGradientTilRelasjon(kode, full[kode]))
+Object.keys(full).forEach(kode => propagerNedPresisjon(kode, full[kode]))
 propagerGrafkoblinger()
 
 io.skrivDatafil(__filename, full)
@@ -272,4 +273,18 @@ function propagerGradientTilFormor(formorkode, node) {
   const formor = full[formorkode]
   propagerGradientTilNode(formor, node)
   propagerGradientTilForfedre(formor)
+}
+
+function propagerNedPresisjon(kode, node) {
+  if (!node.presisjon) return
+  const barn = barnAv[kode] || []
+  barn.forEach(bkode => propagerPresisjonTilBarn(bkode, node.presisjon))
+}
+
+function propagerPresisjonTilBarn(kode, presisjon) {
+  const barnet = full[kode]
+  if (barnet.presisjon) return
+  barnet.presisjon = presisjon
+  const barn = barnAv[kode] || []
+  barn.forEach(bkode => propagerPresisjonTilBarn(bkode, presisjon))
 }
