@@ -120,7 +120,8 @@ function normaliserGradientTrinn(bkode, barn, rgrad) {
   const [nmin, nmax] = rgrad.intervall.normalisertVerdi
   const nrange = nmax - nmin
   const x1 = Math.trunc((nrange * (min - tmin)) / span) + nmin
-  const x2 = Math.trunc((nrange * (max - tmin)) / span) + nmin
+  let x2 = Math.trunc((nrange * (max - tmin)) / span) + nmin
+  if (max == 0) x2 = nmax // Unbounded
   barn.normalisertVerdi = [x1, x2]
 }
 
