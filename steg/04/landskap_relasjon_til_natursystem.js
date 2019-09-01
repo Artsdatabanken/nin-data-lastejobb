@@ -3,11 +3,6 @@ const { io } = require("lastejobb")
 
 let rel = io.lesDatafil("relasjon_til_natursystem.csv.json").items
 let klg = io.lesDatafil("landskapsgradient.json")
-let na = io.lesDatafil("na_mi_liste.json")
-let bs = io.lesDatafil("mi_variasjon.json")
-Object.entries(bs).forEach(([key, value]) => {
-  na[key] = value
-})
 
 const data = akkumuler(rel)
 const r = map(data)
@@ -28,8 +23,6 @@ function akkumuler(rel) {
       mål.forEach(m => {
         const målkode = mapnakode(m)
         if (!målkode) return
-        if (!na[målkode]) debugger
-        if (!na[målkode]) return log.warn("Relasjon til ukjent type " + målkode)
         if (!relasjon[kant]) relasjon[kant] = {}
         relasjon[kant][målkode] = true
       })

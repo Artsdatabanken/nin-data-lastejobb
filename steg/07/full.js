@@ -9,58 +9,25 @@ flett("naturvernområde")
 flettKildedata("kommune/kommune")
 flettKildedata("kommune/fylke")
 flett("organisasjon")
-flett("ar_diagnostisk_art")
-flett("na_med_basistrinn_relasjon")
-flett("na_mi_liste")
-flett("mi_variasjon")
 flett("landskap")
 flett("landskapsgradient")
 flett("landskap_relasjon_til_natursystem")
 flett("ar_taxon")
-flett("na_prosedyrekategori")
-flett("na_definisjonsgrunnlag")
 flett("inn_statistikk")
 flett("maritim-grense")
 flettKildedataOld("rl_rødliste")
 flettKildedataOld("Art/type")
 flettKildedataOld("Art/Fremmed_Art/type")
 flettKildedata("nin-data/Natur_i_Norge/Landskap/Typeinndeling/type")
-flettKildedata("nin-data/Natur_i_Norge/Natursystem/type")
-flettKildedata("nin-data/Natur_i_Norge/Natursystem/Miljøvariabler/type")
-flettKildedata(
-  "nin-data/Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/type"
-)
+flettKildedata("natursystem/natursystem")
 flettKildedataOld("type")
+
 sjekkAtTitlerEksisterer()
 capsTitler()
 kobleForeldre()
-overrideDefects()
 propagerNedFlaggAttributt()
 
-// På sedimentsortering er det innført et ekstra tullenivå som bryter med systemet
-// For å unngå en heap av trøbbel justerer vi kodene inn rett under LKM og dropper
-// mellomnivået
-function overrideDefects() {
-  const koder = ["NN-NA-LKM-S3-E", "NN-NA-LKM-S3-F", "NN-NA-LKM-S3-S"]
-  Object.keys(r).forEach(kode => {
-    const node = r[kode]
-    koder.forEach(m => {
-      if (node.relasjon) {
-        const node = r[kode]
-        node.relasjon.forEach(rel => {
-          rel.kode = rel.kode.replace("NN-NA-LKM-S3-", "NN-NA-LKM-S3")
-        })
-      }
-      if (!kode.startsWith(m)) return
-      const destKode = kode.replace("S3-", "S3")
-      node.foreldre[0] = kode === m ? "NN-NA-LKM" : m.replace("S3-", "S3")
-      json.moveKey(r, kode, destKode)
-    })
-  })
-  delete r["NN-NA-LKM-S3"]
-}
-
-function flettAttributter(o, props = {}) {
+function flettAttributter(o) {
   for (let key of Object.keys(o)) {
     let kode = key.replace("_", "-")
     kode = kode.toUpperCase()
@@ -74,27 +41,27 @@ function flettAttributter(o, props = {}) {
       if (!src.tittel.nb && src.tittel.eng)
         json.moveKey(src.tittel, "eng", "en")
     }
-    const node = Object.assign({}, r[kode], src, props)
-    r[kode] = node
+    r[kode] = Object.assign({}, r[kode], src)
   }
 }
 
-function flett(filename, props = {}) {
+function flett(filename) {
   var data = io.lesDatafil(filename)
   let o = data
   if (o.items) o = json.arrayToObject(data.items, { uniqueKey: "kode" })
-  flettAttributter(o, props)
+  flettAttributter(o)
 }
 
-function flettKildedata(filename, props = {}) {
+function flettKildedata(filename) {
   var data = io.readJson(filename + ".json")
   let o = data
   if (o.items) o = json.arrayToObject(data.items, { uniqueKey: "kode" })
-  flettAttributter(o, props)
+  flettAttributter(o)
 }
-function flettKildedataOld(filename, props = {}) {
+
+function flettKildedataOld(filename) {
   var data = io.readJson("./kildedata/" + filename + ".json")
-  flettAttributter(data, props)
+  flettAttributter(data)
 }
 
 function finnForeldre(kode) {

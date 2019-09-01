@@ -9,7 +9,6 @@ const config = {
   datakilde: datakilde,
   webserver: "https://data.artsdatabanken.no/",
   infoUrl: {
-    nin: "https://www.artsdatabanken.no/NiN2.0/",
     verneområde: "http://faktaark.naturbase.no/Vern?id="
   },
   kildedataPathOld: "./kildedata",
