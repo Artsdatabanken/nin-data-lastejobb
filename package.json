@@ -7,6 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
+    "pull": "node index pull",
     "build": "node --max_old_space_size=6144 index",
     "test": "node --max_old_space_size=6144 node_modules/.bin/jest",
     "deploy": "./scripts/deploy.sh",

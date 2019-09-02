@@ -1,5 +1,3 @@
-// @flow
-if (!process.env.DEBUG) process.env.DEBUG = "*"
 const { spawnSync } = require("child_process")
 const { io, log } = require("lastejobb")
 const config = require("./config")
@@ -14,7 +12,9 @@ function exec(jsFile) {
   if (r.status > 0) process.exit(1)
 }
 
-let files = io.findFiles(config.lasteScriptPath, ".js")
+const scripPath = process.argv[2] || config.lasteScriptPath
+
+let files = io.findFiles(scripPath, ".js")
 files = files.sort()
 log.info("Fant " + files.length + " lastejobber")
 files = files.filter(file => file.indexOf(".test") < 0)
