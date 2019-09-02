@@ -11,8 +11,6 @@
   "VV-VF-MAV": { "farge": "hsl(29, 70%, 60%)" },
   "VV": { "farge": "hsl(300, 40%, 70%)" },
   "AO": { "farge": "hsl(0, 0%, 70%)" },
-  "NN-NA-BS": { "farge": "hsl(240, 40%, 70%)" },
-  "NN-NA-LKM": { "farge": "hsl(32, 40%, 70%)" },
   "OR": { "farge": "hsl(70, 0%, 70%)" },
   "RL": { "farge": "hsl(12, 40%, 70%)" }
 }
