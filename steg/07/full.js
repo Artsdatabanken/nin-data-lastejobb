@@ -9,18 +9,18 @@ flett("naturvernområde")
 flettKildedata("kommune/kommune")
 flettKildedata("kommune/fylke")
 flett("organisasjon")
-flett("landskap")
-flett("landskapsgradient")
-flett("landskap_relasjon_til_natursystem")
 flett("ar_taxon")
 flett("inn_statistikk")
 flett("maritim-grense")
 flettKildedataOld("rl_rødliste")
 flettKildedataOld("Art/type")
 flettKildedataOld("Art/Fremmed_Art/type")
-flettKildedata("nin-data/Natur_i_Norge/Landskap/Typeinndeling/type")
+flettKildedata("landskap/landskap")
 flettKildedata("natursystem/natursystem")
 flettKildedataOld("type")
+
+r["NN-LA"].foreldre = ["NN"]
+r["NN-NA"].foreldre = ["NN"]
 
 sjekkAtTitlerEksisterer()
 capsTitler()

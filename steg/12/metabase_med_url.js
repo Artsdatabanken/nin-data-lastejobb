@@ -25,6 +25,7 @@ function oppdaterNivå1(node) {
 }
 
 function addUrl(kode, node) {
+  if (kode === "NN-NA-TI-T21") debugger
   if (!node.hasOwnProperty("url")) node.url = url(kode)
   if (usedUrls[node.url])
     log.warn("Dupe URL " + kode + "," + usedUrls[node.url] + ": " + node.url)

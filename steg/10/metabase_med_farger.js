@@ -1,7 +1,7 @@
 const tinycolor = require("tinycolor2")
 const log = require("log-less-fancy")()
 const { io } = require("lastejobb")
-const blandFarger = require("../../lib/fargefunksjon")
+const { blend } = require("@artsdatabanken/color-blend")
 const typesystem = require("@artsdatabanken/typesystem")
 
 /*
@@ -78,7 +78,7 @@ function blandBarnasFarger(kode) {
     })
   }
   if (farger.length === 0) return null
-  node.farge = blandFarger(farger)
+  node.farge = blend(farger)
   return node.farge
 }
 
@@ -92,7 +92,6 @@ function trickleColorsUp() {
       node.farge = farge_og_vekt.farge
     }
     node.foreldre.forEach(fkode => {
-      const forelder = data[fkode]
       if (!farger[fkode]) {
         if (!blends[fkode]) blends[fkode] = []
         blends[fkode].push({ kode: kode, ...farge_og_vekt })
@@ -101,9 +100,8 @@ function trickleColorsUp() {
   })
 
   Object.keys(blends).forEach(kode => {
-    const blend = blends[kode]
-    const node = data[kode]
-    farger[kode] = { farge: blandFarger(blend) }
+    const farger2 = blends[kode]
+    farger[kode] = { farge: blend(farger2) }
   })
   return Object.keys(blends).length > 0
 }
