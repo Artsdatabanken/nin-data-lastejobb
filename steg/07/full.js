@@ -24,7 +24,9 @@ r["NN-NA"].foreldre = ["NN"]
 
 sjekkAtTitlerEksisterer()
 capsTitler()
-kobleForeldre()
+
+// TODO: Fjern når kildedata er ok
+typesystem.kobleForeldre(r)
 propagerNedFlaggAttributt()
 
 function flettAttributter(o) {
@@ -62,26 +64,6 @@ function flettKildedata(filename) {
 function flettKildedataOld(filename) {
   var data = io.readJson("./kildedata/" + filename + ".json")
   flettAttributter(data)
-}
-
-function finnForeldre(kode) {
-  if (kode === typesystem.rotkode) return []
-  const segs = typesystem.splittKode(kode)
-  if (segs.length <= 1) return [typesystem.rotkode]
-  const len = segs[segs.length - 1].length
-  kode = kode.substring(0, kode.length - len)
-  while (kode.length > 0) {
-    if (kode in r) return [kode]
-    kode = kode.substring(0, kode.length - 1)
-  }
-  return [typesystem.rotkode]
-}
-
-function kobleForeldre() {
-  for (let key of Object.keys(r)) {
-    const node = r[key]
-    if (!node.foreldre) node.foreldre = finnForeldre(key)
-  }
 }
 
 function propagerNedFlaggAttributt() {
