@@ -13,6 +13,7 @@ let ukjentBbox = 0
 addKartformat()
 normaliserGradienter()
 if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
+propagerNedKart()
 zoomlevels(typesystem.rotkode)
 settDefaultVisning()
 io.skrivDatafil(__filename, tre)
@@ -151,4 +152,30 @@ function sladd(url) {
   if (url.indexOf("Kalk") >= 0) return false
   if (url.indexOf("Natur_i_Norge/Natursystem") >= 0) return true
   return false
+}
+
+function propagerNedKart() {
+  for (let kode of Object.keys(tre)) {
+    const node = tre[kode]
+    if (node.barn && node.barn.length > 0) continue // Ikke løvnode
+    if (node.nivå !== "Gradienttrinn") continue
+    if (kode === "NN-LA-KLG-BP-1") debugger
+    if (node.overordnet.length <= 0) continue
+    const fkode = node.overordnet[0].kode
+    const foreldernode = tre[fkode]
+    if (!foreldernode)
+      throw new Error(`Forelderen ${fkode} til ${kode} mangler.`)
+    if (!foreldernode.kart) continue
+    if (!foreldernode.kart.format) continue
+    if (Object.keys(foreldernode.kart.format).length <= 0) continue
+    if (!node.kart) node.kart = {}
+    if (!node.kart.format) node.kart.format = {}
+    const dest = node.kart.format
+    const src = foreldernode.kart.format
+    Object.keys(src).forEach(f => {
+      if (dest[f]) return
+      dest[f] = JSON.parse(JSON.stringify(src[f]))
+      if (f === "raster_gradient") dest[f].visning = ["diskret"]
+    })
+  }
 }
