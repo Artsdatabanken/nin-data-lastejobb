@@ -36,7 +36,7 @@ function mapBarn(key) {
       if (erRelasjon(key, ckey)) return
       const cnode = tre[ckey]
       if (!cnode) return
-      barn.push({
+      const barnet = {
         tittel: cnode.tittel,
         kode: cnode.kode,
         url: cnode.url,
@@ -45,7 +45,10 @@ function mapBarn(key) {
         normalisertVerdi: cnode.normalisertVerdi,
         skjul: cnode.skjul,
         farge: cnode.farge
-      })
+      }
+      if (cnode.kart && cnode.kart.format && cnode.kart.format.raster_indexed)
+        barnet.index = cnode.kart.format.raster_indexed.index
+      barn.push(barnet)
     })
   }
   node.barn = barn
