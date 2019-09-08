@@ -1,3 +1,6 @@
+/* No longer in use - client side palettes */
+return
+
 const fs = require("fs")
 const path = require("path")
 const execSync = require("child_process").execSync
