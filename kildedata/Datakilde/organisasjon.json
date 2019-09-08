@@ -60,5 +60,14 @@
     "ingress": "Wikidata er et prosjekt for å lage en dugnadsbasert database for å støtte Wikimedia-prosjekter som Wikipedia. Prosjektet ble starta av Wikipedia på tysk, og er ment å tilby standardiserte typer data til bruk på Wikimedia-prosjekter, for eksempel fødselsdatoer og geografiske data, og skal kunne brukes på samme måte som mediefiler fra Wikimedia Commons brukes.  Wikidata ble Wikimedia Foundations første nye prosjekt siden 2006.  Prosjektet ble oppretta med støtte fra Allen Institute for Artificial Intelligence, Gordon and Betty Moore Foundation og Google.",
     "infoUrl": "https://www.wikidata.org/wiki/Wikidata:Introduction",
     "metaUrl": "https://www.wikidata.org/wiki/Wikidata:Main_Page"
+  },
+  "OR-PDB": {
+    "farge": "hsl(0, 0%, 50%)",
+    "tittel": {
+      "nb": "The Paleobiology Database",
+      "en": "The Paleobiology Database"
+    },
+    "ingress": "The Paleobiology Database is a public database of paleontological data that anyone can use, maintained by an international non-governmental group of paleontologists.",
+    "infoUrl": "https://paleobiodb.org"
   }
 }
