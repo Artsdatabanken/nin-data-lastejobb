@@ -49,6 +49,7 @@ function settDefaultVisning() {
 function addKartformat() {
   Object.keys(tre).forEach(xkode => {
     const node = tre[xkode]
+    if (xkode === "NN-NA-BS-2BE-2") debugger
     if (sladd(node.url)) return
     const target = tre[xkode]
     const maps = filindeks[node.url]
@@ -151,6 +152,7 @@ function sladd(url) {
   if (url.indexOf("Ultrama") >= 0) return false
   if (url.indexOf("Kalk") >= 0) return false
   if (url.indexOf("Fossil") >= 0) return false
+  if (url.indexOf("Bergart") >= 0) return false
   if (url.indexOf("Natur_i_Norge/Natursystem") >= 0) return true
   return false
 }
