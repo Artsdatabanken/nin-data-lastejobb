@@ -3,11 +3,11 @@ const { io, json, log } = require("lastejobb")
 
 const r = {}
 
-flettKildedata("stedsnavn/type")
+flettKildedata("data/stedsnavn/type")
 flett("naturvern_typer")
 flett("naturvernområde")
-flettKildedata("kommune/kommune")
-flettKildedata("kommune/fylke")
+flettKildedata("data/kommune/kommune")
+flettKildedata("data/kommune/fylke")
 flett("organisasjon")
 flett("ar_taxon")
 flett("inn_statistikk")
@@ -15,8 +15,8 @@ flett("maritim-grense")
 flettKildedataOld("rl_rødliste")
 flettKildedataOld("Art/type")
 flettKildedataOld("Art/Fremmed_Art/type")
-flettKildedata("landskap/landskap")
-flettKildedata("natursystem/natursystem")
+flettKildedata("data/landskap/landskap")
+flettKildedata("data/natursystem/natursystem")
 flettKildedataOld("type")
 
 r["NN-LA"].foreldre = ["NN"]
