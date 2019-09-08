@@ -81,6 +81,21 @@ function propagerNedFlaggAttributt() {
   }
 }
 
+function propagerNedFlaggAttributt() {
+  for (let kode of Object.keys(r)) {
+    const node = r[kode]
+    for (const fkode of node.foreldre) {
+      const foreldernode = r[fkode]
+      if (!foreldernode)
+        throw new Error(`Forelderen ${fkode} til ${kode} mangler.`)
+      if (r[fkode].type === "flagg") node.type = "flagg"
+      if (r[fkode].type === "gradient") node.type = "gradientverdi"
+    }
+    if (kode.startsWith("NN-NA-LKM"))
+      if (!node.type) log.warn("Missing type attribute on: " + kode)
+  }
+}
+
 function capsTitler() {
   for (let key of Object.keys(r)) {
     const tittel = r[key].tittel

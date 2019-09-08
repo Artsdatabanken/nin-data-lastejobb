@@ -13,8 +13,6 @@ let hierarki = io.lesDatafil("kodehierarki")
 const foreldre = hierarki.foreldre
 const barnAv = hierarki.barn
 let farger = io.lesBuildfil("farger")
-const la_farger = io.lesDatafil("la_farger")
-farger = Object.assign(farger, la_farger)
 
 Object.keys(data).forEach(kode => {
   const node = data[kode]

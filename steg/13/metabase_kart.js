@@ -150,6 +150,7 @@ function sladd(url) {
   if (url.indexOf("Sediment") >= 0) return false
   if (url.indexOf("Ultrama") >= 0) return false
   if (url.indexOf("Kalk") >= 0) return false
+  if (url.indexOf("Fossil") >= 0) return false
   if (url.indexOf("Natur_i_Norge/Natursystem") >= 0) return true
   return false
 }
