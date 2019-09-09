@@ -25,11 +25,23 @@ function fjernKoderSomIkkeHarData(data) {
   })
 }
 
+function hasProperty(tree, key) {
+  if (Array.isArray(tree)) {
+    for (let item of tree) if (hasProperty(item, key)) return true
+    return false
+  }
+  if (tree[key]) return true
+  for (let o of Object.values(tree)) if (hasProperty(o, key)) return true
+  return false
+}
+
 function harKartdata(kode) {
   const node = tre[kode]
   if (!node) return false
   // Ta med alt som har relasjoner
-  if (node.kart && Object.keys(node.kart).length > 0) return true
+  const x = node.kart.format && hasProperty(node.kart.format, "url")
+  if (kode.indexOf("AR-") === 0) debugger
+  if (node.kart.format && hasProperty(node.kart.format, "url")) return true
   if (node.gradient && Object.keys(node.gradient).length > 0) return true
   if (harRelasjon(node.graf)) return true
   const visAlltid = ["OR"]
@@ -51,7 +63,6 @@ function harRelasjon(graf) {
 }
 
 function harBarnMedKartdata(node) {
-  if (node.kart) return true
   const barn = barnAv[node.kode]
   if (!barn) return false
   for (const kode of barn) if (harKartdata(kode)) return true

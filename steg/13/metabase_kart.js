@@ -49,9 +49,12 @@ function settDefaultVisning() {
 function addKartformat() {
   Object.keys(tre).forEach(xkode => {
     const node = tre[xkode]
-    if (xkode === "NN-NA-BS-2BE-2") debugger
-    if (sladd(node.url)) return
     const target = tre[xkode]
+    if (!target.kart) target.kart = {}
+    if (sladd(node.url)) {
+      target.kart.sladd = true
+      return
+    }
     const maps = filindeks[node.url]
     if (!maps) return
     Object.keys(maps).forEach(filename => {
@@ -59,7 +62,6 @@ function addKartformat() {
       if (!filename) return // Is a directory
       if (".mbtiles.geojson".indexOf(path.extname(filename)) < 0) return
       if (filename.indexOf("3857") < 0) return
-      if (!target.kart) target.kart = {}
       if (!target.kart.format) target.kart.format = {}
       const format = target.kart.format
       const type = filename.split(".").shift()
@@ -162,7 +164,6 @@ function propagerNedKart() {
     const node = tre[kode]
     if (node.barn && node.barn.length > 0) continue // Ikke løvnode
     if (node.nivå !== "Gradienttrinn") continue
-    if (kode === "NN-LA-KLG-BP-1") debugger
     if (node.overordnet.length <= 0) continue
     const fkode = node.overordnet[0].kode
     const foreldernode = tre[fkode]
