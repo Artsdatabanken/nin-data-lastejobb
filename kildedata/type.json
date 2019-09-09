@@ -1,4 +1,19 @@
 {
   "~": { "tittel": { "nb": "Katalog", "la": "Katalog" }, "url": "Katalog" },
-  "NN": { "tittel": { "nb": "Natur i Norge", "la": "Naturae Norvegia" } }
+  "NN": {
+    "tittel": {
+      "nb": "Natur i Norge",
+      "la": "Naturae Norvegia",
+      "en": "Nature of Norway"
+    }
+  },
+  "AR": { "farge": "#c01700" },
+  "VV-VF-NR": { "farge": "hsl(1, 70%, 60%)" },
+  "VV-VF-NP": { "farge": "hsl(114, 70%, 60%)" },
+  "VV-VF-LVO": { "farge": "hsl(114, 70%, 80%)" },
+  "VV-VF-PDO": { "farge": "hsl(40, 70%, 80%)" },
+  "VV-VF-MAV": { "farge": "hsl(29, 70%, 60%)" },
+  "VV": { "farge": "hsl(300, 40%, 70%)" },
+  "AO": { "farge": "hsl(0, 0%, 70%)" },
+  "OR": { "farge": "hsl(70, 0%, 70%)" }
 }
