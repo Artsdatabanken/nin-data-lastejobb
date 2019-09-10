@@ -8,7 +8,7 @@
 
 ## Dokumentasjon
 
-- [Kildedata](https://github.com/Artsdatabanken/nin-data)
+- [Kildedata](https://github.com/Artsdatabanken/nin-egenskapsdata)
 - [Eksterne datakilder](steg/1_nedlasting/README.md)
 - Internt [JSON format](doc/JSON.md)
 - [Ukurante løsninger (TODOs)](doc/UKURANT.md)

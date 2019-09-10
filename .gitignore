@@ -1,10 +1,8 @@
-data_
 data/
 cache/
 build/
 node_modules/
 log/
-nin-data/
 kommune/
 naturvern/
 
