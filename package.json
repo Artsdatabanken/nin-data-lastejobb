@@ -7,8 +7,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "pull": "node index pull",
-    "build": "node --max_old_space_size=8192 index",
+    "extract": "node index extract",
+    "transform": "node --max_old_space_size=8192 index transform",
+    "build": "npm run extract && npm run transform",
     "test": "node --max_old_space_size=6144 node_modules/.bin/jest",
     "deploy": "./scripts/deploy.sh",
     "precommit": "pretty-quick --staged"

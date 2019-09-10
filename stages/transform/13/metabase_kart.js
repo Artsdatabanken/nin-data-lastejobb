@@ -1,4 +1,4 @@
-const config = require("../../config")
+const config = require("../../../config")
 const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
