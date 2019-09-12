@@ -51,10 +51,6 @@ function addKartformat() {
     const node = tre[xkode]
     const target = tre[xkode]
     if (!target.kart) target.kart = {}
-    if (sladd(node.url)) {
-      target.kart.sladd = true
-      return
-    }
     const maps = filindeks[node.url]
     if (!maps) return
     Object.keys(maps).forEach(filename => {
@@ -67,6 +63,9 @@ function addKartformat() {
       const type = filename.split(".").shift()
       if (!format[type]) format[type] = {}
       const cv = format[type]
+
+      if (sladd(node.url)) cv.publish = -2 // Kun internt
+
       cv.url = config.webserver + node.url + "/" + filename
       if (fileinfo.maxzoom) {
         cv.zoom = [parseInt(fileinfo.minzoom), parseInt(fileinfo.maxzoom)]
