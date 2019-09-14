@@ -14,6 +14,11 @@
   "VV-VF-PDO": { "farge": "hsl(40, 70%, 80%)" },
   "VV-VF-MAV": { "farge": "hsl(29, 70%, 60%)" },
   "VV": { "farge": "hsl(300, 40%, 70%)" },
-  "AO": { "farge": "hsl(0, 0%, 70%)" },
+  "AO": {
+    "farge": "hsl(0, 0%, 70%)",
+    "ingress": {
+      "nb": "Norge er blant annet bygget opp av det vi kjenner som fastlandet med fylker og kommuner, som er en betydelig del av vårt territorialområde. Men Norge inneholder også flere øyer og øygrupper, og havområder som omtales som vår kontinentalsokkel."
+    }
+  },
   "OR": { "farge": "hsl(70, 0%, 70%)" }
 }
