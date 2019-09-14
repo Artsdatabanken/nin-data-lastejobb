@@ -16,7 +16,7 @@ flettKildedataOld("rl_rødliste")
 flettKildedataOld("Art/type")
 flettKildedataOld("Art/Fremmed_Art/type")
 flettKildedata("data/landskap/landskap")
-flettKildedata("data/natursystem/natursystem")
+flettKildedata("data/natursystem/type")
 flettKildedataOld("type")
 
 r["NN-LA"].foreldre = ["NN"]
