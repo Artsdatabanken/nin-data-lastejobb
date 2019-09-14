@@ -3,7 +3,7 @@ const log = require("log-less-fancy")()
 
 // Bygger fulltext-index for lookup-api
 
-const tre = io.lesBuildfil("metabase")
+const tre = io.lesBuildfil("metabase").items
 const index = {}
 
 /*
@@ -43,6 +43,7 @@ function pushTittel(hit, score, tittel) {
 
 Object.keys(tre).forEach(kode => {
   const node = tre[kode]
+  if (!node.tittel) debugger
   const hit = {
     kode: node.kode,
     url: node.url,

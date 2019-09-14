@@ -1,5 +1,4 @@
-return false // No longer in use - transitioned to flat files
-return false // No longer in use - transitioned to flat files
+return false // Not currently in use - transitioned to flat files
 
 const config = require("../../config")
 const { io } = require("lastejobb")

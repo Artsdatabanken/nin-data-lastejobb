@@ -12,15 +12,6 @@ let data = io.lesDatafil("full_med_graf")
 let hierarki = io.lesDatafil("kodehierarki")
 const foreldre = hierarki.foreldre
 const barnAv = hierarki.barn
-let farger = io.lesBuildfil("farger")
-
-Object.keys(data).forEach(kode => {
-  const node = data[kode]
-  const f = farger[kode]
-  if (!f) return
-  node.farge0 = node.farge0 || f.farge0
-  node.farge = node.farge || f.farge
-})
 
 Object.keys(data).forEach(kode => {
   const node = data[kode]
@@ -81,27 +72,25 @@ function blandBarnasFarger(kode) {
 }
 
 function trickleColorsUp() {
+  wasChanged = false
   const blends = {}
-  Object.keys(farger).forEach(kode => {
-    const farge_og_vekt = farger[kode]
+  Object.keys(data).forEach(kode => {
     const node = data[kode]
     if (!node) return log.warn("Har farge for ukjent kode " + kode)
-    if (!node.farge) {
-      node.farge = farge_og_vekt.farge
-    }
     node.foreldre.forEach(fkode => {
-      if (!farger[fkode]) {
-        if (!blends[fkode]) blends[fkode] = []
-        blends[fkode].push({ kode: kode, ...farge_og_vekt })
-      }
+      if (!blends[fkode]) blends[fkode] = []
+      blends[fkode].push({ kode: kode, farge: node.farge })
     })
   })
 
   Object.keys(blends).forEach(kode => {
     const farger2 = blends[kode]
-    farger[kode] = { farge: blend(farger2) }
+    const node = data[kode]
+    if (node.farge) return
+    node.farge = blend(farger2)
+    wasChanged = true
   })
-  return Object.keys(blends).length > 0
+  return wasChanged
 }
 
 function gradientrampe(farge0, farge, barnkoder) {

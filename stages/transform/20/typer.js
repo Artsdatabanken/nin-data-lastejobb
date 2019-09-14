@@ -1,6 +1,7 @@
-const { io } = require("lastejobb")
+const { io, json } = require("lastejobb")
 
-let data = io.lesBuildfil("metabase")
+let dataArr = io.lesBuildfil("metabase").items
+const data = json.arrayToObject(dataArr, { uniqueKey: "kode" })
 
 const prefixes = ["AO", "AR", "NN-LA", "NN-NA", "OR", "VV", "RL"]
 
