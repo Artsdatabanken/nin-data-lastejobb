@@ -1,3 +1,3 @@
 const { git } = require("lastejobb")
 
-git.clone("https://github.com/Artsdatabanken/art-kode.git", "data/art-kode")
+git.clone("https://github.com/Artsdatabanken/art.git", "data/art")
