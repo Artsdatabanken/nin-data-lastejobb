@@ -39,21 +39,24 @@ function harKartdata(kode) {
   const node = tre[kode]
   if (!node) return false
   // Ta med alt som har relasjoner
-  const x = node.kart.format && hasProperty(node.kart.format, "url")
-  if (kode.indexOf("AR-") === 0) debugger
   if (node.kart.format && hasProperty(node.kart.format, "url")) return true
   if (node.gradient && Object.keys(node.gradient).length > 0) return true
+  if (node.risikovurdering) {
+    // Ta med alle med risikovurdering
+    return true
+  }
   if (harRelasjon(node.graf)) return true
   const visAlltid = ["OR"]
   if (visAlltid.includes(kode)) return true
   if (kode === typesystem.rotkode) return true
   if (kode.indexOf("AO") === 0) return true
+  //  if (kode.indexOf("AR") === 0) return true
   if (kode.indexOf("SN") === 0) return true
   if (kode.indexOf("RL") === 0) return true
   if (kode.indexOf("VV") === 0) return true
   if (kode.indexOf("NN-NA-BS-8") === 0) return true
 
-  return harBarnMedKartdata(node)
+  return harBarnMedKartdata(kode)
 }
 
 function harRelasjon(graf) {
@@ -62,8 +65,8 @@ function harRelasjon(graf) {
   return graf[0].type !== "Datakilde"
 }
 
-function harBarnMedKartdata(node) {
-  const barn = barnAv[node.kode]
+function harBarnMedKartdata(kode) {
+  const barn = barnAv[kode]
   if (!barn) return false
   for (const kode of barn) if (harKartdata(kode)) return true
   return false
