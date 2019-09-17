@@ -1,8 +1,8 @@
 {
-  "AR-FA": { "tittel": { "nb": "Fremmed art" } },
-  "AR-FA-SE": { "tittel": { "nb": "Svært høy risiko" } },
-  "AR-FA-HI": { "tittel": { "nb": "Høy risiko" } },
-  "AR-FA-PH": { "tittel": { "nb": "Potensielt høy risiko" } },
-  "AR-FA-LO": { "tittel": { "nb": "Lav risiko" } },
-  "AR-FA-NK": { "tittel": { "nb": "Ingen kjent risiko" } }
+  "FA": { "tittel": { "nb": "Fremmed art" } },
+  "FA-SE": { "tittel": { "nb": "Svært høy risiko" } },
+  "FA-HI": { "tittel": { "nb": "Høy risiko" } },
+  "FA-PH": { "tittel": { "nb": "Potensielt høy risiko" } },
+  "FA-LO": { "tittel": { "nb": "Lav risiko" } },
+  "FA-NK": { "tittel": { "nb": "Ingen kjent risiko" } }
 }
