@@ -1,6 +1,6 @@
 const { io, log } = require("lastejobb")
 
-let vo = io.readJson("./naturvern/naturvernområde.json")
+let vo = io.readJson("./data/naturvern/naturvernområde.json")
 
 function relasjon(e, kant, kode, kantRetur, erSubset = true) {
   for (const rl of e.relasjon) if (rl.kode === kode) return
