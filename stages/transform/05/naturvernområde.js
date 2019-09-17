@@ -36,11 +36,9 @@ function kobleForvaltningsmyndighet(e) {
 }
 
 function map(vo) {
-  let r = {}
-  const kode = vo.kode
   let e = {
     tittel: {
-      nb: vo.navn.offisielt
+      nb: vo.tittel.offisielt
     },
     infoUrl: vo.lenke.naturbase, // TODO: Fjern
     relasjon: [],

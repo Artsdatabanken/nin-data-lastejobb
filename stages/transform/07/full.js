@@ -43,7 +43,7 @@ function flettAttributter(o) {
       if (!src.tittel.nb && src.tittel.eng)
         json.moveKey(src.tittel, "eng", "en")
     }
-    r[kode] = Object.assign({}, r[kode], src)
+    r[kode] = json.mergeDeep(r[kode] || {}, src)
   }
 }
 

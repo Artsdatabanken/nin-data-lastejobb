@@ -33,11 +33,12 @@ function overordnet(hit, array, score) {
   const node = array.shift()
   if (!node) return
   push(hit, score, node.kode)
-  pushTittel(hit, score, node.tittel)
+  pushAlleSpråk(hit, score, node.tittel)
   overordnet(hit, array, score * 0.9)
 }
 
-function pushTittel(hit, score, tittel) {
+function pushAlleSpråk(hit, score, tittel) {
+  if (!tittel) return
   Object.values(tittel).forEach(text => push(hit, score, text))
 }
 
@@ -54,16 +55,16 @@ Object.keys(tre).forEach(kode => {
   if (kode.startsWith("VV")) dybde += 3 // Nedprioriter verneområder
   const cf = Math.pow(0.99, dybde)
   push(hit, 1.0 * cf, node.kode)
-  pushTittel(hit, 0.98 * cf, node.tittel)
+  pushAlleSpråk(hit, 0.98 * cf, node.tittel)
   push(hit, 0.5 * cf, node.nivå)
-  push(hit, 0.7 * cf, node.ingress)
+  pushAlleSpråk(hit, 0.7 * cf, node.ingress)
   overordnet(hit, node.overordnet, 0.7 * cf)
   node.graf &&
     node.graf.forEach(gn => {
       push(hit, 0.3 * cf, gn.type)
       gn.noder.forEach(gnc => {
         push(hit, 0.7 * cf, gnc.kode)
-        pushTittel(hit, 0.7 * cf, gnc.tittel)
+        pushAlleSpråk(hit, 0.7 * cf, gnc.tittel)
       })
     })
 })
