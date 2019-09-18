@@ -2,7 +2,7 @@ const { http, log } = require("lastejobb")
 
 http
   .downloadJson(
-    "https://raw.githubusercontent.com/Artsdatabanken/maritime-grenser/master/build/type.json",
+    "https://raw.githubusercontent.com/Artsdatabanken/maritim-grense/master/type.json",
     "maritim-grense.json"
   )
   .catch(err => {
