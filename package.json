@@ -33,7 +33,7 @@
     "decompress-zip": "^0.2.2",
     "eslint-config-airbnb-base": "^14.0.0",
     "fs-extra": "^8.1.0",
-    "lastejobb": "^2.2.0",
+    "lastejobb": "^2.4.4",
     "log-less-fancy": "^1.4.0",
     "node-fetch": "^2.6.0",
     "polygon-lookup": "^2.5.0",
