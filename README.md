@@ -85,7 +85,7 @@ jq '.katalog.or."adb"' data/metabase.json
 }
 ```
 
-```
+```bash
 jq '.AR_43956' data/ar_taxon.json
 ```
 
