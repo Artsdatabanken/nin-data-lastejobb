@@ -119,7 +119,7 @@ function lagRedirectFraTittel(tre) {
   Object.keys(tre).forEach(kode => {
     const node = tre[kode]
     settInnAlias(tre, kode, node.tittel.nb)
-    settInnAlias(tre, kode, node.tittel.la)
+    settInnAlias(tre, kode, node.tittel.sn)
     settInnAlias(tre, kode, node.tittel.en)
   })
 }

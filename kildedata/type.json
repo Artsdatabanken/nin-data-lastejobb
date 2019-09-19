@@ -1,9 +1,9 @@
 {
-  "~": { "tittel": { "nb": "Katalog", "la": "Katalog" }, "url": "Katalog" },
+  "~": { "tittel": { "nb": "Katalog" }, "url": "Katalog" },
   "NN": {
     "tittel": {
       "nb": "Natur i Norge",
-      "la": "Naturae Norvegia",
+      "nn": "Natur i Noreg",
       "en": "Nature of Norway"
     }
   },

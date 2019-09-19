@@ -48,7 +48,7 @@ Object.keys(tre).forEach(kode => {
   const hit = {
     kode: node.kode,
     url: node.url,
-    title: node.tittel.nb || node.tittel.la
+    title: node.tittel.nb || node.tittel.sn
   }
   let dybde = node.overordnet.length + 1
   if (kode.match(/LKM|KLG/)) dybde -= 0.5 // Boost gradientene som går igjen som byggeklosser på samme nivå i typene

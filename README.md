@@ -92,7 +92,7 @@ jq '.AR_43956' data/ar_taxon.json
 ```json
 {
   "tittel": {
-    "la": "Dactylopusia longyearbyenensis"
+    "sn": "Dactylopusia longyearbyenensis"
   },
   "navnSciId": "43956",
   "parentId": "43953",

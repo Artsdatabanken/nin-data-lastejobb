@@ -82,7 +82,7 @@ function urlPåFlagg(node) {
 
 function urlify(tittel, kode, makevalid) {
   let s = kode.startsWith(typesystem.art.prefiks)
-    ? tittel.la || tittel.nb
+    ? tittel.sn || tittel.nb
     : tittel.nb
   if (!s) {
     log.error("Mangler tittel: " + kode + ": " + JSON.stringify(tittel))
