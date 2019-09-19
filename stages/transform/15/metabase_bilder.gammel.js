@@ -28,6 +28,7 @@ function addMediaSource(node) {
     bilde[mk] = bilde[mk] || {}
     bilde[mk].kilde = urlMedBildeOgMetadata(kilde, node.url)
   })
+  delete node.mediakilde
 }
 
 function urlMedBildeOgMetadata(url, nodeurl) {
