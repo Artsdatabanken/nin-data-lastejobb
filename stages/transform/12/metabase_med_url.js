@@ -25,17 +25,11 @@ function oppdaterNivå1(node) {
 }
 
 function addUrl(kode, node) {
-  if (node.ingress) {
-    const ing = node.ingress
-    const ingt = typeof ing
-    if (ingt !== "object") debugger
-  }
   if (!node.hasOwnProperty("url")) node.url = url(kode)
   if (usedUrls[node.url])
     log.warn("Dupe URL " + kode + "," + usedUrls[node.url] + ": " + node.url)
   usedUrls[node.url] = kode
   if (node.media && node.media.kart) {
-    debugger
     node.media.kart = node.url + node.media.kart
   }
 }
