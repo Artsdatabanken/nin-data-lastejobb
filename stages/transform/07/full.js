@@ -6,6 +6,8 @@ const r = {}
 flettKildedata("data/stedsnavn/type")
 flett("naturvern_typer")
 flett("naturvernområde")
+flettKildedata("data/art/type")
+flettKildedata("data/art/art")
 flettKildedata("data/kommune/kommune")
 flettKildedata("data/kommune/fylke")
 flettKildedata("data/datakilde/type")
