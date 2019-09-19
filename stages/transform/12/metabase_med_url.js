@@ -6,7 +6,7 @@ const usedUrls = {}
 
 let tre = io.lesDatafil("metabase_tweaks")
 Object.keys(tre).forEach(kode => addUrl(kode, tre[kode]))
-Object.keys(tre).forEach(kode => addUrlPåRelasjoner(kode, tre[kode]))
+Object.keys(tre).forEach(kode => addUrlPåRelasjoner(tre[kode]))
 Object.keys(tre).forEach(kode => oppdaterNivå(tre[kode]))
 io.skrivDatafil(__filename, tre)
 
@@ -34,7 +34,7 @@ function addUrl(kode, node) {
   }
 }
 
-function addUrlPåRelasjoner(kode, node) {
+function addUrlPåRelasjoner(node) {
   urlPåGraf(node)
   urlPåGradient(node)
   urlPåFlagg(node)
