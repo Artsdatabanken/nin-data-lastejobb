@@ -34,6 +34,10 @@ function addUrl(kode, node) {
   if (usedUrls[node.url])
     log.warn("Dupe URL " + kode + "," + usedUrls[node.url] + ": " + node.url)
   usedUrls[node.url] = kode
+  if (node.media && node.media.kart) {
+    debugger
+    node.media.kart = node.url + node.media.kart
+  }
 }
 
 function addUrlPåRelasjoner(kode, node) {
