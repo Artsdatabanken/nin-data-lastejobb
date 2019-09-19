@@ -26,11 +26,14 @@ function addMediaSource(node) {
     if (Array.isArray(kilde)) kilde = kilde[0]
     if (!kilde) return
     bilde[mk] = bilde[mk] || {}
-    bilde[mk].kilde = urlMedBildeOgMetadata(kilde)
+    bilde[mk].kilde = urlMedBildeOgMetadata(kilde, node.url)
   })
 }
 
-function urlMedBildeOgMetadata(url) {
+function urlMedBildeOgMetadata(url, nodeurl) {
+  if (!url.startsWith("http")) {
+    return nodeurl + "/" + url
+  }
   if (url.indexOf("commons.wikimedia.org") < 0) return url
   // https://www.wikidata.org/wiki/Q1789866#/media/File:Seierstad_J%C3%B8a.jpg
   // https://commons.wikimedia.org/wiki/File:Seierstad_J%C3%B8a.jpg#/media/File:Seierstad_J%C3%B8a.jpg
