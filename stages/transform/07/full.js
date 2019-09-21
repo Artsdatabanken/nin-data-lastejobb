@@ -3,6 +3,7 @@ const { io, json, log } = require("lastejobb")
 
 const r = {}
 
+flettKildedata("kildedata/type")
 flettKildedata("data/stedsnavn/type")
 flettKildedata("data/naturvern/type")
 flettKildedata("data/art/type")
@@ -15,7 +16,6 @@ flett("inn_statistikk")
 flett("maritim-grense")
 flettKildedata("data/landskap/type")
 flettKildedata("data/natursystem/type")
-flettKildedata("kildedata/type")
 
 r["NN-LA"].foreldre = ["NN"]
 r["NN-NA"].foreldre = ["NN"]
