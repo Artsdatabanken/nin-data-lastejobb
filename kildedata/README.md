@@ -17,33 +17,9 @@ Natur i Norge kartleggingsprogrammer og prosjekter.
 
 - Denne filen er inntil videre originalen inntil Miljødirektoratet publiserer
 
-## [bbox.json](bbox.json)
-
-Axis-aligned bounding boxes. Ytterpunkter til rektangel som omslutter de kartdataene som finnes for kartlaget.
-
-```json
-  "NA_V6": [
-    31.14292256029043,
-    70.45552450718783,
-    28.989467613353625,
-    70.19961927605274
-  ]
-```
-
 ### Datakilde
 
 - https://github.com/Artsdatabanken/grunnkart-dataflyt/...(TODO)
-
-## [farger.json](farger.json)
-
-Én fargekode per tema. Brukes som standardfarge for kartlaget i kartet.
-
-```json
-{
-  "MI_KA-E": "hsl(0, 59%, 63%)",
-  "MI_KA-F": "hsl(0, 84%, 32%)"
-}
-```
 
 ## [na_grunntyper.json](na_grunntyper.json)
 
@@ -123,32 +99,3 @@ Beskrivelse av dataleverandører.
 
 - Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
   - [or_datasett.json](or_datasett.json)
-
-# [statistikk.json](statistikk.json)
-
-Konfigurasjon av hva slags statistikk som skal publiseres for ulike lag.
-
-| Nøkkel   | Beskrivelse                                                  |
-| -------- | ------------------------------------------------------------ |
-| funksjon | Matematisk funksjon (**sum**, **count**, **distinct_count**) |
-| felt     | Feltet funksjonen skal lese fra, eksempel **areal**          |
-
-Eksempel: Summer antall ulike arter i hvert geografisk område (AO) og areal av de ulike hovedtyper i natursystem. NA\_\*
-
-```json
-  "AO": {
-    "NA": {
-      "funksjon": "sum",
-      "felt": "areal"
-    },
-    "AR": {
-      "funksjon": "distinct_count",
-      "felt": "kode"
-    }
-  }
-```
-
-### Datakilde
-
-- Denne filen er originalen - vedlikeholdes her
-  - [statistikk.json](statistikk.json)
