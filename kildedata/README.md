@@ -45,33 +45,6 @@ Axis-aligned bounding boxes. Ytterpunkter til rektangel som omslutter de kartdat
 }
 ```
 
-### Datakilde
-
-- Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
-  - [farger.json](farger.json)
-
-## [kodetre_nivå.json](kodetre_nivå.json)
-
-Inneholder navn på nivåene i de ulike kodetrærne.
-
-```json
-{
-  "NA": [
-    "Hovedtypegruppe",
-    "Hovedtype",
-    "Kartleggingsenhet 1:20000",
-    "Kartleggingsenhet 1:5000",
-    "Grunntype"
-  ],
-  "AO": ["Fylke", "Kommune"]
-}
-```
-
-### Datakilde
-
-- Denne filen er originalen - vedlikeholdes her (Pull requests er velkomne)
-  - [kodetre_nivå.json](kodetre_nivå.json)
-
 ## [na_grunntyper.json](na_grunntyper.json)
 
 Kobling mellom grunntyper (eks. _NA_T7-6_) og kartleggingsenheter (eks. _NA_T7-E-4_ (1:20000) eller _NA_T7-C-6_ (1:5000))
@@ -82,10 +55,6 @@ Kobling mellom grunntyper (eks. _NA_T7-6_) og kartleggingsenheter (eks. _NA_T7-E
   "NA_T7-C-6": ["NA_T7-6"]
 }
 ```
-
-### Datakilde
-
-- Artsdatabanken (TODO: direktelenke)
 
 ## [na_hovedtyper.json](na_hovedtyper.json)
 
