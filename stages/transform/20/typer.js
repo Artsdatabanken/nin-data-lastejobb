@@ -1,7 +1,10 @@
 const { io, json } = require("lastejobb")
 
 let dataArr = io.lesBuildfil("metabase").items
-const data = json.arrayToObject(dataArr, { uniqueKey: "kode" })
+const data = json.arrayToObject(dataArr, {
+  uniqueKey: "kode",
+  removeKeyProperty: false
+})
 
 const prefixes = ["AO", "AR", "NN-LA", "NN-NA", "OR", "VV", "RL"]
 
@@ -15,7 +18,7 @@ function skrivFil(prefix) {
   tittel = titler.sn || titler.nb
   const dok = {
     meta: {
-      tittel: tittel,
+      tittel: { nb: tittel },
       url: `https://data.artsdatabanken.no/${tittel}/metadata_med_undertyper.json`
     },
     data: []
