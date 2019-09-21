@@ -4,8 +4,7 @@ const { io, json, log } = require("lastejobb")
 const r = {}
 
 flettKildedata("data/stedsnavn/type")
-flett("naturvern_typer")
-flett("naturvernområde")
+flettKildedata("data/naturvern/type")
 flettKildedata("data/art/type")
 flettKildedata("data/art/art")
 flettKildedata("data/truet-art/type")
@@ -16,7 +15,7 @@ flett("inn_statistikk")
 flett("maritim-grense")
 flettKildedata("data/landskap/type")
 flettKildedata("data/natursystem/type")
-flettKildedataOld("type")
+flettKildedata("kildedata/type")
 
 r["NN-LA"].foreldre = ["NN"]
 r["NN-NA"].foreldre = ["NN"]
@@ -58,11 +57,6 @@ function flettKildedata(filename) {
   let o = data
   if (o.items) o = json.arrayToObject(data.items, { uniqueKey: "kode" })
   flettAttributter(o)
-}
-
-function flettKildedataOld(filename) {
-  var data = io.readJson("./kildedata/" + filename + ".json")
-  flettAttributter(data)
 }
 
 function propagerNedFlaggAttributt() {
