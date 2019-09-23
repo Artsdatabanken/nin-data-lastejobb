@@ -1,5 +1,4 @@
-const { io } = require("lastejobb")
-const log = require("log-less-fancy")()
+const { io, log } = require("lastejobb")
 const typesystem = require("@artsdatabanken/typesystem")
 
 let slettet_fordi_mangler_bbox = []
@@ -26,6 +25,7 @@ function fjernKoderSomIkkeHarData(data) {
 }
 
 function hasProperty(tree, key) {
+  if (typeof tree === "string") return false
   if (Array.isArray(tree)) {
     for (let item of tree) if (hasProperty(item, key)) return true
     return false
