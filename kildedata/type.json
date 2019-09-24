@@ -1,11 +1,12 @@
 {
-  "~": { "tittel": { "nb": "Katalog" }, "url": "Katalog" },
+  "~": { "tittel": { "nb": "Katalog" }, "url": "" },
   "NN": {
     "tittel": {
       "nb": "Natur i Norge",
       "nn": "Natur i Noreg",
       "en": "Nature of Norway"
-    }
+    },
+    "nivå": "Natur i Norge"
   },
   "AR": { "farge": "#c01700" },
   "VV-VF-NR": { "farge": "hsl(1, 70%, 60%)" },
