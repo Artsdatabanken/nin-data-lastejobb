@@ -2,21 +2,21 @@ const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 
-let full = io.lesDatafil("full")
+let tre = io.lesDatafil("full")
 let hierarki = io.lesDatafil("kodehierarki")
 const barnAv = hierarki.barn
 const skalPropageresNed = {}
 
-Object.keys(full).forEach(kode => lagGrafkoblinger(kode, full[kode]))
-Object.keys(full).forEach(kode => lagGradientPåSegSelv(kode, full[kode]))
-Object.keys(full).forEach(kode => lagGrafGradientkoblinger(kode, full[kode]))
-Object.keys(full).forEach(kode => propagerGradientTilRelasjon(kode, full[kode]))
-Object.keys(full).forEach(kode => propagerNedPresisjon(kode, full[kode]))
-Object.keys(full).forEach(kode => propagerNedMålestokk(kode, full[kode]))
+Object.keys(tre).forEach(kode => lagGrafkoblinger(kode, tre[kode]))
+Object.keys(tre).forEach(kode => lagGradientPåSegSelv(kode, tre[kode]))
+Object.keys(tre).forEach(kode => lagGrafGradientkoblinger(kode, tre[kode]))
+Object.keys(tre).forEach(kode => propagerGradientTilRelasjon(kode, tre[kode]))
+Object.keys(tre).forEach(kode => propagerNedPresisjon(kode, tre[kode]))
+Object.keys(tre).forEach(kode => propagerNedMålestokk(kode, tre[kode]))
 
 propagerGrafkoblinger()
 
-io.skrivDatafil(__filename, full)
+io.skrivDatafil(__filename, tre)
 
 function tilBarn(node) {
   return {
@@ -28,7 +28,7 @@ function lagGradientPåSegSelv(kode, node) {
   if (!node.foreldre) return
   const grkode = node.foreldre[0]
   if (!grkode) return
-  const forelder = full[grkode]
+  const forelder = tre[grkode]
   if (forelder.type !== "gradient") return
   const kantnode = { [kode]: true }
   lagGrafGradientkobling2(kode, node, forelder.tittel.nb, kantnode)
@@ -40,8 +40,8 @@ function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
     throw new Error(
       "Mangler navn på kant i relasjon fra " + kodeFra + " til " + kodeTil
     )
-  const nodeFra = full[kodeFra]
-  const nodeTil = full[kodeTil]
+  const nodeFra = tre[kodeFra]
+  const nodeTil = tre[kodeTil]
   if (!nodeFra || !nodeTil) {
     log.warn("Mangler kode relasjon " + kodeTil + " <-> " + kodeFra)
     return
@@ -92,7 +92,7 @@ function propagerGrafkoblinger() {
     Object.entries(relasjoner).forEach(([relasjon, kanter]) => {
       const barna = barnAv[kode] || []
       barna.forEach(barnkode => {
-        const barnet = full[barnkode]
+        const barnet = tre[barnkode]
         if (barnet.graf && barnet.graf[relasjon]) {
           debugger
           return
@@ -148,13 +148,13 @@ function lagGrafGradientkobling(kode, node, type, kantnode) {
   const gradienter = {}
   Object.keys(kantnode).forEach(grkode0 => {
     if (!erISammeDomene(kode, grkode0)) return
-    const forelderkode = full[grkode0].foreldre[0]
-    const forelder = full[forelderkode]
+    const forelderkode = tre[grkode0].foreldre[0]
+    const forelder = tre[forelderkode]
     if (forelder.type === "gradient") gradienter[forelderkode] = grkode0
   })
   Object.keys(gradienter).forEach(grkode => {
-    const forelderkode = full[grkode].foreldre[0]
-    lagGrafGradientkobling2(kode, node, full[forelderkode], kantnode, grkode)
+    const forelderkode = tre[grkode].foreldre[0]
+    lagGrafGradientkobling2(kode, node, tre[forelderkode], kantnode, grkode)
   })
 }
 
@@ -168,15 +168,15 @@ function prefix(kode) {
 
 function lagGrafGradientkobling2(kode, node, xxxx, kantnode) {
   const grkode0 = Object.keys(kantnode)[0]
-  const kodeGradForelder = full[grkode0].foreldre[0]
-  const kodeGradFarfar = full[kodeGradForelder].foreldre[0]
-  const gradForelder = full[kodeGradForelder]
-  const gradFarfar = full[kodeGradFarfar]
+  const kodeGradForelder = tre[grkode0].foreldre[0]
+  const kodeGradFarfar = tre[kodeGradForelder].foreldre[0]
+  const gradForelder = tre[kodeGradForelder]
+  const gradFarfar = tre[kodeGradFarfar]
   if (!skalMed(kodeGradForelder)) return false
   let g = []
   const barna = typesystem.sorterKoder(barnAv[kodeGradForelder])
   barna.forEach(bkode => {
-    const b = full[bkode]
+    const b = tre[bkode]
     g.push({
       kode: bkode,
       tittel: b.tittel,
@@ -220,7 +220,7 @@ function propagerGradientTilRelasjon(kode, node) {
     const vekt = frekvens(gk)
     Object.keys(rel).forEach(kode => {
       if (!kode.startsWith("AR")) return
-      propagerGradientTilNode(full[kode], node, vekt)
+      propagerGradientTilNode(tre[kode], node, vekt)
     })
   })
 }
@@ -272,7 +272,7 @@ function propagerGradientTilNode(tilNode, fraNode, vekt) {
 }
 
 function propagerGradientTilFormor(formorkode, node) {
-  const formor = full[formorkode]
+  const formor = tre[formorkode]
   propagerGradientTilNode(formor, node)
   propagerGradientTilForfedre(formor)
 }
@@ -284,7 +284,7 @@ function propagerNedPresisjon(kode, node) {
 }
 
 function propagerPresisjonTilBarn(kode, presisjon) {
-  const barnet = full[kode]
+  const barnet = tre[kode]
   barnet.kart = barnet.kart || {}
   if (barnet.kart.presisjon) return
   barnet.kart.presisjon = presisjon
@@ -299,7 +299,7 @@ function propagerNedMålestokk(kode, node) {
 }
 
 function propagerMålestokkTilBarn(kode, målestokk) {
-  const barnet = full[kode]
+  const barnet = tre[kode]
   barnet.kart = barnet.kart || {}
   if (barnet.kart.målestokk) return
   barnet.kart.målestokk = målestokk
