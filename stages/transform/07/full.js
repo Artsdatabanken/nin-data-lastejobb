@@ -1,7 +1,7 @@
 const typesystem = require("@artsdatabanken/typesystem")
 const { io, json, log } = require("lastejobb")
 
-const r = {}
+const tre = {}
 
 flettKildedata("kildedata/type")
 flettKildedata("data/stedsnavn/type")
@@ -17,15 +17,16 @@ flett("maritim-grense")
 flettKildedata("data/landskap/type")
 flettKildedata("data/natursystem/type")
 
-r["NN-LA"].foreldre = ["NN"]
-r["NN-NA"].foreldre = ["NN"]
+tre["NN-LA"].foreldre = ["NN"]
+tre["NN-NA"].foreldre = ["NN"]
 
 sjekkAtTitlerEksisterer()
 capsTitler()
 
 // TODO: Fjern når kildedata er ok
-typesystem.kobleForeldre(r)
+typesystem.kobleForeldre(tre)
 propagerNedFlaggAttributt()
+io.skrivDatafil(__filename, tre)
 
 function flettAttributter(o) {
   for (let key of Object.keys(o)) {
@@ -41,7 +42,7 @@ function flettAttributter(o) {
       if (!src.tittel.nb && src.tittel.eng)
         json.moveKey(src.tittel, "eng", "en")
     }
-    r[kode] = json.mergeDeep(r[kode] || {}, src)
+    tre[kode] = json.mergeDeep(tre[kode] || {}, src)
   }
 }
 
@@ -60,14 +61,14 @@ function flettKildedata(filename) {
 }
 
 function propagerNedFlaggAttributt() {
-  for (let kode of Object.keys(r)) {
-    const node = r[kode]
+  for (let kode of Object.keys(tre)) {
+    const node = tre[kode]
     for (const fkode of node.foreldre) {
-      const foreldernode = r[fkode]
+      const foreldernode = tre[fkode]
       if (!foreldernode)
         throw new Error(`Forelderen ${fkode} til ${kode} mangler.`)
-      if (r[fkode].type === "flagg") node.type = "flagg"
-      if (r[fkode].type === "gradient") node.type = "gradientverdi"
+      if (tre[fkode].type === "flagg") node.type = "flagg"
+      if (tre[fkode].type === "gradient") node.type = "gradientverdi"
     }
     if (kode.startsWith("NN-NA-LKM"))
       if (!node.type) log.warn("Missing type attribute on: " + kode)
@@ -75,14 +76,14 @@ function propagerNedFlaggAttributt() {
 }
 
 function propagerNedFlaggAttributt() {
-  for (let kode of Object.keys(r)) {
-    const node = r[kode]
+  for (let kode of Object.keys(tre)) {
+    const node = tre[kode]
     for (const fkode of node.foreldre) {
-      const foreldernode = r[fkode]
+      const foreldernode = tre[fkode]
       if (!foreldernode)
         throw new Error(`Forelderen ${fkode} til ${kode} mangler.`)
-      if (r[fkode].type === "flagg") node.type = "flagg"
-      if (r[fkode].type === "gradient") node.type = "gradientverdi"
+      if (tre[fkode].type === "flagg") node.type = "flagg"
+      if (tre[fkode].type === "gradient") node.type = "gradientverdi"
     }
     if (kode.startsWith("NN-NA-LKM"))
       if (!node.type) log.warn("Missing type attribute on: " + kode)
@@ -90,8 +91,8 @@ function propagerNedFlaggAttributt() {
 }
 
 function capsTitler() {
-  for (let key of Object.keys(r)) {
-    const tittel = r[key].tittel
+  for (let key of Object.keys(tre)) {
+    const tittel = tre[key].tittel
     Object.keys(tittel).forEach(lang => {
       let tit = tittel[lang].replace(/\s+/g, " ") // Fix double space issues in source data
       if (tit) tittel[lang] = tit.replace(tit[0], tit[0].toUpperCase())
@@ -102,8 +103,8 @@ function capsTitler() {
 
 function sjekkAtTitlerEksisterer() {
   const notitle = []
-  for (let key of Object.keys(r)) {
-    const node = r[key]
+  for (let key of Object.keys(tre)) {
+    const node = tre[key]
     if (!node.se) {
       if (!node.tittel) {
         log.warn(`Mangler tittel for ${key}: ${JSON.stringify(node)}`)
@@ -115,7 +116,7 @@ function sjekkAtTitlerEksisterer() {
           acc[e[0]] = e[1].trim()
           return acc
         }, {})
-        if (r[key].kode) {
+        if (tre[key].kode) {
           debugger
           log.warn("Har allerede unødig kode property: ", key)
         }
@@ -125,8 +126,6 @@ function sjekkAtTitlerEksisterer() {
 
   if (notitle.length > 0) {
     log.warn("Mangler tittel: " + notitle.join(", "))
-    notitle.forEach(key => delete r[key])
+    notitle.forEach(key => delete tre[key])
   }
 }
-
-io.skrivDatafil(__filename, r)
