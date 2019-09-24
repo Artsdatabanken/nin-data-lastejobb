@@ -25,11 +25,15 @@ function oppdaterNivå(node) {
   oppdaterNivå1(node)
   const undernivå = typesystem.hentNivaa(node.ll + "/x")
   if (undernivå) node.undernivå = undernivå[0]
-  node.overordnet.forEach(ov => (ov.nivå = tre[ov.kode].nivå))
+  node.overordnet.forEach(ov => {
+    const src = tre[ov.kode]
+    ov.nivå = src.nivå
+    ov.url = src.url
+  })
 }
 
 function oppdaterNivå1(node) {
-  //  if (node.url === "Katalog") return
+  if (node.url === "/") return
   if (node.url.indexOf("Biota") >= 0) return
   if (node.url.indexOf("Administrativ_grense") >= 0) return
   if (node.url.indexOf("Naturvernområde") >= 0) return

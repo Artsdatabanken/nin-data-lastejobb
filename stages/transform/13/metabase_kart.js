@@ -52,7 +52,7 @@ function addKartformat() {
     const node = tre[xkode]
     const target = tre[xkode]
     if (!target.kart) target.kart = {}
-    const maps = filindeks[node.url]
+    const maps = filindeks[node.url.substring(1)]
     if (!maps) return
     Object.keys(maps).forEach(filename => {
       const fileinfo = maps[filename]
@@ -67,7 +67,8 @@ function addKartformat() {
 
       if (sladd(node.url)) cv.publish = -2 // Kun internt
 
-      cv.url = config.webserver + node.url + "/" + filename
+      const webserver = "https://data.artsdatabanken.no"
+      cv.url = webserver + node.url + "/" + filename
       if (fileinfo.maxzoom) {
         cv.zoom = [parseInt(fileinfo.minzoom), parseInt(fileinfo.maxzoom)]
       }
