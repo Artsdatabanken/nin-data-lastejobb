@@ -1,17 +1,11 @@
 const { io } = require("lastejobb")
 const typesystem = require("@artsdatabanken/typesystem")
 
-let data = io.lesDatafil("full_med_graf")
-
-function settInn(kode, forelder, tittel, delAv) {
-  const node = { kode: kode, forelder: forelder, tittel: tittel }
-  if (delAv) node.delAv = delAv
-  r.push(node)
-}
+let tre = io.lesDatafil("full_med_graf")
 
 let r = []
-Object.keys(data).forEach(key => {
-  const node = data[key]
+Object.keys(tre).forEach(key => {
+  const node = tre[key]
   if (node.se) {
   } else {
     const kode = key
@@ -25,6 +19,13 @@ Object.keys(data).forEach(key => {
     }
   }
 })
+io.skrivBuildfil(__filename, r)
+
+function settInn(kode, forelder, tittel, delAv) {
+  const node = { kode: kode, forelder: forelder, tittel: tittel }
+  if (delAv) node.delAv = delAv
+  r.push(node)
+}
 
 function lagDelAv(node) {
   const delAv = []
@@ -38,5 +39,3 @@ function lagDelAv(node) {
   })
   return delAv
 }
-
-io.skrivBuildfil(__filename, r)
