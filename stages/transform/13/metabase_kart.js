@@ -3,7 +3,8 @@ const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
 const path = require("path")
-let tre = io.lesDatafil("metabase_med_url")
+
+let tre = io.lesDatafil("metabase_tweaks")
 let hierarki = io.lesDatafil("kodehierarki")
 let filindeks = io.lesDatafil("filindeks")
 const barnAv = hierarki.barn

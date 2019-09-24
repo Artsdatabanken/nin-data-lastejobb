@@ -21,20 +21,20 @@ function skrivFil(prefix) {
       tittel: { nb: tittel },
       url: `https://data.artsdatabanken.no/${tittel}/metadata_med_undertyper.json`
     },
-    data: []
+    items: []
   }
 
   // Ta med alle overordnede koder til rot
   const node = data[prefix]
   node.overordnet.forEach(ookode => {
     const node = data[ookode.kode]
-    dok.data.push(node)
+    dok.items.push(node)
   })
 
   Object.keys(data).forEach(kode => {
     const node = data[kode]
     fyllPåMedSøsken(node)
-    if (kode.indexOf(prefix) === 0) dok.data.push(node)
+    if (kode.indexOf(prefix) === 0) dok.items.push(node)
   })
 
   io.skrivBuildfil(prefix, dok)

@@ -1,7 +1,8 @@
 const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
+const typesystem = require("@artsdatabanken/typesystem")
 
-let tre = io.lesDatafil("metabase_med_farger")
+let tre = io.lesDatafil("metabase_med_url")
 let hierarki = io.lesDatafil("kodehierarki")
 const foreldreTil = hierarki.foreldre
 
@@ -17,7 +18,27 @@ if (ukjenteKoder.length > 0)
 if (Object.keys(manglerKode).length > 0)
   log.warn("Mangler kode " + Object.keys(manglerKode))
 
+Object.keys(tre).forEach(kode => oppdaterNivå(tre[kode]))
 io.skrivDatafil(__filename, tre)
+
+function oppdaterNivå(node) {
+  oppdaterNivå1(node)
+  const undernivå = typesystem.hentNivaa(node.ll + "/x")
+  if (undernivå) node.undernivå = undernivå[0]
+  node.overordnet.forEach(ov => (ov.nivå = tre[ov.kode].nivå))
+}
+
+function oppdaterNivå1(node) {
+  //  if (node.url === "Katalog") return
+  if (node.url.indexOf("Biota") >= 0) return
+  if (node.url.indexOf("Administrativ_grense") >= 0) return
+  if (node.url.indexOf("Naturvernområde") >= 0) return
+  if (node.url.indexOf("Datakilde") >= 0) return
+  if (node.url.indexOf("Truet_art_natur") >= 0) return
+  if (node.url.indexOf("Landskap") >= 0) return
+
+  node.nivå = node.nivå || typesystem.hentNivaa(node.url)[0]
+}
 
 function settFargePåRelasjoner() {
   Object.keys(tre).forEach(kode => {
