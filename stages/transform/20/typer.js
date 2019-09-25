@@ -1,13 +1,16 @@
 const { io, json } = require("lastejobb")
 
-let dataArr = io.lesBuildfil("metabase").items
-const data = json.arrayToObject(dataArr, {
-  uniqueKey: "kode",
-  removeKeyProperty: false
-})
+function readSource() {
+  let dataArr = io.lesBuildfil("metabase").items
+  const data = json.arrayToObject(dataArr, {
+    uniqueKey: "kode",
+    removeKeyProperty: false
+  })
+  return data
+}
 
 const prefixes = ["AO", "AR", "NN-LA", "NN-NA", "OR", "VV", "RL"]
-
+const data = readSource()
 prefixes.forEach(prefix => {
   skrivFil(prefix)
 })
@@ -33,7 +36,7 @@ function skrivFil(prefix) {
 
   Object.keys(data).forEach(kode => {
     const node = data[kode]
-    fyllPåMedSøsken(node)
+    //    fyllPåMedSøsken(node)
     if (kode.indexOf(prefix) === 0) dok.items.push(node)
   })
 
