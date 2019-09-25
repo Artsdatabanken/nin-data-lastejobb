@@ -7,8 +7,6 @@ Object.keys(tre).forEach(kode => mapBarn(kode))
 Object.keys(tre).forEach(kode => flyttDatakildeTilToppnivå(kode))
 Object.keys(tre).forEach(kode => fjernGrafnode(kode))
 
-fjernEnkeltVerneområder(tre)
-
 io.skrivBuildfil("metabase", tre)
 
 function fjernGrafnode(kode) {
@@ -68,11 +66,4 @@ function erRelasjon(key, ckey) {
     }
   }
   return false
-}
-
-function fjernEnkeltVerneområder(tre) {
-  // Fjern barn fra VV - for mange, bruk alternative ruter
-  const vv = tre.VV.barn
-  const filter = /^VV-\d+$/
-  tre.VV.barn = vv.filter(vo => !vo.kode.match(filter))
 }
