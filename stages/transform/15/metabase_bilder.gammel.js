@@ -8,14 +8,18 @@ let filindeks = io.lesDatafil("filindeks")
 Object.keys(full).forEach(kode => {
   const node = full[kode]
   node.bilde = node.bilde || {}
-  const filer = filindeks[node.url]
+  const rot = node.url.split("/")[1]
+  const filer = filindeks[node.url.substring(1)] || {}
+  if (!node.bilde.logo) node.bilde.logo = {}
+  const harEgenLogo = !!filer["logo_24.png"]
+  /*  node.bilde.logo.url = harEgenLogo
+    ? baseUrl + node.url.substring(1) + "/logo_24.png"
+    : baseUrl + rot + "/logo_24.png"
+*/
   if (!filer) return
   addMedia(filer, node, "foto", 408)
   addMedia(filer, node, "banner", 950)
-  addMedia(filer, node, "logo", 40)
   addMediaSource(node)
-  // addBilder(node, filer)
-  // TODO: temp fallback
 })
 
 function addMediaSource(node) {

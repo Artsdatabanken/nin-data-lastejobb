@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "download": "node index download",
-    "transform": "node --max_old_space_size=8192 index transform",
+    "transform": "node --max_old_space_size=18192 index transform",
     "build": "npm run download && npm run transform",
     "test": "node --max_old_space_size=6144 node_modules/.bin/jest",
     "deploy": "./scripts/deploy.sh",
