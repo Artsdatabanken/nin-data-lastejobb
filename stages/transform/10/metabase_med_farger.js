@@ -8,13 +8,13 @@ const typesystem = require("@artsdatabanken/typesystem")
 Mix colors of child nodes to create colors for ancestor nodes missing colors
 */
 
-let data = io.lesDatafil("full_med_graf")
+let tre = io.lesDatafil("full_med_graf")
 let hierarki = io.lesDatafil("kodehierarki")
 const foreldre = hierarki.foreldre
 const barnAv = hierarki.barn
 
-Object.keys(data).forEach(kode => {
-  const node = data[kode]
+Object.keys(tre).forEach(kode => {
+  const node = tre[kode]
   if (node.type !== "gradient") return
   const barnkoder = typesystem.sorterKoder(barnAv[kode])
   gradientrampe(node.farge0, node.farge, barnkoder)
@@ -24,36 +24,36 @@ while (trickleColorsUp()) {}
 settFargePåGradienter()
 settFargePåFlagg()
 
-Object.keys(data).forEach(kode => {
-  const node = data[kode]
+Object.keys(tre).forEach(kode => {
+  const node = tre[kode]
   if (!node.farge) node.farge = blandBarnasFarger(kode)
 })
 
-Object.keys(data).forEach(kode => {
-  const node = data[kode]
+Object.keys(tre).forEach(kode => {
+  const node = tre[kode]
   if (!node.farge) node.farge = brukOverordnetsFarge(kode)
 })
 
 function brukOverordnetsFarge(kode) {
-  while (foreldre[kode]) {
-    kode = foreldre[kode]
-    const node = data[kode]
+  while (foreldre[kode].length > 0) {
+    kode = foreldre[kode][0]
+    const node = tre[kode]
     if (node.farge) return node.farge
   }
 }
 
-io.skrivDatafil(__filename, data)
+io.skrivDatafil(__filename, tre)
 
 function blandBarnasFarger(kode) {
-  if (kode.startsWith("AR-")) return data["AR"].farge
+  if (kode.startsWith("AR-")) return tre["AR"].farge
 
-  const node = data[kode]
+  const node = tre[kode]
   if (node.farge) return node.farge
   const farger = []
   const barna = barnAv[kode]
   if (barna)
     barna.forEach(bk => {
-      const farge = data[bk].farge ? data[bk].farge : blandBarnasFarger(bk)
+      const farge = tre[bk].farge ? tre[bk].farge : blandBarnasFarger(bk)
       if (farge) farger.push({ farge: farge })
     })
   if (farger.length === 0 && node.gradient) {
@@ -74,9 +74,10 @@ function blandBarnasFarger(kode) {
 function trickleColorsUp() {
   wasChanged = false
   const blends = {}
-  Object.keys(data).forEach(kode => {
-    const node = data[kode]
+  Object.keys(tre).forEach(kode => {
+    const node = tre[kode]
     if (!node) return log.warn("Har farge for ukjent kode " + kode)
+    if (!node.farge) return
     node.foreldre.forEach(fkode => {
       if (!blends[fkode]) blends[fkode] = []
       blends[fkode].push({ kode: kode, farge: node.farge })
@@ -84,9 +85,9 @@ function trickleColorsUp() {
   })
 
   Object.keys(blends).forEach(kode => {
-    const farger2 = blends[kode]
-    const node = data[kode]
+    const node = tre[kode]
     if (node.farge) return
+    const farger2 = blends[kode]
     node.farge = blend(farger2)
     wasChanged = true
   })
@@ -98,7 +99,7 @@ function gradientrampe(farge0, farge, barnkoder) {
   const f = new tinycolor(farge)
   for (let i = 0; i < barnkoder.length; i++) {
     const barnkode = barnkoder[i]
-    const node = data[barnkode]
+    const node = tre[barnkode]
     if (!node.farge) {
       if (!f1 || !f)
         throw new Error(
@@ -111,15 +112,15 @@ function gradientrampe(farge0, farge, barnkoder) {
 }
 
 function settFargePåGradienter() {
-  Object.keys(data).forEach(kode => {
-    const node = data[kode]
+  Object.keys(tre).forEach(kode => {
+    const node = tre[kode]
     if (!node.gradient) return
     Object.keys(node.gradient).forEach(type => {
       const gruppe = node.gradient[type]
       Object.keys(gruppe.barn).forEach(type => {
         const grad = gruppe.barn[type]
         grad.trinn.forEach(
-          trinn => (trinn.farge = trinn.farge || data[trinn.kode].farge)
+          trinn => (trinn.farge = trinn.farge || tre[trinn.kode].farge)
         )
       })
     })
@@ -127,11 +128,11 @@ function settFargePåGradienter() {
 }
 
 function settFargePåFlagg() {
-  Object.keys(data).forEach(skode => {
-    const node = data[skode]
+  Object.keys(tre).forEach(skode => {
+    const node = tre[skode]
     if (!node.flagg) return
     Object.keys(node.flagg).forEach(kode => {
-      node.flagg[kode].farge = data[kode].farge
+      node.flagg[kode].farge = tre[kode].farge
     })
   })
 }
