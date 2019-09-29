@@ -42,8 +42,8 @@ function pushAlleSpråk(hit, score, tittel) {
   Object.values(tittel).forEach(text => push(hit, score, text))
 }
 
-Object.keys(tre).forEach(kode => {
-  const node = tre[kode]
+tre.forEach(node => {
+  const kode = node.kode
   if (!node.tittel) debugger
   const hit = {
     kode: node.kode,
