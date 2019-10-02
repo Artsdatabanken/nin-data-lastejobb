@@ -36,7 +36,7 @@ function mapBarn(key) {
       if (!cnode) return
       const barnet = {
         tittel: cnode.tittel,
-        kode: cnode.kode,
+        kode: ckey,
         url: cnode.url,
         sortering: cnode.sortering,
         intervall: cnode.intervall,
