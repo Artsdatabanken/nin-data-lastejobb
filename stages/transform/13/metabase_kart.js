@@ -1,4 +1,3 @@
-const config = require("../../../config")
 const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
 const typesystem = require("@artsdatabanken/typesystem")
@@ -147,6 +146,8 @@ function zoomlevels(kode, bbox, zoom) {
 
 function sladd(url) {
   if (!url) return false
+  if (url.indexOf("Elv") >= 0) return false
+  if (url.indexOf("Limniske") >= 0) return false
   if (url.indexOf("Terreng") >= 0) return false
   if (url.indexOf("Regional_naturvariasjon") >= 0) return false
   if (url.indexOf("Erosjon") >= 0) return false
