@@ -15,8 +15,6 @@ io.skrivDatafil("mangler_data", slettet_fordi_mangler_bbox)
 
 function fjernKoderSomIkkeHarData(data) {
   Object.keys(data).forEach(kode => {
-    const node = data[kode]
-    node.kode = kode
     if (!harKartdata(kode)) {
       delete data[kode]
       slettet_fordi_mangler_bbox.push(kode)
