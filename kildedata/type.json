@@ -8,20 +8,44 @@
     "nivå": "Natur i Norge"
   },
   "AR": { "farge": "#c01700" },
-  "VV-VF-NR": { "farge": "hsl(1, 70%, 60%)" },
-  "VV-VF-NP": { "farge": "hsl(114, 70%, 60%)" },
-  "VV-VF-LVO": { "farge": "hsl(114, 70%, 80%)" },
-  "VV-VF-PDO": { "farge": "hsl(40, 70%, 80%)" },
-  "VV-VF-MAV": { "farge": "hsl(29, 70%, 60%)" },
-  "VV": {
-    "tittel": { "nb": "Naturvernområde" },
-    "farge": "hsl(300, 40%, 70%)"
-  },
   "AO": {
     "farge": "hsl(0, 0%, 70%)",
     "ingress": {
       "nb": "Norge er blant annet bygget opp av det vi kjenner som fastlandet med fylker og kommuner, som er en betydelig del av vårt territorialområde. Men Norge inneholder også flere øyer og øygrupper, og havområder som omtales som vår kontinentalsokkel."
     }
   },
-  "OR": { "farge": "hsl(70, 0%, 70%)" }
+  "OR": { "farge": "hsl(70, 0%, 70%)" },
+  "ES": { "tittel": { "nb": "Økosystem" }, "nivå": "Økosystem" },
+  "ES-TE": {
+    "tittel": { "nb": "Terrestrisk" },
+    "nivå": "Økosystem",
+    "ingress": {
+      "nb": "Fenomener knyttet til land. Det motsatte av terrestrisk er akvatisk."
+    },
+    "farge": "hsl(110, 40%, 70%)"
+  },
+  "ES-AK": {
+    "tittel": { "nb": "Akvatisk" },
+    "nivå": "Økosystem",
+    "ingress": {
+      "nb": "Fenomener knyttet til vann (enten marin eller limnisk).  Det motsatte av akvatisk er terrestrisk."
+    },
+    "farge": "hsl(190, 40%, 70%)"
+  },
+  "ES-AK-LI": {
+    "tittel": { "nb": "Limnisk" },
+    "nivå": "Økosystem",
+    "ingress": {
+      "nb": "Fenomener knyttet til ferskvann."
+    },
+    "infoUrl": "https://no.wikipedia.org/wiki/Limnisk"
+  },
+  "ES-AK-MA": {
+    "tittel": { "nb": "Marin" },
+    "nivå": "Økosystem",
+    "ingress": {
+      "nb": "Fenomener knyttet til hav."
+    },
+    "infoUrl": "https://no.wikipedia.org/wiki/Marin"
+  }
 }
