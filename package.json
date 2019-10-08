@@ -11,7 +11,7 @@
     "transform": "node --max_old_space_size=18192 index transform",
     "build": "npm run download && npm run transform",
     "test": "node --max_old_space_size=6144 node_modules/.bin/jest",
-    "deploy": "./scripts/deploy.sh",
+    "deploy": "node index deploy",
     "precommit": "pretty-quick --staged"
   },
   "repository": {
