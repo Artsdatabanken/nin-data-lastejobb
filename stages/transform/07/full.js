@@ -35,6 +35,7 @@ function flettAttributter(o) {
 
     // TEMP HACK
     json.moveKey(src, "navn", "tittel")
+    json.moveKey(src, "ingress", "beskrivelse")
     if (src.tittel) {
       if (!src.tittel.nb && src.tittel.nob)
         json.moveKey(src.tittel, "nob", "nb")
