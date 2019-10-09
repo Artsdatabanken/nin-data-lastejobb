@@ -1,3 +1,5 @@
+set -e
+
 scp build/full-text-index.json grunnkart@hydra:/dockerdata/generic-substring-lookup-api/
 scp build/metabase.json grunnkart@hydra:~/
 ssh grunnkart@hydra node extract-meta.js metabase.json
