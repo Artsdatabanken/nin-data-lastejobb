@@ -54,7 +54,9 @@ function harKartdata(kode) {
   if (kode.indexOf("RL") === 0) return true
   if (kode.indexOf("VV") === 0) return true
 
-  return harBarnMedKartdata(kode)
+  if (harBarnMedKartdata(kode)) return true
+  if (kode.indexOf("AR") === 0 && node.beskrivelse) return true
+  return false
 }
 
 function harRelasjon(graf) {
