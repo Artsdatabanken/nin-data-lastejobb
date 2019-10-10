@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Artsdatabanken/kverna.svg?branch=master)](https://travis-ci.org/Artsdatabanken/kverna)
+[![Build Status](https://travis-ci.org/Artsdatabanken/nin-data-lastejobb.svg?branch=master)](https://travis-ci.org/Artsdatabanken/nin-data-lastejobb)
 [![Dependencies](https://david-dm.org/artsdatabanken/kverna.svg)](https://david-dm.org)
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
