@@ -20,15 +20,11 @@
 
 ## Deployment
 
-Bygd metabase deployes automatisk til [Firebase Realtime](https://adb-kode.firebaseio.com/.json) og leses derfra av klienten.
+Filen metabase.json deployes automatisk til https://data.artsdatabanken.no/ - splittes i 1 metadata.json fil per item i fila.
 
 ## Relaterte prosjekter
 
-- [Innsynsklient](https://github.com/artsdatabanken/ratatouille)
-- [REST API](https://github.com/Artsdatabanken/ogapi)
-- [GIS dataflyt](https://github.com/artsdatabanken/grunnkart-dataflyt)
-- [Geografisk API](https://github.com/Artsdatabanken/rasterQ) og [Deployment](https://github.com/Artsdatabanken/rasterUploader) av dette
-- Verktøy for [rødlisting av naturtyper](https://github.com/Artsdatabanken/natty)
+- [Innsynsklient](https://github.com/artsdatabanken/nin-kart)
 
 ## Relasjoner
 
