@@ -10,7 +10,7 @@ const skalPropageresNed = {}
 Object.keys(tre).forEach(kode => lagGrafkoblinger(kode, tre[kode]))
 Object.keys(tre).forEach(kode => lagGradientPåSegSelv(kode, tre[kode]))
 Object.keys(tre).forEach(kode => lagGrafGradientkoblinger(kode, tre[kode]))
-Object.keys(tre).forEach(kode => propagerGradientTilRelasjon(kode, tre[kode]))
+Object.keys(tre).forEach(kode => propagerGradientTilRelasjon(tre[kode]))
 Object.keys(tre).forEach(kode => propagerNedPresisjon(kode, tre[kode]))
 Object.keys(tre).forEach(kode => propagerNedMålestokk(kode, tre[kode]))
 
@@ -228,7 +228,7 @@ function propagerGradientTilForfedre(node) {
   })
 }
 
-function propagerGradientTilRelasjon(kode, node) {
+function propagerGradientTilRelasjon(node) {
   const graf = node.graf
   if (!graf) return
   Object.keys(graf).forEach(gk => {
