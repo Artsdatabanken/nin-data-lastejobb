@@ -49,14 +49,14 @@ function settFargePåRelasjoner() {
     const node = tre[kode]
     if (!node.graf) return
     Object.keys(node.graf).forEach(typeRelasjon => {
-      Object.keys(node.graf[typeRelasjon]).forEach(kode => {
-        if (!tre[kode]) {
-          ukjenteKoder.push(kode)
+      const noder = node.graf[typeRelasjon].noder
+      noder.forEach(node => {
+        if (!tre[node.kode]) {
+          ukjenteKoder.push(node.kode)
           return
         }
-        const sub = node.graf[typeRelasjon][kode]
-        sub.farge = tre[kode].farge
-        delete sub.erSubset
+        node.farge = tre[kode].farge
+        delete node.erSubset
       })
     })
   })

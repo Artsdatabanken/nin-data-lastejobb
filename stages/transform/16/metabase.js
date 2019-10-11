@@ -5,7 +5,7 @@ let hierarki = io.lesDatafil("kodehierarki")
 const barnAv = hierarki.barn
 Object.keys(tre).forEach(kode => mapBarn(kode))
 Object.keys(tre).forEach(kode => flyttDatakildeTilToppnivå(kode))
-Object.keys(tre).forEach(kode => fjernGrafnode(kode))
+//Object.keys(tre).forEach(kode => fjernGrafnode(kode))
 
 io.skrivBuildfil("metabase", tre)
 
