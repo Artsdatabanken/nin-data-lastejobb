@@ -58,12 +58,8 @@ function erRelasjon(key, ckey) {
   if (nodeFra.flagg && nodeFra.flagg[ckey]) return true
   const graf = nodeFra.graf
   if (!graf) return false
-  for (var relasjon of graf) {
-    for (var node of relasjon.noder) {
-      if (node.kode === ckey) {
-        return true
-      }
-    }
-  }
+  for (var relasjon of graf)
+    for (var node of relasjon.noder) if (node.kode === ckey) return true
+
   return false
 }
