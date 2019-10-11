@@ -114,25 +114,40 @@ function propagerGrafkoblinger() {
 
 function lagGrafkoblinger(kode, node) {
   if (!node.relasjon) return
-  node.relasjon.forEach(e => {
-    if (!e.kode) throw new Error("Mangler kode " + e.kode)
-    lagGrafkobling(kode, e.kode, e.kant, e, e.erSubset)
-    if (e.kantRetur) {
-      lagGrafkobling(
-        e.kode,
-        kode,
-        e.kantRetur,
-        e,
-        e.kantReturFraAlleBarna && e.erSubset
+  if (Array.isArray(node.relasjon))
+    // old style
+    node.relasjon.forEach(e => {
+      konverterRelasjon(kode, e)
+    })
+  else {
+    // new style
+    Object.keys(node.relasjon).forEach(key => {
+      const koder = node.relasjon[key]
+      koder.forEach(destkode =>
+        konverterRelasjon(kode, { kode: destkode, kant: key })
       )
-      if (e.kantReturFraAlleBarna) {
-        if (!skalPropageresNed[e.kode]) skalPropageresNed[e.kode] = {}
-        const barn = skalPropageresNed[e.kode]
-        barn[e.kant] = [...(barn[e.kant] || []), { ...e, kode }]
-      }
-    }
-  })
+    })
+  }
   delete node.relasjon
+}
+
+function konverterRelasjon(kode, e) {
+  if (!e.hasOwnProperty("kode")) throw new Error("Mangler kode " + e.kode)
+  lagGrafkobling(kode, e.kode, e.kant, e, e.erSubset)
+  if (e.kantRetur) {
+    lagGrafkobling(
+      e.kode,
+      kode,
+      e.kantRetur,
+      e,
+      e.kantReturFraAlleBarna && e.erSubset
+    )
+    if (e.kantReturFraAlleBarna) {
+      if (!skalPropageresNed[e.kode]) skalPropageresNed[e.kode] = {}
+      const barn = skalPropageresNed[e.kode]
+      barn[e.kant] = [...(barn[e.kant] || []), { ...e, kode }]
+    }
+  }
 }
 
 function lagGrafGradientkoblinger(kode, node) {
@@ -201,6 +216,7 @@ function lagGrafGradientkobling2(kode, node, xxxx, kantnode) {
 }
 
 function skalMed(kode) {
+  return true
   if (kode.startsWith("NN-NA-LKM")) return true
   if (kode.startsWith("NN-LA-KLG")) return true
   return false
