@@ -44,12 +44,13 @@ function lagGrafkobling(kodeFra, kodeTil, kant, metadata, erSubset) {
   const nodeTil = tre[kodeTil]
   if (!nodeFra || !nodeTil) {
     log.warn("Mangler kode relasjon " + kodeTil + " <-> " + kodeFra)
+    debugger
     return
   }
   if (nodeFra.skjul) return
   if (nodeTil.skjul) return
   if (kodeFra === kodeTil) {
-    throw new Error("Relasjon til seg selv fra " + kodeTil)
+    return log.warn("Relasjon til seg selv fra " + kodeTil)
   }
 
   if (!nodeFra.graf) nodeFra.graf = {}
@@ -123,9 +124,11 @@ function lagGrafkoblinger(kode, node) {
     // new style
     Object.keys(node.relasjon).forEach(key => {
       const koder = node.relasjon[key]
-      koder.forEach(destkode =>
-        konverterRelasjon(kode, { kode: destkode, kant: key })
-      )
+      koder.forEach(destkode => {
+        const parts = key.split("<->")
+        const [kant, kantRetur] = parts
+        konverterRelasjon(kode, { kode: destkode, kant, kantRetur })
+      })
     })
   }
   delete node.relasjon
@@ -253,7 +256,8 @@ function frekvens(tekst) {
     "svak_relativ skilleart": 1,
     skilleart: 1,
     kjennetegnende_tyngdepunktart: 1,
-    dominerende_mengdeart: 1
+    dominerende_mengdeart: 1,
+    "Har effekt på andre arter i": 1
   }
   if (!tab.hasOwnProperty(tekst) && tekst.indexOf("art") >= 0)
     throw new Error("Ukjent forekomst: " + tekst)
