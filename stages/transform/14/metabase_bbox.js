@@ -56,14 +56,19 @@ function harKartdata(kode) {
   if (kode.indexOf("VV") === 0) return true
 
   if (harBarnMedKartdata(kode)) return true
+  //  if (kode.indexOf("AR") === 0) return true // Alle arter
   if (kode.indexOf("AR") === 0 && node.beskrivelse) return true
   return false
 }
 
 function harRelasjon(graf) {
   if (!graf) return false
-  if (Object.keys(graf).length !== 1) return true
-  return graf[0].type !== "Datakilde"
+  for (var g in Object.keys(graf)) {
+    if (graf[g].type === "Datakilde") continue
+    if (graf[g].type !== "Rødlistekategori") return true
+    if (graf[g].noder[0].kode !== "RL-LC") return true
+  }
+  return false
 }
 
 function harBarnMedKartdata(kode) {

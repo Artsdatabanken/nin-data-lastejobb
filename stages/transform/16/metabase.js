@@ -44,6 +44,7 @@ function mapBarn(key) {
         skjul: cnode.skjul,
         farge: cnode.farge
       }
+      if (ckey.indexOf("AR") === 0) barnet.nivå = cnode.nivå
       if (cnode.kart && cnode.kart.format && cnode.kart.format.raster_indexed)
         barnet.index = cnode.kart.format.raster_indexed.index
       barn.push(barnet)
