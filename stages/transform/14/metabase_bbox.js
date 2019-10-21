@@ -57,7 +57,12 @@ function harKartdata(kode) {
 
   if (harBarnMedKartdata(kode)) return true
   //  if (kode.indexOf("AR") === 0) return true // Alle arter
-  if (kode.indexOf("AR") === 0 && node.beskrivelse) return true
+  if (kode === "AR-48103") debugger
+  if (kode.indexOf("AR") === 0) {
+    if (node.beskrivelse) return true
+    if (Object.keys(node).length > 8) return true
+    return false
+  }
   return false
 }
 
