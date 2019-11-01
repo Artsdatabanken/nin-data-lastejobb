@@ -173,7 +173,7 @@ function propagerNedKart() {
       throw new Error(`Forelderen ${fkode} til ${kode} mangler.`)
     if (!foreldernode.kart) continue
     if (!foreldernode.kart.format) continue
-    if (foreldernode.nivå !== "Landskapsgradient") continue
+    if (!foreldernode.kart.format.raster_gradient) continue
     if (Object.keys(foreldernode.kart.format).length <= 0) continue
     if (!node.kart) node.kart = {}
     if (!node.kart.format) node.kart.format = {}
