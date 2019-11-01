@@ -164,25 +164,30 @@ function sladd(url) {
 function propagerNedKart() {
   for (let kode of Object.keys(tre)) {
     const node = tre[kode]
-    const barn = hierarki.barn[kode]
-    if (barn && barn.length > 0) continue // Ikke løvnode
-    if (node.overordnet.length <= 0) continue
-    const fkode = node.overordnet[0].kode
-    const foreldernode = tre[fkode]
-    if (!foreldernode)
-      throw new Error(`Forelderen ${fkode} til ${kode} mangler.`)
-    if (!foreldernode.kart) continue
-    if (!foreldernode.kart.format) continue
-    if (!foreldernode.kart.format.raster_gradient) continue
-    if (Object.keys(foreldernode.kart.format).length <= 0) continue
-    if (!node.kart) node.kart = {}
-    if (!node.kart.format) node.kart.format = {}
-    const dest = node.kart.format
-    const src = foreldernode.kart.format
-    Object.keys(src).forEach(f => {
-      if (dest[f]) return
-      dest[f] = JSON.parse(JSON.stringify(src[f]))
-      if (f === "raster_gradient") dest[f].visning = ["diskret"]
-    })
+    if (node.overordnet.length === 0) propagerNedKartFra(kode)
   }
+}
+
+function propagerNedKartFra(kode, kartformat) {
+  const node = tre[kode]
+  const barn = hierarki.barn[kode]
+  if (kartformat) {
+    if (kartformat.raster_gradient) {
+      brukKartFraForelder(node, kartformat, "raster_gradient")
+      node.kart.format.raster_gradient.visning = ["diskret"]
+    }
+    if (kartformat.raster_indexed)
+      brukKartFraForelder(node, kartformat, "raster_indexed")
+  }
+  barn &&
+    barn.forEach(bkode => {
+      kartformat = Object.assign({}, kartformat, node.kart.format)
+      propagerNedKartFra(bkode, kartformat)
+    })
+}
+
+function brukKartFraForelder(node, kartformat) {
+  if (!node.kart) node.kart = {}
+  if (!node.kart.format) node.kart.format = {}
+  node.kart.format = Object.assign({}, node.kart.format, kartformat)
 }
