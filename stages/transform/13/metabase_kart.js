@@ -164,8 +164,8 @@ function sladd(url) {
 function propagerNedKart() {
   for (let kode of Object.keys(tre)) {
     const node = tre[kode]
-    if (node.barn && node.barn.length > 0) continue // Ikke løvnode
-    if (node.nivå !== "Gradienttrinn") continue
+    const barn = hierarki.barn[kode]
+    if (barn && barn.length > 0) continue // Ikke løvnode
     if (node.overordnet.length <= 0) continue
     const fkode = node.overordnet[0].kode
     const foreldernode = tre[fkode]
@@ -173,6 +173,7 @@ function propagerNedKart() {
       throw new Error(`Forelderen ${fkode} til ${kode} mangler.`)
     if (!foreldernode.kart) continue
     if (!foreldernode.kart.format) continue
+    if (foreldernode.nivå !== "Landskapsgradient") continue
     if (Object.keys(foreldernode.kart.format).length <= 0) continue
     if (!node.kart) node.kart = {}
     if (!node.kart.format) node.kart.format = {}
