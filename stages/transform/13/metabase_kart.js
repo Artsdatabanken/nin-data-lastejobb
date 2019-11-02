@@ -22,14 +22,33 @@ function avrund1d(num) {
   return Math.round(parseFloat(num) * 1000) / 1000
 }
 
-function avrund4d(bounds) {
-  const bbox = bounds.split(",")
+function avrund4d(bbox) {
   const bboxjson = bbox.map(f => avrund1d(f))
   const ll = [bboxjson[1], bboxjson[0]]
   const ur = [bboxjson[3], bboxjson[2]]
   if (ll[0] > ur[0] || ll[1] > ur[1])
     log.warn("Ugyldig bbox " + JSON.stringify(bboxjson))
   return [ll, ur]
+}
+
+function bboxFraSpatialite(fileinfo) {
+  const { extent_min_x, extent_min_y, extent_max_x, extent_max_y } = fileinfo
+  const bbox = [extent_min_x, extent_min_y, extent_max_x, extent_max_y]
+  return avrund4d(bbox)
+}
+
+function bboxFraMbtilesMetadata(bounds) {
+  const bbox = bounds.split(",")
+  return avrund4d(bbox)
+}
+
+function minimizeBbox(bbox1, bbox2) {
+  if (!bbox1) return bbox2
+  if (!bbox2) return bbox1
+  return [
+    [Math.max(bbox1[0][0], bbox2[0][0]), Math.max(bbox1[0][1], bbox2[0][1])],
+    [Math.min(bbox1[1][0], bbox2[1][0]), Math.min(bbox1[1][1], bbox2[1][1])]
+  ]
 }
 
 function settDefaultVisning() {
@@ -55,6 +74,11 @@ function addKartformat() {
     if (!maps) return
     Object.keys(maps).forEach(filename => {
       const fileinfo = maps[filename]
+      const ext = path.extname(filename)
+      if (ext === ".sqlite") {
+        const bb = bboxFraSpatialite(fileinfo)
+        target.bbox = minimizeBbox(target.bbox, bb)
+      }
       if (!filename) return // Is a directory
       if (".mbtiles.geojson".indexOf(path.extname(filename)) < 0) return
       if (filename.indexOf("3857") < 0) return
@@ -77,7 +101,8 @@ function addKartformat() {
       if (fileinfo.bounds) {
         // For now, no bounds for GeoJSON
         cv.zoom = [parseInt(fileinfo.minzoom), parseInt(fileinfo.maxzoom)]
-        target.bbox = avrund4d(fileinfo.bounds)
+        const bb = bboxFraMbtilesMetadata(fileinfo.bounds)
+        target.bbox = minimizeBbox(target.bbox, bb)
       }
       if (fileinfo.format) cv.format = fileinfo.format
     })
