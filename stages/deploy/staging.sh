@@ -21,3 +21,4 @@ ssh grunnkart@hydra docker restart generic-substring-lookup-api
 ssh grunnkart@hydra docker restart punkt-oppslag-api
 ssh grunnkart@hydra docker restart stedsnavn-api
 
+thehive "deploy nin-innsyn-datagrunnlag"
