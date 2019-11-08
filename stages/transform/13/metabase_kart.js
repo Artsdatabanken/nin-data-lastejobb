@@ -171,6 +171,7 @@ function zoomlevels(kode, bbox, zoom) {
 
 function sladd(url) {
   if (!url) return false
+  if (url.indexOf("Torvmarksform") >= 0) return false
   if (url.indexOf("Elv") >= 0) return false
   if (url.indexOf("Limniske") >= 0) return false
   if (url.indexOf("Terreng") >= 0) return false
