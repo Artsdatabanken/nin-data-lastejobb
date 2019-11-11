@@ -4,17 +4,17 @@ const { io, json, log } = require("lastejobb")
 const tre = {}
 
 flettKildedata("kildedata/type")
-flettKildedata("data/stedsnavn/type")
-flettKildedata("data/naturvern/type")
-flettKildedata("data/art/type")
-flettKildedata("data/truet-art/type")
-flettKildedata("data/kommune/kommune")
-flettKildedata("data/kommune/fylke")
-flettKildedata("data/datakilde/type")
+flettKildedata("temp/stedsnavn/type")
+flettKildedata("temp/naturvern/type")
+flettKildedata("temp/art/type")
+flettKildedata("temp/truet-art/type")
+flettKildedata("temp/kommune/kommune")
+flettKildedata("temp/kommune/fylke")
+flettKildedata("temp/datakilde/type")
 flett("inn_statistikk")
 flett("maritim-grense")
-flettKildedata("data/landskap/type")
-flettKildedata("data/natursystem/type")
+flettKildedata("temp/landskap/type")
+flettKildedata("temp/natursystem/type")
 
 tre["NN-LA"].foreldre = ["NN"]
 tre["NN-NA"].foreldre = ["NN"]
