@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "download": "node index download",
-    "transform": "node --max_old_space_size=28192 index transform",
+    "transform": "node --max_old_space_size=50192 index transform",
     "build": "npm run download && npm run transform",
     "test": "node --max_old_space_size=6144 node_modules/.bin/jest",
     "deploy": "node --max_old_space_size=28192 index deploy",
@@ -33,10 +33,10 @@
     "decompress-zip": "^0.2.2",
     "eslint-config-airbnb-base": "^14.0.0",
     "fs-extra": "^8.1.0",
-    "lastejobb": "^2.13.1",
+    "lastejobb": "^2.17.4",
     "node-fetch": "^2.6.0",
     "polygon-lookup": "^2.5.0",
-    "prettier": "^1.18.2",
+    "prettier": "^1.19.1",
     "shapefile": "^0.6.6",
     "sqlite3": "^4.1.0",
     "tinycolor2": "^1.4.1"
@@ -45,10 +45,10 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "eslint": "^6.5.1",
-    "husky": "^3.0.8",
+    "eslint": "^6.6.0",
+    "husky": "^3.0.9",
     "jest": "^24.9.0",
     "lint-staged": "^9.4.2",
-    "pretty-quick": "^1.11.1"
+    "pretty-quick": "^2.0.1"
   }
 }
