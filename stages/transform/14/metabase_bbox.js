@@ -1,5 +1,4 @@
 const { io, log } = require("lastejobb")
-const typesystem = require("@artsdatabanken/typesystem")
 
 let slettet_fordi_mangler_bbox = []
 let tre = io.lesDatafil("metabase_kart")
@@ -46,7 +45,7 @@ function harKartdata(kode) {
   if (harRelasjon(node.graf)) return true
   const visAlltid = ["OR"]
   if (visAlltid.includes(kode)) return true
-  if (kode === typesystem.rotkode) return true
+  if (kode === "~") return true
   if (kode.indexOf("NN-NA") === 0) return true
   if (kode.indexOf("FA") === 0) return true
   if (kode.indexOf("AO") === 0) return true

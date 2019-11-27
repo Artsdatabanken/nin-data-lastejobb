@@ -1,6 +1,5 @@
 const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
-const typesystem = require("@artsdatabanken/typesystem")
 const path = require("path")
 
 let tre = io.lesDatafil("metabase_tweaks")
@@ -14,7 +13,7 @@ addKartformat()
 normaliserGradienter()
 if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
 propagerNedKart()
-zoomlevels(typesystem.rotkode)
+zoomlevels("~")
 settDefaultVisning()
 io.skrivDatafil(__filename, tre)
 
