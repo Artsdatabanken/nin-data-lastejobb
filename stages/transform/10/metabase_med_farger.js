@@ -2,7 +2,7 @@ const tinycolor = require("tinycolor2")
 const log = require("log-less-fancy")()
 const { io } = require("lastejobb")
 const { blend } = require("@artsdatabanken/color-blend")
-const typesystem = require("@artsdatabanken/typesystem")
+const sorterKoder = require("../sorter")
 
 /*
 Mix colors of child nodes to create colors for ancestor nodes missing colors
@@ -16,7 +16,7 @@ const barnAv = hierarki.barn
 Object.keys(tre).forEach(kode => {
   const node = tre[kode]
   if (node.type !== "gradient") return
-  const barnkoder = typesystem.sorterKoder(barnAv[kode])
+  const barnkoder = sorterKoder(barnAv[kode])
   gradientrampe(node.farge0, node.farge, barnkoder)
 })
 

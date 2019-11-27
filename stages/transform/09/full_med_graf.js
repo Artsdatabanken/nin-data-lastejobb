@@ -1,6 +1,6 @@
 const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
-const typesystem = require("@artsdatabanken/typesystem")
+const sorterKoder = require("../sorter")
 
 let tre = io.lesDatafil("full")
 let hierarki = io.lesDatafil("kodehierarki")
@@ -192,7 +192,7 @@ function lagGrafGradientkobling2(kode, node, xxxx, kantnode) {
   const gradFarfar = tre[kodeGradFarfar]
   if (!skalMed(kodeGradForelder)) return false
   let g = []
-  const barna = typesystem.sorterKoder(barnAv[kodeGradForelder])
+  const barna = sorterKoder(barnAv[kodeGradForelder])
   barna.forEach(bkode => {
     const b = tre[bkode]
     g.push({
