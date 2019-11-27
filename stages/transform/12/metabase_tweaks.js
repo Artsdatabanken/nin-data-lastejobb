@@ -48,6 +48,7 @@ function nøstOppForfedre(forelderkey) {
     const overordnet = {
       kode: forelderkey,
       tittel: forelder.tittel,
+      url: forelder.url,
       nivå: forelder.nivå
     }
     if (forelder.stats) overordnet.areal = forelder.stats.areal
