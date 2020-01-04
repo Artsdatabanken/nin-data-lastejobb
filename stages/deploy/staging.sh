@@ -2,6 +2,7 @@ set -e
 
 scp build/full-text-index.json grunnkart@hydra:/dockerdata/generic-substring-lookup-api/
 scp build/metabase.json grunnkart@hydra:~/
+scp scripts/extract-meta.js grunnkart@hydra:~/
 ssh grunnkart@hydra node --max_old_space_size=28192 extract-meta.js metabase.json
 scp build/NN-LA.json grunnkart@hydra:~/tilesdata/Natur_i_Norge/Landskap/metadata_med_undertyper.json
 scp build/NN-NA.json grunnkart@hydra:~/tilesdata/Natur_i_Norge/Natursystem/metadata_med_undertyper.json
