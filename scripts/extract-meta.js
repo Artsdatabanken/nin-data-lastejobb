@@ -2,13 +2,13 @@ const fs = require("fs")
 const base = "/home/grunnkart/tilesdata"
 
 let data = JSON.parse(fs.readFileSync(process.argv[2]))
-Object.keys(data).forEach(kode => {
+data.items.forEach(node => {
+  const kode = node.kode
   if (kode === "meta") return
-  const node = data[kode]
-  const path = `${base}/${node.url}/`
+  const path = `${base}${node.url}`
   const fn = `${path}/metadata.json`
   if (!fs.existsSync(path)) {
-    console.log("mkdir: ", path)
+    console.log("new type: ", path)
     fs.mkdirSync(path, { recursive: true })
   }
   fs.writeFileSync(fn, JSON.stringify(node))
