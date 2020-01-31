@@ -5,13 +5,11 @@
   "engines": {
     "node": ">=10.0.0"
   },
-  "main": "index.js",
   "scripts": {
-    "download": "node index download",
-    "transform": "node --max_old_space_size=50192 index transform",
+    "download": "node node_modules/lastejobb/index stages/download",
+    "transform": "node --max_old_space_size=28192 node_modules/lastejobb/index stages/transform",
     "build": "npm run download && npm run transform",
-    "test": "node --max_old_space_size=6144 node_modules/.bin/jest",
-    "deploy": "node --max_old_space_size=28192 index deploy",
+    "deploy": "node  --max_old_space_size=28192 node_modules/lastejobb/index stages/deploy",
     "precommit": "pretty-quick --staged"
   },
   "repository": {
