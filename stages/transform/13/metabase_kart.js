@@ -94,6 +94,7 @@ function addKartformat() {
       if (fileinfo.maxzoom) {
         cv.zoom = [parseInt(fileinfo.minzoom), parseInt(fileinfo.maxzoom)]
       }
+      if (xkode === "VV-261") debugger
       cv.filnavn = filename
       cv.størrelse = fileinfo.size
       cv.oppdatert = fileinfo.mtime
@@ -214,5 +215,5 @@ function propagerNedKartFra(kode, kartformat) {
 function brukKartFraForelder(node, kartformat) {
   if (!node.kart) node.kart = {}
   if (!node.kart.format) node.kart.format = {}
-  node.kart.format = Object.assign({}, node.kart.format, kartformat)
+  node.kart.format = Object.assign({}, kartformat, node.kart.format)
 }
