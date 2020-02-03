@@ -10,6 +10,7 @@ const barnAv = hierarki.barn
 let ukjentBbox = 0
 
 addKartformat()
+lagNormaliserteVerdierForGradienter()
 normaliserGradienter()
 if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
 propagerNedKart()
@@ -94,7 +95,7 @@ function addKartformat() {
       if (fileinfo.maxzoom) {
         cv.zoom = [parseInt(fileinfo.minzoom), parseInt(fileinfo.maxzoom)]
       }
-      if (xkode === "VV-261") debugger
+      //      if (xkode === "VV-261") debugger
       cv.filnavn = filename
       cv.størrelse = fileinfo.size
       cv.oppdatert = fileinfo.mtime
@@ -106,6 +107,28 @@ function addKartformat() {
       }
       if (fileinfo.format) cv.format = fileinfo.format
     })
+  })
+}
+
+function lagNormaliserteVerdierForGradienter() {
+  Object.keys(tre).forEach(kode => {
+    const target = tre[kode]
+    if (target.type !== "gradient") return
+    target.kart = target.kart || {}
+    target.kart.format = target.kart.format || {}
+    const format = target.kart.format
+    format["raster_gradient"] = format["raster_gradient"] || {}
+    const rgrad = format["raster_gradient"]
+    let barna = hierarki.barn[kode]
+    if (!barna) return
+    const width = 255 / barna.length
+    barna = barna.sort((a, b) => a > b ? 1 : -1)
+    for (let i = 0; i < barna.length; i++) {
+      const barn = tre[barna[i]]
+      // 0 = null value (kalk)
+      if (kode === "NN-NA-LKM-KA") debugger
+      barn.normalisertVerdi = barn.normalisertVerdi || [Math.trunc(i * width + 1), Math.trunc(i * width + width)]
+    }
   })
 }
 
