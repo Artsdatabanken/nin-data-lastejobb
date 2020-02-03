@@ -10,8 +10,8 @@ const barnAv = hierarki.barn
 let ukjentBbox = 0
 
 addKartformat()
-lagNormaliserteVerdierForGradienter()
 normaliserGradienter()
+lagNormaliserteVerdierForGradienter()
 if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
 propagerNedKart()
 zoomlevels("~")
@@ -112,6 +112,7 @@ function addKartformat() {
 
 function lagNormaliserteVerdierForGradienter() {
   Object.keys(tre).forEach(kode => {
+    if (kode === "NN-NA-BS-6SO") debugger
     const target = tre[kode]
     if (target.type !== "gradient") return
     target.kart = target.kart || {}
@@ -125,8 +126,9 @@ function lagNormaliserteVerdierForGradienter() {
     barna = barna.sort((a, b) => a > b ? 1 : -1)
     for (let i = 0; i < barna.length; i++) {
       const barn = tre[barna[i]]
+      if(barn.normalisertVerdi) return // Bioklimatisk sone (6SO-6 og 7 mangler vi intervall på)
       // 0 = null value (kalk)
-      if (kode === "NN-NA-LKM-KA") debugger
+//      if (kode === "NN-NA-LKM-KA") debugger
       barn.normalisertVerdi = barn.normalisertVerdi || [Math.trunc(i * width + 1), Math.trunc(i * width + width)]
     }
   })
