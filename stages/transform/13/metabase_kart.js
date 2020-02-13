@@ -89,6 +89,7 @@ function addKartformat() {
       const cv = format[type]
 
       if (sladd(node.url)) cv.publish = -2 // Kun internt
+      if(node.url.indexOf('Berggrunn')>=0)debugger
 
       const webserver = "https://data.artsdatabanken.no"
       cv.url = webserver + node.url + "/" + filename
@@ -204,7 +205,7 @@ function sladd(url) {
   if (url.indexOf("Erosjon") >= 0) return false
   if (url.indexOf("Finmat") >= 0) return false
   if (url.indexOf("Sediment") >= 0) return false
-  if (url.indexOf("Ultrama") >= 0) return false
+  if (url.indexOf("Berggrunn_med_avvikende_kjemisk_sammensetning") >= 0) return false
   if (url.indexOf("Kalk") >= 0) return false
   if (url.indexOf("Fossil") >= 0) return false
   if (url.indexOf("Bergart") >= 0) return false
