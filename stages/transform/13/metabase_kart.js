@@ -89,14 +89,12 @@ function addKartformat() {
       const cv = format[type]
 
       if (sladd(node.url)) cv.publish = -2 // Kun internt
-      if(node.url.indexOf('Berggrunn')>=0)debugger
 
       const webserver = "https://data.artsdatabanken.no"
       cv.url = webserver + node.url + "/" + filename
       if (fileinfo.maxzoom) {
         cv.zoom = [parseInt(fileinfo.minzoom), parseInt(fileinfo.maxzoom)]
       }
-      //      if (xkode === "VV-261") debugger
       cv.filnavn = filename
       cv.størrelse = fileinfo.size
       cv.oppdatert = fileinfo.mtime
@@ -113,7 +111,6 @@ function addKartformat() {
 
 function lagNormaliserteVerdierForGradienter() {
   Object.keys(tre).forEach(kode => {
-    if (kode === "NN-NA-BS-6SO") debugger
     const target = tre[kode]
     if (target.type !== "gradient") return
     target.kart = target.kart || {}
@@ -127,9 +124,8 @@ function lagNormaliserteVerdierForGradienter() {
     barna = barna.sort((a, b) => a > b ? 1 : -1)
     for (let i = 0; i < barna.length; i++) {
       const barn = tre[barna[i]]
-      if(barn.normalisertVerdi) return // Bioklimatisk sone (6SO-6 og 7 mangler vi intervall på)
+      if (barn.normalisertVerdi) return // Bioklimatisk sone (6SO-6 og 7 mangler vi intervall på)
       // 0 = null value (kalk)
-//      if (kode === "NN-NA-LKM-KA") debugger
       barn.normalisertVerdi = barn.normalisertVerdi || [Math.trunc(i * width + 1), Math.trunc(i * width + width)]
     }
   })
@@ -177,8 +173,8 @@ function normaliserGradientTrinn(bkode, barn, rgrad) {
   const span = tmax - tmin
   const [nmin, nmax] = rgrad.intervall.normalisertVerdi
   const nrange = nmax - nmin
-  const x1 = Math.trunc((nrange * (min - tmin)) / span) + nmin
-  let x2 = Math.trunc((nrange * (max - tmin)) / span) + nmin
+  const x1 = Math.round((nrange * (min - tmin)) / span) + nmin
+  let x2 = Math.round((nrange * (max - tmin)) / span) + nmin
   if (max == 0) x2 = nmax // Unbounded
   barn.normalisertVerdi = [x1, x2]
 }
