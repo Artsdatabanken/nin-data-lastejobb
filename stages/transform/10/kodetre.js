@@ -1,7 +1,7 @@
 const { io } = require("lastejobb")
 const typesystem = require("@artsdatabanken/typesystem")
 
-let tre = io.lesDatafil("full_med_graf")
+let tre = io.lesTempJson("full_med_graf")
 
 let r = []
 Object.keys(tre).forEach(key => {

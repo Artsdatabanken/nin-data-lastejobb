@@ -1,8 +1,8 @@
 const { io, log } = require("lastejobb")
 
 let slettet_fordi_mangler_bbox = []
-let tre = io.lesDatafil("metabase_kart")
-let hierarki = io.lesDatafil("kodehierarki")
+let tre = io.lesTempJson("metabase_kart")
+let hierarki = io.lesTempJson("kodehierarki")
 const barnAv = hierarki.barn
 
 fjernKoderSomIkkeHarData(tre)

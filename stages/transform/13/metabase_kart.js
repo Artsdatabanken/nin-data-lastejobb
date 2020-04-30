@@ -2,9 +2,9 @@ const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
 const path = require("path")
 
-let tre = io.lesDatafil("metabase_tweaks")
-let hierarki = io.lesDatafil("kodehierarki")
-let filindeks = io.lesDatafil("filindeks")
+let tre = io.lesTempJson("metabase_tweaks")
+let hierarki = io.lesTempJson("kodehierarki")
+let filindeks = io.lesTempJson("filindeks")
 const barnAv = hierarki.barn
 
 let ukjentBbox = 0

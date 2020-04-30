@@ -2,7 +2,7 @@ const { io } = require("lastejobb")
 
 const base = "/home/grunnkart/tilesdata"
 
-let data = io.lesDatafil("metabase")
+let data = io.lesTempJson("metabase")
 Object.keys(data).forEach(kode => {
   const node = data[kode]
   const sti = kode.split("-").join("/")

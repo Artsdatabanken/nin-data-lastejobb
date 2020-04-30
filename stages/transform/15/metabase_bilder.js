@@ -1,6 +1,6 @@
 const { io } = require("lastejobb")
 
-let full = io.lesDatafil("metabase_bbox")
+let full = io.lesTempJson("metabase_bbox")
 let r = []
 
 Object.keys(full).forEach(kode => {

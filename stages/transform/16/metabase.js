@@ -1,7 +1,7 @@
 const { io } = require("lastejobb")
 
-let tre = io.lesDatafil("metabase_bilder.gammel.json")
-let hierarki = io.lesDatafil("kodehierarki")
+let tre = io.lesTempJson("metabase_bilder.gammel.json")
+let hierarki = io.lesTempJson("kodehierarki")
 const barnAv = hierarki.barn
 Object.keys(tre).forEach(kode => mapBarn(kode))
 Object.keys(tre).forEach(kode => flyttDatakildeTilToppnivå(kode))

@@ -8,8 +8,8 @@ const sorterKoder = require("../sorter")
 Mix colors of child nodes to create colors for ancestor nodes missing colors
 */
 
-let tre = io.lesDatafil("full_med_graf")
-let hierarki = io.lesDatafil("kodehierarki")
+let tre = io.lesTempJson("full_med_graf")
+let hierarki = io.lesTempJson("kodehierarki")
 const foreldre = hierarki.foreldre
 const barnAv = hierarki.barn
 
@@ -20,7 +20,7 @@ Object.keys(tre).forEach(kode => {
   gradientrampe(node.farge0, node.farge, barnkoder)
 })
 
-while (trickleColorsUp()) {}
+while (trickleColorsUp()) { }
 settFargePåGradienter()
 settFargePåFlagg()
 

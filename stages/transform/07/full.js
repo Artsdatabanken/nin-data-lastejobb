@@ -46,9 +46,12 @@ function flettAttributter(o) {
 }
 
 function flett(filename) {
-  var data = io.lesDatafil(filename)
+  var data = io.lesTempJson(filename)
   let o = data
-  if (o.items) o = json.arrayToObject(data.items, { uniqueKey: "kode" })
+  if (o.items) o = o.items
+  if (Array.isArray(o))
+    o = json.arrayToObject(o, { uniqueKey: "kode" })
+  //  if (o.items) o = json.arrayToObject(data.items, { uniqueKey: "kode" })
   flettAttributter(o)
 }
 

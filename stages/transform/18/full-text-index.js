@@ -2,7 +2,7 @@ const { io, log } = require("lastejobb")
 
 // Bygger fulltext-index for lookup-api
 
-const tre = io.lesBuildfil("metabase").items
+const tre = io.readJson("build/metabase.json").items
 const index = {}
 
 /*

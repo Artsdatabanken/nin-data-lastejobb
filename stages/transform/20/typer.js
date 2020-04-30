@@ -1,7 +1,7 @@
 const { io, json } = require("lastejobb")
 
 function readSource() {
-  let dataArr = io.lesBuildfil("metabase").items
+  let dataArr = io.readJson("build/metabase.json").items
   const data = json.arrayToObject(dataArr, {
     uniqueKey: "kode",
     removeKeyProperty: false

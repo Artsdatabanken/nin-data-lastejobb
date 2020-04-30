@@ -1,8 +1,8 @@
 const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
 
-let tre = io.lesDatafil("metabase_med_url")
-let hierarki = io.lesDatafil("kodehierarki")
+let tre = io.lesTempJson("metabase_med_url")
+let hierarki = io.lesTempJson("kodehierarki")
 const foreldreTil = hierarki.foreldre
 
 let ukjenteKoder = []

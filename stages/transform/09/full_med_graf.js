@@ -2,8 +2,8 @@ const { io } = require("lastejobb")
 const log = require("log-less-fancy")()
 const sorterKoder = require("../sorter")
 
-let tre = io.lesDatafil("full")
-let hierarki = io.lesDatafil("kodehierarki")
+let tre = io.lesTempJson("full")
+let hierarki = io.lesTempJson("kodehierarki")
 const barnAv = hierarki.barn
 const skalPropageresNed = {}
 

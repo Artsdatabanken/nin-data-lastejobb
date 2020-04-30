@@ -2,8 +2,8 @@ const { io } = require("lastejobb")
 
 const baseUrl = "https://data.artsdatabanken.no/"
 
-let full = io.lesDatafil("metabase_bbox")
-let filindeks = io.lesDatafil("filindeks")
+let full = io.lesTempJson("metabase_bbox")
+let filindeks = io.lesTempJson("filindeks")
 
 Object.keys(full).forEach(kode => {
   const node = full[kode]
