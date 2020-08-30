@@ -1,8 +1,6 @@
 return false // Not currently in use - transitioned to flat files
 
-const config = require("../../config")
-const { io } = require("lastejobb")
-const log = require("log-less-fancy")()
+const { io, log } = require("lastejobb")
 const sqlite3 = require("sqlite3")
 const fs = require("fs")
 var zlib = require("zlib")
@@ -14,7 +12,7 @@ let data = io.lesBuildfil("metabase")
 
 const db = new sqlite3.Database(sqliteFilePath)
 
-db.serialize(function() {
+db.serialize(function () {
   db.run("CREATE TABLE meta(kode TEXT PRIMARY KEY, verdi BLOB);")
   // var stmt = db.prepare("INSERT INTO meta (kode, verdi) VALUES (?,?)")
   db.run("BEGIN")

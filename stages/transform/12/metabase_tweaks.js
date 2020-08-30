@@ -1,5 +1,4 @@
-const { io } = require("lastejobb")
-const log = require("log-less-fancy")()
+const { io, log } = require("lastejobb")
 
 let tre = io.lesTempJson("metabase_med_url")
 let hierarki = io.lesTempJson("kodehierarki")
@@ -40,6 +39,7 @@ function settFargePåRelasjoner() {
 function nøstOppForfedre(forelderkey) {
   let r = []
   while (forelderkey) {
+    //    detectHeapOverflow()
     let forelder = tre[forelderkey]
     if (!forelder) {
       manglerKode[forelderkey] = true
@@ -57,6 +57,7 @@ function nøstOppForfedre(forelderkey) {
     if (!forfedre) break
     if (forfedre.length <= 0) break
     forelderkey = forfedre[0]
+    if (r.find(e => e.kode === forelderkey)) throw new Error(forelderkey + ": " + JSON.stringify(r))
   }
   return r
 }
