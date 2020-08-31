@@ -53,14 +53,16 @@ function minimizeBbox(bbox1, bbox2) {
 function settDefaultVisning() {
   const prio = ["raster_gradient", "raster_indexed", "polygon"]
   Object.keys(tre).forEach(kode => {
-    const kart = tre[kode].kart
+    const node = tre[kode]
+    const kart = node.kart
     if (!kart) return
     if (!kart.format) return
-    for (let pri of prio)
-      if (kart.format[pri]) {
+    for (let pri of prio) {
+      if (kart.format[pri] && kart.format[pri].url) {
         kart.aktivtFormat = pri
         return
       }
+    }
   })
 }
 
