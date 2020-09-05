@@ -118,7 +118,6 @@ function lagNormaliserteVerdierForGradienter() {
     target.kart.format = target.kart.format || {}
     const format = target.kart.format
     format["raster_gradient"] = format["raster_gradient"] || {}
-    const rgrad = format["raster_gradient"]
     let barna = hierarki.barn[kode]
     if (!barna) return
     const width = 255 / barna.length
