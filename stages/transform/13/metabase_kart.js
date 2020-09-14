@@ -1,5 +1,4 @@
-const { io } = require("lastejobb")
-const log = require("log-less-fancy")()
+const { io, log } = require("lastejobb")
 const path = require("path")
 
 let tre = io.lesTempJson("metabase_tweaks")
@@ -54,14 +53,16 @@ function minimizeBbox(bbox1, bbox2) {
 function settDefaultVisning() {
   const prio = ["raster_gradient", "raster_indexed", "polygon"]
   Object.keys(tre).forEach(kode => {
-    const kart = tre[kode].kart
+    const node = tre[kode]
+    const kart = node.kart
     if (!kart) return
     if (!kart.format) return
-    for (let pri of prio)
-      if (kart.format[pri]) {
+    for (let pri of prio) {
+      if (kart.format[pri] && kart.format[pri].url) {
         kart.aktivtFormat = pri
         return
       }
+    }
   })
 }
 
@@ -117,7 +118,6 @@ function lagNormaliserteVerdierForGradienter() {
     target.kart.format = target.kart.format || {}
     const format = target.kart.format
     format["raster_gradient"] = format["raster_gradient"] || {}
-    const rgrad = format["raster_gradient"]
     let barna = hierarki.barn[kode]
     if (!barna) return
     const width = 255 / barna.length

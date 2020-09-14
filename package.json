@@ -8,7 +8,7 @@
   "scripts": {
     "start": "npm run build",
     "download": "node node_modules/lastejobb/lastejobb stages/download",
-    "transform": "node --max_old_space_size=28192 node_modules/lastejobb/lastejobb stages/transform",
+    "transform": "node --max_old_space_size=38192 node_modules/lastejobb/lastejobb stages/transform",
     "build": "npm run download && npm run transform",
     "deploy": "node  --max_old_space_size=28192 node_modules/lastejobb/lastejobb stages/deploy",
     "precommit": "pretty-quick --staged"
@@ -30,24 +30,24 @@
     "babel-eslint": "^10.1.0",
     "csv": "^5.3.2",
     "decompress-zip": "^0.2.2",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "fs-extra": "^9.0.0",
-    "lastejobb": "^3.5.3",
-    "node-fetch": "^2.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "fs-extra": "^9.0.1",
+    "lastejobb": "^3.7.2",
+    "node-fetch": "^2.6.1",
     "polygon-lookup": "^2.6.0",
-    "prettier": "^2.0.5",
+    "prettier": "^2.1.1",
     "shapefile": "^0.6.6",
-    "sqlite3": "^4.2.0",
+    "sqlite3": "^5.0.0",
     "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "eslint": "^6.8.0",
-    "husky": "^4.2.5",
-    "jest": "^25.5.2",
-    "lint-staged": "^10.2.0",
-    "pretty-quick": "^2.0.1"
+    "eslint": "^7.9.0",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.3.0",
+    "pretty-quick": "^3.0.2"
   }
 }
