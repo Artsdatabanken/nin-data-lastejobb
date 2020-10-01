@@ -94,8 +94,10 @@ function trickleColorsUp() {
 }
 
 function gradientrampe(farge0, farge, barnkoder) {
-  const f1 = new tinycolor(farge0)
-  const f = new tinycolor(farge)
+  const viridisYellow = "#ffe246"
+  const viridisPurple = "#471b53"
+  const f1 = new tinycolor(farge0 || viridisPurple)
+  const f = new tinycolor(farge || viridisYellow)
   for (let i = 0; i < barnkoder.length; i++) {
     const barnkode = barnkoder[i]
     const node = tre[barnkode]
