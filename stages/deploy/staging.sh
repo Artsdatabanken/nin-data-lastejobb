@@ -22,5 +22,5 @@ ssh grunnkart@hydra docker restart generic-substring-lookup-api
 ssh grunnkart@hydra docker restart punkt-oppslag-api
 ssh grunnkart@hydra docker restart stedsnavn-api
 
-ops "deploy nin-innsyn-datagrunnlag"
+#ops "deploy nin-innsyn-datagrunnlag"
 ops "deploy generic-substring-lookup-api"
