@@ -15,6 +15,8 @@ if (ukjentBbox > 0) log.info("bbox for '" + ukjentBbox + "' koder.")
 propagerNedKart()
 zoomlevels("~")
 settDefaultVisning()
+//lagKartkode("NN-NA-TI-V9-C-1", tre["NN-NA-TI-V9-C-1"])
+lagKartkoder()
 io.skrivDatafil(__filename, tre)
 
 function avrund1d(num) {
@@ -238,4 +240,38 @@ function brukKartFraForelder(node, kartformat) {
   if (!node.kart) node.kart = {}
   if (!node.kart.format) node.kart.format = {}
   node.kart.format = Object.assign({}, kartformat, node.kart.format)
+}
+
+// NiN-koder fungerer dårlig i kartet fordi overordnet nivå sin kode ikke er et prefiks av undernivå sine koder
+// Visning av alle typer som ligger innenfor en node blir da vanskelig
+// Lager derfor koder for kartet som alltid er bygget av prefiks av overordnet nivå.
+// Eks. NiN: NN-NA-TI-T34-C-2 - er undernivå av NN-NA-TI-T34-E-1
+// Vi ønsker NN-NA-TI-T34-2-1 og NN-NA-TI-T34-2 
+function lagKartkoder() {
+  for (let kode of Object.keys(tre)) {
+    const node = tre[kode]
+    lagKartkode(kode, node)
+  }
+}
+
+function lagKartkode(kode, node) {
+  const ov = node.overordnet[0]
+  if (!ov) {
+    node.kart.kode = kode
+    return
+  }
+  //  if (kode.indexOf('NN-NA-TI-V9') >= 0) debugger
+  var overordnetkode = ov.kode
+  var overordnet = tre[overordnetkode]
+  if (!overordnet) debugger
+  if (!overordnet.kart.kode) lagKartkode(ov.kode, overordnet)
+  var prefix = overordnetkode
+  while (kode.indexOf(prefix) < 0) {
+    prefix = overordnet.overordnet[0].kode
+    overordnet = tre[prefix]
+  }
+
+  overordnet = tre[node.overordnet[0].kode]
+  const suffix = kode.replace(prefix, '').replace(/-/g, '')
+  node.kart.kode = overordnet.kart.kode + "-" + suffix
 }
