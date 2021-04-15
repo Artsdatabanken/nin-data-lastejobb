@@ -1,5 +1,5 @@
 const tinycolor = require("tinycolor2")
-const { io, log } = require("lastejobb")
+const { io, log } = require("@artsdatabanken/lastejobb")
 const { blend } = require("@artsdatabanken/color-blend")
 const sorterKoder = require("../sorter")
 

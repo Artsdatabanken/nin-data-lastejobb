@@ -1,4 +1,4 @@
-const { io } = require("lastejobb")
+const { io } = require("@artsdatabanken/lastejobb")
 const typesystem = require("@artsdatabanken/typesystem")
 
 let tre = io.lesTempJson("full")

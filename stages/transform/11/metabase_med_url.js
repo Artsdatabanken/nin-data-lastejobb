@@ -1,4 +1,4 @@
-const { io, url } = require("lastejobb")
+const { io, url } = require("@artsdatabanken/lastejobb")
 
 let tre = io.lesTempJson("metabase_med_farger")
 

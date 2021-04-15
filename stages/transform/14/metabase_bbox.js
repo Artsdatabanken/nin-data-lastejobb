@@ -1,4 +1,4 @@
-const { io, log } = require("lastejobb")
+const { io, log } = require("@artsdatabanken/lastejobb")
 
 let slettet_fordi_mangler_bbox = []
 let tre = io.lesTempJson("metabase_kart")

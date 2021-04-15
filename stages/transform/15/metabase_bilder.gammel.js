@@ -1,4 +1,4 @@
-const { io } = require("lastejobb")
+const { io } = require("@artsdatabanken/lastejobb")
 
 const baseUrl = "https://data.artsdatabanken.no/"
 

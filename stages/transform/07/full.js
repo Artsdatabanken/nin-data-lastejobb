@@ -1,5 +1,5 @@
 const typesystem = require("@artsdatabanken/typesystem")
-const { io, json, log } = require("lastejobb")
+const { io, json, log } = require("@artsdatabanken/lastejobb")
 
 const tre = {}
 

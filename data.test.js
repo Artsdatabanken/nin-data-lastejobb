@@ -1,4 +1,4 @@
-const { io, log } = require("lastejobb")
+const { io, log } = require("@artsdatabanken/lastejobb")
 const config = require("./config")
 var { tellBarnasNøkler } = require("./lib/testHelper")
 

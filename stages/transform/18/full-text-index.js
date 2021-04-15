@@ -1,4 +1,4 @@
-const { io, log } = require("lastejobb")
+const { io, log } = require("@artsdatabanken/lastejobb")
 
 // Bygger fulltext-index for lookup-api
 

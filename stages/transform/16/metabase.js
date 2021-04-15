@@ -1,4 +1,4 @@
-const { io } = require("lastejobb")
+const { io } = require("@artsdatabanken/lastejobb")
 
 let tre = io.lesTempJson("metabase_bilder.gammel.json")
 let hierarki = io.lesTempJson("kodehierarki")

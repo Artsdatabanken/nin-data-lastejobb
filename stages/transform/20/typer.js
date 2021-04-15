@@ -1,4 +1,4 @@
-const { io, json } = require("lastejobb")
+const { io, json } = require("@artsdatabanken/lastejobb")
 
 function readSource() {
   let dataArr = io.readJson("build/metabase.json").items

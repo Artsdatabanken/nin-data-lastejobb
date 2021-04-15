@@ -1,5 +1,5 @@
 // Not currently in use
-const { io } = require("lastejobb")
+const { io } = require("@artsdatabanken/lastejobb")
 const fs = require("fs")
 
 const REDIS = false

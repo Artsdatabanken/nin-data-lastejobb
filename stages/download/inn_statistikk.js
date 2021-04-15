@@ -1,4 +1,4 @@
-const { http, log } = require("lastejobb")
+const { http, log } = require("@artsdatabanken/lastejobb")
 
 // Laster ned statistikk per kode, arealer, antall arter innenfor geometri
 // { "AO_06-27-VV": { "area": 4798855, "observations": 778, "areas": 15 } },

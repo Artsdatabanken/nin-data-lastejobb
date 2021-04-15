@@ -1,4 +1,4 @@
-const { io, log } = require("lastejobb")
+const { io, log } = require("@artsdatabanken/lastejobb")
 const path = require("path")
 
 let tre = io.lesTempJson("metabase_tweaks")

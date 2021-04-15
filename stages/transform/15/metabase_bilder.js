@@ -1,4 +1,4 @@
-const { io } = require("lastejobb")
+const { io } = require("@artsdatabanken/lastejobb")
 
 let full = io.lesTempJson("metabase_bbox")
 let r = []

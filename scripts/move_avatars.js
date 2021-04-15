@@ -1,4 +1,4 @@
-const { io } = require("lastejobb")
+const { io } = require("@artsdatabanken/lastejobb")
 
 const destBase = "/home/grunnkart/tilesdata"
 const srcBase = "/home/grunnkart/staging/assets"

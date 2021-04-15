@@ -1,4 +1,4 @@
-const { io, log } = require("lastejobb")
+const { io, log } = require("@artsdatabanken/lastejobb")
 const sorterKoder = require("../sorter")
 
 let tre = io.lesTempJson("full")
