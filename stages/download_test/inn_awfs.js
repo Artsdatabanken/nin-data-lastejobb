@@ -12,31 +12,46 @@ const path = require("path");
 // where=1=1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=&outSR=&having=&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&historicMoment=&returnDistinctValues=false&queryByDistance=&returnExtentOnly=false&datumTransformation=&parameterValues=&rangeValues=&quantizationParameters=&featureEncoding=esriDefault&f=geojson
 // where=1=1&geometryType=esriGeometryEnvelope&spatialRel=esriSpatialRelIntersects&returnGeometry=true&returnTrueCurves=false&returnIdsOnly=false&returnCountOnly=false&returnZ=false&returnM=false&returnDistinctValues=false&returnExtentOnly=false&featureEncoding=esriDefault&f=geojson
 
+// mirrorWithSrs(
+//   "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer/${layer}/",
+//   0, 12,
+//   [4326, 25833],
+//   "query?where=1=1&geometryType=esriGeometryEnvelope&spatialRel=esriSpatialRelIntersects&returnGeometry=true&returnTrueCurves=true&returnIdsOnly=false&returnCountOnly=false&returnZ=false&returnM=false&returnDistinctValues=false&returnExtentOnly=false&featureEncoding=esriDefault&f=geojson&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
+//   "${featureId}?f=pjson",
+//   "temp/wfs_kartleggingsenhet_20k.${srs}.json",
+//   "temp/wfs_kartleggingsenhet_20k.${srs}.tmp.json"
+//   // , { batchSize: 1000 }
+// )
+// .catch(err => log.fatal(err))
+// .then(() => {
+//   log.info(config.getTempPath("wfs_kartleggingsenhet_5k.25833.json"));
+//   mirrorWithSrs(
+//     "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer/${layer}/",
+//     1, 11,
+//     [4326, 25833],
+//     "query?where=1=1&geometryType=esriGeometryEnvelope&spatialRel=esriSpatialRelIntersects&returnGeometry=true&returnTrueCurves=true&returnIdsOnly=false&returnCountOnly=false&returnZ=false&returnM=false&returnDistinctValues=false&returnExtentOnly=false&featureEncoding=esriDefault&f=geojson&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
+//     "${featureId}?f=pjson",
+//     "temp/wfs_kartleggingsenhet_5k.${srs}.json",
+//     "temp/wfs_kartleggingsenhet_5k.${srs}.tmp.json"
+//     // , { batchSize: 1000 }
+//   )
+//   .catch(err => log.fatal(err));
+// });
+
+// set NODE_OPTIONS=--max_old_space_size=8192
 mirrorWithSrs(
   "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer/${layer}/",
-  0, 12,
-  [4326, 25833],
+  1, 11,
+  // [4326, 25833],
+  [4326],
   "query?where=1=1&geometryType=esriGeometryEnvelope&spatialRel=esriSpatialRelIntersects&returnGeometry=true&returnTrueCurves=true&returnIdsOnly=false&returnCountOnly=false&returnZ=false&returnM=false&returnDistinctValues=false&returnExtentOnly=false&featureEncoding=esriDefault&f=geojson&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
   "${featureId}?f=pjson",
-  "temp/wfs_kartleggingsenhet_20k.${srs}.json",
-  "temp/wfs_kartleggingsenhet_20k.${srs}.tmp.json"
+  "temp/wfs_kartleggingsenhet_5k.${srs}.json",
+  "temp/wfs_kartleggingsenhet_5k.${srs}.tmp.json"
   // , { batchSize: 1000 }
 )
-.catch(err => log.fatal(err))
-.then(() => {
-  log.info(config.getTempPath("wfs_kartleggingsenhet_5k.25833.json"));
-  mirrorWithSrs(
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer/${layer}/",
-    1, 11,
-    [4326, 25833],
-    "query?where=1=1&geometryType=esriGeometryEnvelope&spatialRel=esriSpatialRelIntersects&returnGeometry=true&returnTrueCurves=true&returnIdsOnly=false&returnCountOnly=false&returnZ=false&returnM=false&returnDistinctValues=false&returnExtentOnly=false&featureEncoding=esriDefault&f=geojson&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
-    "${featureId}?f=pjson",
-    "temp/wfs_kartleggingsenhet_5k.${srs}.json",
-    "temp/wfs_kartleggingsenhet_5k.${srs}.tmp.json"
-    // , { batchSize: 1000 }
-  )
-  .catch(err => log.fatal(err));
-});
+.catch(err => log.fatal(err));
+
 
 async function mirrorWithSrs(url, layer, extraLayer, srsList, queryUrl, featureUrl, jsonlFilePath, jsonlFilePathTmp, options = { batchSize: 1000, offset: 0, httpheaders: { timeout: 60000 } }) {
   const wfsFeatures = {};

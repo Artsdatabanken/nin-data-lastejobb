@@ -8,7 +8,7 @@
   "scripts": {
     "start": "npm run build",
     "download": "node node_modules/@artsdatabanken/lastejobb/lastejobb stages/download",
-    "download_test": "node node_modules/@artsdatabanken/lastejobb/lastejobb stages/download_test",
+    "download_test": "node --max_old_space_size=8192 node_modules/@artsdatabanken/lastejobb/lastejobb stages/download_test",
     "transform": "node --max_old_space_size=38192 node_modules/@artsdatabanken/lastejobb/lastejobb stages/transform",
     "build": "npm run download && npm run transform",
     "deploy": "node  --max_old_space_size=28192 node_modules/@artsdatabanken/lastejobb/lastejobb stages/deploy",
