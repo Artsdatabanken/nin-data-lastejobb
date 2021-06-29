@@ -202,60 +202,60 @@ mirrorJson(
   "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
   "${featureId}?f=pjson",
   "Kartleggingsenhet20kid",
-  "temp/2021_06_26/0",
+  "temp/test/0",
   true
 )
 .catch(err => log.fatal(err));
-mirrorJson(
-  "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer/${layer}/",
-  12,
-  "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
-  "${featureId}?f=pjson",
-  "Kartleggingsenhet20kid",
-  "temp/2021_06_26/12"
-)
-.catch(err => log.fatal(err))
-// .then(() => {
-mirrorJson(
-  "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer/${layer}/",
-  1,
-  "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
-  "${featureId}?f=pjson",
-  "Kartleggingsenhet5kid",
-  "temp/2021_06_26/1",
-  true
-)
-.catch(err => log.fatal(err));
-mirrorJson(
-  "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer/${layer}/",
-  11,
-  "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
-  "${featureId}?f=pjson",
-  "Kartleggingsenhet5kid",
-  "temp/2021_06_26/11"
-)
-.catch(err => log.fatal(err));
-// .then(() => {
-mirrorJson(
-  "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer/${layer}/",
-  13,
-  "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
-  "${featureId}?f=pjson",
-  "Kartleggingsenhet5kid",
-  "temp/2021_06_26/13"
-)
-.catch(err => log.fatal(err));
-mirrorJson(
-  "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer/${layer}/",
-  14,
-  "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
-  "${featureId}?f=pjson",
-  "Kartleggingsenhet20kid",
-  "temp/2021_06_26/14"
-)
-.catch(err => log.fatal(err));
-// });
-// });
+// mirrorJson(
+//   "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer/${layer}/",
+//   12,
+//   "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
+//   "${featureId}?f=pjson",
+//   "Kartleggingsenhet20kid",
+//   "temp/2021_06_26/12"
+// )
+// .catch(err => log.fatal(err))
+// // .then(() => {
+// mirrorJson(
+//   "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer/${layer}/",
+//   1,
+//   "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
+//   "${featureId}?f=pjson",
+//   "Kartleggingsenhet5kid",
+//   "temp/2021_06_26/1",
+//   true
+// )
+// .catch(err => log.fatal(err));
+// mirrorJson(
+//   "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer/${layer}/",
+//   11,
+//   "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
+//   "${featureId}?f=pjson",
+//   "Kartleggingsenhet5kid",
+//   "temp/2021_06_26/11"
+// )
+// .catch(err => log.fatal(err));
+// // .then(() => {
+// mirrorJson(
+//   "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer/${layer}/",
+//   13,
+//   "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
+//   "${featureId}?f=pjson",
+//   "Kartleggingsenhet5kid",
+//   "temp/2021_06_26/13"
+// )
+// .catch(err => log.fatal(err));
+// mirrorJson(
+//   "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer/${layer}/",
+//   14,
+//   "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
+//   "${featureId}?f=pjson",
+//   "Kartleggingsenhet20kid",
+//   "temp/2021_06_26/14"
+// )
+// .catch(err => log.fatal(err));
+// // });
+// // });
 
 async function mirrorJson(url, layer, queryUrl, featureUrl, featureName, jsonBasePath, hasGeometry = false, options = { batchSize: 1000, offset: 0, httpheaders: { timeout: 60000 } }) {
   io.mkdir(jsonBasePath);
