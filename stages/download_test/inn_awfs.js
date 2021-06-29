@@ -272,7 +272,7 @@ async function mirrorJson(url, layer, queryUrl, featureUrl, featureName, jsonBas
   const digits = `${count}`.length;
 
   let start = 0;
-  const step = 100000;
+  const step = 1000;
 
   while (true) {
     mirrorSkip(start, start + step, digits, jsonBaseIdPath, url, layer, featureUrl, featureName, options);
