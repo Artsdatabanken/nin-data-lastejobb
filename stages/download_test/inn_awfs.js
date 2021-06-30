@@ -212,7 +212,7 @@ mirrorJson(
   "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
   "${featureId}?f=pjson",
   "Kartleggingsenhet20kid",
-  "temp/2021_06_26/12"
+  "temp/test/12"
 )
 .catch(err => log.fatal(err))
 // .then(() => {
@@ -222,7 +222,7 @@ mirrorJson(
   "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
   "${featureId}?f=pjson",
   "Kartleggingsenhet5kid",
-  "temp/2021_06_26/1",
+  "temp/test/1",
   true
 )
 .catch(err => log.fatal(err));
@@ -232,7 +232,7 @@ mirrorJson(
   "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
   "${featureId}?f=pjson",
   "Kartleggingsenhet5kid",
-  "temp/2021_06_26/11"
+  "temp/test/11"
 )
 .catch(err => log.fatal(err));
 // .then(() => {
@@ -242,7 +242,7 @@ mirrorJson(
   "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
   "${featureId}?f=pjson",
   "Kartleggingsenhet5kid",
-  "temp/2021_06_26/13"
+  "temp/test/13"
 )
 .catch(err => log.fatal(err));
 mirrorJson(
@@ -251,7 +251,7 @@ mirrorJson(
   "query?where=1=1&f=pjson&returnCountOnly=false&resultRecordCount=${resultRecordCount}&resultOffset=${resultOffset}",
   "${featureId}?f=pjson",
   "Kartleggingsenhet20kid",
-  "temp/2021_06_26/14"
+  "temp/test/14"
 )
 .catch(err => log.fatal(err));
 // });
