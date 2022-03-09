@@ -11,6 +11,12 @@
 - Internt [JSON format](doc/JSON.md)
 - [Ukurante løsninger (TODOs)](doc/UKURANT.md)
 
+## Hvordan kjøre
+ - Klon dette repoet
+ - npm install
+ - npm install lastejobb
+ - npm start
+
 ## Build output
 
 - [Kodetre som lastes i API](https://adb-typesystem.surge.sh/kodetre.json) (~5MB)
