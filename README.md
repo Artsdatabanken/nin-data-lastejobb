@@ -15,6 +15,7 @@
  - Klon dette repoet
  - npm install
  - npm install lastejobb
+ - Sett riktig path i [repo-root]/node_modules/lastejobb/package.json
  - npm start
 
 ## Build output
