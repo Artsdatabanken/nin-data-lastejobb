@@ -16,7 +16,8 @@ jobs:
           node-version: '16.x'
       - run: npm install
       - run: npm update
-      - run: npm run build
+      - run: npm run download
+      - run: npm run transform
       - name: Create release
         uses: ncipollo/release-action@v1
         with:
