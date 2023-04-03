@@ -26,9 +26,9 @@ jobs:
         with:
           artifacts: "artifacts.tar"
           tag: v_${{ github.run_number }}
-      - name: Run slack script
-        run: ./.github/workflows/slack.sh
-        shell: bash
       - name: post to slack
         run: ./.github/workflows/slack.sh ${{ secrets.POST_SLACK }}
+        shell: bash
+      - name: Run slack script
+        run: ./.github/workflows/slack.sh
         shell: bash
