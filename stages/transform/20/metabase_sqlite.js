@@ -1,6 +1,6 @@
 return false // Not currently in use - transitioned to flat files
 
-const { io, log } = require("lastejobb")
+const { io, log } = require("@artsdatabanken/lastejobb")
 const sqlite3 = require("sqlite3")
 const fs = require("fs")
 var zlib = require("zlib")

@@ -1,4 +1,4 @@
-const { http, log } = require("lastejobb")
+const { http, log } = require("@artsdatabanken/lastejobb")
 
 // Laster ned bounding bokser for koder
 http
