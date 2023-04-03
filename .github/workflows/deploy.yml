@@ -2,7 +2,7 @@ name: nin-data-lastejobb
 
 on:
   push:
-    branches: [ updates ]
+    branches: [ master ]
 
 jobs:
   build:
