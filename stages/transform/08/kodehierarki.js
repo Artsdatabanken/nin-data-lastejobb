@@ -1,6 +1,10 @@
-const { io } = require("lastejobb")
-const typesystem = require("@artsdatabanken/typesystem")
+main();
+function main() {
+    const { io } = require("@artsdatabanken/lastejobb")
+    const typesystem = require("@artsdatabanken/typesystem")
 
-let tre = io.lesTempJson("full")
-const hierarki = typesystem.lagHierarki(tre)
-io.skrivDatafil(__filename, hierarki)
+
+    let tre = io.lesTempJson("full")
+    const hierarki = typesystem.lagHierarki(tre)
+    io.skrivDatafil(__filename, hierarki)
+}

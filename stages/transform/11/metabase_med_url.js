@@ -1,6 +1,9 @@
-const { io, url } = require("lastejobb")
+main();
+function main() {
+    const { io, url } = require("@artsdatabanken/lastejobb")
 
-let tre = io.lesTempJson("metabase_med_farger")
+    let tre = io.lesTempJson("metabase_med_farger")
 
-new url(tre).assignUrls()
-io.skrivDatafil(__filename, tre)
+    new url(tre).assignUrls()
+    io.skrivDatafil(__filename, tre)
+}

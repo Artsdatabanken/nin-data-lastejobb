@@ -1,4 +1,4 @@
-const { http, log } = require("lastejobb")
+const { http, log } = require("@artsdatabanken/lastejobb")
 
 http
   .downloadJson(
