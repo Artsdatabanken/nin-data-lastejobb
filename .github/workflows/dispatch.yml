@@ -1,8 +1,8 @@
 name: nin-data-lastejobb
 
 on:
-  workflow_dispatch:
-
+  repository_dispatch:
+    types: [fra_kommune]
 jobs:
   build:
     runs-on: ubuntu-latest
