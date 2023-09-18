@@ -25,7 +25,7 @@
   "homepage": "https://github.com/Artsdatabanken/nin-data-lastejobb",
   "dependencies": {
     "@artsdatabanken/color-blend": "^1.0.0",
-    "@artsdatabanken/lastejobb": "^4.0.9",
+    "@artsdatabanken/lastejobb": "^4.0.11",
     "@artsdatabanken/typesystem": "^10.7.1",
     "babel-eslint": "^10.1.0",
     "csv": "^5.3.2",

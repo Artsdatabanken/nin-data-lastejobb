@@ -1,4 +1,4 @@
-const { git } = require("@artsdatabanken/lastejobb")
+const { archive } = require("@artsdatabanken/lastejobb")
 
 // Download "Natur i Norge" data kildedata - fylke og kommune
-git.clone("https://github.com/Artsdatabanken/kommune.git", "temp/kommune")
+archive.downloadAndUntar("https://github.com/Artsdatabanken/kommune/releases/latest/download/kommune.tar.gz")
