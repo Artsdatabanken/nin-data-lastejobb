@@ -16,7 +16,7 @@ function main() {
   flett("inn_statistikk")
   flett("maritim-grense")
   flett("landskap/type")
-  flett("natursystem/type")
+  flett("natursystem-lastejobb/type")
 
   tre["NN-LA"].foreldre = ["NN"]
   tre["NN-NA"].foreldre = ["NN"]
