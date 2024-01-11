@@ -1,3 +1,3 @@
-const { git } = require("@artsdatabanken/lastejobb")
+const { archive } = require("@artsdatabanken/lastejobb")
 
-git.clone("https://github.com/Artsdatabanken/naturvern.git", "temp/naturvern")
+archive.downloadAndUntar("https://github.com/Artsdatabanken/naturvern/releases/latest/download/naturvern.tar.gz")
